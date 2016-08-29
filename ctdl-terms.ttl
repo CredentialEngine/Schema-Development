@@ -1,0 +1,150 @@
+@prefix asn: <http://purl.org/ASN/schema/core/> .
+@prefix ctdl: <http://purl.org/ctdl/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+#====================
+# CLASSES
+#====================
+
+ctdl:AccreditAction a rdfs:Class ;
+    rdfs:label "Accredit Action" ;
+    rdfs:comment "An action by an independent, neutral, and authoritative agent that certifies a resource as meeting a prescribed set of standards."@en-US ;
+    rdfs:subClassOf schema:Action .
+       
+ctdl:ApprenticeshipCertificate a rdfs:Class ;
+    rdfs:label "Apprenticeship Certificate" ;
+    rdfs:comment "A credential earned through work-based learning and postsecondary earn-and-learn models that meet national standards and are applicable to industry trades and professions."@en-US ;
+    rdfs:subClassOf ctdl:Certificate . 
+    
+ctdl:ApproveAction a rdfs:Class ;
+    rdfs:label "Approve Action" ;
+    rdfs:comment "An action by an independent, neutral, and authoritative agent that pronounces a favorable judgment of a resource."@en-US ;
+    rdfs:subClassOf schema:Action .
+    
+ctdl:AssessAction a rdfs:Class ;
+    rdfs:label "Assess Action" ;
+    rdfs:comment "An action by an independent, neutral, and authoritative agent that evaluates or estimates the ability or quality of a resource."@en-US ;
+    dct:description "Assess actions include direct, indirect, formative and summative evaluation or estimation of the nature, ability, or quality of a resource, performance, or outcome."@en-US ;
+    rdfs:subClassOf schema:Action . 
+    
+ctdl:Assessment a rdfs:Class ;
+    rdfs:label "Assessment" ;
+    rdfs:comment "Direct, indirect, formative and summative evaluation or estimation of the nature, ability, or quality of a resource, performance, or outcome of an action."@en-US .       
+
+ctdl:AssessmentProfile a rdfs:Class ;
+    rdfs:label "Assessment Profile" ;
+    rdfs:comment "A profiling entity that describes the key characteristics of a credential's assessment."@en-US ;
+    dct:description "Characteristics described include, but are not limited to, processes for assessment development, maintenance, selection and evalutation as well as assessment examples and identification of assessment types."@en-US ;
+    rdfs:subClassOf schema:Intangible .
+    
+ctdl:AssociateDegree a rdfs:Class ;
+    rdfs:label "Associate Degree" ;
+    rdfs:comment "An award level that normally requires at least 2 but less than 4 years of full-time equivalent college-level work."@en-US ;
+    rdfs:subClassOf schema:Degree . 
+    
+ctdl:BachelorDegree a rdfs:Class ;
+    rdfs:label "Bachelor's Degree" ;
+    rdfs:comment "An award level that normally requires at least 4 but not more than 5 years of full-time equivalent college-level work."@en-US ;
+    rdfs:subClassOf schema:Degree . 
+    
+ctdl:Badge a rdfs:Class ;
+    rdfs:label "Badge" ;
+    rdfs:comment "A recognition designed to be displayed as a marker of accomplishment, activity, achievement, skill, interest, association, or identity."@en-US ;
+    rdfs:subClassOf schema:Credential . 
+    
+ctdl:Certificate a rdfs:Class ;
+    rdfs:label "Certificate" ;
+    rdfs:comment "A credential that designates requisite mastery of the knowledge and skills of an occupation, profession, or academic program."@en-US ;
+    rdfs:subClassOf schema:Credential . 
+    
+ctdl:Certification a rdfs:Class ;
+    rdfs:label "Certification" ;
+    rdfs:comment "A time-limited, renewable non-degree credential awarded by an authoritative body to an individual or organization for demonstrating the designated knowledge, skills, and abilities to perform a specific job."@en-US ;
+    rdfs:subClassOf schema:Credential .
+    
+ctdl:Competency a rdfs:Class ;
+    rdfs:label "Competency" ;
+    rdfs:comment "An assertion of measurable or observable knowledge, skills, and abilities necessary to successful performance of a peson in a given context."@en-US ;
+    rdfs:subClassOf schema:Intangible, asn:Statement .                      
+                        
+ctdl:CompetencyFramework a rdfs:Class ;
+    rdfs:label "Competency Framework" ;
+    rdfs:comment "An entity comprised of a logically related set of competencies."@en-US ;
+    rdfs:subClassOf schema:CreativeWork, asn:StandardDocument . 
+    
+ctdl:ConditionProfile a rdfs:Class ;
+    rdfs:label "Condition Profile" ;
+    rdfs:comment "An entity relating a credential to profiles describing conditions to which the credential is subject during its lifecycle including the requirements to attain the credential."@en-US ;
+    dct:description "Related profiles include competencies, assessments, courses, and credentials required to attain the subject credential."@en-US
+    rdfs:subClassOf schema:Intangible . 
+    
+ctdl:ConferAction a rdfs:Class ;
+    rdfs:label "Confer Action" ;
+    rdfs:comment "An action by an authoritative agent to grant or bestow on a person the rights, privileges, and obligations of a resource."@en-US ;
+    rdfs:subClassOf schema:Action . 
+    
+ctdl:CostProfile a rdfs:Class ;
+    rdfs:label "Cost Profile" ;
+    rdfs:comment "The type and nature of direct costs one would incur if one were to pursue attaining a credential."@en-US ;
+    dct:description "Potential direct credential costs include background checks, standalone assessments, tuition fees, application fees, and learning resource fees."@en-US
+    rdfs:subClassOf schema:Intangible . 
+    
+ctdl:CreateAction a rdfs:Class ;
+    rdfs:label "Create Action" ;
+    rdfs:comment "The act of deliberately creating/producing/generating/building a resulting resource."@en-US ;
+    rdfs:subClassOf schema:Action . 
+    
+ctdl:Credential a rdfs:Class ;
+    rdfs:label "Credential" ;
+    rdfs:comment "A qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability."@en-US ;
+    dct:description "Aligns with BadgeClass in the Open Badges specification."@en-US ;
+    rdfs:subClassOf schema:CreativeWork .
+    
+ctdl:CredentialAlignmentObject a rdfs:Class ;
+    rdfs:label "Credential Alignment Object" ;
+    rdfs:comment "Used to align credential information."@en-US ;
+    rdfs:subClassOf schema:AlignmentObject . 
+    
+ctdl:CredentialAssertion a rdfs:Class ;
+    rdfs:label "Credential Assertion" ;
+    rdfs:comment "The class of representations of an awarded credential, used to share information about a credential belonging to one holder."@en-US ;
+    dct:description "Aligns with Assertion in the Open Badges specification."@en-US ;
+    rdfs:subClassOf cti:Credential . 
+    
+ctdl:CredentialingAction a rdfs:Class ;
+    rdfs:label "Credentialing Action" ;
+    rdfs:comment "An action taken by an agent affecting the status of an object resourse."@en-US ;
+    dct:description "In CTDL, the CredentialingAction is a superclass used to aggregate a family of subclasses used in CTDL descriptions such as \"AccreditAction\", \"EndorseAction\", \"ConferAction\", and \"RevokeAction\"."@en-US ;
+    rdfs:subClassOf cti:Credential . 
+    
+ctdl:CredentialOrganization a rdfs:Class ;
+    rdfs:label "Credential Organization" ;
+    rdfs:comment "An organization that plays one or more key roles in the lifecycle of a credential."@en-US ;
+    rdfs:subClassOf schema:Organization, dct:Agent .
+    
+ctdl:CredentialPerson a rdfs:Class ;
+    rdfs:label "Credential Person" ;
+    rdfs:comment "An person who plays one or more key roles in the lifecycle of a credential."@en-US ;
+    rdfs:subClassOf schema:Person, dct:Agent .  
+
+
+                            
+#====================
+# ENUMERATION CLASSES
+#====================
+
+ctdl:ActionStatus a skos:ConceptScheme, schema:Enumeration ;
+    rdfs:label "Action Status" ;
+    rdfs:comment "Available statuses include ActiveActionStatus, CompletedActionStatus, FailedActionStatus, PotentialActionStatus."@en-US .
+
+#====================
+# PROPERTIES
+#====================
