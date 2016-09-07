@@ -1,0 +1,121 @@
+@prefix assessMethod: <https://purl.org/ctdl/vocabs/assessmentMethod/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# ASSESSMENT METHOD VOCABULARY DESCRIPTION
+assessMethod: a skos:ConceptScheme;
+    dc:title "CTI Assessment Method Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines methods of assessment."@en-US ;
+    dct:created "2016-09-07"^^xsd:date ;
+    dct:source "Sources consulted include Integrated Postsecondary Education Data System (IPEDS)."@en-US ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: ACHIEVEMENT TEST
+assessMethod:AchievementTest a skos:Concept;
+    skos:prefLabel "Achievement Test"@en-US; 
+    skos:definition "A frequently  standardized test developed to measure skills and knowledge learned in a given educational level."@en-US;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .
+  
+# CONCEPT: ADVANCED PLACEMENT TEST
+assessMethod:AdvancedPlacementTest a skos:Concept ;
+    skos:prefLabel "Advanced Placement Test"@en-US ; 
+    skos:definition "Assessment based on scores from examination at the conclusion of advanced placement courses in secondary school for purposes including postsecondary-level credit or placement in advanced postseconday-level courses."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" . 
+  
+# CONCEPT: ALTERNATE ASSESSMENT
+assessMethod:AlternateAssessment a skos:Concept ;
+    skos:prefLabel "Alternate Assessment"@en-US ;
+    skos:definition "Assessments other than traditional paper-and-pencil, short answer tests that focus on what students can do without emphasizing their weaknesses, especially in test-taking skills."@en-US ;
+    dct:source "Adapted from: http://www.learnnc.org/lp/pages/7041"@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" . 
+  
+# CONCEPT: CAPSTONE PROJECT
+assessMethod:CapstoneProject a skos:Concept ;
+    skos:prefLabel "Capstone/Exhibition Project"@en-US ;
+    skos:definition "A multifaceted assignment that serves as a culminating academic and intellectual experience for students, typically during their final year of study."@en-US ;
+    dct:source "Adapted from: http://edglossary.org/capstone-project/"@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" . 
+    
+# CONCEPT: CLASS PARTICIPATION
+assessMethod:ClassParticipation a skos:Concept ;
+    skos:prefLabel "Class Participation"@en-US ;
+    skos:definition "Assessment based on the extent and quality of contributions to discussion."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .  
+    
+# CONCEPT: DEMONSTRATION
+assessMethod:Demonstration a skos:Concept ;
+    skos:prefLabel "Demonstration"@en-US ;
+    skos:definition "Written record of an observed demonstration including explanation of factors assessed."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: ESSAY
+assessMethod:Essay a skos:Concept ;
+    skos:prefLabel "Essay"@en-US ;
+    skos:definition "Short piece of writing that fashions a coherent set of ideas on a particular subject."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .             
+     
+# CONCEPT: JOB EVALUATION
+assessMethod:JobEvaluation a skos:Concept ;
+    skos:prefLabel "Job Evaluation"@en-US ;
+    skos:definition "Supervisor's evaluation of on-the-job performance."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: MULTIPLE CHOICE TEST
+assessMethod:MultipleChoiceTest a skos:Concept ;
+    skos:prefLabel "Multiple Choice Test"@en-US ;
+    skos:definition "Test comprised of questions accompanied by several possible answers from which the candidate must try to choose the correct one."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" . 
+    
+# CONCEPT: OBSERVATION
+assessMethod:Observation a skos:Concept ;
+    skos:prefLabel "Observation"@en-US ;
+    skos:definition "Evaluation based on expert observation of performace of a prescribed action."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: ORAL EXAMINATION
+assessMethod:OralExam a skos:Concept ;
+    skos:prefLabel "Oral Examination"@en-US ;
+    skos:definition "Evaluation based on oral responses to questions."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .  
+    
+# CONCEPT: PORTFOLIO
+assessMethod:Portfolio a skos:Concept ;
+    skos:prefLabel "Portfolio"@en-US ;
+    skos:definition "Evaluation based on the assessment of creator-selected artifacts demonstrating the knowledge or skills of their creator."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: RELATED PERFORMANCE
+assessMethod:RelatedPerformance a skos:Concept ;
+    skos:prefLabel "Related Performance"@en-US ;
+    skos:definition "[ TBD ]"@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" . 
+    
+# CONCEPT: SHORT ANSWER EXAMINATION
+assessMethod:ShortAnswer a skos:Concept ;
+    skos:prefLabel "Short Answer Examination"@en-US ;
+    skos:definition "Short-answer evaluation usually testing whether a person has a factual understanding of the relevant information."@en-US ;
+    skos:inScheme assessMethod: ;
+    vs:term_status "unstable" .                         

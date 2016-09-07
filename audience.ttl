@@ -1,0 +1,83 @@
+@prefix audience: <https://purl.org/ctdl/vocabs/audience/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# AUDIENCE TYPE VOCABULARY DESCRIPTION
+audience: a skos:ConceptScheme;
+    dc:title "CTI Audience Type Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines the types of audience for a resource."@en-US ;
+    dct:created "2016-09-07"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: CITIZEN
+audience:Citizen a skos:Concept;
+    skos:prefLabel "Citizen"@en-US; 
+    skos:definition "A legally recognized subject or national of a state or commonwealth, either native or naturalized."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: CURRENT MILITARY
+audience:CurrentMilitary a skos:Concept;
+    skos:prefLabel "Current Military"@en-US; 
+    skos:definition "A current member of a nation's military."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+   
+# CONCEPT: CURRENT STUDENT
+audience:CurrentStudent a skos:Concept;
+    skos:prefLabel "Current Student"@en-US; 
+    skos:definition "A student currently enrolled in an institution of learning."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+        
+# CONCEPT: FORMER MILITARY
+audience:FormerMilitary a skos:Concept;
+    skos:prefLabel "Former Military / Veteran"@en-US; 
+    skos:definition "A veteran of military service."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+
+# CONCEPT: FORMER STUDENT
+audience:FormerStudent a skos:Concept;
+    skos:prefLabel "Former Student / Alumni"@en-US; 
+    skos:definition "A former student of an institution of learning."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: MEMBER
+audience:Member a skos:Concept;
+    skos:prefLabel "Member"@en-US; 
+    skos:definition "A member of an organization, society, or recognized group."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+   
+# CONCEPT: NON-CITIZEN
+audience:NonCitizen a skos:Concept;
+    skos:prefLabel "Non-Citizen"@en-US; 
+    skos:definition "A person who is not an inhabitant or national of a particular country or other geopolitical region."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: PRIVATE EMPLOYEE
+audience:PrivateEmployee a skos:Concept;
+    skos:prefLabel "Private Employee"@en-US; 
+    skos:definition "A person employed in the private sector."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: PUBLIC EMPLOYEE
+audience:PublicEmployee a skos:Concept;
+    skos:prefLabel "Public Employee"@en-US; 
+    skos:definition "A person employed in the public sector."@en-US;
+    skos:inScheme audience: ;
+    vs:term_status "unstable" .                
