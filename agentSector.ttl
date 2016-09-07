@@ -1,0 +1,49 @@
+@prefix agentSector: <https://purl.org/ctdl/vocabs/agentSector/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# AGENT SECTOR VOCABULARY DESCRIPTION
+agentSector: a skos:ConceptScheme;
+   dc:title "CTI Agent Sector Vocabulary" ;
+   dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+   dc:description "A concept scheme that defines an agent's categorization in the public/private sectors."@en-US ;
+   dct:created "2016-09-07"^^xsd:date ;
+   dct:source "Sources consulted include Integrated Postsecondary Education Data System (IPEDS)."@en-US ;
+   dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+   adms:status bibo:draft . 
+   
+# CONCEPT: BUSINESS-INDUSTRY ASSOCIATION
+agentSector:BusinessIndustryAssociation a skos:Concept;
+  skos:prefLabel "Business-Industry Association"@en-US; 
+  skos:definition "A membership organization primarily engaged in promoting the interests of their business members and providing them with services that may involve the provision of education and credentialing services."@en-US;
+  skos:inScheme agentSector: ;
+  vs:term_status "unstable" .
+  
+# CONCEPT: PRIVATE FOR-PROFIT
+agentSector:PrivateForProfit a skos:Concept;
+  skos:prefLabel "Private For-Profit Institution"@en-US; 
+  skos:definition "A private institution in which the individual(s) or agency in control receives compensation other than wages, rent, or other expenses for the assumption of risk."@en-US;
+  skos:inScheme agentSector: ;
+  vs:term_status "unstable" . 
+  
+# CONCEPT: PRIVATE NON-PROFIT
+agentSector:PrivateNonProfit a skos:Concept;
+  skos:prefLabel "Private Not-For-Profit Institution"@en-US; 
+  skos:definition "A private institution in which the individual(s) or agency in control receives no compensation, other than wages, rent, or other expenses for the assumption of risk."@en-US;
+  skos:inScheme agentSector: ;
+  vs:term_status "unstable" .
+  
+# CONCEPT: PUBLIC
+agentSector:Public a skos:Concept;
+  skos:prefLabel "Public Institution"@en-US; 
+  skos:definition "An educational institution whose programs and activities are operated by publicly elected or appointed school officials and which is supported primarily by public funds."@en-US;
+  skos:inScheme agentSector: ;
+  vs:term_status "unstable" .  

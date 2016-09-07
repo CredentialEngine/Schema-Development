@@ -1,0 +1,34 @@
+@prefix assessMode: <https://purl.org/ctdl/vocabs/assessmentMode/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# ASSESSMENT MODALITY VOCABULARY DESCRIPTION
+assessMode: a skos:ConceptScheme;
+    dc:title "CTI Assessment Modality Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines the modalities of assessment."@en-US ;
+    dct:created "2016-09-07"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: FORMATIVE
+assessMode:Formative a skos:Concept;
+    skos:prefLabel "Formative Assessment"@en-US; 
+    skos:definition "Formal and informal assessment procedures conducted during the learning process to support intentional modification in teaching and learning activities in order to improve learner attainment."@en-US;
+    skos:inScheme assessMode: ;
+    vs:term_status "unstable" .
+  
+# CONCEPT: SUMMATIVE
+assessMode:Summative a skos:Concept ;
+    skos:prefLabel "Summative Assessment"@en-US ; 
+    skos:definition "Assessment of learning at the end of an instructional activity to determine whether some established standard or benchmark has been achieved."@en-US ;
+    skos:inScheme assessMode: ;
+    vs:term_status "unstable" .
