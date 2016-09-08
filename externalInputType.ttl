@@ -1,0 +1,104 @@
+@prefix inputType: <https://purl.org/ctdl/vocabs/inputType/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# EXTERNAL INPUT TYPE VOCABULARY DESCRIPTION
+inputType: a skos:ConceptScheme;
+    dc:title "CTI Cost Type Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines the types of external input engaged in a process."@en-US ;
+    dct:created "2016-09-08"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: CONSUMERS
+inputType:Consumers a skos:Concept;
+    skos:prefLabel "Consumers"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by consumers."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: EDUCATION ADMINISTRATORS
+inputType:EducationAdministrators a skos:Concept;
+    skos:prefLabel "@@@"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by education administrators."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .    
+       
+# CONCEPT: FACULTY
+inputType:Faculty a skos:Concept;
+    skos:prefLabel "Faculty"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by faculty."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: STUDENTS
+inputType:Students a skos:Concept;
+    skos:prefLabel "Students"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by students."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: NATIONAL GOVERNMENT
+inputType:NationalGovernment a skos:Concept;
+    skos:prefLabel "Federal/National Government"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by federal or national government."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: INDUSTRY EMPLOYERS
+inputType:IndustryEmployers a skos:Concept;
+    skos:prefLabel "Industry Employers"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by industry employers."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: INDUSTRY PRACTIONERS
+inputType:IndustryPractitioners a skos:Concept;
+    skos:prefLabel "Industry Practitioners"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by industry practitioners."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: ASSOCIATIONS
+inputType:Associations a skos:Concept;
+    skos:prefLabel "Industry Professional Associations"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by industry professional associations."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: EXPERTS
+inputType:Experts a skos:Concept;
+    skos:prefLabel "Industry Subject Matter Experts"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by industry subject matter experts."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: LOCAL GOVERNMENT
+inputType:LocalGovernment a skos:Concept;
+    skos:prefLabel "Local Government"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by local government."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .   
+       
+# CONCEPT: STATE/PROVINCIAL GOVERNMENT
+inputType:StateGovernment a skos:Concept;
+    skos:prefLabel "State/Provincial Government"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by state or provincial government."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: INTERNATIONAL BODIES
+inputType:InternationalBodies a skos:Concept;
+    skos:prefLabel "International Bodies"@en-US; 
+    skos:definition "External stakeholder review, guidance or recommendations by international bodies."@en-US;
+    skos:inScheme inputType: ;
+    vs:term_status "unstable" .       

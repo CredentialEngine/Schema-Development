@@ -1,0 +1,34 @@
+@prefix revokeCriteria: <https://purl.org/ctdl/vocabs/revokeCriteria/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# REVOCATION CRITERIA VOCABULARY DESCRIPTION
+revokeCriteria: a skos:ConceptScheme;
+    dc:title "CTI Cost Type Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines the revocation criteria types."@en-US ;
+    dct:created "2016-09-08"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: ABANDONMENT
+revokeCriteria:Abandonment a skos:Concept;
+    skos:prefLabel "Abandonment"@en-US; 
+    skos:definition "Failure to continue working in the profession/occupation addressed in the credential."@en-US;
+    skos:inScheme revokeCriteria: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: RULE VIOLATION
+revokeCriteria:Violation a skos:Concept;
+    skos:prefLabel "Violation"@en-US; 
+    skos:definition "Failure to maintain good standing in the occupation/profession (disciplinary action)."@en-US;
+    skos:inScheme revokeCriteria: ;
+    vs:term_status "unstable" .    

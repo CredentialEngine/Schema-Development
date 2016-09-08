@@ -1,0 +1,41 @@
+@prefix evaluationMethod: <https://purl.org/ctdl/vocabs/staffEvaluationMethod/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# STAFF EVALUATION METHOD VOCABULARY DESCRIPTION
+evaluationMethod: a skos:ConceptScheme;
+    dc:title "CTI Cost Type Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines methods of staff evaluation."@en-US ;
+    dct:created "2016-09-08"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: INTERNAL STAFF EVALUATION
+evaluationMethod:InternalStaffEvaluation a skos:Concept;
+    skos:prefLabel "Internal Staff Evaluation"@en-US; 
+    skos:definition "Relevant staff are subject to internal evaluation."@en-US;
+    skos:inScheme evaluationMethod: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: EXTERNAL STAFF EVALUATION
+evaluationMethod:ExternalStaffEvaluation a skos:Concept;
+    skos:prefLabel "External Staff Evaluation"@en-US; 
+    skos:definition "Relevant staff are subject to external evaluation by customers."@en-US;
+    skos:inScheme evaluationMethod: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: STAFF PEER REVIEW
+evaluationMethod:StaffPeerReview a skos:Concept;
+    skos:prefLabel "Staff Peer Review"@en-US; 
+    skos:definition "Relevant staff are subject evaluation through peer review mechanisms."@en-US;
+    skos:inScheme evaluationMethod: ;
+    vs:term_status "unstable" .
