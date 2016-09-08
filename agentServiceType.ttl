@@ -1,0 +1,146 @@
+@prefix serviceType: <https://purl.org/ctdl/vocabs/agentServiceType/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# AGENT SERVICE TYPE VOCABULARY DESCRIPTION
+serviceType: a skos:ConceptScheme;
+    dc:title "CTI Cost Type Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines agent service types."@en-US ;
+    dct:created "2016-09-08"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: ACCREDIT SERVICE
+serviceType:AccreditService a skos:Concept;
+    skos:prefLabel "Accredit Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include certifying that resources meet prescribed standards."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: APPROVE SERVICE
+serviceType:ApproveService a skos:Concept;
+    skos:prefLabel "Approve Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include the pronouncement of favorable judgments (approval) of resources."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: EVALUATE SERVICE
+serviceType:EvaluateService a skos:Concept;
+    skos:prefLabel "Evaluate Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include the evaluation or estimation of the nature, ability, or quality of resources."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: CONFER SERVICE
+serviceType:ConferService a skos:Concept;
+    skos:prefLabel "Confer Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include granting of credentials."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: ENDORSE SERVICE
+serviceType:EndorseService a skos:Concept;
+    skos:prefLabel "Endorse Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include provision of a public declaration of approval or support resources."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: MONITOR SERVICE
+serviceType:MonitorService a skos:Concept;
+    skos:prefLabel "Monitor Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include observation, checking, or keeping systemic records of a process, activity, or quality of a resource."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: OFFER CREDENTIAL SERVICE
+serviceType:OfferCredentialService a skos:Concept;
+    skos:prefLabel "Offer Credential Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include the offering of access to a credential."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: RECOGNIZE SERVICE
+serviceType:RecognizeService a skos:Concept;
+    skos:prefLabel "Recognize Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include acknowledgement of the validity of a resource."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: REGULATE SERVICE
+serviceType:RegulateService a skos:Concept;
+    skos:prefLabel "Regulate Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include enforcement of the legal requirements of a resource."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: RENEW SERVICE
+serviceType:RenewService a skos:Concept;
+    skos:prefLabel "Renew Credential Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include renewals of an awarded credential."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: REVOCATION SERVICE
+serviceType:RevokeService a skos:Concept;
+    skos:prefLabel "Revoke Credential Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include removal of credential from the holder."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: UPDATE CREDENTIAL VERSION SERVICE
+serviceType:UpdateVersionService a skos:Concept;
+    skos:prefLabel "Update Credential Version Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include updating of a credential."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: VALIDATE SERVICE
+serviceType:ValidateService a skos:Concept;
+    skos:prefLabel "Validate Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include checking and approving the validity or accuracy of the resource."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: VERIFY SERVICE
+serviceType:VerifyService a skos:Concept;
+    skos:prefLabel "Verify Holder Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include establishing the truth, accuracy, or reality of the award of credential."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: QUALITY ASSURANCE SERVICE
+serviceType:QualityAssuranceService a skos:Concept;
+    skos:prefLabel "Quality Assurance Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include quality assurance."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: CONTINUOUS IMPROVEMENT SERVICE
+serviceType:ContinuousImprovementService a skos:Concept;
+    skos:prefLabel "Continuous Quality Improvement Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include assessing the presence and success of processes for creating an environment in which management and workers strive to create constantly improving quality."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: CONFORMANCE ASSESSMENT SERVICE
+serviceType:ConformanceAssessmentService a skos:Concept;
+    skos:prefLabel "Conformance Assessment Service"@en-US; 
+    skos:definition "The services provided by an authoritative agent include activities to determine, directly or indirectly, that a resource meets relevant standards and fulfills relevant requirements."@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .
+       
+# CONCEPT: COMPLIANCE SERVICE
+serviceType:ComplianceService a skos:Concept;
+    skos:prefLabel "Compliance Service"@en-US; 
+    skos:definition "[TBA]"@en-US;
+    skos:inScheme serviceType: ;
+    vs:term_status "unstable" .

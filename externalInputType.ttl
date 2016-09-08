@@ -15,7 +15,7 @@ inputType: a skos:ConceptScheme;
     dc:title "CTI Cost Type Vocabulary" ;
     dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
     dc:description "A concept scheme that defines the types of external input engaged in a process."@en-US ;
-    dct:created "2016-09-07"^^xsd:date ;
+    dct:created "2016-09-08"^^xsd:date ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
     adms:status bibo:draft . 
    

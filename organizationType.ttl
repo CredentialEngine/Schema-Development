@@ -1,0 +1,188 @@
+@prefix orgType: <https://purl.org/ctdl/vocabs/organizationType/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix bibo: <http://purl.org/ontology/bibo/status/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# ORGANIZATION TYPE VOCABULARY DESCRIPTION
+orgType: a skos:ConceptScheme;
+    dc:title "CTI Cost Type Vocabulary" ;
+    dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
+    dc:description "A concept scheme that defines types of organizations in the credentialing ecosystem."@en-US ;
+    skos:hasTopConcept orgType:SecondarySchool ;
+    skos:hasTopConcept orgType:Postsecondary ;
+    skos:hasTopConcept orgType:TrainingProvider ;
+    skos:hasTopConcept orgType:BusinessAssociation ; 
+    skos:hasTopConcept orgType:ProfessionalAssociation ; 
+    skos:hasTopConcept orgType:LaborUnion ;
+    skos:hasTopConcept orgType:Certification ; 
+    skos:hasTopConcept orgType:Government ; 
+    skos:hasTopConcept orgType:Military ;
+    skos:hasTopConcept orgType:Assessment ;
+    skos:hasTopConcept orgType:Vendor ; 
+    skos:hasTopConcept orgType:QualityAssurance ;                                         
+    dct:created "2016-09-08"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
+    adms:status bibo:draft . 
+   
+# CONCEPT: SECONDARY SCHOOL
+orgType:SecondarySchool a skos:Concept;
+    skos:prefLabel "Secondary School"@en-US; 
+    skos:definition "A secondary school primarily providing education to students at the ninth grade or higher."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:narrower orgType:HighSchool ;
+    skos:narrower orgType:Magnet ;
+    skos:narrower orgType:Technical ;
+    skos:narrower orgType:Alternative ;            
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: HIGH SCHOOL
+orgType:HighSchool a skos:Concept;
+    skos:prefLabel "High School"@en-US; 
+    skos:definition "A secondary school providing instruction and educational services that do not focus primarily on career and technical education or alternative education."@en-US;
+    skos:broader orgType:SecondarySchool ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .    
+       
+# CONCEPT: MAGNET
+orgType:Magnet a skos:Concept;
+    skos:prefLabel "Magnet"@en-US; 
+    skos:definition "A public school offering special instruction and programs not available elsewhere, designed to attract a more diverse student body from throughout a school district."@en-US;
+    skos:broader orgType:SecondarySchool ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: CAREER & TECHNICAL SCHOOL
+orgType:Technical a skos:Concept;
+    skos:prefLabel "Career and Technical School"@en-US; 
+    skos:definition "A secondary school that focuses primarily on providing formal preparation for skilled, technical or professional occupations or careers."@en-US;
+    skos:broader orgType:SecondarySchool ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: ALTERNATIVE
+orgType:Alternative a skos:Concept;
+    skos:prefLabel "Alternative/Non-Traditional School"@en-US; 
+    skos:definition "A secondary (i.e., high school) that: 1) addresses needs of students which cannot typically be met in a regular school; 2) provides nontraditional education; 3) falls outside of the categories of regular, magnet/special program emphasis, or career and technical education."@en-US;
+    skos:broader orgType:SecondarySchool ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: POSTSECONDARY
+orgType:Postsecondary a skos:Concept;
+    skos:prefLabel "Postsecondary Educational Institution"@en-US; 
+    skos:definition "An organization such as a college or university: (1) whose sole purpose is to provide postsecondary education defined as the provision of a formal instructional program whose curriculum is designed primarily for students who are beyond the compulsory age for high school and (2) has the authority to award degrees. This includes programs whose purpose is academic, vocational, and continuing professional education."@en-US;
+    skos:topConceptOf orgType: ;
+    dct:source "Integrated Postsecondary Education Data System (iPEDS)"@en-US ;
+    skos:topConceptOf orgType: ;
+    skos:narrower orgType:TwoYear ;
+    skos:narrower orgType:FourYear ;    
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: TWO-YEAR COLLEGE
+orgType:TwoYear a skos:Concept;
+    skos:prefLabel "Two-Year College"@en-US; 
+    skos:definition "Authorized postsecondary institution that primarily offers associate degrees, but may also award higher degrees."@en-US ;
+    skos:scopeNote "Includes occupational and vocational schools with programs of at least 1800 hours, academic institutions with programs of less than 4 years, etc."@en-US ;
+    skos:broader orgType:Postsecondary ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: FOUR-YEAR COLLEGE
+orgType:FourYear a skos:Concept;
+    skos:prefLabel "Four-Year College"@en-US; 
+    skos:definition "Authorized postsecondary institution that primarily offers bachelor or higher degrees, but may also award associate degrees."@en-US ;
+    skos:scopeNote "Includes free-standing medical, law or other first-professional schools, schools that offer postbaccalaureate certificates only, those that offer graduate programs only, etc."@en-US ;
+    skos:broader orgType:Postsecondary ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: TRAINING PROVIDER
+orgType:TrainingProvider a skos:Concept;
+    skos:prefLabel "Education and Training Provider"@en-US; 
+    skos:definition "An organization whose major purpose is to provide education and training services but is not a postsecondary education institution with the authority to award degrees."@en-US;
+    skos:scopeNote "Includes community-based organizations, non-degree granting proprietary schools which are education and training providers that are recognized by states as schools and are Title IV eligible but do not award degrees, etc."@en-US ;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: BUSINESS ASSOCIAITON
+orgType:BusinessAssociation a skos:Concept;
+    skos:prefLabel "Business or Industry Association"@en-US; 
+    skos:definition "A membership organization primarily engaged in promoting the interests of their business members and providing them with services that may involve the provision of education and credentialing services."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: PRTOFESSIONAL ASSOCIATION
+orgType:ProfessionalAssociation a skos:Concept;
+    skos:prefLabel "Professional Association"@en-US; 
+    skos:definition "A membership organization serving a profession that requires a significant amount of education, training, or experience or a license or certificate from a state or private authority to practice the profession. This organization normally sets requirements for entry into and maintaining membership in that profession that may involve the holding of recognized credentials."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: LABOR UNION
+orgType:LaborUnion a skos:Concept;
+    skos:prefLabel "Labor Union"@en-US; 
+    skos:definition "A membership organization of workers formed for the purpose of advancing its members' interests in respect to wages, benefits, and working conditions."@en-US ;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: CERTIFICATION BODY
+orgType:Certification a skos:Concept;
+    skos:prefLabel "Certification Body"@en-US; 
+    skos:definition "An independent, third-party organization that operates a certification program. A certification body may or may not be governmental, and may or may not have regulatory authority."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: GOVERNMENT AGENCY
+orgType:Government a skos:Concept;
+    skos:prefLabel "Government Agency"@en-US; 
+    skos:definition "An organization in the public sector at the federal, state or local levels."@en-US;
+    skos:scopeNote "Includes quasi-governmental organizations, special districts (e.g., libraries), corrections organizations, etc., except college and school districts. Is also responsible for the oversight and administration of specific functions other than the military services."@en-US ;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: MILITARY
+orgType:Military a skos:Concept;
+    skos:prefLabel "Military"@en-US; 
+    skos:definition "The armed services of a government entity."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: ASSESSMENT BODY
+orgType:Assessment a skos:Concept;
+    skos:prefLabel "Assessment Body"@en-US; 
+    skos:definition "Primarily offers access to assessments for credentials as a service."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
+       
+# CONCEPT: VENDOR
+orgType:Vendor a skos:Concept;
+    skos:prefLabel "Vendor"@en-US; 
+    skos:definition "Sells, maintains, and issues credentials for its own products and services for public access and use."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .
+    
+# CONCEPT: QUALITY ASSURANCE BODY
+orgType:QualityAssurance a skos:Concept;
+    skos:prefLabel "Quality Assurnace Body"@en-US; 
+    skos:definition "External body that performs accreditation, endorsement, approval, and/or recognition of a credential issuer."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .  
