@@ -141,6 +141,6 @@ serviceType:ConformanceAssessmentService a skos:Concept;
 # CONCEPT: COMPLIANCE SERVICE
 serviceType:ComplianceService a skos:Concept;
     skos:prefLabel "Compliance Service"@en-US; 
-    skos:definition "[TBA]"@en-US;
+    skos:definition "The services provided by an authoritative agent include assistance in conforming to or fulfilling official requirements."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .

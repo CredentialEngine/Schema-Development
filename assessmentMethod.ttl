@@ -109,7 +109,7 @@ assessMethod:Portfolio a skos:Concept ;
 # CONCEPT: RELATED PERFORMANCE
 assessMethod:RelatedPerformance a skos:Concept ;
     skos:prefLabel "Related Performance"@en-US ;
-    skos:definition "[ TBD ]"@en-US ;
+    skos:definition "Evaluation based on related performance of tasks the learner has done to develop their own understanding knowledge and skills."@en-US ;
     skos:inScheme assessMethod: ;
     vs:term_status "unstable" . 
     
