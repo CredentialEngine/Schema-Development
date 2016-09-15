@@ -22,7 +22,7 @@ serviceType: a skos:ConceptScheme;
 # CONCEPT: ACCREDIT SERVICE
 serviceType:AccreditService a skos:Concept;
     skos:prefLabel "Accredit Service"@en-US; 
-    skos:definition "The services provided by an organization that has been given the authority by a private, professional or governmental agency to conduct formal assessments, (often a document review and on-site visit), of a credential issuing organization to determine if it meets a specified set of standards or criteria."@en-US;
+    skos:definition "The services provided by an agent that has been given the authority by a private, professional or governmental agency to conduct formal assessments, (often a document review and on-site visit), of a credential issuing organization to determine if it meets a specified set of standards or criteria."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
@@ -36,35 +36,35 @@ serviceType:ApproveService a skos:Concept;
 # CONCEPT: CONFER SERVICE
 serviceType:ConferService a skos:Concept;
     skos:prefLabel "Confer Service"@en-US; 
-    skos:definition "The services provided by an organization that grants credential."@en-US;
+    skos:definition "The services provided by an agent that grants credential."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: ENDORSE SERVICE
 serviceType:EndorseService a skos:Concept;
     skos:prefLabel "Endorse Service"@en-US; 
-    skos:definition "The services provided by a private organization that public declares some level of quality of the services and may or may not be based on some type of criteria."@en-US;
+    skos:definition "The services provided by a private agent that public declares some level of quality of the services and may or may not be based on some type of criteria."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: MONITOR SERVICE
 serviceType:MonitorService a skos:Concept;
     skos:prefLabel "Monitor Service"@en-US; 
-    skos:definition "The services provided by an organization that include observation, checking, reporting of data, or keeping systemic records of a process, activity, or quality of a activity."@en-US;
+    skos:definition "The services provided by an agent that include observation, checking, reporting of data, or keeping systemic records of a process, activity, or quality of a activity."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: OFFER CREDENTIAL SERVICE
 serviceType:OfferCredentialService a skos:Concept;
     skos:prefLabel "Offer Credential Service"@en-US; 
-    skos:definition "The services provided by an organization that creates and awards a credential."@en-US;
+    skos:definition "The services provided by an agent that creates and awards a credential."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: RECOGNIZE SERVICE
 serviceType:RecognizeService a skos:Concept;
     skos:prefLabel "Recognize Service"@en-US; 
-    skos:definition "The services provided by an organization that   acknowledges another entity that may or may not have met some criteria."@en-US;
+    skos:definition "The services provided by an agent that acknowledges another entity that may or may not have met some criteria."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
@@ -78,56 +78,56 @@ serviceType:RegulateService a skos:Concept;
 # CONCEPT: RENEW SERVICE
 serviceType:RenewService a skos:Concept;
     skos:prefLabel "Renew Credential Service"@en-US; 
-    skos:definition "The services provided by an organization include renewal of an awarded credential."@en-US;
+    skos:definition "The services provided by an agent include renewal of an awarded credential."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: REVOCATION SERVICE
 serviceType:RevokeService a skos:Concept;
     skos:prefLabel "Revoke Credential Service"@en-US; 
-    skos:definition "Due process procedures created by an organization to removal a credential from the holder."@en-US;
+    skos:definition "Due process procedures created by an agent to removal a credential from the holder."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: UPDATE CREDENTIAL VERSION SERVICE
 serviceType:UpdateVersionService a skos:Concept;
     skos:prefLabel "Update Credential Version Service"@en-US; 
-    skos:definition "The services provided by an organization includes updating of a credential."@en-US;
+    skos:definition "The services provided by an agent includes updating of a credential."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: VALIDATE SERVICE
 serviceType:ValidateService a skos:Concept;
     skos:prefLabel "Validate Service"@en-US; 
-    skos:definition "Develops scientific general accepted procedures to validate the content that supports the credential."@en-US;
+    skos:definition "Develops scientific, generally accepted procedures to validate the content that supports the credential."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: VERIFY SERVICE
 serviceType:VerifyService a skos:Concept;
     skos:prefLabel "Verify Holder Service"@en-US; 
-    skos:definition "The services provided by an organization to verify to another person, organization or governmental agency that the credential is held by the holder."@en-US;
+    skos:definition "The services provided by an agent to verify to another person, organization or governmental agency that the credential is held by the holder."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: QUALITY ASSURANCE SERVICE
 serviceType:QualityAssuranceService a skos:Concept;
     skos:prefLabel "Quality Assurance Service"@en-US; 
-    skos:definition "The services provided by an organization that makes a judgment about the quality of service based on requirements, criteria and/or standards."@en-US;
+    skos:definition "The services provided by an agent that makes a judgment about the quality of service based on requirements, criteria and/or standards."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: CONTINUOUS IMPROVEMENT SERVICE
 serviceType:ContinuousImprovementService a skos:Concept;
     skos:prefLabel "Continuous Quality Improvement Service"@en-US; 
-    skos:definition "The services provided by an organization include assessing the presence and success of processes for creating an environment in which management and workers strive to constantly improve quality."@en-US;
+    skos:definition "The services provided by an agent include assessing the presence and success of processes for creating an environment in which management and workers strive to constantly improve quality."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        
 # CONCEPT: CONFORMANCE ASSESSMENT SERVICE
 serviceType:ConformanceAssessmentService a skos:Concept;
     skos:prefLabel "Conformance Assessment Service"@en-US; 
-    skos:definition "The services provided by an organization include activities to determine, directly or indirectly, that a resource meets relevant standards and fulfills relevant requirements."@en-US;
+    skos:definition "The services provided by an agent include activities to determine, directly or indirectly, that a resource meets relevant standards and fulfills relevant requirements."@en-US;
     skos:inScheme serviceType: ;
     vs:term_status "unstable" .
        

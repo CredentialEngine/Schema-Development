@@ -18,7 +18,8 @@ orgType: a skos:ConceptScheme;
     skos:hasTopConcept orgType:SecondarySchool ;
     skos:hasTopConcept orgType:Postsecondary ;
     skos:hasTopConcept orgType:TrainingProvider ;
-    skos:hasTopConcept orgType:BusinessAssociation ; 
+    skos:hasTopConcept orgType:BusinessAssociation ;
+    skos:hasTopConcept orgType:PrimarilyOnline ; 
     skos:hasTopConcept orgType:ProfessionalAssociation ; 
     skos:hasTopConcept orgType:LaborUnion ;
     skos:hasTopConcept orgType:Certification ; 
@@ -120,9 +121,17 @@ orgType:BusinessAssociation a skos:Concept;
     skos:definition "A membership organization primarily engaged in promoting the interests of their business members and providing them with services that may involve the provision of education and credentialing services."@en-US;
     skos:topConceptOf orgType: ;
     skos:inScheme orgType: ;
-    vs:term_status "unstable" .  
+    vs:term_status "unstable" .
+    
+# CONCEPT: PRIMARILY ONLINE
+orgType:PrimarilyOnline a skos:Concept;
+    skos:prefLabel "Primarily Online"@en-US; 
+    skos:definition "An organization that primarily operates online."@en-US;
+    skos:topConceptOf orgType: ;
+    skos:inScheme orgType: ;
+    vs:term_status "unstable" .      
        
-# CONCEPT: PRTOFESSIONAL ASSOCIATION
+# CONCEPT: PROFESSIONAL ASSOCIATION
 orgType:ProfessionalAssociation a skos:Concept;
     skos:prefLabel "Professional Association"@en-US; 
     skos:definition "A membership organization serving a profession that requires a significant amount of education, training, or experience or a license or certificate from a state or private authority to practice the profession. This organization normally sets requirements for entry into and maintaining membership in that profession that may involve the holding of recognized credentials."@en-US;
