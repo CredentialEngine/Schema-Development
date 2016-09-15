@@ -19,133 +19,157 @@
 ctdl:AccreditAction a rdfs:Class ;
     rdfs:label "Accredit Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent that certifies a resource as meeting a prescribed set of standards."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .
              
 ctdl:Agent a rdfs:Class ;
     rdfs:label "Agent" ;
     rdfs:comment "A resource that acts or has the power to act."@en-US ;
-    owl:equivalentClass dct:Agent .
+    owl:equivalentClass dct:Agent ;
+    dct:issued "2016-09-16"^^xsd:date .
        
 ctdl:ApprenticeshipCertificate a rdfs:Class ;
     rdfs:label "Apprenticeship Certificate" ;
     rdfs:comment "A credential earned through work-based learning and postsecondary earn-and-learn models that meet national standards and are applicable to industry trades and professions."@en-US ;
-    rdfs:subClassOf ctdl:Certificate . 
+    rdfs:subClassOf ctdl:Certificate ;
+    dct:issued "2016-09-16"^^xsd:date .     
     
 ctdl:ApproveAction a rdfs:Class ;
     rdfs:label "Approve Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent that pronounces a favorable judgment of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .   
     
 ctdl:AssessAction a rdfs:Class ;
     rdfs:label "Assess Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent that evaluates or estimates the ability or quality of a resource."@en-US ;
     dct:description "Assess actions include direct, indirect, formative and summative evaluation or estimation of the nature, ability, or quality of a resource, performance, or outcome."@en-US ;
-    rdfs:subClassOf schema:Action . 
+    rdfs:subClassOf schema:Action ;
+    dct:issued "2016-09-16"^^xsd:date .     
     
 ctdl:Assessment a rdfs:Class ;
     rdfs:label "Assessment" ;
-    rdfs:comment "Direct, indirect, formative and summative evaluation or estimation of the nature, ability, or quality of a resource, performance, or outcome of an action."@en-US .       
+    rdfs:comment "Direct, indirect, formative and summative evaluation or estimation of the nature, ability, or quality of a resource, performance, or outcome of an action."@en-US ;
+    dct:issued "2016-09-16"^^xsd:date .           
 
 ctdl:AssessmentProfile a rdfs:Class ;
     rdfs:label "Assessment Profile" ;
     rdfs:comment "A profiling entity that describes the key characteristics of a credential's assessment."@en-US ;
     dct:description "Characteristics described include, but are not limited to, processes for assessment development, maintenance, selection and evalutation as well as assessment examples and identification of assessment types."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:AssociateDegree a rdfs:Class ;
     rdfs:label "Associate Degree" ;
     rdfs:comment "An award level that normally requires at least 2 but less than 4 years of full-time equivalent college-level work."@en-US ;
-    rdfs:subClassOf ctdl:Degree . 
+    rdfs:subClassOf ctdl:Degree ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:BachelorDegree a rdfs:Class ;
     rdfs:label "Bachelor's Degree" ;
     rdfs:comment "An award level that normally requires at least 4 but not more than 5 years of full-time equivalent college-level work."@en-US ;
-    rdfs:subClassOf ctdl:Degree . 
+    rdfs:subClassOf ctdl:Degree ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:Badge a rdfs:Class ;
     rdfs:label "Badge" ;
     rdfs:comment "A recognition designed to be displayed as a marker of accomplishment, activity, achievement, skill, interest, association, or identity."@en-US ;
-    rdfs:subClassOf ctdl:Credential . 
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:Certificate a rdfs:Class ;
     rdfs:label "Certificate" ;
     rdfs:comment "A credential that designates requisite mastery of the knowledge and skills of an occupation, profession, or academic program."@en-US ;
-    rdfs:subClassOf ctdl:Credential . 
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:Certification a rdfs:Class ;
     rdfs:label "Certification" ;
     rdfs:comment "A time-limited, renewable non-degree credential awarded by an authoritative body to an individual or organization for demonstrating the designated knowledge, skills, and abilities to perform a specific job."@en-US ;
-    rdfs:subClassOf ctdl:Credential .
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:Competency a rdfs:Class ;
     rdfs:label "Competency" ;
     rdfs:comment "An assertion of measurable or observable knowledge, skills, and abilities necessary to successful performance of a peson in a given context."@en-US ;
-    rdfs:subClassOf schema:Intangible, asn:Statement .                      
+    rdfs:subClassOf schema:Intangible, asn:Statement ;
+    dct:issued "2016-09-16"^^xsd:date .                      
                         
 ctdl:CompetencyFramework a rdfs:Class ;
     rdfs:label "Competency Framework" ;
     rdfs:comment "An entity comprised of a logically related set of competencies."@en-US ;
-    rdfs:subClassOf schema:CreativeWork, asn:StandardDocument . 
+    rdfs:subClassOf schema:CreativeWork, asn:StandardDocument ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:ConditionProfile a rdfs:Class ;
     rdfs:label "Condition Profile" ;
     rdfs:comment "An entity relating a credential to profiles describing conditions to which the credential is subject during its lifecycle including the requirements to attain the credential."@en-US ;
     dct:description "Related profiles include competencies, assessments, courses, and credentials required to attain the subject credential."@en-US ;
-    rdfs:subClassOf schema:Intangible . 
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:ConferAction a rdfs:Class ;
     rdfs:label "Confer Action" ;
     rdfs:comment "An action by an authoritative agent to grant or bestow on a person the rights, privileges, and obligations of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction . 
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:ContactPoint a rdfs:Class ;
     rdfs:label "Contact Point" ;
     rdfs:comment "A contact point--for example, a Customer Complaints department."@en-US ;
     dct:description "The means for communicating with a designated agent."@en-US ;
-    owl:equivalentClass schema:ContactPoint . 
+    owl:equivalentClass schema:ContactPoint ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:CostProfile a rdfs:Class ;
     rdfs:label "Cost Profile" ;
     rdfs:comment "The type and nature of direct costs one would incur if one were to pursue attaining a credential."@en-US ;
     dct:description "Potential direct credential costs include background checks, standalone assessments, tuition fees, application fees, and learning resource fees."@en-US ;
-    rdfs:subClassOf schema:Intangible . 
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:Course a rdfs:Class ;
     rdfs:label "Course" ;
     rdfs:comment "A description of an educational course which may be offered as distinct instances at different times and places, or through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners."@en-US ;
     rdfs:subClassOf schema:CreativeWork ;
-    owl:equivalentClass schema:Course.     
+    owl:equivalentClass schema:Course ;
+    dct:issued "2016-09-16"^^xsd:date .     
     
 ctdl:CreateAction a rdfs:Class ;
     rdfs:label "Create Action" ;
     rdfs:comment "The act of deliberately creating/producing/generating/building a resulting resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction . 
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:Credential a rdfs:Class ;
     rdfs:label "Credential" ;
     rdfs:comment "A qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability."@en-US ;
     skos:scopeNote "The ctdl:Credential class is broadly defined to encompass credentials used across domains and communities of practice. The class should be used only when speaking of credentials in general. Subclasses of ctdl:Credential as defined by CTI (or other communities) should be used when referencing specific types of credentials."@en-US ;
     rdfs:subClassOf schema:CreativeWork ;
-    owl:equivalentClass obi:BadgeClass .
+    owl:equivalentClass obi:BadgeClass ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:CredentialAlignmentObject a rdfs:Class ;
     rdfs:label "Credential Alignment Object" ;
     rdfs:comment "An alignment to a credentialing framework."@en-US ;
     dct:description "Used to describe the alignment of a resource in the credentialing environment to frameworks such as concept schemes, specilized controlled lists, and competencies."@en-US ;
-    rdfs:subClassOf schema:AlignmentObject . 
+    rdfs:subClassOf schema:AlignmentObject ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:CredentialAssertion a rdfs:Class ;
     rdfs:label "Credential Assertion" ;
     rdfs:comment "The class of representations of an awarded credential, used to share information about a credential belonging to one holder."@en-US ;
     dct:description "Aligns with Assertion in the Open Badges specification."@en-US ;
     rdfs:subClassOf ctdl:Credential ;
-    owl:equivalentClass obi:Assertion . 
+    owl:equivalentClass obi:Assertion ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:CredentialingAction a rdfs:Class ;
     rdfs:label "Credentialing Action" ;
     rdfs:comment "An action taken by an agent affecting the status of an object resourse."@en-US ;
     dct:description "In CTDL, the CredentialingAction is a superclass used to aggregate a family of subclasses used in CTDL descriptions such as \"AccreditAction\", \"EndorseAction\", \"ConferAction\", and \"RevokeAction\"."@en-US ;
-    rdfs:subClassOf schema:Action . 
+    rdfs:subClassOf schema:Action ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:CredentialOrganization a rdfs:Class ;
     rdfs:label "Credential Organization" ;
@@ -155,171 +179,204 @@ ctdl:CredentialOrganization a rdfs:Class ;
 ctdl:CredentialPerson a rdfs:Class ;
     rdfs:label "Credential Person" ;
     rdfs:comment "An person who plays one or more key roles in the lifecycle of a credential."@en-US ;
-    rdfs:subClassOf schema:Person, ctdl:Agent, dct:Agent .  
+    rdfs:subClassOf schema:Person, ctdl:Agent, dct:Agent ;
+    dct:issued "2016-09-16"^^xsd:date .  
 
 ctdl:Degree a rdfs:Class ;
     rdfs:label "Degree" ;
     rdfs:comment "An academic credential conferred upon completion of a program or course of study, typically over multiple years at postsecondary education institutions."@en-US ;
-    rdfs:subClassOf ctdl:Credential .
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:DigitalBadge a rdfs:Class ;
     rdfs:label "Digital Badge" ;
     rdfs:comment "A badge offered in digital form."@en-US ;
-    rdfs:subClassOf ctdl:Badge .
+    rdfs:subClassOf ctdl:Badge ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:Diploma a rdfs:Class ;
     rdfs:label "Diploma" ;
     rdfs:comment "A credential awarded by educational institutions for successfully completion of a course of study or its equivalent."@en-US ;
-    rdfs:subClassOf ctdl:Credential .
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:DoctoralDegree a rdfs:Class ;
     rdfs:label "Doctoral Degree" ;
     rdfs:comment "The highest award level to be earned for postsecondary study."@en-US ;
-    rdfs:subClassOf ctdl:Degree .
+    rdfs:subClassOf ctdl:Degree ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:DurationProfile a rdfs:Class ;
     rdfs:label "Duration Profile" ;
     rdfs:comment "A resource describing the temporal aspects of a resource."@en-US ;
-    dct:description "Temporal aspects include exact, minimum, and maximum timeframes of an activity."@en-US .
+    dct:description "Temporal aspects include exact, minimum, and maximum timeframes of an activity."@en-US ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:EarningsProfile a rdfs:Class ;
     rdfs:label "Earnings Profile" ;
     rdfs:comment "An resource that describes earning and related statistical information for a given credential."@en-US ;
-    rdfs:subClassOf schema:Intangible .                     
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .                     
                             
 ctdl:EmploymentOutcomeProfile a rdfs:Class ;
     rdfs:label "Employment Outcome Profile" ;
     rdfs:comment "The employment outcomes and related statistical information for a given credential."@en-US ;
-    rdfs:subClassOf schema:Intangible .      
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .      
     
 ctdl:EndorseAction a rdfs:Class ;
     rdfs:label "Endorse Action" ;
     rdfs:comment "An action by an authoritative agent providing public support for a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction . 
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date . 
 
 ctdl:GeneralEducationDevelopment a rdfs:Class ;
     rdfs:label "General Education Development (GED)" ;
     rdfs:comment "A credential awarded by examination that demonstrates that an individual has acquired secondary school-level academic skills."@en-US ;
-    rdfs:subClassOf ctdl:Diploma .
+    rdfs:subClassOf ctdl:Diploma ;
+    dct:issued "2016-09-16"^^xsd:date .
         
 ctdl:GeoCoordinates a rdfs:Class ;
     rdfs:label "Geographic Coordinates" ;
     rdfs:comment "The geographic coordinates of a place or event."@en-US ;
     dct:description "The geo-political region or jurisdiction of applicability."@en-US ;
     rdfs:subClassOf schema:StructuredValue ;
-    owl:equivalentClass schema:GeoCoordinates .
+    owl:equivalentClass schema:GeoCoordinates ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:HoldersProfile a rdfs:Class ;
     rdfs:label "Holders Profile" ;
     rdfs:comment "The count and related stastical information of holders of a given credential."@en-US ;
-    rdfs:subClassOf schema:Intangible . 
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:JourneymanCertificate a rdfs:Class ;
     rdfs:label "Journeyman Certificate" ;
     rdfs:comment "A credential awarded to skilled workers on successful completion of an apprenticeship in industry trades and professions."@en-US ;
-    rdfs:subClassOf ctdl:ApprenticeshipCertificate .
+    rdfs:subClassOf ctdl:ApprenticeshipCertificate ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:JurisdictionProfile a rdfs:Class ;
     rdfs:label "Jurisdiction Profile" ;
     rdfs:comment "Geo-political informaton about applicable geographic areas and their exceptions."@en-US ;
-    rdfs:subClassOf ctdl:GeoCoordinates, schema:GeoCoordinates.  
+    rdfs:subClassOf ctdl:GeoCoordinates, schema:GeoCoordinates;
+    dct:issued "2016-09-16"^^xsd:date .  
     
 ctdl:LearningOpportunity a rdfs:Class ;
     rdfs:label "Learning Opportunity" ;
-    rdfs:comment "Structured and unstructured learning and development opportunities based in direct experience, formal and informal study, observation, and involvement in discourse and practice."@en-US . 
+    rdfs:comment "Structured and unstructured learning and development opportunities based in direct experience, formal and informal study, observation, and involvement in discourse and practice."@en-US ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:LearningOpportunityProfile a rdfs:Class ;
     rdfs:label "Learning Opportunity Profile" ;
     rdfs:comment "A resource describing an learning opportunity."@en-US ;
     dct:description "Educational opportunities include required and optional programs, courses of study, and other structured experiences intended to serve as educational or training events."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:LearningResource a rdfs:Class ;
     rdfs:label "Learning Resource" ;
     rdfs:comment "An entity that is used as part of an Educational Activity (e.g. a textbook) or that describes (e.g. a lesson plan) or records the Educational Activity (e.g. an audio- or video-recording of a lesson)."@en-US ;
     rdfs:subClassOf schema:CreativeWork ;
-    owl:equivalentClass asn:LearningResource .  
+    owl:equivalentClass asn:LearningResource ;
+    dct:issued "2016-09-16"^^xsd:date .  
     
 ctdl:License a rdfs:Class ;
     rdfs:label "License" ;
     rdfs:comment "A credential awarded by a government agency that constitutes legal authority to do a specific job and/or utilize a specific item, system or infrastructure and are typically earned through some combination of degree or certificate attainment, certifications, assessments, work experience, and/or fees, and are time-limited and must be renewed periodically."@en-US ;
-    rdfs:subClassOf ctdl:Credential . 
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:MasterCertificate a rdfs:Class ;
     rdfs:label "Master Certificate" ;
     rdfs:comment "A credential awarded upon demonstration through apprenticeship of the the highest level of skills and performance in industry trades and professions."@en-US ;
-    rdfs:subClassOf ctdl:ApprenticeshipCertificate .
+    rdfs:subClassOf ctdl:ApprenticeshipCertificate ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:MasterDegree a rdfs:Class ;
     rdfs:label "Master Degree" ;
     rdfs:comment "An award level that requires the successful completion of a program of study of at least the full-time equivalent of 1 but not more than 2 academic years of work beyond the bachelor's degree."@en-US ;
-    rdfs:subClassOf ctdl:Degree . 
+    rdfs:subClassOf ctdl:Degree ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:MicroCredential a rdfs:Class ;
     rdfs:label "Micro-Credential" ;
     rdfs:comment "A credential that attests to achievement of a specific knowledge, skill, or competency."@en-US ;
-    rdfs:subClassOf ctdl:Credential .
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:MonitorAction a rdfs:Class ;
     rdfs:label "Monitor Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent that observes, checks, or keeps a systemic record of a process, activity, or quality of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .  
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .  
     
 ctdl:OfferAction a rdfs:Class ;
     rdfs:label "Offer Action" ;
     rdfs:comment "An action by an authoritative agent offering access to a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction . 
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:OpenBadge a rdfs:Class ;
     rdfs:label "Open Badge" ;
     rdfs:comment "An Open Badge is a visual symbol containing verifiable claims in accordance with the Open Badges specification and delivered digitally."@en-US ;
-    rdfs:subClassOf ctdl:Badge .                               
+    rdfs:subClassOf ctdl:Badge ;
+    dct:issued "2016-09-16"^^xsd:date .                               
 
 ctdl:OwnAction a rdfs:Class ;
     rdfs:label "Qwn Action" ;
     rdfs:comment "An action asserting rights by an authoritative agent to possess, defend, transfer, license, and grant conditional access to a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:PostalAddress a rdfs:Class ;
     rdfs:label "Postal Address" ;
     rdfs:comment "The mailing address."@en-US ;
     rdfs:subClassOf ctdl:ContactPoint ;
-    owl:equivalentClass schema:PostalAddress . 
+    owl:equivalentClass schema:PostalAddress ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:ProcessProfile a rdfs:Class ;
     rdfs:label "Process Profile" ;
     rdfs:comment "The type, nature, and related information about a process related to a credential."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
 
 ctdl:ctdl:ProfessionalDoctorate a rdfs:Class ;
     rdfs:label "Professional Doctorate" ;
     rdfs:comment "A doctoral degree conferred upon completion of a program providing the knowledge and skills for the recognition, credential, or license required for professional practice."@en-US ;
-    rdfs:subClassOf ctdl:DoctoralDegree .   
+    rdfs:subClassOf ctdl:DoctoralDegree ;
+    dct:issued "2016-09-16"^^xsd:date .   
     
 ctdl:QualityAssuranceCredential a rdfs:Class ;
     rdfs:label "QualityAssuranceCredential" ;
     rdfs:comment "A credential assuring that an organization, program, or awarded credential meets prescribed requirements and may include development and administration of qualifying examinations."@en-US ;
-    rdfs:subClassOf ctdl:Credential .
+    rdfs:subClassOf ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:RecognizeAction a rdfs:Class ;
     rdfs:label "Recognize Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent acknowledging the validity of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:RegulateAction a rdfs:Class ;
     rdfs:label "Regulate Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent enforcing the legal requirements of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:RenewAction a rdfs:Class ;
     rdfs:label "Renew Action" ;
     rdfs:comment "An action by an authoritative agent renewing an existing credential assertion."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction . 
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:RenewalProfile a rdfs:Class ;
     rdfs:label "Renewal Profile" ;
     rdfs:comment "The conditions and methods by which a credential must be renewed by its holder."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:ResearchDoctorate a rdfs:Class ;
     rdfs:label "Research Doctorate" ;
@@ -329,42 +386,50 @@ ctdl:ResearchDoctorate a rdfs:Class ;
 ctdl:RevocationProfile a rdfs:Class ;
     rdfs:label "Revocation Profile" ;
     rdfs:comment "The conditions and methods by which a credential can be removed from a holder."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:RevokeAction a rdfs:Class ;
     rdfs:label "Revoke Action" ;
     rdfs:comment "An action by an authoritative agent removing an credential assertion from the credential holder based on violations."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction . 
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date . 
     
 ctdl:SecondarySchoolDiploma a rdfs:Class ;
     rdfs:label "Secondary School Diploma" ;
     rdfs:comment "A diploma awarded by secondary education institutions for successful completion of a secondary school program typically lasting four years."@en-US ;
-    rdfs:subClassOf ctdl:Diploma .
+    rdfs:subClassOf ctdl:Diploma ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:TaskProfile a rdfs:Class ;
     rdfs:label "Task Profile" ;
     rdfs:comment "A profile describing the required or recommended tasks to be performed by a holder of, or applicant for, a credential assertion."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:UpdateAction a rdfs:Class ;
     rdfs:label "Update Action" ;
     rdfs:comment "An action by an authoritative agent updating the current version of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:ValidateAction a rdfs:Class ;
     rdfs:label "Validate Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent checking and approving the validity or accuracy of a resource."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:VerificationServiceProfile a rdfs:Class ;
     rdfs:label "Verification Service Profile" ;
     rdfs:comment "An resource describing the means by which someone can verify whether a credential has been attained by a person."@en-US ;
-    rdfs:subClassOf schema:Intangible .
+    rdfs:subClassOf schema:Intangible ;
+    dct:issued "2016-09-16"^^xsd:date .
     
 ctdl:VerifyAction a rdfs:Class ;
     rdfs:label "Verify Action" ;
     rdfs:comment "An action by an independent, neutral, and authoritative agent establishing the truth, accuracy, or reality of a credential assertion."@en-US ;
-    rdfs:subClassOf ctdl:CredentialingAction .                                                                                      
+    rdfs:subClassOf ctdl:CredentialingAction ;
+    dct:issued "2016-09-16"^^xsd:date .                                                                                      
                                        
 #====================
 # ENUMERATION CLASSES
@@ -377,3 +442,84 @@ ctdl:ActionStatus a skos:ConceptScheme, schema:Enumeration ;
 #====================
 # PROPERTIES
 #====================
+
+ctdl:accreditedBy a rdf:Property ;
+    rdfs:label "Accredited By"@en-US ;
+    rdfs:comment "An agent that accredits the described resource."@en-us ;
+    schema:rangeIncludes ctdl:CredentialOrganization, ctdl:CredentialPerson ;
+    schema:domainIncludes ctdl:AssessmentProfile, ctdl:Credential, ctdl:CredentialOrganization, ctdl:CredentialPerson, ctdl:LearningOpportunityProfile ; 
+    dct:issued "2016-09-16"^^xsd:date .
+        
+ctdl:accredits a rdf:Property ;
+    rdfs:label "Accredits"@en-US ;
+    rdfs:comment "The independent, neutral and authoritative agent being described certifies the resource being referenced as meeting prescribed standards."@en-us ; 
+    schema:rangeIncludes ctdl:Credential, ctdl:ApprenticeshipCertificate, ctdl:Badge, ctdl:JourneymanCertificate, ctdl:MasterCertificate, ctdl:Certificate, ctdl:Certification, ctdl:DigitalBadge, ctdl:Degree, ctdl:AssociateDegree, ctdl:BachelorDegree, ctdl:MasterDegree, ctdl:DoctoralDegree, ctdl:ProfessionalDoctorate, ctdl:ResearchDoctorate, ctdl:Diploma, ctdl:SecondarySchoolDiploma, ctdl:GeneralEducationDevelopment, ctdl:License, ctdl:MicroCredential, ctdl:OpenBadge, ctdl:QualityAssuranceCredential, ctdl:CredentialOrganization, ctdl:CredentialPerson, ctdl:LearningOpportunityProfile, ctdl:AssessmentProfile, ctdl:CompetencyFramework, ctdl:Competency ;
+    schema:domainIncludes ctdl:CredentialOrganization, ctdl:CredentialPerson ;
+    dct:issued "2016-09-16"^^xsd:date .
+    
+ctdl:actionStatusType a rdf:Property ;
+    rdfs:label "Action Status Type"@en-US ;
+    rdfs:comment "Indicates the current disposition of the Action."@en-us ;
+    dct:description "Concepts included: ActiveActionStatus, CompletedActionStatus, FailedActionStatus, and PotentialActionStatus."@en-us ;
+    schema:rangeIncludes schema:ActionStatusType ;
+    schema:domainIncludes ctdl:CredentialingAction ;
+    owl:equivalentProperty schema:actionStatusType ; 
+    dct:issued "2016-09-16"^^xsd:date .
+        
+ctdl:address a rdf:Property ;
+    rdfs:label "Address"@en-US ;
+    rdfs:comment "Physical address of the resource."@en-us ;
+    schema:rangeIncludes ctdl:PostalAddress ;
+    schema:domainIncludes ctdl:CredentialOrganization, ctdl:CredentialPerson, ctdl:GeoCoordinates ;
+    owl:equivalentProperty schema:address ; 
+    dct:issued "2016-09-16"^^xsd:date .
+        
+ctdl:addressCountry a rdf:Property ;
+    rdfs:label "Address Country"@en-US ;
+    rdfs:comment "The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code."@en-us ;
+    schema:rangeIncludes rdfs:Literal ;
+    schema:domainIncludes ctdl:PostalAddress ;
+    owl:equivalentProperty schema:addressCountry ; 
+    dct:issued "2016-09-16"^^xsd:date .
+        
+ctdl:addressLocality a rdf:Property ;
+    rdfs:label "Address Locality"@en-US ;
+    rdfs:comment "The locality. For example, Mountain View."@en-us ;;  
+    schema:rangeIncludes rdfs:Literal ;
+    schema:domainIncludes ctdl:PostalAddress ;
+    owl:equivalentProperty schema:addressLocality ; 
+    dct:issued "2016-09-16"^^xsd:date . 
+        
+ctdl:addressRegion a rdf:Property ;
+    rdfs:label "Address Region"@en-US ;
+    rdfs:comment "The region. For example, California."@en-us ;
+    schema:rangeIncludes rdfs:Literal ;
+    schema:domainIncludes ctdl:PostalAddress ;
+    owl:equivalentProperty schema:addressRegion ; 
+    dct:issued "2016-09-16"^^xsd:date .
+            
+ctdl:administrationProcess a rdf:Property ;
+    rdfs:label "Administration Process"@en-US ;
+    rdfs:comment "A profile of the process by which the resource being described, or aspects of it, are administered."@en-us ;
+    schema:rangeIncludes ctdl:ProcessProfile ;
+    schema:domainIncludes ctdl:AssessmentProfile, ctdl:Credential ;
+    dct:issued "2016-09-16"^^xsd:date . 
+            
+ctdl:@@@ a rdf:Property ;
+    rdfs:label "@@@"@en-US ;
+    rdfs:comment "@@@"@en-us ;
+    dct:description "@@@"@en-us ;
+    dct:source @@@ ;  
+    schema:rangeIncludes @@@ ;
+    schema:domainIncludes @@@ ;
+    rdfs:subPropertyOf @@@ ;
+    owl:equivalentProperty @@@ ; 
+    dct:issued "2016-09-16"^^xsd:date ;
+    dct:modified "@@@"^^xsd:date . 
+            
+
+    
+    
+
+
+    
