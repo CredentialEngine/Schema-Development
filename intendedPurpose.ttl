@@ -22,27 +22,27 @@ intendedPurpose: a skos:ConceptScheme;
 # CONCEPT: GENERAL EDUCATION
 intendedPurpose:GeneralEducation a skos:Concept;
     skos:prefLabel "GeneralEducation"@en-US; 
-    skos:definition "The holder's intended purpose in earning the credential is for general education."@en-US;
+    skos:definition "The purpose of the credential as identified by the relevant agent is for the general education of the holder."@en-US;
     skos:inScheme intendedPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: JOB OR CAREER PREPARATION
 intendedPurpose:JobOrCareerPreparation a skos:Concept;
     skos:prefLabel "Job/CareerPreparation"@en-US; 
-    skos:definition "The holder's intended purpose in earning the credential is for job or career preparation."@en-US;
+    skos:definition "The purpose of the credential as identified by the relevant agent is for job or career preparation of the holder. "@en-US;
     skos:inScheme intendedPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: PRIOR LEARNING EXPERIENCE
 intendedPurpose:priorExperience a skos:Concept;
     skos:prefLabel "Prior Learning Experience"@en-US; 
-    skos:definition "The holder's intended purpose in earning the credential is for prior learning experience."@en-US;
+    skos:definition "The purpose of the credential as identified by the relevant agent is for prior determining learning experience of the holder."@en-US;
     skos:inScheme intendedPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: MID-CAREER LEVEL ADVANCEMENT (???)
 intendedPurpose:MidCareer a skos:Concept;
     skos:prefLabel "Mid-Career Level"@en-US; 
-    skos:definition "The holder's intended purpose in earning the credential is for mid-career level (advancement?)."@en-US;
+    skos:definition "The purpose of the credential as identified by the relevant agent is for mid-career preparation and advancement of the holder."@en-US;
     skos:inScheme intendedPurpose: ;
     vs:term_status "unstable" .

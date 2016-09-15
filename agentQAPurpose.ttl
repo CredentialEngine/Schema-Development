@@ -22,62 +22,55 @@ qaPurpose: a skos:ConceptScheme;
 # CONCEPT: GOVERNMENT REQUIREMENTS
 qaPurpose:GovernmentRequirements a skos:Concept;
     skos:prefLabel "Government Requirements"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to meet government requirements."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to determine if government regulations/requirements have been met."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: ENTRY TO PRACTICE
 qaPurpose:EntryToPractice a skos:Concept;
     skos:prefLabel "Entry to Practice"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to provide entry into practice."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to determine if the credential issuer meets criteria or standards for entry into practice of a specific occupation/profession."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: FEDERAL FINANCIAL AID
 qaPurpose:FederalFinancialAid a skos:Concept;
     skos:prefLabel "Enables Federal Financial Aid"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to enable federal financial aid."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to enable the credential issuer to eligible for federal financial aid."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: STATE FINANCIAL AID
 qaPurpose:StateFinancialAid a skos:Concept;
     skos:prefLabel "Enables State Financial Aid"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to enable state financial aid."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to enable the certificate issuer to be eligible for state financial aid."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
-# CONCEPT: EMPLOYER TYUITIONL AID
+# CONCEPT: EMPLOYER TUITION AID
 qaPurpose:EmployerTuitionAid a skos:Concept;
     skos:prefLabel "Enables Employer Tuition Aid"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to enable employer tuition aid."@en-US;
-    skos:inScheme qaPurpose: ;
-    vs:term_status "unstable" .
-       
-# CONCEPT: UNACCREDITED PROGRAM FOUNDATION AID
-qaPurpose:UnaccreditedProgramFoundationAid a skos:Concept;
-    skos:prefLabel "Enables Unaccredited Program Foundation Aid"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to enable unaccredited program foundation aid."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to enable employer tuition aid to be awarded based on some criteria."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: ASSIST EMPLOYERS
 qaPurpose:AssistEmployers a skos:Concept;
     skos:prefLabel "Assists Employers Seeking Competent Practitioners"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to assist employers seeking competent practitioners."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to assist employers seeking competent practitioners to identify quality credentials that aligned with their needs."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: PROMOTE CAREER MOBILITY
 qaPurpose:PromoteCareerMobility a skos:Concept;
     skos:prefLabel "Promotes Professional Advancement and Career Mobility"@en-US; 
-    skos:definition "Assists Employers Seeking Competent Practitioners"@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to identify quality credentials/institutions to promote professional advancement and career mobility."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: FULFILLS ELIGIBILITY REQUIREMENTS
 qaPurpose:FulfillsEligibilityRequirements a skos:Concept;
     skos:prefLabel "Fulfills Eligibility Requirements"@en-US; 
-    skos:definition "The main purpose of the agent's quality assurance is to fulfill eligibility requirements."@en-US;
+    skos:definition "A main purpose of the agent's quality assurance is to ensure that eligibility requirements are being met for a credential."@en-US;
     skos:inScheme qaPurpose: ;
     vs:term_status "unstable" .
