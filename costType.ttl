@@ -7,7 +7,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix bibo: <http://purl.org/ontology/bibo/status/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
 # COST TYPE VOCABULARY DESCRIPTION
@@ -16,48 +15,42 @@ costType: a skos:ConceptScheme;
     dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
     dc:description "A concept scheme that defines the types of costs of a resource."@en-US ;
     dct:created "2016-09-07"^^xsd:date ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
-    adms:status bibo:draft . 
+    dct:modified "2016-09-28"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .                         
    
 # CONCEPT: AGGREGATE COST
 costType:AggregateCost a skos:Concept;
     skos:prefLabel "Aggregate Cost"@en-US; 
     skos:definition "The sum of direct costs."@en-US;
-    skos:inScheme costType: ;
-    vs:term_status "unstable" .
+    skos:inScheme costType: .
 
 # CONCEPT: APPLICATION
 costType:Application a skos:Concept;
     skos:prefLabel "Application"@en-US; 
     skos:definition "Direct cost of applying for a learning opportunity (including programs of study), credential, assessment, or required task."@en-US;
-    skos:inScheme costType: ;
-    vs:term_status "unstable" .
+    skos:inScheme costType: .
     
 # CONCEPT: BACKGROUND CHECK
 costType:BackgroundCheck a skos:Concept;
     skos:prefLabel "Background Check"@en-US; 
     skos:definition "Direct cost for performance of a required backgroung check."@en-US;
-    skos:inScheme costType: ;
-    vs:term_status "unstable" . 
+    skos:inScheme costType: . 
    
 # CONCEPT: LEARNING RESOURCE
 costType:LearningResource a skos:Concept;
     skos:prefLabel "Learning Resource"@en-US; 
     skos:definition "Direct costs for learning resources such as textbooks, workbooks, labratory fees, and related supplies."@en-US;
-    skos:inScheme costType: ;
-    vs:term_status "unstable" .
+    skos:inScheme costType: .
     
 # CONCEPT: STANDALONE/EXTRA ASSESSMENT
 costType:StandaloneAssessment a skos:Concept;
     skos:prefLabel "Standalone/Extra Assessment"@en-US; 
     skos:definition "Direct costs of assessments not included as part of a learning opportunity,"@en-US;
-    skos:inScheme costType: ;
-    vs:term_status "unstable" . 
+    skos:inScheme costType: . 
    
 # CONCEPT: TUITION
 costType:Tuition a skos:Concept;
     skos:prefLabel "Tuition"@en-US; 
     skos:definition "Direct costs charged for teaching or instruction by a school, college, or university."@en-US;
-    skos:inScheme costType: ;
-    vs:term_status "unstable" .
+    skos:inScheme costType: .
           
