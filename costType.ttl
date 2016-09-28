@@ -19,6 +19,13 @@ costType: a skos:ConceptScheme;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
     adms:status bibo:draft . 
    
+# CONCEPT: AGGREGATE COST
+costType:AggregateCost a skos:Concept;
+    skos:prefLabel "Aggregate Cost"@en-US; 
+    skos:definition "The sum of direct costs."@en-US;
+    skos:inScheme costType: ;
+    vs:term_status "unstable" .
+
 # CONCEPT: APPLICATION
 costType:Application a skos:Concept;
     skos:prefLabel "Application"@en-US; 
