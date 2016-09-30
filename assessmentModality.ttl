@@ -19,6 +19,13 @@ assessMode: a skos:ConceptScheme;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
     adms:status bibo:draft . 
    
+# CONCEPT: DIAGNOSTIC
+assessMode:diagnostic a skos:Concept;
+    skos:prefLabel "Diagnostic Assessment"@en-US; 
+    skos:definition "An assessment before beginning a learning activity to determine a learner's prior knowledge and misconceptions."@en-US;
+    skos:inScheme assessMode: ;
+    vs:term_status "unstable" .
+
 # CONCEPT: FORMATIVE
 assessMode:Formative a skos:Concept;
     skos:prefLabel "Formative Assessment"@en-US; 
