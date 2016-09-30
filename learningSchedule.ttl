@@ -16,6 +16,7 @@ learnSchedule: a skos:ConceptScheme;
     dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
     dc:description "A concept scheme that defines the types of learning schedule."@en-US ;
     dct:created "2016-09-08"^^xsd:date ;
+    dct:modified "2016-09-30"^^xsd:date ;    
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
     adms:status bibo:draft . 
    
@@ -23,26 +24,16 @@ learnSchedule: a skos:ConceptScheme;
 learnSchedule:FullTime a skos:Concept;
     skos:prefLabel "Full-Time"@en-US; 
     skos:definition "A full-time learning schedule supports a focus on academic and skills development that is intensive and without interruption."@en-US;
-    skos:inScheme learnSchedule: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnSchedule: .
    
 # CONCEPT: PART-TIME
 learnSchedule:PartTime a skos:Concept;
     skos:prefLabel "Part-Time"@en-US; 
     skos:definition "A part-time learning schedule supports academic and skills development that is less than full-time and shares focus with other activities such as work and family commitments."@en-US;
-    skos:inScheme learnSchedule: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnSchedule: .
        
 # CONCEPT: SELF-PACED
 learnSchedule:SelfPaced@ a skos:Concept;
     skos:prefLabel "Self-Paced@"@en-US; 
     skos:definition "A self-paced learning schedule supports academic and skills development based on the needs of individual learner."@en-US;
-    skos:inScheme learnSchedule: ;
-    vs:term_status "unstable" .
-       
-# CONCEPT: WHOLE COURSE
-learnSchedule:WholeCourse a skos:Concept;
-    skos:prefLabel "Whole Course"@en-US; 
-    skos:definition "[TBD]"@en-US;
-    skos:inScheme learnSchedule: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnSchedule: .
