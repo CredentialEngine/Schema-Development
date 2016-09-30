@@ -12,13 +12,12 @@
 
 # LEARNING SCHEDULE TYPE VOCABULARY DESCRIPTION
 learnSchedule: a skos:ConceptScheme;
-    dc:title "CTI Cost Type Vocabulary" ;
+    dc:title "CTI Learning Schedule Vocabulary" ;
     dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
     dc:description "A concept scheme that defines the types of learning schedule."@en-US ;
     dct:created "2016-09-08"^^xsd:date ;
     dct:modified "2016-09-30"^^xsd:date ;    
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
-    adms:status bibo:draft . 
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .                         
    
 # CONCEPT: FULL-TIME
 learnSchedule:FullTime a skos:Concept;
