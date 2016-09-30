@@ -16,26 +16,23 @@ assessMode: a skos:ConceptScheme;
     dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
     dc:description "A concept scheme that defines the modalities of assessment."@en-US ;
     dct:created "2016-09-07"^^xsd:date ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
-    adms:status bibo:draft . 
+    dct:modified "2016-09-30"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .                         
    
 # CONCEPT: DIAGNOSTIC
 assessMode:diagnostic a skos:Concept;
     skos:prefLabel "Diagnostic Assessment"@en-US; 
     skos:definition "An assessment before beginning a learning activity to determine a learner's prior knowledge and misconceptions."@en-US;
-    skos:inScheme assessMode: ;
-    vs:term_status "unstable" .
+    skos:inScheme assessMode: .
 
 # CONCEPT: FORMATIVE
 assessMode:Formative a skos:Concept;
     skos:prefLabel "Formative Assessment"@en-US; 
-    skos:definition "Formal and informal assessment procedures conducted during the learning process to support intentional modification in teaching and learning activities in order to improve learner attainment."@en-US;
-    skos:inScheme assessMode: ;
-    vs:term_status "unstable" .
+    skos:definition "Formal and informal assessment procedures conducted during the learning process to support intentional modification in teaching and learning activities in order to improve learner attainment."@en-US ;
+    skos:inScheme assessMode: .
   
 # CONCEPT: SUMMATIVE
 assessMode:Summative a skos:Concept ;
     skos:prefLabel "Summative Assessment"@en-US ; 
     skos:definition "Assessment of learning at the end of an instructional activity to determine whether some established standard or benchmark has been achieved."@en-US ;
-    skos:inScheme assessMode: ;
-    vs:term_status "unstable" .
+    skos:inScheme assessMode: .
