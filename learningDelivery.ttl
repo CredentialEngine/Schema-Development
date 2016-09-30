@@ -16,68 +16,53 @@ learnDelivery: a skos:ConceptScheme;
     dc:creator "Credential Transparency Initiative (CTI)"@en-US ;
     dc:description "A concept scheme that defines the types of learning delivery."@en-US ;
     dct:created "2016-09-08"^^xsd:date ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
-    adms:status bibo:draft . 
+    dct:modified "2016-09-30"^^xsd:date ;    
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .                         
    
 # CONCEPT: BLENDED LEARNING
 learnDelivery:BlendedLearning a skos:Concept;
     skos:prefLabel "Blended Learning"@en-US; 
     skos:definition "Instructional activity in which a student learns through a combination of content delivery through digital and online media and through face-to-face or technology supported synchronous interactions among students and instructor."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
     
 # CONCEPT: BROADCAST
 learnDelivery:Broadcast a skos:Concept;
     skos:prefLabel "Broadcast"@en-US; 
     skos:definition "Technology-mediated learning based on simultaneous, one-way communication of instructional content from the instructor to the learners."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
     
 # CONCEPT: COMPETENCY BASED
 learnDelivery:CompetencyBased a skos:Concept;
     skos:prefLabel "Competency Based"@en-US; 
     skos:definition "Progress through a learning opportunity, task or assessment based on the attainment of competencies."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .        
+    skos:inScheme learnDelivery: .       
        
 # CONCEPT: CORRESPONDENCE
 learnDelivery:Correspondence a skos:Concept;
     skos:prefLabel "Correspondence"@en-US; 
     skos:definition "Learning based primarily on asynchronous, written communications between learner and instructor using conventional postal mechanisms."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
-    
-# CONCEPT: EARLY COLLEGE
-learnDelivery:EarlyCollege a skos:Concept;
-    skos:prefLabel "Early College"@en-US; 
-    skos:definition "[TBD]"@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
     
 # CONCEPT: FACE TO FEACE
 learnDelivery:FaceToFace a skos:Concept;
     skos:prefLabel "Face to Face"@en-US; 
     skos:definition "Learning that takes place with instructor and learners in each other's presence."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
        
 # CONCEPT: INDEPENDENT STUDY
 learnDelivery:IndependentStudy a skos:Concept;
     skos:prefLabel "Independent Study"@en-US; 
     skos:definition "A learning activity that is undertaken by an individual with little to no supervision."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
     
 # CONCEPT: INTERACTIVE MEDIA
 learnDelivery:InteractiveMedia a skos:Concept;
     skos:prefLabel "Interactive Audio/Video"@en-US; 
     skos:definition "A learning activity in which a computer-based system responds to the learner's actions by presenting content through various forms of media (e.g., moving image, animation, video, audio, and video games)."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
     
 # CONCEPT: ONLINE
 learnDelivery:Online a skos:Concept;
     skos:prefLabel "Online"@en-US; 
     skos:definition "A computer network mediated learning experience."@en-US;
-    skos:inScheme learnDelivery: ;
-    vs:term_status "unstable" .
+    skos:inScheme learnDelivery: .
