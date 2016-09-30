@@ -41,7 +41,7 @@ orgType:SecondarySchool a skos:Concept;
     skos:narrower orgType:Magnet ;
     skos:narrower orgType:Technical ;
     skos:narrower orgType:Alternative ;            
-    skos:inScheme orgType: 
+    skos:inScheme orgType: .
     
 # CONCEPT: HIGH SCHOOL
 orgType:HighSchool a skos:Concept;
