@@ -17,33 +17,35 @@ agentSector: a skos:ConceptScheme;
    dc:description "A concept scheme that defines an agent's categorization in the public/private sectors."@en-US ;
    dct:created "2016-09-07"^^xsd:date ;
    dct:source "Sources consulted include Integrated Postsecondary Education Data System (IPEDS)."@en-US ;
-   dct:license <http://creativecommons.org/licenses/by/4.0/> ;                         
-   adms:status bibo:draft . 
+   dct:license <http://creativecommons.org/licenses/by/4.0/> .                         
    
 # CONCEPT: BUSINESS-INDUSTRY ASSOCIATION
 agentSector:BusinessIndustryAssociation a skos:Concept;
   skos:prefLabel "Business-Industry Association"@en-US; 
   skos:definition "A membership organization primarily engaged in promoting the interests of their business members and providing them with services that may involve the provision of education and credentialing services."@en-US;
-  skos:inScheme agentSector: ;
-  vs:term_status "unstable" .
+  skos:inScheme agentSector: .
   
 # CONCEPT: PRIVATE FOR-PROFIT
 agentSector:PrivateForProfit a skos:Concept;
   skos:prefLabel "Private For-Profit Institution"@en-US; 
   skos:definition "A private institution in which the individual(s) or agency in control receives compensation other than wages, rent, or other expenses for the assumption of risk."@en-US;
-  skos:inScheme agentSector: ;
-  vs:term_status "unstable" . 
+  skos:inScheme agentSector: . 
   
 # CONCEPT: PRIVATE NON-PROFIT
 agentSector:PrivateNonProfit a skos:Concept;
   skos:prefLabel "Private Not-For-Profit Institution"@en-US; 
   skos:definition "A private institution in which the individual(s) or agency in control receives no compensation, other than wages, rent, or other expenses for the assumption of risk."@en-US;
-  skos:inScheme agentSector: ;
-  vs:term_status "unstable" .
+  skos:inScheme agentSector: .
   
 # CONCEPT: PUBLIC
 agentSector:Public a skos:Concept;
   skos:prefLabel "Public Institution"@en-US; 
   skos:definition "An educational institution whose programs and activities are operated by publicly elected or appointed school officials and which is supported primarily by public funds."@en-US;
-  skos:inScheme agentSector: ;
-  vs:term_status "unstable" .  
+  skos:inScheme agentSector: .
+  
+# CONCEPT: PROFESSIONAL ASSOCIATION
+agentSector:ProfessionalAssociation a skos:Concept;
+  skos:prefLabel "ProfessionalAssociation"@en-US; 
+  skos:definition "A membership organization primarily engaged in promoting the interests of a particular profession, the interests of individuals engaged in that profession, and providing them with services that may involve the provision of education and credentialing services."@en-US;
+  skos:inScheme agentSector: .  
+    
