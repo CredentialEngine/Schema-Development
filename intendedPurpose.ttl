@@ -21,14 +21,14 @@ intendedPurpose: a skos:ConceptScheme;
    
 # CONCEPT: GENERAL EDUCATION
 intendedPurpose:GeneralEducation a skos:Concept;
-    skos:prefLabel "GeneralEducation"@en-US; 
+    skos:prefLabel "General Education"@en-US; 
     skos:definition "The purpose of the credential as identified by the relevant agent is for the general education of the holder."@en-US;
     skos:inScheme intendedPurpose: ;
     vs:term_status "unstable" .
        
 # CONCEPT: JOB OR CAREER PREPARATION
 intendedPurpose:JobOrCareerPreparation a skos:Concept;
-    skos:prefLabel "Job/CareerPreparation"@en-US; 
+    skos:prefLabel "Job/Career Preparation"@en-US; 
     skos:definition "The purpose of the credential as identified by the relevant agent is for job or career preparation of the holder. "@en-US;
     skos:inScheme intendedPurpose: ;
     vs:term_status "unstable" .
