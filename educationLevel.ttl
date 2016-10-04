@@ -1,0 +1,48 @@
+@prefix costType: <https://purl.org/ctdl/vocabs/educationLevel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+# EDUCATION LEVEL VOCABULARY DESCRIPTION
+educationLevel: a skos:ConceptScheme;
+    dc:title "Education Level Vocabulary" ;
+    dc:creator "Credential Engine"@en-US ;
+    dc:description "A vocabulary expressing points in a progression through an educational or training context."@en-US ;
+    dct:created "2016-10-04"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .                         
+   
+# CONCEPT: ASSOCIATE
+educationLevel:associate a skos:Concept;
+    skos:prefLabel "Associate"@en-US; 
+    skos:definition "An education level typically associated with college-level work at lower-division or in the first two years of a four year undergraduate program of study."@en-US;
+    skos:inScheme educationLevel: .
+    
+# CONCEPT: BACHELOR
+educationLevel:bachelor a skos:Concept;
+    skos:prefLabel "Bachelor"@en-US; 
+    skos:definition "An education level typically associated with college-level work at upper-division or in the last two years of a four year undergraduate program of study."@en-US;
+    skos:inScheme educationLevel: .
+        
+# CONCEPT: DOCTORAL
+educationLevel:doctoral a skos:Concept;
+    skos:prefLabel "Doctoral"@en-US; 
+    skos:definition "The highest level of postsecondary professional and academic study, typically associated with post-masters level work."@en-US;
+    skos:inScheme educationLevel: .
+        
+# CONCEPT: HIGH SCHOOL OR EQUIVALENT (SECONDARY SCHOOL)
+educationLevel:highSchoolOrEquivalent a skos:Concept;
+    skos:prefLabel "High School or Equivalent"@en-US; 
+    skos:definition "The secondary school level of professional and academic study."@en-US;
+    skos:inScheme educationLevel: . 
+        
+# CONCEPT: MASTER
+educationLevel:master a skos:Concept;
+    skos:prefLabel "Master"@en-US; 
+    skos:definition "The lowest level of postgraduate professional and academic study."@en-US;
+    skos:inScheme educationLevel: .         
