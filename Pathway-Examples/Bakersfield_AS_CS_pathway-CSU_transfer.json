@@ -1,0 +1,360 @@
+{
+    "@context": "http://examplePathway.org/",
+    "@graph": [
+        {
+            "@type": "Pathway",
+            "@id": "http://examplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
+            "name": "Associate of Science Degree: Computer Science",
+            "hasRoot": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+            "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER"
+        },
+        {
+            "@type": "Credential",
+            "@id": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+            "name": "Associate of Science Degree: Computer Science",
+            "isRootOf": "http://examplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
+            "isParentOf": ["http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
+                "http://examplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
+                "http://examplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
+                "http://examplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
+                "http://examplePathways.org/paths/8fb27042-6c64-436f-8985-1c0b5b4a2287",
+                "http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32",
+                "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360",
+                "http://examplePathways.org/paths/3c52c752-52e0-4de8-a316-5ff4f4655e73",
+                "http://examplePathways.org/paths/1ca80f84-9331-4855-a746-13613a09de3e",
+                "http://examplePathways.org/paths/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
+                "http://examplePathways.org/paths/fd28f278-c131-4299-b3cc-bc706f1c581e",
+                "http://examplePathways.org/paths/fa6f8147-7250-4a0e-b11d-acb31db5b616",
+                "http://examplePathways.org/paths/5c364f83-8826-4e39-ab4a-8b656924f254",
+                "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be",
+                "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48",
+                "http://examplePathways.org/paths/701bde02-3a97-4da6-8664-f932f8132aaa",
+                "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
+                "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df",
+                "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+                "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f",
+                "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
+                "http://examplePathways.org/paths/46378ba7-5f81-462d-8208-af41ba263a01",
+                "http://examplePathways.org/paths/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
+                "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+                "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d",
+                "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b",
+                "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75",
+                "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21",
+                "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e" ]
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
+            "name": "Programming Concepts and Methology I",
+            "defaultCredits": 3.0,
+            "courseCode": "COMP B11",
+            "programTerm": "1",
+            "level": "Core"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
+            "name": "Programming Concepts and Methology II",
+            "defaultCredits": 3.0,
+            "courseCode": "COMP B12",
+            "programTerm": 2,
+            "level": "Core",
+            "prerequisite": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"         
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
+            "name": "Computer Architecture and Organization",
+            "defaultCredits": 3.0,
+            "courseCode": "COMP B13",
+            "programTerm": 3,
+            "level": "Core",
+            "prerequisite": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
+            "name": "Discrete Structures",
+            "defaultCredits": 3.0,
+            "courseCode": "COMP B14",
+            "programTerm": 4,
+            "level": "Core",
+            "prerequisite": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/8fb27042-6c64-436f-8985-1c0b5b4a2287",
+            "name": "Analytic Geometry/Calculus I",
+            "defaultCredits": 4.0,
+            "courseCode": "MATH B6A",
+            "programTerm": 1,
+            "level": "Core"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32",
+            "name": "Analytic Geometry/Calculus II",
+            "defaultCredits": 4.0,
+            "courseCode": "MATH B6B",
+            "programTerm": 2,
+            "level": "Core"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360",
+            "name": "Mechanics and Wave Motion",
+            "defaultCredits": 4.0,
+            "courseCode": "MATH B4A",
+            "programTerm": 2,
+            "level": "Core"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/3c52c752-52e0-4de8-a316-5ff4f4655e73",
+            "name": "Heat, Electricity, Magnetism",
+            "defaultCredits": 4.0,
+            "courseCode": "MATH B4B",
+            "programTerm": 3,
+            "level": "Core",
+            "prerequisite": ["http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32", 
+                "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360"]
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/1ca80f84-9331-4855-a746-13613a09de3e",
+            "name": "Small group communication",
+            "defaultCredits": 3.0,
+            "courseCode": "COMM B8",
+            "programTerm": 1,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
+            "name": "History of Rock and Roll",
+            "defaultCredits": 3.0,
+            "courseCode": "MUSC B27",
+            "programTerm": 1,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/fd28f278-c131-4299-b3cc-bc706f1c581e",
+            "name": "Elementary Nutitian",
+            "defaultCredits": 3.0,
+            "courseCode": "NUTR B10",
+            "programTerm": 1,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/fa6f8147-7250-4a0e-b11d-acb31db5b616",
+            "name": "Expository Composition",
+            "defaultCredits": 3.0,
+            "courseCode": "ENGL B1A",
+            "programTerm": 2,
+            "level": "General Education"
+        },
+        {   
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/5c364f83-8826-4e39-ab4a-8b656924f254",
+            "programTerm": 3,
+            "defaultCredits": 3.0,
+            "requiredCondition": {
+                "@type": "ComponentCondition",
+                "description": "Selection of one course from PHIL B7 or ENGL B28",
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "@id": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be", 
+                        "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48"
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be",
+            "name": "Introduction to logic",
+            "defaultCredits": 3.0,
+            "courseCode": "PHIL B7",
+            "programTerm": 3,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48",
+            "name": "Classical Mythology",
+            "defaultCredits": 3.0,
+            "courseCode": "ENGL B28",
+            "programTerm": 3,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/701bde02-3a97-4da6-8664-f932f8132aaa",
+            "programTerm": 3,
+            "defaultCredits": 3.0,
+            "requiredCondition": {
+                "@type": "ComponentCondition",
+                "description": "Selection of one course from PSCY B1A or CHDV B21",
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "ruleSet": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f", 
+                        "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df"
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
+            "name": "General Psychology",
+            "defaultCredits": 3.0,
+            "courseCode": "PSYC B1A",
+            "programTerm": 3,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df",
+            "name": "Child Growth and Development: Birth Through Adolescence",
+            "defaultCredits": 3.0,
+            "courseCode": "CHDV B21",
+            "programTerm": 3,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+            "programTerm": 3,
+            "defaultCredits": 3.0,
+            "requiredCondition": {
+                "@type": "ComponentCondition",
+                "description": "Selection of one course from ECON B1 or ECON B2",
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "ruleSet": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f", 
+                        "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc"
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f",
+            "name": "Principles of Economics-Micro",
+            "defaultCredits": 3.0,
+            "courseCode": "ECON B1",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
+            "name": "Principles of Economics-Macro",
+            "defaultCredits": 3.0,
+            "courseCode": "ECON B2",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/46378ba7-5f81-462d-8208-af41ba263a01",
+            "name": "Physical Anthropology",
+            "defaultCredits": 3.0,
+            "courseCode": "ANTH B1",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
+            "name": "American Government: National, State and Local.",
+            "defaultCredits": 3.0,
+            "courseCode": "POLS B1",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+            "programTerm": 3,
+            "defaultCredits": 4.0,
+            "requiredCondition": {
+                "@type": "ComponentCondition",
+                "description": "Selection of one course from HIST B1, HIST B15, HIST B18, PHIL B10 or PHIL B12",
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "ruleSet": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d", 
+                        "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b", 
+                        "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75", 
+                        "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21", 
+                        "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e"
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d",
+            "name": "World History from the Origins of Civilizations to 1600.",
+            "defaultCredits": 3.0,
+            "courseCode": "HIST B1",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b",
+            "name": "Civilizations of the Middle East.",
+            "defaultCredits": 3.0,
+            "courseCode": "HIST B15",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75",
+            "name": "History of California.",
+            "defaultCredits": 3.0,
+            "courseCode": "HIST B18",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21",
+            "name": "Introduction to Ethics",
+            "defaultCredits": 3.0,
+            "courseCode": "PHIL B10",
+            "programTerm": 4,
+            "level": "General Education"
+        },
+        {
+            "@type": "Course",
+            "@id": "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e",
+            "name": "History of Ancient Philosophy",
+            "defaultCredits": 3.0,
+            "courseCode": "PHIL B12",
+            "programTerm": 4,
+            "level": "General Education"
+        }
+    ]
+}
