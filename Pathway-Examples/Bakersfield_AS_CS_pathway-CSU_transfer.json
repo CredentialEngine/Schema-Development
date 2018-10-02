@@ -49,7 +49,7 @@
             "name": "Programming Concepts and Methology I",
             "defaultCredits": 3.0,
             "courseCode": "COMP B11",
-            "programTerm": "1",
+            "programTerm": 1,
             "level": "Core"
         },
         {
@@ -292,7 +292,7 @@
             "@type": "Course",
             "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
             "programTerm": 3,
-            "defaultCredits": 4.0,
+            "defaultCredits": 3.0,
             "requiredCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from HIST B1, HIST B15, HIST B18, PHIL B10 or PHIL B12",
