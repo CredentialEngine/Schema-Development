@@ -10,9 +10,9 @@
             "source": "https://www.illinoisworknet.com/ilpathways/STEM/Pages/information.aspx"
         },
         {
-            "@type": "Credential",
+            "@type": "Basic",
             "@id": "http://IllinoisExamplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
-            "name": "Programming and Software Development",
+            "name": "Illinois Education and Career Pathway: Programming and Software Development",
             "isRootOf": "http://IllinoisExamplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
             "occupationType": [
                 "http://apps.il-work-net.com/cis/clusters/occupationdetails/100045?parentid=111100",
