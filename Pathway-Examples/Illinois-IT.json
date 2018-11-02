@@ -1,25 +1,19 @@
 {
-    "@context": "http://examplePathway.org/",
+    "@context": "http://credreg.net/ctdl/schema/context/json",
     "@graph": [
         {
             "@type": "Pathway",
             "@id": "http://IllinoisIllinoisExamplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
             "name": "Illinois Education and Career Pathway: Programming and Software Development",
             "description": "Designing, developing, managing, supporting and integrating hardware and software systems.​",
-            "hasRoot": "http://IllinoisIllinoisExamplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
-            "source": "https://www.illinoisworknet.com/ilpathways/STEM/Pages/information.aspx"
-        },
-        {
-            "@type": "Basic",
-            "@id": "http://IllinoisExamplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
-            "name": "Illinois Education and Career Pathway: Programming and Software Development",
-            "isRootOf": "http://IllinoisExamplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
+            "hasRootComponent": "http://IllinoisIllinoisExamplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+            "source": "https://www.illinoisworknet.com/ilpathways/STEM/Pages/information.aspx",
             "occupationType": [
                 "http://apps.il-work-net.com/cis/clusters/occupationdetails/100045?parentid=111100",
                 "http://apps.il-work-net.com/cis/clusters/occupationdetails/100057?parentid=111100", 
-                "http://apps.il-work-net.com/cis/clusters/occupationdetails/100044?parentid=111100" 
+                "http://apps.il-work-net.com/cis/clusters/occupationdetails/100044?parentid=111100"
             ],
-            "isParentOf": ["http://IllinoisExamplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
+            "hasChild": ["http://IllinoisExamplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
                 "http://IllinoisExamplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
                 "http://IllinoisExamplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
                 "http://IllinoisExamplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
@@ -63,8 +57,8 @@
             "name": "Business and Technology Concepts",
             "description": "This orientation-level course will provide an overview of all aspects of business marketing and management, including the concepts, functions, and skills required for meeting the challenges of operating a business in a global economy. Topics covered will include the various forms of business ownership, including entrepreneurship, as well as the basic functional areas of business (finance, management, marketing, administration and production). Students will be introduced to a wide range of careers in fields such as accounting, financial services, information technology, marketing, and management. Emphasis will be placed on using the computer while studying applications in these careers along with communication skills (thinking, listening, composing, revising, editing, and speaking ), math and problem solving. Business ethics as well as other workplace skills will be taught and integrated within this course. This course is not intended to meet the consumer education requirement, but rather to provide reparation for the skill level courses that make up the Business, Marketing and Management occupations programs.",
             "courseCode": "12001A001",
-            "level": "Orientation (Level 1)",
-            "category": "Technology Orientation"
+            "programLevel": "Orientation (Level 1)",
+            "programCategory": "Technology Orientation"
         },
         {
             "@type": "Course",
@@ -72,57 +66,57 @@
             "name": "Computer Concepts and Software Applications",
             "description": "Computer Concepts and Software Applications is an orientation-level course designed to develop awareness and understanding of application software and equipment used by employees to perform tasks in business, marketing and management. Students will apply problem-solving skills to hands-on, real-life situations using a variety of software applications, such as word processing, spreadsheets, database management, presentation software, and desktop publishing. Students will explore topics related to computer concepts, operating systems, telecommunications and emerging technologies. The development of employability skills, as well as transition skills, will be included in the course as well as an understanding of the ethical considerations that arise in using information processing equipment and gaining access to available databases.",
             "courseCode": "10004A001",
-            "level": "Orientation (Level 1)",
-            "category": "Technology Orientation"         
+            "programLevel": "Orientation (Level 1)",
+            "programCategory": "Technology Orientation"         
         },
         {
             "@type": "Certification",
             "@id": "http://IllinoisExamplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
             "name": " Reliability Engineer Certification",
             "description": "Understands the principles of performance evaluation and prediction to improve product/systems safety, reliability and maintainability.  Eight years of on-the-job experience in one or more of the areas of the Certified Reliability Engineer Body of Knowledge. A minimum of three years of this experience must be in a decision-making position.",
-            "level": "Orientation (Level 1)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programLevel": "Orientation (Level 1)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
             "source": "https://asq.org/cert/reliability-engineer",
-            "category": "Technology Orientation"
+            "programCategory": "Technology Orientation"
         },
         {
             "@type": "Assessment",
             "@id": "http://IllinoisExamplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
             "name": "ACT Aspire",
             "description": "ACT Aspire includes both summative and periodic (interim and classroom) assessments. A comprehensive summative assessment can be administered in the fall or spring, while the periodic assessments can be used at any time during the school year. The summative and periodic assessments can be used as stand-alone programs, or they can be used in conjunction with one another.<br><br>ACT Aspire periodic assessments are designed to measure regular, ongoing student progress. These assessments can be administered at any time during the school year either on their own or in conjunction with ACT Aspire summative assessments.<br><br>ACT Aspire Summative Assessments measure student progress toward college and career readiness as defined by the pioneering research, data, standards, and benchmarks of ACT.",
-            "level": "Orientation (Level 1)",
+            "programLevel": "Orientation (Level 1)",
             "source": "http://www.act.org/content/act/en/products-and-services/act-aspire.html",
-            "category": "Technology Orientation"
+            "programCategory": "Technology Orientation"
         },
         {
             "@type": "Certification",
             "@id": "http://IllinoisExamplePathways.org/paths/8fb27042-6c64-436f-8985-1c0b5b4a2287",
             "name": "CompTIA A+",
             "description": "Two exams are necessary to be certified: CompTIA A+ Essentials and CompTIA A+ Practical Application. CompTIA A+ Essentials measures the necessary competencies of an entry-level IT professional with a recommended 500 hours of hands-on experience in the lab or field. It tests for technical understanding of computer technology, networking and security, as well as the communication skills and professionalism now required of all entry-level IT professionals. CompTIA A+ Practical Application is an extension of the knowledge and skills identified in CompTIA A+ Essentials, with more of a 'hands-on' orientation focused on scenarios in which troubleshooting and tools must be applied to resolve problems.",
-            "level": ["Orientation (Level 1)", "High School (Level2)"],
-            "educationLevel": ["http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel", "http://purl.org/ASN/scheme/ASNEducationLevel/10", "http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12"],
+            "programLevel": ["Orientation (Level 1)", "High School (Level2)"],
+            "educationLevelType": ["http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel", "http://purl.org/ASN/scheme/ASNEducationLevel/10", "http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12"],
             "source": "http://certification.comptia.org/getCertified/certifications/a.aspx",
-            "category": "Technology Orientation"
+            "programCategory": "Technology Orientation"
         },
         {
             "@type": "Certification",
             "@id": "http://IllinoisExamplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32",
             "name": "CompTIA IT Fundamentals",
             "description": "The CompTIA IT Fundamentals certificate ensures a knowledge of PC components, functionality, compatibility and related technology topics.",
-            "level": ["Orientation (Level 1)", "High School (Level2)"],
-            "educationLevel": ["http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel", "http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"],
+            "programLevel": ["Orientation (Level 1)", "High School (Level2)"],
+            "educationLevelType": ["http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel", "http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool"],
             "source": "https://certification.comptia.org/certifications/it-fundamentals",
-            "category": "Technology Orientation"
+            "programCategory": "Technology Orientation"
         },
         {
             "@type": "Certification",
             "@id": "http://IllinoisExamplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360",
             "name": "Microsoft Technology Associate (\"MTA\")",
             "description": "Microsoft Technology Associate (MTA) is an introductory Microsoft certification for individuals considering a career in technology. MTA certification addresses a wide spectrum of fundamental technical concepts, assesses and validates your core technical knowledge, and enhances your technical credibility. Note MTA exams do not qualify for MCP certification, nor are they a prerequisite for MCSA or MCSD certification.",
-            "level": ["Orientation (Level 1)", "High School (Level2)"],
-            "educationLevel": ["http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel", "http://purl.org/ASN/scheme/ASNEducationLevel/10", "http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12"],
+            "programLevel": ["Orientation (Level 1)", "High School (Level2)"],
+            "educationLevelType": ["http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel", "http://purl.org/ASN/scheme/ASNEducationLevel/10", "http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12"],
             "source": "https://www.microsoft.com/en-us/learning/mta-certification.aspx",
-            "category": "Technology Orientation"
+            "programCategory": "Technology Orientation"
         },
         {
             "@type": "Course",
@@ -130,9 +124,9 @@
             "name": "Computer Operations and Programming I",
             "description": "Computer Operations and Programming I is the first of two skill-level courses designed to develop computer programming and program design skills through the use of various programming languages such as Visual Basic, C#, Java, and other object -oriented languages. Students will be exposed to the fundamentals of system analysis and design (e.g. flowcharting, diagramming, system design and planning), and the systems development life cycle. Instruction will include basic programming tools that are common to many programming languages. These may include items such as input /output statements, constants, assignment statements, string and numeric variable types, conditional processing, and branching and looping control structures. Students will learn programming techniques such as counting, averaging, rounding, and generation of random numbers to develop a good programming technique. Students will apply what they learn to create programs and applications that solve real world business related problems. Students will create programs to store, locate and retrieve data.",
             "courseCode": "10152A001",
-            "level": "High School (Level2)",
-            "educationLevel": "http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool",
-            "category": "Programming and Software Development"
+            "programLevel": "High School (Level2)",
+            "educationLevelType": "http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -140,50 +134,50 @@
             "name": "Computer Operations and Programming II",
             "description": "Computer Operations and Programming II is a skill-level course for students who have completed Computer Operations and Programming I. Students will use procedural and object-oriented programming languages such as Visual Basic, C# and Java. Students will learn programming concepts such as inheritance and polymorphism, advanced data handling (pointers, arrays, strings, and files), and common algorithms (recursion, searching and sorting). Students will be able to write, compile, run, test, debug and modify programs and applications that solve real world problems. Problem examples may include tracking inventory, scheduling rooms and facilities, accessing information and performing calculations.",
             "courseCode": "10152A002",
-            "level": "High School (Level2)",
-            "educationLevel": "http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool",
+            "programLevel": "High School (Level2)",
+            "educationLevelType": "http://purl.org/ASN/scheme/ASNEducationLevel/HighSchool",
             "prerequisite": "http://IllinoisExamplePathways.org/paths/3c52c752-52e0-4de8-a316-5ff4f4655e73",
-            "category": "Programming and Software Development"
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Assessment",
             "@id": "http://IllinoisExamplePathways.org/paths/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
             "name": "COMPASS",
             "description": "Developed by ACT, the COMPASS computer-adaptive college placement test helps educators quickly evaluate incoming students' skill levels in Reading, Writing Skills, Writing Essay, Math, and English as a Second Language, place students in appropriate courses, and connect them to the resources they need to achieve academic success. Successful completion of this test by high school students is essential for placement into dual credit courses.",
-            "level": "High School (Level2)",
-            "educationLevel": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12"],
+            "programLevel": "High School (Level2)",
+            "educationLevelType": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12"],
             "source": "http://www.act.org/products/higher-education-act-compass/",
-            "category": "Programming and Software Development"
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Certification",
             "@id": "http://IllinoisExamplePathways.org/paths/fd28f278-c131-4299-b3cc-bc706f1c581e",
             "name": "Microsoft Certified Solutions Associate (\"MCSA\")",
             "description": "The Microsoft Certified Solutions Associate (MCSA) certification enables individuals to target specific technologies, and are generally the first step toward Microsoft's Professional-Level certifications. There are currently 7 MCSA certifications, based on specializations, and each requiring certain examinations to be passed.",
-            "level": "High School (Level2)",
-            "educationLevel": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12", "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"],
+            "programLevel": "High School (Level2)",
+            "educationLevelType": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12", "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"],
             "source": "https://www.microsoft.com/learning/en-us/mcsa-certification.aspx",
-            "category": "Programming and Software Development"
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Assessment",
             "@id": "http://IllinoisExamplePathways.org/paths/fa6f8147-7250-4a0e-b11d-acb31db5b616",
             "name": "National Career Readiness Certificate",
             "description": "The National Career Readiness Certificate, issued by ACT, is a portable, evidence-based credential that measures essential workplace skills and is a reliable predictor of workplace success. This credential is used across all sectors of the economy and measures the following skills: Problem solving; Critical thinking; Reading and using written, work-related text; Applying information from workplace documents to solve problems; Applying mathematical reasoning to work-related problems; Setting up and performing work-related mathematical calculations; Locating, synthesizing, and applying information that is presented graphically; Comparing, summarizing, and analyzing information presented in multiple related graphics.",            
-            "level": "High School (Level2)",
-            "educationLevel": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12", "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"],
+            "programLevel": "High School (Level2)",
+            "educationLevelType": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12", "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"],
             "source": "https://www.act.org/content/act/en/products-and-services/workkeys-for-educators/ncrc.html",
-            "category": "Programming and Software Development"        
+            "programCategory": "Programming and Software Development"        
         },
         {
             "@type": "Certification",
             "@id": "http://IllinoisExamplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be",
             "name": "Oracle Certified Associate (\"OCA\")",
             "description": "The Oracle Certification Program is a professional certification program offered by the Oracle Corporation.  There are three levels of Oracle Certification in several disciplines: Oracle Certified Associate (OCA), Oracle Certified Professional (OCP), and Oracle Certified Master (OCM).  Currently, OCA Database certifications are available for: Oracle Database 11g, Oracle Database 10g, Oracle9i Database, and MySQL.  Some OCA certifications are also available for Java and Oracle application development, and Oracle server and storage systems.",
-            "level": "High School (Level2)",
-            "educationLevel": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12", "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"],
+            "programLevel": "High School (Level2)",
+            "educationLevelType": ["http://purl.org/ASN/scheme/ASNEducationLevel/11", "http://purl.org/ASN/scheme/ASNEducationLevel/12", "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"],
             "source": "https://education.oracle.com/product/trackp_154",
-            "category": "Programming and Software Development"        
+            "programCategory": "Programming and Software Development"        
         },
         {
             "@type": "Course",
@@ -191,9 +185,9 @@
             "name": "Artificial Intelligence and Robotics",
             "description": "A program that focuses on the symbolic inference, representation, and simulation by computers and software of human learning and reasoning processes and capabilities, and the modeling of human motor control and motions by computer-driven machinery.  Includes instruction in computing theory, cybernetics, human factors, natural language processing, robot design, and applicable aspects of engineering, technology, and specific end-use applications.",
             "courseCode": "11.0102",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -201,9 +195,9 @@
             "name": "Computer and Information Sciences and Support Services, Other",
             "description": "Any instructional program in computer and information sciences and support services not listed above.",
             "courseCode": "11.9999",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -211,9 +205,9 @@
             "name": "Computer and Information Sciences, General",
             "description": "A general program that focuses on computing, computer science, and information science and systems as part of a broad and/or interdisciplinary program. Such programs are undifferentiated as to title and content and are not to be confused with specific programs in computer science, information science, or related support services.",
             "courseCode": "11.0101",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -221,9 +215,9 @@
             "name": "Computer and Information Systems Security",
             "description": "A program that prepares individuals to assess the security needs of computer and network systems, recommend safeguard solutions, and manage the implementation and maintenance of security devices, systems, and procedures.  Includes instruction in computer architecture, programming, and systems analysis; networking; telecommunications; cryptography; security system design; applicable law and regulations; risk assessment and policy analysis; contingency planning; user access issues; investigation techniques; and troubleshooting.",
             "courseCode": "11.1003",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -231,9 +225,9 @@
             "name": "Computer Engineering, General",
             "description": "A program that generally prepares individuals to apply mathematical and scientific principles to the design, development and operational evaluation of computer hardware and software systems and related equipment and facilities; and the analysis of specific problems of computer applications to various tasks.",
             "courseCode": "14.0901",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -241,9 +235,9 @@
             "name": "Computer Hardware Engineering",
             "descriptiopn": "A program that prepares individuals to apply mathematical and scientific principles to the design, development, and evaluation of computer hardware and related peripheral equipment.  Includes instruction in computer circuit and chip design, circuitry, computer systems design, computer equipment design, computer layout planning, testing procedures, and related computer theory and software topics.",
             "courseCode": "14.0902",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -251,9 +245,9 @@
             "name": "Computer Programming, Specific Applications",
             "description": "A program that prepares individuals to apply the knowledge and skills of general computer programming to the solution of specific operational problems and customization requirements presented by individual software users and organizational users.  Includes training in specific types of software and its installation and maintenance.",
             "courseCode": "11.0202",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -261,9 +255,9 @@
             "name": "Computer Science",
             "description": "A general program that focuses on computers, computing problems and solutions, and the design of computer systems and user interfaces from a scientific perspective. Includes instruction in the principles of computational science, and computing theory; computer hardware design; computer development and programming; and applications to a variety of end-use situations.",
             "courseCode": "11.0701",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -271,9 +265,9 @@
             "name": "Computer Science I",
             "description": "The first in a sequence of courses for majors in Computer Science, Mathematics, and Engineering. Introduces a disciplined approach to problem-solving and algorithm development, in addition to an introduction to procedural and data abstraction. Covers: selection, repetition, and sequence control structures; program design, testing, and documentation using good programming style; block-structured high-level programming languages; and arrays, records, and files.",
             "courseCode": "IAI CS 911",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development - Gateway"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development - Gateway"
         },
         {
             "@type": "Course",
@@ -281,9 +275,9 @@
             "name": "Computer Science II",
             "description": "The second in a sequence of courses for majors in Computer Science. Covers: design and implementation of large-scale problems; abstract data types; data structures (files, sets, pointers, lists, stacks, queues, trees, graphs); program verification and complexity; recursion; dynamic concepts (memory, scope, block structures); text processing; and an introduction to searching and sorting algorithms.",
             "courseCode": "IAI CS 912",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development - Gateway"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development - Gateway"
         },
         {
             "@type": "Course",
@@ -291,9 +285,9 @@
             "name": "Computer Systems Analysis/Analyst",
             "description": "A program that prepares individuals to apply programming and systems analysis principles to the selection, implementation, and troubleshooting of customized computer and software installations across the life cycle.  Includes instruction in computer hardware and software; compilation, composition, execution, and operating systems; low- and high-level languages and language programming; programming and debugging techniques; installation and maintenance testing and documentation; process and data flow analysis; user needs analysis and documentation; cost-benefit analysis; and specification design.",
             "courseCode": "11.0501",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -301,9 +295,9 @@
             "name": "Computer Systems Networking and Telecommunications",
             "description": "A program that focuses on the design, implementation, and management of linked systems of computers, peripherals, and associated software to maximize efficiency and productivity, and that prepares individuals to function as network specialists and managers at various levels.  Includes instruction in operating systems and applications; systems design and analysis; networking theory and solutions; types of networks; network management and control; network and flow optimization; security; configuring; and troubleshooting.",
             "courseCode": "11.0901",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
        {
             "@type": "Course",
@@ -311,9 +305,9 @@
             "name": "Data Processing and Data Processing Technology/Technician",
             "description": "A program that prepares individuals to master and use computer software programs and applications for inputting, verifying, organizing, storing, retrieving, transforming (changing, updating, and deleting), and extracting information.  Includes instruction in using various operating system configurations and in types of data entry such as word processing, spreadsheets, calculators, management programs, design programs, database programs, and research programs.",
             "courseCode": "11.0301",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -321,9 +315,9 @@
             "name": "Discrete Mathematics",
             "description": "Introduction to analysis of finite collections and mathematical foundations of sequential machines, computer system design, data structures and algorithms. Includes: sets, counting, recursion, graph theory, trees, nets, Boolean algebra, automata, and formal grammars and languages.",
             "courseCode": "IAI M1905",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development - Gateway"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development - Gateway"
         },
         {
             "@type": "Course",
@@ -331,9 +325,9 @@
             "name": "Discrete Structures",
             "description": "An introduction to analysis of finite collections and mathematical foundations of sequential machines, computer system design, data structures, and algorithms. Includes sets and logic, subscripts, arrays, number systems, counting, recursion, graph theory, trees, nets, and Boolean algebra.",
             "courseCode": "IAI CS 915",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development - Gateway"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development - Gateway"
         },
         {
             "@type": "Course",
@@ -341,9 +335,9 @@
             "name": "Electrical, Electronics and Communications Engineering",
             "description": "A program that prepares individuals to apply mathematical and scientific principles to the design, development and operational evaluation of electrical, electronic and related communications systems and their components, including electrical power generation systems; and the analysis of problems such as superconductor, wave propagation, energy storage and retrieval, and reception and amplification.",
             "courseCode": "14.1001",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -351,9 +345,9 @@
             "name": "Information Science/Studies",
             "description": "A program that focuses on the  theory, organization, and process of information collection, transmission, and utilization in traditional and electronic forms.  Includes instruction in information classification and organization; information storage and processing; transmission, transfer, and signaling; communications and networking; systems planning and design; human interfacing and use analysis; database development; information policy analysis; and related aspects of hardware, software, economics, social factors, and capacity.",
             "courseCode": "11.0401",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -361,9 +355,9 @@
             "name": "Information Technology",
             "description": "A program that focuses on the design of technological information systems, including computing systems, as solutions to business and research data and communications support needs.  Includes instruction in the principles of computer hardware and software components, algorithms, databases, telecommunications, user tactics, application testing, and human interface design.",
             "courseCode": "11.0103",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -371,9 +365,9 @@
             "name": "Management Science, General",
             "description": "A  general program that focuses on the application of mathematical modeling, programming, forecasting and operations research techniques to the analysis of problems of business organization and performance.  Includes instruction in optimization theory and mathematical techniques, stochastic and dynamic modeling, operations analysis, and the design and testing of prototype systems and evaluation models.",
             "courseCode": "52.1301",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -381,9 +375,9 @@
             "name": "Medical Informatics",
             "description": "A program that focuses on the application of computer science and software engineering to medical research and clinical information technology support, and the development of advanced imaging, database, and decision systems.  Includes instruction in computer science, health information systems architecture, medical knowledge structures, medical language and image processing, quantitative medical decision modeling, imaging techniques, electronic medical records, medical research systems, clinical decision support, and informatics aspects of specific research and practice problems.",
             "courseCode": "51.2706",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -391,9 +385,9 @@
             "name": "Operations Research",
             "description": "A program that focuses on the development and application of complex mathematical or simulation models to solve problems involving operational systems, where the system concerned is subject to human intervention.  Includes instruction in advanced multivariate analysis, application of judgment and statistical tests, optimization theory and techniques, resource allocation theory, mathematical modeling, control theory, statistical analysis, and applications to specific research problems.  (Moved from 27.0302)",
             "courseCode": "14.3701",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         },
         {
             "@type": "Course",
@@ -401,9 +395,9 @@
             "name": "Quantitative Literacy",
             "description": "Develops conceptual understanding, problem-solving, decision-making and analytic skills dealing with quantities and their magnitudes and interrelationships, using calculators and personal computers as tools. Includes: representing and analyzing data through such statistical measures as central tendency, dispersion, normal and chi-square distributions, and correlation and regression to test hypotheses (maximum of one-third of course); using logical statements and arguments in a real-world context; estimating, approximating and judging the reasonableness of answers; graphing and using polynomial functions and systems of equations and inequalities in the interpretation and solutions of problems; and selecting and using appropriate approaches and tools in formulating and solving real-world problems.",
             "courseCode": "IAI M1901",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development - Gateway"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development - Gateway"
         },
         {
             "@type": "Course",
@@ -411,9 +405,9 @@
             "name": "Web/Multimedia Management and Webmaster",
             "description": "A program that prepares individuals to develop and maintain web servers and the hosted web pages at one or a group of web sites, and to function as designated webmasters.  Includes instruction in computer systems and networks; server installation and maintenance; web page design and editing; information resources management; web policy and procedures; Internet applications of information systems security; user interfacing and usability research; and relevant management and communications skills.",
             "courseCode": "11.1004",
-            "level": "Post-Secondary Education and Training (Level 3)",
-            "educationLevel": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-            "category": "Programming and Software Development"
+            "programLevel": "Post-Secondary Education and Training (Level 3)",
+            "educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+            "programCategory": "Programming and Software Development"
         }
     ]
 }
