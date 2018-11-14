@@ -5,9 +5,10 @@
             "@type": "Pathway",
             "@id": "https://credentialengineregistry.org/pathways/e9a210a8-a77c-41af-b594-4543ef4c2b08",
             "name": "Associate of Science Degree: Computer Science",
-            "description": "Transfer pathway of the Bakersfield College Associate of Science Degree: Computer Science to the California State University",
+            "description": "Transfer pathway for the Bakersfield College Associate of Science Degree: Computer Science to the California State University",
             "hasRootComponent": "https://credentialengineregistry.org/pathways/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
-            "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER"
+            "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER",
+            "ownedBy": "https://www.bakersfieldcollege.edu"
         },
         {
             "@type": "AssociateDegree",
@@ -45,7 +46,7 @@
                 "https://credentialengineregistry.org/pathways/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e" ]
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
             "name": "Programming Concepts and Methology I",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -55,7 +56,7 @@
             "programLevel": "Core"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/11360165-b900-41e3-9b5b-7be2ef7198b5",
             "name": "Programming Concepts and Methology II",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -66,7 +67,7 @@
             "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"         
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
             "name": "Computer Architecture and Organization",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -77,7 +78,7 @@
             "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/a81076fa-53a4-4a13-a085-99e284756948",
             "name": "Discrete Structures",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -88,7 +89,7 @@
             "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/8fb27042-6c64-436f-8985-1c0b5b4a2287",
             "name": "Analytic Geometry/Calculus I",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -98,7 +99,7 @@
             "programLevel": "Core"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/96a2aba5-bba7-4a90-8c72-ae640642da32",
             "name": "Analytic Geometry/Calculus II",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -108,7 +109,7 @@
             "programLevel": "Core"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/b87cf844-0d28-425d-afe3-66e01e527360",
             "name": "Mechanics and Wave Motion",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -118,7 +119,7 @@
             "programLevel": "Core"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/3c52c752-52e0-4de8-a316-5ff4f4655e73",
             "name": "Heat, Electricity, Magnetism",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -130,7 +131,7 @@
                 "https://credentialengineregistry.org/pathways/b87cf844-0d28-425d-afe3-66e01e527360"]
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/1ca80f84-9331-4855-a746-13613a09de3e",
             "name": "Small group communication",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -140,7 +141,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
             "name": "History of Rock and Roll",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -150,7 +151,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/fd28f278-c131-4299-b3cc-bc706f1c581e",
             "name": "Elementary Nutitian",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -160,7 +161,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/fa6f8147-7250-4a0e-b11d-acb31db5b616",
             "name": "Expository Composition",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -170,7 +171,7 @@
             "programLevel": "General Education"
         },
         {   
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/5c364f83-8826-4e39-ab4a-8b656924f254",
             "programTerm": "3rd Term",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -180,7 +181,7 @@
                 "description": "Selection of one course from PHIL B7 or ENGL B28",
                 "hasRuleSet": {
                     "@type": "RuleSet",
-                    "ruleSetType": "http://examplePathways.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
+                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
                 },
@@ -191,7 +192,7 @@
             }
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/38567f64-e2ce-4883-8521-08e70da7a5be",
             "name": "Introduction to logic",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -201,7 +202,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/bae6587a-8506-4817-832a-04bf21177e48",
             "name": "Classical Mythology",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -211,7 +212,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/701bde02-3a97-4da6-8664-f932f8132aaa",
             "programTerm": "3rd Term",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -221,7 +222,7 @@
                 "description": "Selection of one course from PSCY B1A or CHDV B21",
                 "hasRuleSet": {
                     "@type": "RuleSet",
-                    "ruleSetType": "http://examplePathways.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
+                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
                 },
@@ -232,7 +233,7 @@
             }
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
             "name": "General Psychology",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -242,7 +243,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/85cafd67-8a15-49b0-b17a-2d04953e63df",
             "name": "Child Growth and Development: Birth Through Adolescence",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -252,7 +253,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/70f47a9f-6e60-423c-8480-8407b668bcba",
             "programTerm": "3rd Term",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -262,7 +263,7 @@
                 "description": "Selection of one course from ECON B1 or ECON B2",
                 "hasRuleSet": {
                     "@type": "RuleSet",
-                    "ruleSetType": "http://examplePathways.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
+                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
                 },
@@ -273,7 +274,7 @@
             }
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/bba2bb29-a385-4d1e-bc61-295f133edd9f",
             "name": "Principles of Economics-Micro",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -283,7 +284,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
             "name": "Principles of Economics-Macro",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -293,7 +294,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/46378ba7-5f81-462d-8208-af41ba263a01",
             "name": "Physical Anthropology",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -303,7 +304,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
             "name": "American Government: National, State and Local.",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -313,7 +314,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/70f47a9f-6e60-423c-8480-8407b668bcba",
             "programTerm": "3rd Term",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -323,7 +324,7 @@
                 "description": "Selection of one course from HIST B, HIST B15, HIST B18, PHIL B10 or PHIL B12",
                 "hasRuleSet": {
                     "@type": "RuleSet",
-                    "ruleSetType": "http://examplePathways.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
+                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
                 },
@@ -337,7 +338,7 @@
             }
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/c7ca911c-e2c8-4549-8974-a45e7273684d",
             "name": "World History from the Origins of Civilizations to 1600.",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -347,7 +348,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/f727fdd0-1e59-48be-a811-3536c2329a5b",
             "name": "Civilizations of the Middle East.",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -357,7 +358,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/334b4732-058e-43da-a177-9bb9986e0e75",
             "name": "History of California.",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -367,7 +368,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/d3976f68-1833-4524-b602-99baaa46cc21",
             "name": "Introduction to Ethics",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -377,7 +378,7 @@
             "programLevel": "General Education"
         },
         {
-            "@type": "Course",
+            "@type": "CourseComponent",
             "@id": "https://credentialengineregistry.org/pathways/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e",
             "name": "History of Ancient Philosophy",
             "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
