@@ -192,7 +192,7 @@
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from PHIL B9 or ENGL B28",
                 "hasRuleSet": {
-                    "@type": "RuleSet",
+                    "@type": "RuleSetProfile",
                     "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
@@ -234,7 +234,7 @@
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from PSYC B1A or CHDV B21",
                 "hasRuleSet": {
-                    "@type": "RuleSet",
+                    "@type": "RuleSetProfile",
                     "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
@@ -275,7 +275,7 @@
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from ECON B1 or ECON B2",
                 "hasRuleSet": {
-                    "@type": "RuleSet",
+                    "@type": "RuleSetProfile",
                     "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
@@ -337,7 +337,7 @@
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from HIST B1, HIST B15, HIST B18 or PHIL B10",
                 "hasRuleSet": {
-                    "@type": "RuleSet",
+                    "@type": "RuleSetProfile",
                     "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
                     "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
                     "requiredNumber": 1
