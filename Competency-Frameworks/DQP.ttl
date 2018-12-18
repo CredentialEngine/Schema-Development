@@ -1,32 +1,28 @@
-@prefix asn: <http://purl.org/ASN/schema/core/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix gemq: <http://purl.org/gem/qualifiers/> .
-@prefix loc: <http://www.loc.gov/loc.terms/relators/> .
+@prefix ceasn: <http://purl.org/ctdlasn/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://degreeprofile.org/dqp> a asn:StandardDocument ;
-    dc:title "Degree Qualification Profile"@en-US ;
-    dct:description "The Degree Qualifications Profile (DQP) provides a baseline set of reference points for what students should know and be able to do to earn associate, bachelor’s and master’s degrees. In short, the DQP represents a comprehensive and ongoing effort to clearly define what postsecondary degrees should mean in terms of specific learning outcomes."@en-US ;
-    loc:author "Lumina Foundation"@en-US ;
-    dc:publisher "Lumina Foundation"@en-US ;
-    dct:source <http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf> ;
-    dct:rights "© 2014 Lunina Foundation - All rights reserved"@en-US ;
-    dct:rightsHolder "Lumina Foundation"@enUS ;
-    dct:created "2011"^^xsd:date ;
-    dct:dateModified "2014"^^xsd:date ;
-    gemq:hasChild <http://degreeprofile.org/dqp/acl1>,
+<http://degreeprofile.org/dqp> a ceasn:CompetencyFramework ;
+    ceasn:name "Degree Qualification Profile"@en-US ;
+    ceasn:description "The Degree Qualifications Profile (DQP) provides a baseline set of reference points for what students should know and be able to do to earn associate, bachelor’s and master’s degrees. In short, the DQP represents a comprehensive and ongoing effort to clearly define what postsecondary degrees should mean in terms of specific learning outcomes."@en-US ;
+    ceasn:author "Lumina Foundation"@en-US ;
+    ceasn:publisherName "Lumina Foundation"@en-US ;
+    ceasn:source <http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf> ;
+    ceasn:rights "© 2014 Lunina Foundation - All rights reserved"@en-US ;
+    ceasn:rightsHolder "Lumina Foundation"@enUS ;
+    ceasn:dateCreated "2011"^^xsd:date ;
+    ceasn:dateModified "2014"^^xsd:date ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/acl1>,
         <http://degreeprofile.org/dqp/bik1>,
         <http://degreeprofile.org/dqp/cgl1>,
         <http://degreeprofile.org/dqp/is1>,
         <http://degreeprofile.org/dqp/sk1> .
         
-<http://degreeprofile.org/dqp/sk1> a asn:Statement ;
-    asn:comment "This category addresses what students in any specialization or major field of study should demonstrate with respect to that specialization. Tuning, a field-specific effort to map learning outcomes, is necessary to describe the concepts, knowledge areas and accomplishments that students in a particular specialization should demonstrate to earn the degree."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/sk4>,
+<http://degreeprofile.org/dqp/sk1> a ceasn:Competency ;
+    ceasn:comment "This category addresses what students in any specialization or major field of study should demonstrate with respect to that specialization. Tuning, a field-specific effort to map learning outcomes, is necessary to describe the concepts, knowledge areas and accomplishments that students in a particular specialization should demonstrate to earn the degree."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/sk4>,
         <http://degreeprofile.org/dqp/sk5>,
         <http://degreeprofile.org/dqp/sk6>,
         <http://degreeprofile.org/dqp/sk8>,
@@ -36,83 +32,83 @@
         <http://degreeprofile.org/dqp/sk13>,
         <http://degreeprofile.org/dqp/sk14>,
         <http://degreeprofile.org/dqp/sk15>;
-    gemq:isChildOf <http://degreeprofile.org/dqp> ;
-    asn:statementLabel "Category"@en-US ;
-    dct:description "Specialized Knowledge"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:competencyCategory "Category"@en-US ;
+    ceasn:competencyText "Specialized Knowledge"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/sk4> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes the scope of the field of study, its core theories and practices, using field-related terminology, and offers a similar description of at least one related field."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/sk4> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes the scope of the field of study, its core theories and practices, using field-related terminology, and offers a similar description of at least one related field."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/sk5> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Applies tools, technologies and methods common to the field of study to selected questions or problems."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .    
+<http://degreeprofile.org/dqp/sk5> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Applies tools, technologies and methods common to the field of study to selected questions or problems."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .    
     
-<http://degreeprofile.org/dqp/sk6> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Generates substantially error-free products, reconstructions, data, juried exhibits or performances appropriate to the field of study."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .   
+<http://degreeprofile.org/dqp/sk6> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Generates substantially error-free products, reconstructions, data, juried exhibits or performances appropriate to the field of study."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .   
 
-<http://degreeprofile.org/dqp/sk8> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Defines and explains the structure, styles and practices of the field of study using its tools, technologies, methods and specialized terms."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/sk8> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Defines and explains the structure, styles and practices of the field of study using its tools, technologies, methods and specialized terms."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/sk9> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Investigates a familiar but complex problem in the field of study by assembling, arranging and reformulating ideas, concepts, designs and techniques."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/sk9> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Investigates a familiar but complex problem in the field of study by assembling, arranging and reformulating ideas, concepts, designs and techniques."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/sk10> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Frames, clarifies and evaluates a complex challenge that bridges the field of study and one other field, using theories, tools, methods and scholarship from those fields to produce independently or collaboratively an investigative, creative or practical work illuminating the challenge."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .   
+<http://degreeprofile.org/dqp/sk10> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Frames, clarifies and evaluates a complex challenge that bridges the field of study and one other field, using theories, tools, methods and scholarship from those fields to produce independently or collaboratively an investigative, creative or practical work illuminating the challenge."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .   
 
-<http://degreeprofile.org/dqp/sk11> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Constructs a summative project, paper, performance or application that draws on current research, scholarship and techniques in the field of study."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> . 
+<http://degreeprofile.org/dqp/sk11> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Constructs a summative project, paper, performance or application that draws on current research, scholarship and techniques in the field of study."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> . 
     
-<http://degreeprofile.org/dqp/sk13> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Elucidates the major theories, research methods and approaches to inquiry and schools of practice in the field of study, articulates their sources and illustrates both their applications and their relationships to allied fields of study."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/sk13> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Elucidates the major theories, research methods and approaches to inquiry and schools of practice in the field of study, articulates their sources and illustrates both their applications and their relationships to allied fields of study."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/sk14> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Assesses the contributions of major figures and organizations in the field of study, describes its major methodologies and practices and illustrates them through projects, papers, exhibits or performances."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/sk14> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Assesses the contributions of major figures and organizations in the field of study, describes its major methodologies and practices and illustrates them through projects, papers, exhibits or performances."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/sk15> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/sk1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Articulates significant challenges involved in practicing the field of study, elucidates its leading edges and explores the current limits of theory, knowledge and practice through a project that lies outside conventional boundaries."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/sk15> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/sk1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Articulates significant challenges involved in practicing the field of study, elucidates its leading edges and explores the current limits of theory, knowledge and practice through a project that lies outside conventional boundaries."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik1> a asn:Statement ;
-    asn:comment "This category asks students at all three degree levels to consolidate learning from different broad fields of study (e.g., the humanities, arts, sciences and social sciences) and to discover and explore concepts and questions that bridge these essential areas of learning."@en-US ;
+<http://degreeprofile.org/dqp/bik1> a ceasn:Competency ;
+    ceasn:comment "This category asks students at all three degree levels to consolidate learning from different broad fields of study (e.g., the humanities, arts, sciences and social sciences) and to discover and explore concepts and questions that bridge these essential areas of learning."@en-US ;
         <http://degreeprofile.org/dqp/bik11>,
         <http://degreeprofile.org/dqp/bik13>,
         <http://degreeprofile.org/dqp/bik14>,
@@ -122,386 +118,386 @@
         <http://degreeprofile.org/dqp/bik6>,
         <http://degreeprofile.org/dqp/bik7>,
         <http://degreeprofile.org/dqp/bik9> ;
-    asn:statementLabel "Category"@en-US ;    
-    gemq:isChildOf <http://degreeprofile.org/dqp> ;
-    dct:description "Broad and Integrative Knowledge"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:competencyCategory "Category"@en-US ;    
+    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:competencyText "Broad and Integrative Knowledge"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik4> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes how existing knowledge or practice is advanced, tested and revised in each core field studied -- e.g., disciplinary and interdisciplinary courses in the sciences, social sciences, humanities and arts."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik4> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes how existing knowledge or practice is advanced, tested and revised in each core field studied -- e.g., disciplinary and interdisciplinary courses in the sciences, social sciences, humanities and arts."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
- <http://degreeprofile.org/dqp/bik5> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes a key debate or problem relevant to each core field studied, explains the significance of the debate or problem to the wider society and shows how concepts from the core field can be used to address the selected debates or problems."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+ <http://degreeprofile.org/dqp/bik5> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes a key debate or problem relevant to each core field studied, explains the significance of the debate or problem to the wider society and shows how concepts from the core field can be used to address the selected debates or problems."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik6> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Uses recognized methods of each core field studied, including the gathering and evaluation of evidence, in the execution of analytical, practical or creative tasks."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik6> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Uses recognized methods of each core field studied, including the gathering and evaluation of evidence, in the execution of analytical, practical or creative tasks."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik7> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes and evaluates the ways in which at least two fields of study define, address and interpret the importance for society of a problem in science, the arts, society, human services, economic life or technology."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik7> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes and evaluates the ways in which at least two fields of study define, address and interpret the importance for society of a problem in science, the arts, society, human services, economic life or technology."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik9> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes and evaluates the ways in which at least two fields of study define, address and interpret the importance for society of a problem in science, the arts, society, human services, economic life or technology. Explains how the methods of inquiry in these fields can address the challenge and proposes an approach to the problem that draws on these fields."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik9> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes and evaluates the ways in which at least two fields of study define, address and interpret the importance for society of a problem in science, the arts, society, human services, economic life or technology. Explains how the methods of inquiry in these fields can address the challenge and proposes an approach to the problem that draws on these fields."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik10> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Produces an investigative, creative or practical work that draws on specific theories, tools and methods from at least two core fields of study."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik10> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Produces an investigative, creative or practical work that draws on specific theories, tools and methods from at least two core fields of study."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik11> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Defines and frames a problem important to the major field of study, justifies the significance of the challenge or problem in a wider societal context, explains how methods from the primary field of study and one or more core fields of study can be used to address the problem, and develops an approach that draws on both the major and core fields."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik11> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Defines and frames a problem important to the major field of study, justifies the significance of the challenge or problem in a wider societal context, explains how methods from the primary field of study and one or more core fields of study can be used to address the problem, and develops an approach that draws on both the major and core fields."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik13> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Articulates how the field of study has developed in relation to other major domains of inquiry and practice."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik13> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Articulates how the field of study has developed in relation to other major domains of inquiry and practice."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik14> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Designs and executes an applied, investigative or creative work that draws on the perspectives and methods of other fields of study and assesses the resulting advantages and challenges of including these perspectives and methods."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik14> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Designs and executes an applied, investigative or creative work that draws on the perspectives and methods of other fields of study and assesses the resulting advantages and challenges of including these perspectives and methods."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/bik15> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/bik1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Articulates and defends the significance and implications of the work in the primary field of study in terms of challenges and trends in a social or global context."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/bik15> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/bik1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Articulates and defends the significance and implications of the work in the primary field of study in terms of challenges and trends in a social or global context."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is1> a asn:Statement ;
-    asn:comment "This category includes both traditional and nontraditional cognitive skills: analytic inquiry, use of information resources, engaging diverse perspectives, ethical reasoning, quantitative fluency and communicative fluency. Throughout, the DQP emphasizes that students should confront and interpret ideas and arguments from different points of reference (e.g., cultural, technological, political)."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is37>,
+<http://degreeprofile.org/dqp/is1> a ceasn:Competency ;
+    ceasn:comment "This category includes both traditional and nontraditional cognitive skills: analytic inquiry, use of information resources, engaging diverse perspectives, ethical reasoning, quantitative fluency and communicative fluency. Throughout, the DQP emphasizes that students should confront and interpret ideas and arguments from different points of reference (e.g., cultural, technological, political)."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is37>,
         <http://degreeprofile.org/dqp/is38>,
         <http://degreeprofile.org/dqp/is39>,
         <http://degreeprofile.org/dqp/is40>,
         <http://degreeprofile.org/dqp/is41>,
         <http://degreeprofile.org/dqp/is42> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp> ;
-    asn:statementLabel "Category"@en-US ;
-    dct:description "Intellectual Skills"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:competencyCategory "Category"@en-US ;
+    ceasn:competencyText "Intellectual Skills"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is37> a asn:Statement ;
-    asn:comment "The synthesizing cognitive operations of assembling, combining, formulating, evaluating and reconstructing information, foundational to all learning, are addressed throughout the DQP. But analytic inquiry, though it is involved in such synthesis, requires separate treatment as the core intellectual skill that enables a student to examine, probe and grasp the assumptions and conventions of different areas of study, as well as to address complex questions, problems, materials and texts of all types."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is15>,
+<http://degreeprofile.org/dqp/is37> a ceasn:Competency ;
+    ceasn:comment "The synthesizing cognitive operations of assembling, combining, formulating, evaluating and reconstructing information, foundational to all learning, are addressed throughout the DQP. But analytic inquiry, though it is involved in such synthesis, requires separate treatment as the core intellectual skill that enables a student to examine, probe and grasp the assumptions and conventions of different areas of study, as well as to address complex questions, problems, materials and texts of all types."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is15>,
         <http://degreeprofile.org/dqp/is28>,
         <http://degreeprofile.org/dqp/is4> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is1> ;
-    asn:statementLabel "Skill"@en-US ;
-    dct:description "Analytic Inquiry"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is1> ;
+    ceasn:competencyCategory "Skill"@en-US ;
+    ceasn:competencyText "Analytic Inquiry"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is4> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is37> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Identifies and frames a problem or question in selected areas of study and distinguishes among elements of ideas, concepts, theories or practical approaches to the problem or question."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is4> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is37> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Identifies and frames a problem or question in selected areas of study and distinguishes among elements of ideas, concepts, theories or practical approaches to the problem or question."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is15> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is37> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Differentiates and evaluates theories and approaches to selected complex problems within the chosen field of study and at least one other field."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is15> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is37> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Differentiates and evaluates theories and approaches to selected complex problems within the chosen field of study and at least one other field."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is28> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is37> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Disaggregates, reformulates and adapts principal ideas, techniques or methods at the forefront of the field of study in carrying out an essay or project."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is28> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is37> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Disaggregates, reformulates and adapts principal ideas, techniques or methods at the forefront of the field of study in carrying out an essay or project."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is38> a asn:Statement ;
-    asn:comment "There is no learning without information, and students must learn how to find, organize and evaluate information in order to work with it and perhaps contribute to it -- by language, by media, by ambiguity and contradictions -- and the proficiencies offered below reflect that ladder of challenge."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is16>,
+<http://degreeprofile.org/dqp/is38> a ceasn:Competency ;
+    ceasn:comment "There is no learning without information, and students must learn how to find, organize and evaluate information in order to work with it and perhaps contribute to it -- by language, by media, by ambiguity and contradictions -- and the proficiencies offered below reflect that ladder of challenge."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is16>,
         <http://degreeprofile.org/dqp/is17>,
         <http://degreeprofile.org/dqp/is29>,
         <http://degreeprofile.org/dqp/is5> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is1> ;
-    asn:statementLabel "Skill"@en-US ;
-    dct:description "Use of Information Resources"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is1> ;
+    ceasn:competencyCategory "Skill"@en-US ;
+    ceasn:competencyText "Use of Information Resources"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is5> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is38> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Identifies, categorizes, evaluates and cites multiple information resources so as to create projects, papers or performances in either a specialized field of study or with respect to a general theme within the arts and sciences."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is5> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is38> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Identifies, categorizes, evaluates and cites multiple information resources so as to create projects, papers or performances in either a specialized field of study or with respect to a general theme within the arts and sciences."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is16> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is38> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Locates, evaluates, incorporates and properly cites multiple information resources in different media or different languages in projects, papers or performances."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .       
+<http://degreeprofile.org/dqp/is16> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is38> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Locates, evaluates, incorporates and properly cites multiple information resources in different media or different languages in projects, papers or performances."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .       
     
-<http://degreeprofile.org/dqp/is17> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is38> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Generates information through independent or collaborative inquiry and uses that information in a project, paper or performance."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is17> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is38> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Generates information through independent or collaborative inquiry and uses that information in a project, paper or performance."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is29> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is38> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Provides evidence (through papers, projects, notebooks, computer files or catalogues) of contributing to, expanding, evaluating or refining the information base within the field of study.@"@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> . 
+<http://degreeprofile.org/dqp/is29> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is38> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Provides evidence (through papers, projects, notebooks, computer files or catalogues) of contributing to, expanding, evaluating or refining the information base within the field of study.@"@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> . 
     
- <http://degreeprofile.org/dqp/is39> a asn:Statement ;
-    asn:comment "Every student should develop the intellectual flexibility and broad knowledge that enables perception of the world through the eyes of others, i.e., from the perspectives of diverse cultures, personalities, places, times and technologies. This proficiency is essential to intellectual development and to both Applied and Collaborative Learning and Civic and Global Learning."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is18>,
+ <http://degreeprofile.org/dqp/is39> a ceasn:Competency ;
+    ceasn:comment "Every student should develop the intellectual flexibility and broad knowledge that enables perception of the world through the eyes of others, i.e., from the perspectives of diverse cultures, personalities, places, times and technologies. This proficiency is essential to intellectual development and to both Applied and Collaborative Learning and Civic and Global Learning."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is18>,
         <http://degreeprofile.org/dqp/is19>,
         <http://degreeprofile.org/dqp/is30>,
         <http://degreeprofile.org/dqp/is6>,
         <http://degreeprofile.org/dqp/is7> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is1> ;
-    asn:statementLabel "Skill"@en-US ;
-    dct:description "Engaging Diverse Perspectives"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is1> ;
+    ceasn:competencyCategory "Skill"@en-US ;
+    ceasn:competencyText "Engaging Diverse Perspectives"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
                                                                                                                    
-<http://degreeprofile.org/dqp/is6> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is39> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes how knowledge from different cultural perspectives might affect interpretations of prominent problems in politics, society, the arts and global relations."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is6> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is39> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes how knowledge from different cultural perspectives might affect interpretations of prominent problems in politics, society, the arts and global relations."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is7> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is39> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes, explains and evaluates the sources of his/her own perspective on selected issues in culture, society, politics, the arts or global relations and compares that perspective with other views."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is7> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is39> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes, explains and evaluates the sources of his/her own perspective on selected issues in culture, society, politics, the arts or global relations and compares that perspective with other views."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is18> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is39> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Constructs a written project, laboratory report, exhibit, performance or community service design expressing an alternate cultural, political or technological vision and explains how this vision differs from current realities. "@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is18> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is39> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Constructs a written project, laboratory report, exhibit, performance or community service design expressing an alternate cultural, political or technological vision and explains how this vision differs from current realities. "@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is19> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is39> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Frames a controversy or problem within the field of study in terms of at least two political, cultural, historical or technological forces, explores and evaluates competing perspectives on the contro- versy or problem, and presents a reasoned analysis of the issue, either orally or in writing, that demonstrates consideration of the competing views."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is19> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is39> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Frames a controversy or problem within the field of study in terms of at least two political, cultural, historical or technological forces, explores and evaluates competing perspectives on the contro- versy or problem, and presents a reasoned analysis of the issue, either orally or in writing, that demonstrates consideration of the competing views."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is30> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is39> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Investigates through a project, paper or performance a core issue in the field of study from the perspective of a different point in time or a different culture, language, political order or technological context and explains how this perspective yields results that depart from current norms, dominant cultural assumptions or technologies."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is30> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is39> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Investigates through a project, paper or performance a core issue in the field of study from the perspective of a different point in time or a different culture, language, political order or technological context and explains how this perspective yields results that depart from current norms, dominant cultural assumptions or technologies."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is40> a asn:Statement ;
-    asn:comment "Analytic reasoning, the use of information resources, communication, and diverse perspectives should be brought to bear on situations, both clear and indeterminate, where tensions and conflicts, disparities and harms emerge, and where a particular set of intellectual skills is necessary to identify, elaborate and, if possible, resolve these cases. Ethical reasoning thus refers to the judicious and self-reflective application of ethical principles and codes of conduct resident in cultures, professions, occupations, economic behavior and social relationships to making decisions and taking action."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is20>,
+<http://degreeprofile.org/dqp/is40> a ceasn:Competency ;
+    ceasn:comment "Analytic reasoning, the use of information resources, communication, and diverse perspectives should be brought to bear on situations, both clear and indeterminate, where tensions and conflicts, disparities and harms emerge, and where a particular set of intellectual skills is necessary to identify, elaborate and, if possible, resolve these cases. Ethical reasoning thus refers to the judicious and self-reflective application of ethical principles and codes of conduct resident in cultures, professions, occupations, economic behavior and social relationships to making decisions and taking action."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is20>,
         <http://degreeprofile.org/dqp/is21>,
         <http://degreeprofile.org/dqp/is31>,
         <http://degreeprofile.org/dqp/is32>,
         <http://degreeprofile.org/dqp/is8> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is1> ;
-    asn:statementLabel "Skill"@en-US ;
-    dct:description "Ethical Reasoning"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is1> ;
+    ceasn:competencyCategory "Skill"@en-US ;
+    ceasn:competencyText "Ethical Reasoning"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is8> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is40> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes the ethical issues present in prominent problems in politics, economics, health care, technology or the arts and shows how ethical principles or frameworks help to inform decision making with respect to such problems"@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is8> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is40> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes the ethical issues present in prominent problems in politics, economics, health care, technology or the arts and shows how ethical principles or frameworks help to inform decision making with respect to such problems"@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is20> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is40> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Analyzes competing claims from a recent discovery, scientific contention or technical practice with respect to benefits and harms to those affected, articulates the ethical dilemmas inherent in the tension of benefits and harms, and either (a) arrives at a clearly expressed reconciliation of that tension that is informed by ethical principles or (b) explains why such a reconciliation cannot be accomplished."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is20> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is40> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Analyzes competing claims from a recent discovery, scientific contention or technical practice with respect to benefits and harms to those affected, articulates the ethical dilemmas inherent in the tension of benefits and harms, and either (a) arrives at a clearly expressed reconciliation of that tension that is informed by ethical principles or (b) explains why such a reconciliation cannot be accomplished."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is21> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is40> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Identifies and elaborates key ethical issues present in at least one prominent social or cultural problem, articulates the ways in which at least two differing ethical perspectives influence decision making concerning those problems, and develops and defends an approach to address the ethical issue productively."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is21> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is40> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Identifies and elaborates key ethical issues present in at least one prominent social or cultural problem, articulates the ways in which at least two differing ethical perspectives influence decision making concerning those problems, and develops and defends an approach to address the ethical issue productively."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is31> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is40> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Articulates and challenges a tradition, assumption or prevailing practice within the field of study by raising and examining relevant ethical perspectives through a project, paper or performance."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> . 
+<http://degreeprofile.org/dqp/is31> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is40> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Articulates and challenges a tradition, assumption or prevailing practice within the field of study by raising and examining relevant ethical perspectives through a project, paper or performance."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> . 
     
-<http://degreeprofile.org/dqp/is32> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is40> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Distinguishes human activities and judgments particularly subject to ethical reasoning from those less subject to ethical reasoning."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is32> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is40> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Distinguishes human activities and judgments particularly subject to ethical reasoning from those less subject to ethical reasoning."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is41> a asn:Statement ;
-    asn:comment "Quantitative expressions and the issues they raise inform many tasks. In addition to essential arithmetic skills, the use of visualization, symbolic translation and algorithms has become critically important."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is10>,
+<http://degreeprofile.org/dqp/is41> a ceasn:Competency ;
+    ceasn:comment "Quantitative expressions and the issues they raise inform many tasks. In addition to essential arithmetic skills, the use of visualization, symbolic translation and algorithms has become critically important."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is10>,
         <http://degreeprofile.org/dqp/is22>,
         <http://degreeprofile.org/dqp/is23>,
         <http://degreeprofile.org/dqp/is33>,
         <http://degreeprofile.org/dqp/is34>,
         <http://degreeprofile.org/dqp/is35>,
         <http://degreeprofile.org/dqp/is9> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is1> ;
-    asn:statementLabel "Skill"@en-US ;
-    dct:description "Quantitative Fluency"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is1> ;
+    ceasn:competencyCategory "Skill"@en-US ;
+    ceasn:competencyText "Quantitative Fluency"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is9> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Presents accurate interpretations of quantitative information on political, economic, health-related or technological topics and explains how both calculations and symbolic operations are used in those offerings."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is9> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Presents accurate interpretations of quantitative information on political, economic, health-related or technological topics and explains how both calculations and symbolic operations are used in those offerings."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is10> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Creates and explains graphs or other visual depictions of trends, relationships or changes in status."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .    
+<http://degreeprofile.org/dqp/is10> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Creates and explains graphs or other visual depictions of trends, relationships or changes in status."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .    
     
-<http://degreeprofile.org/dqp/is22> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Translates verbal problems into mathematical algorithms so as to construct valid arguments using the accepted symbolic system of mathematical reasoning and presents the resulting calculations, estimates, risk analyses or quantitative evaluations of public information in papers, projects or multimedia presentations."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is22> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Translates verbal problems into mathematical algorithms so as to construct valid arguments using the accepted symbolic system of mathematical reasoning and presents the resulting calculations, estimates, risk analyses or quantitative evaluations of public information in papers, projects or multimedia presentations."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is23> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Constructs mathematical expressions where appropriate for issues initially described in non-quantitative terms."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is23> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Constructs mathematical expressions where appropriate for issues initially described in non-quantitative terms."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is33> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Uses logical, mathematical or statistical methods appropriate to addressing a topic or issue in a primary field that is not for the most part quantitatively based."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is33> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Uses logical, mathematical or statistical methods appropriate to addressing a topic or issue in a primary field that is not for the most part quantitatively based."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is34> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Articulates and undertakes multiple appropriate applications of quantitative methods, concepts and theories in a field of study that is quantitatively based."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is34> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Articulates and undertakes multiple appropriate applications of quantitative methods, concepts and theories in a field of study that is quantitatively based."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is35> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is41> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Identifies, chooses and defends the choice of a mathematical model appropriate to a problem in the social sciences or applied sciences."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is35> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is41> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Identifies, chooses and defends the choice of a mathematical model appropriate to a problem in the social sciences or applied sciences."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is42> a asn:Statement ;
-    asn:comment "The use of messages to achieve shared understanding of meaning depends on effective use of language, intentional engagement of audience, cogent and coherent iteration and negotiation with others, and skillful translation across multiple expressive modes and formulations, including digital strategies and platforms."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/is11>,
+<http://degreeprofile.org/dqp/is42> a ceasn:Competency ;
+    ceasn:comment "The use of messages to achieve shared understanding of meaning depends on effective use of language, intentional engagement of audience, cogent and coherent iteration and negotiation with others, and skillful translation across multiple expressive modes and formulations, including digital strategies and platforms."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/is11>,
         <http://degreeprofile.org/dqp/is12>,
         <http://degreeprofile.org/dqp/is13>,
         <http://degreeprofile.org/dqp/is24>,
         <http://degreeprofile.org/dqp/is25>,
         <http://degreeprofile.org/dqp/is26>,
         <http://degreeprofile.org/dqp/is36> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is1> ;
-    asn:statementLabel "Skill"@en-US ;
-    dct:description "Communicative Fluency"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is1> ;
+    ceasn:competencyCategory "Skill"@en-US ;
+    ceasn:competencyText "Communicative Fluency"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is11> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Develops and presents cogent, coherent and substantially error-free writing for communication to general and specialized audiences."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is11> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Develops and presents cogent, coherent and substantially error-free writing for communication to general and specialized audiences."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is12> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Demonstrates effective interactive communication through discussion, i.e., by listening actively and responding constructively and through structured oral presentations to general and specialized audiences."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is12> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Demonstrates effective interactive communication through discussion, i.e., by listening actively and responding constructively and through structured oral presentations to general and specialized audiences."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is13> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Negotiates with peers an action plan for a practical task and communicates the results of the negotiation either orally or in writing."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is13> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Negotiates with peers an action plan for a practical task and communicates the results of the negotiation either orally or in writing."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is24> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Constructs sustained, coherent arguments, narratives or explications of issues, problems or technical issues and processes, in writing and at least one other medium, to general and specific audiences."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is24> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Constructs sustained, coherent arguments, narratives or explications of issues, problems or technical issues and processes, in writing and at least one other medium, to general and specific audiences."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is25> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Conducts an inquiry concerning information, conditions, technologies or practices in the field of study that makes substantive use of non-English-language sources."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is25> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Conducts an inquiry concerning information, conditions, technologies or practices in the field of study that makes substantive use of non-English-language sources."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is26> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Negotiates with one or more collaborators to advance an oral argument or articulate an approach to resolving a social, personal or ethical dilemma."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is26> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Negotiates with one or more collaborators to advance an oral argument or articulate an approach to resolving a social, personal or ethical dilemma."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/is36> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/is42> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Creates sustained, coherent arguments or explanations summarizing his/her work or that of collaborators in two or more media or languages for both general and specialized audiences."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/is36> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/is42> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Creates sustained, coherent arguments or explanations summarizing his/her work or that of collaborators in two or more media or languages for both general and specialized audiences."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/acl1> a asn:Statement ;
-    gemq:hasChild <http://degreeprofile.org/dqp/acl10>,
+<http://degreeprofile.org/dqp/acl1> a ceasn:Competency ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/acl10>,
         <http://degreeprofile.org/dqp/acl11>,
         <http://degreeprofile.org/dqp/acl12>,
         <http://degreeprofile.org/dqp/acl14>,
@@ -511,84 +507,84 @@
         <http://degreeprofile.org/dqp/acl6>,
         <http://degreeprofile.org/dqp/acl7>,
         <http://degreeprofile.org/dqp/acl9> ;
-    gemq:isChildOf <http://degreeprofile.org/dqp> ;
-    asn:statementLabel "Category"@en-US ;
-    dct:description "This category emphasizes what students can do with what they know. Students are asked to demonstrate their learning by addressing unscripted problems in scholarly inquiry, at work and in other settings outside the classroom. This category includes research and creative activities involving both individual and group effort and may include practical skills crucial to the application of expertise."@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:competencyCategory "Category"@en-US ;
+    ceasn:competencyText "This category emphasizes what students can do with what they know. Students are asked to demonstrate their learning by addressing unscripted problems in scholarly inquiry, at work and in other settings outside the classroom. This category includes research and creative activities involving both individual and group effort and may include practical skills crucial to the application of expertise."@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/acl4> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes in writing at least one case in which knowledge and skills acquired in academic settings may be applied to a field-based challenge, and evaluates the learning gained from the application."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> . 
+<http://degreeprofile.org/dqp/acl4> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes in writing at least one case in which knowledge and skills acquired in academic settings may be applied to a field-based challenge, and evaluates the learning gained from the application."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> . 
     
-<http://degreeprofile.org/dqp/acl5> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;    
-    dct:description "Analyzes at least one significant concept or method in the field of study in light of learning outside the classroom."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl5> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;    
+    ceasn:competencyText "Analyzes at least one significant concept or method in the field of study in light of learning outside the classroom."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/acl6> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;    
-    dct:description "Locates, gathers and organizes evidence regarding a question in a field-based venue beyond formal academic study and offers alternate approaches to answering it."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl6> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;    
+    ceasn:competencyText "Locates, gathers and organizes evidence regarding a question in a field-based venue beyond formal academic study and offers alternate approaches to answering it."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/acl7> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;    
-    dct:description "Demonstrates the exercise of any practical skills crucial to the application of expertise."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl7> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;    
+    ceasn:competencyText "Demonstrates the exercise of any practical skills crucial to the application of expertise."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/acl9> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;    
-    dct:description "Prepares and presents a project, paper, exhibit, performance or other appropriate demonstration linking knowledge or skills acquired in work, community or research activities with knowledge acquired in one or more fields of study, explains how those elements are structured, and employs appropriate citations to demonstrate the relationship of the product to literature in the field."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl9> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;    
+    ceasn:competencyText "Prepares and presents a project, paper, exhibit, performance or other appropriate demonstration linking knowledge or skills acquired in work, community or research activities with knowledge acquired in one or more fields of study, explains how those elements are structured, and employs appropriate citations to demonstrate the relationship of the product to literature in the field."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/acl10> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Negotiates a strategy for group research or performance, documents the strategy so that others may understand it, implements the strategy, and communicates the results."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .    
+<http://degreeprofile.org/dqp/acl10> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Negotiates a strategy for group research or performance, documents the strategy so that others may understand it, implements the strategy, and communicates the results."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .    
 
-<http://degreeprofile.org/dqp/acl11> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Writes a design, review or illustrative application for an analysis or case study in a scientific, technical, economic, business, health, education or communica-tions context."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl11> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Writes a design, review or illustrative application for an analysis or case study in a scientific, technical, economic, business, health, education or communica-tions context."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/acl12> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Completes a substantial project that evaluates a significant question in the student’s field of study, including an analytic narrative of the effects of learning outside the classroom on the research or practical skills employed in executing the project."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl12> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Completes a substantial project that evaluates a significant question in the student’s field of study, including an analytic narrative of the effects of learning outside the classroom on the research or practical skills employed in executing the project."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/acl14> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Creates a project, paper, exhibit, performance or other appropriate demonstration reflecting the integration of knowledge acquired in practicum, work, community or research activities with knowledge and skills gleaned from at least two fields of study in different segments of the curriculum. Articulates the ways in which the two sources of knowledge influenced the result."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl14> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Creates a project, paper, exhibit, performance or other appropriate demonstration reflecting the integration of knowledge acquired in practicum, work, community or research activities with knowledge and skills gleaned from at least two fields of study in different segments of the curriculum. Articulates the ways in which the two sources of knowledge influenced the result."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/acl15> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/acl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Designs and implements a project or performance in an out-of-class setting that requires the application of advanced knowledge gained in the field of study to a practical challenge, articulates in writing or another medium the insights gained from this experience, and assesses (with appropriate citations) approaches, scholarly debates or standards for professional performance applicable to the challenge."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/acl15> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/acl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Designs and implements a project or performance in an out-of-class setting that requires the application of advanced knowledge gained in the field of study to a practical challenge, articulates in writing or another medium the insights gained from this experience, and assesses (with appropriate citations) approaches, scholarly debates or standards for professional performance applicable to the challenge."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/cgl1> a asn:Statement ;
-    asn:comment "This category recognizes higher education's responsibilities both to democracy and the global community. Students must demonstrate integration of their knowledge and skills by engaging with and responding to civic, social, environmental and economic challenges at local, national and global levels."@en-US ;
-    gemq:hasChild <http://degreeprofile.org/dqp/cgl4>,
+<http://degreeprofile.org/dqp/cgl1> a ceasn:Competency ;
+    ceasn:comment "This category recognizes higher education's responsibilities both to democracy and the global community. Students must demonstrate integration of their knowledge and skills by engaging with and responding to civic, social, environmental and economic challenges at local, national and global levels."@en-US ;
+    ceasn:hasChild <http://degreeprofile.org/dqp/cgl4>,
         <http://degreeprofile.org/dqp/cgl5>,
         <http://degreeprofile.org/dqp/cgl6>,
         <http://degreeprofile.org/dqp/cgl7>,
@@ -599,84 +595,84 @@
         <http://degreeprofile.org/dqp/cgl14>,
         <http://degreeprofile.org/dqp/cgl15>,
         <http://degreeprofile.org/dqp/cgl16>;
-    gemq:isChildOf <http://degreeprofile.org/dqp/> ;
-    asn:statementLabel "Category"@en-US ;   
-    dct:description "Civic and Global Learning"@en-US ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+    ceasn:isChildOf <http://degreeprofile.org/dqp/> ;
+    ceasn:competencyCategory "Category"@en-US ;   
+    ceasn:competencyText "Civic and Global Learning"@en-US ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
-<http://degreeprofile.org/dqp/cgl4> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes his/her own civic and cultural background, including its origins and development, assumptions and predispositions."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl4> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes his/her own civic and cultural background, including its origins and development, assumptions and predispositions."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl5> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Describes diverse positions, historical and contemporary, on selected democratic values or practices, and presents his or her own position on a specific problem where one or more of these values or practices are involved."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl5> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Describes diverse positions, historical and contemporary, on selected democratic values or practices, and presents his or her own position on a specific problem where one or more of these values or practices are involved."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl6> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Provides evidence of participation in a community project through either a spoken or written narrative that identifies the civic issues encountered and personal insights gained from this experience."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl6> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Provides evidence of participation in a community project through either a spoken or written narrative that identifies the civic issues encountered and personal insights gained from this experience."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl7> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Identifies an economic, environmental or public health challenge spanning countries, continents or cultures, presents evidence for the challenge, and takes a position on it."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl7> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Identifies an economic, environmental or public health challenge spanning countries, continents or cultures, presents evidence for the challenge, and takes a position on it."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl9> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Explains diverse positions, including those representing different cultural, economic and geographic interests, on a contested public issue, and evaluates the issue in light of both those interests and evidence drawn from journalism and scholarship."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .        
+<http://degreeprofile.org/dqp/cgl9> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Explains diverse positions, including those representing different cultural, economic and geographic interests, on a contested public issue, and evaluates the issue in light of both those interests and evidence drawn from journalism and scholarship."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .        
 
-<http://degreeprofile.org/dqp/cgl10> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Develops and justifies a position on a public issue and relates this position to alternate views held by the public or within the policy environment."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl10> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Develops and justifies a position on a public issue and relates this position to alternate views held by the public or within the policy environment."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl11> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Collaborates with others in developing and implementing an approach to a civic issue, evaluates the strengths and weaknesses of the process, and, where applicable, describes the result."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl11> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Collaborates with others in developing and implementing an approach to a civic issue, evaluates the strengths and weaknesses of the process, and, where applicable, describes the result."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl12> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Identifies a significant issue affecting countries, continents or cultures, presents quantitative evidence of that challenge through tables and graphs, and evaluates the activities of either non-governmental organizations or cooperative inter-governmental initiatives in addressing that issue."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl12> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Identifies a significant issue affecting countries, continents or cultures, presents quantitative evidence of that challenge through tables and graphs, and evaluates the activities of either non-governmental organizations or cooperative inter-governmental initiatives in addressing that issue."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl14> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Assesses and develops a position on a public policy question with significance in the field of study, taking into account both scholarship and published or electronically posted positions and narratives of relevant interest groups."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl14> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Assesses and develops a position on a public policy question with significance in the field of study, taking into account both scholarship and published or electronically posted positions and narratives of relevant interest groups."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl15> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Develops a formal proposal, real or hypothetical, to a non-governmental organization addressing a global challenge in the field of study that the student believes has not been adequately addressed. "@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .
+<http://degreeprofile.org/dqp/cgl15> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Develops a formal proposal, real or hypothetical, to a non-governmental organization addressing a global challenge in the field of study that the student believes has not been adequately addressed. "@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .
 
-<http://degreeprofile.org/dqp/cgl16> a asn:Statement ;
-    gemq:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
-    asn:statementLabel "Proficiency"@en-US ;
-    dct:description "Proposes a path to resolution of a problem in the field of study that is complicated by competing national interests or by rival interests within a nation other than the U.S."@en-US ;
-    dct:educationLevel <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
-    dct:isPartOf <http://degreeprofile.org/dqp> .                
+<http://degreeprofile.org/dqp/cgl16> a ceasn:Competency ;
+    ceasn:isChildOf <http://degreeprofile.org/dqp/cgl1> ;
+    ceasn:competencyCategory "Proficiency"@en-US ;
+    ceasn:competencyText "Proposes a path to resolution of a problem in the field of study that is complicated by competing national interests or by rival interests within a nation other than the U.S."@en-US ;
+    ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel> ;
+    ceasn:isPartOf <http://degreeprofile.org/dqp> .                
