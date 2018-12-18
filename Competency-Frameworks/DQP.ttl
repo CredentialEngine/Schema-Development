@@ -10,8 +10,7 @@
     ceasn:author "Lumina Foundation"@en-US ;
     ceasn:publisherName "Lumina Foundation"@en-US ;
     ceasn:source <http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf> ;
-    ceasn:rights "© 2014 Lunina Foundation - All rights reserved"@en-US ;
-    ceasn:rightsHolder "Lumina Foundation"@enUS ;
+    ceasn:rightsHolder <https://www.luminafoundation.org/> ;
     ceasn:dateCreated "2011"^^xsd:date ;
     ceasn:dateModified "2014"^^xsd:date ;
     ceasn:hasChild <http://degreeprofile.org/dqp/acl1>,
