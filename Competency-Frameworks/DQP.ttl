@@ -13,7 +13,7 @@
     ceasn:rightsHolder <https://www.luminafoundation.org/> ;
     ceasn:dateCreated "2011"^^xsd:date ;
     ceasn:dateModified "2014"^^xsd:date ;
-    ceasn:hasChild <http://degreeprofile.org/dqp/acl1>,
+    ceasn:hasTopChild <http://degreeprofile.org/dqp/acl1>,
         <http://degreeprofile.org/dqp/bik1>,
         <http://degreeprofile.org/dqp/cgl1>,
         <http://degreeprofile.org/dqp/is1>,
@@ -21,6 +21,8 @@
         
 <http://degreeprofile.org/dqp/sk1> a ceasn:Competency ;
     ceasn:comment "This category addresses what students in any specialization or major field of study should demonstrate with respect to that specialization. Tuning, a field-specific effort to map learning outcomes, is necessary to describe the concepts, knowledge areas and accomplishments that students in a particular specialization should demonstrate to earn the degree."@en-US ;
+    ceasn:competencyCategory "Category"@en-US ;
+    ceasn:competencyText "Specialized Knowledge"@en-US ;
     ceasn:hasChild <http://degreeprofile.org/dqp/sk4>,
         <http://degreeprofile.org/dqp/sk5>,
         <http://degreeprofile.org/dqp/sk6>,
@@ -31,9 +33,7 @@
         <http://degreeprofile.org/dqp/sk13>,
         <http://degreeprofile.org/dqp/sk14>,
         <http://degreeprofile.org/dqp/sk15>;
-    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
-    ceasn:competencyCategory "Category"@en-US ;
-    ceasn:competencyText "Specialized Knowledge"@en-US ;
+    ceasn:isTopChildOf <http://degreeprofile.org/dqp> ;
     ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
 <http://degreeprofile.org/dqp/sk4> a ceasn:Competency ;
@@ -108,7 +108,7 @@
     
 <http://degreeprofile.org/dqp/bik1> a ceasn:Competency ;
     ceasn:comment "This category asks students at all three degree levels to consolidate learning from different broad fields of study (e.g., the humanities, arts, sciences and social sciences) and to discover and explore concepts and questions that bridge these essential areas of learning."@en-US ;
-        <http://degreeprofile.org/dqp/bik11>,
+    ceasn:hasChild <http://degreeprofile.org/dqp/bik11>,
         <http://degreeprofile.org/dqp/bik13>,
         <http://degreeprofile.org/dqp/bik14>,
         <http://degreeprofile.org/dqp/bik15>,
@@ -118,7 +118,7 @@
         <http://degreeprofile.org/dqp/bik7>,
         <http://degreeprofile.org/dqp/bik9> ;
     ceasn:competencyCategory "Category"@en-US ;    
-    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:isTopChildOf <http://degreeprofile.org/dqp> ;
     ceasn:competencyText "Broad and Integrative Knowledge"@en-US ;
     ceasn:isPartOf <http://degreeprofile.org/dqp> .
     
@@ -200,7 +200,7 @@
         <http://degreeprofile.org/dqp/is40>,
         <http://degreeprofile.org/dqp/is41>,
         <http://degreeprofile.org/dqp/is42> ;
-    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:isTopChildOf <http://degreeprofile.org/dqp> ;
     ceasn:competencyCategory "Category"@en-US ;
     ceasn:competencyText "Intellectual Skills"@en-US ;
     ceasn:isPartOf <http://degreeprofile.org/dqp> .
@@ -506,7 +506,7 @@
         <http://degreeprofile.org/dqp/acl6>,
         <http://degreeprofile.org/dqp/acl7>,
         <http://degreeprofile.org/dqp/acl9> ;
-    ceasn:isChildOf <http://degreeprofile.org/dqp> ;
+    ceasn:isTopChildOf <http://degreeprofile.org/dqp> ;
     ceasn:competencyCategory "Category"@en-US ;
     ceasn:competencyText "This category emphasizes what students can do with what they know. Students are asked to demonstrate their learning by addressing unscripted problems in scholarly inquiry, at work and in other settings outside the classroom. This category includes research and creative activities involving both individual and group effort and may include practical skills crucial to the application of expertise."@en-US ;
     ceasn:isPartOf <http://degreeprofile.org/dqp> .
@@ -594,7 +594,7 @@
         <http://degreeprofile.org/dqp/cgl14>,
         <http://degreeprofile.org/dqp/cgl15>,
         <http://degreeprofile.org/dqp/cgl16>;
-    ceasn:isChildOf <http://degreeprofile.org/dqp/> ;
+    ceasn:isTopChildOf <http://degreeprofile.org/dqp/> ;
     ceasn:competencyCategory "Category"@en-US ;   
     ceasn:competencyText "Civic and Global Learning"@en-US ;
     ceasn:isPartOf <http://degreeprofile.org/dqp> .
