@@ -9,7 +9,8 @@
       "ceasn:author": "Lumina Foundation",
       "ceasn:publisherName": {"en-US": "Lumina Foundation"},      
       "ceasn:rightsHolder": "https://www.luminafoundation.org/",
-      "ceasn:source": "http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf",      
+      "ceasn:source": "http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf",
+      "ceasn:inLanguage": "http://id.loc.gov/vocabulary/iso639-2/eng",      
       "ceasn:dateCreated": "2011",
       "ceasn:dateModified": "2014",
       "ceasn:hasTopChild": [
