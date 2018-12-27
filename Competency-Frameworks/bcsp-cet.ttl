@@ -6,7 +6,7 @@
 
 <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/45a44907-1568-4c5f-bd6e-8ad5aedcc530> a ceasn:CompetencyFramework ;
   ceasn:name "Certified Environmental, Safety & Health Trainer (CET)"@en-US ;
-  ceasn:competencyText "The Certified Environmental, Safety & Health Trainer (CET) is a certification held by those with experience and expertise in developing, designing, and delivering safety, health and environmental training."@en-US ;
+  ceasn:description "The Certified Environmental, Safety & Health Trainer (CET) is a certification held by those with experience and expertise in developing, designing, and delivering safety, health and environmental training."@en-US ;
   ceasn:source <http://www.bcsp.org/CET> ;
   ceasn:publicationStatusType <http://purl.org/ASN/scheme/ASNPublicationStatus/Published> ;
   ceasn:dateCopyright "2017" ;
@@ -31,7 +31,7 @@
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "19%" ;
+  ceasn:weight ".19"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/77982562-30c4-4bdf-b9c2-a4fcbc3935b0>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d8144be1-e405-4610-bc0d-4b0ef47707af>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2b5b08c1-9ec0-471c-9ea9-4deccb3158f0>, 
@@ -499,7 +499,7 @@
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "9%" ;
+  ceasn:weight ".09"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c1b41942-9f3a-4890-9874-50806bcb1689>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/53639e27-c820-4cb9-8484-590f10a77bfe>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f6fbc16c-963f-474a-b73e-a913f45e0640> ;
@@ -752,7 +752,7 @@
   ceasn:competencyCategory "Domain"@en-US ;
   ceasn:competencyText "Training Course Design and Development"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "15%" ;
+  ceasn:weight ".15"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6392e22d-f5df-4d80-9019-5fb9463885a9>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2958ede7-e8fe-4647-81bd-5093438ba543>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1a3fc758-83f2-406b-be04-cb1c8043e04a>, 
@@ -1581,7 +1581,7 @@ approach to training [SAT])"""@en-US ;
   ceasn:competencyCategory "Domain"@en-US ;
   ceasn:competencyText "Performance Evaluation"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "8%" ;
+  ceasn:weight ".08"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/99f7435d-bb67-4f38-8f02-8cdc7cc50255>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/78af9c66-41f5-497b-848f-8143d4c7e3e9>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3ab89182-9f35-44c1-9d74-fb44467f1010> ;
@@ -1870,7 +1870,7 @@ performance demonstrations)"""@en-US ;
   ceasn:competencyCategory "Domain"@en-US ;
   ceasn:competencyText "Course Administration and Management"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "18%" ;
+  ceasn:weight ".18"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fbcb9fa2-cc84-474b-b4a2-69394ceb4c72>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4e10d8e4-f55a-4381-86a3-4a44debe644c>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b60c1580-400e-4fac-96ed-40a561891f9a>, 
@@ -2404,7 +2404,7 @@ method)."""@en-US ;
   ceasn:competencyCategory "Domain"@en-US ;
   ceasn:competencyText "Training Implementation"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "16%" ;
+  ceasn:weight ".16"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bdc9ec89-f4c0-4909-a99a-8340dcd8b3ce>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/66980e25-a0cc-43ce-8e37-b96c764b7133>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5cacc026-f42f-4b83-833e-26daa29eb86c>, 
@@ -2884,7 +2884,7 @@ method)."""@en-US ;
   ceasn:competencyCategory "Domain"@en-US ;
   ceasn:competencyText "Program Evaluation"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:weight "16%" ;
+  ceasn:weight ".16"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/85fdaa8c-a897-4395-a339-2680cfae5e1c>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4f40f56a-b1b2-4fcf-b04c-eed77e4dfbab>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a2d4355a-6506-4a0d-a49e-2e8545bdafcc>, 
