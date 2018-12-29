@@ -19,7 +19,7 @@
       },
       "ceasn:publisherName": {
         "@language": "en-US",
-        "@value": "Board of Certified Safety Professionals"
+        "@value": "Board of Certified Safety Professionals (BCSP)"
       },
       "ceasn:publisher": {
         "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
@@ -1295,7 +1295,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Communication and Interpersonal Skill"
+        "@value": "Communication and Interpersonal Skill - 19%"
       },
       "ceasn:educationLevel": [
         {
@@ -1333,7 +1333,7 @@
       },
       "ceasn:listID": "1",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "19%"
+      "ceasn:weight": ".19"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d0a9281d-e35c-4ba1-b529-c404473a5543",
@@ -3788,7 +3788,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Performance Evaluation"
+        "@value": "Performance Evaluation - 8%"
       },
       "ceasn:educationLevel": [
         {
@@ -3820,7 +3820,7 @@
       },
       "ceasn:listID": "4",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "8%"
+      "ceasn:weight": ".08"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/05277520-b96a-4fb2-8e1f-a059c1dc0483",
@@ -4483,7 +4483,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Training Needs Assessment"
+        "@value": "Training Needs Assessment - 9%"
       },
       "ceasn:educationLevel": [
         {
@@ -4515,7 +4515,7 @@
       },
       "ceasn:listID": "2",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "9%"
+      "ceasn:weight": ".09"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f32955a2-fda2-4645-aaa0-954e6f5c127d",
@@ -4650,7 +4650,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Training Implementation"
+        "@value": "Training Implementation - 16%"
       },
       "ceasn:educationLevel": [
         {
@@ -4685,7 +4685,7 @@
       },
       "ceasn:listID": "6",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "16%"
+      "ceasn:weight": ".16"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/681706b8-7319-4aac-85a2-c8c491c1902e",
@@ -6191,7 +6191,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Program Evaluation"
+        "@value": "Program Evaluation - 16%"
       },
       "ceasn:educationLevel": [
         {
@@ -6232,7 +6232,7 @@
       },
       "ceasn:listID": "7",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "16%"
+      "ceasn:weight": ".16"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/aade3553-3e1e-478f-9517-eca675f2e108",
@@ -6994,7 +6994,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Course Administration and Management"
+        "@value": "Course Administration and Management - 18%"
       },
       "ceasn:educationLevel": [
         {
@@ -7035,7 +7035,7 @@
       },
       "ceasn:listID": "5",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "18%"
+      "ceasn:weight": ".18"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/dcd516ba-a13c-4219-b23a-e1b43ffbc660",
@@ -8202,7 +8202,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Training Course Design and Development"
+        "@value": "Training Course Design and Development - 15%"
       },
       "ceasn:educationLevel": [
         {
@@ -8243,7 +8243,7 @@
       },
       "ceasn:listID": "3",
       "ceasn:shouldIndex": "false",
-      "ceasn:weight": "15%"
+      "ceasn:weight": ".15"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/de502395-27d7-4551-bec7-6a24048b4476",

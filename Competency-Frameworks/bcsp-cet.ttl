@@ -13,7 +13,7 @@
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:publisherName "Board of Certified Safety Professionals"@en-US ;
+  ceasn:publisherName "Board of Certified Safety Professionals (BCSP)"@en-US ;
   ceasn:publisher <https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534> ;
   ceasn:hasTopChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7cca72fe-1241-421c-a0c9-64bfede8a46b>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8295f288-6259-425a-9ce9-fa843adb700c>, 
@@ -25,7 +25,7 @@
 
 <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7cca72fe-1241-421c-a0c9-64bfede8a46b> a ceasn:Competency ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Communication and Interpersonal Skill"@en-US ;
+  ceasn:competencyText "Communication and Interpersonal Skill - 19%"@en-US ;
   ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/45a44907-1568-4c5f-bd6e-8ad5aedcc530> ;
   ceasn:shouldIndex "false" ;
   ceasn:listID "1" ;
@@ -493,7 +493,7 @@
 
 <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8295f288-6259-425a-9ce9-fa843adb700c> a ceasn:Competency ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Training Needs Assessment"@en-US ;
+  ceasn:competencyText "Training Needs Assessment - 9%"@en-US ;
   ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/45a44907-1568-4c5f-bd6e-8ad5aedcc530> ;
   ceasn:shouldIndex "false" ;
   ceasn:listID "2" ;
@@ -751,7 +751,7 @@
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Training Course Design and Development"@en-US ;
+  ceasn:competencyText "Training Course Design and Development - 15%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".15"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6392e22d-f5df-4d80-9019-5fb9463885a9>, 
@@ -1580,7 +1580,7 @@ approach to training [SAT])"""@en-US ;
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Performance Evaluation"@en-US ;
+  ceasn:competencyText "Performance Evaluation - 8%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".08"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/99f7435d-bb67-4f38-8f02-8cdc7cc50255>, 
@@ -1869,7 +1869,7 @@ performance demonstrations)"""@en-US ;
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Course Administration and Management"@en-US ;
+  ceasn:competencyText "Course Administration and Management - 18%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".18"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fbcb9fa2-cc84-474b-b4a2-69394ceb4c72>, 
@@ -2403,7 +2403,7 @@ method)."""@en-US ;
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Training Implementation"@en-US ;
+  ceasn:competencyText "Training Implementation - 16%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".16"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bdc9ec89-f4c0-4909-a99a-8340dcd8b3ce>, 
@@ -2883,7 +2883,7 @@ method)."""@en-US ;
   ceasn:educationLevel <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Program Evaluation"@en-US ;
+  ceasn:competencyText "Program Evaluation - 16%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".16"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/85fdaa8c-a897-4395-a339-2680cfae5e1c>, 
