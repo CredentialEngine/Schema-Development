@@ -60,7 +60,7 @@
         "@value": "Board of Certified Safety Professionals"
       },
       "ceasn:source": {
-        "@id": "http://njh.me/www.bcsp.org/asp"
+        "@id": "https://www.bcsp.org/asp"
       }
     },
     {
