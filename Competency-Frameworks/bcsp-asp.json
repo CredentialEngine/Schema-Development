@@ -75,7 +75,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Safety Management Systems"
+        "@value": "Safety Management Systems - 23%"
       },
       "ceasn:educationLevelType": [
         {
@@ -271,7 +271,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Environmental Management"
+        "@value": "Environmental Management - 15%"
       },
       "ceasn:educationLevelType": [
         {
@@ -895,7 +895,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Mathematics"
+        "@value": "Mathematics - 18%"
       },
       "ceasn:educationLevelType": [
         {
@@ -990,7 +990,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Fire Prevention and Protection"
+        "@value": "Fire Prevention and Protection - 11%"
       },
       "ceasn:educationLevelType": [
         {
@@ -1191,7 +1191,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Ergonomics"
+        "@value": "Ergonomics - 13%"
       },
       "ceasn:educationLevelType": [
         {
@@ -3730,7 +3730,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Occupational Health"
+        "@value": "Occupational Health - 11%"
       },
       "ceasn:educationLevelType": [
         {
@@ -5181,7 +5181,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Training, Education, and Communication"
+        "@value": "Training, Education, and Communication - 9%"
       },
       "ceasn:educationLevelType": [
         {

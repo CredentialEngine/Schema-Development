@@ -29,7 +29,7 @@
   ceasn:listID "1" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Mathematics"@en-US ;
+  ceasn:competencyText "Mathematics - 18%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".18"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/bf26e35b-0eb6-415e-be4b-4133d610d8d2>, 
@@ -532,7 +532,7 @@ near miss, near hit, and close call reporting)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Safety Management Systems"@en-US ;
+  ceasn:competencyText "Safety Management Systems - 23%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".23"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/fa82e4de-2549-4be3-a839-1ef697a0951d>, 
@@ -923,7 +923,7 @@ near miss, near hit, and close call reporting)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Ergonomics"@en-US ;
+  ceasn:competencyText "Ergonomics - 13%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".13"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/a762d5f4-e585-4551-a939-84998c59195f>, 
@@ -1127,7 +1127,7 @@ near miss, near hit, and close call reporting)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Fire Prevention and Protection"@en-US ;
+  ceasn:competencyText "Fire Prevention and Protection - 11%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".11"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/23086264-f53a-4ecf-ad02-556bbe779e21>, 
@@ -1343,7 +1343,7 @@ near miss, near hit, and close call reporting)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Occupational Health"@en-US ;
+  ceasn:competencyText "Occupational Health - 11%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".11"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/86c42f34-0548-4510-b48f-25710e704e19>, 
@@ -1547,7 +1547,7 @@ near miss, near hit, and close call reporting)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Environmental Management"@en-US ;
+  ceasn:competencyText "Environmental Management - 15%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".15"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/1140f92b-9160-40aa-abc3-65d2584e2612>, 
@@ -1895,7 +1895,7 @@ near miss, near hit, and close call reporting)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Training, Education, and Communication"@en-US ;
+  ceasn:competencyText "Training, Education, and Communication - 9%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".09"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/384693a9-f6c3-4044-9c7f-b9afa9e2f562>, 
