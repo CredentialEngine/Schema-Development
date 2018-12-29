@@ -11,7 +11,7 @@
   ceasn:publicationStatusType <http://purl.org/ASN/scheme/ASNPublicationStatus/Published> ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:publisherName "Board of Certified Safety Professionals"@en-US ;
+  ceasn:publisherName "Board of Certified Safety Professionals (BCSP)"@en-US ;
   ceasn:publisher <https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534> ;
   ceasn:hasTopChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5>, 
@@ -20,7 +20,7 @@
 
 <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf> a ceasn:Competency ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Program Management"@en-US ;
+  ceasn:competencyText "Program Management - 52%"@en-US ;
   ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7> ;
   ceasn:shouldIndex "false"  ;
   ceasn:listID "1" ;
@@ -925,7 +925,7 @@
   ceasn:listID "2" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Worksite Auditing"@en-US ;
+  ceasn:competencyText "Worksite Auditing - 19%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".19"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5e8748e3-69a7-4b2b-b272-d3c04f4fb904>, 
@@ -1354,7 +1354,7 @@
   ceasn:listID "3" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Training"@en-US ;
+  ceasn:competencyText "Training - 21%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".21"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7a402763-300b-4072-854c-cf22dbd93be7>, 
@@ -1816,7 +1816,7 @@
   ceasn:listID "4" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel> ;
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Professional Responsibility"@en-US ;
+  ceasn:competencyText "Professional Responsibility - 8%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".08"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f14c01a-01fd-4b7d-bdb1-a9ea5e7245e6>, 

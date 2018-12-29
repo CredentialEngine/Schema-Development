@@ -19,7 +19,7 @@
       },
       "ceasn:publisherName": {
         "@language": "en-US",
-        "@value": "Board of Certified Safety Professionals"
+        "@value": "Board of Certified Safety Professionals (BCSP)"
       },
       "ceasn:publisher": {
         "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
@@ -781,7 +781,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Program Management"
+        "@value": "Program Management - 52%"
       },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
@@ -2142,7 +2142,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Construction means, methods, and materials"
+        "@value": "Construction means, methods, and materials - 8%"
       },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
@@ -2168,7 +2168,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Professional Responsibility"
+        "@value": "Professional Responsibility - 8%"
       },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
@@ -3477,7 +3477,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Recognizing imminent danger"
+        "@value": "Recognizing imminent danger - 21%"
       },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
@@ -3503,7 +3503,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Training"
+        "@value": "Training - 21%"
       },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
@@ -3986,7 +3986,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Worksite Auditing"
+        "@value": "Worksite Auditing - 19%"
       },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
