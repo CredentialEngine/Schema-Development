@@ -7,7 +7,7 @@
 <http://www.bcsp.org/Portals/0/Assets/Competencies/ASP/d5865293-1cfa-4256-86fb-f9450173fc4e> a ceasn:CompetencyFramework ;
   ceasn:name "Associate Safety Professional (ASP)"@en-US ;
   ceasn:description "Associate Safety Professionals (ASP) are persons who performs at least 50% of professional level safety duties including; are making worksite assessments to determine risks, potential hazards and controls, evaluating risks and hazard control measures, investigating incidents, maintaining and evaluating incident and loss records, and preparing emergency response plans. Other duties could include; hazard recognition, fire protection, regulatory compliance, health hazard control, ergonomics, hazardous materials management, environmental protection, training, accident and incident, investigations, advising management, record keeping, emergency response, managing safety programs, product safety and/or security."@en-US ;
-  ceasn:source <http://njh.me/www.bcsp.org/asp> ;
+  ceasn:source <https://www.bcsp.org/asp> ;
   ceasn:publicationStatusType <http://purl.org/ASN/scheme/ASNPublicationStatus/Published> ;
   ceasn:dateCopyright "2017" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
