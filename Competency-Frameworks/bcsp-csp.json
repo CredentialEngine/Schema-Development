@@ -19,7 +19,7 @@
       },
       "ceasn:publisherName": {
         "@language": "en-US",
-        "@value": "Board of Certified Safety Professionals"
+        "@value": "Board of Certified Safety Professionals (BSCSP)"
       },
       "ceasn:publisher": {
         "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
@@ -205,7 +205,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Occupational Health and Ergonomics"
+        "@value": "Occupational Health and Ergonomics - 8%"
       },
       "ceasn:educationLevelType": [
         {
@@ -1281,7 +1281,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Environmental Management Systems"
+        "@value": "Environmental Management Systems - 6.3%"
       },
       "ceasn:educationLevelType": [
         {
@@ -1330,7 +1330,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Advanced Safety Concepts"
+        "@value": "Advanced Safety Concepts - 22.9%"
       },
       "ceasn:educationLevelType": [
         {
@@ -1886,7 +1886,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Emergency Preparedness, Fire Prevention, and Security"
+        "@value": "Emergency Preparedness, Fire Prevention, and Security - 9.1%"
       },
       "ceasn:educationLevelType": [
         {
@@ -1972,7 +1972,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Advanced Science and Math"
+        "@value": "Advanced Science and Math - 7.4%"
       },
       "ceasn:educationLevelType": [
         {
@@ -2033,7 +2033,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Law and Ethics"
+        "@value": "Law and Ethics - 7.4%"
       },
       "ceasn:educationLevelType": [
         {
@@ -2803,7 +2803,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Management Systems"
+        "@value": "Management Systems - 19.5%"
       },
       "ceasn:educationLevelType": [
         {
@@ -3061,7 +3061,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Risk Management"
+        "@value": "Risk Management - 10.3%"
       },
       "ceasn:educationLevelType": [
         {
@@ -3372,7 +3372,7 @@
       },
       "ceasn:competencyText": {
         "@language": "en-US",
-        "@value": "Training/Education"
+        "@value": "Training/Education - 9.1%"
       },
       "ceasn:educationLevelType": [
         {

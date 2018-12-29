@@ -12,7 +12,7 @@
   ceasn:dateCopyright "2017" ; 
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:publisherName "Board of Certified Safety Professionals"@en-US ;
+  ceasn:publisherName "Board of Certified Safety Professionals (BSCP)"@en-US ;
   ceasn:publisher <https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534> ;
   ceasn:hasTopChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1>, 
   <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58>, 
@@ -32,7 +32,7 @@
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Advanced Science and Math"@en-US ;
+  ceasn:competencyText "Advanced Science and Math - 7.4%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".074"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ba9e351f-a11c-4ba6-9d7b-4d41220eb2fe>, 
@@ -149,7 +149,7 @@
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Management Systems"@en-US ;
+  ceasn:competencyText "Management Systems - 19.5%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".195"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/bdd9c198-7c22-4065-8bb8-616e8ac0ecae>, 
@@ -451,7 +451,7 @@ resourcing, financing risk management options)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Risk Management"@en-US ;
+  ceasn:competencyText "Risk Management - 10.3%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".103"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/fbb8d25e-edec-4cb6-8d31-c61d836656c7>, 
@@ -582,7 +582,7 @@ resourcing, financing risk management options)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Advanced Safety Concepts"@en-US ;
+  ceasn:competencyText "Advanced Safety Concepts - 22.9%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".229"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/87132d5c-4330-450a-8071-acdac6c50ea1>, 
@@ -827,7 +827,7 @@ published literature, SDS)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Emergency Preparedness, Fire Prevention, and Security"@en-US ;
+  ceasn:competencyText "Emergency Preparedness, Fire Prevention, and Security - 9.1%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".091"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ec48b735-327e-40e6-8dad-2ecc88f819a8>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/17ae0e72-a9a0-48c5-9e61-5b68a5b47e3d>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a490b45e-6f0b-4e69-b7a9-2c62e4bf64c1>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a91d9e56-4b0f-4ec6-8f81-3273b8ebabc1>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/304b9f92-aa68-4c83-8bf4-33a59f4d67b9>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/734d8a6e-4f92-432e-94f7-dc82f01b1711> ;
@@ -914,7 +914,7 @@ fires)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Occupational Health and Ergonomics"@en-US ;
+  ceasn:competencyText "Occupational Health and Ergonomics - 8%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".08"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/141c40b5-5ab1-463f-b6ec-780f58b7a74e>, 
@@ -1017,7 +1017,7 @@ fires)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Environmental Management Systems"@en-US ;
+  ceasn:competencyText "Environmental Management Systems - 6.3%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".063"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/9bd32a07-bea7-405b-9a07-a52cd1b9c616>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a92f8642-d79a-4f72-9c7d-b507575dc01a>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f6dd0a8d-c225-4cc2-8c1d-50b54345d44c>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0481d689-4a6a-4380-8f29-d7a84bf67723> ;
@@ -1078,7 +1078,7 @@ fires)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Training/Education"@en-US ;
+  ceasn:competencyText "Training/Education - 9.1%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".091"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2eabb395-4449-489c-b1a1-9c06841d664d>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e44d4def-863c-4580-9c55-4970b4ca28a1>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5e4c0d6d-b730-4755-a6c8-4dfe0ffa3497>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c29f622b-0bcd-4e53-bdb0-2d8a6309ff11>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2b0509ab-f6b5-4bb1-9a8e-06aaaa8561fd>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/88beccd5-bb0d-43ac-a07c-a967a343bf6b>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/676ba559-c1dc-40b3-b23b-debdb5d2c3eb>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/8160255b-6fb4-40e6-9ab2-200acd601caa>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/254068ae-7ba6-404b-a53e-fbcd7183b389> ;
@@ -1201,7 +1201,7 @@ fires)"""@en-US ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
     <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
   ceasn:competencyCategory "Domain"@en-US ;
-  ceasn:competencyText "Law and Ethics"@en-US ;
+  ceasn:competencyText "Law and Ethics - 7.4%"@en-US ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:weight ".074"^^xsd:float ;
   ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0e4ca99c-30d0-4bc4-a724-cbdf769e461b>, 
