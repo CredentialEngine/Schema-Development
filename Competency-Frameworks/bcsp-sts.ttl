@@ -12,7 +12,8 @@
   ceasn:dateCopyright "2017" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-  ceasn:publisherName "Board of Certified Safety Professionals"@en-US ;
+  ceasn:publisherName "Board of Certified Safety Professionals (BCSP)"@en-US ;
+  ceasn:publisher <https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534> ;
   ceasn:hasTopChild <http://www.bcsp.org/Portals/0/Assets/Competencies/STS/29082e8d-ad61-4c4c-b204-7fab70e9cdc2>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/STS/21a3b017-d8aa-4681-9d89-c3cfaa96fb72>, 
     <http://www.bcsp.org/Portals/0/Assets/Competencies/STS/e83bd8db-88a3-4f7f-9288-fa170aa7bc97>, 
