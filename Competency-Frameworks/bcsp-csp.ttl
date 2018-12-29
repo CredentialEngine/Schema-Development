@@ -4,8 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0>
-  a ceasn:CompetencyFramework ;
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> a ceasn:CompetencyFramework ;
   ceasn:name "Certified Safety Professional (CSP)"@en-US ;
   ceasn:description "Certified Safety Professionals (CSP) are persons who perform at least 50% of professional level safety duties, including making worksite assessments to determine risks, assessing potential hazards and controls, evaluating risks and hazard control measures, investigating incidents, maintaining and evaluating incident and loss records, and preparing emergency response plans. Other duties could include hazard recognition, fire protection, regulatory compliance, health hazard control, ergonomics, hazardous materials management, environmental protection, training, accident and incident, investigations, advising management, record keeping, emergency response, managing safety programs, product safety and/or security."@en-US ;
   ceasn:source <https://www.bcsp.org/csp> ;
