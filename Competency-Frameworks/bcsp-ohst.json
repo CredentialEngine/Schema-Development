@@ -13,6 +13,13 @@
         "@language": "en-US",
         "@value": "Occupational Health and Safety Technologists (OHST) are persons who perform occupational health and safety activities on a full-time or part-time basis as part of their job duties. Some examples of occupational health and safety activities (also performed by loss control specialists) are making work site assessments to determine risks, potential hazards and controls, evaluating risks and hazard control measures, investigating incidents, maintaining and evaluating incident and loss records, and preparing emergency response plans."
       },
+      "ceasn:publisher": {
+        "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
+      },
+      "ceasn:publisherName": {
+        "@language": "en-US",
+        "@value": "Board of Certified Safety Professionals (BCSP)"
+      },
       "ceasn:educationLevelType": {
         "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
       },
