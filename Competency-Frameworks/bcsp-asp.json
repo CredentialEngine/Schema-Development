@@ -59,6 +59,9 @@
         "@language": "en-US",
         "@value": "Board of Certified Safety Professionals"
       },
+      "ceasn:publisher": {
+        "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
+      },
       "ceasn:source": {
         "@id": "https://www.bcsp.org/asp"
       }
