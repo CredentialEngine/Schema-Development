@@ -60,7 +60,7 @@
         "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Published"
       },
       "ceasn:source": {
-        "@id": "http://www.bcsp.org/CET"
+        "@id": "https://www.bcsp.org/CET"
       }
     },
     {

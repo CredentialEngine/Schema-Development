@@ -7,7 +7,7 @@
 <http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7> a ceasn:CompetencyFramework ;
   ceasn:name "Construction Health and Safety Technician (CHST)"@en-US ;
   ceasn:description "The Construction Health and Safety Technician (CHST) certification is designed for individuals who demonstrate competency and work part-time or full-time in health and safety activities devoted to the prevention of construction illnesses and injuries."@en-US ;
-  ceasn:source <http://njh.me/www.bcsp.org/chst> ;
+  ceasn:source <https://www.bcsp.org/chst> ;
   ceasn:publicationStatusType <http://purl.org/ASN/scheme/ASNPublicationStatus/Published> ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;

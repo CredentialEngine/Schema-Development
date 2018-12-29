@@ -7,7 +7,7 @@
 <http://www.bcsp.org/Portals/0/Assets/Competencies/CET/45a44907-1568-4c5f-bd6e-8ad5aedcc530> a ceasn:CompetencyFramework ;
   ceasn:name "Certified Environmental, Safety & Health Trainer (CET)"@en-US ;
   ceasn:description "The Certified Environmental, Safety & Health Trainer (CET) is a certification held by those with experience and expertise in developing, designing, and delivering safety, health and environmental training."@en-US ;
-  ceasn:source <http://www.bcsp.org/CET> ;
+  ceasn:source <https://www.bcsp.org/CET> ;
   ceasn:publicationStatusType <http://purl.org/ASN/scheme/ASNPublicationStatus/Published> ;
   ceasn:dateCopyright "2017" ;
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
