@@ -1,0 +1,1312 @@
+@prefix ceasn: <http://purl.org/ctdlasn/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0>
+  a ceasn:CompetencyFramework ;
+  ceasn:name "Certified Safety Professional (CSP)"@en-US ;
+  ceasn:description "Certified Safety Professionals (CSP) are persons who perform at least 50% of professional level safety duties, including making worksite assessments to determine risks, assessing potential hazards and controls, evaluating risks and hazard control measures, investigating incidents, maintaining and evaluating incident and loss records, and preparing emergency response plans. Other duties could include hazard recognition, fire protection, regulatory compliance, health hazard control, ergonomics, hazardous materials management, environmental protection, training, accident and incident, investigations, advising management, record keeping, emergency response, managing safety programs, product safety and/or security."@en-US ;
+  ceasn:source <https://www.bcsp.org/csp> ;
+  ceasn:publicationStatusType <http://purl.org/ASN/scheme/ASNPublicationStatus/Published> ;
+  ceasn:dateCopyright "2017" ; 
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:publisherName "Board of Certified Safety Professionals"@en-US ;
+  ceasn:hasTopChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a8eb1af9-f64b-4576-b74f-4d5c2804a143>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d>, 
+  <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Advanced Science and Math"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".074"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ba9e351f-a11c-4ba6-9d7b-4d41220eb2fe>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/b611fddd-5b57-4ce0-9b2b-19359e4b284b>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/3a1d0093-9b57-4e4f-a60f-01df3a1ce3e6>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dcf1892e-2f27-4d2a-8d91-55eabe5b7c67>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/bded3bf2-4b05-4798-9b2e-f555800c2148>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/55257ffd-9d27-4d19-8205-87d570645af3>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/1b80d4c7-4cde-4962-b976-52388d61a9a5>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/1cb9a3f3-8e3e-4f07-847a-444e56a16500> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ba9e351f-a11c-4ba6-9d7b-4d41220eb2fe>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Core concepts in anatomy and physiology"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/b611fddd-5b57-4ce0-9b2b-19359e4b284b>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Core concepts in chemistry (organic and general chemistry)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/3a1d0093-9b57-4e4f-a60f-01df3a1ce3e6>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Core concepts in physics"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dcf1892e-2f27-4d2a-8d91-55eabe5b7c67>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Mathematics (e.g., geometry, algebra, trigonometry)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/bded3bf2-4b05-4798-9b2e-f555800c2148>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Statistics for interpreting data (e.g., mean, median, mode, confidence intervals, probabilities, pare to analysis)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/55257ffd-9d27-4d19-8205-87d570645af3>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Core research methodology concepts"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/1b80d4c7-4cde-4962-b976-52388d61a9a5>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Calculate required containment volumes and hazardous materials storage requirements"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/1cb9a3f3-8e3e-4f07-847a-444e56a16500>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Calculate statistics from data sources"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Management Systems"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".195"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/bdd9c198-7c22-4065-8bb8-616e8ac0ecae>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/87c87207-32c5-4774-b6fd-de24b8ecf8f9>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/46a7b5dc-d0cf-4e5a-ab56-dbee567cb643>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/d739c500-f6f0-4c8e-b26c-ca538f4f0393>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/80f76d3a-6796-48e7-a8ff-5ec3276ba4fa>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/9acba4fc-b366-412a-aec7-3fdd4450084a>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/291be3da-73ff-41a0-9fe8-6970b4fb1f67>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2ef7dab1-3a6f-469a-8d81-70e8be6fd2e7>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/6847d2ab-424a-462a-9401-b9cdf19b10a0>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/1573765c-2f73-4312-9781-bad932ad6669>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e2506cd0-b30b-48c6-953e-1220947e0b7d>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/264382eb-81cb-4008-bdba-870f3c42c9b8>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/df0dbb1c-883a-4586-9309-c0e2a5965a11>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/6f140e23-c4a5-415f-b866-93976282f4de>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/998da1da-01cb-4c29-8b41-6a81be7b0d24>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/b3ea24d7-0360-441f-94a1-0515a10d544e>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/07331ea8-8829-4741-a84f-ad66f30b98dd>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5a5663d2-7dc0-4b64-8321-f1436cb7ce05>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/60ec929c-b616-4f87-b6c1-ceff62c2fa60>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4fdadb9e-3ff3-4f2b-8e7c-b17ca9785b75>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4bb99727-13a6-467e-a316-ab6258149bf6>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/abd5f732-deca-4c15-b45f-74b9abf478bc> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/bdd9c198-7c22-4065-8bb8-616e8ac0ecae>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Benchmarks and performance standards"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/87c87207-32c5-4774-b6fd-de24b8ecf8f9>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "How to measure, analyze, and improve organizational culture"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/46a7b5dc-d0cf-4e5a-ab56-dbee567cb643>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Incident investigation techniques"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/d739c500-f6f0-4c8e-b26c-ca538f4f0393>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Management of change techniques"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/80f76d3a-6796-48e7-a8ff-5ec3276ba4fa>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "System safety techniques (e.g., root cause, job safety analysis, fault tree analysis)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/9acba4fc-b366-412a-aec7-3fdd4450084a>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The elements of business continuity and contingency plans"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/291be3da-73ff-41a0-9fe8-6970b4fb1f67>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "7" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Types of leading and lagging safety, health, environmental, and security performance indicators"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2ef7dab1-3a6f-469a-8d81-70e8be6fd2e7>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "8" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText """Safety, health, and environmental management and audit systems (e.g., ANSI/AIHA Z10, ISO 14000 series, OHSAS 18000
+series, ISO 19011)"""@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/6847d2ab-424a-462a-9401-b9cdf19b10a0>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "9" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Applicable requirements for health plans, programs, and policies"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/1573765c-2f73-4312-9781-bad932ad6669>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "10" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Applicable requirements for safety plans, programs, and policies"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e2506cd0-b30b-48c6-953e-1220947e0b7d>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "11" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText """Documentation retention or management principles (e.g., incident investigation, training records, exposure records, maintenance
+records, environmental management system, audit results)"""@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/264382eb-81cb-4008-bdba-870f3c42c9b8>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "12" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText """Budgeting, finance, and economic analysis techniques and principles (e.g., timelines, budget development, milestones,
+resourcing, financing risk management options)"""@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/df0dbb1c-883a-4586-9309-c0e2a5965a11>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "13" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Management leadership techniques (e.g., Management theories, leadership theories, motivation, discipline, communication styles)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/6f140e23-c4a5-415f-b866-93976282f4de>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "14" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Project management concepts and techniques (e.g., RACI charts, project timelines, budgets)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/998da1da-01cb-4c29-8b41-6a81be7b0d24>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Analyze and/or interpret sampling data (e.g., exposure, release concentrations)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/b3ea24d7-0360-441f-94a1-0515a10d544e>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Apply management principles of authority, responsibility, and accountability"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/07331ea8-8829-4741-a84f-ad66f30b98dd>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Compare management systems with benchmarks"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5a5663d2-7dc0-4b64-8321-f1436cb7ce05>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Conduct root cause analyses"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/60ec929c-b616-4f87-b6c1-ceff62c2fa60>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Develop and implement environmental, safety, and health management systems"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4fdadb9e-3ff3-4f2b-8e7c-b17ca9785b75>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Evaluate and analyze survey data"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4bb99727-13a6-467e-a316-ab6258149bf6>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "7" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Perform gap analyses"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/abd5f732-deca-4c15-b45f-74b9abf478bc>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "8" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Demonstrate business need via financial calculations (e.g., ROI, engineering economy, financial engineering)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Risk Management"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".103"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/fbb8d25e-edec-4cb6-8d31-c61d836656c7>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/de205e1b-b03f-462d-bd1a-6e7f90772275>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7224a1d4-32b3-4f81-b120-2d63c4e7f240>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/311fcf3c-1cbf-4d35-8095-028ffe5326e3>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4011612f-c11d-4b4d-a08f-6285e64d8b8e>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4f1fc39d-0f86-40ce-8812-67903f783872>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2dbe62a8-d010-4e9c-9fad-ee4631419210>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/802bcc6c-26ac-4876-a658-dff415e37e67>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/25927b55-066c-4282-9cab-8b6ab670209e> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/fbb8d25e-edec-4cb6-8d31-c61d836656c7>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Analysis required to support risk management options"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/de205e1b-b03f-462d-bd1a-6e7f90772275>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Behavior modification techniques"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7224a1d4-32b3-4f81-b120-2d63c4e7f240>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Hazard analysis methods"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/311fcf3c-1cbf-4d35-8095-028ffe5326e3>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The costs and benefits of risk analysis"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4011612f-c11d-4b4d-a08f-6285e64d8b8e>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:CompetencyNotation "5" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The risk assessment process"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4f1fc39d-0f86-40ce-8812-67903f783872>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Apply risk-based decision-making tools for prioritizing risk management options"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2dbe62a8-d010-4e9c-9fad-ee4631419210>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Calculate metrics for organizational risk"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/802bcc6c-26ac-4876-a658-dff415e37e67>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Conduct job safety analyses and task analyses"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/25927b55-066c-4282-9cab-8b6ab670209e>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Explain risk management options and concepts to decision makers, stakeholders, and the public"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Advanced Safety Concepts"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".229"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/87132d5c-4330-450a-8071-acdac6c50ea1>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0e5fc07e-f482-46b9-a418-d60881d918f1>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/d24170da-7630-4796-bf95-abb1ff0f75c2>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/8d69119e-8d65-453a-895e-cd94d6b8cfbd>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c5814be9-53b1-488e-8e50-1cf42cae0838>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4fcba84c-897e-472c-a395-cbc4dc5363ef>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f533f3cc-3dd7-44b9-859c-f982d49569b2>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/64e7ebf0-b6e4-408c-9bc9-2dc334518b71>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b434c55-ed64-4b58-82fa-cedb67dd53ba>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/99318f42-5911-4c2d-8b12-03b21bf12de6>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/69f6e0cd-c43d-4a84-b917-a0d50ac827f3>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/eba3370c-723f-44f4-a6ec-5192e264e8c2>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4bdba03f-8a51-46bf-9ca5-b7f6ebc68d1c>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/eb4a72be-afde-45c8-8049-d3df2ad338ee>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7a381523-5361-4f48-8b68-e7275f6b744b>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/d8debeb3-9c32-49c4-a092-6eda06cf02d0>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a65d6da9-2c14-4225-b4b9-7964ca2aff1b>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f95e96ad-aff5-4793-b377-72c260f141b0> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/87132d5c-4330-450a-8071-acdac6c50ea1>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Administrative controls (e.g., job rotation, chemical substitution)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0e5fc07e-f482-46b9-a418-d60881d918f1>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Chemical process safety management (e.g., pressure relief systems, chemical compatibility, management of change, materials of construction, process flow diagrams)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/d24170da-7630-4796-bf95-abb1ff0f75c2>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Common workplace hazards (e.g., electrical, falls, confined spaces, lockout/tagout, working around water, caught in, struck by, excavation, welding, hot work, cold and heat stress, combustibles, laser, and others)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/8d69119e-8d65-453a-895e-cd94d6b8cfbd>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Engineering controls (e.g., ventilation, guarding, isolation)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c5814be9-53b1-488e-8e50-1cf42cae0838>
+  a ceasn:Competency ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Facility life safety features (e.g., public space safety, floor loading, occupancy loads)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4fcba84c-897e-472c-a395-cbc4dc5363ef>
+  a ceasn:Competency ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Fleet safety principles (e.g., driver and equipment safety, maintenance, surveillance equipment)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f533f3cc-3dd7-44b9-859c-f982d49569b2>
+  a ceasn:Competency ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "7" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Hazardous materials management (e.g., labels, storage, and handling)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/64e7ebf0-b6e4-408c-9bc9-2dc334518b71>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "8" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Insurance/risk transfer principles"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b434c55-ed64-4b58-82fa-cedb67dd53ba>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "9" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Multi-employer worksite issues (e.g., contractors, temporary or seasonal employees)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/99318f42-5911-4c2d-8b12-03b21bf12de6>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "10" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Personal protective equipment"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/69f6e0cd-c43d-4a84-b917-a0d50ac827f3>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "11" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Principles of safety through design or inherently safer designs (e.g., designing out hazards during design phase)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/eba3370c-723f-44f4-a6ec-5192e264e8c2>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "12" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText """Sources of information on hazards and risk management options (e.g., subject matter experts, relevant best practices,
+published literature, SDS)"""@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/4bdba03f-8a51-46bf-9ca5-b7f6ebc68d1c>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "13" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The safety design criteria for consumer and industrial products (e.g., UL, NFPA, NIOSH)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/eb4a72be-afde-45c8-8049-d3df2ad338ee>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "14" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Tools and equipment safety (e.g., hand tools, ladders, grinders, cranes and other mobile equipment, robotics)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7a381523-5361-4f48-8b68-e7275f6b744b>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "15" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Unique workplace hazards (e.g., nanoparticles, combustible dust)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/d8debeb3-9c32-49c4-a092-6eda06cf02d0>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Calibrate, use, and maintain data logging, monitoring, and measurement equipment"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a65d6da9-2c14-4225-b4b9-7964ca2aff1b>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Identify relevant labels, signs, and warnings"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f95e96ad-aff5-4793-b377-72c260f141b0>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Interpret plans, specifications, technical drawings, and process flow diagrams"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e3ff468f-e905-4456-9842-e075b6261909> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Emergency Preparedness, Fire Prevention, and Security"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".091"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ec48b735-327e-40e6-8dad-2ecc88f819a8>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/17ae0e72-a9a0-48c5-9e61-5b68a5b47e3d>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a490b45e-6f0b-4e69-b7a9-2c62e4bf64c1>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a91d9e56-4b0f-4ec6-8f81-3273b8ebabc1>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/304b9f92-aa68-4c83-8bf4-33a59f4d67b9>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/734d8a6e-4f92-432e-94f7-dc82f01b1711> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ec48b735-327e-40e6-8dad-2ecc88f819a8>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText """Emergency/crisis/disaster response planning (e.g., for nuclear incidents, natural disasters, terrorist attacks, chemical spills,
+fires)"""@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/17ae0e72-a9a0-48c5-9e61-5b68a5b47e3d>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Fire prevention and protection systems"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a490b45e-6f0b-4e69-b7a9-2c62e4bf64c1>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Fire suppression systems"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a91d9e56-4b0f-4ec6-8f81-3273b8ebabc1>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Incident (e.g., emergency, crisis, disaster) management"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/304b9f92-aa68-4c83-8bf4-33a59f4d67b9>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The transportation and security of hazardous materials"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/734d8a6e-4f92-432e-94f7-dc82f01b1711>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Workplace violence and harassment recognition and prevention techniques"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/552e0e4e-2608-4a4a-a6a0-c71a904a6af4> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Occupational Health and Ergonomics"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".08"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/141c40b5-5ab1-463f-b6ec-780f58b7a74e>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e60d98da-cfb8-433f-91fa-ee589fbe8515>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ad973ac6-dd95-4df8-9311-c368a8885243>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/6f57f82c-5710-4235-b6c5-4320f2e21700>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/002940f3-421c-49ef-a0ee-df6e1df37932>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ed84def7-175f-4638-868e-1e2863801e12>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e46902db-dd6a-4b4b-946a-ff70a31c56b6> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/141c40b5-5ab1-463f-b6ec-780f58b7a74e>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Basic toxicology principles (e.g., symptoms of an exposure, LD50, mutagens, teratogens)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e60d98da-cfb8-433f-91fa-ee589fbe8515>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Ergonomics and human factors principles (e.g., visual acuity, body mechanics, patient lifting, vibration, anthropometrics)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ad973ac6-dd95-4df8-9311-c368a8885243>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "How to recognize occupational exposures (e.g., hazardous chemicals, radiation, noise, biological agents, heat/cold, infectious diseases, nanoparticles, indoor air quality)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/6f57f82c-5710-4235-b6c5-4320f2e21700>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "How to evaluate occupational exposures (e.g., hazardous chemicals, radiation, noise, biological agents, heat/cold, infectious diseases, ventilation, nanoparticles, indoor air quality), including techniques for measurement, sampling, and analysis"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/002940f3-421c-49ef-a0ee-df6e1df37932>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "How to control occupational exposures (e.g., hazardous chemicals, radiation, noise, biological agents, heat/cold, ventilation, nanoparticles, infectious diseases, indoor air quality)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/ed84def7-175f-4638-868e-1e2863801e12>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The fundamentals of epidemiology"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e46902db-dd6a-4b4b-946a-ff70a31c56b6>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "7" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Occupational exposure limits (e.g., hazardous chemicals, radiation, noise, biological agents, heat)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c6e6921e-682a-4268-ae19-ceedcbb31a49> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a8eb1af9-f64b-4576-b74f-4d5c2804a143>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "7" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Environmental Management Systems"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".063"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/9bd32a07-bea7-405b-9a07-a52cd1b9c616>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a92f8642-d79a-4f72-9c7d-b507575dc01a>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f6dd0a8d-c225-4cc2-8c1d-50b54345d44c>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0481d689-4a6a-4380-8f29-d7a84bf67723> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/9bd32a07-bea7-405b-9a07-a52cd1b9c616>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Environmental protection and pollution prevention methods (e.g., air pollution, water pollution, soil pollution, containment)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a8eb1af9-f64b-4576-b74f-4d5c2804a143> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a92f8642-d79a-4f72-9c7d-b507575dc01a>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Hazardous waste management practices (e.g., segregation and separation, containment, disposal)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a8eb1af9-f64b-4576-b74f-4d5c2804a143> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/f6dd0a8d-c225-4cc2-8c1d-50b54345d44c>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "How released hazardous materials migrate through the air, surface water, soil, and water table"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a8eb1af9-f64b-4576-b74f-4d5c2804a143> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0481d689-4a6a-4380-8f29-d7a84bf67723>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Sustainability principles"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/a8eb1af9-f64b-4576-b74f-4d5c2804a143> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "8" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Training/Education"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".091"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2eabb395-4449-489c-b1a1-9c06841d664d>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e44d4def-863c-4580-9c55-4970b4ca28a1>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5e4c0d6d-b730-4755-a6c8-4dfe0ffa3497>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c29f622b-0bcd-4e53-bdb0-2d8a6309ff11>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2b0509ab-f6b5-4bb1-9a8e-06aaaa8561fd>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/88beccd5-bb0d-43ac-a07c-a967a343bf6b>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/676ba559-c1dc-40b3-b23b-debdb5d2c3eb>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/8160255b-6fb4-40e6-9ab2-200acd601caa>, <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/254068ae-7ba6-404b-a53e-fbcd7183b389> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2eabb395-4449-489c-b1a1-9c06841d664d>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Education and training methods and techniques"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/e44d4def-863c-4580-9c55-4970b4ca28a1>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;  
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Training requirements"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5e4c0d6d-b730-4755-a6c8-4dfe0ffa3497>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Methods for determining the effectiveness of training programs (e.g., determine if trainees are applying training on the job)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/c29f622b-0bcd-4e53-bdb0-2d8a6309ff11>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Effective presentation techniques"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/2b0509ab-f6b5-4bb1-9a8e-06aaaa8561fd>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Perform training needs assessments"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/88beccd5-bb0d-43ac-a07c-a967a343bf6b>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Develop training programs (e.g., presentation skills, tools)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/676ba559-c1dc-40b3-b23b-debdb5d2c3eb>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Conduct training"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/8160255b-6fb4-40e6-9ab2-200acd601caa>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Assess training competency"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/254068ae-7ba6-404b-a53e-fbcd7183b389>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
+  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Develop training assessment instruments (e.g., written tests, skill assessments) to assess training competency"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7b50d355-2165-4773-b4fe-c58b9f7f2c9d> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "false" ;
+  ceasn:listID "9" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Domain"@en-US ;
+  ceasn:competencyText "Law and Ethics"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:weight ".074"^^xsd:float ;
+  ceasn:hasChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0e4ca99c-30d0-4bc4-a724-cbdf769e461b>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/afd2aa32-6c5a-4665-8bc1-635404ecb775>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5f642b95-aa87-4e02-a9e9-09846eb09966>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/176c106b-218a-42ec-9876-a2ed810757b4>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/cca3896b-9af2-44ee-846a-782a316de1f2>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/96805761-404b-4852-a4df-bfecc005b7d8>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/cd47155b-2d33-45ca-949e-5b28dbf827c5>, 
+    <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7f02d884-6065-4904-a28b-157ef47d4f38> ;
+  ceasn:isTopChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/0e4ca99c-30d0-4bc4-a724-cbdf769e461b>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Legal issues (e.g., tort, negligence, civil, criminal, contracts, disability terminology)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/afd2aa32-6c5a-4665-8bc1-635404ecb775>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Protecting confidential information (e.g., privacy, trade secrets)"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/5f642b95-aa87-4e02-a9e9-09846eb09966>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "3" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "Standards development processes"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/176c106b-218a-42ec-9876-a2ed810757b4>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "4" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ; 
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The ethics related to conducting audits"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/cca3896b-9af2-44ee-846a-782a316de1f2>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "5" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "The relationship between labor and management"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/96805761-404b-4852-a4df-bfecc005b7d8>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "6" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Knowledge"@en-US ;
+  ceasn:competencyText "BCSP Code of Ethics"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/cd47155b-2d33-45ca-949e-5b28dbf827c5>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "1" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Interpret laws, regulations, and consensus codes and standards"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
+<http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/7f02d884-6065-4904-a28b-157ef47d4f38>
+  a ceasn:Competency ;
+  ceasn:isPartOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/275f941b-694d-4949-ab05-bf284020acf0> ;
+  ceasn:shouldIndex "true" ;
+  ceasn:listID "2" ;
+  ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, 
+    <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;  
+  ceasn:competencyCategory "Skill"@en-US ;
+  ceasn:competencyText "Apply concepts of BCSP Code of Ethics"@en-US ;
+  ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+  ceasn:isChildOf <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/690e03aa-42f7-45d3-8892-a9168b91b5f0> .
+
