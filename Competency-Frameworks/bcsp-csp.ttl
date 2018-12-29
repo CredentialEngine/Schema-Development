@@ -13,6 +13,7 @@
   ceasn:educationLevelType <http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel>, <http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel> ;
   ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
   ceasn:publisherName "Board of Certified Safety Professionals"@en-US ;
+  ceasn:publisher <https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534> ;
   ceasn:hasTopChild <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/dd76240b-0d00-4449-bcc7-61e8e39e82a1>, 
   <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/aa8468ca-6425-4015-b717-a96272550f58>, 
   <http://www.bcsp.org/Portals/0/Assets/Competencies/CSP/edaf98ab-9e46-4016-b7b1-cff58c7c8855>, 
