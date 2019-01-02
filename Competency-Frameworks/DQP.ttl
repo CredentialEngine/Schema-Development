@@ -7,7 +7,6 @@
 <http://degreeprofile.org/dqp> a ceasn:CompetencyFramework ;
     ceasn:name "Degree Qualification Profile"@en-US ;
     ceasn:description "The Degree Qualifications Profile (DQP) provides a baseline set of reference points for what students should know and be able to do to earn associate, bachelor’s and master’s degrees. In short, the DQP represents a comprehensive and ongoing effort to clearly define what postsecondary degrees should mean in terms of specific learning outcomes."@en-US ;
-    ceasn:author "Lumina Foundation"@en-US ;
     ceasn:publisherName "Lumina Foundation"@en-US ;
     ceasn:inLanguage <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     ceasn:source <http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf> ;
