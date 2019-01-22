@@ -1,1985 +1,1293 @@
 {
-  "@context": {
-    "ceasn": "http://purl.org/ctdlasn/terms/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
-  },
+  "@context": "http://credreg.net/ctdlasn/schema/context/json",
   "@graph": [
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "@type": "ceasn:CompetencyFramework",
-      "ceasn:name": {
-        "@language": "en-US",
-        "@value": "Safety Trained Supervisor Construction (STSC)"
-      },
-      "ceasn:description": {
-        "@language": "en-US",
-        "@value": "The STSC is intended for construction supervisors, managers, superintendents, forepersons, crew chiefs, and craftspeople who have responsibilities to maintain safe conditions and practices on construction job sites. These individuals may not have safety as a primary duty, but their knowledge of safety standards and practices ensure safer worksites."
-      },
-      "ceasn:publisherName": {
-        "@language": "en-US",
-        "@value": "Board of Certified Safety Professionals (BSCP)"
-      },
       "ceasn:dateCopyright": "2017",
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
+      "ceasn:description": {
+        "en-us": "The STSC is intended for construction supervisors, managers, superintendents, forepersons, crew chiefs, and craftspeople who have responsibilities to maintain safe conditions and practices on construction job sites. These individuals may not have safety as a primary duty, but their knowledge of safety standards and practices ensure safer worksites."
       },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:hasTopChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:publicationStatusType": {
-        "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Published"
+      "ceasn:name": {
+        "en-us": "Safety Trained Supervisor Construction (STSC)"
       },
-      "ceasn:publisher": {
-        "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
+      "ceasn:publicationStatusType": "http://purl.org/ASN/scheme/ASNPublicationStatus/Published",
+      "ceasn:publisher": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534",
+      "ceasn:publisherName": {
+        "en-us": "Board of Certified Safety Professionals (BSCP)"
       },
-      "ceasn:source": {
-        "@id": "https://www.bcsp.org/stsc"
-      }
+      "ceasn:source": "https://www.bcsp.org/stsc"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/da2d5cf5-e174-4d1f-9b76-74488b57e966",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards associated with heavy equipment (e.g., crawlers, bucket loader, back hoe)"
+        "en-us": "Hazards associated with heavy equipment (e.g., crawlers, bucket loader, back hoe)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "16",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/6b418e99-3823-499b-801e-f45aa002a8f5",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Recognize ergonomic hazards on the worksite (e.g., vibration, repetitive motion)"
+        "en-us": "Recognize ergonomic hazards on the worksite (e.g., vibration, repetitive motion)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/820aa1cc-cabd-4a6c-b68f-8b2db34189df",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Negative and positive reinforcement and motivation techniques (e.g., progressive discipline, recognition for correct behaviors)"
+        "en-us": "Negative and positive reinforcement and motivation techniques (e.g., progressive discipline, recognition for correct behaviors)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Health Hazards and Basic Industrial Hygiene - 12.6%"
+        "en-us": "Health Hazards and Basic Industrial Hygiene - 12.6%"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f90c7c1f-3658-48b0-9222-3709b7bf9564"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e730e475-e603-4463-b08f-e2b53c762fc7"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/55828c24-f7e4-4f3a-b111-5a07c135a178"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/6b418e99-3823-499b-801e-f45aa002a8f5"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/127f3a0f-738e-44be-aacf-6161e5c78949"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f23f0edf-91a9-4da9-8016-1f70b25dbe1c"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/cceca2e5-4ae8-485d-aa43-03b7be7a36e4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/9e05c6d9-cff1-4016-af28-7b016f1a9f0d"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f90c7c1f-3658-48b0-9222-3709b7bf9564",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e730e475-e603-4463-b08f-e2b53c762fc7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/55828c24-f7e4-4f3a-b111-5a07c135a178",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/6b418e99-3823-499b-801e-f45aa002a8f5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/127f3a0f-738e-44be-aacf-6161e5c78949",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f23f0edf-91a9-4da9-8016-1f70b25dbe1c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/cceca2e5-4ae8-485d-aa43-03b7be7a36e4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/9e05c6d9-cff1-4016-af28-7b016f1a9f0d"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "false",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.126"
-      }
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.126"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/9e05c6d9-cff1-4016-af28-7b016f1a9f0d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify if controls are being implemented correctly (e.g., if hearing protection is being worn correctly)"
+        "en-us": "Identify if controls are being implemented correctly (e.g., if hearing protection is being worn correctly)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f4c3a4f5-369c-4274-b525-3f3ed4ae90d4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "How to conduct a job/task hazard analysis"
+        "en-us": "How to conduct a job/task hazard analysis"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "false"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/fdac2349-bb0a-442b-8706-5c01073ffaf5",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Illumination requirements for job tasks"
+        "en-us": "Illumination requirements for job tasks"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "7",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazard Identification and Control - 40.2%"
+        "en-us": "Hazard Identification and Control - 40.2%"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/084ac848-7eed-4eef-96c8-d2aa21fa36b7"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/279c7f07-2178-4439-bd4a-b922d747a718"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/36f40813-51e2-4c9c-a605-6b22a3f4fa31"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca5f8aaf-b50d-495e-9db0-628eff5f06e8"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/a4baa479-c4c2-44e1-a13e-ff8df5a5e790"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/56867b2f-a76e-42b2-b813-90b357e0c06d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c7624b8a-c3cf-451d-8538-8d8e62fefece"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/155955f9-1bd6-4142-935a-5532ea6e0521"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/33bdf69d-ff1c-4489-918b-fd114715546b"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/00b6cf69-847f-4558-b676-7673aa9e1161"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/91678dec-9c13-47ba-a121-e26e1215ef91"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/55cdeb65-496e-4eb8-bae1-5ca496994ab1"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/da2d5cf5-e174-4d1f-9b76-74488b57e966"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/faac5f50-6283-4557-bfd7-6250070f94f8"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/8220b914-eb35-4164-ad86-ff3950028b3b"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e368608a-66e0-4bbd-9405-6c7343db7a6e"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/5a81524f-2c56-49be-a13b-185105c63069"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c041c554-a654-4402-baac-87fdb0b21080"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/643ebe31-1058-4d4b-b39e-6dcaaab4d9d6"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7d4b9aad-b721-4409-9e40-769502729663"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/dfd61957-9a51-4cf4-9fce-ebdc97032d02"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/084ac848-7eed-4eef-96c8-d2aa21fa36b7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/279c7f07-2178-4439-bd4a-b922d747a718",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/36f40813-51e2-4c9c-a605-6b22a3f4fa31",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca5f8aaf-b50d-495e-9db0-628eff5f06e8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/a4baa479-c4c2-44e1-a13e-ff8df5a5e790",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/56867b2f-a76e-42b2-b813-90b357e0c06d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c7624b8a-c3cf-451d-8538-8d8e62fefece",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/155955f9-1bd6-4142-935a-5532ea6e0521",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/33bdf69d-ff1c-4489-918b-fd114715546b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/00b6cf69-847f-4558-b676-7673aa9e1161",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/91678dec-9c13-47ba-a121-e26e1215ef91",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/55cdeb65-496e-4eb8-bae1-5ca496994ab1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/da2d5cf5-e174-4d1f-9b76-74488b57e966",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/faac5f50-6283-4557-bfd7-6250070f94f8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/8220b914-eb35-4164-ad86-ff3950028b3b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e368608a-66e0-4bbd-9405-6c7343db7a6e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/5a81524f-2c56-49be-a13b-185105c63069",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c041c554-a654-4402-baac-87fdb0b21080",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/643ebe31-1058-4d4b-b39e-6dcaaab4d9d6",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7d4b9aad-b721-4409-9e40-769502729663",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/dfd61957-9a51-4cf4-9fce-ebdc97032d02"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.402"
-      }
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true",
+      "ceasn:weight": "0.402"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f2771ca5-a214-43cb-8400-67ce7eb80a6c",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Potential fire hazards (e.g., sources of ignition)"
+        "en-us": "Potential fire hazards (e.g., sources of ignition)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/56867b2f-a76e-42b2-b813-90b357e0c06d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards associated with poor housekeeping (e.g., rolling stock, slip hazards, blocked exits, fire exposures, material waste)"
+        "en-us": "Hazards associated with poor housekeeping (e.g., rolling stock, slip hazards, blocked exits, fire exposures, material waste)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "14",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/04e24b1c-6ca1-44ec-9673-fce0e5dc521d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Effective communication techniques (e.g., repeat back)"
+        "en-us": "Effective communication techniques (e.g., repeat back)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/5a81524f-2c56-49be-a13b-185105c63069",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify if there are risks or hazards associated with the site layout"
+        "en-us": "Identify if there are risks or hazards associated with the site layout"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e368608a-66e0-4bbd-9405-6c7343db7a6e",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Appropriate use, care, maintenance, and limitations of personal protective equipment (PPE)"
+        "en-us": "Appropriate use, care, maintenance, and limitations of personal protective equipment (PPE)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "10",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/75e04216-4a1e-43e8-b2ff-cb0c0974e7b1",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify if correct fire extinguishing methods are in place for worksite hazards"
+        "en-us": "Identify if correct fire extinguishing methods are in place for worksite hazards"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca5f8aaf-b50d-495e-9db0-628eff5f06e8",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hierarchy of controls"
+        "en-us": "Hierarchy of controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "19",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ceee45c5-bebb-4e96-85aa-0eaaab37f6fa",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "How to respond to medical emergencies (e.g., bloodborne pathogens, first aid, emergency contacts)"
+        "en-us": "How to respond to medical emergencies (e.g., bloodborne pathogens, first aid, emergency contacts)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/36f40813-51e2-4c9c-a605-6b22a3f4fa31",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Rotating moving equipment pinch points hazards and controls"
+        "en-us": "Rotating moving equipment pinch points hazards and controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "8",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/084ac848-7eed-4eef-96c8-d2aa21fa36b7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Struck by/caught between hazards and controls"
+        "en-us": "Struck by/caught between hazards and controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "7",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d3b9dc33-8f0a-436b-9816-a1ee5c160e70",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Confidentiality considerations (e.g., trade secrets, personal medical information)"
+        "en-us": "Confidentiality considerations (e.g., trade secrets, personal medical information)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "9",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7ec6820e-51d2-4c7b-8778-dbf5878c8660",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Coaching techniques"
+        "en-us": "Coaching techniques"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/52398681-ba91-44e5-a2fc-607d75e105a4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Correct hazards or risks found in a safety inspection or audit"
+        "en-us": "Correct hazards or risks found in a safety inspection or audit"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/127f3a0f-738e-44be-aacf-6161e5c78949",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Work conditions that could create thermal stress (e.g., humidity, temperature, PPE, duration of exposure, wind) and control methods (e.g., drinking water, warm up area)"
+        "en-us": "Work conditions that could create thermal stress (e.g., humidity, temperature, PPE, duration of exposure, wind) and control methods (e.g., drinking water, warm up area)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e730e475-e603-4463-b08f-e2b53c762fc7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls related to musculoskeletal disorders (e.g., proper lifting techniques, buddy system, elevating material to proper work height)"
+        "en-us": "Hazards and controls related to musculoskeletal disorders (e.g., proper lifting techniques, buddy system, elevating material to proper work height)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/4582cc84-0666-4ed8-be4c-a8cccb223db5",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Evaluate if workers have required qualifications, training, or certifications for job tasks (e.g., power industrial trucks, aerial work platforms, confined space, lockout/tagout, respiratory protection)"
+        "en-us": "Evaluate if workers have required qualifications, training, or certifications for job tasks (e.g., power industrial trucks, aerial work platforms, confined space, lockout/tagout, respiratory protection)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c7624b8a-c3cf-451d-8538-8d8e62fefece",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Excavation hazards and controls"
+        "en-us": "Excavation hazards and controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f59161c8-72c0-433d-819b-e5ab76b8e667",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Conduct a safety inspection or audit"
+        "en-us": "Conduct a safety inspection or audit"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c041c554-a654-4402-baac-87fdb0b21080",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards associated with hand and power tools (e.g., guarding; powder actuated; use, care, and maintenance of tools)"
+        "en-us": "Hazards associated with hand and power tools (e.g., guarding; powder actuated; use, care, and maintenance of tools)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "15",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7ab0d151-0398-44b5-be51-c8a3ec5bde49",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Use, access, and inspections of fire prevention and protection methods (e.g., PASS-pull the pin, aim at base of fire, squeeze handle, and sweep side to side)"
+        "en-us": "Use, access, and inspections of fire prevention and protection methods (e.g., PASS-pull the pin, aim at base of fire, squeeze handle, and sweep side to side)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/8220b914-eb35-4164-ad86-ff3950028b3b",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify if personal protective equipment (PPE) is adequate for the job task and hazards"
+        "en-us": "Identify if personal protective equipment (PPE) is adequate for the job task and hazards"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/279c7f07-2178-4439-bd4a-b922d747a718",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hoisting, rigging, and signaling"
+        "en-us": "Hoisting, rigging, and signaling"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "18",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca045735-b608-4fe8-97ea-0f21f806f28e",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hot work hazards and associated control methods (e.g., fire watch, permit)"
+        "en-us": "Hot work hazards and associated control methods (e.g., fire watch, permit)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "8",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/8e592c20-b461-42f4-abef-0c3820ab881d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "How to influence others to achieve desired outcome"
+        "en-us": "How to influence others to achieve desired outcome"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/dfd61957-9a51-4cf4-9fce-ebdc97032d02",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards associated with cranes (e.g., swing radius, ground conditions, overhead power lines)"
+        "en-us": "Hazards associated with cranes (e.g., swing radius, ground conditions, overhead power lines)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "17",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Emergency Preparedness and Management - 11.5%"
+        "en-us": "Emergency Preparedness and Management - 11.5%"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f2771ca5-a214-43cb-8400-67ce7eb80a6c"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/0776054c-7792-4732-9d4a-9a8183c1e725"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7ab0d151-0398-44b5-be51-c8a3ec5bde49"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ceee45c5-bebb-4e96-85aa-0eaaab37f6fa"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/458b5d15-3c0f-47b7-85bb-53928df0cb93"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/75e04216-4a1e-43e8-b2ff-cb0c0974e7b1"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f2771ca5-a214-43cb-8400-67ce7eb80a6c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/0776054c-7792-4732-9d4a-9a8183c1e725",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7ab0d151-0398-44b5-be51-c8a3ec5bde49",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ceee45c5-bebb-4e96-85aa-0eaaab37f6fa",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/458b5d15-3c0f-47b7-85bb-53928df0cb93",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/75e04216-4a1e-43e8-b2ff-cb0c0974e7b1"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "false",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.115"
-      }
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.115"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/00b6cf69-847f-4558-b676-7673aa9e1161",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with material handling (e.g., site layout for materials, proper stacking and storage, lateral and horizontal movements)"
+        "en-us": "Hazards and controls associated with material handling (e.g., site layout for materials, proper stacking and storage, lateral and horizontal movements)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "6",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/33bdf69d-ff1c-4489-918b-fd114715546b",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards associated with working at heights (e.g., scaffolding, lifts, ladders, stair towers, leading edge)"
+        "en-us": "Hazards associated with working at heights (e.g., scaffolding, lifts, ladders, stair towers, leading edge)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "11",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ae5dd3d7-c3d1-4ebe-94fe-dc8104829bef",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "What should be documented (e.g., training attendance, inspections, daily safety briefings)"
+        "en-us": "What should be documented (e.g., training attendance, inspections, daily safety briefings)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "7",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/28a28e06-dc6a-4517-a8e8-c6c17a23f42f",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Implement appropriate controls for job site hazards"
+        "en-us": "Implement appropriate controls for job site hazards"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "7",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca5814a0-d745-403e-b2f7-68555fcaa541",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "BCSP Code of Ethics"
+        "en-us": "BCSP Code of Ethics"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "10",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/21218c7b-72c1-4d17-8f68-cd2bb724c95c",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "How to limit exposure to hazards from multiple trades working in proximity (e.g., scheduling, communication of safety-related matters)"
+        "en-us": "How to limit exposure to hazards from multiple trades working in proximity (e.g., scheduling, communication of safety-related matters)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "6",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/aa4fb15e-c7da-4dab-a2e3-ef240a7c1eaa",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "How language and cultural barriers impact the safety of employees"
+        "en-us": "How language and cultural barriers impact the safety of employees"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/55cdeb65-496e-4eb8-bae1-5ca496994ab1",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazardous energy and control methods (e.g., lockout/tagout, blocking and bleeding of lines)"
+        "en-us": "Hazardous energy and control methods (e.g., lockout/tagout, blocking and bleeding of lines)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/77c5e73a-8055-4ef9-88d7-8db8999003b4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Implement corrective actions based on the outcome of an incident investigation"
+        "en-us": "Implement corrective actions based on the outcome of an incident investigation"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "6",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/643ebe31-1058-4d4b-b39e-6dcaaab4d9d6",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Electrical hazards and controls"
+        "en-us": "Electrical hazards and controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/155955f9-1bd6-4142-935a-5532ea6e0521",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "How to respond to environmental impacts (e.g., spills, pollutants)"
+        "en-us": "How to respond to environmental impacts (e.g., spills, pollutants)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "9",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Leadership, Communication, and Training - 13.8%"
+        "en-us": "Leadership, Communication, and Training - 13.8%"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca5814a0-d745-403e-b2f7-68555fcaa541"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/1cec1534-d51d-4f16-b1b7-949dfc1d9dbb"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d3b9dc33-8f0a-436b-9816-a1ee5c160e70"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7ec6820e-51d2-4c7b-8778-dbf5878c8660"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/aa4fb15e-c7da-4dab-a2e3-ef240a7c1eaa"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/820aa1cc-cabd-4a6c-b68f-8b2db34189df"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/21218c7b-72c1-4d17-8f68-cd2bb724c95c"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/1a81376c-5917-4945-8027-e3252cc3406d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ae5dd3d7-c3d1-4ebe-94fe-dc8104829bef"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/8e592c20-b461-42f4-abef-0c3820ab881d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/04e24b1c-6ca1-44ec-9673-fce0e5dc521d"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca5814a0-d745-403e-b2f7-68555fcaa541",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/1cec1534-d51d-4f16-b1b7-949dfc1d9dbb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d3b9dc33-8f0a-436b-9816-a1ee5c160e70",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7ec6820e-51d2-4c7b-8778-dbf5878c8660",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/aa4fb15e-c7da-4dab-a2e3-ef240a7c1eaa",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/820aa1cc-cabd-4a6c-b68f-8b2db34189df",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/21218c7b-72c1-4d17-8f68-cd2bb724c95c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/1a81376c-5917-4945-8027-e3252cc3406d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ae5dd3d7-c3d1-4ebe-94fe-dc8104829bef",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/8e592c20-b461-42f4-abef-0c3820ab881d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/04e24b1c-6ca1-44ec-9673-fce0e5dc521d"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "false",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.138"
-      }
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.138"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/97dceee6-1f14-47ef-9e39-0561eb1bc0c9",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards that need to be escalated and who to contact for determination of appropriate controls"
+        "en-us": "Hazards that need to be escalated and who to contact for determination of appropriate controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f557c886-e6a3-4ff2-a04a-eb38cf27e105",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Incident investigative processes and documentation (e.g., secure site, gather facts, take photographs)"
+        "en-us": "Incident investigative processes and documentation (e.g., secure site, gather facts, take photographs)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f23f0edf-91a9-4da9-8016-1f70b25dbe1c",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify potential exposure to noisy environments"
+        "en-us": "Identify potential exposure to noisy environments"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/0776054c-7792-4732-9d4a-9a8183c1e725",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Required emergency response equipment for worksite hazards (e.g., eye wash facilities, backboard, rescue skiff, first aid kit)"
+        "en-us": "Required emergency response equipment for worksite hazards (e.g., eye wash facilities, backboard, rescue skiff, first aid kit)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "4",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/2e48f9c2-2822-4ff3-a7b0-77cfc7018b3f",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify safe and at-risk workplace behaviors"
+        "en-us": "Identify safe and at-risk workplace behaviors"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/55828c24-f7e4-4f3a-b111-5a07c135a178",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Chemical hazards and controls (e.g., GloballyHarmonized System)"
+        "en-us": "Chemical hazards and controls (e.g., GloballyHarmonized System)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e6985b7a-13ab-4c92-b0d1-4ddc67e7b39a",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify and evaluate if a worker is fit for duty (e.g., sick, under influence of controlled substances, fatigued)"
+        "en-us": "Identify and evaluate if a worker is fit for duty (e.g., sick, under influence of controlled substances, fatigued)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/61b2e605-3ea4-43bb-a428-76a8a53aecaf",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Sanitation requirements (e.g., hand-washing facilities, toilets, single-use cups, potable drinking water, trash receptacles)"
+        "en-us": "Sanitation requirements (e.g., hand-washing facilities, toilets, single-use cups, potable drinking water, trash receptacles)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "6",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/458b5d15-3c0f-47b7-85bb-53928df0cb93",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Emergency response plans and drills (e.g., natural disasters, weather, crisis, fire, alarms, evacuation, rescue procedures)"
+        "en-us": "Emergency response plans and drills (e.g., natural disasters, weather, crisis, fire, alarms, evacuation, rescue procedures)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/de60b48b-4238-4b87-afce-5c1d254ff5da",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7d4b9aad-b721-4409-9e40-769502729663",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards associated with walking/working surfaces"
+        "en-us": "Hazards associated with walking/working surfaces"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "13",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f6f0a154-0407-4f9f-8934-a334b5880ca1",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Appropriate respiratory protection relevant to the job task and associated hazards"
+        "en-us": "Appropriate respiratory protection relevant to the job task and associated hazards"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f90c7c1f-3658-48b0-9222-3709b7bf9564",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Identify hazards associated with inhalation, absorption, ingestion, and injection on a job task (e.g., silica, asbestos, chemicals, lead, welding fumes, sharps)"
+        "en-us": "Identify hazards associated with inhalation, absorption, ingestion, and injection on a job task (e.g., silica, asbestos, chemicals, lead, welding fumes, sharps)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/91678dec-9c13-47ba-a121-e26e1215ef91",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Confined space requirements, hazards, and controls"
+        "en-us": "Confined space requirements, hazards, and controls"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "3",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety Program Implementation - 21.9%"
+        "en-us": "Safety Program Implementation - 21.9%"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/52398681-ba91-44e5-a2fc-607d75e105a4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/4582cc84-0666-4ed8-be4c-a8cccb223db5"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/fdac2349-bb0a-442b-8706-5c01073ffaf5"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca045735-b608-4fe8-97ea-0f21f806f28e"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7121223b-15c0-4343-a30c-c54a3689d100"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/2e48f9c2-2822-4ff3-a7b0-77cfc7018b3f"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/61b2e605-3ea4-43bb-a428-76a8a53aecaf"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/28a28e06-dc6a-4517-a8e8-c6c17a23f42f"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f6f0a154-0407-4f9f-8934-a334b5880ca1"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e6985b7a-13ab-4c92-b0d1-4ddc67e7b39a"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f4c3a4f5-369c-4274-b525-3f3ed4ae90d4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f59161c8-72c0-433d-819b-e5ab76b8e667"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/77c5e73a-8055-4ef9-88d7-8db8999003b4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/97dceee6-1f14-47ef-9e39-0561eb1bc0c9"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f557c886-e6a3-4ff2-a04a-eb38cf27e105"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/52398681-ba91-44e5-a2fc-607d75e105a4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/4582cc84-0666-4ed8-be4c-a8cccb223db5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/fdac2349-bb0a-442b-8706-5c01073ffaf5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/ca045735-b608-4fe8-97ea-0f21f806f28e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7121223b-15c0-4343-a30c-c54a3689d100",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/2e48f9c2-2822-4ff3-a7b0-77cfc7018b3f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/61b2e605-3ea4-43bb-a428-76a8a53aecaf",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/28a28e06-dc6a-4517-a8e8-c6c17a23f42f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f6f0a154-0407-4f9f-8934-a334b5880ca1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/e6985b7a-13ab-4c92-b0d1-4ddc67e7b39a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f4c3a4f5-369c-4274-b525-3f3ed4ae90d4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f59161c8-72c0-433d-819b-e5ab76b8e667",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/77c5e73a-8055-4ef9-88d7-8db8999003b4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/97dceee6-1f14-47ef-9e39-0561eb1bc0c9",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/f557c886-e6a3-4ff2-a04a-eb38cf27e105"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "false",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.219"
-      }
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.219"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/1a81376c-5917-4945-8027-e3252cc3406d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Recognize when to seek appropriate subject matter expertise for additional guidance"
+        "en-us": "Recognize when to seek appropriate subject matter expertise for additional guidance"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/1cec1534-d51d-4f16-b1b7-949dfc1d9dbb",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "All written documentation being discoverable in a legal case"
+        "en-us": "All written documentation being discoverable in a legal case"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/663cca8d-5a64-4037-8706-e108e5d5e739",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "8",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/a4baa479-c4c2-44e1-a13e-ff8df5a5e790",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fall protection systems, components, and installations"
+        "en-us": "Fall protection systems, components, and installations"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "12",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/7121223b-15c0-4343-a30c-c54a3689d100",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Established environmental, safety, and health programs for implementation in the field (e.g., program compliance)"
+        "en-us": "Established environmental, safety, and health programs for implementation in the field (e.g., program compliance)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c1a0795c-4959-4bd0-8caa-1e00122479cc",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/faac5f50-6283-4557-bfd7-6250070f94f8",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Work zone hazards and controls (e.g., traffic control, limited access zones)"
+        "en-us": "Work zone hazards and controls (e.g., traffic control, limited access zones)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/c2bf9cad-15b5-4d14-8a97-b317d6751d1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "5",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/cceca2e5-4ae8-485d-aa43-03b7be7a36e4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Recognize symptoms associated with thermal stress (e.g., heat stroke, hypothermia)"
+        "en-us": "Recognize symptoms associated with thermal stress (e.g., heat stroke, hypothermia)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BeginnerLevel",
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/330d8a60-afb3-4940-a448-24fda80cbf95",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/STSC/d86ef1ea-50c1-448d-9b7e-f19232eb259a",
       "ceasn:listID": "2",
-      "ceasn:shouldIndex": "true"
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     }
   ]
 }
-
