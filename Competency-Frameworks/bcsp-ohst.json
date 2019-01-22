@@ -1,2334 +1,1469 @@
 {
-  "@context": {
-    "ceasn": "http://purl.org/ctdlasn/terms/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
-  },
+  "@context": "http://credreg.net/ctdlasn/schema/context/json",
   "@graph": [
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "@type": "ceasn:CompetencyFramework",
       "ceasn:description": {
-        "@language": "en-US",
-        "@value": "Occupational Health and Safety Technologists (OHST) are persons who perform occupational health and safety activities on a full-time or part-time basis as part of their job duties. Some examples of occupational health and safety activities (also performed by loss control specialists) are making work site assessments to determine risks, potential hazards and controls, evaluating risks and hazard control measures, investigating incidents, maintaining and evaluating incident and loss records, and preparing emergency response plans."
+        "en-us": "Occupational Health and Safety Technologists (OHST) are persons who perform occupational health and safety activities on a full-time or part-time basis as part of their job duties. Some examples of occupational health and safety activities (also performed by loss control specialists) are making work site assessments to determine risks, potential hazards and controls, evaluating risks and hazard control measures, investigating incidents, maintaining and evaluating incident and loss records, and preparing emergency response plans."
       },
-      "ceasn:publisher": {
-        "@id": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534"
-      },
-      "ceasn:publisherName": {
-        "@language": "en-US",
-        "@value": "Board of Certified Safety Professionals (BCSP)"
-      },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
       "ceasn:hasTopChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a"
       ],
       "ceasn:name": {
-        "@language": "en-US",
-        "@value": "Occupational Health and Safety Technologist (OHST)"
+        "en-us": "Occupational Health and Safety Technologist (OHST)"
       },
-      "ceasn:publicationStatusType": {
-        "@id": "http://purl.org/ASN/scheme/ASNPublicationStatus/Draft"
+      "ceasn:publicationStatusType": "http://purl.org/ASN/scheme/ASNPublicationStatus/Draft",
+      "ceasn:publisher": "https://credentialengineregistry.org/resources/ce-6eb7abf1-f5b7-444c-a304-6c10b451a534",
+      "ceasn:publisherName": {
+        "en-us": "Board of Certified Safety Professionals (BCSP)"
       }
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d6b1e739-319d-43eb-b1a4-c622e9c466bb",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with hand and power tools (e.g., hammers, grinders)"
+        "en-us": "Hazards and controls associated with hand and power tools (e.g., hammers, grinders)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "12"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/69a54c41-ecf8-4acc-89f7-2525df2bd172",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety practices associated with heavy equipment operation (e.g., front-end loaders, backhoes, excavators)"
+        "en-us": "Safety practices associated with heavy equipment operation (e.g., front-end loaders, backhoes, excavators)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "22"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/78ae80cb-452c-4411-82b7-541d2bc8b888",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hierarchy of controls (e.g., elimination, substitution, engineering, administrative, personal protective equipment [PPE])"
+        "en-us": "Hierarchy of controls (e.g., elimination, substitution, engineering, administrative, personal protective equipment [PPE])"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3090f56a-64ca-48a3-99d4-b8d95276baef",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Confined space requirements (e.g., identification, permits, entry, rescue)"
+        "en-us": "Confined space requirements (e.g., identification, permits, entry, rescue)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "8"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Organizational Communication and Training/Education - 13.7%"
+        "en-us": "Organizational Communication and Training/Education - 13.7%"
       },
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/4b301380-2b49-48ba-8e3a-9c3e99eaa588"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d6313e2d-bee2-4175-aa17-3ec3d3512c00"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/672b4540-b068-4f1f-b632-9fbb7dcb1010"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/969d06c6-5ae5-4d58-84a7-2479bc670f4b"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f6d1b9e8-0204-44ee-9403-f8716174856d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ddd5221b-839f-4f06-b84f-ddbc0da14482"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e190ac01-e7b6-420f-a3f4-e870f9a181e4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f22cdaaf-2d8a-42ad-b35d-812787f9a135"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9c42b206-5059-43ff-ab46-0788a33f935c"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0ed8777a-ba12-4db3-a658-f826b8cd63b7"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/812e47ea-de88-43ba-b123-11293039eb17"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8f7362ce-c599-4a99-9a23-aae9dd984b6a"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc8b4fa9-ffda-4dde-b1dc-c0bc75a7629e"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/4b301380-2b49-48ba-8e3a-9c3e99eaa588",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d6313e2d-bee2-4175-aa17-3ec3d3512c00",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/672b4540-b068-4f1f-b632-9fbb7dcb1010",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/969d06c6-5ae5-4d58-84a7-2479bc670f4b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f6d1b9e8-0204-44ee-9403-f8716174856d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ddd5221b-839f-4f06-b84f-ddbc0da14482",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e190ac01-e7b6-420f-a3f4-e870f9a181e4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f22cdaaf-2d8a-42ad-b35d-812787f9a135",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9c42b206-5059-43ff-ab46-0788a33f935c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0ed8777a-ba12-4db3-a658-f826b8cd63b7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/812e47ea-de88-43ba-b123-11293039eb17",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8f7362ce-c599-4a99-9a23-aae9dd984b6a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc8b4fa9-ffda-4dde-b1dc-c0bc75a7629e"
       ],
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.137"
-      }
+      "ceasn:weight": "0.137"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/014ca997-f48a-44ed-a48d-1d4c0f35cef7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety procedures associated with hoisting and rigging (e.g., inspection of rigging equipment, load limitations of rigging, use of tag lines)"
+        "en-us": "Safety procedures associated with hoisting and rigging (e.g., inspection of rigging equipment, load limitations of rigging, use of tag lines)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "17"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a156cf55-68c7-425d-8a86-0c940861a1ee",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "The incident command system (e.g., roles, structure, importance of )"
+        "en-us": "The incident command system (e.g., roles, structure, importance of )"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "8"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c10253a0-88be-4ff7-8e7f-537ecee317e1",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental physics concepts (e.g., force calculations, gravity, energy conversions, acceleration, load distribution, leverage, pulley, friction)"
+        "en-us": "Fundamental physics concepts (e.g., force calculations, gravity, energy conversions, acceleration, load distribution, leverage, pulley, friction)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1d47c028-eb67-47cb-9f3c-958cd3606728",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with hazardous energy sources"
+        "en-us": "Hazards and controls associated with hazardous energy sources"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/812e47ea-de88-43ba-b123-11293039eb17",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Training delivery mediums and technologies (e.g., presentation media, online, classroom, hands-on)"
+        "en-us": "Training delivery mediums and technologies (e.g., presentation media, online, classroom, hands-on)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/af720710-9b4e-451f-955c-f8c43f4da843",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Occupational illnesses (e.g., bloodborne pathogens, tuberculosis, dermatitis, hearing loss, asbestosis, silicosis, flu)"
+        "en-us": "Occupational illnesses (e.g., bloodborne pathogens, tuberculosis, dermatitis, hearing loss, asbestosis, silicosis, flu)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/abe9195b-1f25-430d-9aac-f5cb5ff932ee",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Benchmarking procedures and standards (e.g., key performance indicators, standard deviation, industry comparisons)"
+        "en-us": "Benchmarking procedures and standards (e.g., key performance indicators, standard deviation, industry comparisons)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "8"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f08dc905-9e89-4172-a032-ff2b49b9cf17",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Protecting confidential information (e.g., privacy of medical and personally identifiable information, trade secrets)"
+        "en-us": "Protecting confidential information (e.g., privacy of medical and personally identifiable information, trade secrets)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e823413a-d093-49d6-b38c-a8a4c2db6238",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Incident investigation practices or processes"
+        "en-us": "Incident investigation practices or processes"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/498ee815-cb83-4d8d-a14e-3b98e0efaa74",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Appropriate selection and use of available emergency response equipment (e.g., fire extinguisher, respirators, decontamination)"
+        "en-us": "Appropriate selection and use of available emergency response equipment (e.g., fire extinguisher, respirators, decontamination)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e190ac01-e7b6-420f-a3f4-e870f9a181e4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Types of records that must be retained"
+        "en-us": "Types of records that must be retained"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1dc7f76a-3ea8-4173-9fc5-7cb3708b7340",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic concepts related to economic effects of losses (e.g., cost per person, incident, mile, or unit; direct and indirect costs)"
+        "en-us": "Basic concepts related to economic effects of losses (e.g., cost per person, incident, mile, or unit; direct and indirect costs)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/271dc546-9e30-46a8-9b5f-92deb036923b",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazardous materials management requirements (e.g., storage, labeling, compatibility, disposal, spill response)"
+        "en-us": "Hazardous materials management requirements (e.g., storage, labeling, compatibility, disposal, spill response)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c47bbbb9-8fd4-4a8e-ac73-7701f79c3905",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic business financial terminology (e.g., interest rates, loss rates, return on investment, depreciation, opportunity costs, budget, present and future value)"
+        "en-us": "Basic business financial terminology (e.g., interest rates, loss rates, return on investment, depreciation, opportunity costs, budget, present and future value)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/aa079e81-1e9a-45f2-a3e0-6c3181534efd",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental chemistry concepts (e.g., pH and balancing equations, organic and inorganic, reactivity, corrosive properties, compatibility, periodic table)"
+        "en-us": "Fundamental chemistry concepts (e.g., pH and balancing equations, organic and inorganic, reactivity, corrosive properties, compatibility, periodic table)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/62fcc382-c76b-4296-85da-e7d1b6b12e86",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with walking/working surfaces (e.g., slips, trips, and falls; stairways)"
+        "en-us": "Hazards and controls associated with walking/working surfaces (e.g., slips, trips, and falls; stairways)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "10"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fdb32fb3-be30-4857-ae9b-e78f557d5920",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental risk management concepts (e.g., risk transfer, insure, loss control)"
+        "en-us": "Fundamental risk management concepts (e.g., risk transfer, insure, loss control)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "14"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a0bf3b76-b68b-4b61-8a29-35198bba30f6",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental mathematics (e.g., algebra, ratios, geometry, trigonometry)"
+        "en-us": "Fundamental mathematics (e.g., algebra, ratios, geometry, trigonometry)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e90d0ffa-c4aa-42fe-882e-4f88f26c9e50",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "BCSP Code of Ethics"
+        "en-us": "BCSP Code of Ethics"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6cfc9b53-96ef-4b0d-819a-6415caeb2551",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety operations associated with cranes and lifting devices (e.g., pre-operation inspection, checking manufacturer use standards, chain fall, load ratings)"
+        "en-us": "Safety operations associated with cranes and lifting devices (e.g., pre-operation inspection, checking manufacturer use standards, chain fall, load ratings)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "16"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9c42b206-5059-43ff-ab46-0788a33f935c",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "The most appropriate channels or methods for communicating various types of information"
+        "en-us": "The most appropriate channels or methods for communicating various types of information"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f44fcf75-925f-4dec-8c40-c602030ee085",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Techniques for conducting and evaluating the effectiveness of exercises and drills"
+        "en-us": "Techniques for conducting and evaluating the effectiveness of exercises and drills"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5d8436ca-19b7-491a-97bf-941b1b81ef30",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "When to consult with equipment manufacturers, suppliers, or subject matter experts"
+        "en-us": "When to consult with equipment manufacturers, suppliers, or subject matter experts"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/cae1bddd-5b87-4a66-ad22-dd1e5519af6b",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental biology concepts (e.g., anatomy, physiology, basic medical terms, cells, genetic mutations, DNA)"
+        "en-us": "Fundamental biology concepts (e.g., anatomy, physiology, basic medical terms, cells, genetic mutations, DNA)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1ac9a9ed-d7f6-4c73-9818-07ac415a649d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with compressed gas storage and use (e.g., fuel gas, oxygen storage, ammonia tanks, liquefied petroleum gas cylinders)"
+        "en-us": "Hazards and controls associated with compressed gas storage and use (e.g., fuel gas, oxygen storage, ammonia tanks, liquefied petroleum gas cylinders)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "23"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6ad03ed1-a9f7-4aa7-a066-3fd0d58853fb",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Audit processes and practices (e.g., follow checklist or flow chart, interview, document findings, verification follow up)"
+        "en-us": "Audit processes and practices (e.g., follow checklist or flow chart, interview, document findings, verification follow up)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f22cdaaf-2d8a-42ad-b35d-812787f9a135",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Techniques for evaluating the quality of the training (e.g., surveys, observation)"
+        "en-us": "Techniques for evaluating the quality of the training (e.g., surveys, observation)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "9"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/2a9881d2-4512-46fa-8b7a-6a02d3c5e58f",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Lighting requirements for job tasks (e.g., lighting measurements and conversions)"
+        "en-us": "Lighting requirements for job tasks (e.g., lighting measurements and conversions)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f6d1b9e8-0204-44ee-9403-f8716174856d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Methods to evaluate student retention of the learning objectives (e.g., quizzes/tests, skills demonstration)"
+        "en-us": "Methods to evaluate student retention of the learning objectives (e.g., quizzes/tests, skills demonstration)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "8"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/de557a34-df7b-4202-be65-24ae06d5d800",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Apply concepts of BCSP Code of Ethics (e.g., obligation to report hazards, environmental, or safety issues; chain of custody of samples and specimens; ethics related to conducting audits)"
+        "en-us": "Apply concepts of BCSP Code of Ethics (e.g., obligation to report hazards, environmental, or safety issues; chain of custody of samples and specimens; ethics related to conducting audits)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/710a561c-5a09-4ea8-81ec-0f23d2210261",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with working around moving parts and pinch points (e.g., machine guarding, pulleys)"
+        "en-us": "Hazards and controls associated with working around moving parts and pinch points (e.g., machine guarding, pulleys)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "13"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6dcb024e-1c2a-4d81-9188-06d50a590774",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with housekeeping (e.g., materials storage, clutter, staging, fire hazards)"
+        "en-us": "Hazards and controls associated with housekeeping (e.g., materials storage, clutter, staging, fire hazards)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "14"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0ed8777a-ba12-4db3-a658-f826b8cd63b7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Effectively communicate (verbally and in writing) with internal and external stakeholders"
+        "en-us": "Effectively communicate (verbally and in writing) with internal and external stakeholders"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/92d4022d-a3ff-451e-bfdd-ce2bad32450e",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic concepts of hazardous waste management"
+        "en-us": "Basic concepts of hazardous waste management"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "10"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1ea83a63-cc5b-4ee7-9c5d-0743990cf15c",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental elements of risk analysis techniques (e.g., root cause analysis; requirements matrix/gap analysis methods)"
+        "en-us": "Fundamental elements of risk analysis techniques (e.g., root cause analysis; requirements matrix/gap analysis methods)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "13"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8a760621-5674-42e5-a4d7-d96e1e98dc53",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with working around pressurized systems (e.g., steam systems, hydraulic systems)"
+        "en-us": "Hazards and controls associated with working around pressurized systems (e.g., steam systems, hydraulic systems)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1bd011c2-08d5-4577-b620-934b7af8de95",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "The difference between leading and lagging indicators and appropriate use of each"
+        "en-us": "The difference between leading and lagging indicators and appropriate use of each"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/2c288765-6c21-4e69-9349-164953fd45c4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Sampling equipment, applications, and limitations (e.g., light meters, sound level meters, gas meters, sample pumps, dosimeters)"
+        "en-us": "Sampling equipment, applications, and limitations (e.g., light meters, sound level meters, gas meters, sample pumps, dosimeters)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "11"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f2de0646-9540-4fc1-91d2-ac65638f4e35",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with excavations (e.g., depth, distance, barricades, spoil pile location, basic soil classifications, access and egress)"
+        "en-us": "Hazards and controls associated with excavations (e.g., depth, distance, barricades, spoil pile location, basic soil classifications, access and egress)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "20"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e4a9fea8-eda2-49ca-83d8-e23cfe86a6da",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Unique workplace hazards (e.g., combustible dust, spray booths, dip tanks)"
+        "en-us": "Unique workplace hazards (e.g., combustible dust, spray booths, dip tanks)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/12012c48-3906-4417-8a09-4c73c75741bc",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Emergency response procedures or action plans (e.g., first aid, eye washes, safety showers, cardiopulmonary resuscitation [CPR], automated external defibrillator [AED], bloodborne pathogens, fire extinguishers, emergency exit and re-entry procedures)"
+        "en-us": "Emergency response procedures or action plans (e.g., first aid, eye washes, safety showers, cardiopulmonary resuscitation [CPR], automated external defibrillator [AED], bloodborne pathogens, fire extinguishers, emergency exit and re-entry procedures)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental Math and Science and Business Calculations/Analysis - 9.7%"
+        "en-us": "Fundamental Math and Science and Business Calculations/Analysis - 9.7%"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c47bbbb9-8fd4-4a8e-ac73-7701f79c3905"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a0bf3b76-b68b-4b61-8a29-35198bba30f6"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/cae1bddd-5b87-4a66-ad22-dd1e5519af6b"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f0061641-2ff9-40c4-b888-05ce731e2bca"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/abe9195b-1f25-430d-9aac-f5cb5ff932ee"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/046b59dc-e1c5-4d83-ab0b-cf8491d734dd"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c10253a0-88be-4ff7-8e7f-537ecee317e1"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6b21a732-0014-481e-8cbd-0666c88762c7"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/aa079e81-1e9a-45f2-a3e0-6c3181534efd"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1dc7f76a-3ea8-4173-9fc5-7cb3708b7340"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bbc1c02e-f237-4261-a37c-e6755b39bad6"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c47bbbb9-8fd4-4a8e-ac73-7701f79c3905",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a0bf3b76-b68b-4b61-8a29-35198bba30f6",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/cae1bddd-5b87-4a66-ad22-dd1e5519af6b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f0061641-2ff9-40c4-b888-05ce731e2bca",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/abe9195b-1f25-430d-9aac-f5cb5ff932ee",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/046b59dc-e1c5-4d83-ab0b-cf8491d734dd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c10253a0-88be-4ff7-8e7f-537ecee317e1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6b21a732-0014-481e-8cbd-0666c88762c7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/aa079e81-1e9a-45f2-a3e0-6c3181534efd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1dc7f76a-3ea8-4173-9fc5-7cb3708b7340",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bbc1c02e-f237-4261-a37c-e6755b39bad6"
       ],
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.097"
-      }
+      "ceasn:weight": "0.097"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/672b4540-b068-4f1f-b632-9fbb7dcb1010",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Participate in organizational teams"
+        "en-us": "Participate in organizational teams"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ea8cdb78-1834-43bd-9fe5-52d9123c8865",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with radiation (e.g., types of radiation, half-life calculations, time-distance and shielding, inverse square law, waste disposal)"
+        "en-us": "Hazards and controls associated with radiation (e.g., types of radiation, half-life calculations, time-distance and shielding, inverse square law, waste disposal)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "24"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8c38adf2-a855-4751-80b1-495feb7a04fa",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic concepts of process safety management"
+        "en-us": "Basic concepts of process safety management"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "9"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/be2650aa-c723-473e-b00f-136539ff7ae3",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "The requirements for operating and inspecting material handling equipment/trucks, including forklifts (e.g., checklists, certifications, competencies, pedestrian safety, battery charging stations)"
+        "en-us": "The requirements for operating and inspecting material handling equipment/trucks, including forklifts (e.g., checklists, certifications, competencies, pedestrian safety, battery charging stations)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "11"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ddd5221b-839f-4f06-b84f-ddbc0da14482",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Influence behavior related to safety (e.g., group dynamics, motivation strategies, coaching strategies)"
+        "en-us": "Influence behavior related to safety (e.g., group dynamics, motivation strategies, coaching strategies)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/13ab92a8-c588-4f40-be1f-4a626beae4b8",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Interview techniques for conducting investigations or process improvement"
+        "en-us": "Interview techniques for conducting investigations or process improvement"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/42a53c4e-9d49-4922-a07e-fcbd710378a0",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Principles of medical surveillance and their relevance to health hazards"
+        "en-us": "Principles of medical surveillance and their relevance to health hazards"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "13"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bbc1c02e-f237-4261-a37c-e6755b39bad6",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental statistics (e.g., mean, median, confidence intervals, distributions, probabilities, sample sizes)"
+        "en-us": "Fundamental statistics (e.g., mean, median, confidence intervals, distributions, probabilities, sample sizes)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fd965f0e-6a01-4e00-9f03-a48abc2da030",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with using technology while working (e.g., distraction caused by use of personal electronic devices, proximity alarm systems, alarm fatigue)"
+        "en-us": "Hazards and controls associated with using technology while working (e.g., distraction caused by use of personal electronic devices, proximity alarm systems, alarm fatigue)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "25"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5b6748a4-45f9-4694-9239-1eaf8f172936",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Agents that could be used in terrorist events, including chemical, biological, radiological, nuclear, and explosive agents"
+        "en-us": "Agents that could be used in terrorist events, including chemical, biological, radiological, nuclear, and explosive agents"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "9"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety, Health, and Environmental Programs & Risk Management - 18.3%"
+        "en-us": "Safety, Health, and Environmental Programs & Risk Management - 18.3%"
       },
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc32a0ba-1c84-4f48-afb4-d597d340d755"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/13ab92a8-c588-4f40-be1f-4a626beae4b8"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1ea83a63-cc5b-4ee7-9c5d-0743990cf15c"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6ad03ed1-a9f7-4aa7-a066-3fd0d58853fb"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5d8436ca-19b7-491a-97bf-941b1b81ef30"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e823413a-d093-49d6-b38c-a8a4c2db6238"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3167277d-31da-490b-8e45-50a4e5ff8e26"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/92d4022d-a3ff-451e-bfdd-ce2bad32450e"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a4bc0b28-a7e2-49f9-b3c8-5b861351cd39"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8c38adf2-a855-4751-80b1-495feb7a04fa"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1bd011c2-08d5-4577-b620-934b7af8de95"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9706945-5459-41df-a47e-26168ad437bd"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fdb32fb3-be30-4857-ae9b-e78f557d5920"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/4ae89590-4764-48f0-9bad-5313a9e6dfad"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8e645b2f-298c-4dd9-a179-86fadf9f9eb7"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc32a0ba-1c84-4f48-afb4-d597d340d755",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/13ab92a8-c588-4f40-be1f-4a626beae4b8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1ea83a63-cc5b-4ee7-9c5d-0743990cf15c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6ad03ed1-a9f7-4aa7-a066-3fd0d58853fb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5d8436ca-19b7-491a-97bf-941b1b81ef30",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e823413a-d093-49d6-b38c-a8a4c2db6238",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3167277d-31da-490b-8e45-50a4e5ff8e26",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/92d4022d-a3ff-451e-bfdd-ce2bad32450e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a4bc0b28-a7e2-49f9-b3c8-5b861351cd39",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8c38adf2-a855-4751-80b1-495feb7a04fa",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1bd011c2-08d5-4577-b620-934b7af8de95",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9706945-5459-41df-a47e-26168ad437bd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fdb32fb3-be30-4857-ae9b-e78f557d5920",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/4ae89590-4764-48f0-9bad-5313a9e6dfad",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8e645b2f-298c-4dd9-a179-86fadf9f9eb7"
       ],
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.183"
-      }
+      "ceasn:weight": "0.183"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3b311877-81fd-449f-819c-8ace929b4fbc",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Respiratory hazards and controls (e.g., types of particulates and gases, cartridges and filters, types of respirators, pre-use requirements)"
+        "en-us": "Respiratory hazards and controls (e.g., types of particulates and gases, cartridges and filters, types of respirators, pre-use requirements)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3640a25d-f221-45a6-bdcf-f0de51e59789",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with working in hot or cold environments (e.g., heat stress, cold stress)"
+        "en-us": "Hazards and controls associated with working in hot or cold environments (e.g., heat stress, cold stress)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e4ef3f89-f81f-42f9-97fc-9aa44938cb36",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Emergency systems operations and limitations (e.g., critical equipment operation, types of sprinkler systems)"
+        "en-us": "Emergency systems operations and limitations (e.g., critical equipment operation, types of sprinkler systems)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6b21a732-0014-481e-8cbd-0666c88762c7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Qualitative data collection and analysis (e.g., perception surveys, focus groups)"
+        "en-us": "Qualitative data collection and analysis (e.g., perception surveys, focus groups)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "9"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9c0ec52-defc-4be7-9955-9063222d49cd",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Acute and chronic occupational exposures and control methods (e.g., latency periods)"
+        "en-us": "Acute and chronic occupational exposures and control methods (e.g., latency periods)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Health Hazards and Basic Industrial Hygiene - 14.3%"
+        "en-us": "Health Hazards and Basic Industrial Hygiene - 14.3%"
       },
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/af36fbc1-7bbf-4ff3-a362-5b272f8b5b47"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/2a9881d2-4512-46fa-8b7a-6a02d3c5e58f"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/2c288765-6c21-4e69-9349-164953fd45c4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3b311877-81fd-449f-819c-8ace929b4fbc"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9c0ec52-defc-4be7-9955-9063222d49cd"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ddd8556e-9e9c-4ea2-9ad3-67e5f009f32a"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e1cefe9a-f225-461d-9be9-28a9efc97f96"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/42a53c4e-9d49-4922-a07e-fcbd710378a0"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0858f56d-bc06-43f6-8fd9-2a2cf1f71d0e"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8e208a0f-ee6c-4d52-94d2-89a317f73095"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e8949b41-31f9-4131-9a7b-7104b9bb54cf"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/af720710-9b4e-451f-955c-f8c43f4da843"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ba87a921-0ee8-44a2-896d-828cbfc7ad75"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/af36fbc1-7bbf-4ff3-a362-5b272f8b5b47",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/2a9881d2-4512-46fa-8b7a-6a02d3c5e58f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/2c288765-6c21-4e69-9349-164953fd45c4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3b311877-81fd-449f-819c-8ace929b4fbc",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9c0ec52-defc-4be7-9955-9063222d49cd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ddd8556e-9e9c-4ea2-9ad3-67e5f009f32a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e1cefe9a-f225-461d-9be9-28a9efc97f96",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/42a53c4e-9d49-4922-a07e-fcbd710378a0",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0858f56d-bc06-43f6-8fd9-2a2cf1f71d0e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8e208a0f-ee6c-4d52-94d2-89a317f73095",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e8949b41-31f9-4131-9a7b-7104b9bb54cf",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/af720710-9b4e-451f-955c-f8c43f4da843",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ba87a921-0ee8-44a2-896d-828cbfc7ad75"
       ],
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.143"
-      }
+      "ceasn:weight": "0.143"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c8982360-7251-4fbd-b2ae-a67a3092a75d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Fundamental building design and construction (e.g., blueprints, ventilation, lighting, layout, flooring, noise, floor load ratings, occupancy ratings)"
+        "en-us": "Fundamental building design and construction (e.g., blueprints, ventilation, lighting, layout, flooring, noise, floor load ratings, occupancy ratings)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "28"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/af36fbc1-7bbf-4ff3-a362-5b272f8b5b47",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with biological safety and containment (e.g., levels of lab containment, disposal, biosafety cabinets, ventilation, sharps management)"
+        "en-us": "Hazards and controls associated with biological safety and containment (e.g., levels of lab containment, disposal, biosafety cabinets, ventilation, sharps management)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "8"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ba87a921-0ee8-44a2-896d-828cbfc7ad75",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with noise (e.g., sound level calculations, hearing protection devices, engineering controls)"
+        "en-us": "Hazards and controls associated with noise (e.g., sound level calculations, hearing protection devices, engineering controls)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8e208a0f-ee6c-4d52-94d2-89a317f73095",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic concepts in ergonomics (e.g., proper lifting techniques, cumulative trauma disorders, neutral posture, workspace design)"
+        "en-us": "Basic concepts in ergonomics (e.g., proper lifting techniques, cumulative trauma disorders, neutral posture, workspace design)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/969d06c6-5ae5-4d58-84a7-2479bc670f4b",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic concepts of adult learning theory"
+        "en-us": "Basic concepts of adult learning theory"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0858f56d-bc06-43f6-8fd9-2a2cf1f71d0e",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Common occupational injuries (e.g., carpal tunnel, amputation, electrocution/shock, repetitive injuries, sprains or strains, lacerations)"
+        "en-us": "Common occupational injuries (e.g., carpal tunnel, amputation, electrocution/shock, repetitive injuries, sprains or strains, lacerations)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "6"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0d562321-d04b-47e9-9570-e9bed049593f",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic components of technical drawings (e.g., units of measurement)"
+        "en-us": "Basic components of technical drawings (e.g., units of measurement)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "26"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ddd8556e-9e9c-4ea2-9ad3-67e5f009f32a",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "The difference between passive and active sampling equipment"
+        "en-us": "The difference between passive and active sampling equipment"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "12"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc8b4fa9-ffda-4dde-b1dc-c0bc75a7629e",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Appropriate training for content and audience (e.g., on-the-job training, lecture, demonstration)"
+        "en-us": "Appropriate training for content and audience (e.g., on-the-job training, lecture, demonstration)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e1cefe9a-f225-461d-9be9-28a9efc97f96",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Stress-related conditions and responses (e.g., workplace violence, loss of consciousness)"
+        "en-us": "Stress-related conditions and responses (e.g., workplace violence, loss of consciousness)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "9"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fdd648ca-8154-4d0a-9c16-9dd0e71084b3",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Emergency equipment use, inspection, and required performance tests"
+        "en-us": "Emergency equipment use, inspection, and required performance tests"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8e645b2f-298c-4dd9-a179-86fadf9f9eb7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Relevant international safety, health, environmental and security standards, guidelines, and best practices (e.g., ISO standards)"
+        "en-us": "Relevant international safety, health, environmental and security standards, guidelines, and best practices (e.g., ISO standards)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/71dc472e-0a89-4a9b-921a-9db6c75cb2fe",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Organizational and community response plans and integration (e.g., mutual aid agreements, business continuity and community plans, community right-to-know)"
+        "en-us": "Organizational and community response plans and integration (e.g., mutual aid agreements, business continuity and community plans, community right-to-know)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/4b301380-2b49-48ba-8e3a-9c3e99eaa588",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Develop and deliver effective presentations or trainings"
+        "en-us": "Develop and deliver effective presentations or trainings"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc32a0ba-1c84-4f48-afb4-d597d340d755",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Assess external and internal risks to facilities (e.g., property, systems, processes, equipment, and employees)"
+        "en-us": "Assess external and internal risks to facilities (e.g., property, systems, processes, equipment, and employees)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a4bc0b28-a7e2-49f9-b3c8-5b861351cd39",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Behavior-based safety principles"
+        "en-us": "Behavior-based safety principles"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "12"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/16c6ca48-bc28-4b04-a6ac-c390d9dc2b75",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Electrical safe work practices (e.g., arc flash protection, temporary power cord safety, ground fault circuit interrupter [GFCI])"
+        "en-us": "Electrical safe work practices (e.g., arc flash protection, temporary power cord safety, ground fault circuit interrupter [GFCI])"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "19"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8f7362ce-c599-4a99-9a23-aae9dd984b6a",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic management principles of authority, responsibility, and accountability (e.g., chain of command, informal leadership)"
+        "en-us": "Basic management principles of authority, responsibility, and accountability (e.g., chain of command, informal leadership)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Ethics and Professional Conduct - 5.2%"
+        "en-us": "Ethics and Professional Conduct - 5.2%"
       },
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a2cb8e04-0f25-4291-b6cd-63ba7f77ce0f"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e90d0ffa-c4aa-42fe-882e-4f88f26c9e50"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f08dc905-9e89-4172-a032-ff2b49b9cf17"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/de557a34-df7b-4202-be65-24ae06d5d800"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a2cb8e04-0f25-4291-b6cd-63ba7f77ce0f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e90d0ffa-c4aa-42fe-882e-4f88f26c9e50",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f08dc905-9e89-4172-a032-ff2b49b9cf17",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/de557a34-df7b-4202-be65-24ae06d5d800"
       ],
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "7",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.052"
-      }
+      "ceasn:weight": "0.052"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5aa7870c-be72-44c2-8d91-113c5911d72e",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic components of process flow diagrams (e.g., legend icons)"
+        "en-us": "Basic components of process flow diagrams (e.g., legend icons)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "27"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e8949b41-31f9-4131-9a7b-7104b9bb54cf",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic concepts of industrial hygiene sample and indicator media (e.g., colorimetric tubes, pH strips, cyclones)"
+        "en-us": "Basic concepts of industrial hygiene sample and indicator media (e.g., colorimetric tubes, pH strips, cyclones)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/29daf352-a766-4341-8fe3-630993b04a1d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "10"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e73456e5-6847-4703-9c6d-9606ac19c3e8",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety practices associated with motor vehicle operation (e.g., seat belts, loading docks, chocking of wheels, defensive driving)"
+        "en-us": "Safety practices associated with motor vehicle operation (e.g., seat belts, loading docks, chocking of wheels, defensive driving)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "21"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d58a3c67-1acd-437a-9717-240d0078ba23",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with hot work (e.g., welding, burning, cutting, grinding)"
+        "en-us": "Hazards and controls associated with hot work (e.g., welding, burning, cutting, grinding)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "15"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/4ae89590-4764-48f0-9bad-5313a9e6dfad",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Job hazard analysis (e.g., PHA)"
+        "en-us": "Job hazard analysis (e.g., PHA)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "2"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/72082108-aa6f-404d-b9f0-a9bc983679e5",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazards and controls associated with working at heights or on elevated work platforms (e.g., fall prevention and protection methods; aerial lift, scaffolding, lifts; ladders)"
+        "en-us": "Hazards and controls associated with working at heights or on elevated work platforms (e.g., fall prevention and protection methods; aerial lift, scaffolding, lifts; ladders)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "9"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Hazard Identification and Control - 31.4%"
+        "en-us": "Hazard Identification and Control - 31.4%"
       },
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e73456e5-6847-4703-9c6d-9606ac19c3e8"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/555f05a5-f50f-43d8-a383-30f9b6c23ef6"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/72082108-aa6f-404d-b9f0-a9bc983679e5"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d6b1e739-319d-43eb-b1a4-c622e9c466bb"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6cfc9b53-96ef-4b0d-819a-6415caeb2551"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/be2650aa-c723-473e-b00f-136539ff7ae3"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d58a3c67-1acd-437a-9717-240d0078ba23"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/271dc546-9e30-46a8-9b5f-92deb036923b"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6dcb024e-1c2a-4d81-9188-06d50a590774"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8a760621-5674-42e5-a4d7-d96e1e98dc53"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/62fcc382-c76b-4296-85da-e7d1b6b12e86"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fd965f0e-6a01-4e00-9f03-a48abc2da030"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/710a561c-5a09-4ea8-81ec-0f23d2210261"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/218f4820-82b9-47b8-8050-d8e6e6155aea"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1ac9a9ed-d7f6-4c73-9818-07ac415a649d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e4a9fea8-eda2-49ca-83d8-e23cfe86a6da"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/014ca997-f48a-44ed-a48d-1d4c0f35cef7"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ea8cdb78-1834-43bd-9fe5-52d9123c8865"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/78ae80cb-452c-4411-82b7-541d2bc8b888"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f2de0646-9540-4fc1-91d2-ac65638f4e35"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3640a25d-f221-45a6-bdcf-f0de51e59789"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c8982360-7251-4fbd-b2ae-a67a3092a75d"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/16c6ca48-bc28-4b04-a6ac-c390d9dc2b75"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5aa7870c-be72-44c2-8d91-113c5911d72e"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3090f56a-64ca-48a3-99d4-b8d95276baef"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1d47c028-eb67-47cb-9f3c-958cd3606728"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/69a54c41-ecf8-4acc-89f7-2525df2bd172"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0d562321-d04b-47e9-9570-e9bed049593f"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e73456e5-6847-4703-9c6d-9606ac19c3e8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/555f05a5-f50f-43d8-a383-30f9b6c23ef6",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/72082108-aa6f-404d-b9f0-a9bc983679e5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d6b1e739-319d-43eb-b1a4-c622e9c466bb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6cfc9b53-96ef-4b0d-819a-6415caeb2551",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/be2650aa-c723-473e-b00f-136539ff7ae3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d58a3c67-1acd-437a-9717-240d0078ba23",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/271dc546-9e30-46a8-9b5f-92deb036923b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/6dcb024e-1c2a-4d81-9188-06d50a590774",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/8a760621-5674-42e5-a4d7-d96e1e98dc53",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/62fcc382-c76b-4296-85da-e7d1b6b12e86",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fd965f0e-6a01-4e00-9f03-a48abc2da030",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/710a561c-5a09-4ea8-81ec-0f23d2210261",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/218f4820-82b9-47b8-8050-d8e6e6155aea",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1ac9a9ed-d7f6-4c73-9818-07ac415a649d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e4a9fea8-eda2-49ca-83d8-e23cfe86a6da",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/014ca997-f48a-44ed-a48d-1d4c0f35cef7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ea8cdb78-1834-43bd-9fe5-52d9123c8865",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/78ae80cb-452c-4411-82b7-541d2bc8b888",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f2de0646-9540-4fc1-91d2-ac65638f4e35",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3640a25d-f221-45a6-bdcf-f0de51e59789",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/c8982360-7251-4fbd-b2ae-a67a3092a75d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/16c6ca48-bc28-4b04-a6ac-c390d9dc2b75",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5aa7870c-be72-44c2-8d91-113c5911d72e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3090f56a-64ca-48a3-99d4-b8d95276baef",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1d47c028-eb67-47cb-9f3c-958cd3606728",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/69a54c41-ecf8-4acc-89f7-2525df2bd172",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/0d562321-d04b-47e9-9570-e9bed049593f"
       ],
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "3"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a2cb8e04-0f25-4291-b6cd-63ba7f77ce0f",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Obligation to ensure safety information is understood (e.g., provide interpreter or translated materials)"
+        "en-us": "Obligation to ensure safety information is understood (e.g., provide interpreter or translated materials)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/23ac24bc-5059-4606-bb1c-c8ffab95260a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/555f05a5-f50f-43d8-a383-30f9b6c23ef6",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Personal protective equipment (PPE), including types, selection, proper use, storage, maintenance, and inspection"
+        "en-us": "Personal protective equipment (PPE), including types, selection, proper use, storage, maintenance, and inspection"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "18"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f0061641-2ff9-40c4-b888-05ce731e2bca",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Quantitative measures to track and report performance (e.g., number of audits planned versus completed; training planned versus completed)"
+        "en-us": "Quantitative measures to track and report performance (e.g., number of audits planned versus completed; training planned versus completed)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "10"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9706945-5459-41df-a47e-26168ad437bd",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Processes for continuous improvement (e.g., six sigma, lean management systems, streamlining work, product substitution, sustainability, reducing waste)"
+        "en-us": "Processes for continuous improvement (e.g., six sigma, lean management systems, streamlining work, product substitution, sustainability, reducing waste)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "8"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/abd930ae-7698-4e73-bdb3-3bcf57a06a03",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Disaster/emergency response/crisis planning"
+        "en-us": "Disaster/emergency response/crisis planning"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/046b59dc-e1c5-4d83-ab0b-cf8491d734dd",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Calculate performance metrics (e.g., incidence rates, injury rates, key performance indicators)"
+        "en-us": "Calculate performance metrics (e.g., incidence rates, injury rates, key performance indicators)"
       },
-      "ceasn:educationLevelType": {
-        "@id": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel"
-      },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/ae16e5e5-5973-433a-a55f-e455e1b4005a",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/218f4820-82b9-47b8-8050-d8e6e6155aea",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Safety systems/interlocks (e.g., electrical systems, critical support systems, robotics)"
+        "en-us": "Safety systems/interlocks (e.g., electrical systems, critical support systems, robotics)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a1318b20-89c0-4b88-bce7-3bf63f240a63",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/d6313e2d-bee2-4175-aa17-3ec3d3512c00",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Basic conflict resolution techniques"
+        "en-us": "Basic conflict resolution techniques"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/95f9b420-ac7e-44f5-a950-72f9617de3ab",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "4"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/3167277d-31da-490b-8e45-50a4e5ff8e26",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Knowledge"
+        "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Globally Harmonized System of classification and labeling of chemicals (GHS) (e.g., labels, safety data sheets, pictograms, signal words)"
+        "en-us": "Globally Harmonized System of classification and labeling of chemicals (GHS) (e.g., labels, safety data sheets, pictograms, signal words)"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/bc467c39-06ea-4885-a826-2c9770be21ea",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "11"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Domain"
+        "en-us": "Domain"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Emergency Preparedness, Fire Prevention, and Security - 7.4%"
+        "en-us": "Emergency Preparedness, Fire Prevention, and Security - 7.4%"
       },
       "ceasn:hasChild": [
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1066934b-d8e4-4a4f-ab17-70d029af83b4"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e4ef3f89-f81f-42f9-97fc-9aa44938cb36"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a156cf55-68c7-425d-8a86-0c940861a1ee"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/abd930ae-7698-4e73-bdb3-3bcf57a06a03"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5b6748a4-45f9-4694-9239-1eaf8f172936"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/12012c48-3906-4417-8a09-4c73c75741bc"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/498ee815-cb83-4d8d-a14e-3b98e0efaa74"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fdd648ca-8154-4d0a-9c16-9dd0e71084b3"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/71dc472e-0a89-4a9b-921a-9db6c75cb2fe"
-        },
-        {
-          "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f44fcf75-925f-4dec-8c40-c602030ee085"
-        }
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1066934b-d8e4-4a4f-ab17-70d029af83b4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/e4ef3f89-f81f-42f9-97fc-9aa44938cb36",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/a156cf55-68c7-425d-8a86-0c940861a1ee",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/abd930ae-7698-4e73-bdb3-3bcf57a06a03",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/5b6748a4-45f9-4694-9239-1eaf8f172936",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/12012c48-3906-4417-8a09-4c73c75741bc",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/498ee815-cb83-4d8d-a14e-3b98e0efaa74",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/fdd648ca-8154-4d0a-9c16-9dd0e71084b3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/71dc472e-0a89-4a9b-921a-9db6c75cb2fe",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/f44fcf75-925f-4dec-8c40-c602030ee085"
       ],
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
-      "ceasn:isTopChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "5",
-      "ceasn:weight": {
-        "@type": "xsd:float",
-        "@value": "0.0743"
-      }
+      "ceasn:weight": "0.0743"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/1066934b-d8e4-4a4f-ab17-70d029af83b4",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
-        "@language": "en-US",
-        "@value": "Skill"
+        "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "@language": "en-US",
-        "@value": "Participate in emergency response drills and exercises"
+        "en-us": "Participate in emergency response drills and exercises"
       },
-      "ceasn:isChildOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d"
-      },
-      "ceasn:isPartOf": {
-        "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9"
-      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/b9028f61-d233-4652-a8b1-2ebd91dd099d",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/OHST/9b34fc2a-d086-4792-af17-f65c4d1ef6c9",
       "ceasn:listID": "1"
     }
   ]
 }
-
