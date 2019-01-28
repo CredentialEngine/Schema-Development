@@ -10,7 +10,7 @@
       "ceasn:publisherName": {"en-US": "Lumina Foundation"},      
       "ceasn:rightsHolder": "https://www.luminafoundation.org/",
       "ceasn:source": "http://degreeprofile.org/wp-content/uploads/2017/03/DQP-web-download-reference-points-FINAL.pdf",
-      "ceasn:inLanguage": "http://id.loc.gov/vocabulary/iso639-2/eng",      
+      "ceasn:inLanguage": "en-US",      
       "ceasn:dateCreated": "2011",
       "ceasn:dateModified": "2014",
       "ceasn:hasTopChild": [
@@ -27,6 +27,7 @@
       "ceasn:comment": {"en-US": "This category addresses what students in any specialization or major field of study should demonstrate with respect to that specialization. Tuning, a field-specific effort to map learning outcomes, is necessary to describe the concepts, knowledge areas and accomplishments that students in a particular specialization should demonstrate to earn the degree."},
       "ceasn:competencyCategory": {"en-US": "Category"},
       "ceasn:competencyText": {"en-US": "Specialized Knowledge"},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:isTopChildOf": "http://degreeprofile.org/dqp",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:hasChild": ["http://degreeprofile.org/dqp/sk4",
@@ -46,6 +47,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes the scope of the field of study, its core theories and practices, using field-related terminology, and offers a similar description of at least one related field."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -55,6 +57,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Applies tools, technologies and methods common to the field of study to selected questions or problems."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -64,6 +67,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Generates substantially error-free products, reconstructions, data, juried exhibits or performances appropriate to the field of study."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -74,6 +78,7 @@
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Defines and explains the structure, styles and practices of the field of study using its tools, technologies, methods and specialized terms."},
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
+      "ceasn:inLanguage": "en-US", 
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
     },
@@ -82,6 +87,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Investigates a familiar but complex problem in the field of study by assembling, arranging and reformulating ideas, concepts, designs and techniques."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -91,6 +97,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Frames, clarifies and evaluates a complex challenge that bridges the field of study and one other field, using theories, tools, methods and scholarship from those fields to produce independently or collaboratively an investigative, creative or practical work illuminating the challenge."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -100,6 +107,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Constructs a summative project, paper, performance or application that draws on current research, scholarship and techniques in the field of study."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -109,6 +117,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Elucidates the major theories, research methods and approaches to inquiry and schools of practice in the field of study, articulates their sources and illustrates both their applications and their relationships to allied fields of study."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -118,6 +127,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Assesses the contributions of major figures and organizations in the field of study, describes its major methodologies and practices and illustrates them through projects, papers, exhibits or performances."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -127,6 +137,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Articulates significant challenges involved in practicing the field of study, elucidates its leading edges and explores the current limits of theory, knowledge and practice through a project that lies outside conventional boundaries."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/sk1"
@@ -135,6 +146,7 @@
       "@id": "http://degreeprofile.org/dqp/bik1",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "This category asks students at all three degree levels to consolidate learning from different broad fields of study (e.g., the humanities, arts, sciences and social sciences) and to discover and explore concepts and questions that bridge these essential areas of learning."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Category"},
       "ceasn:competencyText": {"en-US": "Broad and Integrative Knowledge"},
       "ceasn:isTopChildOf": "http://degreeprofile.org/dqp",
@@ -156,6 +168,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes how existing knowledge or practice is advanced, tested and revised in each core field studied -- e.g., disciplinary and interdisciplinary courses in the sciences, social sciences, humanities and arts."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -165,6 +178,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes a key debate or problem relevant to each core field studied, explains the significance of the debate or problem to the wider society and shows how concepts from the core field can be used to address the selected debates or problems."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -174,6 +188,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Uses recognized methods of each core field studied, including the gathering and evaluation of evidence, in the execution of analytical, practical or creative tasks."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -183,6 +198,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes and evaluates the ways in which at least two fields of study define, address and interpret the importance for society of a problem in science, the arts, society, human services, economic life or technology."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -192,6 +208,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes and evaluates the ways in which at least two fields of study define, address and interpret the importance for society of a problem in science, the arts, society, human services, economic life or technology. Explains how the methods of inquiry in these fields can address the challenge and proposes an approach to the problem that draws on these fields."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -201,6 +218,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Produces an investigative, creative or practical work that draws on specific theories, tools and methods from at least two core fields of study."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -210,6 +228,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Defines and frames a problem important to the major field of study, justifies the significance of the challenge or problem in a wider societal context, explains how methods from the primary field of study and one or more core fields of study can be used to address the problem, and develops an approach that draws on both the major and core fields."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -219,6 +238,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Articulates how the field of study has developed in relation to other major domains of inquiry and practice." },
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -228,6 +248,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Designs and executes an applied, investigative or creative work that draws on the perspectives and methods of other fields of study and assesses the resulting advantages and challenges of including these perspectives and methods."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -237,6 +258,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Articulates and defends the significance and implications of the work in the primary field of study in terms of challenges and trends in a social or global context."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/bik1"
@@ -245,6 +267,7 @@
       "@id": "http://degreeprofile.org/dqp/is1",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "This category includes both traditional and nontraditional cognitive skills: analytic inquiry, use of information resources, engaging diverse perspectives, ethical reasoning, quantitative fluency and communicative fluency. Throughout, the DQP emphasizes that students should confront and interpret ideas and arguments from different points of reference (e.g., cultural, technological, political)."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Category"},
       "ceasn:competencyText": {"en-US": "Intellectual Skills"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -262,6 +285,7 @@
       "@id": "http://degreeprofile.org/dqp/is37",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "The synthesizing cognitive operations of assembling, combining, formulating, evaluating and reconstructing information, foundational to all learning, are addressed throughout the DQP. But analytic inquiry, though it is involved in such synthesis, requires separate treatment as the core intellectual skill that enables a student to examine, probe and grasp the assumptions and conventions of different areas of study, as well as to address complex questions, problems, materials and texts of all types."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Skill"},
       "ceasn:competencyText": {"en-US": "Analytic Inquiry"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -277,6 +301,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Identifies and frames a problem or question in selected areas of study and distinguishes among elements of ideas, concepts, theories or practical approaches to the problem or question."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is37"
@@ -286,6 +311,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Differentiates and evaluates theories and approaches to selected complex problems within the chosen field of study and at least one other field."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is37"
@@ -295,6 +321,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Disaggregates, reformulates and adapts principal ideas, techniques or methods at the forefront of the field of study in carrying out an essay or project."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is37"
@@ -303,6 +330,7 @@
       "@id": "http://degreeprofile.org/dqp/is38",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "There is no learning without information, and students must learn how to find, organize and evaluate information in order to work with it and perhaps contribute to it -- by language, by media, by ambiguity and contradictions -- and the proficiencies offered below reflect that ladder of challenge."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Skill"},
       "ceasn:competencyText": {"en-US": "Use of Information Resources"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -318,6 +346,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Identifies, categorizes, evaluates and cites multiple information resources so as to create projects, papers or performances in either a specialized field of study or with respect to a general theme within the arts and sciences."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is38"
@@ -327,6 +356,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Locates, evaluates, incorporates and properly cites multiple information resources in different media or different languages in projects, papers or performances."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is38"
@@ -336,6 +366,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Generates information through independent or collaborative inquiry and uses that information in a project, paper or performance."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is38"
@@ -345,6 +376,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Provides evidence (through papers, projects, notebooks, computer files or catalogues) of contributing to, expanding, evaluating or refining the information base within the field of study.@"},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is38"
@@ -353,6 +385,7 @@
       "@id": "http://degreeprofile.org/dqp/is39",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "Every student should develop the intellectual flexibility and broad knowledge that enables perception of the world through the eyes of others, i.e., from the perspectives of diverse cultures, personalities, places, times and technologies. This proficiency is essential to intellectual development and to both Applied and Collaborative Learning and Civic and Global Learning."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Skill"},
       "ceasn:competencyText": {"en-US": "Engaging Diverse Perspectives"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -369,6 +402,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes how knowledge from different cultural perspectives might affect interpretations of prominent problems in politics, society, the arts and global relations."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is39"
@@ -378,6 +412,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes, explains and evaluates the sources of his/her own perspective on selected issues in culture, society, politics, the arts or global relations and compares that perspective with other views."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is39"
@@ -387,6 +422,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Constructs a written project, laboratory report, exhibit, performance or community service design expressing an alternate cultural, political or technological vision and explains how this vision differs from current realities. "},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is39"
@@ -396,6 +432,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Frames a controversy or problem within the field of study in terms of at least two political, cultural, historical or technological forces, explores and evaluates competing perspectives on the contro- versy or problem, and presents a reasoned analysis of the issue, either orally or in writing, that demonstrates consideration of the competing views."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is39"
@@ -405,6 +442,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Investigates through a project, paper or performance a core issue in the field of study from the perspective of a different point in time or a different culture, language, political order or technological context and explains how this perspective yields results that depart from current norms, dominant cultural assumptions or technologies."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is39"
@@ -413,6 +451,7 @@
       "@id": "http://degreeprofile.org/dqp/is40",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "Analytic reasoning, the use of information resources, communication, and diverse perspectives should be brought to bear on situations, both clear and indeterminate, where tensions and conflicts, disparities and harms emerge, and where a particular set of intellectual skills is necessary to identify, elaborate and, if possible, resolve these cases. Ethical reasoning thus refers to the judicious and self-reflective application of ethical principles and codes of conduct resident in cultures, professions, occupations, economic behavior and social relationships to making decisions and taking action."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Skill"},
       "ceasn:competencyText": {"en-US": "Ethical Reasoning"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -429,6 +468,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes the ethical issues present in prominent problems in politics, economics, health care, technology or the arts and shows how ethical principles or frameworks help to inform decision making with respect to such problems"},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is40"
@@ -438,6 +478,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Analyzes competing claims from a recent discovery, scientific contention or technical practice with respect to benefits and harms to those affected, articulates the ethical dilemmas inherent in the tension of benefits and harms, and either (a) arrives at a clearly expressed reconciliation of that tension that is informed by ethical principles or (b) explains why such a reconciliation cannot be accomplished."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is40"
@@ -447,6 +488,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Identifies and elaborates key ethical issues present in at least one prominent social or cultural problem, articulates the ways in which at least two differing ethical perspectives influence decision making concerning those problems, and develops and defends an approach to address the ethical issue productively."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is40"
@@ -456,6 +498,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Articulates and challenges a tradition, assumption or prevailing practice within the field of study by raising and examining relevant ethical perspectives through a project, paper or performance."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is40"
@@ -465,6 +508,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Distinguishes human activities and judgments particularly subject to ethical reasoning from those less subject to ethical reasoning."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is40"
@@ -473,6 +517,7 @@
       "@id": "http://degreeprofile.org/dqp/is41",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "Quantitative expressions and the issues they raise inform many tasks. In addition to essential arithmetic skills, the use of visualization, symbolic translation and algorithms has become critically important."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Skill"},
       "ceasn:competencyText": {"en-US": "Quantitative Fluency"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -491,6 +536,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Presents accurate interpretations of quantitative information on political, economic, health-related or technological topics and explains how both calculations and symbolic operations are used in those offerings."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -500,6 +546,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Creates and explains graphs or other visual depictions of trends, relationships or changes in status."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -509,6 +556,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Translates verbal problems into mathematical algorithms so as to construct valid arguments using the accepted symbolic system of mathematical reasoning and presents the resulting calculations, estimates, risk analyses or quantitative evaluations of public information in papers, projects or multimedia presentations."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -518,6 +566,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Constructs mathematical expressions where appropriate for issues initially described in non-quantitative terms."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -527,6 +576,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Uses logical, mathematical or statistical methods appropriate to addressing a topic or issue in a primary field that is not for the most part quantitatively based."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -536,6 +586,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Articulates and undertakes multiple appropriate applications of quantitative methods, concepts and theories in a field of study that is quantitatively based."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -545,6 +596,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Identifies, chooses and defends the choice of a mathematical model appropriate to a problem in the social sciences or applied sciences."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is41"
@@ -553,6 +605,7 @@
       "@id": "http://degreeprofile.org/dqp/is42",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "The use of messages to achieve shared understanding of meaning depends on effective use of language, intentional engagement of audience, cogent and coherent iteration and negotiation with others, and skillful translation across multiple expressive modes and formulations, including digital strategies and platforms."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Skill"},
       "ceasn:competencyText": {"en-US": "Communicative Fluency"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -571,6 +624,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Develops and presents cogent, coherent and substantially error-free writing for communication to general and specialized audiences."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -580,6 +634,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Demonstrates effective interactive communication through discussion, i.e., by listening actively and responding constructively and through structured oral presentations to general and specialized audiences."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -589,6 +644,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Negotiates with peers an action plan for a practical task and communicates the results of the negotiation either orally or in writing."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -598,6 +654,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Constructs sustained, coherent arguments, narratives or explications of issues, problems or technical issues and processes, in writing and at least one other medium, to general and specific audiences."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -607,6 +664,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Conducts an inquiry concerning information, conditions, technologies or practices in the field of study that makes substantive use of non-English-language sources."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -616,6 +674,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Negotiates with one or more collaborators to advance an oral argument or articulate an approach to resolving a social, personal or ethical dilemma."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -625,6 +684,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Creates sustained, coherent arguments or explanations summarizing his/her work or that of collaborators in two or more media or languages for both general and specialized audiences."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/is42"
@@ -634,6 +694,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Category"},
       "ceasn:competencyText": {"en-US": "This category emphasizes what students can do with what they know. Students are asked to demonstrate their learning by addressing unscripted problems in scholarly inquiry, at work and in other settings outside the classroom. This category includes research and creative activities involving both individual and group effort and may include practical skills crucial to the application of expertise."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:hasChild": ["http://degreeprofile.org/dqp/acl4",      
         "http://degreeprofile.org/dqp/acl5",
@@ -653,6 +714,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes in writing at least one case in which knowledge and skills acquired in academic settings may be applied to a field-based challenge, and evaluates the learning gained from the application."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -662,6 +724,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Analyzes at least one significant concept or method in the field of study in light of learning outside the classroom."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -671,6 +734,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Locates, gathers and organizes evidence regarding a question in a field-based venue beyond formal academic study and offers alternate approaches to answering it."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -680,6 +744,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Demonstrates the exercise of any practical skills crucial to the application of expertise."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -689,6 +754,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Prepares and presents a project, paper, exhibit, performance or other appropriate demonstration linking knowledge or skills acquired in work, community or research activities with knowledge acquired in one or more fields of study, explains how those elements are structured, and employs appropriate citations to demonstrate the relationship of the product to literature in the field."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -698,6 +764,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Negotiates a strategy for group research or performance, documents the strategy so that others may understand it, implements the strategy, and communicates the results."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -707,6 +774,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Writes a design, review or illustrative application for an analysis or case study in a scientific, technical, economic, business, health, education or communica-tions context."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -716,6 +784,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Completes a substantial project that evaluates a significant question in the student’s field of study, including an analytic narrative of the effects of learning outside the classroom on the research or practical skills employed in executing the project."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -725,6 +794,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Creates a project, paper, exhibit, performance or other appropriate demonstration reflecting the integration of knowledge acquired in practicum, work, community or research activities with knowledge and skills gleaned from at least two fields of study in different segments of the curriculum. Articulates the ways in which the two sources of knowledge influenced the result."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -734,6 +804,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Designs and implements a project or performance in an out-of-class setting that requires the application of advanced knowledge gained in the field of study to a practical challenge, articulates in writing or another medium the insights gained from this experience, and assesses (with appropriate citations) approaches, scholarly debates or standards for professional performance applicable to the challenge."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/acl1"
@@ -742,6 +813,7 @@
       "@id": "http://degreeprofile.org/dqp/cgl1",
       "@type": "ceasn:Competency",
       "ceasn:comment": {"en-US": "This category recognizes higher education's responsibilities both to democracy and the global community. Students must demonstrate integration of their knowledge and skills by engaging with and responding to civic, social, environmental and economic challenges at local, national and global levels."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:competencyCategory": {"en-US": "Category"},
       "ceasn:competencyText": {"en-US": "Civic and Global Learning"},
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
@@ -764,6 +836,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes his/her own civic and cultural background, including its origins and development, assumptions and predispositions."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -773,6 +846,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Describes diverse positions, historical and contemporary, on selected democratic values or practices, and presents his or her own position on a specific problem where one or more of these values or practices are involved."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -782,6 +856,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Provides evidence of participation in a community project through either a spoken or written narrative that identifies the civic issues encountered and personal insights gained from this experience."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -791,6 +866,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Identifies an economic, environmental or public health challenge spanning countries, continents or cultures, presents evidence for the challenge, and takes a position on it."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -800,6 +876,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Explains diverse positions, including those representing different cultural, economic and geographic interests, on a contested public issue, and evaluates the issue in light of both those interests and evidence drawn from journalism and scholarship."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -809,6 +886,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Develops and justifies a position on a public issue and relates this position to alternate views held by the public or within the policy environment."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -818,6 +896,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Collaborates with others in developing and implementing an approach to a civic issue, evaluates the strengths and weaknesses of the process, and, where applicable, describes the result."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -827,6 +906,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Identifies a significant issue affecting countries, continents or cultures, presents quantitative evidence of that challenge through tables and graphs, and evaluates the activities of either non-governmental organizations or cooperative inter-governmental initiatives in addressing that issue."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/BachelorsDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -836,6 +916,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Assesses and develops a position on a public policy question with significance in the field of study, taking into account both scholarship and published or electronically posted positions and narratives of relevant interest groups."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -845,6 +926,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Develops a formal proposal, real or hypothetical, to a non-governmental organization addressing a global challenge in the field of study that the student believes has not been adequately addressed. "},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
@@ -854,6 +936,7 @@
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {"en-US": "Proficiency"},
       "ceasn:competencyText": {"en-US": "Proposes a path to resolution of a problem in the field of study that is complicated by competing national interests or by rival interests within a nation other than the U.S."},
+      "ceasn:inLanguage": "en-US", 
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/MastersDegreeLevel",
       "ceasn:isPartOf": "http://degreeprofile.org/dqp",
       "ceasn:isChildOf": "http://degreeprofile.org/dqp/cgl1"
