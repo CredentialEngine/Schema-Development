@@ -256,10 +256,9 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ab4ab849-0a78-4c64-a6b1-2f49060ae211",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c3234a3e-ef98-4197-9243-b7b3f525717d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/43dce8b1-3ec4-4ca3-b108-be8c4f03ee74",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ab4ab849-0a78-4c64-a6b1-2f49060ae211"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/43dce8b1-3ec4-4ca3-b108-be8c4f03ee74"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7cca72fe-1241-421c-a0c9-64bfede8a46b",
@@ -284,17 +283,16 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1fc75f11-69e6-475c-acd5-557bc719bfa9",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/dcd516ba-a13c-4219-b23a-e1b43ffbc660",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fc1c0e41-e73a-4774-8af4-05228dd5f6d9",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1fc75f11-69e6-475c-acd5-557bc719bfa9",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4c73b838-377b-4ae6-ab81-6aba776f85b7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/63f6810a-35fd-46c4-85e1-3297edd47ad3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a51ae86b-e23c-43fb-a75d-9071900f13c1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/dcd516ba-a13c-4219-b23a-e1b43ffbc660",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bca5e1d8-cc26-4203-a5be-3cc911a21566",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c4bfdbd6-ca00-4237-bffc-cb01e2ebbabb",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e1c6925c-bb8f-437b-84c6-eff95bfb2b26",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/63f6810a-35fd-46c4-85e1-3297edd47ad3",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9b59400f-630c-45f5-9b1b-372537967b09",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a51ae86b-e23c-43fb-a75d-9071900f13c1"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fc1c0e41-e73a-4774-8af4-05228dd5f6d9"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7cca72fe-1241-421c-a0c9-64bfede8a46b",
@@ -319,13 +317,12 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/17bfd6c0-5a14-4e19-a4aa-1f721515a46c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f8e0eca5-9439-4786-98a4-8c143ff3a30f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/284b2046-7557-43ad-9078-28aa48973334",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/38aa39ca-02d9-4c2d-9b62-5f107007b1b5",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/38aa39ca-02d9-4c2d-9b62-5f107007b1b5",  
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8da49fcd-268f-4cf2-b613-5b2337f65e6b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f8e0eca5-9439-4786-98a4-8c143ff3a30f",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8251781d-910d-46e9-a975-ac47aa6f6ba3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/284b2046-7557-43ad-9078-28aa48973334",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/17bfd6c0-5a14-4e19-a4aa-1f721515a46c",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/46eb5be5-4547-427f-baca-3313ce4ba758"
       ],
       "ceasn:inLanguage": "en-US",
@@ -351,12 +348,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0c92ff5a-03ec-4d17-b193-33aab71d3133",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/97086454-6b73-4961-b53c-c905d91ed901",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7abfcabf-3b8e-45dd-a502-66bdb8ea15bc",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/97086454-6b73-4961-b53c-c905d91ed901",      
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fc80fed8-3176-4cfd-bd42-aeff25721632",       
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5a41ab92-051b-43d8-9ac7-cef7a16648f6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fc80fed8-3176-4cfd-bd42-aeff25721632"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0c92ff5a-03ec-4d17-b193-33aab71d3133",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7abfcabf-3b8e-45dd-a502-66bdb8ea15bc"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7cca72fe-1241-421c-a0c9-64bfede8a46b",
@@ -381,15 +377,14 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/35f8b066-e3ba-4cc8-9bc0-140e7032fc48",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fb37abe7-b2f4-4b34-9675-b9a78b858964",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/35f8b066-e3ba-4cc8-9bc0-140e7032fc48",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1220c801-17bc-4619-b350-edf5942aa926",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/265f456f-14e3-42ce-8093-0512ebd934a8",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/61e09820-f3c4-49b3-a7cb-6103afb88975",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1d759c49-eeb2-4c4c-9346-799b77129b88",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/265f456f-14e3-42ce-8093-0512ebd934a8",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1f19f1dd-8df6-43a6-bda6-0e0b3f711323",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/93485e54-8f50-4d3b-82a2-9bf968cfea31",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1d759c49-eeb2-4c4c-9346-799b77129b88"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1220c801-17bc-4619-b350-edf5942aa926",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/93485e54-8f50-4d3b-82a2-9bf968cfea31"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7cca72fe-1241-421c-a0c9-64bfede8a46b",
@@ -414,15 +409,14 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/527796aa-61c3-441e-bfe8-686e9112762d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/24f4a065-46c8-4678-bdaa-fd29eb97ec97",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9cdc5a56-ff64-4b00-9d91-ee6f58acbc05",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a4012973-1572-4536-a22b-4aeb9797bac3",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9cdc5a56-ff64-4b00-9d91-ee6f58acbc05",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5247bd2e-0f13-4366-9a76-40cf7457f8a7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/527796aa-61c3-441e-bfe8-686e9112762d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a9826ebf-07cd-427f-8878-f7f0f0041f15",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/14ce3d48-3bc5-4455-a670-b4f862d435c0",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/658e5867-8135-492d-8bcf-6a598c0f9bf2",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a9826ebf-07cd-427f-8878-f7f0f0041f15"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a4012973-1572-4536-a22b-4aeb9797bac3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/24f4a065-46c8-4678-bdaa-fd29eb97ec97",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/658e5867-8135-492d-8bcf-6a598c0f9bf2"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8295f288-6259-425a-9ce9-fa843adb700c",
@@ -447,10 +441,9 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e2d74749-76b6-451b-a065-ea69895af93b",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/aca4a7a9-c360-4f46-a892-f3629196e5d2",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/990154cf-8c8b-4002-80a8-c5f65edf5c67",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/aca4a7a9-c360-4f46-a892-f3629196e5d2",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e2d74749-76b6-451b-a065-ea69895af93b",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/130d0adb-588c-4fc1-abe0-dc80857bdd3d"
       ],
       "ceasn:inLanguage": "en-US",
@@ -476,12 +469,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6a7ae37a-af04-4a8f-9f28-8810e47153c5",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c5e8c595-4659-466e-909f-42bd262f3cdf",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/62f2536c-6ebd-44bd-bde7-3c68f8f34f45",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c5e8c595-4659-466e-909f-42bd262f3cdf",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6f56b2b4-5d42-4c56-b0f6-b8194de2d4b3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4d658713-06fb-47f9-8a02-afb98a2440f0"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6a7ae37a-af04-4a8f-9f28-8810e47153c5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4d658713-06fb-47f9-8a02-afb98a2440f0",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6f56b2b4-5d42-4c56-b0f6-b8194de2d4b3"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8295f288-6259-425a-9ce9-fa843adb700c",
@@ -506,19 +498,18 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/91557c25-31b5-4747-a485-f48515be5c1d",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1b28f9e3-5cdd-42f7-90ef-743d11bcbeb5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cdee7120-6557-4a51-b617-63cc36ac7efe",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e2987b67-6c3f-4042-8808-2de27d03552f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/58b23b45-a803-405f-965c-9135907b4205",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/874b34e2-1dff-4611-b091-0f09468ca467",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/669f08e0-5cb4-4fbb-b0bd-c6875700508c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cdf50ca0-27a7-45b8-8d4e-20d2ce9367d8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/91557c25-31b5-4747-a485-f48515be5c1d",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/39e3c367-c926-4743-b65c-ede3c79a1768",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bbb39db9-e306-4d35-9531-c6450db86680",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/874b34e2-1dff-4611-b091-0f09468ca467",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/58b23b45-a803-405f-965c-9135907b4205",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cdee7120-6557-4a51-b617-63cc36ac7efe",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cdf50ca0-27a7-45b8-8d4e-20d2ce9367d8",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5eb74bf3-d982-4768-8dcf-976a17a25503",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7aa8420e-3aca-4d73-bf1f-21ddc80d3758",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1b28f9e3-5cdd-42f7-90ef-743d11bcbeb5",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/669f08e0-5cb4-4fbb-b0bd-c6875700508c"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5eb74bf3-d982-4768-8dcf-976a17a25503"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d2c85e72-6fd8-4652-9f71-47fa780ac81d",
@@ -543,18 +534,17 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b284adca-0a1b-4092-9187-5d4e264934c4",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/54ba43b7-7acc-4013-a689-bc1ba250d574",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3886c09a-dad1-4264-831f-6dd37b669295",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8284f559-dd3b-4466-b3f0-8972ff27ad75",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c32b0138-4f6e-4101-a570-1b1f7188dd06",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d12663a4-9593-4af8-a454-4c69e00e236e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f05b21ef-e9ee-4391-b20e-9337ca12d785",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/60b20962-9b25-40b8-9608-2794660ef81e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/54ba43b7-7acc-4013-a689-bc1ba250d574",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1ded9a66-6fb9-4924-bce5-993d59d2e1db",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8284f559-dd3b-4466-b3f0-8972ff27ad75",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b284adca-0a1b-4092-9187-5d4e264934c4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c32b0138-4f6e-4101-a570-1b1f7188dd06",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f05b21ef-e9ee-4391-b20e-9337ca12d785",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b4b1a853-090c-45ef-b5ba-387f2f409197",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5044f206-d45c-4ae8-b9a1-b617d2014879"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5044f206-d45c-4ae8-b9a1-b617d2014879",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d12663a4-9593-4af8-a454-4c69e00e236e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/60b20962-9b25-40b8-9608-2794660ef81e"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d2c85e72-6fd8-4652-9f71-47fa780ac81d",
@@ -579,12 +569,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/234b1f65-744f-4ff4-b81b-98d39f2d787b",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/55b47180-1fae-493b-b303-608e0a7fdc91",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/234b1f65-744f-4ff4-b81b-98d39f2d787b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72afdc9-d45d-4cc1-b357-3a943d52afd7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/de502395-27d7-4551-bec7-6a24048b4476",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/113266b8-412f-4901-9e39-69490742d11c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/de502395-27d7-4551-bec7-6a24048b4476",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72afdc9-d45d-4cc1-b357-3a943d52afd7",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2430ac28-af49-4c15-b506-a49d9cb35d52"
       ],
       "ceasn:inLanguage": "en-US",
@@ -610,17 +599,16 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/edffb3b9-43ed-42e7-8f03-a2b2a27d0620",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/83f8fac4-89a4-4804-acbe-e4b48cb9dbf4",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d0a9281d-e35c-4ba1-b529-c404473a5543",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9e9f20d6-ce2b-4639-b398-e544ba790c3e",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/edffb3b9-43ed-42e7-8f03-a2b2a27d0620",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3d33b011-aed3-4d9c-a870-ac1134b79a88",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/85999926-9314-4aaa-882d-80dc50f530a7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/264b1c0e-a86a-40e0-9c69-f790b8ddab11",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/355b03bb-c827-4afc-ab0d-a512206ce39f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/459eca0a-af1f-4522-a31d-abb515dccca4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9e9f20d6-ce2b-4639-b398-e544ba790c3e",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d9e7f6af-061c-409c-82f4-fbf458ae7fc2",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3d33b011-aed3-4d9c-a870-ac1134b79a88"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d0a9281d-e35c-4ba1-b529-c404473a5543",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/264b1c0e-a86a-40e0-9c69-f790b8ddab11",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/83f8fac4-89a4-4804-acbe-e4b48cb9dbf4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/459eca0a-af1f-4522-a31d-abb515dccca4"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d2c85e72-6fd8-4652-9f71-47fa780ac81d",
@@ -645,17 +633,18 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b151bed7-1af1-4f85-8702-4bbcc9b974f1",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/623b39fc-8e7c-435a-a92d-b4869f61d4e4",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1dd92212-c732-4b99-b9ab-1ccce6564210",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5ed9c242-4ccb-4f0e-a109-a46a35ac529f",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0bf101d7-a844-44e7-983c-820a7dec2f1f",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/16058798-45e2-4d18-8c85-b7219cc0dbe6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1bf5945e-7487-4e68-967b-3396566e61de",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0bf101d7-a844-44e7-983c-820a7dec2f1f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a023ebdd-c25a-401d-b842-d5467335d374",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1dd92212-c732-4b99-b9ab-1ccce6564210",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8a6c5efb-750d-4f06-95ae-fd07f6ff013a",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9038afc7-774d-4e6c-8bd4-5d4381b21f48"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5ed9c242-4ccb-4f0e-a109-a46a35ac529f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1bf5945e-7487-4e68-967b-3396566e61de",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a023ebdd-c25a-401d-b842-d5467335d374",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/de502395-27d7-4551-bec7-6a24048b4476",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b151bed7-1af1-4f85-8702-4bbcc9b974f1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9038afc7-774d-4e6c-8bd4-5d4381b21f48",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/623b39fc-8e7c-435a-a92d-b4869f61d4e4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/623b39fc-8e7c-435a-a92d-b4869f61d4e4"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d2c85e72-6fd8-4652-9f71-47fa780ac81d",
@@ -680,20 +669,19 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/03f775d5-0ee7-46ca-a991-c0490592e369",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d8c92e58-d602-4d5e-a6cd-07546b89733b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9eb7f397-ba90-4133-b2e6-45fc74442062",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8416eeae-3f3a-4ef3-8e01-c6b4ad866a48",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/209f29ad-4dc7-40b3-9e3a-7a9145e843a3",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/903009ee-4751-4808-adea-6d52b7b1b38d",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/73177660-12d4-443c-9f9f-e257fb765e7c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d8c92e58-d602-4d5e-a6cd-07546b89733b",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d6ae13bf-caf2-4d2c-8e67-8749e89ae109",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/722d435c-b7ae-44ae-9a9b-5be714e0323e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/903009ee-4751-4808-adea-6d52b7b1b38d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/039be75c-6e60-46e3-8fd5-a620b0fd12a5",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/95459b62-f2fe-4641-b4f1-cfca6104d808",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9eb7f397-ba90-4133-b2e6-45fc74442062",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/03f775d5-0ee7-46ca-a991-c0490592e369",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2ce60cad-95ad-4336-bbf8-87369e813f14",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1660cb62-4912-4fcd-af46-896cf958be79"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8416eeae-3f3a-4ef3-8e01-c6b4ad866a48",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1660cb62-4912-4fcd-af46-896cf958be79",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/039be75c-6e60-46e3-8fd5-a620b0fd12a5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/722d435c-b7ae-44ae-9a9b-5be714e0323e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/95459b62-f2fe-4641-b4f1-cfca6104d808",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/209f29ad-4dc7-40b3-9e3a-7a9145e843a3"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d2c85e72-6fd8-4652-9f71-47fa780ac81d",
@@ -718,14 +706,13 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ad5b71f2-3614-43f7-b8b7-f8b8597a93c6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/89e979f7-5629-409f-8a19-ce586099e3cd",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f32955a2-fda2-4645-aaa0-954e6f5c127d",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7599f483-fe9d-47f4-9d23-3fa2d62c7092",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/89e979f7-5629-409f-8a19-ce586099e3cd",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/580079ee-487a-441b-a22d-69578aafac78",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b5ef0d3a-332c-456a-ba68-d18213585325",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/48ac076a-60a6-4846-8a97-56c6a7a68575",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f32955a2-fda2-4645-aaa0-954e6f5c127d"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ad5b71f2-3614-43f7-b8b7-f8b8597a93c6"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/702f7a12-3b25-4d8e-9c24-cd2f3ba77fb5",
@@ -750,12 +737,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6533550d-bd2b-4746-99cb-4c7da25349af",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6533550d-bd2b-4746-99cb-4c7da25349af",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a557e537-4803-493a-b1e3-96328d480796",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9fb38e14-5c03-41b5-ab37-975de4569f7c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0ba7aa27-d25a-4252-a555-a29993199cb2",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/97ccccfc-7dfa-4d70-a7e8-61a3492068e7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a557e537-4803-493a-b1e3-96328d480796"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0ba7aa27-d25a-4252-a555-a29993199cb2"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/702f7a12-3b25-4d8e-9c24-cd2f3ba77fb5",
@@ -780,15 +766,14 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/07859046-02fc-4fe4-88e6-03f3efba488d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bc6dd222-d751-4122-866a-ab8c921d92a9",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0dbbb465-23a8-4f20-8c76-897ddcfb38b6",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5e433ea1-9cc7-42da-9421-afe772e466fe",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bc6dd222-d751-4122-866a-ab8c921d92a9",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/07859046-02fc-4fe4-88e6-03f3efba488d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/84242384-ff75-4aed-ae61-acaecd5d8958",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d6223789-87ef-4086-b2e5-f4f289e2d415",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f6c24d2a-1558-4c58-9573-edd6140df4a8",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f61524bc-9350-4975-b113-7a52819b402a"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/84242384-ff75-4aed-ae61-acaecd5d8958",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f61524bc-9350-4975-b113-7a52819b402a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f6c24d2a-1558-4c58-9573-edd6140df4a8"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/702f7a12-3b25-4d8e-9c24-cd2f3ba77fb5",
@@ -813,11 +798,10 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/64ebd7a6-bc25-4121-a1e1-4983dd274189",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/23569f85-63ab-484c-a8d2-50ff921ffd0b",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/64ebd7a6-bc25-4121-a1e1-4983dd274189",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a27218e3-80f4-44cc-8e53-45329e634112",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b931832e-8226-465f-bd7d-591e4654cf8f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a27218e3-80f4-44cc-8e53-45329e634112"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/23569f85-63ab-484c-a8d2-50ff921ffd0b"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72eeb16-4eb9-410f-9688-89c3d013660b",
@@ -842,12 +826,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/05277520-b96a-4fb2-8e1f-a059c1dc0483",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c366b034-b950-4c2d-a357-b036f35ba21d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ed2b6cdf-db12-4a9b-a486-97b9959a09eb",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3eff7ea0-7a55-499a-b25d-a4169e373acf",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ad819060-9b08-4f27-a3ae-e230cfe303cd",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3eff7ea0-7a55-499a-b25d-a4169e373acf"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/05277520-b96a-4fb2-8e1f-a059c1dc0483",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ed2b6cdf-db12-4a9b-a486-97b9959a09eb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/c366b034-b950-4c2d-a357-b036f35ba21d"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72eeb16-4eb9-410f-9688-89c3d013660b",
@@ -872,14 +855,13 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f8a66241-763b-4ef3-9467-2ed4f3620ebc",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/52124d95-6992-46e7-93a1-add6c2c75cfa",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ffc8836c-d0c9-4d1f-9d0c-839b55691d4b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/52124d95-6992-46e7-93a1-add6c2c75cfa",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9059a80c-06f0-468d-83c0-5e6d47988a66",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/26f3500f-73cd-4429-ae6b-9b0cdf136a32",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2a007b24-5ede-42d8-899f-38c70bc84b4b",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2ffc9c1c-c6e4-4642-9db3-48dd2b7e2f4d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f8a66241-763b-4ef3-9467-2ed4f3620ebc",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/26f3500f-73cd-4429-ae6b-9b0cdf136a32",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9059a80c-06f0-468d-83c0-5e6d47988a66",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2a007b24-5ede-42d8-899f-38c70bc84b4b",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a1a94c34-264a-4acd-a2f6-a048678e37e0"
       ],
       "ceasn:inLanguage": "en-US",
@@ -905,15 +887,14 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ff32bd48-d509-4cb1-87b0-8d8cdd1e0a5b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d33bea0d-eee3-45fb-834e-896474db4876",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/304b2f82-44af-40a6-8ffc-ae47bcf42dc5",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0b1750a2-6523-4529-a561-b6514c9ffa6d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a908911c-ac44-455e-9155-cf70e7bc7e41",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/430831a0-e256-4942-a882-a9d9cf779eec",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/aade3553-3e1e-478f-9517-eca675f2e108", 
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d308fc10-8869-45d8-850e-c2916522ccaa",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/aade3553-3e1e-478f-9517-eca675f2e108"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0b1750a2-6523-4529-a561-b6514c9ffa6d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/304b2f82-44af-40a6-8ffc-ae47bcf42dc5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d33bea0d-eee3-45fb-834e-896474db4876",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ff32bd48-d509-4cb1-87b0-8d8cdd1e0a5b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a908911c-ac44-455e-9155-cf70e7bc7e41",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/430831a0-e256-4942-a882-a9d9cf779eec"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72eeb16-4eb9-410f-9688-89c3d013660b",
@@ -938,12 +919,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1f9e3b19-9b8c-43fd-8d4b-2f2b1a2611c5",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/228803ef-a0f0-48b8-b173-9a501ef77519",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d98c2947-8ff5-4e94-a14f-b409df9b89ec",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1f9e3b19-9b8c-43fd-8d4b-2f2b1a2611c5",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3baccb21-76fe-46ae-aae6-ed3fb8925dbe",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/33c63c73-5dd4-4a1a-89b7-e7ad0da2ef73"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/33c63c73-5dd4-4a1a-89b7-e7ad0da2ef73",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d98c2947-8ff5-4e94-a14f-b409df9b89ec"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72eeb16-4eb9-410f-9688-89c3d013660b",
@@ -968,15 +948,14 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/65b46ba2-3b74-4a0e-9367-7ee6497d39d3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cab124d6-fcd9-45e0-940c-93e032e2adb6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2e87fcc3-3e7e-41a1-95ca-e08aa320bbc6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7b6a1b3d-2ff3-457a-890e-54cfd139fdab",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/63b662e9-c9d5-49c2-8921-7706a9bef9e3",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/65b46ba2-3b74-4a0e-9367-7ee6497d39d3",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/08c13226-fb6a-434b-bbed-492b22233815",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/2e87fcc3-3e7e-41a1-95ca-e08aa320bbc6",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8a876efb-c12d-4af4-b6d2-5e8656bafa48",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8adfb45c-0b86-4fc9-bfb4-41f9dfa5ee21"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8adfb45c-0b86-4fc9-bfb4-41f9dfa5ee21",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7b6a1b3d-2ff3-457a-890e-54cfd139fdab",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cab124d6-fcd9-45e0-940c-93e032e2adb6",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/63b662e9-c9d5-49c2-8921-7706a9bef9e3"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f72eeb16-4eb9-410f-9688-89c3d013660b",
@@ -1001,15 +980,14 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4c31d422-6ae9-4498-a799-014fa1a98e50",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/19b81dff-2990-4089-9a63-e138434d241d",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9b1ab79b-17e2-48fd-a3ac-3d84794636be",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1fa1c390-70ad-4c8a-900b-c4e98f49517c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6fb1a849-ad81-4317-b6a2-bf3b4e5137ce",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/19b81dff-2990-4089-9a63-e138434d241d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e2fe7216-bdcc-42e8-86e2-8a205bed3dcf",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4c31d422-6ae9-4498-a799-014fa1a98e50",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ca7bd32f-61ae-4864-b9ab-ded98ff63fa5",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e2fe7216-bdcc-42e8-86e2-8a205bed3dcf",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/e316cc79-3d30-46a7-ba7a-24e82e09cbb9",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6fb1a849-ad81-4317-b6a2-bf3b4e5137ce",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4bb7a529-83a2-43da-9ab9-6aa1f4ab0c9a"
       ],
       "ceasn:inLanguage": "en-US",
@@ -1035,16 +1013,15 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/adc78ec5-eea9-4bc7-bad5-d09efe64d389",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d3dfa62c-ae7a-4c4b-bd52-3cdfb05c063c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f8a312cb-9b8f-4856-949c-7607508dcbb1",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/85a0cc37-9b7c-4250-853a-59dad4e5cd86",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7b925d15-feb6-432d-b82f-b93f2a0c8e0a",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f8a312cb-9b8f-4856-949c-7607508dcbb1",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/698b12fa-28e9-4dc1-b3a4-736fb6b0cba4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/85a0cc37-9b7c-4250-853a-59dad4e5cd86",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7fc8fa97-0788-44ee-9c2d-a9ba1142c0ba",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/16952f69-7832-40f8-8ee3-acda9b3a45ca",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4a50c95c-6a3e-435e-b3bd-f9f47d6db418"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7b925d15-feb6-432d-b82f-b93f2a0c8e0a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4a50c95c-6a3e-435e-b3bd-f9f47d6db418",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d3dfa62c-ae7a-4c4b-bd52-3cdfb05c063c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/adc78ec5-eea9-4bc7-bad5-d09efe64d389"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/27fc1d19-32ee-4abb-9ff3-4dddea2fded3",
@@ -1069,17 +1046,16 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/789876d5-c6ac-4b95-9b40-f4ea942d500d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/11b8d1dc-4f91-42ed-9fe9-25349b24910b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ef02b0b3-c160-409d-a4cc-f668449aaf08",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1f591b12-c647-475b-a34f-69df3f56ca74",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a115fd7a-a3d9-4384-b5c5-b31a08a20407",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7ff243f7-22a7-4c2a-928a-8a4f2b4b11ef",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a2bf5e51-5955-4631-a2c0-2815c8cbe492",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d1dd8bf2-a853-4310-ac51-d40f09ca8278",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/789876d5-c6ac-4b95-9b40-f4ea942d500d",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8e48da1c-d76e-4aee-98ca-3bfe0714b44f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1f591b12-c647-475b-a34f-69df3f56ca74",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f9466116-3737-497c-850a-4d5073e5c420"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d1dd8bf2-a853-4310-ac51-d40f09ca8278",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/11b8d1dc-4f91-42ed-9fe9-25349b24910b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f9466116-3737-497c-850a-4d5073e5c420",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ef02b0b3-c160-409d-a4cc-f668449aaf08",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a2bf5e51-5955-4631-a2c0-2815c8cbe492"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/27fc1d19-32ee-4abb-9ff3-4dddea2fded3",
@@ -1104,14 +1080,13 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/920a63c9-8ff8-41f9-a819-4a76c9f04d10",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d4fbe8f2-3838-4a55-9a2d-c90aa5ac9ab1",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/692b99a7-0ae5-4207-bb1c-7b770b97a416",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9b530807-ba68-4dc2-8ee4-7967a5fd7406",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7f8a9348-c516-474a-a713-7e3a7f9ff5c3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/692b99a7-0ae5-4207-bb1c-7b770b97a416",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f7002dc8-ab2a-4412-a77a-caef19b69a90",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d9fa070c-e8c7-4590-b642-62ef76b92533",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/920a63c9-8ff8-41f9-a819-4a76c9f04d10",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f7002dc8-ab2a-4412-a77a-caef19b69a90"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/9b530807-ba68-4dc2-8ee4-7967a5fd7406"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/27fc1d19-32ee-4abb-9ff3-4dddea2fded3",
@@ -1136,14 +1111,13 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cc22b6f3-c2ac-4711-a33f-903a663e5919",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fe4232d8-27eb-49d1-8b52-58802e621f9e",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/3eeafd15-02ea-428b-91e4-2e2e0a5a3052",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/f2b2d4b0-51f1-4548-8260-c903b55952e6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cc22b6f3-c2ac-4711-a33f-903a663e5919",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7eff617d-6042-4af6-938e-9f702d82ec35",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7746517c-9618-4b67-9374-c68d5f22f930",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/6bfc02d9-9f6e-49b1-9302-9812a4bf7cd3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/fe4232d8-27eb-49d1-8b52-58802e621f9e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7746517c-9618-4b67-9374-c68d5f22f930"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7eff617d-6042-4af6-938e-9f702d82ec35"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4b9fb9bb-942b-457b-84a9-b2967b1f3f6e",
@@ -1168,14 +1142,13 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/80584dd6-bcec-4d81-943d-747a7597a70c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/34d2dcc9-9105-45cf-a635-70ef26e8e809",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0100b26c-ea0d-4f57-bfe2-bb8b605424d3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d446ae99-65ff-4a77-ae61-41dbaaefd8be",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/d446ae99-65ff-4a77-ae61-41dbaaefd8be",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5b92196d-9256-4380-8b9f-a01e45915899",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/80584dd6-bcec-4d81-943d-747a7597a70c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0100b26c-ea0d-4f57-bfe2-bb8b605424d3",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/10efdfa2-93c9-41dd-bbb6-9e4783abcc65",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5ee1c0ec-31d2-46cf-8f36-94cad82b7784"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5ee1c0ec-31d2-46cf-8f36-94cad82b7784",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/34d2dcc9-9105-45cf-a635-70ef26e8e809"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4b9fb9bb-942b-457b-84a9-b2967b1f3f6e",
@@ -1200,12 +1173,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/35e6223d-dae7-4afb-9ffb-bd0862dd1ab4",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8a0d3d6e-a78a-47ca-9005-367378218a86",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/91341823-baab-4b21-a106-9445ae5b5102",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/35e6223d-dae7-4afb-9ffb-bd0862dd1ab4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b3ee7440-2bd0-427c-b40d-21b1c32807b9",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/a3ee5aef-c135-4158-8310-eb8330b02612",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b3ee7440-2bd0-427c-b40d-21b1c32807b9"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/91341823-baab-4b21-a106-9445ae5b5102",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8a0d3d6e-a78a-47ca-9005-367378218a86"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4b9fb9bb-942b-457b-84a9-b2967b1f3f6e",
@@ -1230,13 +1202,12 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0924066a-e4f0-408d-b28b-4913a2c56c22",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ba5f03d2-c2e8-40ef-a15a-20bf1db73f0b",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/ba5f03d2-c2e8-40ef-a15a-20bf1db73f0b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1c7449ef-bb03-4792-a8f5-7580934ba854",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7f40333f-7cae-4318-86e4-b35c66cac67a",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8c89a16a-cd89-4598-9e9e-20b0c2da8060",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/0924066a-e4f0-408d-b28b-4913a2c56c22",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/7aba6417-1b8e-45c9-8248-7be2564680a0",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1c7449ef-bb03-4792-a8f5-7580934ba854"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/8c89a16a-cd89-4598-9e9e-20b0c2da8060"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4b9fb9bb-942b-457b-84a9-b2967b1f3f6e",
@@ -1261,12 +1232,11 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/AssociatesDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/21cdc5bf-4db6-4307-97b4-97aa12f33c7f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/77cd8ac0-2295-48fe-b212-a7ea5933eac1",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/15080375-eb79-4b29-ad5f-c2044627c93c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/21cdc5bf-4db6-4307-97b4-97aa12f33c7f", 
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/681706b8-7319-4aac-85a2-c8c491c1902e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cadb76c7-b5c6-46e0-ba95-104a0b079b6c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/15080375-eb79-4b29-ad5f-c2044627c93c"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/77cd8ac0-2295-48fe-b212-a7ea5933eac1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/cadb76c7-b5c6-46e0-ba95-104a0b079b6c"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4b9fb9bb-942b-457b-84a9-b2967b1f3f6e",
@@ -1291,14 +1261,13 @@
           "@id": "http://purl.org/ctdl/vocabs/audLevel/BachelorDegreeLevel"
         }
       ],
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4dc458b7-032d-4463-b118-8f2e1520aef7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b019f2c8-14a0-4ab4-8ff7-21740ddd1b65",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5ee2b029-6354-4e7e-a21f-64fc6da0437c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4f09a39d-b4ed-477b-8088-1fa6c320415d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/38ef2175-8c93-40f9-b80d-bf1547ce1a5b",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4f09a39d-b4ed-477b-8088-1fa6c320415d",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/bcc7bc69-cfce-4a78-b9e5-04ea6cf9c540",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1731f9a0-90ac-4502-8e8b-ba82e53f11fe"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/5ee2b029-6354-4e7e-a21f-64fc6da0437c",    
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/1731f9a0-90ac-4502-8e8b-ba82e53f11fe",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4dc458b7-032d-4463-b118-8f2e1520aef7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/38ef2175-8c93-40f9-b80d-bf1547ce1a5b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/b019f2c8-14a0-4ab4-8ff7-21740ddd1b65"
       ],
       "ceasn:inLanguage": "en-US",
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CET/4b9fb9bb-942b-457b-84a9-b2967b1f3f6e",
@@ -3639,7 +3608,7 @@
         "en-us": "Skill"
       },
       "ceasn:competencyText": {
-        "en-us": "Designing scenarios (e.g., case studies, role plays,\nperformance demonstrations)"
+        "en-us": "Designing scenarios (e.g., case studies, role plays, performance demonstrations)"
       },
       "ceasn:educationLevel": [
         {
