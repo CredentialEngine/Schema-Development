@@ -8,8 +8,7 @@
         "en-us": "The Construction Health and Safety Technician (CHST) certification is designed for individuals who demonstrate competency and work part-time or full-time in health and safety activities devoted to the prevention of construction illnesses and injuries."
       },
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasTopChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "ceasn:hasTopChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a90619aa-df99-4d3f-8e7c-46c9898e4c16"
@@ -27,6 +26,104 @@
       },
       "ceasn:source": "http://njh.me/www.bcsp.org/chst"
     },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Domain"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Program Management - 52%"
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9427b5ed-cffa-4351-9351-124fac17ba07",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/058c8cae-acb8-4422-aa13-179320035a13",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/dc04a505-010b-4760-af08-ddacc2175dbc",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e60211ca-16ff-43f8-8389-36955f15ea94",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e37e4b5e-c3c4-4da1-a04c-8c9d20248385",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6652a0a4-23f6-45f8-a0c6-72fcd287475d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4a7802eb-6f0e-4cf4-b289-ebaa6f7b8b71"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "1",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.52"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Domain"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Worksite Auditing - 19%"
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5e8748e3-69a7-4b2b-b272-d3c04f4fb904",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "2",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.19"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Domain"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Training - 21%"
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7a402763-300b-4072-854c-cf22dbd93be7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2bd42aba-47c0-431b-a7da-1dc2c643371b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/cd66da89-e14a-43b9-8cae-d73a84670f53"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "3",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.21"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a90619aa-df99-4d3f-8e7c-46c9898e4c16",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Domain"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Professional Responsibility - 8%"
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f14c01a-01fd-4b7d-bdb1-a9ea5e7245e6",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3ed0aaa5-6c35-4913-8080-c2ef3b1792b1"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "4",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
+      "ceasn:weight": "0.08"
+    },
+    
+    
+    
+    
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f28a00bb-9ab2-4ee1-adfa-d57e40ee5e40",
       "@type": "ceasn:Competency",
@@ -73,27 +170,29 @@
         "en-us": "Participate in the development of a site-specific safety plan by detailing work activities, hazards, and corrective actions in order to ensure that foreseeable hazards are addressed and expectations for compliance are communicated."
       },
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/97f279ef-101a-4347-8af4-07e3c7d84d8e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/66705598-f5ae-4972-b109-cfa04f1c0049",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a23c5391-cf9c-4ae8-88d4-5b39aea229ae",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c403039a-a1a0-48d1-bf5e-336bdbf50064",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5861f5fc-f345-44c8-b7e9-128ce6be8371",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a32116f2-fa94-407a-9af2-7798804aba2d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9da9d959-06d3-4cfb-bd65-03a9421901db",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ca39080e-8cb5-4746-a3bd-0ba4bf82b7ad",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f51e7da0-aade-4c0a-8b27-2235e8288ee8",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/58402849-df9d-4da8-ba76-d15915ab2cad",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7c8739f2-8f6f-47ef-8a0c-749b79c88cc0",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3d058d45-e2e1-4cfe-9911-a1f5ef543bfb",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/87ce841d-abe0-448a-951e-c967d0b5c6cc",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e849bace-3d7a-408e-b400-f330b74d8ced",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c403039a-a1a0-48d1-bf5e-336bdbf50064",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/98f5e52d-ecc4-4fda-8b3f-11b50d0bb6df",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/808ede49-2fbd-4702-ad27-8cda729b1031",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/66705598-f5ae-4972-b109-cfa04f1c0049",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a32116f2-fa94-407a-9af2-7798804aba2d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/87ce841d-abe0-448a-951e-c967d0b5c6cc",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a23c5391-cf9c-4ae8-88d4-5b39aea229ae",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9da9d959-06d3-4cfb-bd65-03a9421901db",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/15d10534-90c4-4fd1-9423-0d232bdbe567",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e849bace-3d7a-408e-b400-f330b74d8ced",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3d058d45-e2e1-4cfe-9911-a1f5ef543bfb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5861f5fc-f345-44c8-b7e9-128ce6be8371",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/97f279ef-101a-4347-8af4-07e3c7d84d8e",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/208e95dd-bb7b-4835-b8ee-91ef3f3deac2",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f51e7da0-aade-4c0a-8b27-2235e8288ee8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ca39080e-8cb5-4746-a3bd-0ba4bf82b7ad",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2f65395a-c96c-4159-9347-f6084dfe3906",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/11aefe57-ef26-4f10-b14d-63917f1d5545",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/663c0bad-24a1-4c05-8ce0-a38c274a9945",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/11aefe57-ef26-4f10-b14d-63917f1d5545"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/58402849-df9d-4da8-ba76-d15915ab2cad",        
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/808ede49-2fbd-4702-ad27-8cda729b1031",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7c8739f2-8f6f-47ef-8a0c-749b79c88cc0"
+
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
@@ -103,6 +202,363 @@
       "ceasn:listID": "2",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/dc04a505-010b-4760-af08-ddacc2175dbc",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Assist in the development and review of the processes (e.g., job safety analysis) that mitigate the risks and hazards identified in site-specific safety plan."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0818c590-21e0-47cf-a954-57d9a5aaef91",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/54646571-1083-46cd-a7e5-cf8100ef25b7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d366b036-46ed-476c-aeef-5cf2f578ba4b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/68bd38b9-0761-40a0-80da-966d772bab2d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/95d66e3c-0b6d-4954-ae72-b9184ea213f4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/be81e0b5-9c45-4909-a135-d8c703579c73",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0081b688-a3d7-4b61-b4db-69209c672551",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f172c82e-7baf-424e-8a8c-989de28f5672",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/394ea8e3-ed87-4f0e-87f0-6b735a120904"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "3",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e60211ca-16ff-43f8-8389-36955f15ea94",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Provide technical guidance to jobsite personnel by maintaining comprehensive knowledge of current standards, codes, best practices, interpretation, and applicability for construction activities."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+
+"ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/57de80a1-35cd-40c7-a40d-b65442270e87",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fc948f65-b3ae-41d7-bca2-643b9ea993ee",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/21298afe-576a-4c31-b8f2-a5e0b60a9edf",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b085a6c7-b174-43cb-90a8-93f16311bb47",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/394ea8e3-ed87-4f0e-87f0-6b735a120904",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f516e42-8290-4df8-b1c0-4bb6c37af1a7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e17d1d64-5c0e-46a9-8956-aa2b3048dbd9",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/648a7f40-d434-456f-8105-4841509104f9"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "4",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e37e4b5e-c3c4-4da1-a04c-8c9d20248385",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Identify and coordinate with management and jobsite personnel on unanticipated hazards as they develop in order to maintain a safe and healthful work environment."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/57805203-334d-4135-9933-654dc10d52b4",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/77add380-5202-4c2c-8074-f57f4d10195d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/98f5e52d-ecc4-4fda-8b3f-11b50d0bb6df",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3c198fa0-ffbe-4f4b-a71e-5641158d8ca0",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/aee7448b-6759-4ebc-bc8f-853edd2d8f91",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/35328a0f-1cb3-4bca-a953-3aab6d683c2e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/898dd994-05d0-4be8-b5a3-d1fef5f23b01",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5902fd21-1d8b-4488-9454-0510cdc7175b"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "5",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6652a0a4-23f6-45f8-a0c6-72fcd287475d",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Provide technical guidance when emergency response plan has been activated to protect jobsite personnel and to mitigate loss."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f305acb6-44d3-484e-ac2a-62fe4126032e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ef14393f-a504-4aed-8bac-c322c7a76690",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fdb89d85-791a-4090-8dbd-13281cd67348",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2e5604d0-fc51-43af-92fb-acdb96bb3e74",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7ad27cce-a65c-4dd7-8864-cc0f100afb43",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/97127a8f-8255-4742-a03b-0dad29b410b1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/36283213-d159-43b9-98e5-bd5c8ccf619a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2e7d2c1c-86f4-43e6-9bab-4e96093a373e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5cdaef5a-c3ba-4090-992c-9cc43e570cdf"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "6",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4a7802eb-6f0e-4cf4-b289-ebaa6f7b8b71",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Participate in incident investigations using established procedures in order to recommend appropriate corrective actions."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0e0c46f5-585b-46dd-8855-55b0a503f0b2",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4fc6685d-7d30-49a3-b91a-0617b277b65d",  
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/830d86e7-c36a-4906-8ea4-895f41dbcd2c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5d08c677-c2af-40ac-886e-414063ef1b8d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ce488c8a-6e89-4a6f-9966-284c47bcb6e3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/79351a83-4445-4f22-975b-47e61d072586",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/269504d9-df31-4461-91a1-40c80fcbe037",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6bdeb21f-a7fd-4f56-b6e1-a8257f2ce86e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c3b9b1aa-54c5-4b20-a5e9-ca1c69934ea1"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "7",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5e8748e3-69a7-4b2b-b272-d3c04f4fb904",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Perform worksite assessments to identify hazards and non-compliance in the work environment"
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/893a0985-c979-4154-81f4-170bf25350dd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7400be7e-7853-455d-9721-2f141d32a153",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ffe51c5c-6f89-40d3-922c-3ab3d1df534d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/1a81bc26-88fe-4d08-af1c-730fad193222",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a643dd57-3d21-44e4-8a61-584b4b0f179c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ccdce3cc-9c9c-424c-8ab1-c1135e9ba4e3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/8f39b248-afb2-4385-aec7-dfb788371f5c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7c0349eb-6ab4-4ae0-b9bf-9f5e78a3dd45", 
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f870f169-d52a-4fb3-b028-77cebe9416ed",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/811629ab-0f3d-42d7-adf5-0adc21f5317d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6f2ee2fe-f7c7-4d95-9190-bdb836526a73",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c7311c32-6b35-4795-88e6-1cb4c7a2414e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/35d31fae-282c-43bf-a738-2a0c5a5b4a2c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f5bbcf27-4256-446b-b809-05cdc268a0f8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/724d3bd8-a026-43c8-be90-fcc02e72a575",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3baf1c0b-d901-4c9d-8fd6-8c57d6f0c407",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e45f68c7-b6d3-45aa-947e-561d7e027d38",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f372240-57b6-434f-a153-35139688876b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/cf971044-6d62-4220-8e0b-cc2b3dbf2ee4"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "1",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Recommend corrective actions for the existing and potential hazards identified in the worksite assessment."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ee77cdb4-d5ba-4a3a-8729-bd6c52083f46",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e321b29b-d55b-4371-ae06-a2fa1d796862",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7da52e96-5e5b-47e5-906a-df8dc3e4537f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b60e47c6-aaa9-4819-b966-23974f9c0596",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/8d41ee7b-c5bf-4d82-8c26-c0735cead674",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fbc8da5f-2d31-4607-9a37-1b7669cf787f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b9287bbd-3e30-49fa-a737-6ae3ddc9e8af",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/943b0932-f8a3-464d-bdb7-b84a6d81b9ba",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9e9557a2-06c8-4ae0-a9f6-7315eac9734e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9738ebc7-58da-4a21-a3ad-ef9d4400859f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f63a4692-0c8d-46f0-9bfe-aa37febbe33e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4e04c3d2-dbc9-411c-953e-c277efb8c9d3",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/bf5de0a8-6cce-45e1-973c-be8783b30fb7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/675c948c-586e-4a0a-bbe4-288ffeb9a4be",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/925eb17e-9135-4a13-a663-5f350d9a2cfb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a41d6d02-e243-4a3f-aab2-c95b1a996cfb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/820d6eaf-1c8f-4966-ae33-f1cc05ba028a"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "2",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7a402763-300b-4072-854c-cf22dbd93be7",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Determine training needs based on job safety analyses, regulatory requirements, trends, and/or observations made during worksite audits"
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5db2afdb-bc3d-41b0-80ce-ffb824ddc13c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/1d6109a8-ef75-4de8-b102-be165805f336",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/09a5f942-c6f4-4639-a73a-f924b3363c24",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a9690cae-a03f-44f8-b1df-583422c1cb83",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d66de281-35fd-4df8-b8f5-5aa9259c4226",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3dd19e79-1cd0-4e65-8623-c9d30b317c2c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/aa2e6789-1e81-4466-87df-c7c67a6ec311",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/83b0882f-9f82-45c8-adca-8e88bc70249f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/48644c45-9102-41e0-863e-fcc5a602c40e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/834f46a8-1733-47f5-9f23-e974ae6124bf",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e91beaaf-b1f6-46b1-a156-c6e8adbdcfd6"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "1",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2bd42aba-47c0-431b-a7da-1dc2c643371b",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Develop and deliver training that addresses legal and performance requirements, site specific hazards, trends, and observations."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9c918991-fc93-4d1d-9946-15b4de6bf624",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2e9e2fd7-f55a-4bd3-abfc-fd1b0593f742",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/08946df0-213b-4ced-8352-587b8d2c955d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/73ca0104-98c2-4d05-8744-4556220fea14",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f30ddaff-3dd9-45f2-a1da-bb2ac5ee98a2",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b3d4e8f0-a36e-4073-8af1-eaa905c36914",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ade7527b-00b0-4020-876e-6c8120aa83f1",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/408b61ba-4dd7-48b1-a8a9-ec721933c4bd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6f717a63-4221-4171-817b-70a6088aad70",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/62d8f1f7-7572-443f-a71b-92e5c00d9561",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fc30af42-d73d-4467-8169-d552ad8ddb7c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/75ec7cf8-bb64-4207-8e32-b49d2ff61561",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/881f04e6-5d27-4bad-885a-6c3829545558"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "2",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/cd66da89-e14a-43b9-8cae-d73a84670f53",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Facilitate jobsite safety meetings with all trades by discussing and demonstrating safe practices to inform jobsite personnel of potential risks."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/763ddcc3-8e2a-466e-baf7-b2b9e9c2db21",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/89e7b437-37ee-4c9e-9195-ee39d7f335a2",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d219655b-1080-4a77-b847-70e3fbbd9637",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d6e79fb3-2518-4cb4-bad5-8936d56d5bf7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e9d0e043-b7a4-47e1-b0c6-2e0c48ae7f12",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2a13d31a-eec5-4b1d-b32f-c45f4e3342ae",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/39d44d96-4048-4836-8377-970c8d9992bd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b3e5a1d7-fa4e-4e03-822a-d548687f032d",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0b364378-9c25-45a5-a19f-1e3e51b9a8c6",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4560b382-c03f-4b73-867c-cd225bf8cb66",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c254ca2f-b041-4c22-a114-a60afff8c4b8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0f3a1fa2-f49d-4020-b414-ea35042c9a6f",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b5153898-e58a-46d4-a38f-402522445b9b",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/66a62387-afe4-4531-ae72-00bf5f4db48b"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "3",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f14c01a-01fd-4b7d-bdb1-a9ea5e7245e6",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Maintain accurate records in all aspects of the safety program in accordance with established protocol to document changes, losses, and audit findings."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/bbf62a2a-c0a8-4abd-9be6-82d4c654e5d2",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9a970c6b-6a98-4b12-85d9-51e216dbdd3c",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/93f2ec48-4916-4afc-bd02-1501b86a1812",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d8e26555-4057-46d3-bea1-af4e9e867a1e",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/95a60665-2262-4b46-97bc-cae6037b01eb",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/86138ba0-5895-4a1d-9f1f-d7329d5c35b3"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a90619aa-df99-4d3f-8e7c-46c9898e4c16",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "1",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    },
+    {
+      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3ed0aaa5-6c35-4913-8080-c2ef3b1792b1",
+      "@type": "ceasn:Competency",
+      "ceasn:competencyCategory": {
+        "en-us": "Task"
+      },
+      "ceasn:competencyText": {
+        "en-us": "Maintain and expand competence in the safety profession in order to maintain certification."
+      },
+      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
+      "ceasn:hasChild": [ "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2d9df4a0-c0a1-4d14-a46a-05e74fa25007",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b2b69a41-ade4-4ed3-b16a-0795b0056f27",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6de969c6-cf14-4359-b51d-80bf448f1bdd",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/83f838fe-fc5d-4767-b3dc-9702d5a9545a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f3cb0087-3adc-423a-b6d5-b5fa9a96f90a"
+      ],
+      "ceasn:inLanguage": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      },
+      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a90619aa-df99-4d3f-8e7c-46c9898e4c16",
+      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
+      "ceasn:listID": "2",
+      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
+    }, 
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5861f5fc-f345-44c8-b7e9-128ce6be8371",
       "@type": "ceasn:Competency",
@@ -407,37 +863,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7a402763-300b-4072-854c-cf22dbd93be7",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "3",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7a402763-300b-4072-854c-cf22dbd93be7",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Determine training needs based on job safety analyses, regulatory requirements, trends, and/or observations made during worksite audits"
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3dd19e79-1cd0-4e65-8623-c9d30b317c2c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/aa2e6789-1e81-4466-87df-c7c67a6ec311",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/48644c45-9102-41e0-863e-fcc5a602c40e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/1d6109a8-ef75-4de8-b102-be165805f336",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/83b0882f-9f82-45c8-adca-8e88bc70249f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a9690cae-a03f-44f8-b1df-583422c1cb83",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e91beaaf-b1f6-46b1-a156-c6e8adbdcfd6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d66de281-35fd-4df8-b8f5-5aa9259c4226",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/09a5f942-c6f4-4639-a73a-f924b3363c24",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5db2afdb-bc3d-41b0-80ce-ffb824ddc13c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/834f46a8-1733-47f5-9f23-e974ae6124bf"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "1",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
@@ -883,40 +1308,6 @@
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/cd66da89-e14a-43b9-8cae-d73a84670f53",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Facilitate jobsite safety meetings with all trades by discussing and demonstrating safe practices to inform jobsite personnel of potential risks."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0b364378-9c25-45a5-a19f-1e3e51b9a8c6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d6e79fb3-2518-4cb4-bad5-8936d56d5bf7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d219655b-1080-4a77-b847-70e3fbbd9637",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/89e7b437-37ee-4c9e-9195-ee39d7f335a2",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/66a62387-afe4-4531-ae72-00bf5f4db48b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e9d0e043-b7a4-47e1-b0c6-2e0c48ae7f12",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/39d44d96-4048-4836-8377-970c8d9992bd",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/763ddcc3-8e2a-466e-baf7-b2b9e9c2db21",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c254ca2f-b041-4c22-a114-a60afff8c4b8",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0f3a1fa2-f49d-4020-b414-ea35042c9a6f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b3e5a1d7-fa4e-4e03-822a-d548687f032d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4560b382-c03f-4b73-867c-cd225bf8cb66",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2a13d31a-eec5-4b1d-b32f-c45f4e3342ae",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b5153898-e58a-46d4-a38f-402522445b9b"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "3",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/57de80a1-35cd-40c7-a40d-b65442270e87",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
@@ -1076,43 +1467,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "10",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Recommend corrective actions for the existing and potential hazards identified in the worksite assessment."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/bf5de0a8-6cce-45e1-973c-be8783b30fb7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9e9557a2-06c8-4ae0-a9f6-7315eac9734e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e321b29b-d55b-4371-ae06-a2fa1d796862",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fbc8da5f-2d31-4607-9a37-1b7669cf787f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b60e47c6-aaa9-4819-b966-23974f9c0596",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b9287bbd-3e30-49fa-a737-6ae3ddc9e8af",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4e04c3d2-dbc9-411c-953e-c277efb8c9d3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/675c948c-586e-4a0a-bbe4-288ffeb9a4be",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7da52e96-5e5b-47e5-906a-df8dc3e4537f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/943b0932-f8a3-464d-bdb7-b84a6d81b9ba",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a41d6d02-e243-4a3f-aab2-c95b1a996cfb",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/8d41ee7b-c5bf-4d82-8c26-c0735cead674",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/820d6eaf-1c8f-4966-ae33-f1cc05ba028a",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f63a4692-0c8d-46f0-9bfe-aa37febbe33e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/925eb17e-9135-4a13-a663-5f350d9a2cfb",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9738ebc7-58da-4a21-a3ad-ef9d4400859f",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ee77cdb4-d5ba-4a3a-8729-bd6c52083f46"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "2",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
@@ -1278,39 +1632,6 @@
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2bd42aba-47c0-431b-a7da-1dc2c643371b",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Develop and deliver training that addresses legal and performance requirements, site specific hazards, trends, and observations."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/408b61ba-4dd7-48b1-a8a9-ec721933c4bd",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/08946df0-213b-4ced-8352-587b8d2c955d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/62d8f1f7-7572-443f-a71b-92e5c00d9561",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/75ec7cf8-bb64-4207-8e32-b49d2ff61561",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/73ca0104-98c2-4d05-8744-4556220fea14",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b3d4e8f0-a36e-4073-8af1-eaa905c36914",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2e9e2fd7-f55a-4bd3-abfc-fd1b0593f742",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9c918991-fc93-4d1d-9946-15b4de6bf624",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6f717a63-4221-4171-817b-70a6088aad70",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/881f04e6-5d27-4bad-885a-6c3829545558",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f30ddaff-3dd9-45f2-a1da-bb2ac5ee98a2",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ade7527b-00b0-4020-876e-6c8120aa83f1",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fc30af42-d73d-4467-8169-d552ad8ddb7c"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5ff51c88-5a58-42b7-8c93-2fa3854dd3c7",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "2",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/893a0985-c979-4154-81f4-170bf25350dd",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
@@ -1389,7 +1710,7 @@
         "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "en-us": "Construction means, methods, and materials - 8%"
+        "en-us": "Construction means, methods, and materials"
       },
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
       "ceasn:inLanguage": {
@@ -1399,29 +1720,6 @@
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "2",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a90619aa-df99-4d3f-8e7c-46c9898e4c16",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Domain"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Professional Responsibility - 8%"
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f14c01a-01fd-4b7d-bdb1-a9ea5e7245e6",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3ed0aaa5-6c35-4913-8080-c2ef3b1792b1"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "4",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
-      "ceasn:weight": "0.08"
     },
     {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e849bace-3d7a-408e-b400-f330b74d8ced",
@@ -1790,7 +2088,7 @@
         "en-us": "Knowledge"
       },
       "ceasn:competencyText": {
-        "en-us": "Industry and trade- related trends (e.g., injury/illness, citations, etc.)"
+        "en-us": "Industry and trade-related trends (e.g., injury/illness, citations, etc.)"
       },
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
       "ceasn:inLanguage": {
@@ -1907,34 +2205,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "11",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e37e4b5e-c3c4-4da1-a04c-8c9d20248385",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Identify and coordinate with management and jobsite personnel on unanticipated hazards as they develop in order to maintain a safe and healthful work environment."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3c198fa0-ffbe-4f4b-a71e-5641158d8ca0",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/aee7448b-6759-4ebc-bc8f-853edd2d8f91",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/35328a0f-1cb3-4bca-a953-3aab6d683c2e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/98f5e52d-ecc4-4fda-8b3f-11b50d0bb6df",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/898dd994-05d0-4be8-b5a3-d1fef5f23b01",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/77add380-5202-4c2c-8074-f57f4d10195d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/57805203-334d-4135-9933-654dc10d52b4",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5902fd21-1d8b-4488-9454-0510cdc7175b"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "5",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
@@ -2205,33 +2475,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/cd66da89-e14a-43b9-8cae-d73a84670f53",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "7",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e60211ca-16ff-43f8-8389-36955f15ea94",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Provide technical guidance to jobsite personnel by maintaining comprehensive knowledge of current standards, codes, best practices, interpretation, and applicability for construction activities."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e17d1d64-5c0e-46a9-8956-aa2b3048dbd9",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/57de80a1-35cd-40c7-a40d-b65442270e87",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f516e42-8290-4df8-b1c0-4bb6c37af1a7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fc948f65-b3ae-41d7-bca2-643b9ea993ee",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/21298afe-576a-4c31-b8f2-a5e0b60a9edf",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/648a7f40-d434-456f-8105-4841509104f9",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b085a6c7-b174-43cb-90a8-93f16311bb47"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "4",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
@@ -2637,29 +2880,6 @@
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Domain"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Worksite Auditing - 19%"
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5e8748e3-69a7-4b2b-b272-d3c04f4fb904",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:isTopChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "2",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "false",
-      "ceasn:weight": "0.19"
-    },
-    {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/bf5de0a8-6cce-45e1-973c-be8783b30fb7",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
@@ -2742,18 +2962,18 @@
       },
       "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
       "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6ea3bbe6-ec5f-40a0-b21d-7b2b9b4b6771",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a3a20754-4ddd-4a61-99f5-259a3b825137",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a34aa16b-26d5-4909-b018-a6a47d3cc88a",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9a5e405d-ec49-4bdd-b07e-23afeb41f2cc",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6b3881b6-0d20-4623-ab63-36540e081b24",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/498b9811-a77b-410c-b8d5-ad36f4159856",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/b4260852-bd12-490c-bb9a-a765cd243bc8",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9a5e405d-ec49-4bdd-b07e-23afeb41f2cc",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a34aa16b-26d5-4909-b018-a6a47d3cc88a",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6ea3bbe6-ec5f-40a0-b21d-7b2b9b4b6771",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c9c44d44-4442-4bdb-b35d-c0f54dce6ff7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a3a20754-4ddd-4a61-99f5-259a3b825137",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/13badd27-c059-41e6-86dd-34074f8a0ef7",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/8677b3bc-9267-48ca-a3da-aa0cbc8e52e8",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/498b9811-a77b-410c-b8d5-ad36f4159856",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c9c44d44-4442-4bdb-b35d-c0f54dce6ff7",
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f28a00bb-9ab2-4ee1-adfa-d57e40ee5e40",
         "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a8a7d96f-2cc9-4c09-8854-5d964cd5b34e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f28a00bb-9ab2-4ee1-adfa-d57e40ee5e40"
+        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6b3881b6-0d20-4623-ab63-36540e081b24"
       ],
       "ceasn:inLanguage": {
         "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
@@ -2915,35 +3135,6 @@
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/dc04a505-010b-4760-af08-ddacc2175dbc",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Assist in the development and review of the processes (e.g., job safety analysis) that mitigate the risks and hazards identified in site-specific safety plan."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0081b688-a3d7-4b61-b4db-69209c672551",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/54646571-1083-46cd-a7e5-cf8100ef25b7",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0818c590-21e0-47cf-a954-57d9a5aaef91",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f172c82e-7baf-424e-8a8c-989de28f5672",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/be81e0b5-9c45-4909-a135-d8c703579c73",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d366b036-46ed-476c-aeef-5cf2f578ba4b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/394ea8e3-ed87-4f0e-87f0-6b735a120904",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/68bd38b9-0761-40a0-80da-966d772bab2d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/95d66e3c-0b6d-4954-ae72-b9184ea213f4"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "3",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/97127a8f-8255-4742-a03b-0dad29b410b1",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
@@ -2980,35 +3171,6 @@
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6652a0a4-23f6-45f8-a0c6-72fcd287475d",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Provide technical guidance when emergency response plan has been activated to protect jobsite personnel and to mitigate loss."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ef14393f-a504-4aed-8bac-c322c7a76690",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2e5604d0-fc51-43af-92fb-acdb96bb3e74",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7ad27cce-a65c-4dd7-8864-cc0f100afb43",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5cdaef5a-c3ba-4090-992c-9cc43e570cdf",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f305acb6-44d3-484e-ac2a-62fe4126032e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/97127a8f-8255-4742-a03b-0dad29b410b1",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/2e7d2c1c-86f4-43e6-9bab-4e96093a373e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fdb89d85-791a-4090-8dbd-13281cd67348",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/36283213-d159-43b9-98e5-bd5c8ccf619a"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "6",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
       "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/fbc8da5f-2d31-4607-9a37-1b7669cf787f",
       "@type": "ceasn:Competency",
       "ceasn:competencyCategory": {
@@ -3024,45 +3186,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "6",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5e8748e3-69a7-4b2b-b272-d3c04f4fb904",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Perform worksite assessments to identify hazards and non-compliance in the work environment"
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/1a81bc26-88fe-4d08-af1c-730fad193222",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ccdce3cc-9c9c-424c-8ab1-c1135e9ba4e3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ffe51c5c-6f89-40d3-922c-3ab3d1df534d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f372240-57b6-434f-a153-35139688876b",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7c0349eb-6ab4-4ae0-b9bf-9f5e78a3dd45",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/811629ab-0f3d-42d7-adf5-0adc21f5317d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e45f68c7-b6d3-45aa-947e-561d7e027d38",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/35d31fae-282c-43bf-a738-2a0c5a5b4a2c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/8f39b248-afb2-4385-aec7-dfb788371f5c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/cf971044-6d62-4220-8e0b-cc2b3dbf2ee4",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f5bbcf27-4256-446b-b809-05cdc268a0f8",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6f2ee2fe-f7c7-4d95-9190-bdb836526a73",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7400be7e-7853-455d-9721-2f141d32a153",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/893a0985-c979-4154-81f4-170bf25350dd",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/f870f169-d52a-4fb3-b028-77cebe9416ed",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a643dd57-3d21-44e4-8a61-584b4b0f179c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/724d3bd8-a026-43c8-be90-fcc02e72a575",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3baf1c0b-d901-4c9d-8fd6-8c57d6f0c407",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c7311c32-6b35-4795-88e6-1cb4c7a2414e"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/e1617dd2-fa63-4748-a06d-961fb58806b5",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "1",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
@@ -3117,32 +3240,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/7a402763-300b-4072-854c-cf22dbd93be7",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "6",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/3f14c01a-01fd-4b7d-bdb1-a9ea5e7245e6",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Maintain accurate records in all aspects of the safety program in accordance with established protocol to document changes, losses, and audit findings."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/9a970c6b-6a98-4b12-85d9-51e216dbdd3c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/86138ba0-5895-4a1d-9f1f-d7329d5c35b3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/93f2ec48-4916-4afc-bd02-1501b86a1812",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/95a60665-2262-4b46-97bc-cae6037b01eb",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/bbf62a2a-c0a8-4abd-9be6-82d4c654e5d2",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/d8e26555-4057-46d3-bea1-af4e9e867a1e"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/a90619aa-df99-4d3f-8e7c-46c9898e4c16",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "1",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
@@ -3269,35 +3366,6 @@
       "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ba1dec03-1302-4426-890a-ee2e82c8311f",
       "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
       "ceasn:listID": "1",
-      "http://purl.org/ctdlasn/terms/shouldIndex": "true"
-    },
-    {
-      "@id": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4a7802eb-6f0e-4cf4-b289-ebaa6f7b8b71",
-      "@type": "ceasn:Competency",
-      "ceasn:competencyCategory": {
-        "en-us": "Task"
-      },
-      "ceasn:competencyText": {
-        "en-us": "Participate in incident investigations using established procedures in order to recommend appropriate corrective actions."
-      },
-      "ceasn:educationLevelType": "http://purl.org/ctdl/vocabs/audLevel/PostSecondaryLevel",
-      "ceasn:hasChild": [
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/5d08c677-c2af-40ac-886e-414063ef1b8d",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/269504d9-df31-4461-91a1-40c80fcbe037",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/830d86e7-c36a-4906-8ea4-895f41dbcd2c",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/79351a83-4445-4f22-975b-47e61d072586",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/c3b9b1aa-54c5-4b20-a5e9-ca1c69934ea1",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/0e0c46f5-585b-46dd-8855-55b0a503f0b2",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/ce488c8a-6e89-4a6f-9966-284c47bcb6e3",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/6bdeb21f-a7fd-4f56-b6e1-a8257f2ce86e",
-        "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4fc6685d-7d30-49a3-b91a-0617b277b65d"
-      ],
-      "ceasn:inLanguage": {
-        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
-      },
-      "ceasn:isChildOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/4f892b12-dda9-4034-9e60-7bcbde4cd2cf",
-      "ceasn:isPartOf": "http://www.bcsp.org/Portals/0/Assets/Competencies/CHST/53639e26-bff8-4667-8557-e15ae34bcaf7",
-      "ceasn:listID": "7",
       "http://purl.org/ctdlasn/terms/shouldIndex": "true"
     },
     {
