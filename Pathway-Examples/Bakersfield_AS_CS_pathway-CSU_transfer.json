@@ -1,391 +1,472 @@
 {
-    "@context": "http://credreg.net/ctdl/schema/context/json",
+    "@context": "http://examplePathway.org/",
     "@graph": [
         {
             "@type": "Pathway",
-            "@id": "https://credentialengineregistry.org/pathways/e9a210a8-a77c-41af-b594-4543ef4c2b08",
+            "@id": "http://examplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
             "name": "Associate of Science Degree: Computer Science",
-            "description": "Transfer pathway for the Bakersfield College Associate of Science Degree: Computer Science to the California State University",
-            "hasRootComponent": "https://credentialengineregistry.org/pathways/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
-            "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER",
-            "ownedBy": "https://www.bakersfieldcollege.edu"
+            "hasRoot": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+            "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER"
         },
         {
-            "@type": "AssociateDegree",
-            "@id": "https://credentialengineregistry.org/pathways/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+            "@type": "Credential",
+            "@id": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
             "name": "Associate of Science Degree: Computer Science",
-            "isRootComponentOf": "https://credentialengineregistry.org/pathways/e9a210a8-a77c-41af-b594-4543ef4c2b08",
-            "hasChild": ["https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
-                "https://credentialengineregistry.org/pathways/11360165-b900-41e3-9b5b-7be2ef7198b5",
-                "https://credentialengineregistry.org/pathways/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
-                "https://credentialengineregistry.org/pathways/a81076fa-53a4-4a13-a085-99e284756948",
-                "https://credentialengineregistry.org/pathways/8fb27042-6c64-436f-8985-1c0b5b4a2287",
-                "https://credentialengineregistry.org/pathways/96a2aba5-bba7-4a90-8c72-ae640642da32",
-                "https://credentialengineregistry.org/pathways/b87cf844-0d28-425d-afe3-66e01e527360",
-                "https://credentialengineregistry.org/pathways/3c52c752-52e0-4de8-a316-5ff4f4655e73",
-                "https://credentialengineregistry.org/pathways/1ca80f84-9331-4855-a746-13613a09de3e",
-                "https://credentialengineregistry.org/pathways/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
-                "https://credentialengineregistry.org/pathways/fd28f278-c131-4299-b3cc-bc706f1c581e",
-                "https://credentialengineregistry.org/pathways/fa6f8147-7250-4a0e-b11d-acb31db5b616",
-                "https://credentialengineregistry.org/pathways/5c364f83-8826-4e39-ab4a-8b656924f254",
-                "https://credentialengineregistry.org/pathways/38567f64-e2ce-4883-8521-08e70da7a5be",
-                "https://credentialengineregistry.org/pathways/bae6587a-8506-4817-832a-04bf21177e48",
-                "https://credentialengineregistry.org/pathways/701bde02-3a97-4da6-8664-f932f8132aaa",
-                "https://credentialengineregistry.org/pathways/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
-                "https://credentialengineregistry.org/pathways/85cafd67-8a15-49b0-b17a-2d04953e63df",
-                "https://credentialengineregistry.org/pathways/70f47a9f-6e60-423c-8480-8407b668bcba",
-                "https://credentialengineregistry.org/pathways/bba2bb29-a385-4d1e-bc61-295f133edd9f",
-                "https://credentialengineregistry.org/pathways/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
-                "https://credentialengineregistry.org/pathways/46378ba7-5f81-462d-8208-af41ba263a01",
-                "https://credentialengineregistry.org/pathways/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
-                "https://credentialengineregistry.org/pathways/70f47a9f-6e60-423c-8480-8407b668bcba",
-                "https://credentialengineregistry.org/pathways/c7ca911c-e2c8-4549-8974-a45e7273684d",
-                "https://credentialengineregistry.org/pathways/f727fdd0-1e59-48be-a811-3536c2329a5b",
-                "https://credentialengineregistry.org/pathways/334b4732-058e-43da-a177-9bb9986e0e75",
-                "https://credentialengineregistry.org/pathways/d3976f68-1833-4524-b602-99baaa46cc21",
-                "https://credentialengineregistry.org/pathways/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e" ]
+            "isRootOf": "http://examplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
+            "isParentOf": ["http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
+                "http://examplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
+                "http://examplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
+                "http://examplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
+                "http://examplePathways.org/paths/8fb27042-6c64-436f-8985-1c0b5b4a2287",
+                "http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32",
+                "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360",
+                "http://examplePathways.org/paths/3c52c752-52e0-4de8-a316-5ff4f4655e73",
+                "http://examplePathways.org/paths/1ca80f84-9331-4855-a746-13613a09de3e",
+                "http://examplePathways.org/paths/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
+                "http://examplePathways.org/paths/fd28f278-c131-4299-b3cc-bc706f1c581e",
+                "http://examplePathways.org/paths/fa6f8147-7250-4a0e-b11d-acb31db5b616",
+                "http://examplePathways.org/paths/5c364f83-8826-4e39-ab4a-8b656924f254",
+                "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be",
+                "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48",
+                "http://examplePathways.org/paths/701bde02-3a97-4da6-8664-f932f8132aaa",
+                "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
+                "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df",
+                "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+                "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f",
+                "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
+                "http://examplePathways.org/paths/46378ba7-5f81-462d-8208-af41ba263a01",
+                "http://examplePathways.org/paths/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
+                "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+                "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d",
+                "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b",
+                "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75",
+                "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21",
+                "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e" ]
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
+            "@id": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
             "name": "Programming Concepts and Methology I",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "COMP B11",
-            "programTerm": "1st Term",
-            "programLevel": "Core"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 1 ,
+                "ceterms:name": "1st Term"
+            },
+            "level": "Core"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/11360165-b900-41e3-9b5b-7be2ef7198b5",
+            "@id": "http://examplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
             "name": "Programming Concepts and Methology II",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "COMP B12",
-            "programTerm": "2nd Term",
-            "programLevel": "Core",
-            "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"         
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 2 ,
+                "ceterms:name": "2nd Term"
+            },
+            "level": "Core",
+            "prerequisite": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"         
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
+            "@id": "http://examplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
             "name": "Computer Architecture and Organization",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "COMP B13",
-            "programTerm": "3rd Term",
-            "programLevel": "Core",
-            "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "level": "Core",
+            "prerequisite": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/a81076fa-53a4-4a13-a085-99e284756948",
+            "@id": "http://examplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
             "name": "Discrete Structures",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "COMP B14",
-            "programTerm": "4th Term",
-            "programLevel": "Core",
-            "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "Core",
+            "prerequisite": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/8fb27042-6c64-436f-8985-1c0b5b4a2287",
+            "@id": "http://examplePathways.org/paths/8fb27042-6c64-436f-8985-1c0b5b4a2287",
             "name": "Analytic Geometry/Calculus I",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 4.0,
+            "defaultCredits": 4.0,
             "courseCode": "MATH B6A",
-            "programTerm": "1st Term",
-            "programLevel": "Core"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 1 ,
+                "ceterms:name": "1st Term"
+            },
+            "level": "Core"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/96a2aba5-bba7-4a90-8c72-ae640642da32",
+            "@id": "http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32",
             "name": "Analytic Geometry/Calculus II",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 4.0,
+            "defaultCredits": 4.0,
             "courseCode": "MATH B6B",
-            "programTerm": "2nd Term",
-            "programLevel": "Core"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 2 ,
+                "ceterms:name": "2nd Term"
+            },
+            "level": "Core"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/b87cf844-0d28-425d-afe3-66e01e527360",
+            "@id": "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360",
             "name": "Mechanics and Wave Motion",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 4.0,
+            "defaultCredits": 4.0,
             "courseCode": "MATH B4A",
-            "programTerm": "2nd Term",
-            "programLevel": "Core"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 2 ,
+                "ceterms:name": "2nd Term"
+            },
+            "level": "Core"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/3c52c752-52e0-4de8-a316-5ff4f4655e73",
+            "@id": "http://examplePathways.org/paths/3c52c752-52e0-4de8-a316-5ff4f4655e73",
             "name": "Heat, Electricity, Magnetism",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 4.0,
+            "defaultCredits": 4.0,
             "courseCode": "MATH B4B",
-            "programTerm": "3rd Term",
-            "programLevel": "Core",
-            "prerequisite": ["https://credentialengineregistry.org/pathways/96a2aba5-bba7-4a90-8c72-ae640642da32", 
-                "https://credentialengineregistry.org/pathways/b87cf844-0d28-425d-afe3-66e01e527360"]
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "level": "Core",
+            "prerequisite": ["http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32", 
+                "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360"]
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/1ca80f84-9331-4855-a746-13613a09de3e",
+            "@id": "http://examplePathways.org/paths/1ca80f84-9331-4855-a746-13613a09de3e",
             "name": "Small group communication",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "COMM B8",
-            "programTerm": "1st Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 1 ,
+                "ceterms:name": "1st Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
+            "@id": "http://examplePathways.org/paths/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
             "name": "History of Rock and Roll",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "MUSC B27",
-            "programTerm": "1st Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 1 ,
+                "ceterms:name": "1st Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/fd28f278-c131-4299-b3cc-bc706f1c581e",
+            "@id": "http://examplePathways.org/paths/fd28f278-c131-4299-b3cc-bc706f1c581e",
             "name": "Elementary Nutitian",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "NUTR B10",
-            "programTerm": "1st Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 1 ,
+                "ceterms:name": "1st Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/fa6f8147-7250-4a0e-b11d-acb31db5b616",
+            "@id": "http://examplePathways.org/paths/fa6f8147-7250-4a0e-b11d-acb31db5b616",
             "name": "Expository Composition",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "ENGL B1A",
-            "programTerm": "2nd Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 2 ,
+                "ceterms:name": "2nd Term"
+            },
+            "level": "General Education"
         },
         {   
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/5c364f83-8826-4e39-ab4a-8b656924f254",
-            "programTerm": "3rd Term",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
-            "hasCondition": {
+            "@id": "http://examplePathways.org/paths/5c364f83-8826-4e39-ab4a-8b656924f254",
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "defaultCredits": 3.0,
+            "requiredCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from PHIL B7 or ENGL B28",
-                "hasRuleSet": {
-                    "@type": "RuleSetProfile",
-                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
-                    "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
-                    "requiredNumber": 1
-                },
-                "targetComponent": [
-                    "https://credentialengineregistry.org/pathways/38567f64-e2ce-4883-8521-08e70da7a5be", 
-                    "https://credentialengineregistry.org/pathways/bae6587a-8506-4817-832a-04bf21177e48"
-                ]
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "@id": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be", 
+                        "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48"
+                    ]
+                }
             }
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/38567f64-e2ce-4883-8521-08e70da7a5be",
+            "@id": "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be",
             "name": "Introduction to logic",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "PHIL B7",
-            "programTerm": "3rd Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/bae6587a-8506-4817-832a-04bf21177e48",
+            "@id": "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48",
             "name": "Classical Mythology",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "ENGL B28",
-            "programTerm": "3rd Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/701bde02-3a97-4da6-8664-f932f8132aaa",
-            "programTerm": "3rd Term",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
-            "hasCondition": {
+            "@id": "http://examplePathways.org/paths/701bde02-3a97-4da6-8664-f932f8132aaa",
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "defaultCredits": 3.0,
+            "requiredCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from PSCY B1A or CHDV B21",
-                "hasRuleSet": {
-                    "@type": "RuleSetProfile",
-                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
-                    "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
-                    "requiredNumber": 1
-                },
-                "targetComponent": [
-                    "https://credentialengineregistry.org/pathways/2dd1d10d-692b-4230-820b-2d9e1da2a09f", 
-                    "https://credentialengineregistry.org/pathways/85cafd67-8a15-49b0-b17a-2d04953e63df"
-                ]
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "ruleSet": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f", 
+                        "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df"
+                    ]
+                }
             }
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
+            "@id": "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
             "name": "General Psychology",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "PSYC B1A",
-            "programTerm": "3rd Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/85cafd67-8a15-49b0-b17a-2d04953e63df",
+            "@id": "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df",
             "name": "Child Growth and Development: Birth Through Adolescence",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "CHDV B21",
-            "programTerm": "3rd Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/70f47a9f-6e60-423c-8480-8407b668bcba",
-            "programTerm": "3rd Term",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
-            "hasCondition": {
+            "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 3 ,
+                "ceterms:name": "3rd Term"
+            },
+            "defaultCredits": 3.0,
+            "requiredCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from ECON B1 or ECON B2",
-                "hasRuleSet": {
-                    "@type": "RuleSetProfile",
-                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
-                    "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
-                    "requiredNumber": 1
-                },
-                "targetComponent": [
-                    "https://credentialengineregistry.org/pathways/bba2bb29-a385-4d1e-bc61-295f133edd9f", 
-                    "https://credentialengineregistry.org/pathways/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc"
-                ]
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "ruleSet": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f", 
+                        "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc"
+                    ]
+                }
             }
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/bba2bb29-a385-4d1e-bc61-295f133edd9f",
+            "@id": "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f",
             "name": "Principles of Economics-Micro",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "ECON B1",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
+            "@id": "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
             "name": "Principles of Economics-Macro",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "ECON B2",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/46378ba7-5f81-462d-8208-af41ba263a01",
+            "@id": "http://examplePathways.org/paths/46378ba7-5f81-462d-8208-af41ba263a01",
             "name": "Physical Anthropology",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "ANTH B1",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
+            "@id": "http://examplePathways.org/paths/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
             "name": "American Government: National, State and Local.",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "POLS B1",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/70f47a9f-6e60-423c-8480-8407b668bcba",
-            "programTerm": "3rd Term",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
-            "hasCondition": {
+            "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
+            "programTerm": 4,
+            "defaultCredits": 4.0,
+            "requiredCondition": {
                 "@type": "ComponentCondition",
-                "description": "Selection of one course from HIST B, HIST B15, HIST B18, PHIL B10 or PHIL B12",
-                "hasRuleSet": {
-                    "@type": "RuleSetProfile",
-                    "ruleSetUsed": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
-                    "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
-                    "requiredNumber": 1
-                },
-                "targetComponent": [
-                    "https://credentialengineregistry.org/pathways/c7ca911c-e2c8-4549-8974-a45e7273684d", 
-                    "https://credentialengineregistry.org/pathways/f727fdd0-1e59-48be-a811-3536c2329a5b", 
-                    "https://credentialengineregistry.org/pathways/334b4732-058e-43da-a177-9bb9986e0e75", 
-                    "https://credentialengineregistry.org/pathways/d3976f68-1833-4524-b602-99baaa46cc21", 
-                    "https://credentialengineregistry.org/pathways/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e"
-                ]
+                "description": "Selection of one course from HIST B1, HIST B15, HIST B18, PHIL B10 or PHIL B12",
+                "ruleSet": {
+                    "@type": "RuleSet",
+                    "ruleSet": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b",
+                    "countRuleType": "http://examplePathways.org/ruleSets/83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+                    "requiredNumber": 1,
+                    "targetComponent": [
+                        "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d", 
+                        "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b", 
+                        "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75", 
+                        "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21", 
+                        "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e"
+                    ]
+                }
             }
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/c7ca911c-e2c8-4549-8974-a45e7273684d",
+            "@id": "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d",
             "name": "World History from the Origins of Civilizations to 1600.",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "HIST B1",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/f727fdd0-1e59-48be-a811-3536c2329a5b",
+            "@id": "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b",
             "name": "Civilizations of the Middle East.",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "HIST B15",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/334b4732-058e-43da-a177-9bb9986e0e75",
+            "@id": "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75",
             "name": "History of California.",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "HIST B18",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/d3976f68-1833-4524-b602-99baaa46cc21",
+            "@id": "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21",
             "name": "Introduction to Ethics",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "PHIL B10",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         },
         {
             "@type": "CourseComponent",
-            "@id": "https://credentialengineregistry.org/pathways/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e",
+            "@id": "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e",
             "name": "History of Ancient Philosophy",
-            "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
-            "creditUnitValue": 3.0,
+            "defaultCredits": 3.0,
             "courseCode": "PHIL B12",
-            "programTerm": "4th Term",
-            "programLevel": "General Education"
+            "programTerm": {
+                "@type": "ceterms:ComponentLevel",
+                "ceterms:sequence": 4 ,
+                "ceterms:name": "4th Term"
+            },
+            "level": "General Education"
         }
     ]
 }
