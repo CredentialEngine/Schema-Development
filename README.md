@@ -1,2 +1,2 @@
-# vocabularies
-Development of the vocabularies for the CTI models
+# Schema-Development
+Supporting the development of, samples of, and issues for the CTDL and CTDL-ASN schemas.
