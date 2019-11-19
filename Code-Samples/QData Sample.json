@@ -1,0 +1,169 @@
+{
+	"@graph": [
+	
+	
+		{
+			"@id": "_:org123",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "State of Illinois" }
+		},
+		
+		
+		{
+			"@id": "_:org456",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": { "en": "LWIA 15" }
+		},
+		
+		
+		{
+			"@id": "_:org789",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "160 Driving Academy" },
+			"ceterms:foundingDate": "2012"
+		},
+		
+		{
+			"@id": "_:orgabc",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": { "en": "Illinois Community College Board" }
+		},
+		
+		{
+			"@id": "_:orgdef",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": { "en": "Illinois secretary of State" }
+		},
+		
+		{
+			"@id": "_:orgghi",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": { "en": "Industry Standard: Illinois Secretary of State Licensed Facility" }
+		},
+		
+		
+		{
+			"@id": "_:credential123",
+			"@type": "ceterms:License",
+			"ceterms:name": "Truck Driver CDL",
+			"ceterms:offeredBy": [
+				"_:org123"
+			],
+			"ceterms:earnings": [
+				{
+					"@type": "ceterms:EarningsProfile",
+					"qdata:relevantDataSet": [
+						{
+							"@type": "qdata:DataSetProfile",
+							"qdata:dataSetTimePeriod": {
+								"@type": "qdata:DataSetTimeFrame",
+								"ceterms:startDate": "2017-1-11",
+								"ceterms:endDate": "2019-3-20",
+								"ceterms:description": { "en": "Performance data is from the Period: Jan 11, 2017 to Mar 20, 2019" },
+								"qdata:dataAttributes": {
+									"@type": "qdata:DataProfile",
+									"qdata:relatedEmployment": {
+										"@type": "schema:QuantitativeValue",
+										"schema:value": 195,
+										"qdata:percentage": 0.59
+									},
+									"qdata:unrelatedEmployment": {
+										"@type": "schema:QuantitativeValue",
+										"schema:value": 134,
+										"qdata:percentage": 0.41
+									},
+									"qdata:subjectsInSet": {
+										"@type": "schema:QuantitativeValue",
+										"schema:value": 329
+									}
+								}
+							}
+						}
+					]
+				}
+			],
+			"ceterms:requires": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:targetLearningOpportunity": [
+						"_:learningopp123"
+					]
+				}
+			],
+			"ceterms:occupationType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": "Heavy and Tractor-Trailer Truck Drivers",
+					"ceterms:codedNotation": "533032"
+				}
+			],
+			"ceterms:approvedBy": [
+				"_:orgabc",
+				"_:orgdef",
+				"_:orgghi"
+			]
+		},
+		
+		
+		{
+			"@id": "_:learningopp123",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:description": { "en": "Truck Driver Training School - CDL" },
+			"ceterms:estimatedDuration": [
+				{
+					"@type": "ceterms:DurationProfile",
+					"ceterms:exactDuration": "P28D"
+				}
+			],
+			"ceterms:estimatedCost": [
+				{
+					"@type": "ceterms:CostProfile",
+					"ceterms:directCostType": {
+						"@type": "ceterms:CredentialAlignmentObject",
+						"ceterms:targetNodeName": "Tuition",
+						"ceterms:targetNode": "costType:Tuition"
+					},
+					"ceterms:price": 4695.00,
+					"ceterms:currency": "USD"
+				}
+			],
+			"ceterms:financialAsssistance": [
+				{
+					"@type": "ceterms:FinancialAssistanceProfile",
+					"ceterms:financialAsssistanceType": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNodeName": "Private Loan",
+							"ceterms:targetNode": "financialAid:PrivateLoan"
+						}
+					]
+				}
+			]
+			"ceterms:approvedBy": [
+				"_:org456"
+			],
+			"ceterms:offeredBy": [
+				"_:org789"
+			],
+			"ceterms:instructionalProgramType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": "Truck and Bus Driver/Commercial Vehicle Operator and Instructor",
+					"ceterms:codedNotation": "49-0205"
+				}
+			],
+			"ceterms:learningMethodType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": "Work-Based",
+					"ceterms:targetNode": "learnMethod:WorkBased"
+				}
+			],
+			"ceterms:availableAt": [
+				{ ... //Addresses go here }
+			]
+		}
+		
+		
+	]
+}
