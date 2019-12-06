@@ -1,0 +1,253 @@
+{
+    "@context": {
+        "adminRecord": "https://credreg.net/qdata/vocabs/adminRecord/",
+        "asn": "http://purl.org/asn/schema/core/",
+        "ceasn": "https://purl.org/ctdlasn/terms/",
+        "ceterms": "https://purl.org/ctdl/terms/",
+        "collectionMethod": "http://credreg.net/qdata/vocabs/collectionMethod/",
+        "dataWithholding": "https://credreg.net/qdata/vocabs/dataWithholding/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dct": "http://purl.org/dc/terms/",
+        "incomeDetermination": "http://credreg.net/qdata/vocabs/incomeDetermination/",
+        "meta": "http://credreg.net/meta/terms/",
+        "qdata": "https://credreg.net/qdata/terms/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "sourceCoverage": "http://credreg.net/qdata/vocabs/sourceCoverage/",
+        "subjectCategory": "http://credreg.net/qdata/vocabs/subjectCategory/",
+        "vs": "https://www.w3.org/2003/06/sw-vocab-status/ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ceterms:description": {"@container": "@language"},
+        "ceterms:earnings": {"@type": "@id"},
+        "ceterms:employmentOutcome": {"@type": "@id"},
+        "ceterms:endDate": {"@type": "xsd:date"},
+        "ceterms:geoURI": {"@type": "@id"},
+        "ceterms:instructionalProgramType": {"@type": "@id"},
+        "ceterms:latitude": {"@type": "xsd:float"},
+        "ceterms:longitude": {"@type": "xsd:float"},
+        "ceterms:name": {"@container": "@language"},
+        "ceterms:offeredBy": {"@type": "@id"},
+        "ceterms:offers": {"@type": "@id"},
+        "ceterms:processFrequency": {"@container": "@language"},
+        "ceterms:processMethod": {"@type": "@id"},
+        "ceterms:processMethodDescription": {"@container": "@language"},
+        "ceterms:source": {"@type": "@id"},
+        "ceterms:startDate": {"@type": "xsd:date"},
+        "ceterms:verificationMethodDescription": {"@container": "@language"},
+        "qdata:adjustment": {"@container": "@language"},
+        "qdata:administrativeRecordType": {"@type": "@id"},
+        "qdata:dataAttributes": {"@type": "@id"},
+        "qdata:dataCollectionMethodType": {"@type": "@id"},
+        "qdata:dataSetTimePeriod": {"@type": "@id"},
+        "qdata:dataSourceCoverageType": {"@type": "@id"},
+        "qdata:dataSuppressionPolicy": {"@container": "@language"},
+        "qdata:dataWithholdingType": {"@type": "@id"},
+        "qdata:distributionFile": {"@type": "@id"},
+        "qdata:earningsDefinition": {"@container": "@language"},
+        "qdata:earningsThreshold": {"@container": "@language"},
+        "qdata:employmentDefinition": {"@container": "@language"},
+        "qdata:incomeDeterminationType": {"@type": "@id"},
+        "qdata:median": {"@type": "xsd:float"},
+        "qdata:percentage": {"@type": "xsd:float"},
+        "qdata:percentile10": {"@type": "xsd:float"},
+        "qdata:percentile25": {"@type": "xsd:float"},
+        "qdata:percentile75": {"@type": "xsd:float"},
+        "qdata:percentile90": {"@type": "xsd:float"},
+        "qdata:relevantDataSet": {"@type": "@id"},
+        "qdata:subjectIdentification": {"@container": "@language"},
+        "qdata:subjectType": {"@type": "@id"},
+        "qdata:workTimeThreshold": {"@container": "@language"},
+        "schema:currency": {"@type": "xsd:string"},
+        "schema:maxValue": {"@type": "xsd:float"},
+        "schema:minValue": {"@type": "xsd:float"},
+        "schema:unitText": {"@type": "@id"},
+        "schema:value": {"@type": "xsd:float"},
+        "meta:domainFor": {"@type": "@id"},
+        "meta:hasConcept": {"@type": "@id"},
+        "meta:objectText": {"@container": "@language"},
+        "meta:supersededBy": {"@type": "@id"},
+        "meta:targetScheme": {"@type": "@id"},
+        "rdfs:subclassOf": {"@type": "@id"},
+        "owl:equivalentProperty": {"@type": "@id"},
+        "owl:equivalentClass": {"@type": "@id"},
+        "schema:domainIncludes": {"@type": "@id"},
+        "schema:rangeIncludes": {"@type": "@id"},
+        "owl:inverseOf": {"@type": "@id"},
+        "skos:broader": {"@type": "@id"},
+        "skos:narrower": {
+            "@type": "@id",
+            "@container": "@list"
+        },
+        "skos:inScheme": {"@type": "@id"},
+        "vs:term_status": {"@type": "@id"},
+        "meta:changeHistory": {"@type": "@id"},
+        "skos:topConceptOf": {"@type": "@id"},
+        "skos:hasTopConcept": {
+            "@type": "@id",
+            "@container": "@list"
+        },
+        "skos:broadMatch": {"@type": "@id"},
+        "skos:narrowMatch": {"@type": "@id"},
+        "skos:closeMatch": {"@type": "@id"},
+        "skos:exactMatch": {"@type": "@id"},
+        "skos:related": {"@type": "@id"},
+        "skos:relatedMatch": {"@type": "@id"},
+        "rdfs:label": {"@container": "@language"},
+        "rdfs:comment": {"@container": "@language"},
+        "dct:description": {"@container": "@language"},
+        "vann:usageNote": {"@container": "@language"},
+        "skos:prefLabel": {"@container": "@language"},
+        "skos:altLabel": {"@container": "@language"},
+        "skos:hiddenLabel": {"@container": "@language"},
+        "skos:note": {"@container": "@language"},
+        "skos:definition": {"@container": "@language"},
+        "skos:changeNote": {"@container": "@language"},
+        "skos:historyNote": {"@container": "@language"}
+    },
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/org123",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": "University of Texas-Austin",
+			"ceterms:offers": "https://credentialengineregistry.org/resources/credential123"
+		},		
+		{
+			"@id": "https://credentialengineregistry.org/resources/credential123",
+			"@type": "ceterms:BachelorDegree",
+			"ceterms:name": "Psychology",
+			"ceterms:offeredBy": "https://credentialengineregistry.org/resources/org123",
+			"ceterms:instructionalProgramType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": "Psychology, General",
+					"ceterms:codedNotation": "42.01"
+				}
+			],
+			"ceterms:employmentOutcome": "https://credentialengineregistry.org/resources/EO123",
+	        "ceterms:earnings": "https://credentialengineregistry.org/resources/EP123"
+        },
+        {
+            "@id": "https://credentialengineregistry.org/resources/EO123",
+            "@type": "ceterms:EmploymentOutcomeProfile",
+            "qdata:relevantDataSet": "https://credentialengineregistry.org/resources/DSP123"
+        },
+        {
+            "@id": "https://credentialengineregistry.org/resources/EP123",
+            "@type": "ceterms:EarningsProfile",
+            "qdata:relevantDataSet": "https://credentialengineregistry.org/resources/DSP123"
+        },
+        {
+            "@id": "https://credentialengineregistry.org/resources/DSP123",
+            "@type": "qdata:DataSetProfile",
+            "qdata:dataSetTimePeriod": "https://credentialengineregistry.org/resources/DSTF123"
+        },
+        {
+            "@type": "qdata:DataSetTimeFrame",
+            "@id": "https://credentialengineregistry.org/resources/DSTF123",
+            "ceterms:startDate": "2018-01-01",
+            "ceterms:endDate": "2018-12-31",
+            "ceterms:description": "Employment data in 2019 covering three graduation cohorts--2009, 2014, 2019.",
+            "qdata:dataAttributes": "https://credentialengineregistry.org/resources/DP123"
+        },
+        {
+            "@id": "https://credentialengineregistry.org/resources/DP123",
+            "@type": "qdata:DataProfile",
+            "qdata:subjectIncluded": [
+                {
+                    "@id": "https://credentialengineregistry.org/resources/SP123",
+                    "@type": "qdata:SubjectProfile",
+                    "qdata:subjectValue": [
+                        {   
+                            "@type": "schema:QuantitativeValue",
+                            "ceterms:description": "Count of employed graduates in year 1.",
+                            "schema:value": 3115
+                        },
+                        {   
+                            "@type": "schema:QuantitativeValue",
+                            "ceterms:description": "Count of employed graduates in year 5.",
+                            "schema:value": 2590
+                        },
+                        {   
+                            "@type": "schema:QuantitativeValue",
+                            "ceterms:description": "Count of employed graduates in year 10.",
+                            "schema:value": 1477
+                        },
+                        {   
+                            "@type": "schema:QuantitativeValue",
+                            "ceterms:description": "Count of IPEDS reported graduates of programs included in year 1 earnings.",
+                            "schema:value": 5882
+                        },
+                        {   
+                            "@type": "schema:QuantitativeValue",
+                            "ceterms:description": "Count of IPEDS reported graduates of programs included in year 5 earnings.",
+                            "schema:value": 4789
+                        },
+                        {   
+                            "@type": "schema:QuantitativeValue",
+                            "ceterms:description": "Count of IPEDS reported graduates of programs included in year 10 earnings.",
+                            "schema:value": 2570
+                        }      
+                    ],
+                    "qdata:earningsDistribution": [
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "ceterms:description": "Earnings 25th Percentile in year 1",
+                            "schema:percentile25": 23474,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 50th Percentile in year 1",
+                            "schema:median": 33611,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 75th Percentile in year 1",
+                            "schema:percentile50": 45551,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 25th Percentile in year 5",
+                            "schema:percentile25": 36909,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 50th Percentile in year 5",
+                            "schema:median": 49909,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 75th Percentile in year 5",
+                            "schema:percentile50": 66232,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 25th Percentile in year 10",
+                            "schema:percentile25": 45633,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 50th Percentile in year 10",
+                            "schema:median": 62083,
+                            "schema:currency": "USD"
+                        },
+                        {
+                            "@type": "schema:MonetaryAmountDistribution",
+                            "cetermsdescription": "Earnings 75th Percentile in year 10",
+                            "schema:percentile50": 89051,
+                            "schema:currency": "USD"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
