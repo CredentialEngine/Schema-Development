@@ -141,6 +141,13 @@
         {
             "@id": "https://credentialengineregistry.org/resources/DSP123",
             "@type": "qdata:DataSetProfile",
+            "ceterms:name": {"en-US": "Post-Secondary Employment Outcomes (PSEO)"},
+            "qdata:dataProvider": {
+                "@type": "ceterms:Agent",
+                "ceterms:name": {"en-US": "U.S. Department of Labor, Longitudinal Employer-Household Dynamics (LEHD) Program"}
+            },
+            "ceterms:description": {"en-US": "Post-Secondary Employment Outcomes (PSEO) tabulations include only graduates of in-scope institutions. Students who enroll but do not graduate are omitted from the statistics. Of these graduates, a very small fraction (less than one percent of graduates) are omitted from the published statistics due to poor quality of the personal identifier. A much larger fraction of graduates is omitted from the earnings and employment outcome statistics because of insufficient labor market attachment in the reference year. For example, a graduate with zero earnings for three quarters of the calendar year but positive earnings in a single quarter will not be included in the earnings statistics or employment counts. These graduates are omitted as the PSEO is intended to reflect earnings and employment for graduates who work throughout the year."}, 
+            "qdata:distributionFile": ["https://lehd.ces.census.gov/data/pseo/R2019Q2/tx/pseoe_tx.csv.gz","https://lehd.ces.census.gov/data/pseo/R2019Q2/tx/pseof_tx.csv.gz"],
             "qdata:dataSetTimePeriod": "https://credentialengineregistry.org/resources/DSTF123"
         },
         {
@@ -148,12 +155,14 @@
             "@id": "https://credentialengineregistry.org/resources/DSTF123",
             "ceterms:startDate": "2018-01-01",
             "ceterms:endDate": "2018-12-31",
-            "ceterms:description": "Employment data in 2019 covering three graduation cohorts--2009, 2014, 2019.",
+            "ceterms:description": {"en-US": "For all post-secondary graduates, the first year post-graduation is defined as the first calendar year following their graduation year. So for a student who graduates in May of 2005, year one begins in January of 2006, year five in January 2010, etc."},
             "qdata:dataAttributes": "https://credentialengineregistry.org/resources/DP123"
         },
         {
             "@id": "https://credentialengineregistry.org/resources/DP123",
             "@type": "qdata:DataProfile",
+            "qdata:earningsDefinition": {"en-US": "Earnings are total annual earnings for attached workers from all jobs, converted to 2016 dollars using the CPI-U. For the annual earnings tabulations, we impose two labor force attachment restrictions. First, we drop graduates who earn less than the annual equivalent of full-time work at the prevailing federal minimum wage. Additionally, we drop graduates with two or more quarters with no earnings in the reference year. These workers are likely to be either marginally attached to the labor force or employed in non-covered employment."},
+            "qdata:employmentDefinition": {"en-US": "While earnings tabulations include earnings from all jobs, for the flows tabulations, we report the graduate's main job for that year only. Main jobs are defined as the job for which graduates had the highest earnings in the reference year. To attach employer characteristics to that job, we assign industry and geography from the highest earnings quarter with that employer in the year. For multi-establishment firms, we use LEHD unit-to-worker imputations to assign workers to establishments, and then assign industry and geography. Workers who do not meet the labor force attachment restrictions outlined above are assigned an employment location 'ZZ' and industry sector 'ZZ' (which we treat as the residual category)."},
             "qdata:subjectIncluded": [
                 {
                     "@id": "https://credentialengineregistry.org/resources/SP123",
