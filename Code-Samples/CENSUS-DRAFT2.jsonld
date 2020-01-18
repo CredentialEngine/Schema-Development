@@ -185,17 +185,17 @@
                         },
                         {   
                             "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of programs included in year 1 earnings."},
+                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 1 earnings."},
                             "schema:value": 5882
                         },
                         {   
                             "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of programs included in year 5 earnings."},
+                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 5 earnings."},
                             "schema:value": 4789
                         },
                         {   
                             "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of programs included in year 10 earnings."},
+                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 10 earnings."},
                             "schema:value": 2570
                         }      
                     ],
