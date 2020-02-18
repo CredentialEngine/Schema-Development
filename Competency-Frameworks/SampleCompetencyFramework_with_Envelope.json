@@ -1,0 +1,217 @@
+{
+        "envelope_community": "ce_registry",
+        "envelope_id": "776825cf-2474-4219-b069-6d56176efbaa",
+        "envelope_ceterms_ctid": "ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+        "envelope_ctdl_type": "ceasn:CompetencyFramework",
+        "envelope_type": "resource_data",
+        "envelope_version": "1.0.0",
+        "resource": "DELETED FOR BREVITY",
+        "decoded_resource": {
+            "@context": "https://credreg.net/ctdlasn/schema/context/json",
+            "@id": "https://credentialengineregistry.org/graph/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+            "@graph": [{
+                    "@id": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "@type": "ceasn:CompetencyFramework",
+                    "ceasn:name": {
+                        "en-us": "HOSP 229, Revenue Management"
+                    },
+                    "ceterms:ctid": "ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:creator": ["https://credentialengineregistry.org/resources/ce-1ABB6C52-0F8C-4B17-9F89-7E9807673106"],
+                    "ceasn:publisher": ["https://credentialengineregistry.org/resources/ce-1ABB6C52-0F8C-4B17-9F89-7E9807673106"],
+                    "ceasn:inLanguage": ["en-US"],
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:description": {
+                        "en-us": "HOSP 229, Revenue Management"
+                    },
+                    "ceasn:hasTopChild": ["https://credentialengineregistry.org/resources/ce-c4188d32-a8dc-467a-aa42-abbfcb1f4b89", "https://credentialengineregistry.org/resources/ce-21b6dab3-a73a-4ad0-8d01-a3a692e17153", "https://credentialengineregistry.org/resources/ce-332e9a4b-bf17-498c-ad1d-a1c23686ae45", "https://credentialengineregistry.org/resources/ce-035ba167-7c34-44c8-b8b7-dae8b5d6a95c", "https://credentialengineregistry.org/resources/ce-b7b4c3f6-44ff-4fbd-a95c-339a40a47ac2", "https://credentialengineregistry.org/resources/ce-81bd450c-dd9b-4146-a897-98d2e120d5db", "https://credentialengineregistry.org/resources/ce-9b8f2e2b-b62a-4039-b3c3-0513b7832121", "https://credentialengineregistry.org/resources/ce-3c759d96-1d8d-474c-94cb-100c210f7a7a", "https://credentialengineregistry.org/resources/ce-a50ce90e-6c24-4f62-9ee8-bbfe2c7d1d60", "https://credentialengineregistry.org/resources/ce-58f88908-c485-4f5d-9ba3-8c8babd24f4b", "https://credentialengineregistry.org/resources/ce-f6ab8476-b5f0-460b-989c-9cbec18a6870", "https://credentialengineregistry.org/resources/ce-4561b04e-d725-48f5-bfc2-7e1442b5e7ed", "https://credentialengineregistry.org/resources/ce-3b21f92b-7208-4777-8871-b62d58a15617"],
+                    "ceasn:dateModified": "2018-10-30T01:17:45.508Z",
+                    "ceasn:publisherName": {
+                        "en-us": ["Ivy Tech Community College of Indiana"]
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-c4188d32-a8dc-467a-aa42-abbfcb1f4b89",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-c4188d32-a8dc-467a-aa42-abbfcb1f4b89",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:15:28.199Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Explain the concept of revenue management and the history of its development."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-21b6dab3-a73a-4ad0-8d01-a3a692e17153",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-21b6dab3-a73a-4ad0-8d01-a3a692e17153",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:15:40.237Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Identify the business traits that create the environment appropriate for the use of revenue\nmanagement."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-332e9a4b-bf17-498c-ad1d-a1c23686ae45",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-332e9a4b-bf17-498c-ad1d-a1c23686ae45",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:15:49.483Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Distinguish between strategic and tactical revenue management."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-035ba167-7c34-44c8-b8b7-dae8b5d6a95c",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-035ba167-7c34-44c8-b8b7-dae8b5d6a95c",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:18:21.39Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Identify internal and external measures that can be used to evaluate a property's\nperformance."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-b7b4c3f6-44ff-4fbd-a95c-339a40a47ac2",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-b7b4c3f6-44ff-4fbd-a95c-339a40a47ac2",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:16:14.018Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Discuss the challenges that managers have in determining the effectiveness of revenue\nmanagement tactics and strategies"
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-81bd450c-dd9b-4146-a897-98d2e120d5db",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-81bd450c-dd9b-4146-a897-98d2e120d5db",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:16:26.739Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Explain how forecasting demand and room availability drives tactical revenue\nmanagement."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-9b8f2e2b-b62a-4039-b3c3-0513b7832121",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-9b8f2e2b-b62a-4039-b3c3-0513b7832121",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:16:37.434Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Identify ways to implement tactical rate management and stay controls to maximize\nhospitality revenue."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-3c759d96-1d8d-474c-94cb-100c210f7a7a",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-3c759d96-1d8d-474c-94cb-100c210f7a7a",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:16:47.23Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Define capacity management and how to use if for revenue management."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-a50ce90e-6c24-4f62-9ee8-bbfe2c7d1d60",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-a50ce90e-6c24-4f62-9ee8-bbfe2c7d1d60",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:16:58.246Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Perform and use displacement analysis."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-58f88908-c485-4f5d-9ba3-8c8babd24f4b",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-58f88908-c485-4f5d-9ba3-8c8babd24f4b",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:17:10.735Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Explain how revenue management plays a role in generating demand and creating\nmarketing strategies for a hospitality property."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-f6ab8476-b5f0-460b-989c-9cbec18a6870",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-f6ab8476-b5f0-460b-989c-9cbec18a6870",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:17:32.932Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Explain how strategic pricing and revenue streams management contribute to revenue\nmanagement efforts at the strategic level."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-4561b04e-d725-48f5-bfc2-7e1442b5e7ed",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-4561b04e-d725-48f5-bfc2-7e1442b5e7ed",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:17:45.413Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Identify opportunities for strategic packaging and ways to manage distribution channels\nfor the greatest effect."
+                    }
+                }, {
+                    "@id": "https://credentialengineregistry.org/resources/ce-3b21f92b-7208-4777-8871-b62d58a15617",
+                    "@type": "ceasn:Competency",
+                    "ceterms:ctid": "ce-3b21f92b-7208-4777-8871-b62d58a15617",
+                    "ceasn:isPartOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:dateCreated": "2018-10-29",
+                    "ceasn:dateModified": "2018-10-30T01:17:59.089Z",
+                    "ceasn:isTopChildOf": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+                    "ceasn:competencyText": {
+                        "en-us": "Describe the capabilities of automated revenue management systems."
+                    }
+                }
+            ]
+        },
+        "resource_format": "json",
+        "resource_encoding": "jwt",
+        "resource_public_key": "-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEA0qdrbGxUZiNCYTo6WeZBFCCos8zfJh4PjB28psNnM8R3+MUN/RFf\nd5y1RU8IAkMO6P9Sb46dEoidZXUWyICSUjvYCPQg1QVF9YwO9Ge132PkR3KTxsyi\nha9TCZd5TNM/q+rkLHq+mJtWRKFoReYDxa/TdUmpS48LJ2D6VEWaDxpJ+w63mb+T\nTIgKSEIYjPa1oZGWZdNwYhkCcH8UEcCOypkiUqQNQdNqGJO42vCdGZq3+GUTJxNB\nLc8nFrNM9EvFuZKVXx4QAVZSUa6vkNznoyw5IH47TUOHzaIeOz3JIYPTzkZn45d+\n4tYzQkWE2oXWNv8j+Xxwbs6FIqD2eZxi8wIDAQAB\n-----END RSA PUBLIC KEY-----\n",
+        "publisher_id": "e8aa2734-5f6d-473a-9cf7-bc184439a1ac",
+        "secondary_publisher_id": null,
+        "node_headers": {
+            "resource_digest": "XtUs/Fk9/ABGQViJ50G1fdQ2C6D6ydPcQAj4+0++BO4=",
+            "revision_history": [{
+                    "head": true,
+                    "event": "create",
+                    "created_at": "2020-01-22 17:54:12 UTC",
+                    "actor": null,
+                    "url": "/ce-registry/envelopes/776825cf-2474-4219-b069-6d56176efbaa"
+                }
+            ],
+            "created_at": "2020-01-22 17:54:12 UTC",
+            "updated_at": "2020-01-22 17:54:12 UTC",
+            "deleted_at": null
+        },
+        "inner_resource": {
+            "@id": "https://credentialengineregistry.org/resources/ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+            "@type": "ceasn:CompetencyFramework",
+            "ceasn:name": {
+                "en-us": "HOSP 229, Revenue Management"
+            },
+            "ceterms:ctid": "ce-c23a0e0c-8be8-4911-bc52-f2479c41af4b",
+            "ceasn:creator": ["https://credentialengineregistry.org/resources/ce-1ABB6C52-0F8C-4B17-9F89-7E9807673106"],
+            "ceasn:publisher": ["https://credentialengineregistry.org/resources/ce-1ABB6C52-0F8C-4B17-9F89-7E9807673106"],
+            "ceasn:inLanguage": ["en-US"],
+            "ceasn:dateCreated": "2018-10-29",
+            "ceasn:description": {
+                "en-us": "HOSP 229, Revenue Management"
+            },
+            "ceasn:hasTopChild": ["https://credentialengineregistry.org/resources/ce-c4188d32-a8dc-467a-aa42-abbfcb1f4b89", "https://credentialengineregistry.org/resources/ce-21b6dab3-a73a-4ad0-8d01-a3a692e17153", "https://credentialengineregistry.org/resources/ce-332e9a4b-bf17-498c-ad1d-a1c23686ae45", "https://credentialengineregistry.org/resources/ce-035ba167-7c34-44c8-b8b7-dae8b5d6a95c", "https://credentialengineregistry.org/resources/ce-b7b4c3f6-44ff-4fbd-a95c-339a40a47ac2", "https://credentialengineregistry.org/resources/ce-81bd450c-dd9b-4146-a897-98d2e120d5db", "https://credentialengineregistry.org/resources/ce-9b8f2e2b-b62a-4039-b3c3-0513b7832121", "https://credentialengineregistry.org/resources/ce-3c759d96-1d8d-474c-94cb-100c210f7a7a", "https://credentialengineregistry.org/resources/ce-a50ce90e-6c24-4f62-9ee8-bbfe2c7d1d60", "https://credentialengineregistry.org/resources/ce-58f88908-c485-4f5d-9ba3-8c8babd24f4b", "https://credentialengineregistry.org/resources/ce-f6ab8476-b5f0-460b-989c-9cbec18a6870", "https://credentialengineregistry.org/resources/ce-4561b04e-d725-48f5-bfc2-7e1442b5e7ed", "https://credentialengineregistry.org/resources/ce-3b21f92b-7208-4777-8871-b62d58a15617"],
+            "ceasn:dateModified": "2018-10-30T01:17:45.508Z",
+            "ceasn:publisherName": {
+                "en-us": ["Ivy Tech Community College of Indiana"]
+            }
+        }
+    }
+
