@@ -163,100 +163,94 @@
             "@type": "qdata:DataProfile",
             "qdata:earningsDefinition": {"en-US": "Earnings are total annual earnings for attached workers from all jobs, converted to 2016 dollars using the CPI-U. For the annual earnings tabulations, we impose two labor force attachment restrictions. First, we drop graduates who earn less than the annual equivalent of full-time work at the prevailing federal minimum wage. Additionally, we drop graduates with two or more quarters with no earnings in the reference year. These workers are likely to be either marginally attached to the labor force or employed in non-covered employment."},
             "qdata:employmentDefinition": {"en-US": "While earnings tabulations include earnings from all jobs, for the flows tabulations, we report the graduate's main job for that year only. Main jobs are defined as the job for which graduates had the highest earnings in the reference year. To attach employer characteristics to that job, we assign industry and geography from the highest earnings quarter with that employer in the year. For multi-establishment firms, we use LEHD unit-to-worker imputations to assign workers to establishments, and then assign industry and geography. Workers who do not meet the labor force attachment restrictions outlined above are assigned an employment location 'ZZ' and industry sector 'ZZ' (which we treat as the residual category)."},
-            "qdata:subjectIncluded": [
+            "qdata:meetEmploymentCriteria": [
+                {   
+                    "@type": "schema:QuantitativeValue",
+                    "ceterms:description": {"en:us":"Count of employed graduates in year 1."},
+                    "schema:value": 3115
+                },
+                {   
+                    "@type": "schema:QuantitativeValue",
+                    "ceterms:description": {"en:us":"Count of employed graduates in year 5."},
+                    "schema:value": 2590
+                },
+                {   
+                    "@type": "schema:QuantitativeValue",
+                    "ceterms:description": {"en:us":"Count of employed graduates in year 10."},
+                    "schema:value": 1477
+                },
+                {   
+                    "@type": "schema:QuantitativeValue",
+                    "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 1 earnings."},
+                    "schema:value": 5882
+                },
+                {   
+                    "@type": "schema:QuantitativeValue",
+                    "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 5 earnings."},
+                    "schema:value": 4789
+                },
+                {   
+                    "@type": "schema:QuantitativeValue",
+                    "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 10 earnings."},
+                    "schema:value": 2570
+                }      
+             ],
+             "qdata:earningsDistribution": [
                 {
-                    "@id": "https://credentialengineregistry.org/resources/SP123",
-                    "@type": "qdata:SubjectProfile",
-                    "qdata:subjectValue": [
-                        {   
-                            "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of employed graduates in year 1."},
-                            "schema:value": 3115
-                        },
-                        {   
-                            "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of employed graduates in year 5."},
-                            "schema:value": 2590
-                        },
-                        {   
-                            "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of employed graduates in year 10."},
-                            "schema:value": 1477
-                        },
-                        {   
-                            "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 1 earnings."},
-                            "schema:value": 5882
-                        },
-                        {   
-                            "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 5 earnings."},
-                            "schema:value": 4789
-                        },
-                        {   
-                            "@type": "schema:QuantitativeValue",
-                            "ceterms:description": {"en:us":"Count of IPEDS reported graduates of program included in year 10 earnings."},
-                            "schema:value": 2570
-                        }      
-                    ],
-                    "qdata:earningsDistribution": [
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "ceterms:description": {"en:us":"Earnings 25th Percentile in year 1"},
-                            "schema:percentile25": 23474,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 50th Percentile in year 1"},
-                            "schema:median": 33611,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 75th Percentile in year 1"},
-                            "schema:percentile50": 45551,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 25th Percentile in year 5"},
-                            "schema:percentile25": 36909,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 50th Percentile in year 5"},
-                            "schema:median": 49909,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 75th Percentile in year 5"},
-                            "schema:percentile50": 66232,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 25th Percentile in year 10"},
-                            "schema:percentile25": 45633,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 50th Percentile in year 10"},
-                            "schema:median": 62083,
-                            "schema:currency": "USD"
-                        },
-                        {
-                            "@type": "schema:MonetaryAmountDistribution",
-                            "cetermsdescription": {"en:us":"Earnings 75th Percentile in year 10"},
-                            "schema:percentile50": 89051,
-                            "schema:currency": "USD"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "ceterms:description": {"en:us":"Earnings 25th Percentile in year 1"},
+                    "schema:percentile25": 23474,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 50th Percentile in year 1"},
+                    "schema:median": 33611,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 75th Percentile in year 1"},
+                    "schema:percentile50": 45551,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 25th Percentile in year 5"},
+                    "schema:percentile25": 36909,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 50th Percentile in year 5"},
+                    "schema:median": 49909,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 75th Percentile in year 5"},
+                    "schema:percentile50": 66232,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 25th Percentile in year 10"},
+                    "schema:percentile25": 45633,
+                    "schema:currency": "USD"
+                },
+                {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 50th Percentile in year 10"},
+                    "schema:median": 62083,
+                    "schema:currency": "USD"
+                 },
+                 {
+                    "@type": "schema:MonetaryAmountDistribution",
+                    "cetermsdescription": {"en:us":"Earnings 75th Percentile in year 10"},
+                    "schema:percentile50": 89051,
+                    "schema:currency": "USD"
+                 }
+              ]
+          }
+     ]
 }
