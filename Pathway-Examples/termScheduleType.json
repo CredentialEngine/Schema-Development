@@ -2,16 +2,16 @@
 	"@context": "http://credreg.net/ctdlasn/schema/context/json",
 	"@graph": [
 		{
-			"@type": "skos:ConceptScheme",
+			"@type": ["skos:ConceptScheme", "asn:ProgressionModel"],
 			"@id": "https://credentialengineregistry.org/resources/be9dd340-556c-4e2a-bfb7-09833eac6bc0",
 			"rdfs:label": {
-				"en-US": "Schedule Term"
+				"en-US": "Semster Schedule Term"
 			},
 			"rdfs:comment": {
 				"en-US": "Types of university or college schedule terms."
 			},
 			"dct:description": {
-				"en-US": "Includes \"1st Term\", \"2nd Term\", \"3rd Term\""
+				"en-US": "Includes \"1st Term\", \"2nd Term\", \"3rd Term\", \"4th term\""
 			},
 			"skos:hasTopConcept": [
 				"https://credentialengineregistry.org/resources/1d6ab366-99db-4c84-a662-86823a0b11ab",
@@ -21,13 +21,13 @@
 			]
 		},
 		{
-			"@type": "skos:Concept",
+			"@type": ["skos:Concept", "asn:ProgressionLevel"],
 			"@id": "https://credentialengineregistry.org/resources/1d6ab366-99db-4c84-a662-86823a0b11ab",
 			"skos:prefLabel": {
 				"en-US": "1st Term"
 			},
 			"skos:definition": {
-				"en-US": "First term of a program of study."
+				"en-US": "First semester term of a program of study for a two year program."
 			},
 			"skos:notation": "1",
 			"ceterms:precedes": "https://credentialengineregistry.org/resources/b6e6f714-eab2-4012-a327-7619ce9a9136",
@@ -45,7 +45,7 @@
 				"en-US": "2nd Term"
 			},
 			"skos:definition": {
-				"en-US": "Second term of a program of study."
+				"en-US": "Second semester term of a program of study for a two year program."
 			},
 			"skos:notation": "2",
 			"ceterms:precedes": "https://credentialengineregistry.org/resources/b3a736ef-1947-4caa-8cb8-216a36af3bc1",
@@ -63,7 +63,7 @@
 				"en-US": "3rd Term"
 			},
 			"skos:definition": {
-				"en-US": "Third term of a program of study."
+				"en-US": "Third semester term of a program of study for a two year program."
 			},
 			"skos:notation": "3",
 			"ceterms:precedes": "https://credentialengineregistry.org/resources/46c88850-7b81-4270-9f40-c3bb27617682",
@@ -81,7 +81,7 @@
 				"en-US": "4th Term"
 			},
 			"skos:definition": {
-				"en-US": "Fourth term of a program of study."
+				"en-US": "Fourth semester term of a program of study for a two year program."
 			},
 			"skos:notation": "4",
 			"skos:inScheme": [
