@@ -1,19 +1,20 @@
 {
-    "@context": "http://examplePathway.org/",
+    "@context": "http://credreg.net/ctdl/schema/context/json", 
     "@graph": [
         {
             "@type": "Pathway",
             "@id": "http://examplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
             "name": "Associate of Science Degree: Computer Science",
-            "hasRoot": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
-            "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER"
+            "description": "Transfer of the \"Baksersfield Associate of Science Degree: Computer Science\" to the California State University system.",
+            "hasDestinationComponent": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+            "subjectWebPage": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER",
+            "hasProgressionModel": "https://credentialengineregistry.org/resources/be9dd340-556c-4e2a-bfb7-09833eac6bc0"
         },
         {
-            "@type": "Credential",
+            "@type": "CredentialComponent",
             "@id": "http://examplePathways.org/paths/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
             "name": "Associate of Science Degree: Computer Science",
-            "isRootOf": "http://examplePathways.org/paths/e9a210a8-a77c-41af-b594-4543ef4c2b08",
-            "isParentOf": ["http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
+            "hasChild": ["http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
                 "http://examplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
                 "http://examplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
                 "http://examplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
@@ -47,13 +48,17 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb",
             "name": "Programming Concepts and Methology I",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/COMP/B11/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "COMP B11",
             "hasProgressionLevel": {
-                "@type": "skos:Concept",
                 "@id": "https://credentialengineregistry.org/resources/1d6ab366-99db-4c84-a662-86823a0b11ab",
-                "skos:notation": "1" ,
-                "skos:prefLabel": "1st Term"
+                "@type": "skos:Concept" ,
+                "skos:prefLabel": "1st Term",
+                "skos:notation": "1"
             },
             "componentDesignation": "Core"
         },
@@ -61,7 +66,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/11360165-b900-41e3-9b5b-7be2ef7198b5",
             "name": "Programming Concepts and Methology II",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/COMP/B12/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "COMP B12", 
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -76,7 +85,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/53f7c041-a80e-4ac9-8664-6fdfb7d53ddb",
             "name": "Computer Architecture and Organization",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/COMP/B13/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "COMP B13",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -91,7 +104,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/a81076fa-53a4-4a13-a085-99e284756948",
             "name": "Discrete Structures",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/COMP/B14/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "COMP B14",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -106,7 +123,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/8fb27042-6c64-436f-8985-1c0b5b4a2287",
             "name": "Analytic Geometry/Calculus I",
-            "defaultCredits": 4.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/MATH/B6A/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "4"
+            },
             "codeNotation": "MATH B6A",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -120,7 +141,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/96a2aba5-bba7-4a90-8c72-ae640642da32",
             "name": "Analytic Geometry/Calculus II",
-            "defaultCredits": 4.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/MATH/B6B/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "4"
+            },
             "codeNotation": "MATH B6B",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -134,7 +159,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/b87cf844-0d28-425d-afe3-66e01e527360",
             "name": "Mechanics and Wave Motion",
-            "defaultCredits": 4.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PHYS/B4A/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "4"
+            },
             "codeNotation": "PHYS B4A",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -148,7 +177,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/3c52c752-52e0-4de8-a316-5ff4f4655e73",
             "name": "Heat, Electricity, Magnetism",
-            "defaultCredits": 4.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PHYS/B4A/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "4"
+            },
             "codeNotation": "PHYS B4B",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -164,7 +197,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/1ca80f84-9331-4855-a746-13613a09de3e",
             "name": "Small group communication",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/COMM/B8/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "4"
+            },
             "codeNotation": "COMM B8",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -178,7 +215,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/eef2d00b-abba-4bad-9db5-b8a15e9a335b",
             "name": "History of Rock and Roll",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/MUSC/B27/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "MUSC B27",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -192,7 +233,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/fd28f278-c131-4299-b3cc-bc706f1c581e",
             "name": "Elementary Nutitian",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/NUTR/B10/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "NUTR B10",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -206,7 +251,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/fa6f8147-7250-4a0e-b11d-acb31db5b616",
             "name": "Expository Composition",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/ENGL/B1A/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "ENGL B1A",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -220,7 +269,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/38567f64-e2ce-4883-8521-08e70da7a5be",
             "name": "Introduction to logic",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PHIL/B7/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "PHIL B7",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -239,8 +292,11 @@
                 "skos:notation": "3" ,
                 "skos:prefLabel": "3rd Term"
             },
-            "defaultCredits": 3.0,
-            "requiredCondition": {
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
+            "hasCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from PHIL B37 or ENGL B28",
                 "requiredNumber": 1,
@@ -248,13 +304,18 @@
                     "http://examplePathways.org/paths/d22478cc-f6a0-4cb4-9716-3c7a5064fd7d", 
                     "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48"
                 ]
-            }
+            },
+            "componentDesignation": "General Education"
         },
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/d22478cc-f6a0-4cb4-9716-3c7a5064fd7d",
             "name": "Introduction to the World Religions",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PHIL/B37/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "PHIL B37",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -268,7 +329,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/bae6587a-8506-4817-832a-04bf21177e48",
             "name": "Classical Mythology",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/ENGL/B28/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "ENGL B28",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -287,8 +352,11 @@
                 "skos:notation": "3" ,
                 "skos:prefLabel": "3rd Term"
             },
-            "defaultCredits": 3.0,
-            "requiredCondition": {
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
+            "hasCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from PSCY B1A or CHDV B21",
                 "requiredNumber": 1,
@@ -296,13 +364,18 @@
                     "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f", 
                     "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df"
                 ]
-            }
+            },
+            "componentDesignation": "General Education"
         },
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/2dd1d10d-692b-4230-820b-2d9e1da2a09f",
             "name": "General Psychology",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PSYC/B1A/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "PSYC B1A",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -316,7 +389,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/85cafd67-8a15-49b0-b17a-2d04953e63df",
             "name": "Child Growth and Development: Birth Through Adolescence",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/CHDV/B21/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "CHDV B21",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -329,14 +406,17 @@
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
-            "defaultCredits": 3.0,
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
                 "@id": "https://credentialengineregistry.org/resources/46c88850-7b81-4270-9f40-c3bb27617682",
                 "skos:notation": "4" ,
                 "skos:prefLabel": "4th Term"
             },
-            "requiredCondition": {
+            "hasCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from ECON B1 or ECON B2",
                 "requiredNumber": 1,
@@ -344,13 +424,18 @@
                     "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f", 
                     "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc"
                 ]
-            }
+            },
+            "componentDesignation": "General Education"
         },
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/bba2bb29-a385-4d1e-bc61-295f133edd9f",
             "name": "Principles of Economics-Micro",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/ECON/B1/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "ECON B1",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -364,7 +449,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/7282ebb2-b45a-4ea5-b5b8-da72d665bbcc",
             "name": "Principles of Economics-Macro",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/ECON/B2/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "ECON B2",
             "programTerm": {
                 "@type": "ceterms:CredentialAlignmentObject",
@@ -377,7 +466,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/46378ba7-5f81-462d-8208-af41ba263a01",
             "name": "Physical Anthropology",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/ANTH/B1/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "ANTH B1",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -390,8 +483,12 @@
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/9ea5eb26-0c37-4ade-b65e-b92db02ee354",
-            "name": "American Government: National, State and Local.",
-            "defaultCredits": 3.0,
+            "name": "American Government: National, State and Local",
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/POLS/B1/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "POLS B1",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -404,14 +501,17 @@
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/70f47a9f-6e60-423c-8480-8407b668bcba",
-            "defaultCredits": 4.0,
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "4"
+            },
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
                 "@id": "https://credentialengineregistry.org/resources/46c88850-7b81-4270-9f40-c3bb27617682",
                 "skos:notation": "4" ,
                 "skos:prefLabel": "4th Term"
             },
-            "requiredCondition": {
+            "hasCondition": {
                 "@type": "ComponentCondition",
                 "description": "Selection of one course from HIST B1, HIST B15, HIST B18, PHIL B10 or PHIL B12",
                 "requiredNumber": 1,
@@ -422,13 +522,18 @@
                     "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21", 
                     "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e"
                 ]
-            }
+            },
+            "componentDesignation": "General Education"
         },
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/c7ca911c-e2c8-4549-8974-a45e7273684d",
             "name": "World History from the Origins of Civilizations to 1600.",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/HIST/B1/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "HIST B1",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -442,7 +547,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/f727fdd0-1e59-48be-a811-3536c2329a5b",
             "name": "Civilizations of the Middle East.",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/HIST/B15/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "HIST B15",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -456,7 +565,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/334b4732-058e-43da-a177-9bb9986e0e75",
             "name": "History of California.",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/HIST/B18/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "HIST B18",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -470,7 +583,11 @@
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/d3976f68-1833-4524-b602-99baaa46cc21",
             "name": "Introduction to Ethics",
-            "defaultCredits": 3.0,
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PHIL/B10/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "PHIL B10",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
@@ -483,8 +600,12 @@
         {
             "@type": "CourseComponent",
             "@id": "http://examplePathways.org/paths/8843b8d0-0236-4e8b-b8e2-7a81fbddcb0e",
-            "name": "History of Ancient Philosophy",
-            "defaultCredits": 3.0,
+            "name": "Ethics of Living and Dying",
+            "subjectWebpage": "https://www.coursicle.com/bakersfieldcollege/courses/PHIL/B12/",
+            "creditValue": {
+                "@type": "QuantitativeValue",
+                "value": "3"
+            },
             "codeNotation": "PHIL B12",
             "hasProgressionLevel": {
                 "@type": "skos:Concept",
