@@ -1,0 +1,71 @@
+{
+	"@graph": [
+		{
+		"@id": "https://credentialengineregistry.org/resources/ce-zxyw",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": { "en": "ACE" },
+			"ceterms:owns": [
+				"https://credentialengineregistry.org/resources/ce-abc123..."
+			]
+		},
+		{
+			"@type": "ceterms:TransferValueProfile",
+			"@id": "https://credentialengineregistry.org/resources/ce-abc123...",
+			"ceterms:ctid": "ce-abc123...",
+			"ceterms:statusType": "statusCategory:Active",
+			"ceterms:transferValueFrom": "https://credentialengineregistry.org/resources/ce-0039492...",
+			"ceterms:codedNotation": "0276",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "0276",
+					"ceterms:name": { "en": "ACE Course Code" }
+				}
+			]
+			"ceterms:transferValue": {
+				"@type": "schema:QuantitativeValue",
+				"schema:description": { "en": "In the upper-division baccalaureate degree category, 3 semester hours in fire science, fire technology, or introduction to chemistry (11/19)." },
+				"schema:value": 3,
+				"schema:unitText": "creditUnit:DegreeCredit"
+			},
+			"ceterms:startDate": "2019-11-1",
+			"ceterms:endDate": "2022-10-31",
+			"ceterms:name": { "en": "Advanced Science of Hazardous Materials Response" },
+			"ceterms:description": { "en": "The course objective is for students to analyze and evaluate the science component to implement a risk-based response at a hazardous materials/weapons of mass destruction (WMD) incident." },
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-zxyw"
+			]
+		},
+		{
+			"@type": "ceterms:LearningOpportunityProfile",
+			"@id": "https://credentialengineregistry.org/resources/ce-0039492...",
+			"ceterms:name": { "en": "Advanced Science of Hazardous Materials Response" },
+			"ceterms:description": { "en": "The course objective is for students to analyze and evaluate the science component to implement a risk-based response at a hazardous materials/weapons of mass destruction (WMD) incident." },
+			"ceterms:offeredBy": [
+				"https://credentialengineregistry.org/resources/ce-1234567...",
+			],
+			"ceterms:estimatedDuration": [
+				{
+					"@type": "ceterms:DurationProfile",
+					"schema:exactDuration": "P6D"
+				},
+				{
+					"@type": "ceterms:DurationProfile",
+					"schema:exactDuration": "PT45H30M"
+				}
+			],
+			"ceterms:teaches": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeDescription": { "en": "Upon completion of the course, the student will be able to apply the fundamentals of hazardous materials/weapons of mass destruction (WMD) response; evaluate classification technologies and their capabilities, applications and limitations; evaluate the field identification technologies and their capabilities, applications and limitations; and apply the science component of a risk-based response process to actual and simulated hazardous materials/weapons of mass destruction (WMD) scenarios." }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-0283905..."
+				}
+			],
+			"ceterms:learningMethodDescription": { "en": "The methods of instruction include audio visual materials, practical exercises, learner presentations, lecture, discussion, and classroom exercise. The general course topics include." },
+			"ceterms:assessmentMethodDescription": { "en": "The methods of assessment include graded group activity, presentations, examinations, and performance rubrics (checklists) with a minimum passing score of 70 percent." }
+		}
+	]
+}
