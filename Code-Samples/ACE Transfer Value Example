@@ -3,7 +3,7 @@
 		{
 		"@id": "https://credentialengineregistry.org/resources/ce-zxyw",
 			"@type": "ceterms:QACredentialOrganization",
-			"ceterms:name": { "en": "ACE" },
+			"ceterms:name": { "en": "American Council on Education" },
 			"ceterms:owns": [
 				"https://credentialengineregistry.org/resources/ce-abc123..."
 			]
