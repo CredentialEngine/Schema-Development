@@ -1,0 +1,853 @@
+{
+    "@context": "http://credreg.net/ctdl/schema/context/json", 
+    "@graph": [
+        {
+            "@type": "Pathway",
+            "@id": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c",
+            "name": "French B.A. Marketable Skills",
+            "description": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities.",
+            "hasDestinationComponent": "https://credentialengineregistry.org/resources/JKykbZ2SQb2u211g4jf7BQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/JKykbZ2SQb2u211g4jf7BQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "French B.A. Marketable Skills",
+            "description": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities.",
+            "completionAward": "https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 5,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/uxYa0c-YQyePDybjDX-Hkw",
+                    "https://credentialengineregistry.org/resources/8jDdG7w-REGo67vYFGUefg",
+                    "https://credentialengineregistry.org/resources/rfiBUwBkSMemag2pazaBtA",
+                    "https://credentialengineregistry.org/resources/c9JH-RFuRdCF65kFTgjgvg",
+                    "https://credentialengineregistry.org/resources/WUPAox7VTa2nnvyMKsIzkQ"
+                ]
+            },
+            "hasChild": [
+                 "https://credentialengineregistry.org/resources/uxYa0c-YQyePDybjDX-Hkw",
+                 "https://credentialengineregistry.org/resources/8jDdG7w-REGo67vYFGUefg",
+                 "https://credentialengineregistry.org/resources/rfiBUwBkSMemag2pazaBtA",
+                 "https://credentialengineregistry.org/resources/c9JH-RFuRdCF65kFTgjgvg",
+                 "https://credentialengineregistry.org/resources/WUPAox7VTa2nnvyMKsIzkQ"
+            ],
+            "requiredForParentCompletion": true
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/uxYa0c-YQyePDybjDX-Hkw",
+            "componentCategory": "Selection Component",
+            "name": "Interpersonal Communication in French",
+            "completionAward": "https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 4,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/5e3b2fede5d6d01af9c6bb76",
+                    "https://credentialengineregistry.org/resources/5e3b3054e7813f86a55262e3",               
+                    "https://credentialengineregistry.org/resources/5e445c5d3c280b01db7ec44c",
+                    "https://credentialengineregistry.org/resources/5e445c9ce0c3adba79420c12", 
+                    "https://credentialengineregistry.org/resources/5e445d079450e3bf149c14a9"
+                ]
+            },
+            "hasChild": [
+                 "https://credentialengineregistry.org/resources/5e3b2fede5d6d01af9c6bb76",
+                 "https://credentialengineregistry.org/resources/5e3b3054e7813f86a55262e3",               
+                 "https://credentialengineregistry.org/resources/5e445c5d3c280b01db7ec44c",
+                 "https://credentialengineregistry.org/resources/5e445c9ce0c3adba79420c12", 
+                 "https://credentialengineregistry.org/resources/5e445d079450e3bf149c14a9"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/8jDdG7w-REGo67vYFGUefg",
+            "componentCategory": "Selection Component",
+            "name": "French 2040/2050",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 2,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg",
+                    "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                    "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+                    "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
+                ]
+            },
+            "hasChild": [
+                    "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg",
+                    "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                    "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+                    "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/c9JH-RFuRdCF65kFTgjgvg",
+            "componentCategory": "Selection Component",
+            "name": "French 3040/3045",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g",
+                    "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g",
+                "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/WUPAox7VTa2nnvyMKsIzkQ",
+            "componentCategory": "Selection Component",
+            "name": "French 3050/3055",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                    "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445c9ce0c3adba79420c12",
+            "componentCategory": "Selection Component",
+            "name": "French 3060/3065",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                    "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445d079450e3bf149c14a9",
+            "componentCategory": "Selection Component",
+            "name": "French 3070/3075/3095",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/fQdHE68EQ1awVK8-tUwB4A",
+                    "https://credentialengineregistry.org/resources/sdtjxhPFQWmrfJbvlytXKg",
+                    "https://credentialengineregistry.org/resources/3XX4-WCbQVy-9yas3rsbgA"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/fQdHE68EQ1awVK8-tUwB4A",
+                "https://credentialengineregistry.org/resources/sdtjxhPFQWmrfJbvlytXKg",
+                "https://credentialengineregistry.org/resources/3XX4-WCbQVy-9yas3rsbgA"
+            ],    
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/8jDdG7w-REGo67vYFGUefg",
+            "componentCategory": "Selection Component",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Critical Thinking in French",
+            "completionAward": "https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 4,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/5e3b3054e7813f86a55262e3",
+                    "https://credentialengineregistry.org/resources/5e445ea8607569141935ea09",
+                    "https://credentialengineregistry.org/resources/5e445eae65cd9b0c529bc183",
+                    "https://credentialengineregistry.org/resources/5e445eb83e1102e9723ac062", 
+                    "https://credentialengineregistry.org/resources/5e445ec565f6095a0925d046"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/5e3b3054e7813f86a55262e3",
+                "https://credentialengineregistry.org/resources/5e445ea8607569141935ea09",
+                "https://credentialengineregistry.org/resources/5e445eae65cd9b0c529bc183",
+                "https://credentialengineregistry.org/resources/5e445eb83e1102e9723ac062", 
+                "https://credentialengineregistry.org/resources/5e445ec565f6095a0925d046"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e3b3054e7813f86a55262e3",
+            "componentCategory": "Selection Component",
+            "name": "French 2040/2050",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                    "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445ea8607569141935ea09",
+            "componentCategory": "Selection Component",
+            "name": "French 3040/2045",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 2,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+                    "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+                    "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
+                    "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+                "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+                "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
+                "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445eae65cd9b0c529bc183",
+            "componentCategory": "Selection Component",
+            "name": "French 3050/3055",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+                    "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+                "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
+                ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445eb83e1102e9723ac062",
+            "componentCategory": "Selection Component",
+            "name": "French 3060/3065",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                    "https://credentialengineregistry.org/resources/l28mgQTpTlCULy5aDrMtRg"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                "https://credentialengineregistry.org/resources/l28mgQTpTlCULy5aDrMtRg"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445ec565f6095a0925d046",
+            "componentCategory": "Selection Component",
+            "name": "French 3070/3075/3095",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                 "targetComponent": [
+                    "https://credentialengineregistry.org/resources/-Zi7hZbTQYGHDOs2z-PMiQ",
+                    "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
+                    "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/-Zi7hZbTQYGHDOs2z-PMiQ",
+                "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
+                "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/rfiBUwBkSMemag2pazaBtA",
+            "componentCategory": "Selection Component",
+            "name": "Collect and Analyze Data in French",
+            "completionAward": "https://api.badgr.io/public/badges/rfiBUwBkSMemag2pazaBtA",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 3,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/5e445fd57f36be80bcfc161b",
+                    "https://credentialengineregistry.org/resources/5e445fe02d7d492ed97ec2ef",
+                    "https://credentialengineregistry.org/resources/5e445fea22556193b23a959f",
+                    "https://credentialengineregistry.org/resources/5e445ffaf4beb7312a8870eb"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/5e445fd57f36be80bcfc161b",
+                "https://credentialengineregistry.org/resources/5e445fe02d7d492ed97ec2ef",
+                "https://credentialengineregistry.org/resources/5e445fea22556193b23a959f",
+                "https://credentialengineregistry.org/resources/5e445ffaf4beb7312a8870eb"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445fd57f36be80bcfc161b",
+            "componentCategory": "Selection Component",
+            "name": "French 2040/2050",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/zcZCPHCOR9SQXrfWk9wkiQ",
+                    "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A"
+                 ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/zcZCPHCOR9SQXrfWk9wkiQ",
+                "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445fe02d7d492ed97ec2ef",
+            "componentCategory": "Selection Component",
+            "name": "French 3040/3045",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+                    "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+                "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445fea22556193b23a959f",
+            "componentCategory": "Selection Component",
+            "name": "French 3060/3065",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                    "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
+                    "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
+                "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e445ffaf4beb7312a8870eb",
+            "componentCategory": "Selection Component",
+            "name": "French 3070/3075/3095",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/3XX4-WCbQVy-9yas3rsbgA",
+                    "https://credentialengineregistry.org/resources/-Zi7hZbTQYGHDOs2z-PMiQ",
+                    "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/3XX4-WCbQVy-9yas3rsbgA",
+                "https://credentialengineregistry.org/resources/-Zi7hZbTQYGHDOs2z-PMiQ",
+                "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/c9JH-RFuRdCF65kFTgjgvg",
+            "componentCategory": "Selection Component",
+            "name": "Oral and Written Communication in French",
+            "completionAward": "https://api.badgr.io/public/badges/c9JH-RFuRdCF65kFTgjgvg",
+            "requiredNumber": 4,
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/5e4463acf889203e89393565",
+                    "https://credentialengineregistry.org/resources/5e4463b7b50a5954b61029fd",
+                    "https://credentialengineregistry.org/resources/5e4463c6682ef7b7bb0d052e",
+                    "https://credentialengineregistry.org/resources/5e4463d324f38c94add6586a", 
+                    "https://credentialengineregistry.org/resources/5e4463ddd1c308aed8ca7c8b"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/5e4463acf889203e89393565",
+                "https://credentialengineregistry.org/resources/5e4463b7b50a5954b61029fd",
+                "https://credentialengineregistry.org/resources/5e4463c6682ef7b7bb0d052e",
+                "https://credentialengineregistry.org/resources/5e4463d324f38c94add6586a", 
+                "https://credentialengineregistry.org/resources/5e4463ddd1c308aed8ca7c8b"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e4463acf889203e89393565",
+            "componentCategory": "Selection Component",
+            "name": "French 2040/2050",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 2,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/RBItLBt3Qkm0vkyxf6layQ",
+                    "https://credentialengineregistry.org/resources/zcZCPHCOR9SQXrfWk9wkiQ",
+                    "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+                    "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/RBItLBt3Qkm0vkyxf6layQ",
+                "https://credentialengineregistry.org/resources/zcZCPHCOR9SQXrfWk9wkiQ",
+                "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+                "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e4463b7b50a5954b61029fd",
+            "componentCategory": "Selection Component",
+            "name": "French 3040/3045",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 2,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+                    "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+                    "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
+                    "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+                "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+                "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
+                "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e4463c6682ef7b7bb0d052e",
+            "componentCategory": "Selection Component",
+            "name": "French 3050/3055",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 2,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+                    "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                    "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg",
+                    "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+                "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+                "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg",
+                "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e4463d324f38c94add6586a",
+            "componentCategory": "Selection Component",
+            "name": "French 3060/3065",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
+                    "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
+                "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e4463ddd1c308aed8ca7c8b",
+            "componentCategory": "Selection Component",
+            "name": "French 3070/3075/3095",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/fQdHE68EQ1awVK8-tUwB4A",
+                    "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
+                    "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/fQdHE68EQ1awVK8-tUwB4A",
+                "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
+                "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/WUPAox7VTa2nnvyMKsIzkQ",
+            "componentCategory": "Selection Component",
+            "name": "Multicultual/Diversity Competencies in French",
+            "completionAward": "https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 3,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/5e446b2514ff216596a22361",
+                    "https://credentialengineregistry.org/resources/5e446b4e574938d24b852494",
+                    "https://credentialengineregistry.org/resources/5e446b5822d67e5bc4842a6e",
+                    "https://credentialengineregistry.org/resources/5e446b5fc60ea51af866b230"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/5e446b2514ff216596a22361",
+                "https://credentialengineregistry.org/resources/5e446b4e574938d24b852494",
+                "https://credentialengineregistry.org/resources/5e446b5822d67e5bc4842a6e",
+                "https://credentialengineregistry.org/resources/5e446b5fc60ea51af866b230"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e446b2514ff216596a22361",
+            "componentCategory": "Selection Component",
+            "name": "French 2040/2050",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+                    "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+                "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e446b4e574938d24b852494",
+            "componentCategory": "Selection Component",
+            "name": "French 3040/2045",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 2,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/mfmN24lfRTa4x4UWtPvEYQ",
+                    "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+                    "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g",
+                    "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/mfmN24lfRTa4x4UWtPvEYQ",
+                "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+                "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g",
+                "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e446b5822d67e5bc4842a6e",
+            "componentCategory": "Selection Component",
+            "name": "French 3050/2055",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+                    "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
+                ]
+            },
+            "hasChild": [
+                "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+                "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
+            ],
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },
+        {
+            "@type": "BasicComponent",
+            "@id": "https://credentialengineregistry.org/resources/5e446b5fc60ea51af866b230",
+            "componentCategory": "Selection Component",
+            "name": "French 3060/2065",
+            "hasCondition": {
+                "@type": "ComponentCondition",
+                "requiredNumber": 1,
+                "targetComponent": [
+                    "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+                    "https://credentialengineregistry.org/resources/l28mgQTpTlCULy5aDrMtRg"
+                ]
+            },
+            "requiredForParentCompletion": true,
+            "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
+        },      
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Guided Writing (FREN 2040)",
+            "description": "During a specific class time (as indicated on syllabus), students wrote a composition in French on a specific topic assigned by instructor. Prior to the in-class portion of the activity, students completed a pre-guided worksheet including exercises such as gathering of vocabulary, review of grammatical structures, cultural elements research, etc. Students were not allowed to use any electronic devices while completing the in-class portion of the activity.",
+            "sourceData": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Oral Partcipation (FREN 2040)",
+            "description": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q&A with instructors, etc.",
+            "sourceData": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/RBItLBt3Qkm0vkyxf6layQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Oral Partcipation (FREN 2050)",
+            "description": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q&A with instructors, etc.",
+            "sourceData": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/zcZCPHCOR9SQXrfWk9wkiQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Oral Presentation (FREN 2050)",
+            "description": "Students researched a French/Francophone author or artist selected from a list provided by instructor and completed a provided data worksheet with gathered and selected information. Using the completed worksheet as a visual support, students then delivered an oral presentation of their findings to their peers.",
+            "sourceData": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Essay on French Society (FREN 3040)",
+            "description": "Students submitted an essay in French (150 words minimum) on an aspect of French society. In order to complete the essay, students studied the topic and related challenges, read a summary and text related to the topic, reviewed a documentary, and engaged in group discussion and activities to better understand the topic.",
+            "sourceData": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Essay on French Movie (FREN 3040)",
+            "description": "Students watched a movie on French culture. They were asked to write an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes on regions, the status of civil servants, family life etc.), outlining the specific details relating to French culture, and (2) to compare with the situation in the United States. ",
+            "sourceData": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Oral Presentation (FREN 3040)",
+            "description": "Students gave an oral presentation in class (20 minutes in length) on a predetermined topic that they researched. To supplement the oral presentation, students created a PowerPoint presentation to illustrate the various items with examples.",
+            "sourceData": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Essay on Francophone (FREN 3045)",
+            "description": "Students were asked to write an essay in French (150 words minimum) on an aspect of a Francophone society.",
+            "sourceData": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/mfmN24lfRTa4x4UWtPvEYQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Essay on Francophone Movie (FREN 3045)",
+            "description": "Students watched a movie on Francophone culture. They wrote an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes, education, family life etc.), outlining specifications relating to Francophone culture, and (2) to compare with other cultures.",
+            "sourceData": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Oral Presentation (FREN 3045)",
+            "description": "Students gave an oral presentation in class (20 minutes in length) on a predetermined topic that they researched. To supplement the oral presentation, students created a PowerPoint presentation to illustrate the various items with examples.",
+            "sourceData": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Reading Comprehension (FREN 3050)",
+            "description": "Students read authentic French texts and learned to analyze the background of a narrative (text/song/film) in order to understand the behavior and choices made by the various characters. The analysis was based on the clues provided by the author and the student's understanding of the human condition. Students also developed the ability to appreciate the perception of human realities by members of other cultures (various Francophone authors) and sexes.",
+            "sourceData": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Oral Presentation (FREN 3050)",
+            "description": "Students were required to actively engage in oral communication in class. Factors used for evaluation involved communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q&A with instructors. ",
+            "sourceData": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Reading Comprehension (FREN 3055)",
+            "description": "Students read authentic French texts and analyzed the various cultural factors that explain the prestige (or lack of thereof) of creators in various fields throughout the centuries. Students established an understanding of similarities and differences in this area by comparing the condition of artists in different centuries.",
+            "sourceData": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Oral Participation (FREN 3055)",
+            "description": "Students were required to actively engage in oral participation during class. Factors used for evaluation involved interpersonal communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q&A with instructors.",
+            "sourceData": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Participation (FREN 3060)",
+            "description": "Students actively participated in class. Student participation included several factors, such as interpersonal communication in French (e.g., talking to peers in pairs or groups, answering professor’s questions) and oral communication in French. ",
+            "sourceData": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/l28mgQTpTlCULy5aDrMtRg",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Transcription of Oral Document (FREN 3060)",
+            "description": "Students transcribed a Francophone or Regional French oral document (primary source) in phonetics using rules studied in class. Students compared their transcription to one in standard French and determined major differences in speech patterns and pronunciation. Students used their critical thinking skills to decide which phonetic rules and symbols to use when comparing both transcriptions. Students also demonstrated advanced listening skills to understand and accurately transcribe the recording.",
+            "sourceData": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Debate (FREN 3065)",
+            "description": "Students were asked to reflect on a specific cultural aspect of French Society/Francophone world and research arguments both in favor and against a position that French people have on that topic. They used their critical thinking skills to analyze the information they found, to organize their ideas, and to decide which elements of their research were best suited for the debate. In class, students shared their arguments. They considered cultural perspectives, presented their arguments to the class, defended their points of view, and responded to comments from other students. Interpersonal communication skills in French were necessary to successfully hold this debate.",
+            "sourceData": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Group Oral Presentation (FREN 3065)",
+            "description": "In groups (or pairs), students presented on a specific aspect of French or Francophone culture in class. Students were required to research and select relevant information on the topic, to compile the data, and to create a well-organized and well-written presentation (e.g. PowerPoint, Prezi, etc.) in collaboration with the members of their group. In class, students were asked to present their cultural topic to the other students.",
+            "sourceData": "https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/-Zi7hZbTQYGHDOs2z-PMiQ",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Essay (FREN 3070)",
+            "description": "Students wrote an essay in French expressing their own opinion about a literary or contemporary text or topic.",
+            "sourceData": "https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/fQdHE68EQ1awVK8-tUwB4A",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Peer Review (FREN 3070)",
+            "description": "Students completed a French grammar quiz, made comments on one of their classmate's quizzes, and discussed the quiz and the comments with their partner in French.@",
+            "sourceData": "https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Essay (FREN 3075)",
+            "description": "Students wrote an essay in French that expresses their own opinion about a literary or contemporary topic.",
+            "sourceData": "https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/sdtjxhPFQWmrfJbvlytXKg",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Peer Review (FREN 3075)",
+            "description": "Students wrote an essay in French , made comments related to content and grammar on one of their classmate's essays, and discussed discuss the essay and the comments with their partner in French.",
+            "sourceData": "https://api.badgr.io/public/badges/sdtjxhPFQWmrfJbvlytXKg"
+        },
+        {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/3XX4-WCbQVy-9yas3rsbgA",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "In Class Discussion (FREN 3095)",
+            "description": "Students selected a French article relevant to their subject area. In groups or pairs, they designed a lesson and activity around this article and presented it to the class. The lead students organized a reading of the article that guided the class through a comprehension questionnaire they created. They collaboratively led a classroom group discussion. Students cooperated with their group members to design the lesson plan, promote a constructive team and class climate, and managed the class discussion by considering various viewpoints and contributions.",
+            "sourceData": "https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA"
+        },
+         {
+            "@type": "CredentialComponent",
+            "@id": "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg",
+            "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
+            "name": "Oral Presentation (FREN 3095)",
+            "description": "Students presented orally in French on a specific aspect of their selected subject area, as approved by the instructor. Students researched and selected relevant information on the topic (showing critical thinking and analytical skills) and compiled the data into a well-organized and well-written PowerPoint presentation that was submitted online. In class, students were asked to present their cultural topic to the other students.",
+            "sourceData": "https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg"
+        }
+    ]
+}

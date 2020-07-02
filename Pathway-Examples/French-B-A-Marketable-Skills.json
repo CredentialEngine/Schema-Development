@@ -1,0 +1,962 @@
+{
+    "elementId": "5e2f5be846e0fb003340c01c",
+    "name": "French B.A. Marketable Skills",
+    "shortCode": null,
+    "description": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities.",
+    "alignmentUrl": null,
+    "frameworkName": null,
+    "targetCode": null,
+    "completionBadge": {"badgeUrl": "https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ"},
+    "requirements": {
+        "childElementRequirements": {
+            "countRule": {"@type": "all"}
+        },
+        "nonChildElementRequirements": {
+            "countRule": {"@type": "all"},
+            "elementIds": []
+        },
+        "badgeRequirements": {
+            "countRule": {
+                "@type": "atLeastN",
+                "requiredCount": 0
+            },
+            "requiredBadges": []
+        },
+        "shortcutBadges": [],
+        "allowCompletionBadgeShortcut": true 
+    },
+    "requiredForParentCompletion": true,
+    "children": [
+        {
+            "elementId": "5e2f5cdd09183f82c038f0b7",
+            "name": "Interpersonal Communication in French",
+            "shortCode": null,
+            "description": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities.",
+            "alignmentUrl": null,
+            "frameworkName": null,
+            "targetCode": null,
+            "completionBadge": {"badgeUrl": "https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw"},
+            "requirements": {
+                "childElementRequirements": {
+                    "countRule": {
+                        "@type": "atLeastN",
+                        "requiredCount": 4
+                    }
+                },
+                "nonChildElementRequirements": {
+                    "countRule": {"@type": "all"},
+                    "elementIds": []
+                },
+                "badgeRequirements": {
+                    "countRule": {"@type": "all"},
+                    "requiredBadges": []
+                },
+                "shortcutBadges": [],
+                "allowCompletionBadgeShortcut": false
+            },
+            "requiredForParentCompletion": true,
+            "children": [
+                {
+                    "elementId": "5e3b2fede5d6d01af9c6bb76",
+                    "name": "French 2040/2050",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 2
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e3b3054e7813f86a55262e3",
+                    "name": "French 3040/3045",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445c5d3c280b01db7ec44c",
+                    "name": "French 3050/3055",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445c9ce0c3adba79420c12",
+                    "name": "French 3060/3065",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445d079450e3bf149c14a9",
+                    "name": "French 3070/3075/3095",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/sdtjxhPFQWmrfJbvlytXKg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "elementId": "5e3b2ed8dcf3a3bc84ceaec8",
+            "name": "Critical Thinking in French",
+            "shortCode": null,
+            "description": null,
+            "alignmentUrl": null,
+            "frameworkName": null,
+            "targetCode": null,
+            "completionBadge": {"badgeUrl": "https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg"},
+            "requirements": {
+                "childElementRequirements": {
+                    "countRule": {
+                        "@type": "atLeastN",
+                        "requiredCount": 4
+                    }
+                },
+                "nonChildElementRequirements": {
+                    "countRule": {"@type": "all"},
+                    "elementIds": []
+                },
+                "badgeRequirements": {
+                    "countRule": {"@type": "all"},
+                    "requiredBadges": []
+                },
+                "shortcutBadges": [],
+                "allowCompletionBadgeShortcut": true
+            },
+            "requiredForParentCompletion": true,
+            "children": [
+                {
+                    "elementId": "5e445ea04bba4a94881626d1",
+                    "name": "French 2040/2050",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445ea8607569141935ea09",
+                    "name": "French 3040/3045",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 2
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445eae65cd9b0c529bc183",
+                    "name": "French 3050/3055",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445eb83e1102e9723ac062",
+                    "name": "French 3060/3065",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445ec565f6095a0925d046",
+                    "name": "French 3070/3075/3095",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "elementId": "5e3b2eea68e431d3a9e184db",
+            "name": "Collect and Analyze Data in French",
+            "shortCode": null,
+            "description": null,
+            "alignmentUrl": null,
+            "frameworkName": null,
+            "targetCode": null,
+            "completionBadge": {"badgeUrl": "https://api.badgr.io/public/badges/rfiBUwBkSMemag2pazaBtA"},
+            "requirements": {
+                "childElementRequirements": {
+                    "countRule": {
+                        "@type": "atLeastN",
+                        "requiredCount": 3
+                    }
+                },
+                "nonChildElementRequirements": {
+                    "countRule": {"@type": "all"},
+                    "elementIds": []
+                },
+                "badgeRequirements": {
+                    "countRule": {"@type": "all"},
+                    "requiredBadges": []
+                },
+                "shortcutBadges": [],
+                "allowCompletionBadgeShortcut": false
+            },
+            "requiredForParentCompletion": true,
+            "children": [
+                {
+                    "elementId": "5e445fd57f36be80bcfc161b",
+                    "name": "French 2040/2050",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445fe02d7d492ed97ec2ef",
+                    "name": "French 3040/3045",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445fea22556193b23a959f",
+                    "name": "French 3060/3065",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e445ffaf4beb7312a8870eb",
+                    "name": "French 3070/3075/3095",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "elementId": "5e3b2f0c32e5cf1d29b825ce",
+            "name": "Oral and Written Communication in French",
+            "shortCode": null,
+            "description": null,
+            "alignmentUrl": null,
+            "frameworkName": null,
+            "targetCode": null,
+            "completionBadge": {"badgeUrl": "https://api.badgr.io/public/badges/c9JH-RFuRdCF65kFTgjgvg"},
+            "requirements": {
+                "childElementRequirements": {
+                    "countRule": {
+                        "@type": "atLeastN",
+                        "requiredCount": 4
+                    }
+                },
+                "nonChildElementRequirements": {
+                    "countRule": {"@type": "all"},
+                    "elementIds": []
+                },
+                "badgeRequirements": {
+                    "countRule": {"@type": "all"},
+                    "requiredBadges": []
+                },
+                "shortcutBadges": [],
+                "allowCompletionBadgeShortcut": false
+            },
+            "requiredForParentCompletion": true,
+            "children": [
+                {
+                    "elementId": "5e4463acf889203e89393565",
+                    "name": "French 2040/2050",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 2
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e4463b7b50a5954b61029fd",
+                    "name": "French 3040/3045",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 2
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e4463c6682ef7b7bb0d052e",
+                    "name": "French 3050/3055",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 2
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e4463d324f38c94add6586a",
+                    "name": "French 3060/3065",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e4463ddd1c308aed8ca7c8b",
+                    "name": "French 3070/3075/3095",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "elementId": "5e3b2f1ee116cdd01fdf49dc",
+            "name": "Multicultural/Diversity Competencies in French",
+            "shortCode": null,
+            "description": null,
+            "alignmentUrl": null,
+            "frameworkName": null,
+            "targetCode": null,
+            "completionBadge": {"badgeUrl": "https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ"},
+            "requirements": {
+                "childElementRequirements": {
+                    "countRule": {
+                        "@type": "atLeastN",
+                        "requiredCount": 3
+                    }
+                },
+                "nonChildElementRequirements": {
+                    "countRule": {"@type": "all"},
+                    "elementIds": []
+                },
+                "badgeRequirements": {
+                    "countRule": {"@type": "all"},
+                    "requiredBadges": []
+                },
+                "shortcutBadges": [],
+                "allowCompletionBadgeShortcut": false
+            },
+            "requiredForParentCompletion": true,
+            "children": [
+                {
+                    "elementId": "5e446b2514ff216596a22361",
+                    "name": "French 2040/2050",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e446b4e574938d24b852494",
+                    "name": "French 3040/3045",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 2
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e446b5822d67e5bc4842a6e",
+                    "name": "French 3050/3055",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                },
+                {
+                    "elementId": "5e446b5fc60ea51af866b230",
+                    "name": "French 3060/3065",
+                    "shortCode": null,
+                    "description": null,
+                    "alignmentUrl": null,
+                    "frameworkName": null,
+                    "targetCode": null,
+                    "completionBadge": null,
+                    "requirements": {
+                        "childElementRequirements": {
+                            "countRule": {"@type": "all"}
+                        },
+                        "nonChildElementRequirements": {
+                            "countRule": {"@type": "all"},
+                            "elementIds": []
+                        },
+                        "badgeRequirements": {
+                            "countRule": {
+                                "@type": "atLeastN",
+                                "requiredCount": 1
+                            },
+                            "requiredBadges": [
+                                {"badgeUrl": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"},
+                                {"badgeUrl": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"}
+                            ]
+                        },
+                        "shortcutBadges": [],
+                        "allowCompletionBadgeShortcut": true
+                    },
+                    "requiredForParentCompletion": true,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
