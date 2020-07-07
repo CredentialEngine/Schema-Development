@@ -10,7 +10,8 @@
 			],
 			"ceterms:hasWorkRole": [
 				"https://.../workrole_1"
-			]
+			],
+			"ceterms:subjectWebpage": "https://docs.google.com/spreadsheets/d/1rGdQD1CXYpLpUpeCxT1zh69iWpKg6oNP/edit#gid=361275821"
 		},
 		{
 			"@type": "ceterms:WorkRole",
@@ -20,6 +21,18 @@
 			"ceterms:codedNotation": [
 				"SP-RSK-001",
 				"611"
+			],
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierType": { "en": "Work Role ID" },
+					"ceterms:identifierValueCode": "SP-RSK-001"
+				},
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierType": { "en": "OPM Code (Fed Use)" },
+					"ceterms:identifierValueCode": "611"
+				}
 			],
 			"ceterms:hasTask": [
 				"https://.../task_1"
