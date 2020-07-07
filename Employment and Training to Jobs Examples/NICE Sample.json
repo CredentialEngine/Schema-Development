@@ -1,0 +1,24 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:WorkRole",
+			"@id": ""
+		},
+		{
+			"@type": "ceterms:Task",
+			"@id": ""
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": ""
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": ""
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": ""
+		}
+	]
+}
