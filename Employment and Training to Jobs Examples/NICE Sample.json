@@ -1,0 +1,77 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:Occupation",
+			"@id": "https://.../occupation_1",
+			"ceterms:name": { "en": "Risk Management" },
+			"ceterms:description": { "en": "Oversees, evaluates, and supports the documentation, validation, assessment, and authorization processes necessary to assure that existing and new information technology (IT) systems meet the organization's cybersecurity and risk requirements. Ensures appropriate treatment of risk, compliance, and assurance from internal and external perspectives." },
+			"ceterms:codedNotation": [
+				"RSK"
+			],
+			"ceterms:hasWorkRole": [
+				"https://.../workrole_1"
+			],
+			"ceterms:subjectWebpage": "https://docs.google.com/spreadsheets/d/1rGdQD1CXYpLpUpeCxT1zh69iWpKg6oNP/edit#gid=361275821"
+		},
+		{
+			"@type": "ceterms:WorkRole",
+			"@id": "https://.../workrole_1",
+			"ceterms:name": { "en": "Authorizing Official/Designating Representative" },
+			"ceterms:description": { "en": "Senior official or executive with the authority to formally assume responsibility for operating an information system at an acceptable level of risk to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation (CNSSI 4009)." },
+			"ceterms:codedNotation": [
+				"SP-RSK-001",
+				"611"
+			],
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierType": { "en": "Work Role ID" },
+					"ceterms:identifierValueCode": "SP-RSK-001"
+				},
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierType": { "en": "OPM Code (Fed Use)" },
+					"ceterms:identifierValueCode": "611"
+				}
+			],
+			"ceterms:hasTask": [
+				"https://.../task_1"
+			],
+			"ceterms:hasKnowledge": [
+				"https://.../knowledge_1"
+			],
+			"ceterms:hasSkill": [
+				"https://.../skill_1"
+			],
+			"ceterms:hasAbility": [
+				"https://.../ability_1"
+			]
+		},
+		{
+			"@type": "ceterms:Task",
+			"@id": "https://.../task_1",
+			"ceterms:description": { "en": "Manage and approve Accreditation Packages (e.g., ISO/IEC 15026-2)." },
+			"ceterms:codedNotation": [ 
+				"T0145" 
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "https://.../knowledge_1",
+			"ceasn:competencyText": { "en": "Knowledge of computer networking concepts and protocols, and network security methodologies." },
+			"ceasn:codedNotation": "K0001"
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "https://.../skill_1",
+			"ceasn:competencyText": { "en": "Skill in discerning the protection needs (i.e., security controls) of information systems and networks." },
+			"ceasn:codedNotation": "S0034"
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "https://.../ability_1",
+			"ceasn:competencyText": { "en": "Ability to assess and forecast manpower requirements to meet organizational objectives." },
+			"ceasn:codedNotation": "A0028"
+		}
+	]
+}
