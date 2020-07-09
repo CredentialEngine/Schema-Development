@@ -14,7 +14,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "French B.A. Marketable Skills",
             "description": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities.",
-            "completionAward": "https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ",
+            "subjectWebpage": "https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ",
             "hasCondition": {
                 "@type": "ComponentCondition",
                 "requiredNumber": 5,
@@ -32,15 +32,14 @@
                  "https://credentialengineregistry.org/resources/rfiBUwBkSMemag2pazaBtA",
                  "https://credentialengineregistry.org/resources/c9JH-RFuRdCF65kFTgjgvg",
                  "https://credentialengineregistry.org/resources/WUPAox7VTa2nnvyMKsIzkQ"
-            ],
-            "requiredForParentCompletion": true
+            ]
         },
         {
             "@type": "BasicComponent",
             "@id": "https://credentialengineregistry.org/resources/uxYa0c-YQyePDybjDX-Hkw",
             "componentCategory": "Selection Component",
             "name": "Interpersonal Communication in French",
-            "completionAward": "https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw",
+            "subjectWebpage": "https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw",
             "hasCondition": {
                 "@type": "ComponentCondition",
                 "requiredNumber": 4,
@@ -59,7 +58,6 @@
                  "https://credentialengineregistry.org/resources/5e445c9ce0c3adba79420c12", 
                  "https://credentialengineregistry.org/resources/5e445d079450e3bf149c14a9"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -83,7 +81,6 @@
                     "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
                     "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -103,7 +100,6 @@
                 "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g",
                 "https://credentialengineregistry.org/resources/yp76rV79RVy-9O2cBAi0nw"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -123,7 +119,6 @@
                 "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
                 "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -143,7 +138,6 @@
                 "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
                 "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -165,7 +159,6 @@
                 "https://credentialengineregistry.org/resources/sdtjxhPFQWmrfJbvlytXKg",
                 "https://credentialengineregistry.org/resources/3XX4-WCbQVy-9yas3rsbgA"
             ],    
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -174,7 +167,7 @@
             "componentCategory": "Selection Component",
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Critical Thinking in French",
-            "completionAward": "https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg",
+            "subjectWebpage": "https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg",
             "hasCondition": {
                 "@type": "ComponentCondition",
                 "requiredNumber": 4,
@@ -193,7 +186,6 @@
                 "https://credentialengineregistry.org/resources/5e445eb83e1102e9723ac062", 
                 "https://credentialengineregistry.org/resources/5e445ec565f6095a0925d046"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -213,7 +205,6 @@
                 "https://credentialengineregistry.org/resources/3VPkOQn3QjmV0xByw6ASvQ",
                 "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -237,7 +228,6 @@
                 "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
                 "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -257,7 +247,6 @@
                 "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
                 "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
                 ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -277,7 +266,6 @@
                 "https://credentialengineregistry.org/resources/zPsa73ybQ4OWhAOE6Wz9EA",
                 "https://credentialengineregistry.org/resources/l28mgQTpTlCULy5aDrMtRg"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -299,7 +287,6 @@
                 "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
                 "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -324,7 +311,6 @@
                 "https://credentialengineregistry.org/resources/5e445fea22556193b23a959f",
                 "https://credentialengineregistry.org/resources/5e445ffaf4beb7312a8870eb"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -344,7 +330,6 @@
                 "https://credentialengineregistry.org/resources/zcZCPHCOR9SQXrfWk9wkiQ",
                 "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -364,7 +349,6 @@
                 "https://credentialengineregistry.org/resources/uwN-tVS9SsefKiHjuyNDJg",
                 "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -386,7 +370,6 @@
                 "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
                 "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -408,7 +391,6 @@
                 "https://credentialengineregistry.org/resources/-Zi7hZbTQYGHDOs2z-PMiQ",
                 "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -435,7 +417,6 @@
                 "https://credentialengineregistry.org/resources/5e4463d324f38c94add6586a", 
                 "https://credentialengineregistry.org/resources/5e4463ddd1c308aed8ca7c8b"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -459,7 +440,6 @@
                 "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
                 "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -483,7 +463,6 @@
                 "https://credentialengineregistry.org/resources/5pUjL-OMRFe87PRVTLRVvA",
                 "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -507,7 +486,6 @@
                 "https://credentialengineregistry.org/resources/Im71f-T9QqSiUs7YMagXYg",
                 "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -527,7 +505,6 @@
                 "https://credentialengineregistry.org/resources/mlMfNV65RNKMU7zIdIND3w",
                 "https://credentialengineregistry.org/resources/qFmL40wST3yztSEJyydIVQ"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -549,7 +526,6 @@
                 "https://credentialengineregistry.org/resources/VheYxGheS2GpZUof1YblIA",
                 "https://credentialengineregistry.org/resources/LRFqT4I3Q623gsFxUiVLyg"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -557,7 +533,7 @@
             "@id": "https://credentialengineregistry.org/resources/WUPAox7VTa2nnvyMKsIzkQ",
             "componentCategory": "Selection Component",
             "name": "Multicultual/Diversity Competencies in French",
-            "completionAward": "https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ",
+            "subjectWebpage": "https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ",
             "hasCondition": {
                 "@type": "ComponentCondition",
                 "requiredNumber": 3,
@@ -574,7 +550,6 @@
                 "https://credentialengineregistry.org/resources/5e446b5822d67e5bc4842a6e",
                 "https://credentialengineregistry.org/resources/5e446b5fc60ea51af866b230"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -594,7 +569,6 @@
                 "https://credentialengineregistry.org/resources/xduIuo8VSmeU7X9R3eCy3A",
                 "https://credentialengineregistry.org/resources/EPmXazyBQZOG5TtHt3myYw"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -618,7 +592,6 @@
                 "https://credentialengineregistry.org/resources/LmD6wlc4SQqR9_jtQvIv6g",
                 "https://credentialengineregistry.org/resources/255lp_EiRGaObGMG4wHv6g"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -638,7 +611,6 @@
                 "https://credentialengineregistry.org/resources/r9E1kijkQCWOSYIH6KM1mg",
                 "https://credentialengineregistry.org/resources/RNj9qJtIQhKnPFrPre8oyQ"
             ],
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },
         {
@@ -654,7 +626,6 @@
                     "https://credentialengineregistry.org/resources/l28mgQTpTlCULy5aDrMtRg"
                 ]
             },
-            "requiredForParentCompletion": true,
             "isPartOf": "https://credentialengineregistry.org/resources/5e2f5be846e0fb003340c01c"
         },      
         {
@@ -663,7 +634,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Guided Writing (FREN 2040)",
             "description": "During a specific class time (as indicated on syllabus), students wrote a composition in French on a specific topic assigned by instructor. Prior to the in-class portion of the activity, students completed a pre-guided worksheet including exercises such as gathering of vocabulary, review of grammatical structures, cultural elements research, etc. Students were not allowed to use any electronic devices while completing the in-class portion of the activity.",
-            "sourceData": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"
+            "subjectWebpage": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"
         },
         {
             "@type": "CredentialComponent",
@@ -671,7 +642,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "In Class Oral Partcipation (FREN 2040)",
             "description": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q&A with instructors, etc.",
-            "sourceData": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"
+            "subjectWebpage": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"
         },
         {
             "@type": "CredentialComponent",
@@ -679,7 +650,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "In Class Oral Partcipation (FREN 2050)",
             "description": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q&A with instructors, etc.",
-            "sourceData": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"
+            "subjectWebpage": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"
         },
         {
             "@type": "CredentialComponent",
@@ -687,7 +658,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "In Class Oral Presentation (FREN 2050)",
             "description": "Students researched a French/Francophone author or artist selected from a list provided by instructor and completed a provided data worksheet with gathered and selected information. Using the completed worksheet as a visual support, students then delivered an oral presentation of their findings to their peers.",
-            "sourceData": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"
+            "subjectWebpage": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"
         },
         {
             "@type": "CredentialComponent",
@@ -695,7 +666,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Essay on French Society (FREN 3040)",
             "description": "Students submitted an essay in French (150 words minimum) on an aspect of French society. In order to complete the essay, students studied the topic and related challenges, read a summary and text related to the topic, reviewed a documentary, and engaged in group discussion and activities to better understand the topic.",
-            "sourceData": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"
+            "subjectWebpage": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"
         },
         {
             "@type": "CredentialComponent",
@@ -703,7 +674,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Essay on French Movie (FREN 3040)",
             "description": "Students watched a movie on French culture. They were asked to write an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes on regions, the status of civil servants, family life etc.), outlining the specific details relating to French culture, and (2) to compare with the situation in the United States. ",
-            "sourceData": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"
+            "subjectWebpage": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"
         },
         {
             "@type": "CredentialComponent",
@@ -711,7 +682,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Oral Presentation (FREN 3040)",
             "description": "Students gave an oral presentation in class (20 minutes in length) on a predetermined topic that they researched. To supplement the oral presentation, students created a PowerPoint presentation to illustrate the various items with examples.",
-            "sourceData": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
+            "subjectWebpage": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
         },
         {
             "@type": "CredentialComponent",
@@ -719,7 +690,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Essay on Francophone (FREN 3045)",
             "description": "Students were asked to write an essay in French (150 words minimum) on an aspect of a Francophone society.",
-            "sourceData": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"
+            "subjectWebpage": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"
         },
         {
             "@type": "CredentialComponent",
@@ -727,7 +698,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Essay on Francophone Movie (FREN 3045)",
             "description": "Students watched a movie on Francophone culture. They wrote an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes, education, family life etc.), outlining specifications relating to Francophone culture, and (2) to compare with other cultures.",
-            "sourceData": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"
+            "subjectWebpage": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"
         },
         {
             "@type": "CredentialComponent",
@@ -735,7 +706,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Oral Presentation (FREN 3045)",
             "description": "Students gave an oral presentation in class (20 minutes in length) on a predetermined topic that they researched. To supplement the oral presentation, students created a PowerPoint presentation to illustrate the various items with examples.",
-            "sourceData": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
+            "subjectWebpage": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
         },
         {
             "@type": "CredentialComponent",
@@ -743,7 +714,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Reading Comprehension (FREN 3050)",
             "description": "Students read authentic French texts and learned to analyze the background of a narrative (text/song/film) in order to understand the behavior and choices made by the various characters. The analysis was based on the clues provided by the author and the student's understanding of the human condition. Students also developed the ability to appreciate the perception of human realities by members of other cultures (various Francophone authors) and sexes.",
-            "sourceData": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"
+            "subjectWebpage": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"
         },
         {
             "@type": "CredentialComponent",
@@ -751,7 +722,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "In Class Oral Presentation (FREN 3050)",
             "description": "Students were required to actively engage in oral communication in class. Factors used for evaluation involved communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q&A with instructors. ",
-            "sourceData": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"
+            "subjectWebpage": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"
         },
         {
             "@type": "CredentialComponent",
@@ -759,7 +730,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Reading Comprehension (FREN 3055)",
             "description": "Students read authentic French texts and analyzed the various cultural factors that explain the prestige (or lack of thereof) of creators in various fields throughout the centuries. Students established an understanding of similarities and differences in this area by comparing the condition of artists in different centuries.",
-            "sourceData": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"
+            "subjectWebpage": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"
         },
         {
             "@type": "CredentialComponent",
@@ -767,7 +738,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "In Class Oral Participation (FREN 3055)",
             "description": "Students were required to actively engage in oral participation during class. Factors used for evaluation involved interpersonal communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q&A with instructors.",
-            "sourceData": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"
+            "subjectWebpage": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"
         },
         {
             "@type": "CredentialComponent",
@@ -775,7 +746,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "In Class Participation (FREN 3060)",
             "description": "Students actively participated in class. Student participation included several factors, such as interpersonal communication in French (e.g., talking to peers in pairs or groups, answering professor’s questions) and oral communication in French. ",
-            "sourceData": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"
+            "subjectWebpage": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"
         },
         {
             "@type": "CredentialComponent",
@@ -783,7 +754,7 @@
             "credentialType": "https://purl.org/ctdl/terms/OpenBadge",
             "name": "Transcription of Oral Document (FREN 3060)",
             "description": "Students transcribed a Francophone or Regional French oral document (primary source) in phonetics using rules studied in class. Students compared their transcription to one in standard French and determined major differences in speech patterns and pronunciation. Students used their critical thinking skills to decide which phonetic rules and symbols to use when comparing both transcriptions. Students also demonstrated advanced listening skills to understand and accurately transcribe the recording.",
-            "sourceData": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"
+            "subjectWebpage": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"
         },
         {
             "@type": "CredentialComponent",
