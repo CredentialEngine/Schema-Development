@@ -1,0 +1,1185 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@id": "https://sandbox.credentialengineregistry.org/graph/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5",
+    "@graph": [
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5",
+            "@type": "ceterms:Pathway",
+            "ceterms:ctid": "ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5",
+            "ceterms:name":
+            {
+                "en-US": "French B.A. Marketable Skills"
+            },
+            "ceasn:hasPart": ["https://sandbox.credentialengineregistry.org/resources/ce-39e185f9-9a10-4b86-9721-4cc9b1a820d2", "https://sandbox.credentialengineregistry.org/resources/ce-f1d741d9-5619-49aa-8a8c-6ef919002374", "https://sandbox.credentialengineregistry.org/resources/ce-90122602-6298-4a91-85a9-a0aaafef5454", "https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-4ec24421-cdbd-4060-8f32-3b487621c71d", "https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577", "https://sandbox.credentialengineregistry.org/resources/ce-5306b269-cb33-44bb-ade7-e1cc0210e724", "https://sandbox.credentialengineregistry.org/resources/ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c", "https://sandbox.credentialengineregistry.org/resources/ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da", "https://sandbox.credentialengineregistry.org/resources/ce-1e51ae4b-8dd3-4c6f-8177-79c312275f72", "https://sandbox.credentialengineregistry.org/resources/ce-74da0595-d0d2-469c-993a-f87d1a360d75", "https://sandbox.credentialengineregistry.org/resources/ce-ffe9164d-41b2-419f-833e-6ffcaa21c251", "https://sandbox.credentialengineregistry.org/resources/ce-a01504e9-ba57-4fed-aac4-cc58cd36311c", "https://sandbox.credentialengineregistry.org/resources/ce-3472b465-bf54-4e79-b635-05bf98471aa1", "https://sandbox.credentialengineregistry.org/resources/ce-a0c3b123-0735-4809-b79e-4071623f9246", "https://sandbox.credentialengineregistry.org/resources/ce-a82f6b92-9295-4d83-aa0d-605a40364145", "https://sandbox.credentialengineregistry.org/resources/ce-03db2862-c2c2-4f03-8810-d0fb0f507a54", "https://sandbox.credentialengineregistry.org/resources/ce-32e42bc7-57f0-4657-b83c-ef3077f65a7c", "https://sandbox.credentialengineregistry.org/resources/ce-d17e4122-b6f4-4a29-a11e-9d2bd751d502", "https://sandbox.credentialengineregistry.org/resources/ce-a7b0fa19-b606-4d5c-9f16-1b942e4be21a", "https://sandbox.credentialengineregistry.org/resources/ce-50b5f2f6-9a65-4a56-b23d-6d6ffa3b2195", "https://sandbox.credentialengineregistry.org/resources/ce-e750f3f1-22ed-44a7-afee-4540c03a8f26", "https://sandbox.credentialengineregistry.org/resources/ce-e6f798f4-bc83-4208-93ff-181383753d3b", "https://sandbox.credentialengineregistry.org/resources/ce-0516dab3-c038-489a-bee7-8ce9dea53ec7", "https://sandbox.credentialengineregistry.org/resources/ce-2b8d5fcb-adf3-4efa-a97b-da57e1166363", "https://sandbox.credentialengineregistry.org/resources/ce-a615f93c-6c0e-437e-b7b2-705b7f3e20df", "https://sandbox.credentialengineregistry.org/resources/ce-b8623b35-f00f-40bd-996a-15afd6594821", "https://sandbox.credentialengineregistry.org/resources/ce-d212ad20-c2d4-4c06-bd24-5c8314aae1cf", "https://sandbox.credentialengineregistry.org/resources/ce-d8fc3da8-324d-4932-b75a-abbf250fa7ca", "https://sandbox.credentialengineregistry.org/resources/ce-0e72a7d4-aeb3-4cc8-b130-cb119edf5d7f", "https://sandbox.credentialengineregistry.org/resources/ce-e4790447-0c75-4be1-ad01-7a0e81643779", "https://sandbox.credentialengineregistry.org/resources/ce-265e25bd-bfe5-42a5-8ea2-8bff151432f6", "https://sandbox.credentialengineregistry.org/resources/ce-b816f77c-7b69-4910-aeb1-3489e76b3df0", "https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-ac500e3b-3426-40e7-b984-3ab97da023b3", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110", "https://sandbox.credentialengineregistry.org/resources/ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7", "https://sandbox.credentialengineregistry.org/resources/ce-c21c04f2-5d2e-4456-949a-d44a88fa5152", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2", "https://sandbox.credentialengineregistry.org/resources/ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8", "https://sandbox.credentialengineregistry.org/resources/ce-d3ceb306-3254-4f02-b2f6-1cae12cfd2ea", "https://sandbox.credentialengineregistry.org/resources/ce-faf64c28-9317-4153-bad5-0b2b61f45d12", "https://sandbox.credentialengineregistry.org/resources/ce-ac0b8579-5313-4d1b-bf2c-ce131bfcc785", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd", "https://sandbox.credentialengineregistry.org/resources/ce-b81b67a3-a347-450b-93fb-6a1f8a16293e", "https://sandbox.credentialengineregistry.org/resources/ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c", "https://sandbox.credentialengineregistry.org/resources/ce-b9ed29ec-63cd-49db-90c1-2ff95af36b38", "https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096", "https://sandbox.credentialengineregistry.org/resources/ce-b288d9de-a56b-4995-8073-c479e01af394"],
+            "ceterms:ownedBy": ["https://sandbox.credentialengineregistry.org/resources/ce-12ccd14d-3b90-4e36-bc1b-88c3231e2610"],
+            "ceterms:description":
+            {
+                "en-US": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities."
+            },
+            "ceterms:subjectWebpage": "https://unt.badgr.com/public/pathway/5e2f5be846e0fb003340c01d",
+            "ceterms:hasDestinationComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-39e185f9-9a10-4b86-9721-4cc9b1a820d2"]
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-39e185f9-9a10-4b86-9721-4cc9b1a820d2",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-39e185f9-9a10-4b86-9721-4cc9b1a820d2",
+            "ceterms:name":
+            {
+                "en-US": "Marketable Skills in French"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-f1d741d9-5619-49aa-8a8c-6ef919002374", "https://sandbox.credentialengineregistry.org/resources/ce-90122602-6298-4a91-85a9-a0aaafef5454", "https://sandbox.credentialengineregistry.org/resources/ce-d3ceb306-3254-4f02-b2f6-1cae12cfd2ea", "https://sandbox.credentialengineregistry.org/resources/ce-faf64c28-9317-4153-bad5-0b2b61f45d12", "https://sandbox.credentialengineregistry.org/resources/ce-ac0b8579-5313-4d1b-bf2c-ce131bfcc785"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ",
+            "ceterms:description":
+            {
+                "en-US": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-f1d741d9-5619-49aa-8a8c-6ef919002374",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-f1d741d9-5619-49aa-8a8c-6ef919002374",
+            "ceterms:name":
+            {
+                "en-US": "Collect and Analyze Data in French"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-74da0595-d0d2-469c-993a-f87d1a360d75", "https://sandbox.credentialengineregistry.org/resources/ce-03db2862-c2c2-4f03-8810-d0fb0f507a54", "https://sandbox.credentialengineregistry.org/resources/ce-2b8d5fcb-adf3-4efa-a97b-da57e1166363", "https://sandbox.credentialengineregistry.org/resources/ce-e4790447-0c75-4be1-ad01-7a0e81643779"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/rfiBUwBkSMemag2pazaBtA",
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR Collect and Analyze Data in French"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 3 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 3,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-74da0595-d0d2-469c-993a-f87d1a360d75", "https://sandbox.credentialengineregistry.org/resources/ce-03db2862-c2c2-4f03-8810-d0fb0f507a54", "https://sandbox.credentialengineregistry.org/resources/ce-2b8d5fcb-adf3-4efa-a97b-da57e1166363", "https://sandbox.credentialengineregistry.org/resources/ce-e4790447-0c75-4be1-ad01-7a0e81643779"]
+                }
+            ],
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-90122602-6298-4a91-85a9-a0aaafef5454",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-90122602-6298-4a91-85a9-a0aaafef5454",
+            "ceterms:name":
+            {
+                "en-US": "Critical Thinking in French"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-1e51ae4b-8dd3-4c6f-8177-79c312275f72", "https://sandbox.credentialengineregistry.org/resources/ce-d17e4122-b6f4-4a29-a11e-9d2bd751d502", "https://sandbox.credentialengineregistry.org/resources/ce-a7b0fa19-b606-4d5c-9f16-1b942e4be21a", "https://sandbox.credentialengineregistry.org/resources/ce-d212ad20-c2d4-4c06-bd24-5c8314aae1cf", "https://sandbox.credentialengineregistry.org/resources/ce-265e25bd-bfe5-42a5-8ea2-8bff151432f6"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg",
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR Critical Thinking in French"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 4 of 5 items."
+                    },
+                    "ceterms:requiredNumber": 4,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-1e51ae4b-8dd3-4c6f-8177-79c312275f72", "https://sandbox.credentialengineregistry.org/resources/ce-d17e4122-b6f4-4a29-a11e-9d2bd751d502", "https://sandbox.credentialengineregistry.org/resources/ce-a7b0fa19-b606-4d5c-9f16-1b942e4be21a", "https://sandbox.credentialengineregistry.org/resources/ce-d212ad20-c2d4-4c06-bd24-5c8314aae1cf", "https://sandbox.credentialengineregistry.org/resources/ce-265e25bd-bfe5-42a5-8ea2-8bff151432f6"]
+                }
+            ],
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029",
+            "ceterms:name":
+            {
+                "en-US": "Debate (FREN 3065)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA",
+            "ceterms:description":
+            {
+                "en-US": "Students were asked to reflect on a specific cultural aspect of French Society/Francophone world and research arguments both in favor and against a position that French people have on that topic. They used their critical thinking skills to analyze the information they found, to organize their ideas, and to decide which elements of their research were best suited for the debate. In class, students shared their arguments. They considered cultural perspectives, presented their arguments to the class, defended their points of view, and responded to comments from other students. Interpersonal communication skills in French were necessary to successfully hold this debate."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-4ec24421-cdbd-4060-8f32-3b487621c71d",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-4ec24421-cdbd-4060-8f32-3b487621c71d",
+            "ceterms:name":
+            {
+                "en-US": "Essay (FREN 3070)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ",
+            "ceterms:description":
+            {
+                "en-US": "Students wrote an essay in French expressing their own opinion about a literary or contemporary text or topic."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa",
+            "ceterms:name":
+            {
+                "en-US": "Essay (FREN 3075)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA",
+            "ceterms:description":
+            {
+                "en-US": "Students wrote an essay in French that expresses their own opinion about a literary or contemporary topic."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577",
+            "ceterms:name":
+            {
+                "en-US": "Essay on Francophone Movie (FREN 3045)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ",
+            "ceterms:description":
+            {
+                "en-US": "Students watched a movie on Francophone culture. They wrote an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes, education, family life etc.), outlining specifications relating to Francophone culture, and (2) to compare with other cultures."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-5306b269-cb33-44bb-ade7-e1cc0210e724",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-5306b269-cb33-44bb-ade7-e1cc0210e724",
+            "ceterms:name":
+            {
+                "en-US": "Essay on Francophone Society (FREN 3045)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg",
+            "ceterms:description":
+            {
+                "en-US": "Students were asked to write an essay in French (150 words minimum) on an aspect of a Francophone society."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c",
+            "ceterms:name":
+            {
+                "en-US": "Essay on French Movie (FREN 3040)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g",
+            "ceterms:description":
+            {
+                "en-US": "Students watched a movie on French culture. They were asked to write an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes on regions, the status of civil servants, family life etc.), outlining the specific details relating to French culture, and (2) to compare with the situation in the United States."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da",
+            "ceterms:name":
+            {
+                "en-US": "Essay on French Society (FREN 3040)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA",
+            "ceterms:description":
+            {
+                "en-US": "Students submitted an essay in French (150 words minimum) on an aspect of French society. In order to complete the essay, students studied the topic and related challenges, read a summary and text related to the topic, reviewed a documentary, and engaged in group discussion and activities to better understand the topic."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-1e51ae4b-8dd3-4c6f-8177-79c312275f72",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-1e51ae4b-8dd3-4c6f-8177-79c312275f72",
+            "ceterms:name":
+            {
+                "en-US": "French 2040/2050"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 2040/2050"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=30"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-74da0595-d0d2-469c-993a-f87d1a360d75",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-74da0595-d0d2-469c-993a-f87d1a360d75",
+            "ceterms:name":
+            {
+                "en-US": "French 2040/2050"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 2040/2050"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=50"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-ffe9164d-41b2-419f-833e-6ffcaa21c251",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-ffe9164d-41b2-419f-833e-6ffcaa21c251",
+            "ceterms:name":
+            {
+                "en-US": "French 2040/2050"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110", "https://sandbox.credentialengineregistry.org/resources/ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 2040/2050"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 2 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 2,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110", "https://sandbox.credentialengineregistry.org/resources/ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=9"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-a01504e9-ba57-4fed-aac4-cc58cd36311c",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-a01504e9-ba57-4fed-aac4-cc58cd36311c",
+            "ceterms:name":
+            {
+                "en-US": "French 2040/2050"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110", "https://sandbox.credentialengineregistry.org/resources/ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 2040/2050"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 2 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 2,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110", "https://sandbox.credentialengineregistry.org/resources/ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7", "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=63"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-3472b465-bf54-4e79-b635-05bf98471aa1",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-3472b465-bf54-4e79-b635-05bf98471aa1",
+            "ceterms:name":
+            {
+                "en-US": "French 2040/2050"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 2040/2050"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e", "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=75"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-a0c3b123-0735-4809-b79e-4071623f9246",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-a0c3b123-0735-4809-b79e-4071623f9246",
+            "ceterms:name":
+            {
+                "en-US": "French 3040/3045"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577", "https://sandbox.credentialengineregistry.org/resources/ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3040/3045"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 2 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 2,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577", "https://sandbox.credentialengineregistry.org/resources/ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=77"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-a82f6b92-9295-4d83-aa0d-605a40364145",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-a82f6b92-9295-4d83-aa0d-605a40364145",
+            "ceterms:name":
+            {
+                "en-US": "French 3040/3045"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-5306b269-cb33-44bb-ade7-e1cc0210e724", "https://sandbox.credentialengineregistry.org/resources/ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3040/3045"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 2 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 2,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-5306b269-cb33-44bb-ade7-e1cc0210e724", "https://sandbox.credentialengineregistry.org/resources/ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=65"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-03db2862-c2c2-4f03-8810-d0fb0f507a54",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-03db2862-c2c2-4f03-8810-d0fb0f507a54",
+            "ceterms:name":
+            {
+                "en-US": "French 3040/3045"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577", "https://sandbox.credentialengineregistry.org/resources/ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3040/3045"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-3e3325d8-dd96-4ec6-8688-c2fb2babc577", "https://sandbox.credentialengineregistry.org/resources/ce-73406e4a-d64b-4d9c-a8ec-2b9d4095149c"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=54"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-32e42bc7-57f0-4657-b83c-ef3077f65a7c",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-32e42bc7-57f0-4657-b83c-ef3077f65a7c",
+            "ceterms:name":
+            {
+                "en-US": "French 3040/3045"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3040/3045"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=13"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-d17e4122-b6f4-4a29-a11e-9d2bd751d502",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-d17e4122-b6f4-4a29-a11e-9d2bd751d502",
+            "ceterms:name":
+            {
+                "en-US": "French 3040/3045"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-5306b269-cb33-44bb-ade7-e1cc0210e724", "https://sandbox.credentialengineregistry.org/resources/ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3040/3045"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 2 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 2,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-5306b269-cb33-44bb-ade7-e1cc0210e724", "https://sandbox.credentialengineregistry.org/resources/ce-4ab11b9b-7ae1-4f6c-9e5e-f75a7bd9a7da", "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640", "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=34"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-a7b0fa19-b606-4d5c-9f16-1b942e4be21a",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-a7b0fa19-b606-4d5c-9f16-1b942e4be21a",
+            "ceterms:name":
+            {
+                "en-US": "French 3050/3055"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3050/3055"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=38"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-50b5f2f6-9a65-4a56-b23d-6d6ffa3b2195",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-50b5f2f6-9a65-4a56-b23d-6d6ffa3b2195",
+            "ceterms:name":
+            {
+                "en-US": "French 3050/3055"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-c21c04f2-5d2e-4456-949a-d44a88fa5152", "https://sandbox.credentialengineregistry.org/resources/ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3050/3055"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-c21c04f2-5d2e-4456-949a-d44a88fa5152", "https://sandbox.credentialengineregistry.org/resources/ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=17"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-e750f3f1-22ed-44a7-afee-4540c03a8f26",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-e750f3f1-22ed-44a7-afee-4540c03a8f26",
+            "ceterms:name":
+            {
+                "en-US": "French 3050/3055"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-c21c04f2-5d2e-4456-949a-d44a88fa5152", "https://sandbox.credentialengineregistry.org/resources/ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a", "https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3050/3055"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 2 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 2,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-c21c04f2-5d2e-4456-949a-d44a88fa5152", "https://sandbox.credentialengineregistry.org/resources/ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a", "https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=67"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-e6f798f4-bc83-4208-93ff-181383753d3b",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-e6f798f4-bc83-4208-93ff-181383753d3b",
+            "ceterms:name":
+            {
+                "en-US": "French 3050/3055"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3050/3055"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77", "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=79"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-0516dab3-c038-489a-bee7-8ce9dea53ec7",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-0516dab3-c038-489a-bee7-8ce9dea53ec7",
+            "ceterms:name":
+            {
+                "en-US": "French 3060/3065"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-b288d9de-a56b-4995-8073-c479e01af394"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3060/3065"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-b288d9de-a56b-4995-8073-c479e01af394"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=81"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-2b8d5fcb-adf3-4efa-a97b-da57e1166363",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-2b8d5fcb-adf3-4efa-a97b-da57e1166363",
+            "ceterms:name":
+            {
+                "en-US": "French 3060/3065"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-b816f77c-7b69-4910-aeb1-3489e76b3df0", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3060/3065"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 3 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-b816f77c-7b69-4910-aeb1-3489e76b3df0", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=57"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-a615f93c-6c0e-437e-b7b2-705b7f3e20df",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-a615f93c-6c0e-437e-b7b2-705b7f3e20df",
+            "ceterms:name":
+            {
+                "en-US": "French 3060/3065"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-b816f77c-7b69-4910-aeb1-3489e76b3df0", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3060/3065"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-b816f77c-7b69-4910-aeb1-3489e76b3df0", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=69"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-b8623b35-f00f-40bd-996a-15afd6594821",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-b8623b35-f00f-40bd-996a-15afd6594821",
+            "ceterms:name":
+            {
+                "en-US": "French 3060/3065"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3060/3065"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=21"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-d212ad20-c2d4-4c06-bd24-5c8314aae1cf",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-d212ad20-c2d4-4c06-bd24-5c8314aae1cf",
+            "ceterms:name":
+            {
+                "en-US": "French 3060/3065"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-b288d9de-a56b-4995-8073-c479e01af394"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3060/3065"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 2 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-8b74fc6a-aad3-471a-8a57-eabf16cf2029", "https://sandbox.credentialengineregistry.org/resources/ce-b288d9de-a56b-4995-8073-c479e01af394"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=41"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-d8fc3da8-324d-4932-b75a-abbf250fa7ca",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-d8fc3da8-324d-4932-b75a-abbf250fa7ca",
+            "ceterms:name":
+            {
+                "en-US": "French 3070/3075/3095"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-ac500e3b-3426-40e7-b984-3ab97da023b3", "https://sandbox.credentialengineregistry.org/resources/ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c", "https://sandbox.credentialengineregistry.org/resources/ce-b9ed29ec-63cd-49db-90c1-2ff95af36b38"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3070/3075/3095"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 3 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-ac500e3b-3426-40e7-b984-3ab97da023b3", "https://sandbox.credentialengineregistry.org/resources/ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c", "https://sandbox.credentialengineregistry.org/resources/ce-b9ed29ec-63cd-49db-90c1-2ff95af36b38"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=26"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-0e72a7d4-aeb3-4cc8-b130-cb119edf5d7f",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-0e72a7d4-aeb3-4cc8-b130-cb119edf5d7f",
+            "ceterms:name":
+            {
+                "en-US": "French 3070/3075/3095"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-b81b67a3-a347-450b-93fb-6a1f8a16293e", "https://sandbox.credentialengineregistry.org/resources/ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3070/3075/3095"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 3 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-b81b67a3-a347-450b-93fb-6a1f8a16293e", "https://sandbox.credentialengineregistry.org/resources/ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=71"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-e4790447-0c75-4be1-ad01-7a0e81643779",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-e4790447-0c75-4be1-ad01-7a0e81643779",
+            "ceterms:name":
+            {
+                "en-US": "French 3070/3075/3095"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-4ec24421-cdbd-4060-8f32-3b487621c71d", "https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-ac500e3b-3426-40e7-b984-3ab97da023b3"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3070/3075/3095"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 3 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-4ec24421-cdbd-4060-8f32-3b487621c71d", "https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-ac500e3b-3426-40e7-b984-3ab97da023b3"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=59"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-265e25bd-bfe5-42a5-8ea2-8bff151432f6",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:ctid": "ce-265e25bd-bfe5-42a5-8ea2-8bff151432f6",
+            "ceterms:name":
+            {
+                "en-US": "French 3070/3075/3095"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-4ec24421-cdbd-4060-8f32-3b487621c71d", "https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-b81b67a3-a347-450b-93fb-6a1f8a16293e"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR French 3070/3075/3095"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 1 of 3 items."
+                    },
+                    "ceterms:requiredNumber": 1,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-4ec24421-cdbd-4060-8f32-3b487621c71d", "https://sandbox.credentialengineregistry.org/resources/ce-c721c5c4-c37d-44a5-a6e3-9e0623974daa", "https://sandbox.credentialengineregistry.org/resources/ce-b81b67a3-a347-450b-93fb-6a1f8a16293e"]
+                }
+            ],
+            "ceterms:subjectWebpage": "https://example.org/?tempComponent=46"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-b816f77c-7b69-4910-aeb1-3489e76b3df0",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-b816f77c-7b69-4910-aeb1-3489e76b3df0",
+            "ceterms:name":
+            {
+                "en-US": "Group Oral Presentation (FREN 3065)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w",
+            "ceterms:description":
+            {
+                "en-US": "In groups (or pairs), students presented on a specific aspect of French or Francophone culture in class. Students were required to research and select relevant information on the topic, to compile the data, and to create a well-organized and well-written presentation (e.g. PowerPoint, Prezi, etc.) in collaboration with the members of their group. In class, students were asked to present their cultural topic to the other students."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-86eeea71-e8c2-47c5-87c8-436a8b75308e",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-86eeea71-e8c2-47c5-87c8-436a8b75308e",
+            "ceterms:name":
+            {
+                "en-US": "Guided Writing (FREN 2040)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A",
+            "ceterms:description":
+            {
+                "en-US": "During a specific class time (as indicated on syllabus), students wrote a composition in French on a specific topic assigned by instructor. Prior to the in-class portion of the activity, students completed a pre-guided worksheet including exercises such as gathering of vocabulary, review of grammatical structures, cultural elements research, etc. Students were not allowed to use any electronic devices while completing the in-class portion of the activity."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-ac500e3b-3426-40e7-b984-3ab97da023b3",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-ac500e3b-3426-40e7-b984-3ab97da023b3",
+            "ceterms:name":
+            {
+                "en-US": "In Class Discussion (FREN 3095)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA",
+            "ceterms:description":
+            {
+                "en-US": "Students selected a French article relevant to their subject area. In groups or pairs, they designed a lesson and activity around this article and presented it to the class. The lead students organized a reading of the article that guided the class through a comprehension questionnaire they created. They collaboratively led a classroom group discussion. Students cooperated with their group members to design the lesson plan, promote a constructive team and class climate, and managed the class discussion by considering various viewpoints and contributions."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-7ca5a1b3-a228-41c7-a472-21fb06cd4110",
+            "ceterms:name":
+            {
+                "en-US": "In Class Oral Participation (FREN 2040)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw",
+            "ceterms:description":
+            {
+                "en-US": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q\u0026A with instructors, etc."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-f5d02ffa-25e3-42f2-a816-07a8d25467b7",
+            "ceterms:name":
+            {
+                "en-US": "In Class Oral Participation (FREN 2050)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ",
+            "ceterms:description":
+            {
+                "en-US": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q \u0026A with instructors, etc."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-c21c04f2-5d2e-4456-949a-d44a88fa5152",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-c21c04f2-5d2e-4456-949a-d44a88fa5152",
+            "ceterms:name":
+            {
+                "en-US": "In Class Oral Participation (FREN 3055)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg",
+            "ceterms:description":
+            {
+                "en-US": "Students were required to actively engage in oral participation during class. Factors used for evaluation involved interpersonal communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q\u0026A with instructors."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-d8eb0402-6887-45af-8034-91ee32b177e2",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-d8eb0402-6887-45af-8034-91ee32b177e2",
+            "ceterms:name":
+            {
+                "en-US": "In Class Oral Presentation (FREN 2050)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ",
+            "ceterms:description":
+            {
+                "en-US": "Students researched a French/Francophone author or artist selected from a list provided by instructor and completed a provided data worksheet with gathered and selected information. Using the completed worksheet as a visual support, students then delivered an oral presentation of their findings to their peers."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-7b8830a8-701b-46ac-a38b-3c90cee8da3a",
+            "ceterms:name":
+            {
+                "en-US": "In Class Oral Presentation (FREN 3050)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ",
+            "ceterms:description":
+            {
+                "en-US": "Students were required to actively engage in oral communication in class. Factors used for evaluation involved communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q\u0026A with instructors."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-c5ed517d-b6c2-4454-8cb8-567fe8ce19d8",
+            "ceterms:name":
+            {
+                "en-US": "In Class Participation (FREN 3060)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ",
+            "ceterms:description":
+            {
+                "en-US": "Students actively participated in class. Student participation included several factors, such as interpersonal communication in French (e.g., talking to peers in pairs or groups, answering professor's questions) and oral communication in French."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-d3ceb306-3254-4f02-b2f6-1cae12cfd2ea",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-d3ceb306-3254-4f02-b2f6-1cae12cfd2ea",
+            "ceterms:name":
+            {
+                "en-US": "Interpersonal Communication in French"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-ffe9164d-41b2-419f-833e-6ffcaa21c251", "https://sandbox.credentialengineregistry.org/resources/ce-32e42bc7-57f0-4657-b83c-ef3077f65a7c", "https://sandbox.credentialengineregistry.org/resources/ce-50b5f2f6-9a65-4a56-b23d-6d6ffa3b2195", "https://sandbox.credentialengineregistry.org/resources/ce-b8623b35-f00f-40bd-996a-15afd6594821", "https://sandbox.credentialengineregistry.org/resources/ce-d8fc3da8-324d-4932-b75a-abbf250fa7ca"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw",
+            "ceterms:description":
+            {
+                "en-US": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities."
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 4 of 5 items."
+                    },
+                    "ceterms:requiredNumber": 4,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-ffe9164d-41b2-419f-833e-6ffcaa21c251", "https://sandbox.credentialengineregistry.org/resources/ce-32e42bc7-57f0-4657-b83c-ef3077f65a7c", "https://sandbox.credentialengineregistry.org/resources/ce-50b5f2f6-9a65-4a56-b23d-6d6ffa3b2195", "https://sandbox.credentialengineregistry.org/resources/ce-b8623b35-f00f-40bd-996a-15afd6594821", "https://sandbox.credentialengineregistry.org/resources/ce-d8fc3da8-324d-4932-b75a-abbf250fa7ca"]
+                }
+            ],
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-faf64c28-9317-4153-bad5-0b2b61f45d12",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-faf64c28-9317-4153-bad5-0b2b61f45d12",
+            "ceterms:name":
+            {
+                "en-US": "Multicultural/Diversity Competencies in French"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-3472b465-bf54-4e79-b635-05bf98471aa1", "https://sandbox.credentialengineregistry.org/resources/ce-a0c3b123-0735-4809-b79e-4071623f9246", "https://sandbox.credentialengineregistry.org/resources/ce-e6f798f4-bc83-4208-93ff-181383753d3b", "https://sandbox.credentialengineregistry.org/resources/ce-0516dab3-c038-489a-bee7-8ce9dea53ec7"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ",
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR Multicultural/Diversity Competencies in French"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 3 of 4 items."
+                    },
+                    "ceterms:requiredNumber": 3,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-3472b465-bf54-4e79-b635-05bf98471aa1", "https://sandbox.credentialengineregistry.org/resources/ce-a0c3b123-0735-4809-b79e-4071623f9246", "https://sandbox.credentialengineregistry.org/resources/ce-e6f798f4-bc83-4208-93ff-181383753d3b", "https://sandbox.credentialengineregistry.org/resources/ce-0516dab3-c038-489a-bee7-8ce9dea53ec7"]
+                }
+            ],
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-ac0b8579-5313-4d1b-bf2c-ce131bfcc785",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-ac0b8579-5313-4d1b-bf2c-ce131bfcc785",
+            "ceterms:name":
+            {
+                "en-US": "Oral and Written Communication in French"
+            },
+            "ceasn:hasChild": ["https://sandbox.credentialengineregistry.org/resources/ce-a01504e9-ba57-4fed-aac4-cc58cd36311c", "https://sandbox.credentialengineregistry.org/resources/ce-a82f6b92-9295-4d83-aa0d-605a40364145", "https://sandbox.credentialengineregistry.org/resources/ce-e750f3f1-22ed-44a7-afee-4540c03a8f26", "https://sandbox.credentialengineregistry.org/resources/ce-a615f93c-6c0e-437e-b7b2-705b7f3e20df", "https://sandbox.credentialengineregistry.org/resources/ce-0e72a7d4-aeb3-4cc8-b130-cb119edf5d7f"],
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/c9JH-RFuRdCF65kFTgjgvg",
+            "ceterms:description":
+            {
+                "en-US": "TEMPORARY DESCRIPTION FOR Oral and Written Communication in French"
+            },
+            "ceterms:hasCondition": [
+                {
+                    "@type": "ceterms:ComponentCondition",
+                    "ceterms:name":
+                    {
+                        "en-US": "Requires 4 of 5 items."
+                    },
+                    "ceterms:requiredNumber": 4,
+                    "ceterms:targetComponent": ["https://sandbox.credentialengineregistry.org/resources/ce-a01504e9-ba57-4fed-aac4-cc58cd36311c", "https://sandbox.credentialengineregistry.org/resources/ce-a82f6b92-9295-4d83-aa0d-605a40364145", "https://sandbox.credentialengineregistry.org/resources/ce-e750f3f1-22ed-44a7-afee-4540c03a8f26", "https://sandbox.credentialengineregistry.org/resources/ce-a615f93c-6c0e-437e-b7b2-705b7f3e20df", "https://sandbox.credentialengineregistry.org/resources/ce-0e72a7d4-aeb3-4cc8-b130-cb119edf5d7f"]
+                }
+            ],
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-cc5dde33-14d2-48ff-ad5e-dc9a9b2af640",
+            "ceterms:name":
+            {
+                "en-US": "Oral Presentation (FREN 3040)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g",
+            "ceterms:description":
+            {
+                "en-US": "Students gave an oral presentation in class on a predetermined topic."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-a699a3e7-439f-4798-a56f-41d27a7d30cd",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-a699a3e7-439f-4798-a56f-41d27a7d30cd",
+            "ceterms:name":
+            {
+                "en-US": "Oral Presentation (FREN 3045)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw",
+            "ceterms:description":
+            {
+                "en-US": "Students gave an oral presentation in class (20 minutes in length) on a predetermined topic that they researched. To supplement the oral presentation, students created a PowerPoint presentation to illustrate the various items with examples."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-b81b67a3-a347-450b-93fb-6a1f8a16293e",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-b81b67a3-a347-450b-93fb-6a1f8a16293e",
+            "ceterms:name":
+            {
+                "en-US": "Oral Presentation (FREN 3095)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg",
+            "ceterms:description":
+            {
+                "en-US": "Students presented orally in French on a specific aspect of their selected subject area, as approved by the instructor. Students researched and selected relevant information on the topic (showing critical thinking and analytical skills) and compiled the data into a well-organized and well-written PowerPoint presentation that was submitted online. In class, students were asked to present their cultural topic to the other students."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-959c01a1-94d9-455c-bf9e-f50cdebeb23c",
+            "ceterms:name":
+            {
+                "en-US": "Peer Review (FREN 3070)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A",
+            "ceterms:description":
+            {
+                "en-US": "Students completed a French grammar quiz, made comments on one of their classmate's quizzes, and discussed the quiz and the comments with their partner in French."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-b9ed29ec-63cd-49db-90c1-2ff95af36b38",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-b9ed29ec-63cd-49db-90c1-2ff95af36b38",
+            "ceterms:name":
+            {
+                "en-US": "Peer Review (FREN 3075)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/sdtjxhPFQWmrfJbvlytXKg",
+            "ceterms:description":
+            {
+                "en-US": "Students wrote an essay in French , made comments related to content and grammar on one of their classmate's essays, and discussed discuss the essay and the comments with their partner in French."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-34aa5107-52e5-4b73-a50e-d902bc104b77",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-34aa5107-52e5-4b73-a50e-d902bc104b77",
+            "ceterms:name":
+            {
+                "en-US": "Reading Comprehension (FREN 3050)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ",
+            "ceterms:description":
+            {
+                "en-US": "Students read authentic French texts and learned to analyze the background of a narrative (text/song/film) in order to understand the behavior and choices made by the various characters. The analysis was based on the clues provided by the author and the student's understanding of the human condition. Students also developed the ability to appreciate the perception of human realities by members of other cultures (various Francophone authors) and sexes."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-f4c8cb10-7a4a-4a6a-905a-1ad2935a9096",
+            "ceterms:name":
+            {
+                "en-US": "Reading Comprehension (FREN 3055)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg",
+            "ceterms:description":
+            {
+                "en-US": "Students read authentic French texts and analyzed the various cultural factors that explain the prestige (or lack of thereof) of creators in various fields throughout the centuries. Students established an understanding of similarities and differences in this area by comparing the condition of artists in different centuries."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-b288d9de-a56b-4995-8073-c479e01af394",
+            "@type": "ceterms:CredentialComponent",
+            "ceterms:ctid": "ce-b288d9de-a56b-4995-8073-c479e01af394",
+            "ceterms:name":
+            {
+                "en-US": "Transcription of Oral Document (FREN 3060)"
+            },
+            "ceasn:isPartOf": ["https://sandbox.credentialengineregistry.org/resources/ce-22f0bd3f-538b-494c-a624-1cdcc33d55e5"],
+            "ceterms:sourceData": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg",
+            "ceterms:description":
+            {
+                "en-US": "Students transcribed a Francophone or Regional French oral document (primary source) in phonetics using rules studied in class. Students compared their transcription to one in standard French and determined major differences in speech patterns and pronunciation. Students used their critical thinking skills to decide which phonetic rules and symbols to use when comparing both transcriptions. Students also demonstrated advanced listening skills to understand and accurately transcribe the recording."
+            },
+            "ceterms:credentialType": "https://purl.org/ctdl/terms/DigitalBadge"
+        }
+    ]
+}
