@@ -1,42 +1,35 @@
 [
 	{
 		"@type": "ceterms:Pathway",
-		"@id": "https://credentialengineregistry.org/resources/ce-ae18fb1b-a82f-47a5-a14b-ef6bd4f9a21f",
-		"ceterms:ctid": "ce-ae18fb1b-a82f-47a5-a14b-ef6bd4f9a21f",
+		"@id": "https://credentialengineregistry.org/resources/ce-4cfc5efd-506c-4d78-8fa4-e668c6950fe9",
+		"ceterms:ctid": "ce-4cfc5efd-506c-4d78-8fa4-e668c6950fe9",
 		"ceterms:name": {
 			"en": "French B.A. Marketable Skills"
 		},
 		"ceterms:description": {
 			"en": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities."
 		},
-		"ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556",
-		"meta:mappedFrom": [
-			"5e2f5be846e0fb003340c01c"
-		]
+		"ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556",
-		"ceterms:ctid": "ce-d1eb4bf8-92de-4b29-922b-e73292eeb556",
+		"@id": "https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b",
+		"ceterms:ctid": "ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b",
 		"ceterms:name": {
 			"en": "Marketable Skills in French"
 		},
 		"ceterms:description": {
 			"en": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities."
 		},
-		"ceterms:isDestinationComponentFor": "https://credentialengineregistry.org/resources/ce-ae18fb1b-a82f-47a5-a14b-ef6bd4f9a21f",
+		"ceterms:isDestinationComponentFor": "https://credentialengineregistry.org/resources/ce-4cfc5efd-506c-4d78-8fa4-e668c6950fe9",
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ",
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554",
-			"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8",
-			"https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049",
-			"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375",
-			"https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1"
-		],
-		"meta:mappedFrom": [
-			"5e2f5be846e0fb003340c01c",
-			"https://api.badgr.io/public/badges/JKykbZ2SQb2u211g4jf7BQ"
+			"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951",
+			"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907",
+			"https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274",
+			"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966",
+			"https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -48,116 +41,97 @@
 					"en": "Requires 5 of 5 items."
 				},
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554",
-					"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8",
-					"https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049",
-					"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375",
-					"https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1"
+					"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951",
+					"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907",
+					"https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274",
+					"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966",
+					"https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-033353eb-01d2-4a01-8812-15ed23a96fec",
-		"ceterms:ctid": "ce-033353eb-01d2-4a01-8812-15ed23a96fec",
+		"@id": "https://credentialengineregistry.org/resources/ce-ce7dd505-1c7b-40b2-980c-48ed405a3567",
+		"ceterms:ctid": "ce-ce7dd505-1c7b-40b2-980c-48ed405a3567",
 		"ceterms:name": {
 			"en": "In Class Oral Participation (FREN 2050)"
 		},
 		"ceterms:description": {
 			"en": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q &A with instructors, etc."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ",
-			"https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a"
+			"https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/RBItLBt3Qkm0vkyxf6layQ"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-		"ceterms:ctid": "ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
+		"@id": "https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+		"ceterms:ctid": "ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
 		"ceterms:name": {
 			"en": "In Class Oral Presentation (FREN 2050)"
 		},
 		"ceterms:description": {
 			"en": "Students researched a French/Francophone author or artist selected from a list provided by instructor and completed a provided data worksheet with gathered and selected information. Using the completed worksheet as a visual support, students then delivered an oral presentation of their findings to their peers."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ",
-			"https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a"
+			"https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/zcZCPHCOR9SQXrfWk9wkiQ"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-		"ceterms:ctid": "ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
+		"@id": "https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+		"ceterms:ctid": "ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
 		"ceterms:name": {
 			"en": "Guided Writing (FREN 2040)"
 		},
 		"ceterms:description": {
 			"en": "During a specific class time (as indicated on syllabus), students wrote a composition in French on a specific topic assigned by instructor. Prior to the in-class portion of the activity, students completed a pre-guided worksheet including exercises such as gathering of vocabulary, review of grammatical structures, cultural elements research, etc. Students were not allowed to use any electronic devices while completing the in-class portion of the activity."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A",
-			"https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a"
+			"https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/xduIuo8VSmeU7X9R3eCy3A"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3",
-		"ceterms:ctid": "ce-cd034c01-034e-4c3c-8063-c89bed37c0d3",
+		"@id": "https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1",
+		"ceterms:ctid": "ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1",
 		"ceterms:name": {
 			"en": "In Class Oral Participation (FREN 2040)"
 		},
 		"ceterms:description": {
 			"en": "Oral participation was a required component of class. Factors used for evaluation and grade allocation of oral participation involved interpersonal communication in French and oral communication in French, such as but not limited to communicating with peers in pairs or groups, one-on-one Q&A with instructors, etc."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw",
-			"https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a"
+			"https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/EPmXazyBQZOG5TtHt3myYw"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a",
-		"ceterms:ctid": "ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a",
+		"@id": "https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e",
+		"ceterms:ctid": "ce-07a6f557-2a71-4c41-b030-501786f0d49e",
 		"ceterms:name": {
 			"en": "French 2040/2050"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e3b2fede5d6d01af9c6bb76"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554"
+			"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-033353eb-01d2-4a01-8812-15ed23a96fec",
-			"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-			"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-			"https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3"
+			"https://credentialengineregistry.org/resources/ce-ce7dd505-1c7b-40b2-980c-48ed405a3567",
+			"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+			"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+			"https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -170,73 +144,62 @@
 				},
 				"ceterms:requiredNumber": 2,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-033353eb-01d2-4a01-8812-15ed23a96fec",
-					"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-					"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-					"https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3"
+					"https://credentialengineregistry.org/resources/ce-ce7dd505-1c7b-40b2-980c-48ed405a3567",
+					"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+					"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+					"https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-		"ceterms:ctid": "ce-90e22969-6aae-446a-82e7-0332a5b4f536",
+		"@id": "https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+		"ceterms:ctid": "ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
 		"ceterms:name": {
 			"en": "Oral Presentation (FREN 3045)"
 		},
 		"ceterms:description": {
 			"en": "Students gave an oral presentation in class (20 minutes in length) on a predetermined topic that they researched. To supplement the oral presentation, students created a PowerPoint presentation to illustrate the various items with examples."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw",
-			"https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d5ced82a-f8be-4420-963e-798b0a96e561"
+			"https://credentialengineregistry.org/resources/ce-a7618808-f7d6-4ea1-8cec-e1c9224b5692"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/yp76rV79RVy-9O2cBAi0nw"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38",
-		"ceterms:ctid": "ce-4d21d4c8-2351-4572-a454-249ce18bcb38",
+		"@id": "https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3",
+		"ceterms:ctid": "ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3",
 		"ceterms:name": {
 			"en": "Oral Presentation (FREN 3040)"
 		},
 		"ceterms:description": {
 			"en": "Students gave an oral presentation in class on a predetermined topic."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g",
-			"https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d5ced82a-f8be-4420-963e-798b0a96e561"
+			"https://credentialengineregistry.org/resources/ce-a7618808-f7d6-4ea1-8cec-e1c9224b5692"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/255lp_EiRGaObGMG4wHv6g"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-d5ced82a-f8be-4420-963e-798b0a96e561",
-		"ceterms:ctid": "ce-d5ced82a-f8be-4420-963e-798b0a96e561",
+		"@id": "https://credentialengineregistry.org/resources/ce-a7618808-f7d6-4ea1-8cec-e1c9224b5692",
+		"ceterms:ctid": "ce-a7618808-f7d6-4ea1-8cec-e1c9224b5692",
 		"ceterms:name": {
 			"en": "French 3040/3045"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e3b3054e7813f86a55262e3"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554"
+			"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-			"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+			"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+			"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -249,71 +212,60 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-					"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+					"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+					"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-9ee29dfb-ab3d-47fa-b780-fa4a60e1ad7a",
-		"ceterms:ctid": "ce-9ee29dfb-ab3d-47fa-b780-fa4a60e1ad7a",
+		"@id": "https://credentialengineregistry.org/resources/ce-6dbe5ad2-acd2-47d1-8df2-2d624dc27bdd",
+		"ceterms:ctid": "ce-6dbe5ad2-acd2-47d1-8df2-2d624dc27bdd",
 		"ceterms:name": {
 			"en": "In Class Oral Presentation (FREN 3050)"
 		},
 		"ceterms:description": {
 			"en": "Students were required to actively engage in oral communication in class. Factors used for evaluation involved communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q&A with instructors."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ",
-			"https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-4991b351-1fed-460d-a597-2bf52ffa2274"
+			"https://credentialengineregistry.org/resources/ce-06be9c47-33ab-4d50-aff3-b26f270dfb69"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/3VPkOQn3QjmV0xByw6ASvQ"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-76bbd7e4-18bf-4d31-9036-07d8cf0d8fb2",
-		"ceterms:ctid": "ce-76bbd7e4-18bf-4d31-9036-07d8cf0d8fb2",
+		"@id": "https://credentialengineregistry.org/resources/ce-ea3513b6-8dea-4096-aedb-f29710ee816a",
+		"ceterms:ctid": "ce-ea3513b6-8dea-4096-aedb-f29710ee816a",
 		"ceterms:name": {
 			"en": "In Class Oral Participation (FREN 3055)"
 		},
 		"ceterms:description": {
 			"en": "Students were required to actively engage in oral participation during class. Factors used for evaluation involved interpersonal communication and oral communication in French, communicating with peers in pairs or groups, and one-on-one Q&A with instructors."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg",
-			"https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-4991b351-1fed-460d-a597-2bf52ffa2274"
+			"https://credentialengineregistry.org/resources/ce-06be9c47-33ab-4d50-aff3-b26f270dfb69"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/Im71f-T9QqSiUs7YMagXYg"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-4991b351-1fed-460d-a597-2bf52ffa2274",
-		"ceterms:ctid": "ce-4991b351-1fed-460d-a597-2bf52ffa2274",
+		"@id": "https://credentialengineregistry.org/resources/ce-06be9c47-33ab-4d50-aff3-b26f270dfb69",
+		"ceterms:ctid": "ce-06be9c47-33ab-4d50-aff3-b26f270dfb69",
 		"ceterms:name": {
 			"en": "French 3050/3055"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445c5d3c280b01db7ec44c"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554"
+			"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-9ee29dfb-ab3d-47fa-b780-fa4a60e1ad7a",
-			"https://credentialengineregistry.org/resources/ce-76bbd7e4-18bf-4d31-9036-07d8cf0d8fb2"
+			"https://credentialengineregistry.org/resources/ce-6dbe5ad2-acd2-47d1-8df2-2d624dc27bdd",
+			"https://credentialengineregistry.org/resources/ce-ea3513b6-8dea-4096-aedb-f29710ee816a"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -326,71 +278,60 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-9ee29dfb-ab3d-47fa-b780-fa4a60e1ad7a",
-					"https://credentialengineregistry.org/resources/ce-76bbd7e4-18bf-4d31-9036-07d8cf0d8fb2"
+					"https://credentialengineregistry.org/resources/ce-6dbe5ad2-acd2-47d1-8df2-2d624dc27bdd",
+					"https://credentialengineregistry.org/resources/ce-ea3513b6-8dea-4096-aedb-f29710ee816a"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-		"ceterms:ctid": "ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
+		"@id": "https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+		"ceterms:ctid": "ce-fa743c85-b919-4592-ae01-444f64340302",
 		"ceterms:name": {
 			"en": "Debate (FREN 3065)"
 		},
 		"ceterms:description": {
 			"en": "Students were asked to reflect on a specific cultural aspect of French Society/Francophone world and research arguments both in favor and against a position that French people have on that topic. They used their critical thinking skills to analyze the information they found, to organize their ideas, and to decide which elements of their research were best suited for the debate. In class, students shared their arguments. They considered cultural perspectives, presented their arguments to the class, defended their points of view, and responded to comments from other students. Interpersonal communication skills in French were necessary to successfully hold this debate."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA",
-			"https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-2bdfd615-a0f8-4579-9c30-b00a170947e5"
+			"https://credentialengineregistry.org/resources/ce-59137c07-a193-497e-8b03-b05b372e4bba"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/zPsa73ybQ4OWhAOE6Wz9EA"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3",
-		"ceterms:ctid": "ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3",
+		"@id": "https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5",
+		"ceterms:ctid": "ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5",
 		"ceterms:name": {
 			"en": "In Class Participation (FREN 3060)"
 		},
 		"ceterms:description": {
 			"en": "Students actively participated in class. Student participation included several factors, such as interpersonal communication in French (e.g., talking to peers in pairs or groups, answering professor’s questions) and oral communication in French."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ",
-			"https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-2bdfd615-a0f8-4579-9c30-b00a170947e5"
+			"https://credentialengineregistry.org/resources/ce-59137c07-a193-497e-8b03-b05b372e4bba"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/qFmL40wST3yztSEJyydIVQ"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-2bdfd615-a0f8-4579-9c30-b00a170947e5",
-		"ceterms:ctid": "ce-2bdfd615-a0f8-4579-9c30-b00a170947e5",
+		"@id": "https://credentialengineregistry.org/resources/ce-59137c07-a193-497e-8b03-b05b372e4bba",
+		"ceterms:ctid": "ce-59137c07-a193-497e-8b03-b05b372e4bba",
 		"ceterms:name": {
 			"en": "French 3060/3065"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445c9ce0c3adba79420c12"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554"
+			"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-			"https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3"
+			"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+			"https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -403,92 +344,77 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-					"https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3"
+					"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+					"https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-dd06c01d-0ddf-4545-a6de-b55a4828f491",
-		"ceterms:ctid": "ce-dd06c01d-0ddf-4545-a6de-b55a4828f491",
+		"@id": "https://credentialengineregistry.org/resources/ce-8e678be3-5e24-4b50-9b20-563ed62af14a",
+		"ceterms:ctid": "ce-8e678be3-5e24-4b50-9b20-563ed62af14a",
 		"ceterms:name": {
 			"en": "Peer Review (FREN 3070)"
 		},
 		"ceterms:description": {
 			"en": "Students completed a French grammar quiz, made comments on one of their classmate’s quizzes, and discussed the quiz and the comments with their partner in French."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A",
-			"https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a"
+			"https://credentialengineregistry.org/resources/ce-c79bae34-3721-402c-8a08-a085e8473bf4"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/fQdHE68EQ1awVK8-tUwB4A"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-48d19815-f523-413d-a3ec-00044b6531e9",
-		"ceterms:ctid": "ce-48d19815-f523-413d-a3ec-00044b6531e9",
+		"@id": "https://credentialengineregistry.org/resources/ce-93b1644d-c517-41b7-b7ab-15d8b6e88799",
+		"ceterms:ctid": "ce-93b1644d-c517-41b7-b7ab-15d8b6e88799",
 		"ceterms:name": {
 			"en": "Peer Review (FREN 3075)"
 		},
 		"ceterms:description": {
 			"en": "Students wrote an essay in French , made comments related to content and grammar on one of their classmate’s essays, and discussed discuss the essay and the comments with their partner in French."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/sdtjxhPFQWmrfJbvlytXKg",
-			"https://api.badgr.io/public/badges/sdtjxhPFQWmrfJbvlytXKg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a"
+			"https://credentialengineregistry.org/resources/ce-c79bae34-3721-402c-8a08-a085e8473bf4"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/sdtjxhPFQWmrfJbvlytXKg"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-47fdaa91-8520-4745-9d32-be09b4db432b",
-		"ceterms:ctid": "ce-47fdaa91-8520-4745-9d32-be09b4db432b",
+		"@id": "https://credentialengineregistry.org/resources/ce-fa0e6f04-378a-4490-938b-ce4b4cf3ecb7",
+		"ceterms:ctid": "ce-fa0e6f04-378a-4490-938b-ce4b4cf3ecb7",
 		"ceterms:name": {
 			"en": "In Class Discussion (FREN 3095)"
 		},
 		"ceterms:description": {
 			"en": "Students selected a French article relevant to their subject area. In groups or pairs, they designed a lesson and activity around this article and presented it to the class. The lead students organized a reading of the article that guided the class through a comprehension questionnaire they created. They collaboratively led a classroom group discussion. Students cooperated with their group members to design the lesson plan, promote a constructive team and class climate, and managed the class discussion by considering various viewpoints and contributions."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA",
-			"https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a"
+			"https://credentialengineregistry.org/resources/ce-c79bae34-3721-402c-8a08-a085e8473bf4"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/3XX4-WCbQVy-9yas3rsbgA"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a",
-		"ceterms:ctid": "ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a",
+		"@id": "https://credentialengineregistry.org/resources/ce-c79bae34-3721-402c-8a08-a085e8473bf4",
+		"ceterms:ctid": "ce-c79bae34-3721-402c-8a08-a085e8473bf4",
 		"ceterms:name": {
 			"en": "French 3070/3075/3095"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445d079450e3bf149c14a9"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554"
+			"https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-dd06c01d-0ddf-4545-a6de-b55a4828f491",
-			"https://credentialengineregistry.org/resources/ce-48d19815-f523-413d-a3ec-00044b6531e9",
-			"https://credentialengineregistry.org/resources/ce-47fdaa91-8520-4745-9d32-be09b4db432b"
+			"https://credentialengineregistry.org/resources/ce-8e678be3-5e24-4b50-9b20-563ed62af14a",
+			"https://credentialengineregistry.org/resources/ce-93b1644d-c517-41b7-b7ab-15d8b6e88799",
+			"https://credentialengineregistry.org/resources/ce-fa0e6f04-378a-4490-938b-ce4b4cf3ecb7"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -501,38 +427,34 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-dd06c01d-0ddf-4545-a6de-b55a4828f491",
-					"https://credentialengineregistry.org/resources/ce-48d19815-f523-413d-a3ec-00044b6531e9",
-					"https://credentialengineregistry.org/resources/ce-47fdaa91-8520-4745-9d32-be09b4db432b"
+					"https://credentialengineregistry.org/resources/ce-8e678be3-5e24-4b50-9b20-563ed62af14a",
+					"https://credentialengineregistry.org/resources/ce-93b1644d-c517-41b7-b7ab-15d8b6e88799",
+					"https://credentialengineregistry.org/resources/ce-fa0e6f04-378a-4490-938b-ce4b4cf3ecb7"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554",
-		"ceterms:ctid": "ce-3877abc3-eb7d-43bd-8c85-e5a2c2a93554",
+		"@id": "https://credentialengineregistry.org/resources/ce-01fca376-87cf-427c-ab86-d901c8a49951",
+		"ceterms:ctid": "ce-01fca376-87cf-427c-ab86-d901c8a49951",
 		"ceterms:name": {
 			"en": "Interpersonal Communication in French"
 		},
 		"ceterms:description": {
 			"en": "Marketable skills for this degree include interpersonal, cognitive, and applied skill areas that are valued by employers and are primary or complementary to the major. The marketable skills goal was designed to help students articulate their skills to employers. UNT's marketable skills were faculty-developed and approved by employers or discipline-specific agencies, e.g., internship providers, chambers of commerce, workforce development boards, and other workforce-related entities."
 		},
-		"meta:mappedFrom": [
-			"5e2f5cdd09183f82c038f0b7",
-			"https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556"
+			"https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/uxYa0c-YQyePDybjDX-Hkw",
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a",
-			"https://credentialengineregistry.org/resources/ce-d5ced82a-f8be-4420-963e-798b0a96e561",
-			"https://credentialengineregistry.org/resources/ce-4991b351-1fed-460d-a597-2bf52ffa2274",
-			"https://credentialengineregistry.org/resources/ce-2bdfd615-a0f8-4579-9c30-b00a170947e5",
-			"https://credentialengineregistry.org/resources/ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a"
+			"https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e",
+			"https://credentialengineregistry.org/resources/ce-a7618808-f7d6-4ea1-8cec-e1c9224b5692",
+			"https://credentialengineregistry.org/resources/ce-06be9c47-33ab-4d50-aff3-b26f270dfb69",
+			"https://credentialengineregistry.org/resources/ce-59137c07-a193-497e-8b03-b05b372e4bba",
+			"https://credentialengineregistry.org/resources/ce-c79bae34-3721-402c-8a08-a085e8473bf4"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -545,34 +467,31 @@
 				},
 				"ceterms:requiredNumber": 4,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-12f10ba3-68c2-4381-9d17-4d1c5a93987a",
-					"https://credentialengineregistry.org/resources/ce-d5ced82a-f8be-4420-963e-798b0a96e561",
-					"https://credentialengineregistry.org/resources/ce-4991b351-1fed-460d-a597-2bf52ffa2274",
-					"https://credentialengineregistry.org/resources/ce-2bdfd615-a0f8-4579-9c30-b00a170947e5",
-					"https://credentialengineregistry.org/resources/ce-f35898c1-2070-41c1-bcdc-1f4e1a2be88a"
+					"https://credentialengineregistry.org/resources/ce-07a6f557-2a71-4c41-b030-501786f0d49e",
+					"https://credentialengineregistry.org/resources/ce-a7618808-f7d6-4ea1-8cec-e1c9224b5692",
+					"https://credentialengineregistry.org/resources/ce-06be9c47-33ab-4d50-aff3-b26f270dfb69",
+					"https://credentialengineregistry.org/resources/ce-59137c07-a193-497e-8b03-b05b372e4bba",
+					"https://credentialengineregistry.org/resources/ce-c79bae34-3721-402c-8a08-a085e8473bf4"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-0700f6d4-fc60-4912-818b-276665ef90e7",
-		"ceterms:ctid": "ce-0700f6d4-fc60-4912-818b-276665ef90e7",
+		"@id": "https://credentialengineregistry.org/resources/ce-922bfbd4-4e09-4444-b639-0418feb13ac2",
+		"ceterms:ctid": "ce-922bfbd4-4e09-4444-b639-0418feb13ac2",
 		"ceterms:name": {
 			"en": "French 2040/2050"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445ea04bba4a94881626d1"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8"
+			"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-			"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5"
+			"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+			"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -585,73 +504,62 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-					"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5"
+					"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+					"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-fea7916a-96e2-4acd-9c8e-c4c8e821d63c",
-		"ceterms:ctid": "ce-fea7916a-96e2-4acd-9c8e-c4c8e821d63c",
+		"@id": "https://credentialengineregistry.org/resources/ce-92caac6c-84f9-44bf-9526-053f0a1016ce",
+		"ceterms:ctid": "ce-92caac6c-84f9-44bf-9526-053f0a1016ce",
 		"ceterms:name": {
 			"en": "Essay on Francophone Society (FREN 3045)"
 		},
 		"ceterms:description": {
 			"en": "Students were asked to write an essay in French (150 words minimum) on an aspect of a Francophone society."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg",
-			"https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-249b6e45-ab43-4807-90e9-ef8c1df93258"
+			"https://credentialengineregistry.org/resources/ce-4e54680d-785d-482c-b34f-5e20451848bb"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/uwN-tVS9SsefKiHjuyNDJg"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-a9730fc8-0f5b-458b-a80a-6fa771197df1",
-		"ceterms:ctid": "ce-a9730fc8-0f5b-458b-a80a-6fa771197df1",
+		"@id": "https://credentialengineregistry.org/resources/ce-cffc156f-e79f-47e1-bf24-7c579d42f6e1",
+		"ceterms:ctid": "ce-cffc156f-e79f-47e1-bf24-7c579d42f6e1",
 		"ceterms:name": {
 			"en": "Essay on French Society (FREN 3040)"
 		},
 		"ceterms:description": {
 			"en": "Students submitted an essay in French (150 words minimum) on an aspect of French society. In order to complete the essay, students studied the topic and related challenges, read a summary and text related to the topic, reviewed a documentary, and engaged in group discussion and activities to better understand the topic."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA",
-			"https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-249b6e45-ab43-4807-90e9-ef8c1df93258"
+			"https://credentialengineregistry.org/resources/ce-4e54680d-785d-482c-b34f-5e20451848bb"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/5pUjL-OMRFe87PRVTLRVvA"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-249b6e45-ab43-4807-90e9-ef8c1df93258",
-		"ceterms:ctid": "ce-249b6e45-ab43-4807-90e9-ef8c1df93258",
+		"@id": "https://credentialengineregistry.org/resources/ce-4e54680d-785d-482c-b34f-5e20451848bb",
+		"ceterms:ctid": "ce-4e54680d-785d-482c-b34f-5e20451848bb",
 		"ceterms:name": {
 			"en": "French 3040/3045"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445ea8607569141935ea09"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8"
+			"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-fea7916a-96e2-4acd-9c8e-c4c8e821d63c",
-			"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-			"https://credentialengineregistry.org/resources/ce-a9730fc8-0f5b-458b-a80a-6fa771197df1",
-			"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+			"https://credentialengineregistry.org/resources/ce-92caac6c-84f9-44bf-9526-053f0a1016ce",
+			"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+			"https://credentialengineregistry.org/resources/ce-cffc156f-e79f-47e1-bf24-7c579d42f6e1",
+			"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -664,73 +572,62 @@
 				},
 				"ceterms:requiredNumber": 2,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-fea7916a-96e2-4acd-9c8e-c4c8e821d63c",
-					"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-					"https://credentialengineregistry.org/resources/ce-a9730fc8-0f5b-458b-a80a-6fa771197df1",
-					"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+					"https://credentialengineregistry.org/resources/ce-92caac6c-84f9-44bf-9526-053f0a1016ce",
+					"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+					"https://credentialengineregistry.org/resources/ce-cffc156f-e79f-47e1-bf24-7c579d42f6e1",
+					"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-		"ceterms:ctid": "ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
+		"@id": "https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+		"ceterms:ctid": "ce-42b1c299-2814-486f-ae86-b5360e1674be",
 		"ceterms:name": {
 			"en": "Reading Comprehension (FREN 3055)"
 		},
 		"ceterms:description": {
 			"en": "Students read authentic French texts and analyzed the various cultural factors that explain the prestige (or lack of thereof) of creators in various fields throughout the centuries. Students established an understanding of similarities and differences in this area by comparing the condition of artists in different centuries."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg",
-			"https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-1435520e-b39e-4f15-be4b-b097c99b613a"
+			"https://credentialengineregistry.org/resources/ce-048b0652-00aa-4d0e-b637-7bf012706e08"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/r9E1kijkQCWOSYIH6KM1mg"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893",
-		"ceterms:ctid": "ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893",
+		"@id": "https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053",
+		"ceterms:ctid": "ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053",
 		"ceterms:name": {
 			"en": "Reading Comprehension (FREN 3050)"
 		},
 		"ceterms:description": {
 			"en": "Students read authentic French texts and learned to analyze the background of a narrative (text/song/film) in order to understand the behavior and choices made by the various characters. The analysis was based on the clues provided by the author and the student’s understanding of the human condition. Students also developed the ability to appreciate the perception of human realities by members of other cultures (various Francophone authors) and sexes."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ",
-			"https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-1435520e-b39e-4f15-be4b-b097c99b613a"
+			"https://credentialengineregistry.org/resources/ce-048b0652-00aa-4d0e-b637-7bf012706e08"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/RNj9qJtIQhKnPFrPre8oyQ"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-1435520e-b39e-4f15-be4b-b097c99b613a",
-		"ceterms:ctid": "ce-1435520e-b39e-4f15-be4b-b097c99b613a",
+		"@id": "https://credentialengineregistry.org/resources/ce-048b0652-00aa-4d0e-b637-7bf012706e08",
+		"ceterms:ctid": "ce-048b0652-00aa-4d0e-b637-7bf012706e08",
 		"ceterms:name": {
 			"en": "French 3050/3055"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445eae65cd9b0c529bc183"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8"
+			"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-			"https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893"
+			"https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+			"https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -743,51 +640,44 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-					"https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893"
+					"https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+					"https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-817d6e91-1813-43ab-82a7-2c27bf3f4ae6",
-		"ceterms:ctid": "ce-817d6e91-1813-43ab-82a7-2c27bf3f4ae6",
+		"@id": "https://credentialengineregistry.org/resources/ce-a33f94ac-c672-44b6-af26-15605ee073b5",
+		"ceterms:ctid": "ce-a33f94ac-c672-44b6-af26-15605ee073b5",
 		"ceterms:name": {
 			"en": "Transcription of Oral Document (FREN 3060)"
 		},
 		"ceterms:description": {
 			"en": "Students transcribed a Francophone or Regional French oral document (primary source) in phonetics using rules studied in class. Students compared their transcription to one in standard French and determined major differences in speech patterns and pronunciation. Students used their critical thinking skills to decide which phonetic rules and symbols to use when comparing both transcriptions. Students also demonstrated advanced listening skills to understand and accurately transcribe the recording."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg",
-			"https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-afc79f83-7f70-474c-8cdb-6baeff814c78"
+			"https://credentialengineregistry.org/resources/ce-987b86e3-ddea-4b10-b664-3133939a34ae"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/l28mgQTpTlCULy5aDrMtRg"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-afc79f83-7f70-474c-8cdb-6baeff814c78",
-		"ceterms:ctid": "ce-afc79f83-7f70-474c-8cdb-6baeff814c78",
+		"@id": "https://credentialengineregistry.org/resources/ce-987b86e3-ddea-4b10-b664-3133939a34ae",
+		"ceterms:ctid": "ce-987b86e3-ddea-4b10-b664-3133939a34ae",
 		"ceterms:name": {
 			"en": "French 3060/3065"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445eb83e1102e9723ac062"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8"
+			"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-			"https://credentialengineregistry.org/resources/ce-817d6e91-1813-43ab-82a7-2c27bf3f4ae6"
+			"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+			"https://credentialengineregistry.org/resources/ce-a33f94ac-c672-44b6-af26-15605ee073b5"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -800,92 +690,77 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-					"https://credentialengineregistry.org/resources/ce-817d6e91-1813-43ab-82a7-2c27bf3f4ae6"
+					"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+					"https://credentialengineregistry.org/resources/ce-a33f94ac-c672-44b6-af26-15605ee073b5"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-93c2f3fd-ef23-45f1-b1e8-46ac4a5ca590",
-		"ceterms:ctid": "ce-93c2f3fd-ef23-45f1-b1e8-46ac4a5ca590",
+		"@id": "https://credentialengineregistry.org/resources/ce-b6ea2f33-7ed2-404c-bd59-1ad1ec5f31bb",
+		"ceterms:ctid": "ce-b6ea2f33-7ed2-404c-bd59-1ad1ec5f31bb",
 		"ceterms:name": {
 			"en": "Essay (FREN 3070)"
 		},
 		"ceterms:description": {
 			"en": "Students wrote an essay in French expressing their own opinion about a literary or contemporary text or topic."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ",
-			"https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-de64bc26-edc0-487f-8454-1f38f0d0ff27"
+			"https://credentialengineregistry.org/resources/ce-37c069d0-3467-4b94-90eb-fca643454f55"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/-Zi7hZbTQYGHDOs2z-PMiQ"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363",
-		"ceterms:ctid": "ce-4ce8c929-c517-49d5-8e50-b84ac71e5363",
+		"@id": "https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d",
+		"ceterms:ctid": "ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d",
 		"ceterms:name": {
 			"en": "Essay (FREN 3075)"
 		},
 		"ceterms:description": {
 			"en": "Students wrote an essay in French that expresses their own opinion about a literary or contemporary topic."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA",
-			"https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-de64bc26-edc0-487f-8454-1f38f0d0ff27"
+			"https://credentialengineregistry.org/resources/ce-37c069d0-3467-4b94-90eb-fca643454f55"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/VheYxGheS2GpZUof1YblIA"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-f237585b-2b61-4fb3-940e-55e8b5d3fc2d",
-		"ceterms:ctid": "ce-f237585b-2b61-4fb3-940e-55e8b5d3fc2d",
+		"@id": "https://credentialengineregistry.org/resources/ce-4ba9fa0f-345c-42da-a50c-f868d5f8e82d",
+		"ceterms:ctid": "ce-4ba9fa0f-345c-42da-a50c-f868d5f8e82d",
 		"ceterms:name": {
 			"en": "Oral Presentation (FREN 3095)"
 		},
 		"ceterms:description": {
 			"en": "Students presented orally in French on a specific aspect of their selected subject area, as approved by the instructor. Students researched and selected relevant information on the topic (showing critical thinking and analytical skills) and compiled the data into a well-organized and well-written PowerPoint presentation that was submitted online. In class, students were asked to present their cultural topic to the other students."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg",
-			"https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-de64bc26-edc0-487f-8454-1f38f0d0ff27"
+			"https://credentialengineregistry.org/resources/ce-37c069d0-3467-4b94-90eb-fca643454f55"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/LRFqT4I3Q623gsFxUiVLyg"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-de64bc26-edc0-487f-8454-1f38f0d0ff27",
-		"ceterms:ctid": "ce-de64bc26-edc0-487f-8454-1f38f0d0ff27",
+		"@id": "https://credentialengineregistry.org/resources/ce-37c069d0-3467-4b94-90eb-fca643454f55",
+		"ceterms:ctid": "ce-37c069d0-3467-4b94-90eb-fca643454f55",
 		"ceterms:name": {
 			"en": "French 3070/3075/3095"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445ec565f6095a0925d046"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8"
+			"https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-93c2f3fd-ef23-45f1-b1e8-46ac4a5ca590",
-			"https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363",
-			"https://credentialengineregistry.org/resources/ce-f237585b-2b61-4fb3-940e-55e8b5d3fc2d"
+			"https://credentialengineregistry.org/resources/ce-b6ea2f33-7ed2-404c-bd59-1ad1ec5f31bb",
+			"https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d",
+			"https://credentialengineregistry.org/resources/ce-4ba9fa0f-345c-42da-a50c-f868d5f8e82d"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -898,38 +773,34 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-93c2f3fd-ef23-45f1-b1e8-46ac4a5ca590",
-					"https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363",
-					"https://credentialengineregistry.org/resources/ce-f237585b-2b61-4fb3-940e-55e8b5d3fc2d"
+					"https://credentialengineregistry.org/resources/ce-b6ea2f33-7ed2-404c-bd59-1ad1ec5f31bb",
+					"https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d",
+					"https://credentialengineregistry.org/resources/ce-4ba9fa0f-345c-42da-a50c-f868d5f8e82d"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-a8a8a520-e352-4dc3-9959-3247095abce8",
-		"ceterms:ctid": "ce-a8a8a520-e352-4dc3-9959-3247095abce8",
+		"@id": "https://credentialengineregistry.org/resources/ce-0bd67cf1-d367-4d5c-af6a-82672b681907",
+		"ceterms:ctid": "ce-0bd67cf1-d367-4d5c-af6a-82672b681907",
 		"ceterms:name": {
 			"en": "Critical Thinking in French"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e3b2ed8dcf3a3bc84ceaec8",
-			"https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556"
+			"https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/8jDdG7w-REGo67vYFGUefg",
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-0700f6d4-fc60-4912-818b-276665ef90e7",
-			"https://credentialengineregistry.org/resources/ce-249b6e45-ab43-4807-90e9-ef8c1df93258",
-			"https://credentialengineregistry.org/resources/ce-1435520e-b39e-4f15-be4b-b097c99b613a",
-			"https://credentialengineregistry.org/resources/ce-afc79f83-7f70-474c-8cdb-6baeff814c78",
-			"https://credentialengineregistry.org/resources/ce-de64bc26-edc0-487f-8454-1f38f0d0ff27"
+			"https://credentialengineregistry.org/resources/ce-922bfbd4-4e09-4444-b639-0418feb13ac2",
+			"https://credentialengineregistry.org/resources/ce-4e54680d-785d-482c-b34f-5e20451848bb",
+			"https://credentialengineregistry.org/resources/ce-048b0652-00aa-4d0e-b637-7bf012706e08",
+			"https://credentialengineregistry.org/resources/ce-987b86e3-ddea-4b10-b664-3133939a34ae",
+			"https://credentialengineregistry.org/resources/ce-37c069d0-3467-4b94-90eb-fca643454f55"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -942,34 +813,31 @@
 				},
 				"ceterms:requiredNumber": 4,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-0700f6d4-fc60-4912-818b-276665ef90e7",
-					"https://credentialengineregistry.org/resources/ce-249b6e45-ab43-4807-90e9-ef8c1df93258",
-					"https://credentialengineregistry.org/resources/ce-1435520e-b39e-4f15-be4b-b097c99b613a",
-					"https://credentialengineregistry.org/resources/ce-afc79f83-7f70-474c-8cdb-6baeff814c78",
-					"https://credentialengineregistry.org/resources/ce-de64bc26-edc0-487f-8454-1f38f0d0ff27"
+					"https://credentialengineregistry.org/resources/ce-922bfbd4-4e09-4444-b639-0418feb13ac2",
+					"https://credentialengineregistry.org/resources/ce-4e54680d-785d-482c-b34f-5e20451848bb",
+					"https://credentialengineregistry.org/resources/ce-048b0652-00aa-4d0e-b637-7bf012706e08",
+					"https://credentialengineregistry.org/resources/ce-987b86e3-ddea-4b10-b664-3133939a34ae",
+					"https://credentialengineregistry.org/resources/ce-37c069d0-3467-4b94-90eb-fca643454f55"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-9fdec6f0-4b16-4327-a3b9-26cc8d2bd47c",
-		"ceterms:ctid": "ce-9fdec6f0-4b16-4327-a3b9-26cc8d2bd47c",
+		"@id": "https://credentialengineregistry.org/resources/ce-28765fee-d26d-4bae-a406-c0a095dfc203",
+		"ceterms:ctid": "ce-28765fee-d26d-4bae-a406-c0a095dfc203",
 		"ceterms:name": {
 			"en": "French 2040/2050"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445fd57f36be80bcfc161b"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049"
+			"https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-			"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5"
+			"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+			"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -982,71 +850,60 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-					"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5"
+					"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+					"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-f9f29410-6b26-4f33-a68f-7e27e4c5aa91",
-		"ceterms:ctid": "ce-f9f29410-6b26-4f33-a68f-7e27e4c5aa91",
+		"@id": "https://credentialengineregistry.org/resources/ce-cb78f2e5-f7a3-472c-bfc3-e4f7873298fb",
+		"ceterms:ctid": "ce-cb78f2e5-f7a3-472c-bfc3-e4f7873298fb",
 		"ceterms:name": {
 			"en": "Essay on Francophone Movie (FREN 3045)"
 		},
 		"ceterms:description": {
 			"en": "Students watched a movie on Francophone culture. They wrote an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes, education, family life etc.), outlining specifications relating to Francophone culture, and (2) to compare with other cultures."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ",
-			"https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-71bf036d-2522-4290-9246-f01f8303e3c0"
+			"https://credentialengineregistry.org/resources/ce-8a14ff77-c1c0-4098-b03c-c2527a012dd0"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/mfmN24lfRTa4x4UWtPvEYQ"
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-a1727a06-ea55-48d0-96ad-cc50d68c55c3",
-		"ceterms:ctid": "ce-a1727a06-ea55-48d0-96ad-cc50d68c55c3",
+		"@id": "https://credentialengineregistry.org/resources/ce-396ee329-759e-44ea-a477-08e85254670a",
+		"ceterms:ctid": "ce-396ee329-759e-44ea-a477-08e85254670a",
 		"ceterms:name": {
 			"en": "Essay on French Movie (FREN 3040)"
 		},
 		"ceterms:description": {
 			"en": "Students watched a movie on French culture. They were asked to write an essay in French (150 words) (1) to discuss the main themes presented in the film (such as stereotypes on regions, the status of civil servants, family life etc.), outlining the specific details relating to French culture, and (2) to compare with the situation in the United States."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g",
-			"https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-71bf036d-2522-4290-9246-f01f8303e3c0"
+			"https://credentialengineregistry.org/resources/ce-8a14ff77-c1c0-4098-b03c-c2527a012dd0"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/LmD6wlc4SQqR9_jtQvIv6g"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-71bf036d-2522-4290-9246-f01f8303e3c0",
-		"ceterms:ctid": "ce-71bf036d-2522-4290-9246-f01f8303e3c0",
+		"@id": "https://credentialengineregistry.org/resources/ce-8a14ff77-c1c0-4098-b03c-c2527a012dd0",
+		"ceterms:ctid": "ce-8a14ff77-c1c0-4098-b03c-c2527a012dd0",
 		"ceterms:name": {
 			"en": "French 3040/3045"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445fe02d7d492ed97ec2ef"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049"
+			"https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-f9f29410-6b26-4f33-a68f-7e27e4c5aa91",
-			"https://credentialengineregistry.org/resources/ce-a1727a06-ea55-48d0-96ad-cc50d68c55c3"
+			"https://credentialengineregistry.org/resources/ce-cb78f2e5-f7a3-472c-bfc3-e4f7873298fb",
+			"https://credentialengineregistry.org/resources/ce-396ee329-759e-44ea-a477-08e85254670a"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1059,52 +916,45 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-f9f29410-6b26-4f33-a68f-7e27e4c5aa91",
-					"https://credentialengineregistry.org/resources/ce-a1727a06-ea55-48d0-96ad-cc50d68c55c3"
+					"https://credentialengineregistry.org/resources/ce-cb78f2e5-f7a3-472c-bfc3-e4f7873298fb",
+					"https://credentialengineregistry.org/resources/ce-396ee329-759e-44ea-a477-08e85254670a"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-32867a30-3506-4bf1-b14f-6f7f250c2f19",
-		"ceterms:ctid": "ce-32867a30-3506-4bf1-b14f-6f7f250c2f19",
+		"@id": "https://credentialengineregistry.org/resources/ce-f4b2251b-5da7-4054-bf30-3f26e205cbdb",
+		"ceterms:ctid": "ce-f4b2251b-5da7-4054-bf30-3f26e205cbdb",
 		"ceterms:name": {
 			"en": "Group Oral Presentation (FREN 3065)"
 		},
 		"ceterms:description": {
 			"en": "In groups (or pairs), students presented on a specific aspect of French or Francophone culture in class. Students were required to research and select relevant information on the topic, to compile the data, and to create a well-organized and well-written presentation (e.g. PowerPoint, Prezi, etc.) in collaboration with the members of their group. In class, students were asked to present their cultural topic to the other students."
 		},
-		"meta:mappedFrom": [
-			"https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w",
-			"https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-5d997cd5-4659-40d1-8e2b-06dd2296a5a9"
+			"https://credentialengineregistry.org/resources/ce-85dd2abd-a399-4757-9abc-497996717a76"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/mlMfNV65RNKMU7zIdIND3w"
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-5d997cd5-4659-40d1-8e2b-06dd2296a5a9",
-		"ceterms:ctid": "ce-5d997cd5-4659-40d1-8e2b-06dd2296a5a9",
+		"@id": "https://credentialengineregistry.org/resources/ce-85dd2abd-a399-4757-9abc-497996717a76",
+		"ceterms:ctid": "ce-85dd2abd-a399-4757-9abc-497996717a76",
 		"ceterms:name": {
 			"en": "French 3060/3065"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445fea22556193b23a959f"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049"
+			"https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-			"https://credentialengineregistry.org/resources/ce-32867a30-3506-4bf1-b14f-6f7f250c2f19",
-			"https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3"
+			"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+			"https://credentialengineregistry.org/resources/ce-f4b2251b-5da7-4054-bf30-3f26e205cbdb",
+			"https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1117,33 +967,30 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-					"https://credentialengineregistry.org/resources/ce-32867a30-3506-4bf1-b14f-6f7f250c2f19",
-					"https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3"
+					"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+					"https://credentialengineregistry.org/resources/ce-f4b2251b-5da7-4054-bf30-3f26e205cbdb",
+					"https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-7cbe14f5-2a20-4e53-86b2-eb2f735988e2",
-		"ceterms:ctid": "ce-7cbe14f5-2a20-4e53-86b2-eb2f735988e2",
+		"@id": "https://credentialengineregistry.org/resources/ce-4fddaa70-3486-4272-b2e9-06a3afe2307c",
+		"ceterms:ctid": "ce-4fddaa70-3486-4272-b2e9-06a3afe2307c",
 		"ceterms:name": {
 			"en": "French 3070/3075/3095"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e445ffaf4beb7312a8870eb"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049"
+			"https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-47fdaa91-8520-4745-9d32-be09b4db432b",
-			"https://credentialengineregistry.org/resources/ce-93c2f3fd-ef23-45f1-b1e8-46ac4a5ca590",
-			"https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363"
+			"https://credentialengineregistry.org/resources/ce-fa0e6f04-378a-4490-938b-ce4b4cf3ecb7",
+			"https://credentialengineregistry.org/resources/ce-b6ea2f33-7ed2-404c-bd59-1ad1ec5f31bb",
+			"https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1156,37 +1003,33 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-47fdaa91-8520-4745-9d32-be09b4db432b",
-					"https://credentialengineregistry.org/resources/ce-93c2f3fd-ef23-45f1-b1e8-46ac4a5ca590",
-					"https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363"
+					"https://credentialengineregistry.org/resources/ce-fa0e6f04-378a-4490-938b-ce4b4cf3ecb7",
+					"https://credentialengineregistry.org/resources/ce-b6ea2f33-7ed2-404c-bd59-1ad1ec5f31bb",
+					"https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-a88851a7-3132-439d-b8ef-c0289fdb3049",
-		"ceterms:ctid": "ce-a88851a7-3132-439d-b8ef-c0289fdb3049",
+		"@id": "https://credentialengineregistry.org/resources/ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274",
+		"ceterms:ctid": "ce-5aff13d6-7ae6-4e6e-b8a6-f2bac0391274",
 		"ceterms:name": {
 			"en": "Collect and Analyze Data in French"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e3b2eea68e431d3a9e184db",
-			"https://api.badgr.io/public/badges/rfiBUwBkSMemag2pazaBtA"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556"
+			"https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/rfiBUwBkSMemag2pazaBtA",
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-9fdec6f0-4b16-4327-a3b9-26cc8d2bd47c",
-			"https://credentialengineregistry.org/resources/ce-71bf036d-2522-4290-9246-f01f8303e3c0",
-			"https://credentialengineregistry.org/resources/ce-5d997cd5-4659-40d1-8e2b-06dd2296a5a9",
-			"https://credentialengineregistry.org/resources/ce-7cbe14f5-2a20-4e53-86b2-eb2f735988e2"
+			"https://credentialengineregistry.org/resources/ce-28765fee-d26d-4bae-a406-c0a095dfc203",
+			"https://credentialengineregistry.org/resources/ce-8a14ff77-c1c0-4098-b03c-c2527a012dd0",
+			"https://credentialengineregistry.org/resources/ce-85dd2abd-a399-4757-9abc-497996717a76",
+			"https://credentialengineregistry.org/resources/ce-4fddaa70-3486-4272-b2e9-06a3afe2307c"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1199,35 +1042,32 @@
 				},
 				"ceterms:requiredNumber": 3,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-9fdec6f0-4b16-4327-a3b9-26cc8d2bd47c",
-					"https://credentialengineregistry.org/resources/ce-71bf036d-2522-4290-9246-f01f8303e3c0",
-					"https://credentialengineregistry.org/resources/ce-5d997cd5-4659-40d1-8e2b-06dd2296a5a9",
-					"https://credentialengineregistry.org/resources/ce-7cbe14f5-2a20-4e53-86b2-eb2f735988e2"
+					"https://credentialengineregistry.org/resources/ce-28765fee-d26d-4bae-a406-c0a095dfc203",
+					"https://credentialengineregistry.org/resources/ce-8a14ff77-c1c0-4098-b03c-c2527a012dd0",
+					"https://credentialengineregistry.org/resources/ce-85dd2abd-a399-4757-9abc-497996717a76",
+					"https://credentialengineregistry.org/resources/ce-4fddaa70-3486-4272-b2e9-06a3afe2307c"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-48413a98-c48c-41c2-a43b-bd8aa284dee8",
-		"ceterms:ctid": "ce-48413a98-c48c-41c2-a43b-bd8aa284dee8",
+		"@id": "https://credentialengineregistry.org/resources/ce-b0017a16-0fd9-495c-9e94-12e1e016405f",
+		"ceterms:ctid": "ce-b0017a16-0fd9-495c-9e94-12e1e016405f",
 		"ceterms:name": {
 			"en": "French 2040/2050"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e4463acf889203e89393565"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375"
+			"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-033353eb-01d2-4a01-8812-15ed23a96fec",
-			"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-			"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-			"https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3"
+			"https://credentialengineregistry.org/resources/ce-ce7dd505-1c7b-40b2-980c-48ed405a3567",
+			"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+			"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+			"https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1240,35 +1080,32 @@
 				},
 				"ceterms:requiredNumber": 2,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-033353eb-01d2-4a01-8812-15ed23a96fec",
-					"https://credentialengineregistry.org/resources/ce-520b924e-b827-4e0d-ad1f-52b4bcf62367",
-					"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-					"https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3"
+					"https://credentialengineregistry.org/resources/ce-ce7dd505-1c7b-40b2-980c-48ed405a3567",
+					"https://credentialengineregistry.org/resources/ce-8c04996f-ca4b-4386-95b9-d073856ee0e9",
+					"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+					"https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-af5116eb-0527-4be1-a3cd-bebdfae91bdb",
-		"ceterms:ctid": "ce-af5116eb-0527-4be1-a3cd-bebdfae91bdb",
+		"@id": "https://credentialengineregistry.org/resources/ce-097d1705-73ac-46e8-88e1-3001d38b2145",
+		"ceterms:ctid": "ce-097d1705-73ac-46e8-88e1-3001d38b2145",
 		"ceterms:name": {
 			"en": "French 3040/3045"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e4463b7b50a5954b61029fd"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375"
+			"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-fea7916a-96e2-4acd-9c8e-c4c8e821d63c",
-			"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-			"https://credentialengineregistry.org/resources/ce-a9730fc8-0f5b-458b-a80a-6fa771197df1",
-			"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+			"https://credentialengineregistry.org/resources/ce-92caac6c-84f9-44bf-9526-053f0a1016ce",
+			"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+			"https://credentialengineregistry.org/resources/ce-cffc156f-e79f-47e1-bf24-7c579d42f6e1",
+			"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1281,35 +1118,32 @@
 				},
 				"ceterms:requiredNumber": 2,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-fea7916a-96e2-4acd-9c8e-c4c8e821d63c",
-					"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-					"https://credentialengineregistry.org/resources/ce-a9730fc8-0f5b-458b-a80a-6fa771197df1",
-					"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+					"https://credentialengineregistry.org/resources/ce-92caac6c-84f9-44bf-9526-053f0a1016ce",
+					"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+					"https://credentialengineregistry.org/resources/ce-cffc156f-e79f-47e1-bf24-7c579d42f6e1",
+					"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-96cfe67d-cff3-47c1-8882-b17f9462f27c",
-		"ceterms:ctid": "ce-96cfe67d-cff3-47c1-8882-b17f9462f27c",
+		"@id": "https://credentialengineregistry.org/resources/ce-e24a6116-a79b-49c3-aff7-a56c4cd31c59",
+		"ceterms:ctid": "ce-e24a6116-a79b-49c3-aff7-a56c4cd31c59",
 		"ceterms:name": {
 			"en": "French 3050/3055"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e4463c6682ef7b7bb0d052e"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375"
+			"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-			"https://credentialengineregistry.org/resources/ce-9ee29dfb-ab3d-47fa-b780-fa4a60e1ad7a",
-			"https://credentialengineregistry.org/resources/ce-76bbd7e4-18bf-4d31-9036-07d8cf0d8fb2",
-			"https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893"
+			"https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+			"https://credentialengineregistry.org/resources/ce-6dbe5ad2-acd2-47d1-8df2-2d624dc27bdd",
+			"https://credentialengineregistry.org/resources/ce-ea3513b6-8dea-4096-aedb-f29710ee816a",
+			"https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1322,33 +1156,30 @@
 				},
 				"ceterms:requiredNumber": 2,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-					"https://credentialengineregistry.org/resources/ce-9ee29dfb-ab3d-47fa-b780-fa4a60e1ad7a",
-					"https://credentialengineregistry.org/resources/ce-76bbd7e4-18bf-4d31-9036-07d8cf0d8fb2",
-					"https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893"
+					"https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+					"https://credentialengineregistry.org/resources/ce-6dbe5ad2-acd2-47d1-8df2-2d624dc27bdd",
+					"https://credentialengineregistry.org/resources/ce-ea3513b6-8dea-4096-aedb-f29710ee816a",
+					"https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-4df35e79-52e2-48b0-bdbe-800e8bb5ed4a",
-		"ceterms:ctid": "ce-4df35e79-52e2-48b0-bdbe-800e8bb5ed4a",
+		"@id": "https://credentialengineregistry.org/resources/ce-4be99cb9-1875-45ed-a204-0792417c48e2",
+		"ceterms:ctid": "ce-4be99cb9-1875-45ed-a204-0792417c48e2",
 		"ceterms:name": {
 			"en": "French 3060/3065"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e4463d324f38c94add6586a"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375"
+			"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-32867a30-3506-4bf1-b14f-6f7f250c2f19",
-			"https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3"
+			"https://credentialengineregistry.org/resources/ce-f4b2251b-5da7-4054-bf30-3f26e205cbdb",
+			"https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1361,32 +1192,29 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-32867a30-3506-4bf1-b14f-6f7f250c2f19",
-					"https://credentialengineregistry.org/resources/ce-b5433a68-e70e-4ffb-8650-1a52975bb7e3"
+					"https://credentialengineregistry.org/resources/ce-f4b2251b-5da7-4054-bf30-3f26e205cbdb",
+					"https://credentialengineregistry.org/resources/ce-9f77b76d-88e1-463b-9ac4-9061dac4a3f5"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-f59e1ebd-452b-491b-a968-cf9a1ce26054",
-		"ceterms:ctid": "ce-f59e1ebd-452b-491b-a968-cf9a1ce26054",
+		"@id": "https://credentialengineregistry.org/resources/ce-abf75e5b-965d-4d02-be22-5f4a2750f9c9",
+		"ceterms:ctid": "ce-abf75e5b-965d-4d02-be22-5f4a2750f9c9",
 		"ceterms:name": {
 			"en": "French 3070/3075/3095"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e4463ddd1c308aed8ca7c8b"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375"
+			"https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-dd06c01d-0ddf-4545-a6de-b55a4828f491",
-			"https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363",
-			"https://credentialengineregistry.org/resources/ce-f237585b-2b61-4fb3-940e-55e8b5d3fc2d"
+			"https://credentialengineregistry.org/resources/ce-8e678be3-5e24-4b50-9b20-563ed62af14a",
+			"https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d",
+			"https://credentialengineregistry.org/resources/ce-4ba9fa0f-345c-42da-a50c-f868d5f8e82d"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1399,38 +1227,34 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-dd06c01d-0ddf-4545-a6de-b55a4828f491",
-					"https://credentialengineregistry.org/resources/ce-4ce8c929-c517-49d5-8e50-b84ac71e5363",
-					"https://credentialengineregistry.org/resources/ce-f237585b-2b61-4fb3-940e-55e8b5d3fc2d"
+					"https://credentialengineregistry.org/resources/ce-8e678be3-5e24-4b50-9b20-563ed62af14a",
+					"https://credentialengineregistry.org/resources/ce-e4e54c09-5db1-4622-bbb6-6b121ca9ed4d",
+					"https://credentialengineregistry.org/resources/ce-4ba9fa0f-345c-42da-a50c-f868d5f8e82d"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-e24c861c-8c70-46c0-9c12-80709beba375",
-		"ceterms:ctid": "ce-e24c861c-8c70-46c0-9c12-80709beba375",
+		"@id": "https://credentialengineregistry.org/resources/ce-a6083c1e-ea62-4373-b369-d6715086f966",
+		"ceterms:ctid": "ce-a6083c1e-ea62-4373-b369-d6715086f966",
 		"ceterms:name": {
 			"en": "Oral and Written Communication in French"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e3b2f0c32e5cf1d29b825ce",
-			"https://api.badgr.io/public/badges/c9JH-RFuRdCF65kFTgjgvg"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556"
+			"https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/c9JH-RFuRdCF65kFTgjgvg",
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-48413a98-c48c-41c2-a43b-bd8aa284dee8",
-			"https://credentialengineregistry.org/resources/ce-af5116eb-0527-4be1-a3cd-bebdfae91bdb",
-			"https://credentialengineregistry.org/resources/ce-96cfe67d-cff3-47c1-8882-b17f9462f27c",
-			"https://credentialengineregistry.org/resources/ce-4df35e79-52e2-48b0-bdbe-800e8bb5ed4a",
-			"https://credentialengineregistry.org/resources/ce-f59e1ebd-452b-491b-a968-cf9a1ce26054"
+			"https://credentialengineregistry.org/resources/ce-b0017a16-0fd9-495c-9e94-12e1e016405f",
+			"https://credentialengineregistry.org/resources/ce-097d1705-73ac-46e8-88e1-3001d38b2145",
+			"https://credentialengineregistry.org/resources/ce-e24a6116-a79b-49c3-aff7-a56c4cd31c59",
+			"https://credentialengineregistry.org/resources/ce-4be99cb9-1875-45ed-a204-0792417c48e2",
+			"https://credentialengineregistry.org/resources/ce-abf75e5b-965d-4d02-be22-5f4a2750f9c9"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1443,34 +1267,31 @@
 				},
 				"ceterms:requiredNumber": 4,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-48413a98-c48c-41c2-a43b-bd8aa284dee8",
-					"https://credentialengineregistry.org/resources/ce-af5116eb-0527-4be1-a3cd-bebdfae91bdb",
-					"https://credentialengineregistry.org/resources/ce-96cfe67d-cff3-47c1-8882-b17f9462f27c",
-					"https://credentialengineregistry.org/resources/ce-4df35e79-52e2-48b0-bdbe-800e8bb5ed4a",
-					"https://credentialengineregistry.org/resources/ce-f59e1ebd-452b-491b-a968-cf9a1ce26054"
+					"https://credentialengineregistry.org/resources/ce-b0017a16-0fd9-495c-9e94-12e1e016405f",
+					"https://credentialengineregistry.org/resources/ce-097d1705-73ac-46e8-88e1-3001d38b2145",
+					"https://credentialengineregistry.org/resources/ce-e24a6116-a79b-49c3-aff7-a56c4cd31c59",
+					"https://credentialengineregistry.org/resources/ce-4be99cb9-1875-45ed-a204-0792417c48e2",
+					"https://credentialengineregistry.org/resources/ce-abf75e5b-965d-4d02-be22-5f4a2750f9c9"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-9dceb81b-4da9-4181-baf4-81ff10cc6b1e",
-		"ceterms:ctid": "ce-9dceb81b-4da9-4181-baf4-81ff10cc6b1e",
+		"@id": "https://credentialengineregistry.org/resources/ce-286203fd-4c85-42a7-a7c6-560001983824",
+		"ceterms:ctid": "ce-286203fd-4c85-42a7-a7c6-560001983824",
 		"ceterms:name": {
 			"en": "French 2040/2050"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e446b2514ff216596a22361"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1"
+			"https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-			"https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3"
+			"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+			"https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1483,33 +1304,30 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-265df2d3-7ade-4e43-a597-12c0caa32ec5",
-					"https://credentialengineregistry.org/resources/ce-cd034c01-034e-4c3c-8063-c89bed37c0d3"
+					"https://credentialengineregistry.org/resources/ce-3c53c132-cdda-4e0a-9c8b-6769f7dcf009",
+					"https://credentialengineregistry.org/resources/ce-73ce2765-0a2a-4083-b5d5-42acb61cf5a1"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-7d08f136-c5f5-40b7-a619-e5bf99976189",
-		"ceterms:ctid": "ce-7d08f136-c5f5-40b7-a619-e5bf99976189",
+		"@id": "https://credentialengineregistry.org/resources/ce-02322bd3-6700-47ec-965d-f6e69af97d27",
+		"ceterms:ctid": "ce-02322bd3-6700-47ec-965d-f6e69af97d27",
 		"ceterms:name": {
 			"en": "French 3040/3045"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e446b4e574938d24b852494"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1"
+			"https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-f9f29410-6b26-4f33-a68f-7e27e4c5aa91",
-			"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-			"https://credentialengineregistry.org/resources/ce-a1727a06-ea55-48d0-96ad-cc50d68c55c3",
-			"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+			"https://credentialengineregistry.org/resources/ce-cb78f2e5-f7a3-472c-bfc3-e4f7873298fb",
+			"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+			"https://credentialengineregistry.org/resources/ce-396ee329-759e-44ea-a477-08e85254670a",
+			"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1522,33 +1340,30 @@
 				},
 				"ceterms:requiredNumber": 2,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-f9f29410-6b26-4f33-a68f-7e27e4c5aa91",
-					"https://credentialengineregistry.org/resources/ce-90e22969-6aae-446a-82e7-0332a5b4f536",
-					"https://credentialengineregistry.org/resources/ce-a1727a06-ea55-48d0-96ad-cc50d68c55c3",
-					"https://credentialengineregistry.org/resources/ce-4d21d4c8-2351-4572-a454-249ce18bcb38"
+					"https://credentialengineregistry.org/resources/ce-cb78f2e5-f7a3-472c-bfc3-e4f7873298fb",
+					"https://credentialengineregistry.org/resources/ce-c64eb6d8-b73b-4c00-a8ea-2250bafd9e7d",
+					"https://credentialengineregistry.org/resources/ce-396ee329-759e-44ea-a477-08e85254670a",
+					"https://credentialengineregistry.org/resources/ce-ba8f0c71-49d3-4063-8bd6-2512acad22f3"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-48137076-c4ef-4400-9f86-c3284ad2ec43",
-		"ceterms:ctid": "ce-48137076-c4ef-4400-9f86-c3284ad2ec43",
+		"@id": "https://credentialengineregistry.org/resources/ce-84067b08-e651-418a-8dd7-8fd5d975022f",
+		"ceterms:ctid": "ce-84067b08-e651-418a-8dd7-8fd5d975022f",
 		"ceterms:name": {
 			"en": "French 3050/3055"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e446b5822d67e5bc4842a6e"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1"
+			"https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-			"https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893"
+			"https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+			"https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1561,31 +1376,28 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-f23d5b40-1016-40bc-a5fb-3bb3f71333bf",
-					"https://credentialengineregistry.org/resources/ce-14ac6d8b-bdd7-499b-a043-ca1ef6bd5893"
+					"https://credentialengineregistry.org/resources/ce-42b1c299-2814-486f-ae86-b5360e1674be",
+					"https://credentialengineregistry.org/resources/ce-86543bb6-9fee-4dcd-a0df-a1863f1f8053"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:BasicComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-65e46d04-7bdf-49fc-98ae-672845712613",
-		"ceterms:ctid": "ce-65e46d04-7bdf-49fc-98ae-672845712613",
+		"@id": "https://credentialengineregistry.org/resources/ce-3afdabb2-52de-43fe-8870-2e2278f56b81",
+		"ceterms:ctid": "ce-3afdabb2-52de-43fe-8870-2e2278f56b81",
 		"ceterms:name": {
 			"en": "French 3060/3065"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e446b5fc60ea51af866b230"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1"
+			"https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40"
 		],
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-			"https://credentialengineregistry.org/resources/ce-817d6e91-1813-43ab-82a7-2c27bf3f4ae6"
+			"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+			"https://credentialengineregistry.org/resources/ce-a33f94ac-c672-44b6-af26-15605ee073b5"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1598,36 +1410,32 @@
 				},
 				"ceterms:requiredNumber": 1,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-3a2439da-b53e-487c-b9ee-8e69560d6d1b",
-					"https://credentialengineregistry.org/resources/ce-817d6e91-1813-43ab-82a7-2c27bf3f4ae6"
+					"https://credentialengineregistry.org/resources/ce-fa743c85-b919-4592-ae01-444f64340302",
+					"https://credentialengineregistry.org/resources/ce-a33f94ac-c672-44b6-af26-15605ee073b5"
 				]
 			}
 		]
 	},
 	{
 		"@type": "ceterms:CredentialComponent",
-		"@id": "https://credentialengineregistry.org/resources/ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1",
-		"ceterms:ctid": "ce-8f54bcff-60fc-41ba-b2b6-1877f710b8b1",
+		"@id": "https://credentialengineregistry.org/resources/ce-38c2d17b-aedf-416a-a273-f841afce1d40",
+		"ceterms:ctid": "ce-38c2d17b-aedf-416a-a273-f841afce1d40",
 		"ceterms:name": {
 			"en": "Multicultural/Diversity Competencies in French"
 		},
 		"ceterms:description": {
 			"en": null
 		},
-		"meta:mappedFrom": [
-			"5e3b2f1ee116cdd01fdf49dc",
-			"https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ"
-		],
 		"ceasn:isChildOf": [
-			"https://credentialengineregistry.org/resources/ce-d1eb4bf8-92de-4b29-922b-e73292eeb556"
+			"https://credentialengineregistry.org/resources/ce-81b9662b-0d1a-4a45-8e89-8f1a8637be0b"
 		],
 		"ceterms:credentialType": "ceterms:DigitalBadge",
 		"ceterms:sourceData": "https://api.badgr.io/public/badges/WUPAox7VTa2nnvyMKsIzkQ",
 		"ceasn:hasChild": [
-			"https://credentialengineregistry.org/resources/ce-9dceb81b-4da9-4181-baf4-81ff10cc6b1e",
-			"https://credentialengineregistry.org/resources/ce-7d08f136-c5f5-40b7-a619-e5bf99976189",
-			"https://credentialengineregistry.org/resources/ce-48137076-c4ef-4400-9f86-c3284ad2ec43",
-			"https://credentialengineregistry.org/resources/ce-65e46d04-7bdf-49fc-98ae-672845712613"
+			"https://credentialengineregistry.org/resources/ce-286203fd-4c85-42a7-a7c6-560001983824",
+			"https://credentialengineregistry.org/resources/ce-02322bd3-6700-47ec-965d-f6e69af97d27",
+			"https://credentialengineregistry.org/resources/ce-84067b08-e651-418a-8dd7-8fd5d975022f",
+			"https://credentialengineregistry.org/resources/ce-3afdabb2-52de-43fe-8870-2e2278f56b81"
 		],
 		"ceterms:hasCondition": [
 			{
@@ -1640,10 +1448,10 @@
 				},
 				"ceterms:requiredNumber": 3,
 				"ceterms:targetComponent": [
-					"https://credentialengineregistry.org/resources/ce-9dceb81b-4da9-4181-baf4-81ff10cc6b1e",
-					"https://credentialengineregistry.org/resources/ce-7d08f136-c5f5-40b7-a619-e5bf99976189",
-					"https://credentialengineregistry.org/resources/ce-48137076-c4ef-4400-9f86-c3284ad2ec43",
-					"https://credentialengineregistry.org/resources/ce-65e46d04-7bdf-49fc-98ae-672845712613"
+					"https://credentialengineregistry.org/resources/ce-286203fd-4c85-42a7-a7c6-560001983824",
+					"https://credentialengineregistry.org/resources/ce-02322bd3-6700-47ec-965d-f6e69af97d27",
+					"https://credentialengineregistry.org/resources/ce-84067b08-e651-418a-8dd7-8fd5d975022f",
+					"https://credentialengineregistry.org/resources/ce-3afdabb2-52de-43fe-8870-2e2278f56b81"
 				]
 			}
 		]
