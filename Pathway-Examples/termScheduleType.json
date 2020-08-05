@@ -1,5 +1,5 @@
 {
-	"@context": "http://credreg.net/ctdlasn/schema/context/json",
+	"@context": ["http://credreg.net/ctdlasn/schema/context/json", "http://credreg.net/ctdl/schema/context/json" ],
 	"@graph": [
 		{
 			"@type": ["skos:ConceptScheme", "asn:ProgressionModel"],
@@ -47,7 +47,6 @@
 			"skos:definition": {
 				"en-US": "Second semester term of a program of study for a two year program."
 			},
-			"skos:notation": "2",
 			"ceterms:precedes": "https://credentialengineregistry.org/resources/b3a736ef-1947-4caa-8cb8-216a36af3bc1",
 			"skos:inScheme": [
 				"https://credentialengineregistry.org/resources/be9dd340-556c-4e2a-bfb7-09833eac6bc0"
@@ -65,7 +64,6 @@
 			"skos:definition": {
 				"en-US": "Third semester term of a program of study for a two year program."
 			},
-			"skos:notation": "3",
 			"ceterms:precedes": "https://credentialengineregistry.org/resources/46c88850-7b81-4270-9f40-c3bb27617682",
 			"skos:inScheme": [
 				"https://credentialengineregistry.org/resources/be9dd340-556c-4e2a-bfb7-09833eac6bc0"
@@ -83,7 +81,6 @@
 			"skos:definition": {
 				"en-US": "Fourth semester term of a program of study for a two year program."
 			},
-			"skos:notation": "4",
 			"skos:inScheme": [
 				"https://credentialengineregistry.org/resources/be9dd340-556c-4e2a-bfb7-09833eac6bc0"
 			],
