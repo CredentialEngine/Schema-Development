@@ -1,0 +1,189 @@
+{
+	"@context": ["http://credreg.net/ctdlasn/schema/context/json", "http://credreg.net/ctdl/schema/context/json" ],
+    "@graph": [
+    {
+        "@id": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
+        "@type": "asn:ProgressionModel",
+        "dcterms:title": {"en-US": "IT Networking Specialist Progression Model (CompTIA)"},
+        "dcterms:description": {"en-US": "The CompTIA Progression Model provides jobs and competencies for Beginner, Intermediate and Advanced experience levels in the IT Networking Specialist career pathway."},
+        "dcterms:creator": {"en-US": "CompTIA"},
+        "dcterms:created": "2020-04-14",
+        "skos:hasTopConcept": [
+            "https://credentialengineregistry.org/resources/c8b24e1c-be0a-4139-82df-ff534b801b01",
+            "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+            "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e"
+        ]
+    },
+    {
+        "@id": "https://credentialengineregistry.org/resources/c8b24e1c-be0a-4139-82df-ff534b801b01",
+        "@type": ["skos:Concept", "asn:ProgressionLevel"],
+        "skos:inScheme": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
+        "skos:prefLabel": {"en-US": "Beginner"},
+        "ceterms:precedes": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+        "ceterms:occupationType": [
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "IT Specialist",
+                "url": "https://www.onetonline.org/find/quick?s=IT+specialist" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Network Support Technician",
+                "url": "https://www.onetonline.org/find/quick?s=IT+specialist" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Jr. System Administrator",
+                "url": "https://www.onetonline.org/find/quick?s=Junior+System+Administrator" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            }
+        ],
+        "schema:skills": [
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Make data easily accessible to those who need it"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Connect devices to the network and ensure they function properly and securely"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Ensure a secure transfer of data over internal and external networks"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Back up network data"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Evaluate and optimize network performance"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Document network support activities"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Document network support activities"
+            }
+        ]
+    }, 
+    {
+        "@id": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+        "@type": "asn:ProgressionLevel",
+        "skos:inScheme": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
+        "skos:prefLabel": {"en-US": "Intermediate"},
+        "ceterms:precedes": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
+        "ceterms:occupationType": [
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "System/s Administrator",
+                "url": "https://www.onetonline.org/find/quick?s=System%2Fs+Administrator" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Network Engineer",
+                "url": "https://www.onetonline.org/find/quick?s=Network+Engineer" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Network Administrator",
+                "url": "https://www.onetonline.org/find/quick?s=Network+Administrator" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            }
+        ],
+        "schema:skills": [
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Configure security settings to ensure the right people can get in and the wrong ones cannot"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Analyze and report security breaches or attempted breaches"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Troubleshoot the network to identify connectivity issues using diagnostic tools"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Configure WAN or LAN routers or related equipment"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Document network support activities"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Provide end-user support"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Manage and train beginner networking professionals"
+            }
+        ]
+    },
+    {
+        "@id": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
+        "@type": "asn:ProgressionLevel",
+        "skos:inScheme": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
+        "skos:prefLabel": {"en-US": "Advanced"},
+        "ceterms:precedes": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
+        "ceterms:occupationType": [
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Systems Engineer",
+                "url": "https://www.onetonline.org/find/quick?s=Systems+Engineer" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Solution Architect",
+                "url": "https://www.onetonline.org/find/quick?s=Solution+Architect" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Systems Architect",
+                "url": "https://www.onetonline.org/find/quick?s=Systems+Architect" ,
+                "inDefinedTermSet": "https://www.onetonline.org/"
+            }
+        ],
+        "schema:skills": [
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Design, deploy, manage and troubleshoot networks"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Analyze network traffic and predict growth to determine future needs"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Present plans to leadership"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Understand cybersecurity and how it affects networks"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Stay up-to-date on the latest technologies to determine the best options for the organization"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Provide end-user support"
+            },
+            {
+                "@type": "schema:DefinedTerm",
+                "name": "Manage and train team"
+            }
+        ]
+    }
+  ]
+}
