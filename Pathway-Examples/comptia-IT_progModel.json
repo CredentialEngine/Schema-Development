@@ -1,9 +1,9 @@
 {
-	"@context": ["http://credreg.net/ctdlasn/schema/context/json", "http://credreg.net/ctdl/schema/context/json" ],
+	"@context": ["http://credreg.net/ctdlasn/schema/context/json", "http://credreg.net/ctdl/schema/context/json"],
     "@graph": [
     {
         "@id": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
-        "@type": "asn:ProgressionModel",
+        "@type": ["asn:ProgressionModel", "skos:ConceptScheme" ],
         "dcterms:title": {"en-US": "IT Networking Specialist Progression Model (CompTIA)"},
         "dcterms:description": {"en-US": "The CompTIA Progression Model provides jobs and competencies for Beginner, Intermediate and Advanced experience levels in the IT Networking Specialist career pathway."},
         "dcterms:creator": {"en-US": "CompTIA"},
@@ -73,7 +73,7 @@
     }, 
     {
         "@id": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
-        "@type": "asn:ProgressionLevel",
+        "@type": ["skos:Concept", "asn:ProgressionLevel"],
         "skos:inScheme": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
         "skos:prefLabel": {"en-US": "Intermediate"},
         "ceterms:precedes": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
@@ -130,7 +130,7 @@
     },
     {
         "@id": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
-        "@type": "asn:ProgressionLevel",
+        "@type": ["skos:Concept", "asn:ProgressionLevel"],
         "skos:inScheme": "https://credentialengineregistry.org/resources/cb87723a-b872-4fb5-b0e7-b25ce2ad5029",
         "skos:prefLabel": {"en-US": "Advanced"},
         "ceterms:precedes": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
