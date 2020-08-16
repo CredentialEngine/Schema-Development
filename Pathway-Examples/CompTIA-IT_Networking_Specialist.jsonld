@@ -1,0 +1,158 @@
+  
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@id": "https://credentialengineregistry.org/graph/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f",
+    "@graph": [
+        {
+            "@id": "https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f",
+            "@type": "ceterms:Pathway",
+            "ceterms:ctid": "ce-cc62e516-f95d-4306-a11a-c0ecc39d835f",
+            "ceterms:name":
+            {
+                "en-US": "IT Networking Specialist Pathway"
+            },
+            "ceterms:ownedBy": "https://credentialengineregistry.org/resources/ce-186fbc60-47e3-4616-b160-72cac9e78f54",
+            "ceterms:description":
+            {
+                "en-US": "IT Networking Specialist analyze, troubleshoot and evaluate computer network problems. More advanced IT pros may be responsible for building and designing communication networks as well. They play an important role in maintaining an organization’s network and keeping them safe and secure through both hardware configuration and end-user training. Network specialists and administrators are responsible for day-to-day operations and network architects and engineers design and build local area networks (LANs), wide area networks (WANs), and Intranets. Depending on the size of the company, these roles may be combined."
+            },
+            "ceterms:subjectWebpage": "https://www.comptia.org/content/it-careers-path-roadmap/it-networking-specialist",
+            "ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-ca103e61-73f1-4179-a870-4d7667d3ba0f"
+        },
+        {
+            "@id": "https://credentialengineregistry.org/resources/ce-ca103e61-73f1-4179-a870-4d7667d3ba0f",
+            "@type": "ceterms:BasicComponent",
+            "ceterms:componentCategory": "Career Path",
+            "ceterms:ctid": "ce-ca103e61-73f1-4179-a870-4d7667d3ba0f",
+            "ceterms:name":
+            {
+                "en-US": "IT Networking Specialist"
+            },
+            "ceterms:description":
+            {
+                "en-US": "IT Networking Specialist analyze, troubleshoot and evaluate computer network problems. More advanced IT pros may be responsible for building and designing communication networks as well. They play an important role in maintaining an organization’s network and keeping them safe and secure through both hardware configuration and end-user training. Network specialists and administrators are responsible for day-to-day operations and network architects and engineers design and build local area networks (LANs), wide area networks (WANs), and Intranets. Depending on the size of the company, these roles may be combined."
+            },
+  
+            
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/b040010e-06b4-4d2f-8e16-7fcf3408ebf7",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:subjectWebpage": "https://www.comptia.org/content/it-careers-path-roadmap/it-networking-specialist"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-b040010e-06b4-4d2f-8e16-7fcf3408ebf7",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-b040010e-06b4-4d2f-8e16-7fcf3408ebf7",
+            "ceterms:name":
+            {
+                "en-US": "CompTIA A+"
+            },
+            "ceterms:description":
+            {
+                "en-US": "A+ is the starting point for a career in IT. The performance-based exams certify foundational IT skills across a variety of devices and operating systems."
+            },
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c8b24e1c-be0a-4139-82df-ff534b801b01",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "https://credentialengineregistry.org/graph/ce-3877cdec-09b6-45df-814f-ede85c023858",
+            "ceterms:subjectWebpage": "https://certification.comptia.org/certifications/a"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-10e06c1d-00a9-45a4-93e5-ee777f3fe8e2",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-10e06c1d-00a9-45a4-93e5-ee777f3fe8e2",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-7a3efae8-e32d-4203-b923-8c02340bf6b8",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-7a3efae8-e32d-4203-b923-8c02340bf6b8",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-@@@",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-@@@",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-@@@",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-@@@",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-@@@",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-@@@",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-@@@",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-@@@",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        },
+        {
+            "@id": "https://sandbox.credentialengineregistry.org/resources/ce-@@@",
+            "@type": "ceterms:Certification",
+            "ceterms:ctid": "ce-@@@",
+            "ceterms:name":
+            {
+                "en-US": "@@@"
+            },
+            "asn:hasProgressionLevel": "@@@",
+            "ceasn:hasChild": "https://sandbox.credentialengineregistry.org/resources/@@@",
+            "ceasn:isPartOf": ["https://credentialengineregistry.org/resources/ce-cc62e516-f95d-4306-a11a-c0ecc39d835f"],
+            "ceterms:sourceData": "@@@",
+            "ceterms:subjectWebpage": "@@@"
+        }
+    ]
+}
