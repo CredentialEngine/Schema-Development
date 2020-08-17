@@ -6,7 +6,7 @@
 	"EndDate": "2000-10-31",
 	"TransferValue": [
 		{
-			"Value": 2,
+			"Value": 2.0,
 			"UnitText": {
 				"TargetNode": "creditUnit:DegreeCredit"
 			},
