@@ -1,0 +1,71 @@
+{
+	"CTID": "ce-ba971485-e4e6-41a7-bf6d-75b4b98be698",
+	"Name": "Packet Switched Networks",
+	"Identifier": [
+		{
+			"ACE Course Number": "0015"
+		}
+	],
+	"TransferValue": [
+		{
+			"Value": 2.0,
+			"UnitText": {
+				"TargetNode": "creditUnit:DegreeCredit"
+			},
+			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in electrical engineering, data communications and networking, telecommunications, or management information systems (11/90)."
+		}
+	],
+	"LifeCycleStatusType": {
+		"TargetNode": "lifeCycle:Active"
+	},
+	"TransferValueFrom": [
+		{
+			"Type": "ceterms:LearningOpportunityProfile",
+			"Name": "Packet Switched Networks",
+			"CodedNotation": "A330",
+			"StartDate": "1987-5-1",
+			"EndDate": "2000-10-31",
+			"Description": "Understanding of terminology and issues and their application in functioning packet switched networks.",
+			"Subject": [
+				"packet switching overview",
+				"evolution of packet switching and public networks",
+				"physical level protocols",
+				"link level protocols",
+				"packet level protocols",
+				"network services",
+				"asynchronous connections",
+				"BISYNC connections",
+				"SNA SDLC connections",
+				"packet switched networks"
+			],
+			"LearningMethodDescription": "Methods of instruction include lecture, discussion, laboratory exercises, videotapes, and a final examination.",
+			"Teaches": [
+				{
+					"TargetNodeDescription": "Upon successful completion of this course, the student will be able to describe packet technology; and discuss the history of public packet networks--their practical implementation and management issues related to implementation."
+				}
+			],
+			"OwnedBy": [
+				{
+					"Type": "ceterms:CredentialOrganization",
+					"Name": "Ameritech"
+				}
+			],
+			"EstimatedDuration": [
+				{
+					"Description": "Total Hours",
+					"ExactDuration": "PT40H"
+				},
+				{
+					"Description": "Overall Length",
+					"ExactDuration": "P4D"
+				}
+			],
+			"AvailableAt": [
+				{
+					"AddressLocality": "Waukesha",
+					"AddressRegion": "WI"
+				}
+			]
+		}
+	]
+}
