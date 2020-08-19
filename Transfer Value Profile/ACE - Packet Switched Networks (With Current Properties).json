@@ -70,7 +70,8 @@
 			"AvailableAt": [
 				{
 					"AddressLocality": "Waukesha",
-					"AddressRegion": "WI"
+					"AddressRegion": "WI",
+					"AddressCountry": "United States"
 				}
 			]
 		}
