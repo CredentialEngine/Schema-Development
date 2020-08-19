@@ -56,11 +56,15 @@
 			"EstimatedDuration": [
 				{
 					"Description": "Total Hours",
-					"Hours": 40
+					"ExactDuration": {
+						"Hours": "40"
+					}
 				},
 				{
 					"Description": "Overall Length",
-					"Days": 4
+					"ExactDuration": {
+						"Days": "4"
+					}
 				}
 			],
 			"AvailableAt": [
