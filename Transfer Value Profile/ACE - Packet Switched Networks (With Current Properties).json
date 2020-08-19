@@ -4,6 +4,11 @@
 	"CodedNotation": "0015",
 	"StartDate": "1987-5-1",
 	"EndDate": "2000-10-31",
+	"OwnedBy": [
+		{
+			"CTID": "ce-96938154-dcb4-ea11-a812-000d3a579ca8" 
+		}
+	],
 	"TransferValue": [
 		{
 			"Value": 2.0,
