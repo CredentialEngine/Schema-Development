@@ -49,11 +49,11 @@
 			"EstimatedDuration": [
 				{
 					"Description": "Total Hours",
-					"ExactDuration": "PT40H"
+					"Hours": 40
 				},
 				{
 					"Description": "Overall Length",
-					"ExactDuration": "P4D"
+					Days: 4
 				}
 			],
 			"AvailableAt": [
