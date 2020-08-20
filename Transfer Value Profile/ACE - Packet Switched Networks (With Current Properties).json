@@ -68,7 +68,14 @@
 				{
 					"Type": "ceterms:CredentialOrganization",
 					"Name": "Ameritech",
-					"SubjectWebpage": "https://www.ameritech.edu/"
+					"SubjectWebpage": "https://www.ameritech.edu/",
+					"Address": [
+						{
+							"AddressLocality": "Waukesha",
+							"AddressRegion": "WI",
+							"AddressCountry": "United States"
+						}
+					]
 				}
 			],
 			"EstimatedDuration": [
@@ -83,13 +90,6 @@
 					"ExactDuration": {
 						"Days": "4"
 					}
-				}
-			],
-			"AvailableAt": [
-				{
-					"AddressLocality": "Waukesha",
-					"AddressRegion": "WI",
-					"AddressCountry": "United States"
 				}
 			]
 		}
