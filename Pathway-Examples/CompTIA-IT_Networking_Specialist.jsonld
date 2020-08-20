@@ -19,7 +19,6 @@
             "ceterms:subjectWebpage": "https://www.comptia.org/content/it-careers-path-roadmap/it-networking-specialist",
             "ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-1369d357-ac4f-49f9-8af2-c47376278896"
         },
-        ,      
         {
             "@id": "https://credentialengineregistry.org/resources/ce-ca103e61-73f1-4179-a870-4d7667d3ba0f",
             "@type": "ceterms:BasicComponent",
