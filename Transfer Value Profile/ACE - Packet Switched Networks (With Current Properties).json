@@ -1,6 +1,7 @@
 {
 	"CTID": "ce-ba971485-e4e6-41a7-bf6d-75b4b98be698",
 	"Name": "Packet Switched Networks",
+	"Description": "Understanding of terminology and issues and their application in functioning packet switched networks.",
 	"CodedNotation": "AMER-0015",
 	"StartDate": "1987-5-1",
 	"EndDate": "2000-10-31",
@@ -13,9 +14,7 @@
 	"TransferValue": [
 		{
 			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
+			"UnitText": "creditUnit:DegreeCredit",
 			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in electrical engineering, data communications and networking, telecommunications, or management information systems (11/90)."
 		}
 	],
