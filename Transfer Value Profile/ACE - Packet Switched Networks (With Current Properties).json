@@ -16,28 +16,7 @@
 			"UnitText": {
 				"TargetNode": "creditUnit:DegreeCredit"
 			},
-			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in electrical engineering."
-		},		
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in data communications and networking."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in telecommunications."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in management information systems."
+			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in electrical engineering, data communications and networking, telecommunications, or management information systems (11/90)."
 		}
 	],
 	"TransferValueFrom": [
@@ -80,16 +59,7 @@
 			],
 			"EstimatedDuration": [
 				{
-					"Description": "Total Hours",
-					"ExactDuration": {
-						"Hours": "40"
-					}
-				},
-				{
-					"Description": "Overall Length",
-					"ExactDuration": {
-						"Days": "4"
-					}
+					"Description": "40 hours (5 days)"
 				}
 			]
 		}
