@@ -2,15 +2,12 @@
 	"CTID": "ce-aefedc0c-00ad-4478-8833-243687890ff8",
 	"Name": "General Examination",
 	"CodedNotation": "PAMA-0001",
-	"StartDate": "1989-8-1",
-	"EndDate": "2011-9-30",
 	"SubjectWebpage": "https://www2.acenet.edu/credit/?fuseaction=transcriptsPublic.getCourseSearchResults",
 	"OwnedBy": [
 		{
 			"CTID": "ce-96938154-dcb4-ea11-a812-000d3a579ca8" 
 		}
 	],
-	"Description": "NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)",
 	"Corequisite": [
 		{
 			"CTID": "ce-cea7a143-d099-493d-9347-48a18949cc82"
@@ -21,81 +18,11 @@
 	],
 	"TransferValue": [
 		{
-			"Value": 2.0,
+			"Value": 14.0,
 			"UnitText": {
 				"TargetNode": "creditUnit:DegreeCredit"
 			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in basic electricity."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in aircraft drawings."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in weight and balance."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in fluid and fittings."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in materials and processes."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in ground operations."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in cleaning and corrosion."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in mathematics."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in maintenance forms and records."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in basic physics."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in mechanic privileges and limitations."
+			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in basic electricity; 1 semester hour in aircraft drawings; 1 semester hour in weight and balance; 1 semester hour in fluid and fittings;, 2 semester hours in materials and processes; 1 semester hour in ground operations; 1 semester hour in cleaning and corrosion; 2 semester hours in mathematics; 1 semester hour in maintenance forms and records; 1 semester hour in basic physics; 1 semester hour in mechanic privileges and limitations. NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)."
 		}
 	],
 	"TransferValueFrom": [
@@ -127,6 +54,14 @@
 					"Name": "Federal Aviation Administration",
 					"SubjectWebpage": "https://www.faa.gov/"
 				}
+			],
+			"Corequisite": [
+				{
+					"CTID": "ce-cea7a143-d099-493d-9347-48a18949cc82"
+				},
+				{
+					"CTID": "ce-091f69a5-7407-4007-91a0-db91db0230f0"
+				}
 			]
 		}
 	]
@@ -136,15 +71,12 @@
 	"CTID": "ce-cea7a143-d099-493d-9347-48a18949cc82",
 	"Name": "Powerplant Examination",
 	"CodedNotation": "PAMA-0002",
-	"StartDate": "1989-8-1",
-	"EndDate": "2011-9-30",
 	"SubjectWebpage": "https://www2.acenet.edu/credit/?fuseaction=transcriptsPublic.getCourseSearchResults",
 	"OwnedBy": [
 		{
 			"CTID": "ce-96938154-dcb4-ea11-a812-000d3a579ca8" 
 		}
 	],
-	"Description": "NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)",
 	"Corequisite": [
 		{
 			"CTID": "ce-aefedc0c-00ad-4478-8833-243687890ff8"
@@ -155,116 +87,11 @@
 	],
 	"TransferValue": [
 		{
-			"Value": 3.0,
+			"Value": 25.0,
 			"UnitText": {
 				"TargetNode": "creditUnit:DegreeCredit"
 			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hours in reciprocating engines."
-		},
-		{
-			"Value": 3.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hour in turbine engines."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in engine inspection."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in engine instrumentation systems."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in engine fire protection systems."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in engine electrical systems."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in lubrication systems."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in ignition and starting systems."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in fuel metering systems."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in engine fuel systems."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hour in induction and engine airflow systems."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in engine cooling systems."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in engine exhaust and reverser systems."
-		},
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in propellers"
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in unducted fans."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in auxiliary power units."
+			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hours in reciprocating engines; 3 semester hours in turbine engines; 1 semester hour in engine inspection; 1 semester hour in engine instrumentation systems; 1 semester hour in engine fire protection systems; 2 semester hours in engine electrical systems; 1 semester hour in lubrication systems; 2 semester hours in ignition and starting systems; 1 semester hour in fuel metering systems; 1 semester hour in engine fuel systems;, 2 semester hours in induction and engine airflow systems; 1 semester hour in engine cooling systems; 2 semester hours in engine exhaust and reverser systems; 2 semester hours in propellers; 1 semester hour in unducted fans; 1 semester hour in auxiliary power units. NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)."
 		}
 	],
 	"TransferValueFrom": [
@@ -299,6 +126,14 @@
 					"Name": "Federal Aviation Administration",
 					"SubjectWebpage": "https://www.faa.gov/"
 				}
+			],
+			"Corequisite": [
+				{
+					"CTID": "ce-aefedc0c-00ad-4478-8833-243687890ff8"
+				},
+				{
+					"CTID": "ce-091f69a5-7407-4007-91a0-db91db0230f0"
+				}
 			]
 		}
 	]
@@ -309,15 +144,12 @@
 	"CTID": "ce-091f69a5-7407-4007-91a0-db91db0230f0",
 	"Name": "Airframe Examination",
 	"CodedNotation": "PAMA-0003",
-	"StartDate": "1989-8-1",
-	"EndDate": "2011-9-30",
 	"SubjectWebpage": "https://www2.acenet.edu/credit/?fuseaction=transcriptsPublic.getCourseSearchResults",
 	"OwnedBy": [
 		{
 			"CTID": "ce-96938154-dcb4-ea11-a812-000d3a579ca8" 
 		}
 	],
-	"Description": "NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)",
 	"Corequisite": [
 		{
 			"CTID": "ce-aefedc0c-00ad-4478-8833-243687890ff8"
@@ -328,121 +160,13 @@
 	],
 	"TransferValue": [
 		{
-			"Value": 1.0,
+			"Value": 28.0,
 			"UnitText": {
 				"TargetNode": "creditUnit:DegreeCredit"
 			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in wood structures."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in aircraft covering."
-		},
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in aircraft finishes."
-		},
-		{
-			"Value": 3.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hours in sheet metal and non-Metallic structures."
-		},
-		{
-			"Value": 3.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hours in welding."
-		},	
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in assembly and rigging."
-		},	
-		{
-			"Value": 3.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hours in aircraft inspection."
-		},	
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in aircraft landing gear systems."
-		},	
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in hydraulic and pneumatic power systems."
-		},	
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in cabin atmosphere control systems."
-		},	
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in aircraft instrument systems."
-		},	
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in communication and navigation systems."
-		},	
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in aircraft fuel systems."
-		},	
-		{
-			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in position and warning systems."
-		},	
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in ice and rain control systems."
-		},	
-		{
-			"Value": 1.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
-			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hours in fire protection."
+			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in wood structures, 1 semester hour in aircraft covering, 1 semester hour in aircraft finishes, 3 semester hours in sheet metal and non-Metallic structures, 3 semester hours in welding, 2 semester hours in assembly and rigging, 3 semester hours in aircraft inspection, 2 semester hours in aircraft landing gear systems, 1 semester hour in hydraulic and pneumatic power systems, 2 semester hours in cabin atmosphere control systems, 2 semester hours in aircraft instrument systems, 1 semester hour in communication and navigation systems, 2 semester hours in aircraft fuel systems, 2 semester hours in position and warning systems, 1 semester hour in ice and rain control systems, 1 semester hour in fire protection. NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)."
 		}
 	],
-	"LifeCycleStatusType": {
-		"TargetNode": "lifeCycle:Active"
-	},
 	"TransferValueFrom": [
 		{
 			"Type": "ceterms:AssessmentProfile",
@@ -473,6 +197,14 @@
 					"Type": "ceterms:CredentialOrganization",
 					"Name": "Federal Aviation Administration",
 					"SubjectWebpage": "https://www.faa.gov/"
+				}
+			],
+			"Corequisite": [
+				{
+					"CTID": "ce-aefedc0c-00ad-4478-8833-243687890ff8"
+				},
+				{
+					"CTID": "ce-cea7a143-d099-493d-9347-48a18949cc82"
 				}
 			]
 		}
