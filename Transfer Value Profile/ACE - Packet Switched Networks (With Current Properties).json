@@ -49,9 +49,9 @@
 					"SubjectWebpage": "https://www.ameritech.edu/",
 					"Address": [
 						{
-							"AddressLocality": "Waukesha",
-							"AddressRegion": "WI",
-							"AddressCountry": "United States"
+							"City": "Waukesha",
+							"Region": "WI",
+							"Country": "United States"
 						}
 					]
 				}
