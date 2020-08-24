@@ -37,6 +37,17 @@
 				"packet switched networks"
 			],
 			"LearningMethodDescription": "Methods of instruction include lecture, discussion, laboratory exercises, videotapes, and a final examination.",
+			"LearningMethodType": [
+				{
+					"TargetNode": "learnMethod:Lecture"
+				},
+				{
+					"TargetNode": "learnMethod:Seminar"
+				},
+				{
+					"TargetNode": "learnMethod:Laboratory"
+				}
+			],
 			"Teaches": [
 				{
 					"TargetNodeDescription": "Upon successful completion of this course, the student will be able to describe packet technology; and discuss the history of public packet networks--their practical implementation and management issues related to implementation."
