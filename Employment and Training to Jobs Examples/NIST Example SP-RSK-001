@@ -1,0 +1,200 @@
+{
+	"@graph": [
+		{
+			"@id": "_:ConceptScheme_NISTGroupCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "NIST Group Code" }
+		},
+		{
+			"@id": "_:Concept_SP",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Securely Provision" },
+			"skos:notation": "SP",
+			"skos:inScheme": "_:ConceptScheme_NISTGroupCode"
+		},
+		{
+			"@id": "_:Occupation_RSK",
+			"@type": "ceterms:Occupation",
+			"ceterms:name": { "en": "Risk Management" },
+			"ceterms:description": { "en": "Oversees, evaluates, and supports the documentation, validation, assessment, and authorization processes necessary to assure that existing and new information technology (IT) systems meet the organization's cybersecurity and risk requirements. Ensures appropriate treatment of risk, compliance, and assurance from internal and external perspectives." },
+			"ceterms:codedNotation": "RSK",
+			"ceterms:categoryReference": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_SP",
+					"ceterms:targetNodeName": { "en": "Securely Provision" }
+				}
+			],
+			"ceterms:hasWorkRole": [
+				"_:WorkRole_001"
+			]
+		},
+		{
+			"@id": "_:WorkRole_001",
+			"@type": "ceterms:WorkRole",
+			"ceterms:name": { "en": "Authorizing Official/Designating Representative" },
+			"ceterms:description": { "Senior official or executive with the authority to formally assume responsibility for operating an information system at an acceptable level of risk to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation (CNSSI 4009)." },
+			"ceterms:codedNotation": "SP-RSK-001",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:name": { "en": "Office of Personnel Management Code" },
+					"ceterms:description": { "en": "Fed Use" },
+					"ceterms:identifierValueCode": "611"
+				}
+			],
+			"ceterms:hasTask": [
+				"_:Task_T0145",
+				"_:Task_T0221",
+				"_:Task_T0371",
+				"_:Task_T0495"
+			]
+		},
+		{
+			"@id": "_:Task_T0145",
+			"@type": "ceterms:Task",
+			"ceterms:description": { "en": "Manage and approve Accreditation Packages (e.g., ISO/IEC 15026-2)." },
+			"ceterms:codedNotation": "T0145",
+			"ceterms:knowledgeEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0038"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0342"
+				}
+			],
+			"ceterms:skillEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_S0367"
+				}
+			]
+		},
+		{
+			"@id": "_:Task_T0145",
+			"@type": "ceterms:Task",
+			"ceterms:description": { "en": "Review authorization and assurance documents to confirm that the level of risk is within acceptable limits for each software application, system, and network." },
+			"ceterms:codedNotation": "T0221",
+			"ceterms:knowledgeEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0001"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0038"
+				}
+			],
+			"ceterms:skillEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_S0034"
+				}
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_S0367"
+				}
+			]
+		},
+		{
+			"@id": "_:Task_T0145",
+			"@type": "ceterms:Task",
+			"ceterms:description": { "en": "Establish acceptable limits for the software application, network, or system." },
+			"ceterms:codedNotation": "T0371",
+			"ceterms:knowledgeEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0038"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0342"
+				}
+			],
+			"ceterms:skillEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_S0034"
+				}
+			]
+		},
+		{
+			"@id": "_:Task_T0145",
+			"@type": "ceterms:Task",
+			"ceterms:description": { "en": "Manage Accreditation Packages (e.g., ISO/IEC 15026-2)." },
+			"ceterms:codedNotation": "T0495",
+			"ceterms:knowledgeEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0038"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_K0342"
+				}
+			],
+			"ceterms:skillEmbodied": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Competency_S0367"
+				}
+			]
+		},
+		{
+			"@id": "_:Competency_K0001",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Knowledge of computer networking concepts and protocols, and network security methodologies." },
+			"ceasn:codedNotation": "K0001"
+		},
+		{
+			"@id": "_:Competency_K0038",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Knowledge of cybersecurity and privacy principles used to manage risks related to the use, processing, storage, and transmission of information or data." },
+			"ceasn:codedNotation": "K0038"
+		},
+		{
+			"@id": "_:Competency_K0342",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Knowledge of penetration testing principles, tools, and techniques." },
+			"ceasn:codedNotation": "K0342"
+		},
+		{
+			"@id": "_:Competency_S0034",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Skill in discerning the protection needs (i.e., security controls) of information systems and networks." },
+			"ceasn:codedNotation": "S0034"
+		},
+		{
+			"@id": "_:Competency_S0367",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Skill to apply cybersecurity and privacy principles to organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation)." },
+			"ceasn:codedNotation": "S0367"
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
