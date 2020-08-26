@@ -1,0 +1,184 @@
+{
+	"@graph": [
+		{
+			"@id": "_:ConceptScheme_TaskFunctionCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Task Function Code" },
+			"ceasn:definition": { "en": "A code that denotes specific maintenance, operator, or supporting functions necessary to the operation and maintenance of an item." }
+		},
+		{
+			"@id": "_:Concept_TaskFunctionCode_H",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Remove and Replace" },
+			"skos:definition": { "en": "To substitute a serviceable spare part for a malfunctioned, damaged, or worn-out part. This function should only be used when the item represented by the LCN against which the task is being documented is being replaced. Remove and Replace actions will include discrete sequences for fault location, correction of the fault or malfunction by removal of the item and replacing it with a spare, and verification that the fault has been corrected. The fault location and verification may be documented one indenture above the Remove and Re place action." },
+			"skos:notation": "H",
+			"skos:inScheme": "_:ConceptScheme_TaskFunctionCode"
+		},
+		{
+			"@id": "_:ConceptScheme_TaskIntervalCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Task Interval Code" },
+			"ceasn:definition": { "en": "A code that identifies the scheduled or unscheduled timing of the task occurrence." }
+		},
+		{
+			"@id": "_:Concept_TaskIntervalCode_G",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Unscheduled" },
+			"skos:definition": { "en": "Those unpredictable maintenance requirements that had not been previously planned, but require prompt attention to maintain the system in or restore it to operating condition. These tasks may be added to, integrated with, or substituted for previously scheduled work loads." },
+			"skos:notation": "G",
+			"skos:inScheme": "_:ConceptScheme_TaskIntervalCode"
+		},
+		{
+			"@id": "_:ConceptScheme_TaskMaintenanceLevelCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Task Interval Code" },
+			"ceasn:definition": { "en": "Codes that are assigned to indicate the maintenance levels authorized to perform the required maintenance function." }
+		},
+		{
+			"@id": "_:Concept_TaskMaintenanceLevelCode_O",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "TBD" },
+			"skos:notation": "O",
+			"skos:inScheme": "_:ConceptScheme_TaskMaintenanceLevelCode"
+		},
+		{
+			"@id": "_:ConceptScheme_TaskServiceCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Service Designator Code" },
+			"ceasn:definition": { "en": "A single-position code identifying the military service or nonmilitary major governmental agency having jurisdiction over, or executive management responsibility for, the acquisition." }
+		},
+		{
+			"@id": "_:Concept_TaskServiceCode_N",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Navy" },
+			"skos:notation": "N",
+			"skos:inScheme": "_:ConceptScheme_TaskServiceCode"
+		},
+		{
+			"@id": "_:ConceptScheme_TaskOperabilityCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Operability Code" },
+			"ceasn:definition": { "en": "A code used to indicate the operational status and mission readiness of the item during the maintenance task." }
+		},
+		{
+			"@id": "_:Concept_TaskOperabilityCode_G",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Off Equipment Maintenance" },
+			"skos:definition": { "en": "Maintenance task is performed after the item under analysis has been removed from the system." },
+			"skos:notation": "G",
+			"skos:inScheme": "_:ConceptScheme_TaskOperabilityCode"
+		},
+		{
+			"@id": "_:ConceptScheme_TaskSequenceCode",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Task Sequence Code" },
+			"ceasn:definition": { "en": "A two-position code assigned to each task. If the combination of the previous task code fields (task function, task interval, service designator, O/M level, and Operability Code) is unique, the entry will be "AA". If the first five fields are duplicated, within an LCN/ALC combination, the follow-on task sequence codes will be AB through 99 to differentiate the tasks." }
+		},
+		{
+			"@id": "_:Concept_TaskSequenceCode_AA",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Unique Task Sequence" },
+			"skos:definition": { "en": "Indicates that the combination of the task code fields (task function, task interval, service designator, O/M level, and Operability Code) is unique." },
+			"skos:notation": "AA",
+			"skos:inScheme": "_:ConceptScheme_TaskSequenceCode"
+		},
+		{
+			"@id": "_:Task_HGONGAA",
+			"@type": "ceterms:Task",
+			"ceterms:description": "R&R CONVERTER CATALYST",
+			"ceterms:codedNotation": "HGONGAA",
+			"ceterms:categoryReference": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_TaskFunctionCode_H"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_TaskIntervalCode_G"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_TaskMaintenanceLevelCode_O"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_TaskServiceCode_N"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_TaskOperabilityCode_G"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "_:Concept_TaskSequenceCode_AA"
+				}
+			],
+			"ceasn:hasChild": [
+				"_:Task_HGONGAA_010",
+				"_:Task_HGONGAA_020",
+				"_:Task_HGONGAA_030",
+				"_:Task_HGONGAA_040",
+				"_:Task_HGONGAA_050",
+				"_:Task_HGONGAA_060",
+				"_:Task_HGONGAA_070",
+				"_:Task_HGONGAA_080"
+			]
+		},
+		{
+			"@id": "_:Task_HGONGAA_010",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "REMOVE CONVERTER HOUSING INSUL BLKT" },
+			"ceterms:description": { "en": "Remove the converter housing top insulation blanket. Save for reuse." },
+			"ceasn:listID": "010"
+		},
+		{
+			"@id": "_:Task_HGONGAA_020",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "REMOVE CONVERTER HOUSING" },
+			"ceterms:description": { "en": "Remove converter housing cover as follows: (1) Remove nuts from converter housing cover. (2) Ensure lock nut is threaded all the way onto converter housing cover lifting eyebolt. (3) Install lifting arm to GPU frame. (4) Install lifting eyebolt and lock nut into converter housing cover. Tighten eyebolt into cover until lock nut makes contact. Torque lock nut to between 9.5 to 11.5 FT-LB. (5) Attach one end of a lifting arm to lifting ring and other to converter housing cover lifting eyebolt. (6) Carefully remove converter housing cover, keeping cover level to prevent binding of bolts. Set cover on deck out of way. (7) Remove metallic compression gasket from converter housing and discard. (8) Remove cartridge shims, clean, visually inspect and save for reuse. d. Open cartridge shipping container and remove replacement cartridges. e. Remove all packing material from shipping container and discard. f. Remove used upper cartridge and place into empty shipping container. g. Remove used lower cartridge and place next to upper cartridge in shipping container. h. Fill shipping container with enough clean potable water to completely cover cartridges. i. Seal container and securely tag as "Used Cartridges". j. Visually inspect bolts for damage. Refer to Paragraph 6.3.5.6 of ILPE Technical Manual if bolt(s) require replacement. k. Completely clean interior of converter housing using lint free cloth dampened with potable water." },
+			"ceasn:listID": "020",
+		},
+		{
+			"@id": "_:Task_HGONGAA_030",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "INSTALL LOWER CARTRIDGE" },
+			"ceterms:description": { "en": "(1) Remove shipping covers and wrappings. (2) Clean lower cartridge using lint free cloth dampened with potable water. (3) Inspect lower cartridge for physical damage. (4) Install lower cartridge into the converter housing." },
+			"ceasn:listID": "030"
+		},
+		{
+			"@id": "_:Task_HGONGAA_040",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "INSTALL UPPER CARTRIDGE" },
+			"ceterms:description": { "en": "(1) Remove shipping covers and wrappings. (2) Clean upper cartridge using lint free cloth dampened with potable water. (3) Inspect upper cartridge for physical damage. (4) Install upper cartridge into converter housing." },
+			"ceasn:listID": "040"
+		},
+		{
+			"@id": "_:Task_HGONGAA_050",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "SHIM CARTRIDGES" },
+			"ceterms:description": { "en": "(1) Carefully clean converter housing top. (2) Record dimension (A) marked on converter housing cover near lifting eyebolt in table 1. (3) Place straight edge across converter housing top opening. (4) Using 18 inch metal ruler and feeler gauges or depth micrometer, measure from top of converter housing to outer shim surface of upper cartridge at three sites, 120 degrees apart. Record measurements after subtracting depth of straight edge. Label these measurements a, b and c and record in table 1. (5) Determine average depth measurement (D) from three measurements a, b and c and record that calculation in table 1. (6) Add average depth measurement (D) to dimension (A). This is total minimum shim height (SH) in inches. Record that calculation in table 1. (7) Measure shim(s) with micrometer and assemble necessary shim(s) in order to obtain actual shim height of between SH and SH +0.016 in. (8) Place assembled shim(s) on top of upper cartridge." },
+			"ceasn:listID": "050"
+		},
+		{
+			"@id": "_:Task_HGONGAA_060",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "INSTALL METALLIC COMPRESSION GASKET" },
+			"ceterms:description": { "en": "Install metallic compression gasket in converter housing as follows: (1) Ensure top surface of converter housing is clean. (2) Inspect new metallic compression gasket for damage. (3) Install new metallic gasket onto converter housing top." },
+			"ceasn:listID": "060"
+		},
+		{
+			"@id": "_:Task_HGONGAA_070",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "INSTALL CONVERTER HOUSING" },
+			"ceterms:description": { "en": "(1) Clean sealing surface of cover (2) Attach lifting devise hook to converter hosuing cover and carefully and set cover in place using the alignment pin (3) Remove lifting device hook from converter houding cover eyebolt (4) Remove lifter device and lifting ring from ILPE frame (5) Remove liftign eyebolt from converter housing cover (6) Light coat threads of converter hosuing with MOLYKOTE P-37 lubricant (7) Ensure jackbolts are fluch or recessed into torque nut (8) Slide wacher over T-Bolt thread, until it seats against washer (9) Spin torque nut onto T-Bolt thread, until it seats against washer (10) Tightern 4 jackbolts as close to 90 degrees apart as possible for all 14 T-Bolts. Torgue to 45 in-lb at this time (11) Whenall 14 T-Bolts have been tightened, repeast step 1.p(1) on the same jackbolts and torque to 90 in-lb (12) Torque all 10 jackbolts on each torque nut to 90 in-lb in a circular pattenn. Torque each jackbolt once thenmove to next T-Bolt/toruqe nut. T-Bolt/torque nuts should be tightened in crossing pattern. This process may require 2-4 passess around converter cover until all jackbolts are at final torque. (13) Install housing cover nuts. Torque to between 290 to 300 FT-LB in 100 FT-LB incremenetrs, per JFMM, in diametrically opposite pattern." },
+			"ceasn:listID": "070"
+		},
+		{
+			"@id": "_:Task_HGONGAA_080",
+			"@type": "ceterms:Task",
+			"ceterms:name": { "en": "INSTALL CONVERTR HOUSING INSUL BLKT" },
+			"ceterms:description": { "en": "Position insulation blanket on top of converter housing cover" },
+			"ceasn:listID": "080"
+		},
+	]
+}
