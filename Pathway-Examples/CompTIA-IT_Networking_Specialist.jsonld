@@ -17,7 +17,8 @@
                 "en-US": "IT Networking Specialist analyze, troubleshoot and evaluate computer network problems. More advanced IT pros may be responsible for building and designing communication networks as well. They play an important role in maintaining an organization’s network and keeping them safe and secure through both hardware configuration and end-user training. Network specialists and administrators are responsible for day-to-day operations and network architects and engineers design and build local area networks (LANs), wide area networks (WANs), and Intranets. Depending on the size of the company, these roles may be combined."
             },
             "ceterms:subjectWebpage": "https://www.comptia.org/content/it-careers-path-roadmap/it-networking-specialist",
-            "ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-1369d357-ac4f-49f9-8af2-c47376278896"
+            "ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-1369d357-ac4f-49f9-8af2-c47376278896",
+	    "asn:hasProgressionModel": "https://credentialengineregistry.org/resources/ce-cb87723a-b872-4fb5-b0e7-b25ce2ad5029"
         },
         {
             "@id": "https://credentialengineregistry.org/resources/ce-ca103e61-73f1-4179-a870-4d7667d3ba0f",
@@ -57,7 +58,7 @@
             "ceterms:description": {
 			    "en": "Cloud+ gives technical and non-technical professionals the basic concepts to successfully manage small- to medium-sized projects."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/31f222ee-8921-4cbc-a480-347e8e90344e",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-31f222ee-8921-4cbc-a480-347e8e90344e",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-e850c22b-44c4-45d1-9b4b-f40f23c13ed3",
             "ceterms:hasCondition": [
 			     {
@@ -84,7 +85,7 @@
             "ceterms:description": {
 			    "en": "Server+ confirms the technical knowledge and skills required to support and secure server hardware and software."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c4340c23-7246-4c45-ad66-fb4584d93112",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-cab3d216-e834-452d-bf83-60972afd3079",
             "ceterms:hasCondition": [
 			     {
@@ -110,7 +111,7 @@
             "ceterms:description": {
 			    "en": "Linux+ is an internationally recognized credential validating baseline competencies required for Linux administrators."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c4340c23-7246-4c45-ad66-fb4584d93112",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-18a9285f-af87-4b16-8a07-88677429d23e",
             "ceterms:hasCondition": [
 			     {
@@ -137,7 +138,7 @@
             "ceterms:description": {
 			    "en": "Cloud Essentials+ certifies the knowledge and skills need to make sound decisions about cloud technologies and their business impact."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c4340c23-7246-4c45-ad66-fb4584d93112",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-b1835caf-bf1d-4e1f-9b03-5499b0ece4dc",
             "ceterms:hasCondition": [
 			     {
@@ -163,7 +164,7 @@
             "ceterms:description": {
 			    "en": "Project+ gives technical and non-technical professionals the basic concepts to successfully manage small- to medium-sized projects."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c4340c23-7246-4c45-ad66-fb4584d93112",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c4340c23-7246-4c45-ad66-fb4584d93112",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-7a3efae8-e32d-4203-b923-8c02340bf6b8",
             "ceterms:hasCondition": [
 			     {
@@ -190,7 +191,7 @@
             "ceterms:description": {
 			    "en": "Security+ provides a global benchmark for best practices in IT network and operational security, one of the fastest-growing fields in IT."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c8b24e1c-be0a-4139-82df-ff534b801b01",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c8b24e1c-be0a-4139-82df-ff534b801b01",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-10e06c1d-00a9-45a4-93e5-ee777f3fe8e2",
             "ceterms:hasCondition": [
 			     {
@@ -217,7 +218,7 @@
             "ceterms:description": {
 			    "en": "Network+ certifies the essential skills needed to confidently design, configure, manage and troubleshoot wired and wireless networks."
 		    },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c8b24e1c-be0a-4139-82df-ff534b801b01",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c8b24e1c-be0a-4139-82df-ff534b801b01",
             "ceasn:hasChild": "https://credentialengineregistry.org/resources/ce-b040010e-06b4-4d2f-8e16-7fcf3408ebf7",
             "ceterms:hasCondition": [
 			     {
@@ -245,7 +246,7 @@
             {
                 "en-US": "A+ is the starting point for a career in IT. The performance-based exams certify foundational IT skills across a variety of devices and operating systems."
             },
-            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/c8b24e1c-be0a-4139-82df-ff534b801b01",
+            "asn:hasProgressionLevel": "https://credentialengineregistry.org/resources/ce-c8b24e1c-be0a-4139-82df-ff534b801b01",
             "ceasn:isChildOf": "https://credentialengineregistry.org/resources/ce-10e06c1d-00a9-45a4-93e5-ee777f3fe8e2",
             "ceterms:hasCondition": [
 			     {
