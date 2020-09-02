@@ -1,36 +1,57 @@
-{
+{ "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ceasn": "https://purl.org/ctdlasn/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ceterms": "https://purl.org/ctdl/terms/",
+    "skos:inScheme": { "@type": "@id" },
+    "ceterms:name": { "@container": "@language" },
+    "ceterms:description": { "@container": "@language" },
+    "ceterms:occupationType": { "@type": "@id" },
+    "ceterms:hasSpecialization": { "@type": "@id" },
+    "ceterms:hasWorkRole": { "@type": "@id" },
+    "ceasn:competencyText": { "@container": "@language" },
+    "ceasn:knowledgeEmbodied":  { "@type": "@id" },
+    "ceasn:skillEmbodied":  { "@type": "@id" },
+    "ceterms:hasTask": { "@type": "@id" },
+    "ex": "http://example.org/",
+    "@base": "https://credentialengineregistry.org/resources/"
+  },
 	"@graph": [
 		{
-			"@id": "_:ConceptScheme_NISTGroupCode",
+			"@id": "ex:SOC",
 			"@type": "skos:ConceptScheme",
-			"ceasn:name": { "en": "NIST Group Code" }
+			"dcterms:title":  "Standard Occupational Classification"
 		},
 		{
-			"@id": "_:Concept_SP",
+			"@id": "ex:SOC#15-1212",
 			"@type": "skos:Concept",
-			"skos:prefLabel": { "en": "Securely Provision" },
-			"skos:notation": "SP",
-			"skos:inScheme": "_:ConceptScheme_NISTGroupCode"
+			"skos:prefLabel": "Information Security Analysts",
+			"skos:notation": "15-1212",
+			"skos:inScheme": "ex:SOC"
 		},
+    {
+      "@id": "Occupation_0001",
+      "@type": "ceterms:Occupation",
+      "ceterms:name": {"en": "Cybersecurity"},
+			"ceterms:description": { "en": "This is the top level profession that the NICE Cybersecurity framework deals with. It is not explicitly mentioned in the framework. It has a SOC category of Information Security Analysts"},
+      "ceterms:occupationType": "ex:SOC#15-1212",
+      "ceterms:hasSpecialization": "Occupation_0002"
+    },
 		{
-			"@id": "_:Occupation_RSK",
+			"@id": "Occupation_0002",
 			"@type": "ceterms:Occupation",
 			"ceterms:name": { "en": "Risk Management" },
 			"ceterms:description": { "en": "Oversees, evaluates, and supports the documentation, validation, assessment, and authorization processes necessary to assure that existing and new information technology (IT) systems meet the organization's cybersecurity and risk requirements. Ensures appropriate treatment of risk, compliance, and assurance from internal and external perspectives." },
 			"ceterms:codedNotation": "RSK",
-			"ceterms:categoryReference": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_SP",
-					"ceterms:targetNodeName": { "en": "Securely Provision" }
-				}
-			],
+      "ceterms:isSpecializationOf": "Occupation_0001",
 			"ceterms:hasWorkRole": [
-				"_:WorkRole_001"
+				"WorkRole_0003"
 			]
 		},
 		{
-			"@id": "_:WorkRole_001",
+			"@id": "WorkRole_0003",
 			"@type": "ceterms:WorkRole",
 			"ceterms:name": { "en": "Authorizing Official/Designating Representative" },
 			"ceterms:description": { "en": "Senior official or executive with the authority to formally assume responsibility for operating an information system at an acceptable level of risk to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation (CNSSI 4009)." },
@@ -44,92 +65,91 @@
 				}
 			],
 			"ceterms:hasTask": [
-				"_:Task_T0145",
-				"_:Task_T0221",
-				"_:Task_T0371",
-				"_:Task_T0495"
+				"Task_T0145",
+				"Task_T0221",
+				"Task_T0371",
+				"Task_T0495"
 			]
 		},
 		{
-			"@id": "_:Task_T0145",
+			"@id": "Task_T0145",
 			"@type": "ceterms:Task",
 			"ceterms:description": { "en": "Manage and approve Accreditation Packages (e.g., ISO/IEC 15026-2)." },
 			"ceterms:codedNotation": "T0145",
 			"ceasn:knowledgeEmbodied": [
-				"_:Competency_K0038",
-				"_:Competency_K0342"
+					"Competency_K0038",
+					"Competency_K0342"
 			],
-			"ceterms:skillEmbodied": [
-				"_:Competency_S0367"
+			"ceasn:skillEmbodied": [
+					"Competency_S0367"
 			]
 		},
 		{
-			"@id": "_:Task_T0221",
+			"@id": "Task_T0221",
 			"@type": "ceterms:Task",
 			"ceterms:description": { "en": "Review authorization and assurance documents to confirm that the level of risk is within acceptable limits for each software application, system, and network." },
 			"ceterms:codedNotation": "T0221",
-			"ceterms:knowledgeEmbodied": [
-				"_:Competency_K0001",
-				"_:Competency_K0038"
+			"ceasn:knowledgeEmbodied": [
+					 "Competency_K0001",
+					 "Competency_K0038"
 			],
-			"ceterms:skillEmbodied": [
-				"_:Competency_S0034",
-				"_:Competency_S0367"
+			"ceasn:skillEmbodied": [
+					 "Competency_S0034",
+					 "Competency_S0367"
 			]
 		},
 		{
-			"@id": "_:Task_T0371",
+			"@id": "Task_T0371",
 			"@type": "ceterms:Task",
 			"ceterms:description": { "en": "Establish acceptable limits for the software application, network, or system." },
 			"ceterms:codedNotation": "T0371",
-			"ceterms:knowledgeEmbodied": [
-				"_:Competency_K0038",
-				"_:Competency_K0342"
+			"ceasn:knowledgeEmbodied": [
+					 "Competency_K0038",
+					 "Competency_K0342"
 			],
-			"ceterms:skillEmbodied": [
-				"_:Competency_S0034"
+			"ceasn:skillEmbodied": [
+					 "Competency_S0034"
 			]
 		},
 		{
-			"@id": "_:Task_T0495",
+			"@id": "Task_T0495",
 			"@type": "ceterms:Task",
 			"ceterms:description": { "en": "Manage Accreditation Packages (e.g., ISO/IEC 15026-2)." },
 			"ceterms:codedNotation": "T0495",
-
-			"ceterms:knowledgeEmbodied": [
-				"_:Competency_K0038",
-				"_:Competency_K0342"
+			"ceasn:knowledgeEmbodied": [
+					 "Competency_K0038",
+					 "Competency_K0342"
 			],
-			"ceterms:skillEmbodied": [
-				"_:Competency_S0367"
+			"ceasn:skillEmbodied": [
+					 "Competency_S0367"
 			]
 		},
 		{
-			"@id": "_:Competency_K0001",
+			"@id": "Competency_K0001",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Knowledge of computer networking concepts and protocols, and network security methodologies." },
 			"ceasn:codedNotation": "K0001"
 		},
 		{
-			"@id": "_:Competency_K0038",
+			"@id": "Competency_K0038",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Knowledge of cybersecurity and privacy principles used to manage risks related to the use, processing, storage, and transmission of information or data." },
 			"ceasn:codedNotation": "K0038"
 		},
 		{
-			"@id": "_:Competency_K0342",
+			"@id": "Competency_K0342",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Knowledge of penetration testing principles, tools, and techniques." },
 			"ceasn:codedNotation": "K0342"
 		},
 		{
-			"@id": "_:Competency_S0034",
+			"@id": "Competency_S0034",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Skill in discerning the protection needs (i.e., security controls) of information systems and networks." },
 			"ceasn:codedNotation": "S0034"
 		},
 		{
-			"@id": "_:Competency_S0367",
+			"@id": "Competency_S0367",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Skill to apply cybersecurity and privacy principles to organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation)." },
 			"ceasn:codedNotation": "S0367"
