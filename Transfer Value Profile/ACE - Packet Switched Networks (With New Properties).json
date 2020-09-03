@@ -9,15 +9,10 @@
 	"TransferValue": [
 		{
 			"Value": 2.0,
-			"UnitText": {
-				"TargetNode": "creditUnit:DegreeCredit"
-			},
+			"UnitText": "DegreeCredit",
 			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in electrical engineering, data communications and networking, telecommunications, or management information systems (11/90)."
 		}
 	],
-	"LifeCycleStatusType": {
-		"TargetNode": "lifeCycle:Active"
-	},
 	"TransferValueFrom": [
 		{
 			"Type": "ceterms:LearningOpportunityProfile",
@@ -47,17 +42,24 @@
 			"OwnedBy": [
 				{
 					"Type": "ceterms:CredentialOrganization",
-					"Name": "Ameritech"
+					"Name": "Ameritech",
+					"SubjectWebpage": "https://www.ameritech.edu/"
 				}
 			],
 			"EstimatedDuration": [
 				{
 					"Description": "Total Hours",
-					"ExactDuration": "PT40H"
+					"ExactDuration": 
+					{ 
+						"Hours":40
+					}
 				},
 				{
 					"Description": "Overall Length",
-					"ExactDuration": "P4D"
+					"ExactDuration": 
+					{ 
+						"Days":4
+					}
 				}
 			],
 			"AvailableAt": [
