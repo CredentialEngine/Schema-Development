@@ -1,0 +1,64 @@
+{
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-852a309c-c246-4761-877a-ab540c0ea91e",
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:name": "Kansas Credit for Prior Learning Task Force",
+			"ceterms:subjectWebpage": "https://military.kansasregents.org/MAP/course_info/001902/25",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-e4c8e9bd-88bd-4704-9e3a-78faebdca59d"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "schema:QuantitativeValue",
+					"schema:value": 3.0,
+					"schema:unitText": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "creditUnit:DegreeCredit"
+						}
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:Occ_11B_10"
+			],
+			"ceterms:transferValueFor": [
+				"_:LOP_LED1454"
+			]
+		},
+		{
+			"@id": "_:Occ_11B_10",
+			"@type": "ceterms:Occupation",
+			"ceterms:name": { "en": "Infantryman Level 30" },
+			"ceterms:occupationType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:frameworkName": { "en": "US Army MOS Codes" },
+					"ceterms:targetNodeName": { "en": "INFANTRYMAN" },
+					"ceterms:codedNotation": "11B",
+					"ceterms:targetNode": "https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/combat/infantryman-11b.html"
+				}
+			]
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueType": "Service Level",
+					"ceterms:identifierValueCode": "30"
+				}
+			]
+		},
+		{
+			"@id": "_:LOP_LED1454",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Leadership Mentoring" },
+			"ceterms:codedNotation": "LED1454",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-1ce888e7-18d4-42fd-9a13-ef693631409b"
+			],
+			"ceterms:offeredBy": [
+				"https://credentialengineregistry.org/resources/ce-1ce888e7-18d4-42fd-9a13-ef693631409b"
+			]
+		}
+	]
+}
