@@ -1,0 +1,79 @@
+{
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-5f627231-5c5f-4936-8754-19fb56889518",
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:name": "Kansas Credit for Prior Learning Task Force",
+			"ceterms:subjectWebpage": "https://submission.kansasregents.org/ibi_apps/portal/BIP_Public2/SWT",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-e4c8e9bd-88bd-4704-9e3a-78faebdca59d"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "schema:QuantitativeValue",
+					"schema:value": 3.0,
+					"schema:unitText": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "creditUnit:DegreeCredit"
+						}
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:LOP_ACC1010"
+			],
+			"ceterms:transferValueFor": [
+				"_:LOP_BUS210"
+			]
+		},
+		{
+			"@id": "_:LOP_ACC1010",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Financial Accounting" },
+			"ceterms:codedNotation": "ACC1010",
+			"ceterms:subjectWebpage": "https://kansasregents.org/resources/SWT/ACC1010.pdf",
+			"ceterms:teaches": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8f0a681d-9403-48a6-80da-8583b39047d8"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-37e41672-3bb0-47a3-a2a8-159028fc637c"
+				}
+			]
+		},
+		{
+			"@id": "_:LOP_BUS210",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Financial Accounting" },
+			"ceterms:codedNotation": "BUS210",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-e68cb030-80c9-4f67-a93a-f51030c782a4"
+			],
+			"ceterms:offeredBy": [
+				"https://credentialengineregistry.org/resources/ce-e68cb030-80c9-4f67-a93a-f51030c782a4"
+			],
+			"ceterms:requires": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:targetCompetency": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
+							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8f0a681d-9403-48a6-80da-8583b39047d8"
+						},
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
+							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-37e41672-3bb0-47a3-a2a8-159028fc637c"
+						}
+					]
+				}
+			]
+		}
+	]
+}
