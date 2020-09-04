@@ -1,0 +1,75 @@
+{
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-fc0db2c2-86b8-4a7c-8034-4d81041e0c33",
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:subjectWebpage": "https://www.elon.edu/transferarticulation/",
+			"ceterms:ownedBy": [
+				"_:Org_ACE"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "schema:QuantitativeValue",
+					"schema:value": 3.0,
+					"ceterms:description": { "en": "In the upper-division post-baccalaureate, 3 semester hours." }
+					"schema:unitText": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "creditUnit:DegreeCredit"
+						},
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNodeName": { "en": "Upper-Division Post-Baccalaureate" }
+						}
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:LOP_VIL84"
+			],
+			"ceterms:transferValueFor": [
+				"_:LOP_Warehouse",
+				"_:LOP_Management"
+			]
+		},
+		{
+			"@id": "_:LOP_VIL84",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Essentials of Business Intelligence" },
+			"ceterms:codedNotation": "VIL84",
+			"ceterms:ownedBy": [
+				"_:Org_Bisk"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_Bisk"
+			],
+			"ceterms:teaches": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeDescription": { "en": "Measure and improve data quality" }
+				}
+			]
+		},
+		{
+			"@id": "_:LOP_Warehouse",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Business Intelligence and Data Warehousing" }
+		},
+		{
+			"@id": "_:LOP_Management",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Management Information Systems" }
+		},
+		{
+			"@id": "_:Org_ACE",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "American Council on Education" },
+			"ceterms:alternateName": { "en": "ACE" }
+		},
+		{
+			"@id": "_:Org_Bisk",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "Bisk Education" }
+		}
+	]
+}
