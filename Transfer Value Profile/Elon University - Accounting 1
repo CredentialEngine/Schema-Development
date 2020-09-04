@@ -1,0 +1,48 @@
+{
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-fc0db2c2-86b8-4a7c-8034-4d81041e0c33",
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:name": "Transfer Course Equivalencies",
+			"ceterms:subjectWebpage": "https://www.elon.edu/transferarticulation/",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "schema:QuantitativeValue",
+					"schema:value": 3.0,
+					"schema:unitText": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "creditUnit:DegreeCredit"
+						}
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:LOP_ACC120"
+			],
+			"ceterms:transferValueFor": [
+				"https://credentialengineregistry.org/resources/ce-5452eac8-7cbd-4d94-a5b6-a01b80554ac1"
+			]
+		},
+		{
+			"@id": "_:LOP_ACC120",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Prin of Financial Accounting" },
+			"ceterms:codedNotation": "ACC120",
+			"ceterms:ownedBy": [
+				"_:Org_Alamance"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_Alamance"
+			]
+		},
+		{
+			"@id": "_:Org_Alamance",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "Alamance Community College" }
+		}
+	]
+}
