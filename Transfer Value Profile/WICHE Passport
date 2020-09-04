@@ -1,0 +1,103 @@
+{
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-aec0d4b1-73ee-48d5-af9d-e201edcfc92f",
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:name": "Interstate Passport Network",
+			"ceterms:subjectWebpage": "http://interstatepassport.wiche.edu/documents/IP_Overview.pdf",
+			"ceterms:ownedBy": [
+				"_:Org_WICHE"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "schema:QuantitativeValue",
+					"schema:value": 2.0,
+					"schema:unitText": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "ceasn:Competency"
+						}
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:LOP_Teaches"
+			],
+			"ceterms:transferValueFor": [
+				"_:LOP_Requires"
+			]
+		},
+		{
+			"@id": "_:LOP_Teaches",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "A Course that teaches one or more PLOs" },
+			"ceterms:ownedBy": [
+				"_:Org_Concordia"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_Concordia"
+			],
+			"ceterms:teaches": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
+				}
+			]
+		},
+		{
+			"@id": "_:LOP_Requires",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": { "en": "A Course that requires one or more PLOs" },
+			"ceterms:ownedBy": [
+				"_:Org_UoH"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_UoH"
+			],
+			"ceterms:entryCondition": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:condition": { 
+						"en": [ 
+							"Grade of at least C"
+						] 
+					},
+					"ceterms:targetCompetency": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:framework": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
+						},
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:framework": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
+						}
+					]
+				}
+			]
+		},
+		{
+			"@id": "_:Org_WICHE",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "Western Interstate Commission for Higher Education" },
+			"ceterms:alternateName": { "en": [ "WICHE" ] }
+		}
+		{
+			"@id": "_:Org_Concordia",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "Concordia University" }
+		}
+		{
+			"@id": "_:Org_UoH",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "University of Hawai'i at Hilo" }
+		}
+	]
+}
