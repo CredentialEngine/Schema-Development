@@ -21,29 +21,10 @@
 				}
 			],
 			"ceterms:transferValueFrom": [
-				"_:LOP_ACC1010"
+				"_:LOP_BUS210"
 			],
 			"ceterms:transferValueFor": [
-				"_:LOP_BUS210"
-			]
-		},
-		{
-			"@id": "_:LOP_ACC1010",
-			"@type": "ceterms:LearningOpportunityProfile",
-			"ceterms:name": { "en": "Financial Accounting" },
-			"ceterms:codedNotation": "ACC1010",
-			"ceterms:subjectWebpage": "https://kansasregents.org/resources/SWT/ACC1010.pdf",
-			"ceterms:teaches": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8f0a681d-9403-48a6-80da-8583b39047d8"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-37e41672-3bb0-47a3-a2a8-159028fc637c"
-				}
+				"_:LOP_ACC1010"
 			]
 		},
 		{
@@ -72,6 +53,25 @@
 							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-37e41672-3bb0-47a3-a2a8-159028fc637c"
 						}
 					]
+				}
+			]
+		},
+		{
+			"@id": "_:LOP_ACC1010",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Financial Accounting" },
+			"ceterms:codedNotation": "ACC1010",
+			"ceterms:subjectWebpage": "https://kansasregents.org/resources/SWT/ACC1010.pdf",
+			"ceterms:teaches": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8f0a681d-9403-48a6-80da-8583b39047d8"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-f4fbb2fa-f199-4636-ae99-3955fb6db1cb",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-37e41672-3bb0-47a3-a2a8-159028fc637c"
 				}
 			]
 		}
