@@ -45,10 +45,10 @@
 			"ceterms:name": { "en": "ACC Elective Course" },
 			"ceterms:codedNotation": "ACC*2XX",
 			"ceterms:ownedBy": [
-				"_:Org_Alamance"
+				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
 			],
 			"ceterms:offeredBy": [
-				"_:Org_Alamance"
+				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
 			]
 		},
 		{
