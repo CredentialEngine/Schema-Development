@@ -11,7 +11,7 @@
 			"ceterms:transferValue": [
 				{
 					"@type": "schema:QuantitativeValue",
-					"schema:value": 2.0,
+					"schema:value": 63.0,
 					"schema:unitText": [
 						{
 							"@type": "ceterms:CredentialAlignmentObject",
@@ -21,10 +21,41 @@
 				}
 			],
 			"ceterms:transferValueFrom": [
-				"_:LOP_Teaches"
+				"_:Cert_Passport"
 			],
 			"ceterms:transferValueFor": [
 				"_:LOP_Requires"
+			]
+		},
+		{
+			"@id": "_:Cert_Passport",
+			"@type": "ceterms:CertificateOfCompletion",
+			"ceterms:name": { "en": "Passport for 63 PLOs" },
+			"ceterms:ownedBy": [
+				"_:Org_WICHE"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_Concordia"
+			],
+			"ceterms:requires": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:targetLearningOpportunity": [
+						"_:LOP_Teaches"
+					],
+					"ceterms:targetCompetency": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:framework": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
+						},
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:framework": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+							"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
+						}
+					]
+				}
 			]
 		},
 		{
