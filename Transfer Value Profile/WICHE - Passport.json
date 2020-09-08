@@ -119,12 +119,12 @@
 			"@type": "ceterms:CredentialOrganization",
 			"ceterms:name": { "en": "Western Interstate Commission for Higher Education" },
 			"ceterms:alternateName": { "en": [ "WICHE" ] }
-		}
+		},
 		{
 			"@id": "_:Org_Concordia",
 			"@type": "ceterms:CredentialOrganization",
 			"ceterms:name": { "en": "Concordia University" }
-		}
+		},
 		{
 			"@id": "_:Org_UoH",
 			"@type": "ceterms:CredentialOrganization",
