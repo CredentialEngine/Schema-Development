@@ -24,7 +24,7 @@
 				"_:LOP_ACC122"
 			],
 			"ceterms:transferValueFor": [
-				"https://credentialengineregistry.org/resources/ce-df952649-6beb-47ad-a5bb-5dc9bd03a0e7"
+				"_:LOP_ACC2XX"
 			]
 		},
 		{
@@ -32,6 +32,18 @@
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Prin of Financial Account II" },
 			"ceterms:codedNotation": "ACC122",
+			"ceterms:ownedBy": [
+				"_:Org_Alamance"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_Alamance"
+			]
+		},
+		{
+			"@id": "_:LOP_ACC2XX",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "ACC Elective Course" },
+			"ceterms:codedNotation": "ACC*2XX",
 			"ceterms:ownedBy": [
 				"_:Org_Alamance"
 			],
