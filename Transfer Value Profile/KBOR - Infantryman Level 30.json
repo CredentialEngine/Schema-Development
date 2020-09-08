@@ -40,11 +40,11 @@
 					"ceterms:targetNode": "https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/combat/infantryman-11b.html"
 				}
 			]
-			"ceterms:identifier": [
+			"ceterms:categoryReference": [
 				{
-					"@type": "ceterms:IdentifierValue",
-					"ceterms:identifierValueType": "Service Level",
-					"ceterms:identifierValueCode": "30"
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": { "en": "Service Level" },
+					"ceterms:codedNotation": "30"
 				}
 			]
 		},
