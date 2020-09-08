@@ -30,7 +30,7 @@
 		{
 			"@id": "_:LOP_Teaches",
 			"@type": "ceterms:LearningOpportunityProfile",
-			"ceterms:name": { "en": "A Course that teaches one or more PLOs" },
+			"ceterms:name": { "en": "A Program that teaches one or more PLOs" },
 			"ceterms:ownedBy": [
 				"_:Org_Concordia"
 			],
@@ -53,7 +53,7 @@
 		{
 			"@id": "_:LOP_Requires",
 			"@type": "ceterms:QACredentialOrganization",
-			"ceterms:name": { "en": "A Course that requires one or more PLOs" },
+			"ceterms:name": { "en": "A Program that requires one or more PLOs" },
 			"ceterms:ownedBy": [
 				"_:Org_UoH"
 			],
