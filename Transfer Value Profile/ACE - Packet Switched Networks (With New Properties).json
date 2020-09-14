@@ -18,8 +18,8 @@
 			"Type": "ceterms:LearningOpportunityProfile",
 			"Name": "Packet Switched Networks",
 			"CodedNotation": "A330",
-			"StartDate": "1987-5-1",
-			"EndDate": "2000-10-31",
+			"DateEffective": "1987-05-01",
+			"ExpirationDate": "2000-10-31",
 			"Description": "Understanding of terminology and issues and their application in functioning packet switched networks.",
 			"Subject": [
 				"packet switching overview",
