@@ -39,7 +39,7 @@
 					"ceterms:codedNotation": "11B",
 					"ceterms:targetNode": "https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/combat/infantryman-11b.html"
 				}
-			]
+			],
 			"ceterms:categoryReference": [
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
