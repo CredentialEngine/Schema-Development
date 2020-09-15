@@ -20,7 +20,7 @@
 	
 	
 	{
-		"//": "Occupation",
+		"//": "Work Role",
 		"@graph": [
 			{
 				"@id": "https://.../conceptscheme/nist1",
