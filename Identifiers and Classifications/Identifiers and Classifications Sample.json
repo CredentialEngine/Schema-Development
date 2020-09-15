@@ -1,0 +1,156 @@
+[
+	{
+		"//": "Learning Opportunity",
+		"@graph": [
+			{
+				"@type": "ceterms:LearningOpportunityProfile",
+				"ceterms:classification": [
+					"https://.../commoncore/CCSS.MATH.CONTENT.HSA.CED.A.2"
+				],
+				"ceterms:identifier": [
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "ENG 101",
+						"ceterms:identifierTypeName": { "en": "some college's class system" }
+					}
+				]
+			}
+		]
+	},
+	
+	
+	{
+		"//": "Occupation",
+		"@graph": [
+			{
+				"@id": "https://.../conceptscheme/nist1",
+				"@type": "skos:ConceptScheme",
+				"ceasn:name": { "en": "NIST Categories" }
+			},
+			{
+				"@id": "https://.../conceptscheme/nist2",
+				"@type": "skos:ConceptScheme",
+				"ceasn:name": { "en": "NIST Specialty Areas" }
+			},
+			{
+				"@id": "https://.../concept/sp",
+				"@type": "skos:Concept",
+				"skos:prefLabel": { "en": "Securely Provision" },
+				"skos:notation": "SP",
+				"skos:inScheme": "https://.../conceptscheme/nist1"
+			},
+			{
+				"@id": "https://.../concept/rsk",
+				"@type": "skos:Concept",
+				"skos:prefLabel": { "en": "Risk Management" },
+				"skos:notation": "RSK",
+				"skos:inScheme": "https://.../conceptscheme/nist2"
+			},
+			{
+				"@type": "ceterms:WorkRole",
+				"ceterms:classification": [
+					"https://.../concept/sp",
+					"https://.../concept/rsk",
+					"_:somethirdcategory"
+				],
+				"ceterms:identifier": [
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "SP-RSK-001"
+					}
+				]
+			},
+			{
+				"@id": "_:somethirdcategory",
+				"@type": "skos:Concept",
+				"skos:prefLabel": { "en": "Risk Management 2" },
+				"skos:notation": "RSK",
+				"skos:definition": { "en": "Oversees, evaluates..." }
+			}
+		]
+	},
+
+
+	{
+		"//": "Organization",
+		"@graph": [
+			{
+				"@type": "ceterms:CredentialOrganization",
+				"ceterms:identifier": [
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "12345",
+						"ceterms:identifierTypeName": { "en": "DUNS" }
+					},
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "12345",
+						"ceterms:identifierTypeName": { "en": "IPEDS ID" }
+					}
+				]
+			}
+		]
+	},
+	
+
+	{
+		"//": "Maintenance Task",
+		"@graph": [
+			{
+				"@type": "navy:MaintenanceTask",
+				"ceterms:classification": [
+					"https://.../position1/H",
+					"https://.../position2/G",
+					"https://.../position3/O",
+					"https://.../position4/N",
+					"https://.../position5/G",
+					"https://.../position6/AA"
+				],
+				"ceterms:identifier": [
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "HGONGAA"
+					}
+				]
+			}
+		]
+	},
+
+
+	{
+		"//": "Transfer Value",
+		"@graph": [
+			{
+				"@type": "ceterms:TransferValueProfile",
+				"ceterms:identifier": [
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "ABC12345",
+						"ceterms:identifierTypeName": { "en": "ACE Code" }
+					}
+				]
+			}
+		]
+	},
+
+
+	{
+		"//": "Assessment",
+		"@graph": [
+			{
+				"@type": "ceterms:AssessmentProfile",
+				"ceterms:identifier": [
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "70-698"
+					},
+					{
+						"@type": "ceterms:IdentifierValue",
+						"ceterms:identifierValueCode": "IPD 389",
+						"ceterms:identifierTypeName": { "en": "Course #" }
+					}
+				]
+			}
+		]
+	}
+]
