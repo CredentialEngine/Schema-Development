@@ -101,14 +101,14 @@
 					"https://.../position3/O",
 					"https://.../position4/N",
 					"https://.../position5/G",
-					"https://.../position6/AA"
-				],
-				"ceterms:identifier": [
-					{
-						"@type": "ceterms:IdentifierValue",
-						"ceterms:identifierValueCode": "HGONGAA"
-					}
+					"https://.../position6/AA",
+					"_:HGONGAA"
 				]
+			},
+			{
+				"@id": "_:HGONGAA",
+				"@type": "skos:Concept",
+				"skos:notation": "HGONGAA"
 			}
 		]
 	},
