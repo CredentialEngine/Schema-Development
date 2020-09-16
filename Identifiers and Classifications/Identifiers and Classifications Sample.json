@@ -4,9 +4,6 @@
 		"@graph": [
 			{
 				"@type": "ceterms:LearningOpportunityProfile",
-				"ceterms:classification": [
-					"https://.../commoncore/CCSS.MATH.CONTENT.HSA.CED.A.2"
-				],
 				"ceterms:identifier": [
 					{
 						"@type": "ceterms:IdentifierValue",
