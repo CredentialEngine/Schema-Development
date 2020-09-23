@@ -27,7 +27,7 @@
 				"DegreeCredit"
 			],
 			"CreditLevelType": [
-				"LowerDivision"
+				"LowerDivisionLevel"
 			],
 			"Description": "In the lower-division baccalaureate/associate degree category, 2 semester hours in basic electricity; 1 semester hour in aircraft drawings; 1 semester hour in weight and balance; 1 semester hour in fluid and fittings;, 2 semester hours in materials and processes; 1 semester hour in ground operations; 1 semester hour in cleaning and corrosion; 2 semester hours in mathematics; 1 semester hour in maintenance forms and records; 1 semester hour in basic physics; 1 semester hour in mechanic privileges and limitations. NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)."
 		}
@@ -103,7 +103,7 @@
 				"DegreeCredit"
 			],
 			"CreditLevelType": [
-				"LowerDivision"
+				"LowerDivisionLevel"
 			],
 			"Description": "In the lower-division baccalaureate/associate degree category, 3 semester hours in reciprocating engines; 3 semester hours in turbine engines; 1 semester hour in engine inspection; 1 semester hour in engine instrumentation systems; 1 semester hour in engine fire protection systems; 2 semester hours in engine electrical systems; 1 semester hour in lubrication systems; 2 semester hours in ignition and starting systems; 1 semester hour in fuel metering systems; 1 semester hour in engine fuel systems;, 2 semester hours in induction and engine airflow systems; 1 semester hour in engine cooling systems; 2 semester hours in engine exhaust and reverser systems; 2 semester hours in propellers; 1 semester hour in unducted fans; 1 semester hour in auxiliary power units. NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)."
 		}
@@ -183,7 +183,7 @@
 				"DegreeCredit"
 			],
 			"CreditLevelType": [
-				"LowerDivision"
+				"LowerDivisionLevel"
 			],
 			"Description": "In the lower-division baccalaureate/associate degree category, 1 semester hour in wood structures, 1 semester hour in aircraft covering, 1 semester hour in aircraft finishes, 3 semester hours in sheet metal and non-Metallic structures, 3 semester hours in welding, 2 semester hours in assembly and rigging, 3 semester hours in aircraft inspection, 2 semester hours in aircraft landing gear systems, 1 semester hour in hydraulic and pneumatic power systems, 2 semester hours in cabin atmosphere control systems, 2 semester hours in aircraft instrument systems, 1 semester hour in communication and navigation systems, 2 semester hours in aircraft fuel systems, 2 semester hours in position and warning systems, 1 semester hour in ice and rain control systems, 1 semester hour in fire protection. NOTE: The General, power plant, and Airframe examinations must all be successfully completed for credit recommendation. (8/99)."
 		}
