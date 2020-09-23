@@ -12,11 +12,8 @@
 				{
 					"@type": "schema:QuantitativeValue",
 					"schema:value": 4.0,
-					"schema:unitText": [
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNode": "creditUnit:DegreeCredit"
-						}
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
 					]
 				}
 			],
@@ -31,7 +28,12 @@
 			"@id": "_:LOP_ACC120",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Prin of Financial Accounting" },
-			"ceterms:codedNotation": "ACC120",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ACC120"
+				}
+			],
 			"ceterms:ownedBy": [
 				"_:Org_Alamance"
 			],
