@@ -10,7 +10,7 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "schema:QuantitativeValue",
+					"@type": "ceterms:CreditValue",
 					"schema:value": 4.0,
 					"ceterms:creditUnitType": [
 						"creditUnit:DegreeCredit"
