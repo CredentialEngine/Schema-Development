@@ -1,6 +1,73 @@
 {
 	"@graph": [
 		{
+			"@id": "https://credentialengineregistry.org/resources/ce-fef7f51a-7c7a-481a-8a4a-67e297863c12",
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:name": "Transfer Course Equivalencies",
+			"ceterms:subjectWebpage": "https://www.elon.edu/transferarticulation/",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "ceterms:CreditValue",
+					"schema:value": 3.0,
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:LOP_ACC122"
+			],
+			"ceterms:transferValueFor": [
+				"_:LOP_ACC2XX"
+			]
+		},
+		{
+			"@id": "_:LOP_ACC122",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "Prin of Financial Account II" },
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ACC122"
+				}
+			],
+			"ceterms:ownedBy": [
+				"_:Org_Alamance"
+			],
+			"ceterms:offeredBy": [
+				"_:Org_Alamance"
+			]
+		},
+		{
+			"@id": "_:LOP_ACC2XX",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "ACC Elective Course" },
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ACC*2XX"
+				}
+			],
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
+			],
+			"ceterms:offeredBy": [
+				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
+			]
+		},
+		{
+			"@id": "_:Org_Alamance",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "Alamance Community College" }
+		}
+	]
+}
+{
+	"@graph": [
+		{
 			"@id": "https://credentialengineregistry.org/resources/ce-de321c5b-4b98-4622-a654-17d64d5e87ee",
 			"@type": "ceterms:TransferValueProfile",
 			"ceterms:name": "Kansas Credit for Prior Learning Task Force",
@@ -10,13 +77,10 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "schema:QuantitativeValue",
+					"@type": "ceterms:CreditValue",
 					"schema:value": 1.0,
-					"schema:unitText": [
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNode": "creditUnit:DegreeCredit"
-						}
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
 					]
 				}
 			],
@@ -52,7 +116,12 @@
 			"@id": "_:LOP_ALH5211",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Basic First Aid" },
-			"ceterms:codedNotation": "ALH5211",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ALH5211"
+				}
+			],
 			"ceterms:ownedBy": [
 				"https://credentialengineregistry.org/resources/ce-1ce888e7-18d4-42fd-9a13-ef693631409b"
 			],
