@@ -10,13 +10,10 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "schema:QuantitativeValue",
-					"qdata:percentage": 100.0,
-					"schema:unitText": [
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNode": "creditUnit:Requirements"
-						}
+					"@type": "ceterms:CreditValue",
+					"schema:value": 63.0,
+					"ceterms:creditUnitType": [
+						"creditUnit:CompetencyCredit"
 					]
 				}
 			],
