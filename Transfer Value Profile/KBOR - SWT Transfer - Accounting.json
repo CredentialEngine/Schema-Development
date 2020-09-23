@@ -10,13 +10,10 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "schema:QuantitativeValue",
+					"@type": "ceterms:CreditValue",
 					"schema:value": 3.0,
-					"schema:unitText": [
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNode": "creditUnit:DegreeCredit"
-						}
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
 					]
 				}
 			],
@@ -31,7 +28,12 @@
 			"@id": "_:LOP_BUS210",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Financial Accounting" },
-			"ceterms:codedNotation": "BUS210",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "BUS210"
+				}
+			],
 			"ceterms:ownedBy": [
 				"https://credentialengineregistry.org/resources/ce-e68cb030-80c9-4f67-a93a-f51030c782a4"
 			],
@@ -60,7 +62,12 @@
 			"@id": "_:LOP_ACC1010",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Financial Accounting" },
-			"ceterms:codedNotation": "ACC1010",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ACC1010"
+				}
+			],
 			"ceterms:subjectWebpage": "https://kansasregents.org/resources/SWT/ACC1010.pdf",
 			"ceterms:teaches": [
 				{
