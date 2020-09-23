@@ -3,13 +3,18 @@
 	"Name": "Packet Switched Networks",
 	"Identifier": [
 		{
-			"ACE Course Number": "0015"
+			"IdentifierValueCode": "0015"
 		}
 	],
 	"TransferValue": [
 		{
 			"Value": 2.0,
-			"UnitText": "DegreeCredit",
+			"CreditUnitType": [
+				"DegreeCredit"
+			],
+			"CreditLevelType": [
+				"UpperDivision"
+			],
 			"Description": "In the upper-division baccalaureate degree category, 2 semester hours in electrical engineering, data communications and networking, telecommunications, or management information systems (11/90)."
 		}
 	],
@@ -17,7 +22,11 @@
 		{
 			"Type": "ceterms:LearningOpportunityProfile",
 			"Name": "Packet Switched Networks",
-			"CodedNotation": "A330",
+			"Identifier": [
+				{
+					"IdentifierValueCode": "A330"
+				}
+			],
 			"DateEffective": "1987-05-01",
 			"ExpirationDate": "2000-10-31",
 			"Description": "Understanding of terminology and issues and their application in functioning packet switched networks.",
