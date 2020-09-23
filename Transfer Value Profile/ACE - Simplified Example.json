@@ -9,18 +9,14 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "schema:QuantitativeValue",
+					"@type": "ceterms:CreditValue",
 					"schema:value": 3.0,
-					"ceterms:description": { "en": "In the upper-division post-baccalaureate, 3 semester hours." }
-					"schema:unitText": [
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNode": "creditUnit:DegreeCredit"
-						},
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNodeName": { "en": "Upper-Division Post-Baccalaureate" }
-						}
+					"schema:description": { "en": "In the upper-division post-baccalaureate, 3 semester hours." },
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
+					],
+					"ceterms:creditLevelType": [
+						"audLevel:UpperDivision"
 					]
 				}
 			],
@@ -36,7 +32,12 @@
 			"@id": "_:LOP_VIL84",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Essentials of Business Intelligence" },
-			"ceterms:codedNotation": "VIL84",
+			"ceterms:identifer": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "VIL84"
+				}
+			],
 			"ceterms:ownedBy": [
 				"_:Org_Bisk"
 			],
