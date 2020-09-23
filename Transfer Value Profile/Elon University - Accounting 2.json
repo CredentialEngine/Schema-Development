@@ -10,13 +10,10 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "schema:QuantitativeValue",
+					"@type": "ceterms:CreditValue",
 					"schema:value": 3.0,
-					"schema:unitText": [
-						{
-							"@type": "ceterms:CredentialAlignmentObject",
-							"ceterms:targetNode": "creditUnit:DegreeCredit"
-						}
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
 					]
 				}
 			],
@@ -31,7 +28,12 @@
 			"@id": "_:LOP_ACC122",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Prin of Financial Account II" },
-			"ceterms:codedNotation": "ACC122",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ACC122"
+				}
+			],
 			"ceterms:ownedBy": [
 				"_:Org_Alamance"
 			],
@@ -43,7 +45,12 @@
 			"@id": "_:LOP_ACC2XX",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "ACC Elective Course" },
-			"ceterms:codedNotation": "ACC*2XX",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "ACC*2XX"
+				}
+			],
 			"ceterms:ownedBy": [
 				"https://credentialengineregistry.org/resources/ce-33b14188-1871-4d75-b065-45cf7edeece4"
 			],
