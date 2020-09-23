@@ -4,6 +4,7 @@
 	"Description": "Understanding of terminology and issues and their application in functioning packet switched networks.",
 	"Identifier": [
 		{
+			"@type": "ceterms:IdentifierValue",
 			"IdentifierValueCode": "AMER-0015"
 		}
 	],
@@ -31,6 +32,7 @@
 			"Name": "Packet Switched Networks",
 			"Identifier": [
 				{
+					"@type": "ceterms:IdentifierValue",
 					"IdentifierValueCode": "A330"
 				}
 			],
