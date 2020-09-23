@@ -16,7 +16,7 @@
 						"creditUnit:DegreeCredit"
 					],
 					"ceterms:creditLevelType": [
-						"audLevel:UpperDivision"
+						"audLevel:UpperDivisionLevel"
 					]
 				}
 			],
