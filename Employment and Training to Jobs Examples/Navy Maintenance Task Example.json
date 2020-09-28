@@ -83,35 +83,23 @@
 			"skos:inScheme": "_:ConceptScheme_TaskSequenceCode"
 		},
 		{
+			"@id": "_:Concept_HGONGAA",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Combined Identifier" },
+			"skos:notation": "HGONGAA"
+		},
+		{
 			"@id": "_:Task_HGONGAA",
 			"@type": "ceterms:Task",
 			"ceterms:description": "R&R CONVERTER CATALYST",
-			"ceterms:codedNotation": "HGONGAA",
-			"ceterms:categoryReference": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_TaskFunctionCode_H"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_TaskIntervalCode_G"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_TaskMaintenanceLevelCode_O"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_TaskServiceCode_N"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_TaskOperabilityCode_G"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "_:Concept_TaskSequenceCode_AA"
-				}
+			"ceterms:classification": [
+				"_:Concept_TaskFunctionCode_H"
+				"_:Concept_TaskIntervalCode_G"
+				"_:Concept_TaskMaintenanceLevelCode_O"
+				"_:Concept_TaskServiceCode_N"
+				"_:Concept_TaskOperabilityCode_G"
+				"_:Concept_TaskSequenceCode_AA",
+				"_:Concept_HGONGAA"
 			],
 			"ceasn:hasChild": [
 				"_:Task_HGONGAA_010",
