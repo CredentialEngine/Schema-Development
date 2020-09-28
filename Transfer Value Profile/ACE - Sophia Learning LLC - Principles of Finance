@@ -1,0 +1,108 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:ctid": "ce-e4f5301e-0164-47f8-b020-23984defdb92",
+			"ceterms:name": { "en": "Principles of Finance" },
+			"ceterms:subjectWebpage": "https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=SOPHIA+Learning%2c+LLC&cid=6bb6586f-94c4-ea11-a812-000d3a378a3a",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-96938154-dcb4-ea11-a812-000d3a579ca8"
+			],
+			"ceterms:transferValue": [
+				{
+					"@type": "ceterms:CreditValue",
+					"schema:value": 3,
+					"ceterms:creditLevelType": [
+						"creditLevel:UpperDivisionLevel"
+					],
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:FIN1001"
+			]
+		},
+		{
+			"@type": "ceterms:LearningOpportunityProfile",
+			"@id": "_:FIN1001",
+			"ceterms:ownedBy": [
+				"_:SophiaLearningLLC"
+			],
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "FIN1001",
+					"ceterms:identifierTypeName": { "en": "Organization Course Number" }
+				},
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "SOPH-0033",
+					"ceterms:identifierTypeName": { "en": "ACE Course Number" }
+				}
+			],
+			"ceterms:deliveryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "deliveryType:OnlineOnly"
+				}
+			],
+			"ceterms:estimatedDuration": [
+				{
+					"@type": "ceterms:DurationProfile",
+					"ceterms:description": { "en": "This is a self-paced course. Students have 60 days with 30 days extension (if needed) to complete" }
+				}
+			],
+			"ceterms:dateEffective": "2020-6-1",
+			"ceterms:expirationDate": "2023-5-30",
+			"ceterms:teaches": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeDescription": { "en": "describe the operating environment of the firm, the role of financial institutions, and the structure of the capital markets and explain their impact on the financial performance of the firm" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeDescription": { "en": "interpret financial statements and financial ratios" }
+				}
+			],
+			"ceterms:subject": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": { "en": "Goals and organizations of financial management" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": { "en": "Statements, taxes, and cash flow" }
+				}
+			],
+			"ceterms:learningMethodType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "learnMethod:Lecture"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "learnMethod:Laboratory"
+				}
+			],
+			"ceterms:assessmentMethodType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "assessMethod:Exam"
+				}
+			],
+			"ceterms:requires": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:condition": { "en": [ "Minimum Passing Score: 70%" ] }
+				}
+			]
+		},
+		{
+			"@type": "ceterms:CredentialOrganization",
+			"@id": "_:SophiaLearningLLC",
+			"ceterms:name": { "en": "Sophia Learning, LLC" }
+		}
+	]
+}
