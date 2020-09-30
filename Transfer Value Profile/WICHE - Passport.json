@@ -138,7 +138,7 @@
 
 	"//A second BHSU Transfer Value Profile that declares the WICHE Learning Opportunity block to be equivalent to their course block, and is derived from WICHE's TVP",
 	{
-		"@id": "https://credentialengineregistry.org/resources/ce-aec0d4b1-73ee-48d5-af9d-e201edcfc92f",
+		"@id": "https://credentialengineregistry.org/resources/ce-0089872a-e004-47af-8e3b-26de4431a8c6",
 		"@type": "ceterms:TransferValueProfile",
 		"ceterms:name": "BHSU WICHE Interstate Passport Course Block (Incoming)",
 		"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
