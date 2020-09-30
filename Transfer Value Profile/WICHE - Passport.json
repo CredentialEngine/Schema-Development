@@ -1,240 +1,236 @@
-{
-	"@graph": [
+[
+	"//Organization for WICHE",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96",
+		"@type": "ceterms:QACredentialOrganization",
+		"ceterms:name": { "en": "Western Interstate Commission for Higher Education" }
+	},
 	
-		"//Organization for WICHE",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96",
-			"@type": "ceterms:QACredentialOrganization",
-			"ceterms:name": { "en": "Western Interstate Commission for Higher Education" }
-		},
-		
-		
-		"//WICHE's Competency Framework for the 63 PLOs"
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
-			"@type": "ceasn:CompetencyFramework",
-			"ceasn:name": { "en": "Passport Learning Outcomes" },
-			"ceasn:source": "http://interstatepassport.wiche.edu/documents/IP_Overview.pdf"
-		},
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795",
-			"@type": "ceasn:Competency",
-			"ceasn:competencyText": { "en": "Text of this competency..." }
-		},
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7",
-			"@type": "ceasn:Competency",
-			"ceasn:competencyText": { "en": "Text of this competency..." }
-		},
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c",
-			"@type": "ceasn:Competency",
-			"ceasn:competencyText": { "en": "Text of this competency..." }
-		},
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-e835bc7f-bb45-4cc5-8671-23024997ec5f",
-			"@type": "ceasn:Competency",
-			"ceasn:competencyText": { "en": "Text of this competency..." }
-		},
-		"...",
+	
+	"//WICHE's Competency Framework for the 63 PLOs"
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-cbb51975-486d-4527-93c3-89d19bef983a",
+		"@type": "ceasn:CompetencyFramework",
+		"ceasn:name": { "en": "Passport Learning Outcomes" },
+		"ceasn:source": "http://interstatepassport.wiche.edu/documents/IP_Overview.pdf"
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795",
+		"@type": "ceasn:Competency",
+		"ceasn:competencyText": { "en": "Text of this competency..." }
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7",
+		"@type": "ceasn:Competency",
+		"ceasn:competencyText": { "en": "Text of this competency..." }
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c",
+		"@type": "ceasn:Competency",
+		"ceasn:competencyText": { "en": "Text of this competency..." }
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-e835bc7f-bb45-4cc5-8671-23024997ec5f",
+		"@type": "ceasn:Competency",
+		"ceasn:competencyText": { "en": "Text of this competency..." }
+	},
+	"...",
 
 
-		"//A Learning Opportunity from WICHE (in lieu of having a Credential) that represents the block of courses that teach the 63 competencies",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824",
-			"@type": "ceterms:LearningOpportunityProfile",
-			"ceterms:ownedBy": [
-				"https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96"
-			],
-			"ceterms:name": { "en": "Passport Learning Outcomes Courses Block" },
-			"ceterms:description": { "en": "Any block of courses that collectively teach all 63 PLOs" },
-			"ceterms:teaches": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-e835bc7f-bb45-4cc5-8671-23024997ec5f"
-				},
-				"..."
-			]
-		},
-
-
-		"//A base Transfer Value Profile from WICHE for others to expand on",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96",
-			"@type": "ceterms:TransferValueProfile",
-			"ceterms:name": "WICHE Interstate Passport Course Block",
-			"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
-			"ceterms:ownedBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:transferValue": [
-				{
-					"@type": "ceterms:CreditValue",
-					"schema:value": 63.0,
-					"ceterms:creditUnitType": [
-						"creditUnit:CompetencyCredit"
-					]
-				}
-			],
-			"ceterms:transferValueFrom": [
-				"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
-			],
-			"ceterms:transferValueFor": [
-				"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
-			]
-		},
-
-
-		"//The Black Hills State University Organization",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1",
-			"@type": "ceterms:CredentialOrganization",
-			"ceterms:name": { "en": "Black Hills State University" },
+	"//A Learning Opportunity from WICHE (in lieu of having a Credential) that represents the block of courses that teach the 63 competencies",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824",
+		"@type": "ceterms:LearningOpportunityProfile",
+		"ceterms:ownedBy": [
+			"https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96"
+		],
+		"ceterms:name": { "en": "Passport Learning Outcomes Courses Block" },
+		"ceterms:description": { "en": "Any block of courses that collectively teach all 63 PLOs" },
+		"ceterms:teaches": [
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
+			},
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
+			},
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c"
+			},
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-e835bc7f-bb45-4cc5-8671-23024997ec5f"
+			},
 			"..."
-		},
+		]
+	},
 
 
-		"//The BHSU Transfer Value Profile that declares their course block to be equivalent to WICHE's Learning Opportunity block, and is derived from WICHE's TVP",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-aec0d4b1-73ee-48d5-af9d-e201edcfc92f",
-			"@type": "ceterms:TransferValueProfile",
-			"ceterms:name": "BHSU WICHE Interstate Passport Course Block (Outgoing)",
-			"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
-			"ceterms:ownedBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:transferValue": [
-				{
-					"@type": "ceterms:CreditValue",
-					"schema:value": 63.0,
-					"ceterms:creditUnitType": [
-						"creditUnit:CompetencyCredit"
-					]
-				}
-			],
-			"ceasn:derivedFrom": [
-				"https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96"
-			],
-			"ceterms:transferValueFrom": [
-				"https://credentialengineregistry.org/resources/ce-155e3f26-140f-407f-9828-212cdf3df70f",
-				"https://credentialengineregistry.org/resources/ce-10e13112-336d-4a30-abdc-b0bfe785757b",
-				"..."
-			],
-			"ceterms:transferValueFor": [
-				"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
-			]
-		},
+	"//A base Transfer Value Profile from WICHE for others to expand on",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96",
+		"@type": "ceterms:TransferValueProfile",
+		"ceterms:name": "WICHE Interstate Passport Course Block",
+		"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
+		"ceterms:ownedBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:transferValue": [
+			{
+				"@type": "ceterms:CreditValue",
+				"schema:value": 63.0,
+				"ceterms:creditUnitType": [
+					"creditUnit:CompetencyCredit"
+				]
+			}
+		],
+		"ceterms:transferValueFrom": [
+			"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
+		],
+		"ceterms:transferValueFor": [
+			"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
+		]
+	},
 
 
-		"//A second BHSU Transfer Value Profile that declares the WICHE Learning Opportunity block to be equivalent to their course block, and is derived from WICHE's TVP",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-aec0d4b1-73ee-48d5-af9d-e201edcfc92f",
-			"@type": "ceterms:TransferValueProfile",
-			"ceterms:name": "BHSU WICHE Interstate Passport Course Block (Incoming)",
-			"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
-			"ceterms:ownedBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:transferValue": [
-				{
-					"@type": "ceterms:CreditValue",
-					"schema:value": 63.0,
-					"ceterms:creditUnitType": [
-						"creditUnit:CompetencyCredit"
-					]
-				}
-			],
-			"ceasn:derivedFrom": [
-				"https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96"
-			],
-			"ceterms:transferValueFrom": [
-				"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
-			],
-			"ceterms:transferValueFor": [
-				"https://credentialengineregistry.org/resources/ce-155e3f26-140f-407f-9828-212cdf3df70f",
-				"https://credentialengineregistry.org/resources/ce-10e13112-336d-4a30-abdc-b0bfe785757b",
-				"..."
-			]
-		},
+	"//The Black Hills State University Organization",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1",
+		"@type": "ceterms:CredentialOrganization",
+		"ceterms:name": { "en": "Black Hills State University" },
+		"..."
+	},
 
 
-		"//One of the learning opportunities from BHSU that teaches some of the PLOs",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-155e3f26-140f-407f-9828-212cdf3df70f",
-			"@type": "ceterms:LearningOpportunityProfile",
-			"ceterms:name": { "en": "Fundamentals of Speech" },
-			"ceterms:identifier": [
-				{
-					"@type": "ceterms:IdentifierValue",
-					"ceterms:identifierValueCode": "101",
-					"ceterms:identifierTypeName": { "en": "Course Number" }
-				}
-			],
-			"ceterms:ownedBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:offeredBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:teaches": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
-				},
-				"..."
-			]
-		},
+	"//The BHSU Transfer Value Profile that declares their course block to be equivalent to WICHE's Learning Opportunity block, and is derived from WICHE's TVP",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-aec0d4b1-73ee-48d5-af9d-e201edcfc92f",
+		"@type": "ceterms:TransferValueProfile",
+		"ceterms:name": "BHSU WICHE Interstate Passport Course Block (Outgoing)",
+		"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
+		"ceterms:ownedBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:transferValue": [
+			{
+				"@type": "ceterms:CreditValue",
+				"schema:value": 63.0,
+				"ceterms:creditUnitType": [
+					"creditUnit:CompetencyCredit"
+				]
+			}
+		],
+		"ceasn:derivedFrom": [
+			"https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96"
+		],
+		"ceterms:transferValueFrom": [
+			"https://credentialengineregistry.org/resources/ce-155e3f26-140f-407f-9828-212cdf3df70f",
+			"https://credentialengineregistry.org/resources/ce-10e13112-336d-4a30-abdc-b0bfe785757b",
+			"..."
+		],
+		"ceterms:transferValueFor": [
+			"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
+		]
+	},
 
 
-		"//Another learning opportunity from BHSU that teaches some more of the PLOs",
-		{
-			"@id": "https://credentialengineregistry.org/resources/ce-10e13112-336d-4a30-abdc-b0bfe785757b",
-			"@type": "ceterms:LearningOpportunityProfile",
-			"ceterms:name": { "en": "Biology Survey I & Lab" },
-			"ceterms:identifier": [
-				{
-					"@type": "ceterms:IdentifierValue",
-					"ceterms:identifierValueCode": "101/101L",
-					"ceterms:identifierTypeName": { "en": "Course Number" }
-				}
-			],
-			"ceterms:ownedBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:offeredBy": [
-				"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
-			],
-			"ceterms:teaches": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c"
-				},
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c"
-				},
-				"..."
-			]
-		},
-		
-		
-		"//And so on..."
-		
-	]
-}
+	"//A second BHSU Transfer Value Profile that declares the WICHE Learning Opportunity block to be equivalent to their course block, and is derived from WICHE's TVP",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-aec0d4b1-73ee-48d5-af9d-e201edcfc92f",
+		"@type": "ceterms:TransferValueProfile",
+		"ceterms:name": "BHSU WICHE Interstate Passport Course Block (Incoming)",
+		"ceterms:subjectWebpage": "http://interstate-passport.wiche.edu/public/index.cfm?publicprofile&campus=1052&print",
+		"ceterms:ownedBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:transferValue": [
+			{
+				"@type": "ceterms:CreditValue",
+				"schema:value": 63.0,
+				"ceterms:creditUnitType": [
+					"creditUnit:CompetencyCredit"
+				]
+			}
+		],
+		"ceasn:derivedFrom": [
+			"https://credentialengineregistry.org/resources/ce-4f1ab4c6-3417-4bef-b11d-7e9da8c3fd96"
+		],
+		"ceterms:transferValueFrom": [
+			"https://credentialengineregistry.org/resources/ce-910aaac8-7ed9-468f-bd73-01323a8d0824"
+		],
+		"ceterms:transferValueFor": [
+			"https://credentialengineregistry.org/resources/ce-155e3f26-140f-407f-9828-212cdf3df70f",
+			"https://credentialengineregistry.org/resources/ce-10e13112-336d-4a30-abdc-b0bfe785757b",
+			"..."
+		]
+	},
+
+
+	"//One of the learning opportunities from BHSU that teaches some of the PLOs",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-155e3f26-140f-407f-9828-212cdf3df70f",
+		"@type": "ceterms:LearningOpportunityProfile",
+		"ceterms:name": { "en": "Fundamentals of Speech" },
+		"ceterms:identifier": [
+			{
+				"@type": "ceterms:IdentifierValue",
+				"ceterms:identifierValueCode": "101",
+				"ceterms:identifierTypeName": { "en": "Course Number" }
+			}
+		],
+		"ceterms:ownedBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:offeredBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:teaches": [
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-9985ff16-f940-4f47-8873-0989c1c94795"
+			},
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-13d3d25f-0fae-4f80-863a-340ee21e82a7"
+			},
+			"..."
+		]
+	},
+
+
+	"//Another learning opportunity from BHSU that teaches some more of the PLOs",
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-10e13112-336d-4a30-abdc-b0bfe785757b",
+		"@type": "ceterms:LearningOpportunityProfile",
+		"ceterms:name": { "en": "Biology Survey I & Lab" },
+		"ceterms:identifier": [
+			{
+				"@type": "ceterms:IdentifierValue",
+				"ceterms:identifierValueCode": "101/101L",
+				"ceterms:identifierTypeName": { "en": "Course Number" }
+			}
+		],
+		"ceterms:ownedBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:offeredBy": [
+			"https://credentialengineregistry.org/resources/ce-f73f8285-e9f1-459e-8c7d-7148bcdaf2a1"
+		],
+		"ceterms:teaches": [
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c"
+			},
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-8c589919-780e-4813-8e3c-e7b5199d9a3c"
+			},
+			"..."
+		]
+	},
+	
+	
+	"//And so on..."
+]
