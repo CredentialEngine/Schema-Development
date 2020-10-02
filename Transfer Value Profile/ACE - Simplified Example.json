@@ -9,7 +9,7 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "ceterms:CreditValue",
+					"@type": "ceterms:ValueProfile",
 					"schema:value": 3.0,
 					"schema:description": { "en": "In the upper-division post-baccalaureate, 3 semester hours." },
 					"ceterms:creditUnitType": [
