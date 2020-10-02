@@ -10,7 +10,7 @@
 			],
 			"ceterms:transferValue": [
 				{
-					"@type": "ceterms:CreditValue",
+					"@type": "ceterms:ValueProfile",
 					"schema:value": 3,
 					"ceterms:creditLevelType": [
 						"creditLevel:UpperDivisionLevel"
