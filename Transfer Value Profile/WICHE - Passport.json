@@ -79,7 +79,7 @@
 		],
 		"ceterms:transferValue": [
 			{
-				"@type": "ceterms:CreditValue",
+				"@type": "ceterms:ValueProfile",
 				"schema:value": 63.0,
 				"ceterms:creditUnitType": [
 					"creditUnit:CompetencyCredit"
@@ -115,7 +115,7 @@
 		],
 		"ceterms:transferValue": [
 			{
-				"@type": "ceterms:CreditValue",
+				"@type": "ceterms:ValueProfile",
 				"schema:value": 63.0,
 				"ceterms:creditUnitType": [
 					"creditUnit:CompetencyCredit"
@@ -147,7 +147,7 @@
 		],
 		"ceterms:transferValue": [
 			{
-				"@type": "ceterms:CreditValue",
+				"@type": "ceterms:ValueProfile",
 				"schema:value": 63.0,
 				"ceterms:creditUnitType": [
 					"creditUnit:CompetencyCredit"
