@@ -13,7 +13,7 @@
 					"@type": "ceterms:ValueProfile",
 					"schema:value": 3,
 					"ceterms:creditLevelType": [
-						"creditLevel:UpperDivisionLevel"
+						"creditLevel:LowerDivisionLevel"
 					],
 					"ceterms:creditUnitType": [
 						"creditUnit:DegreeCredit"
