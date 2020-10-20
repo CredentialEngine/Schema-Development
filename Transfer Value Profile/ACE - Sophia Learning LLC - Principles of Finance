@@ -62,38 +62,38 @@
 			"ceterms:teaches": [
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
-					"ceterms:targetNode": "https://credentialengineregistry.org/ce-f3984fc3-4b1f-433b-91a1-d5ad81ed7ca9",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-f3984fc3-4b1f-433b-91a1-d5ad81ed7ca9",
 					"ceterms:targetNodeDescription": { "en": "describe the operating environment of the firm, the role of financial institutions, and the structure of the capital markets and explain their impact on the financial performance of the firm" }
 				},
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
-					"ceterms:targetNode": "https://credentialengineregistry.org/ce-581bac7e-a735-4755-a4cc-313cd705b986",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-581bac7e-a735-4755-a4cc-313cd705b986",
 					"ceterms:targetNodeDescription": { "en": "interpret financial statements and financial ratios" }
 				},
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
-					"ceterms:targetNode": "https://credentialengineregistry.org/ce-49ce65e5-132e-4430-8eb0-4ff06ec451eb",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-49ce65e5-132e-4430-8eb0-4ff06ec451eb",
 					"ceterms:targetNodeDescription": { "en": "explain the time value of money and calculate future value and present value for single and multiple cash flows" }
 				},
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
-					"ceterms:targetNode": "https://credentialengineregistry.org/ce-82339b05-b49f-4fa4-b0d8-b37d054a420f",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-82339b05-b49f-4fa4-b0d8-b37d054a420f",
 					"ceterms:targetNodeDescription": { "en": "describe the characteristics of capital market instruments including stocks, bonds, and money market instruments" }
 				},
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
-					"ceterms:targetNode": "https://credentialengineregistry.org/ce-faa89f86-7a55-4ee5-866e-91609a54cd1d",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-faa89f86-7a55-4ee5-866e-91609a54cd1d",
 					"ceterms:targetNodeDescription": { "en": "explain the capital budgeting process and the basic elements of working capital management" }
 				},
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:framework": "https://credentialengineregistry.org/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
-					"ceterms:targetNode": "https://credentialengineregistry.org/ce-07428927-1794-40ed-b9b7-9e0cffc458bb",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-07428927-1794-40ed-b9b7-9e0cffc458bb",
 					"ceterms:targetNodeDescription": { "en": "describe the sources of long-term capital and its importance to sustaining operations" }
 				}
 			],
