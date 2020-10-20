@@ -27,6 +27,7 @@
 		{
 			"@type": "ceterms:LearningOpportunityProfile",
 			"@id": "_:FIN1001",
+			"ceterms:name": { "en": "Principles of Finance" },
 			"ceterms:ownedBy": [
 				"_:SophiaLearningLLC"
 			],
