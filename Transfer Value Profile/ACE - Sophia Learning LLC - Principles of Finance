@@ -29,7 +29,9 @@
 					"ceterms:identifierValueCode": "SOPH-0033",
 					"ceterms:identifierTypeName": { "en": "ACE Course Number" }
 				}
-			]
+			],
+			"ceterms:startDate": "2020-6-1",
+			"ceterms:endDate": "2023-5-30"
 		},
 		{
 			"@type": "ceterms:LearningOpportunityProfile",
@@ -57,8 +59,6 @@
 					"ceterms:description": { "en": "This is a self-paced course. Students have 60 days with 30 days extension (if needed) to complete" }
 				}
 			],
-			"ceterms:dateEffective": "2020-6-1",
-			"ceterms:expirationDate": "2023-5-30",
 			"ceterms:teaches": [
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
