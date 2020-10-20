@@ -167,6 +167,10 @@
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
 					"ceterms:targetNode": "learnMethod:Laboratory"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "learnMethod:Prerecorded"
 				}
 			],
 			"ceterms:assessmentMethodType": [
