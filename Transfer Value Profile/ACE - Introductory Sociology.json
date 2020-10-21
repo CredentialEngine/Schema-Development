@@ -1,0 +1,119 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:TransferValueProfile",
+			"ceterms:ctid": "ce-fde8e91f-608b-4488-ba8d-b3d81b036b50",
+			"ceterms:name": { "en": "Introductory Sociology" },
+			"ceterms:subjectWebpage": "https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=College%20Board%27s%20College-Level%20Examination%20Program%20(CLEP)&cid=fe05b1f6-84c4-ea11-a812-000d3a33232a",
+			"ceterms:ownedBy": [
+				"https://credentialengineregistry.org/resources/ce-96938154-dcb4-ea11-a812-000d3a579ca8"
+			],
+			"ceterms:description": { "en": "Credit is recommended for candidates scoring 50 and above." },
+			"ceterms:transferValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3,
+					"ceterms:creditLevelType": [
+						"creditLevel:LowerDivisionLevel"
+					],
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
+					]
+				}
+			],
+			"ceterms:transferValueFrom": [
+				"_:CLEP0026"
+			],
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "CLEP-0026",
+					"ceterms:identifierTypeName": { "en": "ACE Exam Number" }
+				}
+			],
+			"ceterms:startDate": "2018-12-1",
+			"ceterms:endDate": "2023-11-30"
+		},
+		{
+			"@type": "ceterms:AssessmentProfile",
+			"@id": "_:CLEP0026",
+			"ceterms:name": { "en": "Introductory Sociology" },
+			"ceterms:ownedBy": [
+				"_:CLEP"
+			],
+			"ceterms:description": { "en": "The Introductory Sociology examination is designed to assess an individual's knowledge of the material typically presented in a one-semester introductory-level sociology course at most colleges and universities. The examination emphasizes basic facts and concepts as well as general theoretical approaches used by sociologists on the topics of institutions, social patterns, social processes, social stratifications, and the sociological perspective. Highly specialized knowledge of the subject and the methodology of the discipline is not required or measured by the test content.The exam contains approximately 100 questions to be answered in 90 minutes. Some of these are pretest questions that will not be scored. Any time test takers spend on tutorials and providing personal information is in addition to the actual testing time." },
+			"ceterms:assesses": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-f53c9247-9775-4186-a1f1-edd0a965edeb",
+					"ceterms:targetNodeDescription": { "en": " identification of specific names, facts, and concepts from sociological literature" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-7351578b-f8d3-4ca6-8ff5-1818dd4092db",
+					"ceterms:targetNodeDescription": { "en": "understanding of relationships between concepts, empirical generalizations, and theoretical propositions of sociology" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-2b3b27a9-e42c-4021-bb7c-178766320134",
+					"ceterms:targetNodeDescription": { "en": "understanding of the methods by which sociological relationships are established" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-6c4d0738-cb85-4263-badd-78ed1437b465",
+					"ceterms:targetNodeDescription": { "en": "application of concepts, propositions, and methods to hypothetical situations" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-ec073a6d-ce14-4e21-a548-bcb9a5d5bb24",
+					"ceterms:targetNodeDescription": { "en": "interpretation of tables and charts" }
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-1cfa68c0-5ad5-483b-ad8a-e622f33d4a1a",
+					"ceterms:targetNodeDescription": { "en": "institutions" },
+					"ceterms:weight": 0.2
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-30c840c0-2978-49b9-9044-d74721c827c1",
+					"ceterms:targetNodeDescription": { "en": "social patterns" },
+					"ceterms:weight": 0.1
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-5d0cbcee-ef29-46fc-a8e4-b260cb737d3e",
+					"ceterms:targetNodeDescription": { "en": "social processes" },
+					"ceterms:weight": 0.25
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-f7b31a05-4b6d-47f6-b001-1c7ad32ad6d1",
+					"ceterms:targetNodeDescription": { "en": "social stratification (process and structure)" },
+					"ceterms:weight": 0.25
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"ceterms:targetNode": "https://credentialengineregistry.org/resources/ce-90311565-e23b-40ec-8927-e1d9d04b599c",
+					"ceterms:targetNodeDescription": { "en": "the socialogical perspective" },
+					"ceterms:weight": 0.2
+				}
+			]
+		},
+		{
+			"@type": "ceterms:CredentialOrganization",
+			"@id": "_:CLEP",
+			"ceterms:name": { "en": "College Board's College-Level Examination Program (CLEP)" }
+		}
+	]
+}
