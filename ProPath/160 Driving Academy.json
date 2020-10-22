@@ -1,0 +1,476 @@
+"https://apps.illinoisworknet.com/cis/wioatraining/program/1006549_1007283"
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-9a40ce61-e797-4987-ab41-3ad3b5e0e613",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-9a40ce61-e797-4987-ab41-3ad3b5e0e613",
+			"@type": "ceterms:License",
+			"ceterms:name": { "en": "160 Driving Academy License" },
+			"ceterms:description": { "en": "Truck Driver Training School - CDL" },
+			"ceterms:subjectWebpage": "https://160drivingacademy.com/",
+			"ceterms:offeredBy": [
+				"https://credentialengineregistry.org/resources/ce-e8140b5b-415d-4dd4-8c3e-a2c11b32f3c7"
+			],
+			"ceterms:instructionalProgramType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "49-0205",
+					"ceterms:targetNodeName": { "en": "Truck and Bus Driver/Commercial Vehicle Operator and Instructor" }
+				}
+			],
+			"ceterms:occupationType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "53-3032",
+					"ceterms:targetNodeName": { "en": "Heavy and Tractor-Trailer Truck Drivers" }
+				}
+			],
+			"ceterms:approvedBy": [
+				"https://credentialengineregistry.org/resources/ce-418096a9-fb18-4ff0-b45a-562b1ec3d806",
+				"https://credentialengineregistry.org/resources/ce-f44730c7-3e02-4931-8de9-4a58a1475c04",
+				"https://credentialengineregistry.org/resources/ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7"
+			],
+			"ceterms:requires": [
+				"https://credentialengineregistry.org/resources/ce-f8885b28-134d-4188-8c86-063aadff14ea"
+			],
+			"ceterms:holders": [
+				{
+					"@type": "ceterms:HoldersProfile",
+					"qdata:relevantDataSet": [
+						"https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1"
+					]
+				}
+			],
+			"ceterms:employmentOutcome": [
+				{
+					"@type": "ceterms:EmploymentOutcomeProfile",
+					"qdata:relevantDataSet": [
+						"https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1"
+					]
+				}
+			],
+			"ceterms:earnings": [
+				{
+					"@type": "ceterms:EarningsProfile",
+					"qdata:relevantDataSet": [
+						"https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1"
+					]
+				}
+			]
+		}
+	]
+}
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-f8885b28-134d-4188-8c86-063aadff14ea",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-f8885b28-134d-4188-8c86-063aadff14ea",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "160 Driving Academy" },
+			"ceterms:description": { "en": "Truck Driver Training School - CDL" },
+			"ceterms:subjectWebpage": "https://160drivingacademy.com/",
+			"ceterms:offeredBy": [
+				"https://credentialengineregistry.org/resources/ce-e8140b5b-415d-4dd4-8c3e-a2c11b32f3c7"
+			],
+			"ceterms:instructionalProgramType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "49-0205",
+					"ceterms:targetNodeName": { "en": "Truck and Bus Driver/Commercial Vehicle Operator and Instructor" }
+				}
+			],
+			"ceterms:occupationType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "53-3032",
+					"ceterms:targetNodeName": { "en": "Heavy and Tractor-Trailer Truck Drivers" }
+				}
+			],
+			"ceterms:approvedBy": [
+				"https://credentialengineregistry.org/resources/ce-418096a9-fb18-4ff0-b45a-562b1ec3d806",
+				"https://credentialengineregistry.org/resources/ce-f44730c7-3e02-4931-8de9-4a58a1475c04",
+				"https://credentialengineregistry.org/resources/ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7"
+			],
+			"ceterms:learningMethodType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "learnMethod:Applied"
+				}
+			],
+			"ceterms:estimatedDuration": [
+				{
+					"@type": "ceterms:DurationProfile",
+					"ceterms:exactDuration": "P4W"
+				},
+				{
+					"@type": "ceterms:DurationProfile",
+					"ceterms:exactDuration": "PT160H"
+				}
+			],
+			"ceterms:estimatedCost": [
+				{
+					"@type": "ceterms:CostProfile",
+					"ceterms:directCostType": {
+						"@type": "ceterms:CredentialAlignmentObject",
+						"ceterms:targetNode": "costType:Tuition"
+					},
+					"ceterms:currency": "USD",
+					"ceterms:price": 4695.0
+				}
+			],
+			"ceterms:financialAssistance": [
+				{
+					"@type": "ceterms:FinancialAssistanceProfile",
+					"cterms:financialAssistanceType": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "financialAid:PrivateLoan"
+						},
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNode": "financialAid:WIOA"
+						}
+					]
+				}
+			],
+			"ceterms:prerequisite": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:description": { "en": "In-Person interview. Should bring drivers license and 3 year history" },
+					"ceterms:condition": { "en": [ "Drug/Alchohol Screening", "Other - DOT Physical Exam" ] }
+				}
+			],
+			"ceterms:deliveryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "delivery:InPerson"
+				},
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "delivery:OnlineOnly"
+				},
+			],
+			"ceterms:availableAt": [
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "320 S Green Bay Rd",
+					"ceterms:addressLocality": "Waukegan",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "60085",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "2935 E Clear Lake Avenue, Suite 2B",
+					"ceterms:addressLocality": "Springfield",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "62702",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "21055 Division St.",
+					"ceterms:addressLocality": "Crest Hill",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "60403",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "5720 North Belt West",
+					"ceterms:addressLocality": "Belleville",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "62226",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "2200 W. War Memorial Drive Suite CU15",
+					"ceterms:addressLocality": "Peoria",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "61613",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "1315 N Mattis",
+					"ceterms:addressLocality": "Champaign",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "61821",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "199 W Joe Orr Road",
+					"ceterms:addressLocality": "Chicago Heights",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "60411",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "303 N Main St Suite #100",
+					"ceterms:addressLocality": "Rockford",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "61101",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				},
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": "7200 US RT 150",
+					"ceterms:addressLocality": "Moline",
+					"ceterms:addressRegion": "IL",
+					"ceterms:postalCode": "61265",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(309) 266-1601"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-e8140b5b-415d-4dd4-8c3e-a2c11b32f3c7",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-e8140b5b-415d-4dd4-8c3e-a2c11b32f3c7",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": { "en": "160 Driving Academy" },
+			"ceterms:subjectWebpage": "https://160drivingacademy.com/"
+		}
+	]
+}
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-418096a9-fb18-4ff0-b45a-562b1ec3d806",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-418096a9-fb18-4ff0-b45a-562b1ec3d806",
+			"@type": "ceterms:QualityAssuranceOrganization",
+			"ceterms:name": { "en": "Illinois Community College Board" }
+		}
+	]
+}
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-f44730c7-3e02-4931-8de9-4a58a1475c04",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-f44730c7-3e02-4931-8de9-4a58a1475c04",
+			"@type": "ceterms:QualityAssuranceOrganization",
+			"ceterms:name": { "en": "Illinois Secretary of State" }
+		}
+	]
+}
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7",
+			"@type": "ceterms:QualityAssuranceOrganization",
+			"ceterms:name": { "en": "Industry Standard: Illinois Secretary of State Licensed Facility" }
+		}
+	]
+}
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"@type": "qdata:DataSetProfile",
+			"qdata:dataSetTimePeriod": [
+				{
+					"@type": "qdata:DataSetTimeFrame",
+					"ceterms:startDate": "2017-1-11",
+					"ceterms:endDate": "2019-3-20",
+					"qdata:dataAttributes": [
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:subjectIncluded": [
+								{
+									"@type": "qdata:SubjectProfile",
+									"qdata:subjectType": [
+										"subjectCategory:CredentialHolder"
+									],
+									"qdata:subjectValue": [
+										{
+											"@type": "schema:QuantitativeValue",
+											"schema:value": 415,
+											"schema:description": { "en": "All Completers" }
+										}
+									]									
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:subjectIncluded": [
+								{
+									"@type": "qdata:SubjectProfile",
+									"qdata:subjectType": [
+										"subjectCategory:CredentialHolder"
+									],
+									"qdata:subjectValue": [
+										{
+											"@type": "schema:QuantitativeValue",
+											"schema:value": 344,
+											"schema:description": { "en": "Successful Completers" }
+										}
+									]									
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:subjectIncluded": [
+								{
+									"@type": "qdata:SubjectProfile",
+									"qdata:subjectType": [
+										"subjectCategory:CredentialHolder"
+									],
+									"qdata:subjectValue": [
+										{
+											"@type": "schema:QuantitativeValue",
+											"schema:value": 329,
+											"schema:description": { "en": "Completed Successfully and Exited WIOA" }
+										}
+									]									
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:subjectIncluded": [
+								{
+									"@type": "qdata:SubjectProfile",
+									"qdata:subjectType": [
+										"subjectCategory:Enrollee"
+									],
+									"qdata:subjectValue": [
+										{
+											"@type": "schema:QuantitativeValue",
+											"schema:value": 416,
+											"schema:description": { "en": "Total Enrollment (including currently enrolled)" }
+										}
+									]									
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:subjectIncluded": [
+								{
+									"@type": "qdata:SubjectProfile",
+									"qdata:subjectType": [
+										"subjectCategory:PostCredentialEarnings"
+									],
+									"qdata:subjectValue": [
+										{
+											"@type": "schema:QuantitativeValue",
+											"schema:value": 217,
+											"schema:description": { "en": "Hired for a Job" }
+										}
+									]									
+								}
+							],
+							"qdata:earningsAmount": [
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:currency": "USD",
+									"schema:value": 15.91,
+									"schema:description": { "en": "Average Wage" }
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:subjectIncluded": [
+								{
+									"@type": "qdata:SubjectProfile",
+									"qdata:subjectType": [
+										"subjectCategory:PostCredentialEarnings"
+									],
+									"qdata:subjectValue": [
+										{
+											"@type": "schema:QuantitativeValue",
+											"schema:value": 195,
+											"schema:description": { "en": "Hired for a Training-Related Job" }
+										}
+									]									
+								}
+							],
+							"qdata:earningsAmount": [
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:currency": "USD",
+									"schema:value": 19.35,
+									"schema:description": { "en": "Average Wage" }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
