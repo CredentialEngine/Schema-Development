@@ -32,7 +32,10 @@
 				"https://credentialengineregistry.org/resources/ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7"
 			],
 			"ceterms:requires": [
-				"https://credentialengineregistry.org/resources/ce-f8885b28-134d-4188-8c86-063aadff14ea"
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:targetLearningOpportunity": "https://credentialengineregistry.org/resources/ce-f8885b28-134d-4188-8c86-063aadff14ea"
+				}
 			],
 			"ceterms:holders": [
 				{
