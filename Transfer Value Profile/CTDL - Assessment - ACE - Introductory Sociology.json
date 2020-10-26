@@ -18,6 +18,12 @@
 					],
 					"ceterms:creditUnitType": [
 						"creditUnit:DegreeCredit"
+					],
+					"ceterms:subject": [
+						{
+							"@type": "ceterms:CredentialAlignmentObject",
+							"ceterms:targetNodeName": { "en": "Introductory Sociology" }
+						}
 					]
 				}
 			],
