@@ -362,91 +362,51 @@
 					"qdata:dataAttributes": [
 						{
 							"@type": "qdata:DataProfile",
-							"qdata:subjectIncluded": [
+							"qdata:totalWIOACompleters": [
 								{
-									"@type": "qdata:SubjectProfile",
-									"qdata:subjectType": [
-										"subjectCategory:CredentialHolder"
-									],
-									"qdata:subjectValue": [
-										{
-											"@type": "schema:QuantitativeValue",
-											"schema:value": 415,
-											"schema:description": { "en": "All Completers" }
-										}
-									]									
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 415,
+									"schema:description": { "en": "All Completers" }
 								}
 							]
 						},
 						{
 							"@type": "qdata:DataProfile",
-							"qdata:subjectIncluded": [
+							"qdata:holdersInSet": [
 								{
-									"@type": "qdata:SubjectProfile",
-									"qdata:subjectType": [
-										"subjectCategory:CredentialHolder"
-									],
-									"qdata:subjectValue": [
-										{
-											"@type": "schema:QuantitativeValue",
-											"schema:value": 344,
-											"schema:description": { "en": "Successful Completers" }
-										}
-									]									
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 344,
+									"schema:description": { "en": "Successful Completers" }
 								}
 							]
 						},
 						{
 							"@type": "qdata:DataProfile",
-							"qdata:subjectIncluded": [
+							"qdata:totalWIOAExiters": [
 								{
-									"@type": "qdata:SubjectProfile",
-									"qdata:subjectType": [
-										"subjectCategory:CredentialHolder"
-									],
-									"qdata:subjectValue": [
-										{
-											"@type": "schema:QuantitativeValue",
-											"schema:value": 329,
-											"schema:description": { "en": "Completed Successfully and Exited WIOA" }
-										}
-									]									
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 329,
+									"schema:description": { "en": "Completed Successfully and Exited WIOA" }
 								}
 							]
 						},
 						{
 							"@type": "qdata:DataProfile",
-							"qdata:subjectIncluded": [
+							"qdata:totalWIOAParticipants": [
 								{
-									"@type": "qdata:SubjectProfile",
-									"qdata:subjectType": [
-										"subjectCategory:Enrollee"
-									],
-									"qdata:subjectValue": [
-										{
-											"@type": "schema:QuantitativeValue",
-											"schema:value": 416,
-											"schema:description": { "en": "Total Enrollment (including currently enrolled)" }
-										}
-									]									
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 416,
+									"schema:description": { "en": "Total Enrollment (Including Currently Enrolled)" }
 								}
 							]
 						},
 						{
 							"@type": "qdata:DataProfile",
-							"qdata:subjectIncluded": [
+							"qdata:unrelatedEmployment": [
 								{
-									"@type": "qdata:SubjectProfile",
-									"qdata:subjectType": [
-										"subjectCategory:PostCredentialEarnings"
-									],
-									"qdata:subjectValue": [
-										{
-											"@type": "schema:QuantitativeValue",
-											"schema:value": 217,
-											"schema:description": { "en": "Hired for a Job" }
-										}
-									]									
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 22,
+									"schema:description": { "en": "Hired for a Non-Training Related Job" }
 								}
 							],
 							"qdata:earningsAmount": [
@@ -460,19 +420,11 @@
 						},
 						{
 							"@type": "qdata:DataProfile",
-							"qdata:subjectIncluded": [
+							"qdata:relatedEmployment": [
 								{
-									"@type": "qdata:SubjectProfile",
-									"qdata:subjectType": [
-										"subjectCategory:PostCredentialEarnings"
-									],
-									"qdata:subjectValue": [
-										{
-											"@type": "schema:QuantitativeValue",
-											"schema:value": 195,
-											"schema:description": { "en": "Hired for a Training-Related Job" }
-										}
-									]									
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 195,
+									"schema:description": { "en": "Hired for a Training-Related Job" }
 								}
 							],
 							"qdata:earningsAmount": [
