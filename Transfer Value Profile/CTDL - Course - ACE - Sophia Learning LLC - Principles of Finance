@@ -195,7 +195,8 @@
 		{
 			"@type": "ceterms:CredentialOrganization",
 			"@id": "_:SophiaLearningLLC",
-			"ceterms:name": { "en": "Sophia Learning, LLC" }
+			"ceterms:name": { "en": "Sophia Learning, LLC" },
+			"ceterms:subjectWebpage": "https://www.sophia.org/"
 		}
 	]
 }
