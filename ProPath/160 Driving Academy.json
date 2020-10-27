@@ -368,30 +368,21 @@
 									"schema:value": 415,
 									"schema:description": { "en": "All Completers" }
 								}
-							]
-						},
-						{
-							"@type": "qdata:DataProfile",
+							],
 							"qdata:holdersInSet": [
 								{
 									"@type": "schema:QuantitativeValue",
 									"schema:value": 344,
 									"schema:description": { "en": "Successful Completers" }
 								}
-							]
-						},
-						{
-							"@type": "qdata:DataProfile",
+							],
 							"qdata:totalWIOAExiters": [
 								{
 									"@type": "schema:QuantitativeValue",
 									"schema:value": 329,
 									"schema:description": { "en": "Completed Successfully and Exited WIOA" }
 								}
-							]
-						},
-						{
-							"@type": "qdata:DataProfile",
+							],
 							"qdata:totalWIOAParticipants": [
 								{
 									"@type": "schema:QuantitativeValue",
