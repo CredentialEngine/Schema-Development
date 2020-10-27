@@ -119,7 +119,8 @@
 		{
 			"@type": "ceterms:CredentialOrganization",
 			"@id": "_:CLEP",
-			"ceterms:name": { "en": "College Board's College-Level Examination Program (CLEP)" }
+			"ceterms:name": { "en": "College Board's College-Level Examination Program (CLEP)" },
+			"ceterms:subjectWebpage": "https://clep.collegeboard.org/"
 		}
 	]
 }
