@@ -1,0 +1,90 @@
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"@type": "qdata:DataSetProfile",
+			"ceterms:description": { "en": "Typical Occupations for Graduates of Renewable Energy and Communications Tower Technician Programs in Washington State." },
+			"ceterms:ctid": "ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"qdata:dataSetTimePeriod": [
+				{
+					"@type": "qdata:DataSetTimeFrame",
+					"ceterms:description": { "en": "Average annual salary for this occupation for May 2017 in Washington. (Data Source: U.S. Bureau of Labor Statistics, March 2018)" },
+					"ceterms:startDate": "2017-5-1",
+					"ceterms:endDate": "2017-5-31",
+					"qdata:dataAttributes": [
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:earningsAmount": [
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:value": 81790.0,
+									"schema:currency": "USD",
+									"ceterms:description": { "en": "Commercial and Industrial Designers" }
+								},
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:value": 75060.0,
+									"schema:currency": "USD",
+									"ceterms:description": { "en": "Engineering Technicians, Except Drafters, All Other" }
+								},
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:value": 52450.0,
+									"schema:currency": "USD",
+									"ceterms:description": { "en": "Wind Turbine Service Technicians" }
+								},
+							]
+						},
+					]
+				}
+			]
+		}
+	]
+}
+
+
+
+
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"@type": "qdata:DataSetProfile",
+			"ceterms:description": { "en": "Typical Occupations for Graduates of Renewable Energy and Communications Tower Technician Programs in Washington State." },
+			"ceterms:ctid": "ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"qdata:dataSetTimePeriod": [
+				{
+					"@type": "qdata:DataSetTimeFrame",
+					"ceterms:description": { "en": "Employment projections for the average number of openings per year, between 2016 and 2021 in Washington. Data Source: Washington State Employment Security Department" },
+					"ceterms:startDate": "2016-1-1",
+					"ceterms:endDate": "2021-12-31",
+					"qdata:dataAttributes": [
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:employmentOutlook": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 57,
+									"ceterms:description": { "en": "Commercial and Industrial Designers" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 213,
+									"ceterms:description": { "en": "Engineering Technicians, Except Drafters, All Other" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 24,
+									"ceterms:description": { "en": "Wind Turbine Service Technicians" }
+								},
+							]
+						},
+					]
+				}
+			]
+		}
+	]
+}
