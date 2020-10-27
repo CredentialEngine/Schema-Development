@@ -1,0 +1,93 @@
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"@type": "qdata:DataSetProfile",
+			"ceterms:ctid": "ce-898a674c-fd89-4073-a09a-4be238f725c1",
+			"qdata:dataSetTimePeriod": [
+				{
+					"@type": "qdata:DataSetTimeFrame",
+					"ceterms:description": { "en": "Based on employment for the most recent three years for which data is available." },
+					"qdata:dataAttributes": [
+						{
+							"@type": "qdata:DataProfile",
+							"qdata:totalWIOAParticipants": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 76
+									"schema:description": { "en": "Enrollment" }
+								}
+							],
+							"qdata:totalWIOACompleters": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"schema:value": 76
+									"schema:description": { "en": "Number of students completing the program" }
+								}
+							],
+							"qdata:employmentRate": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 72
+									"schema:description": { "en": "Employment Rate" }
+								}
+							],
+							"qdata:earningsAmount": [
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:currency": "USD",
+									"schema:value": 22.22,
+									"schema:description": { "en": "Typical (Median) Hourly Earnings" }
+								},
+								{
+									"@type": "schema:MonetaryAmount",
+									"schema:currency": "USD",
+									"schema:value": 44207.00,
+									"schema:description": { "en": "Typical (Median) Annual Earnings" }
+								}
+							],
+							"qdata:industryRate": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 28
+									"schema:description": { "en": "Construction" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 12
+									"schema:description": { "en": "Information" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 11
+									"schema:description": { "en": "Professional, Scientific, Technical Services" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 7
+									"schema:description": { "en": "Manufacturing" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 7
+									"schema:description": { "en": "Retail Trade" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 7
+									"schema:description": { "en": "Administrative Support" }
+								},
+								{
+									"@type": "schema:QuantitativeValue",
+									"qdata:percentage": 7
+									"schema:description": { "en": "Other Services" }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
