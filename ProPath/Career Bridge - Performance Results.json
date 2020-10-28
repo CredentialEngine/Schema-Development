@@ -15,21 +15,21 @@
 							"qdata:totalWIOAParticipants": [
 								{
 									"@type": "schema:QuantitativeValue",
-									"schema:value": 76
+									"schema:value": 76,
 									"schema:description": { "en": "Enrollment" }
 								}
 							],
 							"qdata:totalWIOACompleters": [
 								{
 									"@type": "schema:QuantitativeValue",
-									"schema:value": 76
+									"schema:value": 76,
 									"schema:description": { "en": "Number of students completing the program" }
 								}
 							],
 							"qdata:employmentRate": [
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 72
+									"qdata:percentage": 72,
 									"schema:description": { "en": "Employment Rate" }
 								}
 							],
@@ -50,37 +50,37 @@
 							"qdata:industryRate": [
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 28
+									"qdata:percentage": 28,
 									"schema:description": { "en": "Construction" }
 								},
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 12
+									"qdata:percentage": 12,
 									"schema:description": { "en": "Information" }
 								},
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 11
+									"qdata:percentage": 11,
 									"schema:description": { "en": "Professional, Scientific, Technical Services" }
 								},
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 7
+									"qdata:percentage": 7,
 									"schema:description": { "en": "Manufacturing" }
 								},
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 7
+									"qdata:percentage": 7,
 									"schema:description": { "en": "Retail Trade" }
 								},
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 7
+									"qdata:percentage": 7,
 									"schema:description": { "en": "Administrative Support" }
 								},
 								{
 									"@type": "schema:QuantitativeValue",
-									"qdata:percentage": 7
+									"qdata:percentage": 7,
 									"schema:description": { "en": "Other Services" }
 								}
 							]
