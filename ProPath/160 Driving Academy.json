@@ -310,7 +310,7 @@
 	"@graph": [
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-418096a9-fb18-4ff0-b45a-562b1ec3d806",
-			"@type": "ceterms:QualityAssuranceOrganization",
+			"@type": "ceterms:QACredentialOrganization",
 			"ceterms:name": { "en": "Illinois Community College Board" },
 			"ceterms:ctid": "ce-418096a9-fb18-4ff0-b45a-562b1ec3d806"
 		}
@@ -324,7 +324,7 @@
 	"@graph": [
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-f44730c7-3e02-4931-8de9-4a58a1475c04",
-			"@type": "ceterms:QualityAssuranceOrganization",
+			"@type": "ceterms:QACredentialOrganization",
 			"ceterms:name": { "en": "Illinois Secretary of State" },
 			"ceterms:ctid": "ce-f44730c7-3e02-4931-8de9-4a58a1475c04"
 		}
@@ -338,7 +338,7 @@
 	"@graph": [
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7",
-			"@type": "ceterms:QualityAssuranceOrganization",
+			"@type": "ceterms:QACredentialOrganization",
 			"ceterms:name": { "en": "Industry Standard: Illinois Secretary of State Licensed Facility" },
 			"ceterms:ctid": "ce-9c279329-8c74-4ae0-b2a9-1c2373e69af7"
 		}
