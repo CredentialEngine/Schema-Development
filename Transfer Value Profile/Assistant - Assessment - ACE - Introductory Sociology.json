@@ -1,0 +1,107 @@
+{
+	"Type": "ceterms:TransferValueProfile",
+	"Name": "Introductory Sociology",
+	"CTID": "ce-fde8e91f-608b-4488-ba8d-b3d81b036b50",
+	"SubjectWebpage": "https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=College%20Board%27s%20College-Level%20Examination%20Program%20(CLEP)&cid=fe05b1f6-84c4-ea11-a812-000d3a33232a",
+	"OwnedBy": [ "ce-96938154-dcb4-ea11-a812-000d3a579ca8" ],
+	"Description": "Credit is recommended for candidates scoring 50 and above.",
+	"TransferValue": [
+		{
+			"Type": "ceterms:ValueProfile",
+			"Value": 3,
+			"CreditLevelType": [ "creditLevel:LowerDivisionLevel" ],
+			"CreditUnitType": [ "creditUnit:DegreeCredit" ],
+			"Subject": [ "Introductory Sociology" ]
+		}
+	],
+	"Identifier": [
+		{
+			"Type": "ceterms:IdentifierValue",
+			"IdentifierValueCode": "CLEP-0026",
+			"IdentifierTypeName": "ACE Exam Number"
+		}
+	],
+	"StartDate": "2018-12-1",
+	"EndDate": "2023-11-30",
+	"TransferValueFrom": [
+		{
+			"Type": "ceterms:AssessmentProfile",
+			"Name": "Introductory Sociology",
+			"Description": "The Introductory Sociology examination is designed to assess an individual's knowledge of the material typically presented in a one-semester introductory-level sociology course at most colleges and universities. The examination emphasizes basic facts and concepts as well as general theoretical approaches used by sociologists on the topics of institutions, social patterns, social processes, social stratifications, and the sociological perspective. Highly specialized knowledge of the subject and the methodology of the discipline is not required or measured by the test content.The exam contains approximately 100 questions to be answered in 90 minutes. Some of these are pretest questions that will not be scored. Any time test takers spend on tutorials and providing personal information is in addition to the actual testing time.",
+			"OwnedBy": [
+				{
+					"Type": "ceterms:CredentialOrganization",
+					"Name": "College Board's College-Level Examination Program (CLEP)",
+					"SubjectWebpage": "https://clep.collegeboard.org/"
+				}
+			],
+			"Assesses": [
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-f53c9247-9775-4186-a1f1-edd0a965edeb",
+					"TargetNodeDescription": "identification of specific names, facts, and concepts from sociological literature"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-7351578b-f8d3-4ca6-8ff5-1818dd4092db",
+					"TargetNodeDescription": "understanding of relationships between concepts, empirical generalizations, and theoretical propositions of sociology"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-2b3b27a9-e42c-4021-bb7c-178766320134",
+					"TargetNodeDescription": "understanding of the methods by which sociological relationships are established"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-6c4d0738-cb85-4263-badd-78ed1437b465",
+					"TargetNodeDescription": "application of concepts, propositions, and methods to hypothetical situations"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-ec073a6d-ce14-4e21-a548-bcb9a5d5bb24",
+					"TargetNodeDescription": "interpretation of tables and charts"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-1cfa68c0-5ad5-483b-ad8a-e622f33d4a1a",
+					"TargetNodeDescription": "institutions",
+					"Weight": 0.2
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-30c840c0-2978-49b9-9044-d74721c827c1",
+					"TargetNodeDescription": "social patterns",
+					"Weight": 0.1
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-5d0cbcee-ef29-46fc-a8e4-b260cb737d3e",
+					"TargetNodeDescription": "social processes",
+					"Weight": 0.25
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-f7b31a05-4b6d-47f6-b001-1c7ad32ad6d1",
+					"TargetNodeDescription": "social stratification (process and structure)",
+					"Weight": 0.25
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-90311565-e23b-40ec-8927-e1d9d04b599c",
+					"TargetNodeDescription": "the socialogical perspective",
+					"Weight": 0.2
+				},
+			]
+		}
+	]
+}
