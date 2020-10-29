@@ -148,7 +148,7 @@
 					]
 				}
 			],
-			"ceterms:prerequisite": [
+			"ceterms:entryCondition": [
 				{
 					"@type": "ceterms:ConditionProfile",
 					"ceterms:description": { "en": "In-Person interview. Should bring drivers license and 3 year history" },
