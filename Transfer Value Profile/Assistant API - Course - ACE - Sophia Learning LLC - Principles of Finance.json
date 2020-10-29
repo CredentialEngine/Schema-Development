@@ -1,0 +1,120 @@
+{
+	"Type": "ceterms:TransferValueProfile",
+	"Name": "Introductory Sociology",
+	"CTID": "ce-e4f5301e-0164-47f8-b020-23984defdb92",
+	"SubjectWebpage": "https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=SOPHIA+Learning%2c+LLC&cid=6bb6586f-94c4-ea11-a812-000d3a378a3a",
+	"OwnedBy": [ "ce-96938154-dcb4-ea11-a812-000d3a579ca8" ],
+	"Description": "Credit is recommended for candidates scoring 50 and above.",
+	"TransferValue": [
+		{
+			"Type": "ceterms:ValueProfile",
+			"Value": 3,
+			"CreditLevelType": [ "creditLevel:LowerDivisionLevel" ],
+			"CreditUnitType": [ "creditUnit:DegreeCredit" ],
+			"Subject": [ "principles of finance" ]
+		}
+	],
+	"Identifier": [
+		{
+			"Type": "ceterms:IdentifierValue",
+			"IdentifierValueCode": "SOPH-033",
+			"IdentifierTypeName": "ACE Course Number"
+		}
+	],
+	"StartDate": "2020-6-1",
+	"EndDate": "2023-5-30",
+	"TransferValueFrom": [
+		{
+			"Type": "ceterms:LearningOpportunityProfile",
+			"Name": "Principles of Finance",
+			"OwnedBy": [
+				{
+					"Type": "ceterms:CredentialOrganization",
+					"Name": "Sophia Learning, LLC",
+					"SubjectWebpage": "https://www.sophia.org/"
+				}
+			],
+			"Identifier": [
+				{
+					"Type": "ceterms:IdentifierValue",
+					"IdentifierValueCode": "FIN1001",
+					"IdentifierTypeName": "Organization Course Number"
+				}
+			],
+			"DeliveryType": [ "deliveryType:OnlineOnly" ],
+			"EstimatedDuration": [
+				{
+					"Type": "ceterms:DurationProfile",
+					"Description": "This is a self-paced course. Students have 60 days with 30 days extension (if needed) to complete"
+				}
+			],
+			"Teaches": [
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-f3984fc3-4b1f-433b-91a1-d5ad81ed7ca9",
+					"TargetNodeDescription": "describe the operating environment of the firm, the role of financial institutions, and the structure of the capital markets and explain their impact on the financial performance of the firm"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-581bac7e-a735-4755-a4cc-313cd705b986",
+					"TargetNodeDescription": "interpret financial statements and financial ratios"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-49ce65e5-132e-4430-8eb0-4ff06ec451eb",
+					"TargetNodeDescription": "explain the time value of money and calculate future value and present value for single and multiple cash flows"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-82339b05-b49f-4fa4-b0d8-b37d054a420f",
+					"TargetNodeDescription": "describe the characteristics of capital market instruments including stocks, bonds, and money market instruments"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-faa89f86-7a55-4ee5-866e-91609a54cd1d",
+					"TargetNodeDescription": "explain the capital budgeting process and the basic elements of working capital management"
+				},
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"Framework": "https://credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+					"TargetNode": "https://credentialengineregistry.org/resources/ce-07428927-1794-40ed-b9b7-9e0cffc458bb",
+					"TargetNodeDescription": "describe the sources of long-term capital and its importance to sustaining operations"
+				}
+			],
+			"Subject": [
+				"Goals and organizations of financial management",
+				"Statements, taxes, and cash flow",
+				"Analyzing financial statements",
+				"Forecasting financial statements",
+				"Time value of cash flows",
+				"Bond valuation",
+				"Stock valuation",
+				"Risk and return",
+				"Market efficiency and returns",
+				"Cost of capital",
+				"Capital structure",
+				"The role of risk in capital budgeting",
+				"Obtaining capital",
+				"Working capital management",
+				"Dividends and dividend policy"
+			],
+			"LearningMethodType": [
+				"learnMethod:Lecture",
+				"learnMethod:Laboratory",
+				"learnMethod:Prerecorded"
+			],
+			"AssessmentMethodType": [ "assessMethod:Exam" ],
+			"Requires": [
+				{
+					"Type": "ceterms:ConditionProfile",
+					"Condition": [ "Minimum Passing Score: 70%" ]
+				}
+			]
+		}
+	]
+}
