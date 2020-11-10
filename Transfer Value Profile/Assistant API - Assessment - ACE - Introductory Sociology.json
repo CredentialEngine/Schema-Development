@@ -4,14 +4,14 @@
 	"CTID": "ce-fde8e91f-608b-4488-ba8d-b3d81b036b50",
 	"SubjectWebpage": "https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=College%20Board%27s%20College-Level%20Examination%20Program%20(CLEP)&cid=fe05b1f6-84c4-ea11-a812-000d3a33232a",
 	"OwnedBy": [ "ce-96938154-dcb4-ea11-a812-000d3a579ca8" ],
-	"Description": "Credit is recommended for candidates scoring 50 and above.",
 	"TransferValue": [
 		{
 			"Type": "ceterms:ValueProfile",
 			"Value": 3,
 			"CreditLevelType": [ "audLevel:LowerDivisionLevel" ],
 			"CreditUnitType": [ "creditUnit:DegreeCredit" ],
-			"Subject": [ "Introductory Sociology" ]
+			"Subject": [ "Introductory Sociology" ],
+			"Description": "Credit is recommended for candidates scoring 50 and above."
 		}
 	],
 	"Identifier": [
