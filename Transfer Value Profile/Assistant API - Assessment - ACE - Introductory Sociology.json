@@ -9,7 +9,7 @@
 		{
 			"Type": "ceterms:ValueProfile",
 			"Value": 3,
-			"CreditLevelType": [ "creditLevel:LowerDivisionLevel" ],
+			"CreditLevelType": [ "audLevel:LowerDivisionLevel" ],
 			"CreditUnitType": [ "creditUnit:DegreeCredit" ],
 			"Subject": [ "Introductory Sociology" ]
 		}
