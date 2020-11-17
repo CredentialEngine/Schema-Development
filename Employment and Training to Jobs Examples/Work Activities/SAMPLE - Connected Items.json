@@ -1,0 +1,276 @@
+//Work Activities Types
+[
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2",
+		"@type": "skos:ConceptScheme",
+		"ceterms:ctid": "ce-45d31087-1970-435d-89f6-e5ff330f4ef2",
+		"ceasn:name": { "en": "O*NET Work Activities" },
+		"skos:hasTopConcept": [
+			"https://credentialengineregistry.org/resources/ce-a83e9936-3513-44a1-a770-b453999ebc1e",
+			"https://credentialengineregistry.org/resources/ce-2f404483-1688-4515-969a-159158002336",
+			"https://credentialengineregistry.org/resources/ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-a83e9936-3513-44a1-a770-b453999ebc1e",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-a83e9936-3513-44a1-a770-b453999ebc1e",
+		"skos:prefLabel": { "en": "General Work Activity" },
+		"skos:altLabel": { "en": "GWA" },
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-2f404483-1688-4515-969a-159158002336",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-2f404483-1688-4515-969a-159158002336",
+		"skos:prefLabel": { "en": "Intermediate Work Activity" },
+		"skos:altLabel": { "en": "IWA" },
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf",
+		"skos:prefLabel": { "en": "Direct Work Activity" },
+		"skos:altLabel": { "en": "DWA" },
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2"
+		]
+	}
+]
+
+//Work Activities Hierarchy
+[
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94",
+		"@type": "skos:ConceptScheme",
+		"ceterms:ctid": "ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94",
+		"ceasn:name": { "en": "O*NET Content Model Occupational Requirements - Work Activities: U.S. Department of Labor (DOL)" },
+		"ceasn:description": { "en": "Generalized, intermediate, and detailed work activities; and occupation-specific task examples" },
+		"skos:hasTopConcept": [
+			"https://credentialengineregistry.org/resources/ce-c79eb763-9b5b-4766-ae7a-4638512f252b",
+			"https://credentialengineregistry.org/resources/ce-50c04b11-5978-46ee-949f-c0c87400035a",
+			"https://credentialengineregistry.org/resources/ce-6926f6de-0b71-4a80-9f50-3f92f66bd3ef",
+			"https://credentialengineregistry.org/resources/ce-c2ebc84e-18f3-45e4-8ff1-c1f1ead68cd8"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-c79eb763-9b5b-4766-ae7a-4638512f252b",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-c79eb763-9b5b-4766-ae7a-4638512f252b",
+		"skos:topConceptOf": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		],
+		"skos:notation": "4.A.1",
+		"skos:prefLabel": {
+			"en": "Information Input"
+		},
+		"skos:definition": {
+			"en": "Where and how are the information and data gained that are needed to perform this job?"
+		},
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-f6c355c1-afd2-4f53-bb16-a2f8d919db46",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-f6c355c1-afd2-4f53-bb16-a2f8d919db46",
+		"skos:broader": [
+			"https://credentialengineregistry.org/resources/ce-c79eb763-9b5b-4766-ae7a-4638512f252b"
+		],
+		"skos:notation": "4.A.1.a",
+		"skos:prefLabel": {
+			"en": "Looking for and Receiving Job-Related Information"
+		},
+		"skos:definition": {
+			"en": "How is information obtained to perform this job?"
+		},
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-ca61965a-295e-4d46-b194-0a86016a29a5",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-ca61965a-295e-4d46-b194-0a86016a29a5",
+		"skos:broader": [
+			"https://credentialengineregistry.org/resources/ce-f6c355c1-afd2-4f53-bb16-a2f8d919db46"
+		],
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-a83e9936-3513-44a1-a770-b453999ebc1e"
+		],
+		"skos:notation": "4.A.1.a.1",
+		"skos:prefLabel": {
+			"en": "Getting Information"
+		},
+		"skos:definition": {
+			"en": "Observing, receiving, and otherwise obtaining information from all relevant sources."
+		},
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-13fbdbd8-5e6e-4693-85b5-9ea5ba28d9b3",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-13fbdbd8-5e6e-4693-85b5-9ea5ba28d9b3",
+		"skos:broader": [
+			"https://credentialengineregistry.org/resources/ce-ca61965a-295e-4d46-b194-0a86016a29a5"
+		],
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-2f404483-1688-4515-969a-159158002336"
+		],
+		"skos:notation": "4.A.1.a.1.I01",
+		"skos:definition": {
+			"en": "Study details of artistic productions."
+		},
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-42531ea9-38bb-4fbe-a744-ea419ee62c82",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-42531ea9-38bb-4fbe-a744-ea419ee62c82",
+		"skos:broader": [
+			"https://credentialengineregistry.org/resources/ce-13fbdbd8-5e6e-4693-85b5-9ea5ba28d9b3"
+		],
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf"
+		],
+		"skos:notation": "4.A.1.a.1.I01.D01",
+		"skos:definition": {
+			"en": "Review art or design materials."
+		},
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-8abb58f3-18fb-473f-814c-93732ea3b46d",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-8abb58f3-18fb-473f-814c-93732ea3b46d",
+		"skos:broader": [
+			"https://credentialengineregistry.org/resources/ce-13fbdbd8-5e6e-4693-85b5-9ea5ba28d9b3"
+		],
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf"
+		],
+		"skos:notation": "4.A.1.a.1.I01.D02",
+		"skos:definition": {
+			"en": "Study details of musical compositions."
+		},
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-6c8f3cc8-0cc3-4edd-a474-e275c5867e94"
+		]
+	}
+]
+
+//Tasks List
+[
+	{
+		"@id": "https://credentialengine.org/resources/ce-cd555486-a46a-474f-80b4-2ffc279fc4f2",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-cd555486-a46a-474f-80b4-2ffc279fc4f2",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-42531ea9-38bb-4fbe-a744-ea419ee62c82"
+		],
+		"ceterms:description": {
+			"en": "Review and approve art materials, copy materials, and proofs of printed copy developed by staff members."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-272b1987-224b-4c0f-8980-d2d9a9c163fc",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-272b1987-224b-4c0f-8980-d2d9a9c163fc",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-42531ea9-38bb-4fbe-a744-ea419ee62c82",
+			"https://credentialengineregistry.org/resources/ce-085806fc-787f-4e4f-830a-ad1c6124cb51"
+		],
+		"ceterms:description": {
+			"en": "Review final layouts and suggest improvements as needed."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-2ca903ed-3bba-4c98-a72c-c4afdff6630b",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-2ca903ed-3bba-4c98-a72c-c4afdff6630b",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-42531ea9-38bb-4fbe-a744-ea419ee62c82"
+		],
+		"ceterms:description": {
+			"en": "Review illustrative material to determine if it conforms to standards and specifications."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-075b508d-8ed1-44e0-90fe-d085abb2a112",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-075b508d-8ed1-44e0-90fe-d085abb2a112",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-42531ea9-38bb-4fbe-a744-ea419ee62c82"
+		],
+		"ceterms:description": {
+			"en": "Review sets of photographs to select the best work."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-67cd8ea8-e83f-42bf-8b83-f2bce7bcde83",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-67cd8ea8-e83f-42bf-8b83-f2bce7bcde83",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-42531ea9-38bb-4fbe-a744-ea419ee62c82"
+		],
+		"ceterms:description": {
+			"en": "Study illustrations and photographs to plan presentation of materials, products, or services."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-c6aae3ef-438f-4425-85bd-8671c3df6604",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-c6aae3ef-438f-4425-85bd-8671c3df6604",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-8abb58f3-18fb-473f-814c-93732ea3b46d"
+		],
+		"ceterms:description": {
+			"en": "Listen to recordings to master pieces or to maintain and improve skills."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-6373c7d7-0e83-428d-bcda-bd6aad3a8e0b",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-6373c7d7-0e83-428d-bcda-bd6aad3a8e0b",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-8abb58f3-18fb-473f-814c-93732ea3b46d"
+		],
+		"ceterms:description": {
+			"en": "Obtain and preview musical performance programs prior to events to become familiar with the order and approximate times of pieces."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-643351ae-a96e-40fa-93be-341252c4c1f9",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-643351ae-a96e-40fa-93be-341252c4c1f9",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-8abb58f3-18fb-473f-814c-93732ea3b46d"
+		],
+		"ceterms:description": {
+			"en": "Study original pieces of music to become familiar with them prior to making any changes."
+		}
+	},
+	{
+		"@id": "https://credentialengine.org/resources/ce-912b3fdb-eb92-434d-8b8c-322e6d811052",
+		"@type": "ceterms:Task",
+		"ceterms:ctid": "ce-912b3fdb-eb92-434d-8b8c-322e6d811052",
+		"ceterms:classification": [
+			"https://credentialengineregistry.org/resources/ce-8abb58f3-18fb-473f-814c-93732ea3b46d"
+		],
+		"ceterms:description": {
+			"en": "Study scores to learn the music in detail, and to develop interpretations."
+		}
+	}
+]
