@@ -79,9 +79,9 @@
 									"@type": "schema:QuantitativeValue",
 									"schema:value": 24,
 									"ceterms:description": { "en": "Wind Turbine Service Technicians" }
-								},
+								}
 							]
-						},
+						}
 					]
 				}
 			]
