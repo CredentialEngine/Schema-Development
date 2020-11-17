@@ -1,0 +1,43 @@
+[
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2",
+		"@type": "skos:ConceptScheme",
+		"ceterms:ctid": "ce-45d31087-1970-435d-89f6-e5ff330f4ef2",
+		"ceasn:name": { "en": "O*NET Work Activities" },
+		"skos:hasTopConcept": [
+			"https://credentialengineregistry.org/resources/ce-a83e9936-3513-44a1-a770-b453999ebc1e",
+			"https://credentialengineregistry.org/resources/ce-2f404483-1688-4515-969a-159158002336",
+			"https://credentialengineregistry.org/resources/ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-a83e9936-3513-44a1-a770-b453999ebc1e",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-a83e9936-3513-44a1-a770-b453999ebc1e",
+		"skos:prefLabel": { "en": "General Work Activity" },
+		"skos:altLabel": { "en": "GWA" },
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-2f404483-1688-4515-969a-159158002336",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-2f404483-1688-4515-969a-159158002336",
+		"skos:prefLabel": { "en": "Intermediate Work Activity" },
+		"skos:altLabel": { "en": "IWA" },
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2"
+		]
+	},
+	{
+		"@id": "https://credentialengineregistry.org/resources/ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf",
+		"@type": "skos:Concept",
+		"ceterms:ctid": "ce-0d2ed739-78a5-46c4-ad3c-064dc2c021bf",
+		"skos:prefLabel": { "en": "Direct Work Activity" },
+		"skos:altLabel": { "en": "DWA" },
+		"skos:inScheme": [
+			"https://credentialengineregistry.org/resources/ce-45d31087-1970-435d-89f6-e5ff330f4ef2"
+		]
+	}
+]
