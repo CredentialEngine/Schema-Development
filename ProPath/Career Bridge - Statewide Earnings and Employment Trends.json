@@ -20,19 +20,19 @@
 									"@type": "schema:MonetaryAmount",
 									"schema:value": 81790.0,
 									"schema:currency": "USD",
-									"ceterms:description": { "en": "Commercial and Industrial Designers" }
+									"schema:description": { "en": "Commercial and Industrial Designers" }
 								},
 								{
 									"@type": "schema:MonetaryAmount",
 									"schema:value": 75060.0,
 									"schema:currency": "USD",
-									"ceterms:description": { "en": "Engineering Technicians, Except Drafters, All Other" }
+									"schema:description": { "en": "Engineering Technicians, Except Drafters, All Other" }
 								},
 								{
 									"@type": "schema:MonetaryAmount",
 									"schema:value": 52450.0,
 									"schema:currency": "USD",
-									"ceterms:description": { "en": "Wind Turbine Service Technicians" }
+									"schema:description": { "en": "Wind Turbine Service Technicians" }
 								},
 							]
 						},
