@@ -33,9 +33,9 @@
 									"schema:value": 52450.0,
 									"schema:currency": "USD",
 									"schema:description": { "en": "Wind Turbine Service Technicians" }
-								},
+								}
 							]
-						},
+						}
 					]
 				}
 			]
