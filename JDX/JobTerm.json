@@ -1,0 +1,42 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobTerm/",
+            "@type": "skos:ConceptScheme",
+            "name": {"en-us": "Job Term Vocabulary"},
+            "description": {"en-us": "Type of employment term."},
+            "inLanguage": ["en-US"],
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/jobTerm/ff7c95de-b6d8-4155-9baa-408f1746c160",
+                "https://jobdataexchange.org/jdx/vocabs/jobTerm/aee9609e-d254-4e17-8ecc-8288de219f2b",
+                "https://jobdataexchange.org/jdx/vocabs/jobTerm/918132a8-28d1-488a-b1e5-09f111ff0cb9"
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobTerm/ff7c95de-b6d8-4155-9baa-408f1746c160",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Regular"},
+            "definition": {"en-us": "Position available for full employment."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobTerm/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobTerm/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobTerm/aee9609e-d254-4e17-8ecc-8288de219f2b",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Seasonal"},
+            "definition": {"en-us": "Position available only for seasonal employment."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobTerm/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobTerm/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobTerm/918132a8-28d1-488a-b1e5-09f111ff0cb9",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Temporary"},
+            "definition": {"en-us": "Position available only for temporary employment."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobTerm/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobTerm/"
+        }
+    ]
+}
