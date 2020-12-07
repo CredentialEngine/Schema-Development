@@ -1,0 +1,32 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/workHours/",
+            "@type": "skos:ConceptScheme",
+            "name": {"en-us": "Work Hours"},
+            "description": {"en-us": "Type of scheduled hours."},
+            "inLanguage": ["en-US"],
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/workHours/510cd708-a6e7-45c4-b03d-7a6060aa4f5e",
+                "https://jobdataexchange.org/jdx/vocabs/workHours/5e3b62b7-b41e-4053-899b-9112e3db4224"
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/workHours/510cd708-a6e7-45c4-b03d-7a6060aa4f5e",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Normal"},
+            "definition": {"en-us": "TBD"},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/workHours/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/workHours/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/workHours/5e3b62b7-b41e-4053-899b-9112e3db4224",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Flexible Work Hours"},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/workHours/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/workHours/"
+        }
+    ]
+}
