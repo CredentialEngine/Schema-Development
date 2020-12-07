@@ -1,0 +1,78 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "@type": "skos:ConceptScheme",
+            "name": {"en-us": "Pay Cycle Interval"},
+            "description": {"en-us": "Pay cycle interval specifies how often the pay cycle occurs or, in other words, how often a person is paid."},
+            "inLanguage": ["en-US"],
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/2630a169-0407-4489-ae15-a0c3bb8b97e1",
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/4c3e147c-6fac-45d0-a8e4-8357b2fb2b4a",
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/4b3b8d9f-0116-4348-b591-df11066ecdaf",
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/f21abbae-baf7-4be7-8cbe-361a128ef6a7",
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/8b3f2d35-5e40-4867-a815-f4abb23ff257",
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/6538ab07-d110-4f4e-a607-61c8554b37ca",
+                "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/5715e482-7f8d-4de3-8d9d-cf6b234446b4" 
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/2630a169-0407-4489-ae15-a0c3bb8b97e1",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Day"},
+            "definition": {"en-us": "Salary is paid daily."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/4c3e147c-6fac-45d0-a8e4-8357b2fb2b4a",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Week"},
+            "definition": {"en-us": "Salary is paid weekly."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/4b3b8d9f-0116-4348-b591-df11066ecdaf",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Two Weeks"},
+            "definition": {"en-us": "Salary is paid every two weeks."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/f21abbae-baf7-4be7-8cbe-361a128ef6a7",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Month"},
+            "definition": {"en-us": "Salary is paid monthly."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/7fdf6cdf-3966-49fe-96cf-c3caae1c8be2",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/8b3f2d35-5e40-4867-a815-f4abb23ff257",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Quarter"},
+            "definition": {"en-us": "Salary is paid every three months."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/6538ab07-d110-4f4e-a607-61c8554b37ca",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Half Year"},
+            "definition": {"en-us": "Salary is paid at the end of six months."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/5715e482-7f8d-4de3-8d9d-cf6b234446b4",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Year"},
+            "definition": {"en-us": "Salary is paid at the end of the work year."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/payCycleInterval/"
+        }
+    ]
+}
