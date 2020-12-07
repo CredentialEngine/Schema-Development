@@ -1,0 +1,52 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "@type": "skos:ConceptScheme",
+            "description": {"en-us": "Work schedule of the employment"},
+            "inLanguage": ["en-US"],
+            "name": {"en-us": "Work Schedule"},
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/c9446a77-6d1a-44ed-bce7-4e9576d1a1fe",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/f762db78-e123-4867-8dea-ee76c082bc69",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/6329dbd5-6c52-4b56-8e89-84dbbe38143b",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/aae394ac-9117-4bc6-8522-a0b5cf6aa071",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/46c6e4d7-8fe0-43f4-94c0-90ca1f4d549b"
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/c9446a77-6d1a-44ed-bce7-4e9576d1a1fe",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Full-time"},
+            "definition": {"en-us": "Schedule of the position is full-time as defined by the employer."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/f762db78-e123-4867-8dea-ee76c082bc69",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Part-time"},
+            "definition": {"en-us": "Schedule of the position is part-time as defined by the employer."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/6329dbd5-6c52-4b56-8e89-84dbbe38143b",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Flextime"},
+            "definition": {"en-us": "Schedule of the position is flextime as defined by the employer."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/46c6e4d7-8fe0-43f4-94c0-90ca1f4d549b",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Shared-time"},
+            "definition": {"en-us": "Schedule of the position is shared-time; i.e., two (or more) workers share the duties of one full-time job, each working part-time."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        }
+    ]
+}
