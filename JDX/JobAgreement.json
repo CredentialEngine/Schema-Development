@@ -1,0 +1,105 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "@type": "skos:ConceptScheme",
+            "description": {"en-us": "Type of employment agreement"},
+            "inLanguage": ["en-US"],
+            "name": {"en-us": "Job Agreement Vocabulary"},
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/1dae543c-9ba5-4745-a74e-42c9d49b90fe",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/d0c917f6-3dc5-44ef-aa64-1690e7f4a29e",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/440255f1-6543-485a-a8d4-919eb231056e",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/c250ff7c-a0a7-455a-a000-065ee8a48047",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/ac9b5ee4-b095-411d-b7ab-cde5bed84330",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/c3d7f908-f5fe-493d-a423-492ca5f53b82",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/80c294e2-2b5f-4755-b388-9eb651a6bd3a",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/38062961-81f7-433c-aa4c-4f24f505196f",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/7ce8d9ef-7bd8-4c87-a2b2-29faf353349d",
+                "https://jobdataexchange.org/jdx/vocabs/jobAgreement/4f2bb7e9-4490-4946-a3a2-c91a56023fb3"
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/1dae543c-9ba5-4745-a74e-42c9d49b90fe",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Employee"},
+            "definition": {"en-us": "Position offered for regular employment."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/ca3ed712-b980-498b-a10d-d77bff4480dc",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/d0c917f6-3dc5-44ef-aa64-1690e7f4a29e",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Overtime Eligible"},
+            "definition": {"en-us": "Position qualifies for overtime."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/440255f1-6543-485a-a8d4-919eb231056e",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Overtime Ineligible"},
+            "definition": {"en-us": "Position does not qualify for overtime."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/c250ff7c-a0a7-455a-a000-065ee8a48047",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Collective Bargaining"},
+            "definition": {"en-us": "Holders of this posiiton may engage in collective bargaining."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/ac9b5ee4-b095-411d-b7ab-cde5bed84330",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Contract"},
+            "definition": {"en-us": "Contract posiiton not qualifying as an employee."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/c3d7f908-f5fe-493d-a423-492ca5f53b82",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Contract-to-hire"},
+            "definition": {"en-us": "Position subject to a contract-to-hire agreement by which the employee will work for the employer for a fixed period of time with an employer decision at the close of that time whether to permanently hire or dismiss for the employee."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/80c294e2-2b5f-4755-b388-9eb651a6bd3a",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Internship"},
+            "definition": {"en-us": "Position offered as an internship for a limited period of time."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/38062961-81f7-433c-aa4c-4f24f505196f",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Externship"},
+            "definition": {"en-us": "Position offered as an externship for a limited period of time."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/7ce8d9ef-7bd8-4c87-a2b2-29faf353349d",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Apprenticeship"},
+            "definition": {"en-us": "Position may be filled by an apprentice hired to learn an occupation or profession while working and is registered with a sponsor in an approved apprenticeship program."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/4f2bb7e9-4490-4946-a3a2-c91a56023fb3",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Student Volunteer"},
+            "definition": {"en-us": "Position open to a student volunteer (non-employee)."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobAgreement/"
+        }
+     ]
+}
