@@ -1,0 +1,105 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "@type": "skos:ConceptScheme",
+            "name": {"en-us": "Shift Schedule"},
+            "description": {"en-us": "Type of the typical work shift of the job. (Adapted from HR Open's ShiftTypeCodeList.json)."},
+            "inLanguage": ["en-US"],
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/351f41c2-22b9-4061-a979-a510b3987272",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/0e1f0c06-302d-4491-b4d6-a4d42376f4ba",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/b12582cd-2854-40e7-bfdf-59010a19cc46",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/8934337f-1259-4920-ac3a-5d2a11fb431a",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/3af6ab5d-1eff-4ce2-9275-7a822c3713aa",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/7be89522-1ef2-4305-a42a-cbd4764b4a1f",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/3370615c-b928-48b2-a75b-e2ad98116789",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/937790b0-bbc0-4652-9471-79ddb540e66e",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/4cece613-edb9-47a8-a421-f32857075ecd",
+                "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/545e41a8-a2b0-4578-8a64-cae2a226a8f5"
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/351f41c2-22b9-4061-a979-a510b3987272",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Weekday Shift 1"},
+            "definition": {"en-us": "Weekday shift 1, sometimes referred to as day shift, aligns with an organization or business' regular work hours or hours open; typically between 8:00am or 9:00am until around 5:00."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/0e1f0c06-302d-4491-b4d6-a4d42376f4ba",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Weekday Shift 2"},
+            "definition": {"en-us": "Weekday shift 2 follows shift 1 and is sometimes referred to as afternoon shift or swing shift and typically starts around 4:00pm and runs into the evening."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/b12582cd-2854-40e7-bfdf-59010a19cc46",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Weekday Shift 3"},
+            "definition": {"en-us": "Weekday shift 3 comes after shift 2, sometimes called the graveyard shift, midnight shift or night shift and typicall begins between 10:00pm and midnight."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/8934337f-1259-4920-ac3a-5d2a11fb431a",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Weekend Shift 1"},
+            "definition": {"en-us": "Weekdend shift 1, sometimes referred to as day shift, aligns with an organization or business' regular work hours or hours open; typically between 8:00am or 9:00am and until around 5:00."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/3af6ab5d-1eff-4ce2-9275-7a822c3713aa",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Weekend Shift 2"},
+            "definition": {"en-us": "Weekend shift 2 follows shift 1 and is sometimes referred to as afternoon shift or swing shift and typically starts around 4:00pm and runs into the evening."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/7be89522-1ef2-4305-a42a-cbd4764b4a1f",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Weekend Shift 3"},
+            "definition": {"en-us": "Weekend shift 3 comes after shift 2, sometimes called the graveyard shift, midnight shift or night shift and typicall begins between 10:00pm and midnight."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/3370615c-b928-48b2-a75b-e2ad98116789",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Split Shift"},
+            "definition": {"en-us": "Split shift is where an employee works two separate shifts on the same day separated by a significant break. "},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/937790b0-bbc0-4652-9471-79ddb540e66e",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Double Shift Weekday"},
+            "definition": {"en-us": "Two weekday shifts within a 24 hour period, sometimes referred to as back-to-back shifts."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/4cece613-edb9-47a8-a421-f32857075ecd",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Double Shift Weekend"},
+            "definition": {"en-us": "Two weekend shifts within a 24 hour period, sometimes referred to as back-to-back shifts."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/545e41a8-a2b0-4578-8a64-cae2a226a8f5",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Holiday Shift"},
+            "definition": {"en-us": "A shift of any type limited to the period leading up to and sometimes immediately following a holiday."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/shiftSchedule/"
+        }
+    ]
+}
