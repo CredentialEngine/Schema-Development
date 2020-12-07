@@ -1,0 +1,97 @@
+{
+    "@context": "http://jobdataexchange.org/jdxcontext.json",
+    "@graph": [
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "@type": "skos:ConceptScheme",
+            "description": {"en-us": "Type of benefits associated with the job,"},
+            "inLanguage": ["en-US"],
+            "name": {"en-us": "Job Agreement Vocabulary"},
+            "publisherName": {"en-us": "Credential Engine"},
+            "hasTopConcept": [
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/c8df8b1c-c601-4cf3-989b-78d6da9923d7",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/001bab41-3742-4734-b868-709439d47847",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/1896131b-6055-428c-b8c8-dc51033a21d7",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/3f7010e9-d439-4601-b36e-e0cb32184472",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/b88390dc-d463-4529-af25-c90965d867f7",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/b568f4cd-0f29-42f8-ba19-b6fd0a5e04fa",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/1c4571cd-1fd7-46e4-a2c5-6e35063c01f7",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/8c30290a-dbbf-4942-a64f-211af4d36d12",
+                "https://jobdataexchange.org/jdx/vocabs/jobBenefits/1c71d048-ca36-4da9-9068-50c30faef258"
+            ]
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/c8df8b1c-c601-4cf3-989b-78d6da9923d7",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Health Insurance"},
+            "definition": {"en-us": "Employer provided health insurance."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/001bab41-3742-4734-b868-709439d47847",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Dental Insurance"},
+            "definition": {"en-us": "Employer provided dental insurance."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/1896131b-6055-428c-b8c8-dc51033a21d7",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Vision Insurance"},
+            "definition": {"en-us": "Employer provided vision insurance."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/3f7010e9-d439-4601-b36e-e0cb32184472",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Life Insurance"},
+            "definition": {"en-us": "Employer provided life insurance."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/b88390dc-d463-4529-af25-c90965d867f7",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Paid Time Off"},
+            "altLabel": {"en-us": "PTO"},
+            "definition": {"en-us": "Paid time off for specific categories of activity; e.g., vacation, holiday, sick & personal leave."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/b568f4cd-0f29-42f8-ba19-b6fd0a5e04fa",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "401(k)"},
+            "definition": {"en-us": "A 401(k) is a feature of a qualified profit-sharing plan that allows employees to contribute a portion of their wages to individual accounts."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/1c4571cd-1fd7-46e4-a2c5-6e35063c01f7",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Gym Membership"},
+            "definition": {"en-us": "Employer provided coverage for gym membership."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/8c30290a-dbbf-4942-a64f-211af4d36d12",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Commuting/Travel Assistance"},
+            "definition": {"en-us": "Subsidization of all or part of the employee's work-related travel including expenses for commuting to and from work."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        },
+        {
+            "@id": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/1c71d048-ca36-4da9-9068-50c30faef258",
+            "@type": "skos:Concept",
+            "prefLabel": {"en-us": "Workplace Perks"},
+            "definition": {"en-us": "Free recreation activities, food and coffee."},
+            "inScheme": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/",
+            "topConceptOf": "https://jobdataexchange.org/jdx/vocabs/jobBenefits/"
+        }
+     ]
+}
