@@ -1,0 +1,113 @@
+{
+	"@context": "https://credreg.net/ctdlasn/schema/context/json",
+	"@id": "https://sandbox.credentialengineregistry.org/graph/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+	"@graph": [
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"@type": "ceasn:CompetencyFramework",
+			"ceasn:name": {
+				"en-us": "ACE - Introductory Sociology Skills Measured"
+			},
+			"ceterms:ctid": "ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:publisher": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-a4041983-b1ae-4ad4-a43d-284a5b4b2d73"
+			],
+			"ceasn:inLanguage": [
+				"en-us"
+			],
+			"ceasn:description": {
+				"en-us": "Skills measured for the Introductory Sociology Skills Measured exam."
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-f53c9247-9775-4186-a1f1-edd0a965edeb",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-f53c9247-9775-4186-a1f1-edd0a965edeb",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "Identification of specific names, facts, and concepts from sociological literature"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-7351578b-f8d3-4ca6-8ff5-1818dd4092db",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-7351578b-f8d3-4ca6-8ff5-1818dd4092db",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "Understanding of relationships between concepts, empirical generalizations, and theoretical propositions of sociology"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-2b3b27a9-e42c-4021-bb7c-178766320134",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-2b3b27a9-e42c-4021-bb7c-178766320134",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "Understanding of the methods by which sociological relationships are established; "
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-6c4d0738-cb85-4263-badd-78ed1437b465",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-6c4d0738-cb85-4263-badd-78ed1437b465",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "application of concepts, propositions, and methods to hypothetical situations"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-ec073a6d-ce14-4e21-a548-bcb9a5d5bb24",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-ec073a6d-ce14-4e21-a548-bcb9a5d5bb24",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "Interpretation of tables and charts"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-1cfa68c0-5ad5-483b-ad8a-e622f33d4a1a",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-1cfa68c0-5ad5-483b-ad8a-e622f33d4a1a",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "institutions"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-30c840c0-2978-49b9-9044-d74721c827c1",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-30c840c0-2978-49b9-9044-d74721c827c1",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "social patterns"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-5d0cbcee-ef29-46fc-a8e4-b260cb737d3e",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-5d0cbcee-ef29-46fc-a8e4-b260cb737d3e",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "social process"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-f7b31a05-4b6d-47f6-b001-1c7ad32ad6d1",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-f7b31a05-4b6d-47f6-b001-1c7ad32ad6d1",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "social stratification (process and structure)"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-90311565-e23b-40ec-8927-e1d9d04b599c",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-90311565-e23b-40ec-8927-e1d9d04b599c",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+			"ceasn:competencyText": {
+				"en-us": "the socialogical perspective"
+			}
+		}
+	]
+}
