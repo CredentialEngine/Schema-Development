@@ -1,0 +1,77 @@
+{
+	"@context": "https://credreg.net/ctdlasn/schema/context/json",
+	"@id": "https://sandbox.credentialengineregistry.org/graph/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+	"@graph": [
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"@type": "ceasn:CompetencyFramework",
+			"ceasn:name": {
+				"en-us": "ACE - Principles of Finance Learning Outcomes"
+			},
+			"ceterms:ctid": "ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:publisher": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-a4041983-b1ae-4ad4-a43d-284a5b4b2d73"
+			],
+			"ceasn:inLanguage": [
+				"en-us"
+			],
+			"ceasn:description": {
+				"en-us": "Learning Outcomes for the Principles of Finance program."
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-f3984fc3-4b1f-433b-91a1-d5ad81ed7ca9",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-f3984fc3-4b1f-433b-91a1-d5ad81ed7ca9",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:competencyText": {
+				"en-us": "describe the operating environment of the firm, the role of financial institutions, and the structure of the capital markets and explain their impact on the financial performance of the firm"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-581bac7e-a735-4755-a4cc-313cd705b986",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-581bac7e-a735-4755-a4cc-313cd705b986",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:competencyText": {
+				"en-us": "interpret financial statements and financial ratios"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-49ce65e5-132e-4430-8eb0-4ff06ec451eb",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-49ce65e5-132e-4430-8eb0-4ff06ec451eb",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:competencyText": {
+				"en-us": "explain the time value of money and calculate future value and present value for single and multiple cash flows"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-82339b05-b49f-4fa4-b0d8-b37d054a420f",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-82339b05-b49f-4fa4-b0d8-b37d054a420f",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:competencyText": {
+				"en-us": "describe the characteristics of capital market instruments including stocks, bonds, and money market instruments"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-faa89f86-7a55-4ee5-866e-91609a54cd1d",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-faa89f86-7a55-4ee5-866e-91609a54cd1d",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:competencyText": {
+				"en-us": "explain the capital budgeting process and the basic elements of working capital management"
+			}
+		},
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-07428927-1794-40ed-b9b7-9e0cffc458bb",
+			"@type": "ceasn:Competency",
+			"ceterms:ctid": "ce-07428927-1794-40ed-b9b7-9e0cffc458bb",
+			"ceasn:isPartOf": "https://sandbox.credentialengineregistry.org/resources/ce-d3913e58-b578-42be-8c8e-a55c0b66f5ab",
+			"ceasn:competencyText": {
+				"en-us": "describe the sources of long-term capital and its importance to sustaining operations"
+			}
+		}
+	]
+}
