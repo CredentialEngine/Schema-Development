@@ -1,0 +1,233 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@id": "https://sandbox.credentialengineregistry.org/graph/ce-fde8e91f-608b-4488-ba8d-b3d81b036b50",
+  "@graph": [
+    {
+      "@id": "https://sandbox.credentialengineregistry.org/resources/ce-fde8e91f-608b-4488-ba8d-b3d81b036b50",
+      "@type": "ceterms:TransferValueProfile",
+      "ceterms:ctid": "ce-fde8e91f-608b-4488-ba8d-b3d81b036b50",
+      "ceterms:name": {
+        "en-US": "Introductory Sociology"
+      },
+      "ceterms:endDate": "2023-11-30",
+      "ceterms:ownedBy": [
+        "https://sandbox.credentialengineregistry.org/resources/ce-9c1c2d37-e525-43a3-9cea-97f076b2fe38"
+      ],
+      "ceterms:startDate": "2018-12-01",
+      "ceterms:description": {
+        "en-US": "Credit is recommended for candidates scoring 50 and above."
+      },
+      "ceterms:transferValue": [
+        {
+          "@type": "schema:ValueProfile",
+          "schema:value": 3.0,
+          "ceterms:subject": [
+            {
+              "@type": "ceterms:CredentialAlignmentObject",
+              "ceterms:targetNodeName": {
+                "en-US": "Introductory Sociology"
+              }
+            }
+          ],
+          "schema:description": {
+            "en-US": "Credit is recommended for candidates scoring 50 and above."
+          },
+          "ceterms:creditUnitType": [
+            {
+              "@type": "ceterms:CredentialAlignmentObject",
+              "ceterms:framework": "https://credreg.net/ctdl/terms/CreditUnit",
+              "ceterms:targetNode": "creditUnit:DegreeCredit",
+              "ceterms:frameworkName": {
+                "en-US": "CreditUnit"
+              },
+              "ceterms:targetNodeName": {
+                "en-US": "Degree Credit"
+              }
+            }
+          ],
+          "ceterms:creditLevelType": [
+            {
+              "@type": "ceterms:CredentialAlignmentObject",
+              "ceterms:framework": "https://credreg.net/ctdl/terms/AudienceLevel",
+              "ceterms:targetNode": "audLevel:LowerDivisionLevel",
+              "ceterms:frameworkName": {
+                "en-US": "AudienceLevel"
+              },
+              "ceterms:targetNodeName": {
+                "en-US": "Lower Division Level"
+              }
+            }
+          ]
+        }
+      ],
+      "ceterms:subjectWebpage": "https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=College%20Board%27s%20College-Level%20Examination%20Program%20(CLEP)&cid=fe05b1f6-84c4-ea11-a812-000d3a33232a",
+      "ceterms:identifierValue": [
+        {
+          "@type": "ceterms:IdentifierValue",
+          "ceterms:identifierTypeName": {
+            "en-US": "ACE Course Code"
+          },
+          "ceterms:identifierValueCode": "CLEP-0026"
+        }
+      ],
+      "ceterms:transferValueFrom": [
+        "_:8acdd442-f53b-4096-9423-e7a8803e6666"
+      ]
+    },
+    {
+      "@id": "_:8acdd442-f53b-4096-9423-e7a8803e6666",
+      "@type": "ceterms:AssessmentProfile",
+      "ceterms:name": {
+        "en-US": "Introductory Sociology"
+      },
+      "ceterms:ownedBy": [
+        "_:204bcebb-fda6-406e-ac94-c0ebe6cc6ead"
+      ],
+      "ceterms:assesses": [
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-f53c9247-9775-4186-a1f1-edd0a965edeb",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "Identification of specific names, facts, and concepts from sociological literature"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-7351578b-f8d3-4ca6-8ff5-1818dd4092db",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "Understanding of relationships between concepts, empirical generalizations, and theoretical propositions of sociology"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-2b3b27a9-e42c-4021-bb7c-178766320134",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "Understanding of the methods by which sociological relationships are established; "
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-6c4d0738-cb85-4263-badd-78ed1437b465",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "application of concepts, propositions, and methods to hypothetical situations"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-ec073a6d-ce14-4e21-a548-bcb9a5d5bb24",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "Interpretation of tables and charts"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:weight": 0.2,
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-1cfa68c0-5ad5-483b-ad8a-e622f33d4a1a",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "institutions"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:weight": 0.1,
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-30c840c0-2978-49b9-9044-d74721c827c1",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "social patterns"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:weight": 0.25,
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-5d0cbcee-ef29-46fc-a8e4-b260cb737d3e",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "social process"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:weight": 0.25,
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-f7b31a05-4b6d-47f6-b001-1c7ad32ad6d1",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "social stratification (process and structure)"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:weight": 0.2,
+          "ceterms:framework": "https://sandbox.credentialengineregistry.org/resources/ce-85ea2bf0-b0a3-422c-9074-14f2efe51480",
+          "ceterms:targetNode": "https://sandbox.credentialengineregistry.org/resources/ce-90311565-e23b-40ec-8927-e1d9d04b599c",
+          "ceterms:frameworkName": {
+            "en-US": "ACE - Introductory Sociology Skills Measured"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "the socialogical perspective"
+          }
+        }
+      ],
+      "ceterms:inLanguage": [
+        "en-US"
+      ],
+      "ceterms:description": {
+        "en-US": "The Introductory Sociology examination is designed to assess an individual's knowledge of the material typically presented in a one-semester introductory-level sociology course at most colleges and universities. The examination emphasizes basic facts and concepts as well as general theoretical approaches used by sociologists on the topics of institutions, social patterns, social processes, social stratifications, and the sociological perspective. Highly specialized knowledge of the subject and the methodology of the discipline is not required or measured by the test content.The exam contains approximately 100 questions to be answered in 90 minutes. Some of these are pretest questions that will not be scored. Any time test takers spend on tutorials and providing personal information is in addition to the actual testing time."
+      },
+      "ceterms:deliveryType": [
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://credreg.net/ctdl/terms/Delivery",
+          "ceterms:targetNode": "deliveryType:InPerson",
+          "ceterms:frameworkName": {
+            "en-US": "Delivery"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "In-Person Only"
+          }
+        }
+      ],
+      "ceterms:subjectWebpage": "https://clep.collegeboard.org/?t=introductorySocialogy"
+    },
+    {
+      "@id": "_:204bcebb-fda6-406e-ac94-c0ebe6cc6ead",
+      "@type": "ceterms:CredentialOrganization",
+      "ceterms:name": {
+        "en-US": "College Board's College-Level Examination Program (CLEP)"
+      },
+      "ceterms:subjectWebpage": "https://clep.collegeboard.org"
+    }
+  ]
+}
