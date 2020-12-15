@@ -1,0 +1,77 @@
+{
+	"Type": "ceterms:TransferValueProfile",
+	"Name": "American Educational Institute, Inc. (AEI) | Evaluated Learning Experience",
+	"Description": "In the upper division baccalaureate degree category OR in the graduate degree category, 1 semester hour in Insurance, Insurance Law or Business Law (5/10) (5/15 revalidation) (6/20 revalidation). NOTE: Courses 513, 514, and 515 or 516 constitute 3 semester hours in Insurance Fraud. NOTE: Courses 510, 512, 515 or 516 constitute 3 semester hours in Insurance Fraud.",
+	"CTID": "ce-4602d328-4a38-42d0-b6b8-3a8de4b8f4ed",
+	"SubjectWebpage": "http://www.nationalccrs.org/american-educational-institute/advanced-legal-issues-fraud",
+	"OwnedBy": [
+		{
+			"Type": "ceterms:CredentialOrganization",
+			"Name": "American Educational Institute, Inc. (AEI)",
+			"SubjectWebpage": "http://www.nationalccrs.org/organizations/american-educational-institute"
+		}
+	],
+	"StartDate": "2004-5",
+	"TransferValue": [
+		{
+			"Type": "ceterms:ValueProfile",
+			"Value": 1.0,
+			"CreditLevelType": [
+				"audLevel:LowerDivisionLevel"
+			],
+			"CreditUnitType": [
+				"creditUnit:DegreeCredit"
+			],
+			"Subject": [
+				"Insurance, Insurance Law, or Business Law"
+			]
+		}
+	]
+	"TransferValueFrom": [
+		{
+			"Type": "ceterms:LearningOpportunityProfile",
+			"Name": "Advanced Legal Issues in Fraud Investigation and Defense (515)",
+			"Description": "In addition to AEI produced textbook, students receive actual court decisions, which relate to the subject matter and present real-life court opinions that illustrate how courts have ruled in the past and are likely to rule in the future on important issues in claims. A proctored examination is administered for both levels of the credit recommendation. Scenario and case study-based questions, built around actual claims situations, challenge students to analyze and solve problems using applicable principles of claims law that parallel their own claim files. To broaden students' knowledge of the subject, graded exams are returned with helpful comments that provide a written explanation of why each answer is correct or incorrect. For the graduate level credit recommendation, students also prepare and submit an appropriate graduate level research project on a pre-approved topic or issue, in accordance with AEI's specific guidelines.",
+			"Identifier": [
+				{
+					"Type": "ceterms:IdentifierValue",
+					"IdentifierValueCode": "515",
+					"IdentifierTypeName": "Course Code"
+				}
+			],
+			"Subject": [
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"TargetNodeName": "Law of Claims Fraud Investigation and Defense"
+				}
+			],
+			"AvailableAt": [
+				{
+					"Type": "ceterms:Place",
+					"Description": "Independent Study program administered through the offices of American Educational Institute."
+				}
+			],
+			"EstimatedDuration": [
+				{
+					"Type": "ceterms:DurationProfile",
+					"Description": "Approximately 19 hours of structured independent study."
+				}
+			],
+			"DeliveryType": [
+				"deliveryType:OnlineOnly"
+			],
+			"Teaches": [
+				{
+					"Type": "ceterms:CredentialAlignmentObject",
+					"TargetNodeDescription": "Upon successful completion of the course, students will be able to identify and discuss advanced legal issues and investigation techniques in insurance fraud."
+				}
+			],
+			"Subject": [
+				"defamation",
+				"using information",
+				"hearsay"
+				"surveillance"
+			]
+		}
+	]
+}
