@@ -1,0 +1,42 @@
+{
+	"Type": "ceterms:TransferValueProfile",
+	"Name": "Introduction to Business",
+	"Description": "IWU, USF, IUSB: Ancilla course will transfer as undistributed credit",
+	"OwnedBy": [
+		"ce-b412e8bc-f1e3-44b3-8785-1195e34caf80"
+	],
+	"TransferValue": [
+		{
+			"Type": "ceterms:ValueProfile",
+			"Value": 3.0,
+			"CreditUnitType": [
+				"creditUnit:DegreeCredit"
+			]
+		}
+	],
+	"TransferValueFrom": [
+		{
+			"Type": "ceterms:LearningOpportunityProfile",
+			"Name": "Introduction to Business",
+			"Identifier": [
+				{
+					"Type": "ceterms:IdentifierValue",
+					"IdentifierTypeName": "Course Number",
+					"IdentifierValueCode": "BADM 100"
+				}
+			],
+			"OfferedBy": [
+				{
+					"Type": "ceterms:CredentialOrganization",
+					"Name": "Ancilla College"
+				}
+			]
+		}
+	],
+	"TransferValueFor": [
+		{
+			"Type": "ceterms:LearningOpportunityProfile",
+			"Name": "Business, Introduction to",
+		}
+	]
+}
