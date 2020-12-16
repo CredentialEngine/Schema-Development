@@ -1,0 +1,164 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@id": "https://sandbox.credentialengineregistry.org/graph/ce-4602d328-4a38-42d0-b6b8-3a8de4b8f4ed",
+  "@graph": [
+    {
+      "@id": "https://sandbox.credentialengineregistry.org/resources/ce-4602d328-4a38-42d0-b6b8-3a8de4b8f4ed",
+      "@type": "ceterms:TransferValueProfile",
+      "ceterms:ctid": "ce-4602d328-4a38-42d0-b6b8-3a8de4b8f4ed",
+      "ceterms:name": {
+        "en-US": "Advanced Legal Issues in Fraud Investigation and Defense"
+      },
+      "ceterms:ownedBy": [
+        "https://sandbox.credentialengineregistry.org/resources/ce-91bef066-cbec-4021-8c8d-45cde1f39c2b"
+      ],
+      "ceterms:startDate": "2004-05",
+      "ceterms:description": {
+        "en-US": "In the upper division baccalaureate degree category OR in the graduate degree category, 1 semester hour in Insurance, Insurance Law or Business Law (5/10) (5/15 revalidation) (6/20 revalidation). NOTE: Courses 513, 514, and 515 or 516 constitute 3 semester hours in Insurance Fraud. NOTE: Courses 510, 512, 515 or 516 constitute 3 semester hours in Insurance Fraud."
+      },
+      "ceterms:transferValue": [
+        {
+          "@type": "schema:ValueProfile",
+          "schema:value": 1.0,
+          "ceterms:subject": [
+            {
+              "@type": "ceterms:CredentialAlignmentObject",
+              "ceterms:targetNodeName": {
+                "en-US": "Insurance, Insurance Law, or Business Law"
+              }
+            }
+          ],
+          "ceterms:creditUnitType": [
+            {
+              "@type": "ceterms:CredentialAlignmentObject",
+              "ceterms:framework": "https://credreg.net/ctdl/terms/CreditUnit",
+              "ceterms:targetNode": "creditUnit:DegreeCredit",
+              "ceterms:frameworkName": {
+                "en-US": "CreditUnit"
+              },
+              "ceterms:targetNodeName": {
+                "en-US": "Degree Credit"
+              }
+            }
+          ],
+          "ceterms:creditLevelType": [
+            {
+              "@type": "ceterms:CredentialAlignmentObject",
+              "ceterms:framework": "https://credreg.net/ctdl/terms/AudienceLevel",
+              "ceterms:targetNode": "audLevel:LowerDivisionLevel",
+              "ceterms:frameworkName": {
+                "en-US": "AudienceLevel"
+              },
+              "ceterms:targetNodeName": {
+                "en-US": "Lower Division Level"
+              }
+            }
+          ]
+        }
+      ],
+      "ceterms:subjectWebpage": "http://www.nationalccrs.org/american-educational-institute/advanced-legal-issues-fraud",
+      "ceterms:transferValueFrom": [
+        "_:02a2e2e8-50eb-4b64-b3df-6eee5f55e105"
+      ]
+    },
+    {
+      "@id": "_:02a2e2e8-50eb-4b64-b3df-6eee5f55e105",
+      "@type": "ceterms:LearningOpportunityProfile",
+      "ceterms:name": {
+        "en-US": "Advanced Legal Issues in Fraud Investigation and Defense (515)"
+      },
+      "ceterms:ownedBy": [
+        "_:12cf0fb4-e9c0-4a02-9a81-755d64f0f982"
+      ],
+      "ceterms:subject": [
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": {
+            "en-US": "defamation"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": {
+            "en-US": "using information"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": {
+            "en-US": "hearsay"
+          }
+        },
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": {
+            "en-US": "surveillance"
+          }
+        }
+      ],
+      "ceterms:teaches": [
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": {
+            "en-US": "Upon successful completion of the course, students will be able to identify and discuss advanced legal issues and investigation techniques in insurance fraud."
+          }
+        }
+      ],
+      "ceterms:offeredBy": [
+        "_:12cf0fb4-e9c0-4a02-9a81-755d64f0f982"
+      ],
+      "ceterms:inLanguage": [
+        "en-US"
+      ],
+      "ceterms:availableAt": [
+        {
+          "@type": "ceterms:Place",
+          "ceterms:description": {
+            "en-US": "Independent Study program administered through the offices of American Educational Institute."
+          }
+        }
+      ],
+      "ceterms:description": {
+        "en-US": "In addition to AEI produced textbook, students receive actual court decisions, which relate to the subject matter and present real-life court opinions that illustrate how courts have ruled in the past and are likely to rule in the future on important issues in claims. A proctored examination is administered for both levels of the credit recommendation. Scenario and case study-based questions, built around actual claims situations, challenge students to analyze and solve problems using applicable principles of claims law that parallel their own claim files. To broaden students' knowledge of the subject, graded exams are returned with helpful comments that provide a written explanation of why each answer is correct or incorrect. For the graduate level credit recommendation, students also prepare and submit an appropriate graduate level research project on a pre-approved topic or issue, in accordance with AEI's specific guidelines."
+      },
+      "ceterms:deliveryType": [
+        {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:framework": "https://credreg.net/ctdl/terms/Delivery",
+          "ceterms:targetNode": "deliveryType:OnlineOnly",
+          "ceterms:frameworkName": {
+            "en-US": "Delivery"
+          },
+          "ceterms:targetNodeName": {
+            "en-US": "Online Only"
+          }
+        }
+      ],
+      "ceterms:identifierValue": [
+        {
+          "@type": "ceterms:IdentifierValue",
+          "ceterms:identifierTypeName": {
+            "en-US": "Course Code"
+          },
+          "ceterms:identifierValueCode": "515"
+        }
+      ],
+      "ceterms:estimatedDuration": [
+        {
+          "@type": "ceterms:DurationProfile",
+          "ceterms:description": {
+            "en-US": "Approximately 19 hours of structured independent study."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "_:12cf0fb4-e9c0-4a02-9a81-755d64f0f982",
+      "@type": "ceterms:CredentialOrganization",
+      "ceterms:name": {
+        "en-US": "American Educational Institute, Inc. (AEI)"
+      },
+      "ceterms:subjectWebpage": "http://www.nationalccrs.org/organizations/american-educational-institute"
+    }
+  ]
+}
