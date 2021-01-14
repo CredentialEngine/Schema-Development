@@ -2,6 +2,7 @@
 	"Type": "ceterms:TransferValueProfile",
 	"Name": "Introduction to Business",
 	"Description": "IWU, USF, IUSB: Ancilla course will transfer as undistributed credit",
+	"SubjectWebpage":"https://transferin.net/transfer-resources/transfer-databases/core-transfer-library",
 	"OwnedBy": [
 		"ce-b412e8bc-f1e3-44b3-8785-1195e34caf80"
 	],
