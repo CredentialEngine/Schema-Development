@@ -1,0 +1,256 @@
+[
+	{
+		"@type": "ceterms:License",
+		"Name": "Bachelor of Science in Nursing",
+		"OfferedBy": [
+			"_:5d6a54d0-b9f8-4adc-bb36-be7eda925cd4"
+		]
+		"Holders": [
+			{
+				"Type": "ceterms:HoldersProfile",
+				"RelevantDataSet": [
+					"_:0789e165-11e5-4231-af9f-9eccb41fb511"
+				]
+			}
+		]
+	},
+	{
+		"@type": "ceterms:CredentialOrganization",
+		"@id": "_:5d6a54d0-b9f8-4adc-bb36-be7eda925cd4",
+		"Name": "Anderson University"
+	},
+	{
+		"@type": "qdata:DataSetProfile",
+		"@id": "_:0789e165-11e5-4231-af9f-9eccb41fb511",
+		"DataSetTimePeriod": [
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2009",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 75.0
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2010",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 75.0
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2011",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 100.0,
+								"Value": 12
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 12
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2012",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 93.3,
+								"Value": 28
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 30
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2013",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 81.0,
+								"Value": 30
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 37
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2014",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 96.1,
+								"Value": 25
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 26
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2015",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 90.0,
+								"Value": 45
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 50
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2016",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 97.8,
+								"Value": 45
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 46
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2017",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 100.0,
+								"Value": 33
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 33
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2018",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 97.0,
+								"Value": 33
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 34
+							}
+						]
+					}
+				]
+			},
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"EndDate": "2019",
+				"DataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"HoldersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Percentage": 93.3,
+								"Value": 28
+							}
+						],
+						"SubjectsInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"Value": 30
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
