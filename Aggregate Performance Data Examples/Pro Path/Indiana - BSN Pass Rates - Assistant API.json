@@ -22,6 +22,7 @@
 	{
 		"@type": "qdata:DataSetProfile",
 		"@id": "_:0789e165-11e5-4231-af9f-9eccb41fb511",
+		"DataProvider": "https://www.in.gov/che/",
 		"DataSetTimePeriod": [
 			{
 				"@type": "qdata:DataSetTimeFrame",
