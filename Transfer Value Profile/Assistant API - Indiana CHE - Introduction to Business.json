@@ -12,6 +12,9 @@
 			"Value": 3.0,
 			"CreditUnitType": [
 				"creditUnit:DegreeCredit"
+			],
+			"Subject": [
+				"Business"
 			]
 		}
 	],
@@ -56,6 +59,9 @@
 			"Value": 3.0,
 			"CreditUnitType": [
 				"creditUnit:DegreeCredit"
+			],
+			"Subject": [
+				"Business"
 			]
 		}
 	],
