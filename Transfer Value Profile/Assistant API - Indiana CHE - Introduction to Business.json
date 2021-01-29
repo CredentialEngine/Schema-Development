@@ -15,7 +15,7 @@
 			]
 		}
 	],
-	"TransferValueFrom": [
+	"TransferValueFor": [
 		{
 			"Type": "ceterms:LearningOpportunityProfile",
 			"Name": "Introduction to Business",
@@ -34,7 +34,7 @@
 			]
 		}
 	],
-	"TransferValueFor": [
+	"TransferValueFrom": [
 		{
 			"Type": "ceterms:LearningOpportunityProfile",
 			"Name": "Business, Introduction to",
