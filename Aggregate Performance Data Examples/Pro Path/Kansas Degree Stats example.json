@@ -1,0 +1,47 @@
+//https://ksdegreestats.org/ProspectusController?app=prospectus&ficeInstId=001910&programNbr=283
+{
+	"@type": "ceterms:AssociateDegree",
+	"ceterms:employmentOutcome": [
+		{
+			"@type": "ceterms:EmploymentOutcomeProfile",
+			"qdata:relevantDataSet": [
+				"http://.../ce-123"
+			]
+		}
+	]
+}
+
+{
+	"@id": "http://.../ce-123",
+	"@type": "qdata:DataSetProfile",
+	"qdata:dataSetTimePeriod": [
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:employmentRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 88.0
+						}
+					],
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:value": 44439,
+							"schema:description": { "en": "Upon Entry" },
+							"schema:currency": "USD"
+						},
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:value": 49333,
+							"schema:description": { "en": "After 5 years" },
+							"schema:currency": "USD"
+						}
+					]
+				}
+			]
+		}
+	]
+}
