@@ -5,14 +5,14 @@
 		{
 			"@type": "ceterms:EmploymentOutcomeProfile",
 			"qdata:relevantDataSet": [
-				"http://.../ce-123"
+				"https://.../ce-123"
 			]
 		}
 	]
 }
 
 {
-	"@id": "http://.../ce-123",
+	"@id": "https://.../ce-123",
 	"@type": "qdata:DataSetProfile",
 	"qdata:dataSetTimePeriod": [
 		{
