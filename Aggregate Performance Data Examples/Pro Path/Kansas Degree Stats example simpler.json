@@ -8,6 +8,14 @@
 				"https://.../ce-123"
 			]
 		}
+	],
+	"ceterms:earnings": [
+		{
+			"@type": "ceterms:EarningsProfile",
+			"qdata:relevantDataSet": [
+				"https://.../ce-123"
+			]
+		}
 	]
 }
 
