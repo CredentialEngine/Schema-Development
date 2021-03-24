@@ -1,0 +1,295 @@
+//CTDL, Current Properties
+{
+	"@type": "qdata:DataSetProfile",
+	"@id": "https://credentialengineregistry.org/resources/ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"ceterms:ctid": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"ceterms:name": "Indiana BSN Pass Rates",
+	"ceterms:source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
+	"ceterms:description": { "en": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020." },
+	"qdata:dataSetTimePeriod": [
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2018-1-1",
+			"ceterms:endDate": "2018-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 98.0,
+							"schema:value": 50
+						}
+					],
+					"qdata:subjectsInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 51
+						}
+					]
+				}
+			]
+		},
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2019-1-1",
+			"ceterms:endDate": "2019-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 94.8,
+							"schema:value": 55
+						}
+					],
+					"qdata:subjectsInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 58
+						}
+					]
+				}
+			]
+		},
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2020-1-1",
+			"ceterms:endDate": "2020-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 100.0,
+							"schema:value": 51
+						}
+					],
+					"qdata:subjectsInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 51
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+//Assistant API, Current Properties
+{
+	"CTID": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"Name": "Indiana BSN Pass Rates",
+	"Source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
+	"Description": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020.",
+	"DataSetTimePeriod": [
+		{
+			"StartDate": "2018-1-1",
+			"EndDate": "2018-12-31",
+			"DataAttributes": [
+				{
+					"HoldersInSet": [
+						{
+							"Percentage": 98.0,
+							"Value": 50
+						}
+					],
+					"SubjectsInSet": [
+						{
+							"Value": 51
+						}
+					]
+				}
+			]
+		},
+		{
+			"StartDate": "2019-1-1",
+			"EndDate": "2019-12-31",
+			"DataAttributes": [
+				{
+					"HoldersInSet": [
+						{
+							"Percentage": 94.8,
+							"Value": 55
+						}
+					],
+					"SubjectsInSet": [
+						{
+							"Value": 58
+						}
+					]
+				}
+			]
+		},
+		{
+			"StartDate": "2020-1-1",
+			"EndDate": "2020-12-31",
+			"DataAttributes": [
+				{
+					"HoldersInSet": [
+						{
+							"Percentage": 100.0,
+							"Value": 51
+						}
+					],
+					"SubjectsInSet": [
+						{
+							"Value": 51
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+//CTDL, Upcoming Properties
+{
+	"@type": "qdata:DataSetProfile",
+	"@id": "https://credentialengineregistry.org/resources/ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"ceterms:ctid": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"ceterms:name": "Indiana BSN Pass Rates",
+	"ceterms:source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
+	"ceterms:description": { "en": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020." },
+	"qdata:dataSetTimePeriod": [
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2018-1-1",
+			"ceterms:endDate": "2018-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:passRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 98.0,
+							"schema:value": 50
+						}
+					],
+					"qdata:subjectsInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 51
+						}
+					]
+				}
+			]
+		},
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2019-1-1",
+			"ceterms:endDate": "2019-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:passRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 94.8,
+							"schema:value": 55
+						}
+					],
+					"qdata:subjectsInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 58
+						}
+					]
+				}
+			]
+		},
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2020-1-1",
+			"ceterms:endDate": "2020-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:passRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 100.0,
+							"schema:value": 51
+						}
+					],
+					"qdata:subjectsInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 51
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+//Assistant API, Upcoming Properties
+{
+	"CTID": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"Name": "Indiana BSN Pass Rates",
+	"Source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
+	"Description": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020.",
+	"DataSetTimePeriod": [
+		{
+			"StartDate": "2018-1-1",
+			"EndDate": "2018-12-31",
+			"DataAttributes": [
+				{
+					"PassRate": [
+						{
+							"Percentage": 98.0,
+							"Value": 50
+						}
+					],
+					"SubjectsInSet": [
+						{
+							"Value": 51
+						}
+					]
+				}
+			]
+		},
+		{
+			"StartDate": "2019-1-1",
+			"EndDate": "2019-12-31",
+			"DataAttributes": [
+				{
+					"PassRate": [
+						{
+							"Percentage": 94.8,
+							"Value": 55
+						}
+					],
+					"SubjectsInSet": [
+						{
+							"Value": 58
+						}
+					]
+				}
+			]
+		},
+		{
+			"StartDate": "2020-1-1",
+			"EndDate": "2020-12-31",
+			"DataAttributes": [
+				{
+					"PassRate": [
+						{
+							"Percentage": 100.0,
+							"Value": 51
+						}
+					],
+					"SubjectsInSet": [
+						{
+							"Value": 51
+						}
+					]
+				}
+			]
+		}
+	]
+}
