@@ -2,7 +2,7 @@
 {
 	"@type": "qdata:DataSetProfile",
 	"@id": "https://credentialengineregistry.org/resources/ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
-	"ceterms:ctid": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"ceterms:ctid": "ce-ed36f74a-2845-4b37-9209-27d987422037",
 	"ceterms:name": "Indiana BSN Pass Rates",
 	"ceterms:source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
 	"ceterms:description": { "en": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020." },
@@ -81,7 +81,7 @@
 
 //Assistant API, Current Properties
 {
-	"CTID": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"CTID": "ce-ed36f74a-2845-4b37-9209-27d987422037",
 	"Name": "Indiana BSN Pass Rates",
 	"Source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
 	"Description": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020.",
@@ -150,7 +150,7 @@
 {
 	"@type": "qdata:DataSetProfile",
 	"@id": "https://credentialengineregistry.org/resources/ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
-	"ceterms:ctid": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
+	"ceterms:ctid": "ce-ed36f74a-2845-4b37-9209-27d987422037",
 	"ceterms:name": "Indiana BSN Pass Rates",
 	"ceterms:source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
 	"ceterms:description": { "en": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020." },
