@@ -230,66 +230,90 @@
 //Assistant API, Upcoming Properties
 {
 	"CTID": "ce-5129f681-6537-4480-8d76-9ac0e5210dcf",
-	"Name": "Indiana BSN Pass Rates",
-	"Source": "https://www.in.gov/pla/files/BSN-Program-Pass-Rates-2010-2020.pdf",
 	"Description": "The National Council Licensure Examination-Registered Nurse (NCLEX-RN) is developed by the National Council of State Boards of Nursing, Inc. (NCSBN) and is used by all 50 states as a requirement for licensure.  The national pass rate on the NCLEX-RN for first-time exam takers who graduated from baccalaureate pre-licensure programs was 90.3 percent for 2020.",
+	"Name": "Indiana BSN Pass Rates",
 	"DataSetTimePeriod": [
-		{
-			"StartDate": "2018-1-1",
-			"EndDate": "2018-12-31",
-			"DataAttributes": [
-				{
-					"PassRate": [
-						{
-							"Percentage": 85.9,
-							"Value": 61
-						}
-					],
-					"SubjectsInSet": [
-						{
-							"Value": 71
-						}
-					]
-				}
+	    {
+		"Description": "Pass Rates are updated annually.",
+		"StartDate": "2018-1-1",
+		"EndDate": "2018-12-31",
+		"DataAttributes": [
+		    {
+			"PassRate": [
+			    {
+				"Percentage": 85.9,
+				"Description": "Pass rate for 2018"
+			    }
+			],
+			"HoldersInSet": [
+			    {
+				"Value": 61,
+				"Description": "Students that passed NCLEX Exam."
+			    }
+			],
+			"SubjectsInSet": [
+			    {
+				"Value": 71,
+				"Description": "NCLEX Test takers"
+			    }
 			]
-		},
-		{
-			"StartDate": "2019-1-1",
-			"EndDate": "2019-12-31",
-			"DataAttributes": [
-				{
-					"PassRate": [
-						{
-							"Percentage": 85.1,
-							"Value": 46
-						}
-					],
-					"SubjectsInSet": [
-						{
-							"Value": 54
-						}
-					]
-				}
+		    }
+		]
+	    },
+	    {
+		"Description": "Pass Rates are updated annually.",
+		"StartDate": "2019-1-1",
+		"EndDate": "2019-12-31",
+		"DataAttributes": [
+		    {
+			"PassRate": [
+			    {
+				"Percentage": 85.1,
+				"Description": "Pass rate for 2019"
+			    }
+			],
+			"HoldersInSet": [
+			    {
+				"Value": 46,
+				"Description": "Students that passed NCLEX Exam."
+			    }
+			],
+			"SubjectsInSet": [
+			    {
+				"Value": 54,
+				"Description": "NCLEX Test takers"
+			    }
 			]
-		},
-		{
-			"StartDate": "2020-1-1",
-			"EndDate": "2020-12-31",
-			"DataAttributes": [
-				{
-					"PassRate": [
-						{
-							"Percentage": 86.1,
-							"Value": 31
-						}
-					],
-					"SubjectsInSet": [
-						{
-							"Value": 36
-						}
-					]
-				}
+		    }
+		]
+	    },
+	    {
+		"Description": "Pass Rates are updated annually.",
+		"StartDate": "2020-1-1",
+		"EndDate": "2020-12-31",
+		"DataAttributes": [
+		    {
+			"PassRate": [
+			    {
+				"Percentage": 86.1,
+				"Description": "Pass rate for 2020"
+
+			    }
+			],
+			"HoldersInSet": [
+			    {
+				"Value": 31,
+				"Description": "Students that passed NCLEX Exam."
+			    }
+			],
+			"SubjectsInSet": [
+			    {
+				"Value": 36,
+				"Description": "NCLEX Test takers"
+			    }
 			]
-		}
+		    }
+		]
+	    }
 	]
 }
