@@ -190,10 +190,7 @@
 						{
 							"@type": "schema:QuantitativeValue",
 							"qdata:percentage": 85.1,
-							"schema:value": 46,
-							"schema:description": {
-								"en": ""
-							}
+							"schema:value": 46
 						}
 					],
 					"qdata:subjectsInSet": [
@@ -284,10 +281,7 @@
 					"PassRate": [
 						{
 							"Percentage": 86.1,
-							"Value": 31,
-							"Description": {
-								"en": ""
-							}
+							"Value": 31
 						}
 					],
 					"SubjectsInSet": [
