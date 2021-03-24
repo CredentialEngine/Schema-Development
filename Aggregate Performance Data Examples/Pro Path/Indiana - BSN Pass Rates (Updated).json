@@ -100,10 +100,7 @@
 					"HoldersInSet": [
 						{
 							"Percentage": 85.9,
-							"Value": 61,
-							"Description": {
-								"en": ""
-							}
+							"Value": 61
 						}
 					],
 					"SubjectsInSet": [
@@ -144,10 +141,7 @@
 					"HoldersInSet": [
 						{
 							"Percentage": 86.1,
-							"Value": 31,
-							"Description": {
-								"en": ""
-							}
+							"Value": 31
 						}
 					],
 					"SubjectsInSet": [
@@ -182,10 +176,7 @@
 						{
 							"@type": "schema:QuantitativeValue",
 							"qdata:percentage": 85.9,
-							"schema:value": 61,
-							"schema:description": {
-								"en": ""
-							}
+							"schema:value": 61
 						}
 					],
 					"qdata:subjectsInSet": [
@@ -234,10 +225,7 @@
 						{
 							"@type": "schema:QuantitativeValue",
 							"qdata:percentage": 86.1,
-							"schema:value": 31,
-							"schema:description": {
-								"en": ""
-							}
+							"schema:value": 31
 						}
 					],
 					"qdata:subjectsInSet": [
@@ -267,10 +255,7 @@
 					"PassRate": [
 						{
 							"Percentage": 85.9,
-							"Value": 61,
-							"Description": {
-								"en": ""
-							}
+							"Value": 61
 						}
 					],
 					"SubjectsInSet": [
@@ -289,10 +274,7 @@
 					"PassRate": [
 						{
 							"Percentage": 85.1,
-							"Value": 46,
-							"Description": {
-								"en": ""
-							}
+							"Value": 46
 						}
 					],
 					"SubjectsInSet": [
