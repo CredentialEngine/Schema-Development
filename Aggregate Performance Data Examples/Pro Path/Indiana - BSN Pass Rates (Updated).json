@@ -41,10 +41,7 @@
 						{
 							"@type": "schema:QuantitativeValue",
 							"qdata:percentage": 85.1,
-							"schema:value": 46,
-							"schema:description": {
-								"en": ""
-							}
+							"schema:value": 46
 						}
 					],
 					"qdata:subjectsInSet": [
