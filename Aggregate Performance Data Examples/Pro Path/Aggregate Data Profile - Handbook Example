@@ -1,0 +1,43 @@
+{
+	"@id": "res:ce-c69e4932-0fdd-4b8a-9ba7-f4470e2cfdae",
+	"@type": "ceterms:AssociateDegree",
+	"ceterms:aggregateData": [
+		{
+			"@type": "ceterms:AggregateDataProfile",
+			"ceterms:dateEffective": "2018-01-01",
+			"ceterms:name": {
+				"en": "2017 Aggregate Data"
+			},
+			"ceterms:description": {
+				"en": "Aggregate data for the period of 2017-01-01 through 2017-12-31"
+			},
+			"ceterms:postReceiptMonths": 12,
+			"ceterms:highEarnings": 89051,
+			"ceterms:medianEarnings": 62083,
+			"ceterms:lowEarnings": 45633,
+			"ceterms:currency": "USD",
+			"ceterms:numberAwarded": 1210,
+			"ceterms:jobsObtained": 984,
+			"ceterms:demographicInformation": {
+				"en": "The enrolled student population at the College is 47.9% White, 34.3% Hispanic or Latino, 5.25% Two or More Races..."
+			},
+			"ceterms:jurisdiction": [
+				{
+					"@type": "ceterms:JurisdictionProfile",
+					"ceterms:mainJurisdiction": {
+						"@type": "ceterms:Place",
+						"ceterms:name": {
+							"en": "Sonoma County, California"
+						},
+						"ceterms:latitude": 38.52529,
+						"ceterms:longitude": -122.92254,
+						"ceterms:geoURL": "https://sws.geonames.org/5397100"
+					}
+				}
+			],
+			"qdata:relevantDataSet": [
+				"https://credentialengineregistry.org/resources/ce-61803143-1c5f-41c7-875c-6cfd4bfcc6d7"
+			]
+		}
+	]
+}
