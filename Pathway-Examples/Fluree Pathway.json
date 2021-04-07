@@ -95,7 +95,7 @@
 			]
 		},
 		{
-			"@id": "https://credentialengineregistry.org/resources/ce-8ec9877d-d804-4222-8c40-5f79b82945b0"
+			"@id": "https://credentialengineregistry.org/resources/ce-8ec9877d-d804-4222-8c40-5f79b82945b0",
 			"@type": "ceterms:SelectionComponent",
 			"ceterms:name": { "en": "General Education Core" },
 			"ceterms:ctid": "ce-8ec9877d-d804-4222-8c40-5f79b82945b0",
@@ -158,7 +158,7 @@
 				}
 			],
 			"ceterms:sourceData": "https://...",
-			"ceterms:prerequisite" [
+			"ceterms:prerequisite": [
 				"https://credentialengineregistry.org/resources/ce-eabd8e70-fcb3-4c9c-ab2d-d057de93f4c3"
 			]
 		}
