@@ -1,0 +1,166 @@
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-4d05ca69-de57-4db8-9d37-235f2ba98376",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-4d05ca69-de57-4db8-9d37-235f2ba98376",
+			"@type": "ceterms:BachelorDegree",
+			"ceterms:name": { "en": "Basket Weaving Degree" },
+			"ceterms:ctid": "ce-4d05ca69-de57-4db8-9d37-235f2ba98376",
+			"ceterms:requires": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:description": { "en": "Complete the Basket Weaving Pathway" },
+					"ceterms:creditValue": [
+						{
+							"@type": "ceterms:ValueProfile",
+							"schema:value": 25,
+							"ceterms:creditUnitType": [
+								"creditUnit:DegreeCredit"
+							]
+						}
+					],
+					"ceterms:targetPathway": [
+						"https://credentialengineregistry.org/resources/ce-0426e2ae-2896-4bb6-b872-ec65df2921c1"
+					]
+				}
+			]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-d80d755c-40e0-4941-a8c3-49c4a25a5180",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-d80d755c-40e0-4941-a8c3-49c4a25a5180",
+			"@type": "ceterms:LearningOpportunityProfile",
+			"ceterms:name": { "en": "College Trigonometry" },
+			"ceterms:ctid": "ce-d80d755c-40e0-4941-a8c3-49c4a25a5180",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "MATH 140",
+					"ceterms:identifierTypeName": { "en": "Course Number" }
+				}
+			],
+			"ceterms:requires": [
+				{
+					"@type": "ceterms:ConditionProfile",
+					"ceterms:condition": { 
+						"en": [
+							"Minimum Grade: D"
+						] 
+					}
+				}
+			],
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 4,
+					"ceterms:creditUnitType": [
+						"creditUnit:DegreeCredit"
+					]
+				}
+			]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-0426e2ae-2896-4bb6-b872-ec65df2921c1",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-0426e2ae-2896-4bb6-b872-ec65df2921c1",
+			"@type": "ceterms:Pathway",
+			"ceterms:name": { "en": "Basket Weaving Pathway" },
+			"ceterms:ctid": "ce-0426e2ae-2896-4bb6-b872-ec65df2921c1",
+			"ceterms:hasDestinationComponent": "https://credentialengineregistry.org/resources/ce-c4613459-a9fb-4a52-ac99-96de248c65e5"
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-c4613459-a9fb-4a52-ac99-96de248c65e5",
+			"@type": "ceterms:CredentialComponent",
+			"ceterms:name": { "en": "Basket Weaving Degree" },
+			"ceterms:ctid": "ce-c4613459-a9fb-4a52-ac99-96de248c65e5",
+			"ceterms:sourceData": "https://credentialengineregistry.org/resources/ce-4d05ca69-de57-4db8-9d37-235f2ba98376",
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:name": { "en": "Requires 2 of 2" },
+					"ceterms:requiredNumber": 2,
+					"ceterms:targetComponent": [
+						"https://credentialengineregistry.org/resources/ce-8ec9877d-d804-4222-8c40-5f79b82945b0",
+						"https://..."
+					]
+				}
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-8ec9877d-d804-4222-8c40-5f79b82945b0"
+			"@type": "ceterms:SelectionComponent",
+			"ceterms:name": { "en": "General Education Core" },
+			"ceterms:ctid": "ce-8ec9877d-d804-4222-8c40-5f79b82945b0",
+			"ceterms:hasCondition": [
+				{
+					"@type": "ComponentCondition",
+					"ceterms:name": { "en": "Requires 3 of 3" },
+					"ceterms:requiredNumber": 3,
+					"ceterms:targetComponent": [
+						"https://credentialengineregistry.org/resources/ce-99cbada1-f413-4b15-a96c-a0ecd95794be",
+						"https://...",
+						"https://..."
+					]
+				}
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-99cbada1-f413-4b15-a96c-a0ecd95794be",
+			"@type": "ceterms:SelectionComponent",
+			"ceterms:name": { "en": "Math: General Education" },
+			"ceterms:ctid": "ce-99cbada1-f413-4b15-a96c-a0ecd95794be",
+			"ceterms:hasCondition": [
+				{
+					"@type": "ComponentCondition",
+					"ceterms:name": { "en": "Requires 1 of 3" },
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"https://credentialengineregistry.org/resources/ce-eabd8e70-fcb3-4c9c-ab2d-d057de93f4c3",
+						"https://...",
+						"https://..."
+					]
+				}
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-eabd8e70-fcb3-4c9c-ab2d-d057de93f4c3",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:name": { "en": "College Trigonometry" },
+			"ceterms:ctid": "ce-eabd8e70-fcb3-4c9c-ab2d-d057de93f4c3",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "MATH 140",
+					"ceterms:identifierTypeName": { "en": "Course Number" }
+				}
+			],
+			"ceterms:sourceData": "https://credentialengineregistry.org/resources/ce-d80d755c-40e0-4941-a8c3-49c4a25a5180"
+		},
+		"...",
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-5448ebb9-e522-42aa-8825-8f4bad96b834",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:name": { "en": "Basic Basket Forms" },
+			"ceterms:ctid": "ce-5448ebb9-e522-42aa-8825-8f4bad96b834",
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierValueCode": "BW 101",
+					"ceterms:identifierTypeName": { "en": "Course Number" }
+				}
+			],
+			"ceterms:sourceData": "https://...",
+			"ceterms:prerequisite" [
+				"https://credentialengineregistry.org/resources/ce-eabd8e70-fcb3-4c9c-ab2d-d057de93f4c3"
+			]
+		}
+	]
+}
