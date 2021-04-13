@@ -81,7 +81,7 @@
 			"@type": "ceterms:CredentialComponent",
 			"ceterms:name": { "en": "Basket Weaving Degree" },
 			"ceterms:ctid": "ce-c4613459-a9fb-4a52-ac99-96de248c65e5",
-			"ceterms:sourceData": "https://credentialengineregistry.org/resources/ce-4d05ca69-de57-4db8-9d37-235f2ba98376",
+			"ceterms:sourceItem": "https://credentialengineregistry.org/resources/ce-4d05ca69-de57-4db8-9d37-235f2ba98376",
 			"ceterms:hasCondition": [
 				{
 					"@type": "ceterms:ComponentCondition",
@@ -142,7 +142,7 @@
 					"ceterms:identifierTypeName": { "en": "Course Number" }
 				}
 			],
-			"ceterms:sourceData": "https://credentialengineregistry.org/resources/ce-d80d755c-40e0-4941-a8c3-49c4a25a5180"
+			"ceterms:sourceItem": "https://credentialengineregistry.org/resources/ce-d80d755c-40e0-4941-a8c3-49c4a25a5180"
 		},
 		"...",
 		{
@@ -157,7 +157,7 @@
 					"ceterms:identifierTypeName": { "en": "Course Number" }
 				}
 			],
-			"ceterms:sourceData": "https://...",
+			"ceterms:sourceItem": "https://...",
 			"ceterms:prerequisite": [
 				"https://credentialengineregistry.org/resources/ce-eabd8e70-fcb3-4c9c-ab2d-d057de93f4c3"
 			]
