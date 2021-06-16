@@ -1,3 +1,24 @@
 Contextualized Competency Statements
 ---
-For details, [click here](https://credreg.net/page/taskgroups#group_csctg)
+Clearly defining and communicating the skills and competencies for credentials, programs, and jobs can lead to more equitable learn-and-work ecosystems that recognize everyone’s specific abilities. In order to achieve this, we all need clearly written skills that are contextualized with additional information, providing a valuable currency across education, training, and employment. Open skills that are published on the web using Linked Open Data support connections among the skills, credentials, jobs, and more. The [Credential Transparency Description Language (CTDL)](https://credreg.net/ctdl/terms) and the Registry provide a freely available, shared Linked Open Data structure for publishing open skills and their rich connections to other data.
+
+The CTDL already supports data structures for describing competencies and skills, competency frameworks, alignments among skills, and rich metadata for contextualizing competency frameworks and related information. The CTDL also provides structure for linking competencies to credentials, courses, programs, assessments, transfer value, education and career pathways, jobs, work roles, and learning and employment records. The next step in the evolution of CTDL is to support additional rich metadata for individual competencies and skills.
+
+Credential Engine follows a clearly defined, open [process to make significant updates](https://credreg.net/page/updateprocess) to develop the Credential Transparency Description Language (CTDL). This process includes subject matter and technical experts forming short-term task groups to provide valuable input (typically 8-12 weeks). You are invited to join our new Contextualization of Skills and Competencies Task Group (CSCTG). The work of this task group supports the goals of the [Open Skills Network](https://www.openskillsnetwork.org/), [T3 Innovation Network](https://www.t3networkhub.org/about), and other initiatives and organizations advancing the development, sharing, and reuse of skills and competencies as linked data.
+
+The CSCTG will:
+1. Identify real-world use cases for individual skill and competency statement contextualization. The contextual information is important to correctly interpret the intent, purpose, use of, or authoritative sources for an individual skill or competency statement.
+2. Provide real examples of skill and competency statements with contextual information.
+3. Provide input to expand the CTDL domain model and create additional CTDL terms where necessary for the meaningful contextualization of individual skill and competency statements.
+
+**Who:** The CSCTG is for subject matter experts who create, manage, reuse, share, consume, or align skill and competency statements across learning and work domains. For example, skills architects, curriculum developers, assessment developers, HR or other job information managers, military and industry training developers, and others who work with skills and competencies. We welcome managers of data specifications who would like to participate and align their data standards to the resultant use cases and CTDL terms. We also welcome product and service providers who support skills and competencies and want to incorporate CTDL into their solutions. Prior knowledge of CTDL is appreciated by not required.
+
+**When and Where:** The CSCTG will kickoff on Thursday, June 24, 2021 and meet no more than six times, every other week for one hour, and conclude in August, 2021. The one-hour meetings will be held via Zoom.
+
+**Materials:** Credential Engine will create and provide all resources needed for this work, based on CSCTG input, and share them for ongoing feedback between meetings. All feedback and materials are transparently available following an open process.
+
+**Outcomes:** The final products of this work include the use cases, real-world examples as instance data, CTDL domain model and terms with definitions, and usage guidance. The products are all public information made available via the [Credential Engine technical site](https://credreg.net/) and where appropriate, on github and available under open licenses. All subsequent updates to the CTDL will follow the [Significant Update Policy](https://credreg.net/page/updateprocess). The policy requires formation of the Task Group, input by the Credential Engine Technical Advisory Group and other advisory group members and stakeholders, and a comment period. This efficient process ensures orderly changes that support and expand the durable, persistent value of CTDL Linked Open Data. Once this process is completed, the CTDL family of specifications will be updated along with the Credential Registry publishing and consuming tools. The tools include the open source Competency and Skills System (CaSS). The Registry and related tools and resources are freely available for stakeholders to publish competencies and skills, competency frameworks, and related data.
+
+For more information: info@credentialengine.org
+
+[Join the CSCTG Here](https://forms.gle/9FuSX9wxwcZPMboi6)
