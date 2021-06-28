@@ -56,6 +56,13 @@
 			],
 			"ceterms:offeredBy": [
 				"https://credentialengineregistry.org/resources/ce-1ce888e7-18d4-42fd-9a13-ef693631409b"
+			],
+			"ceterms:isPartOf": [
+				"https://credentialengineregistry.org/resources/ce-af8d32aa-338c-4fd1-b226-3ece8a36379c",
+				"https://credentialengineregistry.org/resources/ce-52cd57a8-73b5-44b0-8f1f-cc569f7f3c10",
+				"https://credentialengineregistry.org/resources/ce-6b88e886-2653-406e-9549-700c49ac2850",
+				"https://credentialengineregistry.org/resources/ce-a712bc81-8acb-4ada-84ba-fb70a607c998",
+				"https://credentialengineregistry.org/resources/ce-75ccab9b-3eda-4dcc-bbbc-699169e9765e"
 			]
 		},
 		{
