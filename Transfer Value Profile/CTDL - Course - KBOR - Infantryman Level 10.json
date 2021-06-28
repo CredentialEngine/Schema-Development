@@ -21,7 +21,7 @@
 				"_:Occ_11B_10"
 			],
 			"ceterms:transferValueFor": [
-				"_:LOP_ALH5211"
+				"_:Lopp_ALH5211"
 			]
 		},
 		{
@@ -37,16 +37,12 @@
 					"ceterms:targetNode": "https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories/combat/infantryman-11b.html"
 				}
 			],
-			"ceterms:categoryReference": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNodeName": { "en": "Service Level" },
-					"ceterms:codedNotation": "10"
-				}
+			"ceterms:classification": [
+				"_:Concept_SL10"
 			]
 		},
 		{
-			"@id": "_:LOP_ALH5211",
+			"@id": "_:Lopp_ALH5211",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Basic First Aid" },
 			"ceterms:identifier": [
@@ -61,6 +57,12 @@
 			"ceterms:offeredBy": [
 				"https://credentialengineregistry.org/resources/ce-1ce888e7-18d4-42fd-9a13-ef693631409b"
 			]
+		},
+		{
+			"@id": "_:Concept_SL10",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Service Level" },
+			"skos:codedNotation": "10"
 		}
 	]
 }
