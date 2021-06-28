@@ -21,7 +21,7 @@
 				"_:Occ_11B_10"
 			],
 			"ceterms:transferValueFor": [
-				"_:LOP_LED1454"
+				"_:Lopp_LED1454"
 			]
 		},
 		{
@@ -38,15 +38,11 @@
 				}
 			],
 			"ceterms:categoryReference": [
-				{
-					"@type": "ceterms:CredentialAlignmentObject",
-					"ceterms:targetNodeName": { "en": "Service Level" },
-					"ceterms:codedNotation": "30"
-				}
+				"_:Concept_SL30"
 			]
 		},
 		{
-			"@id": "_:LOP_LED1454",
+			"@id": "_:Lopp_LED1454",
 			"@type": "ceterms:LearningOpportunityProfile",
 			"ceterms:name": { "en": "Leadership Mentoring" },
 			"ceterms:identifier": [
@@ -61,6 +57,12 @@
 			"ceterms:offeredBy": [
 				"https://credentialengineregistry.org/resources/ce-1ce888e7-18d4-42fd-9a13-ef693631409b"
 			]
+		},
+		{
+			"@id": "_:Concept_SL30",
+			"@type": "ceterms:CredentialAlignmentObject",
+			"ceterms:targetNodeName": { "en": "Service Level" },
+			"ceterms:codedNotation": "30"
 		}
 	]
 }
