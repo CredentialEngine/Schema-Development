@@ -1,0 +1,67 @@
+//Registered Nurse competencies - Competency Example
+//A couple of competencies, which would likely be in the same framework along with many others
+//Each of these references a common set of concepts (which would likely each be in their own concept schemes) to contextualize them
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-7983234f-f669-494b-86f0-b42b052ee9da",
+	"@type": "ceasn:Competency",
+	"ceasn:competencyText": { "en": "Provides comprehensive, safe, and effective, evidence-based nursing care to achieve desired health outcomes for the patient." },
+	"ceasn:license": "http://creativecommons.org/licenses/by/4.0/",
+	"ceasn:environmentalHazardType": [ "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2", "https://credentialengineregistry.org/resources/ce-8cea9e4d-be69-433f-bafd-9c78dbc86dda" ],
+	"ceasn:physicalCapabilityType": [ "https://credentialengineregistry.org/resources/ce-4072b85e-33b9-487a-af61-d19fb446b4a9" ],
+	"ceasn:sensoryCapabilityType": [ "https://credentialengineregistry.org/resources/ce-606dfa41-8efb-441d-8fe4-efc25aeb7bb6" ],
+	"ceterms:occupationType": [
+		{
+			"@type": "ceterms:CredentialAlignmentObject",
+			"ceterms:targetNodeName": { "en": "Registered Nurses" },
+			"ceterms:codedNotation": "29-1141"
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-7983234f-f669-494b-86f0-b42b052ee9da",
+	"@type": "ceasn:Competency",
+	"ceasn:competencyText": { "en": "Organizes and prioritizes patient care activities balanced with the needs and comfort of the patient." },
+	"ceasn:license": "http://creativecommons.org/licenses/by/4.0/",
+	"ceasn:environmentalHazardType": [ "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2", "https://credentialengineregistry.org/resources/ce-8cea9e4d-be69-433f-bafd-9c78dbc86dda" ],
+	"ceasn:physicalCapabilityType": [ "https://credentialengineregistry.org/resources/ce-b862a6bd-77f9-4e88-93dd-21fac2f8e6cf" ],
+	"ceasn:sensoryCapabilityType": [ "https://credentialengineregistry.org/resources/ce-606dfa41-8efb-441d-8fe4-efc25aeb7bb6" ],
+	"ceterms:occupationType": [
+		{
+			"@type": "ceterms:CredentialAlignmentObject",
+			"ceterms:targetNodeName": { "en": "Registered Nurses" },
+			"ceterms:codedNotation": "29-1141"
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Bloodborne pathogens" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Airborne communicable diseases" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-4072b85e-33b9-487a-af61-d19fb446b4a9",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Carrying Objects" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-606dfa41-8efb-441d-8fe4-efc25aeb7bb6",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Depth Perception" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-b862a6bd-77f9-4e88-93dd-21fac2f8e6cf",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Talk or Hear" }
+}
