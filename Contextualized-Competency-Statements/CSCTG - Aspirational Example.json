@@ -1,0 +1,213 @@
+//Aspirational example
+//This includes the "inferredCompetency" referenced in the OSMT example
+//Below is a Competency Framework containing several competencies, of which two are shown
+//Both of these competencies reference some labor market information
+//Such labor market information is equally applicable to both competencies (and likely to other competencies that would be in this framework)
+//Instead of repeating that information inside of each competency, it has been modeled in two different ways intended to represent two different approaches
+//These approaches are documented in https://github.com/CredentialEngine/Schema-Development/issues/787
+//In the end, it is likely that only one approach will be selected/implemented/recommended, but both are shown to make comparison easier
+//One approach is to borrow the CTDL AggregateData class and embed some instances of it in the framework's @graph (rather than repeating it inside of each Competency)
+//Another approach is to reference some instances of QData's DataSetProfile, which have more complexity, but allow for a much deeper dive into the labor market information that may also apply to relevant credentials (some example info is included to illustrate this)
+//Each approach leads to the demandLevelType property, either in CTDL (first approach) or in QData (second approach), and contextualizes this with jursdiction and timeframe information
+//Ultimately, demandLevelType references a concept, which is included at the bottom
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-e668e97e-9a14-4b19-8303-a3ed095c548e",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-e668e97e-9a14-4b19-8303-a3ed095c548e",
+			"@type": "ceasn:CompetencyFramework",
+			"ceasn:name": { "en": "Inferred Competencies" },
+			"ceasn:hasTopChild": [
+				"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+				"https://credentialengineregistry.org/resources/ce-d537e6ad-d228-4b9d-9efd-4b45e7bf2ed6",
+				"..."
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Manage Windows Active Directory accounts" },
+			"ceterms:industryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "541511",
+					"ceterms:frameworkName": { "en": "NAICS" }
+				}
+			],
+			"qdata:relevantDataset": [
+				"https://credentialengineregistry.org/resources/ce-799a37b6-efb1-4fe8-9c1e-0015087fa0bc",
+				"https://credentialengineregistry.org/resources/ce-9e59d274-b921-480e-a227-db193181b8dc",
+				"..."
+			],
+			"ceterms:aggregateData": [
+				"_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
+				"_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
+				"..."
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Setup user networks" },
+			"ceterms:industryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "541511",
+					"ceterms:frameworkName": { "en": "NAICS" }
+				}
+			],
+			"qdata:relevantDataset": [
+				"https://credentialengineregistry.org/resources/ce-799a37b6-efb1-4fe8-9c1e-0015087fa0bc",
+				"https://credentialengineregistry.org/resources/ce-9e59d274-b921-480e-a227-db193181b8dc",
+				"..."
+			],
+			"ceterms:aggregateData": [
+				"_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
+				"_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
+				"..."
+			]
+		},
+		{
+			"...": "//Other competencies"
+		},
+		{
+			"@id": "_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
+			"@type": "ceterms:AggregateDataProfile",
+			"ceterms:jurisdiction": [
+				{
+					"@type": "ceterms:JurisdictionProfile",
+					"ceterms:mainJurisdiction": {
+						"@type": "ceterms:Place",
+						"ceterms:addressRegion": { "en": "Indiana" }
+					}
+				}
+			],
+			"ceterms:dateEffective": "2021-01-01",
+			"ceterms:expirationDate": "2021-12-31",
+			"ceterms:demandLevelType": [ "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af" ]
+		},
+		{
+			"@id": "_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
+			"@type": "ceterms:AggregateDataProfile",
+			"ceterms:description": { "en": "Projected data based on current trends"
+			"ceterms:jurisdiction": [
+				{
+					"@type": "ceterms:JurisdictionProfile",
+					"ceterms:mainJurisdiction": {
+						"@type": "ceterms:Place",
+						"ceterms:addressRegion": { "en": "Indiana" }
+					}
+				}
+			],
+			"ceterms:dateEffective": "2022-01-01",
+			"ceterms:expirationDate": "2022-12-31",
+			"ceterms:demandLevelType": [ "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af" ]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-799a37b6-efb1-4fe8-9c1e-0015087fa0bc",
+	"@type": "qdata:DataSetProfile",
+	"schema:about": [
+		"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+		"https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
+		"..."
+	],
+	"ceterms:jurisdiction": [
+		{
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:mainJurisdiction": {
+				"@type": "ceterms:Place",
+				"ceterms:addressRegion": { "en": "Indiana" }
+			}
+		}
+	],
+	"qdata:dataSetTimePeriod": [
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2020-01-01",
+			"ceterms:endDate": "2020-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:maxValue": 75000,
+							"schema:minValue": 50000
+						}
+					],
+					"qdata:employmentRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 75
+						}
+					]
+				}
+			]
+		},
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2021-01-01",
+			"ceterms:endDate": "2021-12-31",
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:maxValue": 85000,
+							"schema:minValue": 60000
+						}
+					],
+					"qdata:employmentRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 85
+						}
+					],
+					"qdata:demandLevelType": [
+						"https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af"
+					]
+				}
+			]
+		},
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2022-01-01",
+			"ceterms:endDate": "2022-12-31",
+			"ceterms:description": { "en": "Projected data based on current trends" },
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:maxValue": 90000,
+							"schema:minValue": 65000
+						}
+					],
+					"qdata:employmentRate": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"qdata:percentage": 88
+						}
+					],
+					"qdata:demandLevelType": [
+						"https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af"
+					]
+				}
+			]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Bright Outlook" }
+}
