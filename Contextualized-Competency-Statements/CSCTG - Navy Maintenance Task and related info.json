@@ -1,0 +1,107 @@
+//Navy - Competency Example
+//A competency serving as a performance objective for a maintenance task.
+//This example applies some of the contextualizing properties to the task rather than the competencies, since that is more appropriate for this graph
+//This example uses the CTDL where suitable, but uses some terms from the CE navy schema as well
+//This example has several extra pieces of made-up data in order to make it useful for this example
+//The "substantiating" properties are unnecessary here since the competencies below are very tightly coupled to their tasks (and would not exist without them), but have been included for the sake of the example
+//There are several parts to this graph. The best way to follow them is:
+//Task (the maintenance task)
+//  - hasRating -> Occupation (the ratings that should perform this task)
+//  - hasPerformanceObjective -> Competency (the first competency below)
+//  - hasTrainingTask -> Task (the training task)
+//      - hasLearningObjective -> Competency (the second competency below)
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-9f7f56b9-3242-41a1-8056-692f3cdb6315",
+	"@type": "ceterms:Task",
+	"ceterms:name": { "en": "R&R CONVERTER CATALYST" },
+	"ceterms:description": { "en": "Remove and replace converter catalyst" },
+	"ceterms:codedNotation": "HGONGAA",
+	"navy:hasPerformanceObjective": [ "https://credentialengineregistry.mil/resources/ce-41d5e07e-fa10-406b-81b5-90dbd2a5b7c8" ],
+	"navy:hasRating": [ 
+		"https://credentialengineregistry.mil/resources/ce-529bb638-2a48-486f-a931-0d854f0f5589",
+		"https://credentialengineregistry.mil/resources/ce-069c1ab2-58c2-4105-87d6-193f67734ea4" 
+	],
+	"navy:hasTrainingTask": [ "https://navyregistry.mil/resources/ce-eb31771d-6df3-4afb-b0f8-bafc10df4d36" ],
+	"ceterms:environmentalHazardType": [ "https://navyregistry.mil/resources/ce-fc9488c5-ad64-484a-9e6f-8e0082fb4220" ],
+	"ceterms:performanceLevelType" [ "https://navyregistry.mil/resources/ce-e5fef253-6cfe-4d09-9b07-201d012af474" ],
+	"ceterms:sourceDocumentation": [ "https://navyregistry.mil/resources/ce-564d33d7-d50e-4985-9989-d9e2e104cd97" ]
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-41d5e07e-fa10-406b-81b5-90dbd2a5b7c8",
+	"@type": "ceasn:Competency",
+	"ceasn:competencyText": { "en": "The individual can perform unscheduled r&r converter catalyst removal and replacement, with the maintenance done off equipment, taking into account the prevention of severe injury that can occur from incorrect or improper execution, to the standards of the Navy." },
+	"navy:hasMaintenanceTask": [ "https://navyregistry.mil/resources/ce-9f7f56b9-3242-41a1-8056-692f3cdb6315" ],
+	"ceterms:substantiatingTask": [ "https://navyregistry.mil/resources/ce-9f7f56b9-3242-41a1-8056-692f3cdb6315" ],
+	"ceterms:substantiatingOccupation": [ 
+		"https://credentialengineregistry.mil/resources/ce-529bb638-2a48-486f-a931-0d854f0f5589", 
+		"https://credentialengineregistry.mil/resources/ce-069c1ab2-58c2-4105-87d6-193f67734ea4"
+	]
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-eb31771d-6df3-4afb-b0f8-bafc10df4d36",
+	"@type": "navy:Task",
+	"ceterms:name": { "en": "R&R CONVERTER CATALYST" },
+	"ceterms:description": { "en": "Remove and replace converter catalyst" },
+	"navy:hasLearningObjective": [ "https://credentialengineregistry.mil/resources/ce-226246f8-4960-47fa-a40f-8b0c78e03d8e" ],
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-226246f8-4960-47fa-a40f-8b0c78e03d8e",
+	"@type": "ceasn:Competency",
+	"ceasn:competencyText": { "en": "The learner can understand the procedure for r&r converter catalyst removal and replacement, taking into account the prevention of severe injury that can occur from incorrect or improper execution, to the standards of the Navy." },
+	"navy:hasTrainingTask": [ "https://navyregistry.mil/resources/ce-eb31771d-6df3-4afb-b0f8-bafc10df4d36" ]
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-529bb638-2a48-486f-a931-0d854f0f5589",
+	"@type": "ceterms:Occupation",
+	"ceterms:name": { "en": "Machinist's Mate" },
+	"schema:description": {
+		"en": "Machinist's Mates (MM) operate, maintain, and repair (organizational and intermediate level) ship propulsion machinery, auxiliary equipment, and outside machinery, such as: steering engine, hoisting machinery, food preparation equipment, refrigeration and air conditioning equipment, windlasses, elevators, and laundry equipment; operate and maintain (organizational and intermediate level) marine boilers, pumps, forced draft blowers, and heat exchangers; perform tests, transfers, and inventory of lubricating oils, fuels, and water; maintain records and reports; and generate and stow industrial gases."
+	},
+	"ceasn:codedNotation": "MM",
+	"ceterms:ctid": "ce-529bb638-2a48-486f-a931-0d854f0f5589",
+	"ceterms:dateEffective": "2016-07",
+	"schema:uploadDate": "6/16/2017 1:32 PM",
+	"ceterms:versionIdentifier": {
+		"@type": "ceterms:IdentifierValue",
+		"ceterms:identifierValueCode": "2"
+	},
+	"navy:hasOccupationType": [ 
+		"https://navyregistry.mil/resources/ce-34a30d64-5844-4781-9d23-cd3546669231",
+		"https://navyregistry.mil/resources/ce-4b038e7d-eb6d-40b4-a464-31067d8de3cf" 
+	],
+	"navy:hasDoDOccupationType": [ "https://navyregistry.mil/resources/ce-f0d37018-797c-401b-8f8b-1b5c92f228c6" ],
+	"ceterms:classification": [ "https://navyregistry.mil/resources/ce-234bbfab-cbdb-4ca1-8902-acdc6fe54073" ]
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-234bbfab-cbdb-4ca1-8902-acdc6fe54073",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Rating" },
+	"skos:definition": { "en": "A Rating in the United States Navy" }
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-fc9488c5-ad64-484a-9e6f-8e0082fb4220",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Severe Injury" },
+	"skos:definition": { "en": "Severe injury may occur from incorrect or improper execution of the task." }
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-e5fef253-6cfe-4d09-9b07-201d012af474",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "To Navy Standards" },
+	"skos:definition": { "en": "Task is performed to the standards of the Navy." }
+}
+
+{
+	"@id": "https://navyregistry.mil/resources/ce-564d33d7-d50e-4985-9989-d9e2e104cd97",
+	"@type": "schema:CreativeWork",
+	"schema:name": { "en": "Documentation for ILPE" },
+	"schema:description": { "en": "Source GEIA0007 documentation describing maintenance tasks for the ILPE" }
+}
