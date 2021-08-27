@@ -24,7 +24,7 @@
 	],
 	"navy:hasTrainingTask": [ "https://navyregistry.mil/resources/ce-eb31771d-6df3-4afb-b0f8-bafc10df4d36" ],
 	"ceterms:environmentalHazardType": [ "https://navyregistry.mil/resources/ce-fc9488c5-ad64-484a-9e6f-8e0082fb4220" ],
-	"ceterms:performanceLevelType" [ "https://navyregistry.mil/resources/ce-e5fef253-6cfe-4d09-9b07-201d012af474" ],
+	"ceterms:performanceLevelType": [ "https://navyregistry.mil/resources/ce-e5fef253-6cfe-4d09-9b07-201d012af474" ],
 	"ceterms:sourceDocumentation": [ "https://navyregistry.mil/resources/ce-564d33d7-d50e-4985-9989-d9e2e104cd97" ]
 }
 
@@ -32,12 +32,7 @@
 	"@id": "https://navyregistry.mil/resources/ce-41d5e07e-fa10-406b-81b5-90dbd2a5b7c8",
 	"@type": "ceasn:Competency",
 	"ceasn:competencyText": { "en": "The individual can perform unscheduled r&r converter catalyst removal and replacement, with the maintenance done off equipment, taking into account the prevention of severe injury that can occur from incorrect or improper execution, to the standards of the Navy." },
-	"navy:hasMaintenanceTask": [ "https://navyregistry.mil/resources/ce-9f7f56b9-3242-41a1-8056-692f3cdb6315" ],
-	"ceterms:substantiatingTask": [ "https://navyregistry.mil/resources/ce-9f7f56b9-3242-41a1-8056-692f3cdb6315" ],
-	"ceterms:substantiatingOccupation": [ 
-		"https://credentialengineregistry.mil/resources/ce-529bb638-2a48-486f-a931-0d854f0f5589", 
-		"https://credentialengineregistry.mil/resources/ce-069c1ab2-58c2-4105-87d6-193f67734ea4"
-	]
+	"navy:hasMaintenanceTask": [ "https://navyregistry.mil/resources/ce-9f7f56b9-3242-41a1-8056-692f3cdb6315" ]
 }
 
 {
