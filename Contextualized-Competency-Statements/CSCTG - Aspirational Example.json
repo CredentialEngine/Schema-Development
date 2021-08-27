@@ -27,6 +27,8 @@
 			"@id": "https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Manage Windows Active Directory accounts" },
+			"ceasn:inLanguage": [ "en" ],
+			"ceasn:substantiantingTask": [ "https://credentialengineregistry.org/resources/ce-3591a9bf-1fe9-4c46-bd26-1fc0d19799f4" ],
 			"ceterms:industryType": [
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
@@ -49,6 +51,7 @@
 			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Setup user networks" },
+			"ceasn:inLanguage": [ "en" ],
 			"ceterms:industryType": [
 				{
 					"@type": "ceterms:CredentialAlignmentObject",
@@ -89,7 +92,7 @@
 		{
 			"@id": "_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
 			"@type": "ceterms:AggregateDataProfile",
-			"ceterms:description": { "en": "Projected data based on current trends"
+			"ceterms:description": { "en": "Projected data based on current trends" },
 			"ceterms:jurisdiction": [
 				{
 					"@type": "ceterms:JurisdictionProfile",
