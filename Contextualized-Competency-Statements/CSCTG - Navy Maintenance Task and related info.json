@@ -3,7 +3,6 @@
 //This example applies some of the contextualizing properties to the task rather than the competencies, since that is more appropriate for this graph
 //This example uses the CTDL where suitable, but uses some terms from the CE navy schema as well
 //This example has several extra pieces of made-up data in order to make it useful for this example
-//The "substantiating" properties are unnecessary here since the competencies below are very tightly coupled to their tasks (and would not exist without them), but have been included for the sake of the example
 //There are several parts to this graph. The best way to follow them is:
 //Task (the maintenance task)
 //  - hasRating -> Occupation (the ratings that should perform this task)
