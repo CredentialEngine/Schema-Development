@@ -1,0 +1,144 @@
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-9af9d309-3ef5-4e89-843c-8234031e9ff2",
+	"@type": "ceterms:TransferIntermediary",
+	"ceterms:name": { "en": "WICHE Passport" },
+	"ceterms:ownedBy": [ "https://credentialengineregistry.org/resources/ce-9aaecadb-d7b5-4499-890f-7b8764daf2c6" ],
+	"ceterms:creditValue": [
+		{
+			"@type": "ceterms:ValueProfile",
+			"schema:value": 63,
+			"ceterms:creditUnitType": [ "creditUnit:CompetencyCredit" ]
+		}
+	],
+	"ceterms:requires": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:targetCompetency": [
+				"https://credentialengineregistry.org/resources/ce-cb398d41-0519-4bdc-9978-78980c8c69e0",
+				"https://credentialengineregistry.org/resources/ce-ed84c822-987e-497c-9433-27e3833ddb9f",
+				"https://credentialengineregistry.org/resources/ce-481eed2d-86a7-49b3-9058-0ef8dbeacd02",
+				"..."
+			]
+		}
+	],
+	"ceterms:intermediaryFor": [
+		"https://credentialengineregistry.org/resources/ce-9cb896ef-15d4-40db-98d4-33b1f62c9b09",
+		"https://credentialengineregistry.org/resources/ce-fadb8770-127e-4d63-940a-290f77ee8391",
+		"https://credentialengineregistry.org/resources/ce-56f86690-21a8-4f74-9a0e-68fbcf6bdbdd",
+		"https://credentialengineregistry.org/resources/ce-c8e67c1b-8ca9-4005-8546-b4e0bacb57c0",
+		"..."
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-9aaecadb-d7b5-4499-890f-7b8764daf2c6",
+	"@type": "ceterms:Organization",
+	"ceterms:name": { "en": "Western Interstate Commission for Higher Education" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-39b1946b-efc1-4bc5-b3a7-82576d0bea37",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-39b1946b-efc1-4bc5-b3a7-82576d0bea37",
+			"@type": "ceasn:CompetencyFramework",
+			"ceasn:name": { "en": "WICHE Competencies" },
+			"ceasn:publisher": [ "https://credentialengineregistry.org/resources/ce-9aaecadb-d7b5-4499-890f-7b8764daf2c6" ]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-cb398d41-0519-4bdc-9978-78980c8c69e0",
+			"@type": "ceasn:Competency",
+			"ceasn:isPartOf": [ "https://credentialengineregistry.org/resources/ce-39b1946b-efc1-4bc5-b3a7-82576d0bea37" ],
+			"ceasn:competencyText": { "en": "Text of one of the WICHE Competencies" }
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-ed84c822-987e-497c-9433-27e3833ddb9f",
+			"@type": "ceasn:Competency",
+			"ceasn:isPartOf": [ "https://credentialengineregistry.org/resources/ce-39b1946b-efc1-4bc5-b3a7-82576d0bea37" ],
+			"ceasn:competencyText": { "en": "Text of another one of the WICHE Competencies" }
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-481eed2d-86a7-49b3-9058-0ef8dbeacd02",
+			"@type": "ceasn:Competency",
+			"ceasn:isPartOf": [ "https://credentialengineregistry.org/resources/ce-39b1946b-efc1-4bc5-b3a7-82576d0bea37" ],
+			"ceasn:competencyText": { "en": "Text of a third WICHE Competency" }
+		},
+		{ "...": "etc." }
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-9cb896ef-15d4-40db-98d4-33b1f62c9b09",
+	"@type": "ceterms:TransferValueProfile",
+	"ceterms:ownedBy": [ "https://credentialengineregistry.org/resources/ce-f6d7c9af-0ef1-4e23-9590-39eabd4954e9" ],
+	"ceterms:transferValueFrom": [ "https://credentialengineregistry.org/resources/ce-91e8fcdd-e991-4964-83cd-0334a2ec2e37" ],
+	"ceterms:transferValue": [
+		{
+			"@type": "ceterms:ValueProfile",
+			"schema:value": 63,
+			"ceterms:creditUnitType": [ "creditUnit:CompetencyCredit" ]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-f6d7c9af-0ef1-4e23-9590-39eabd4954e9",
+	"@type": "ceterms:CredentialOrganization",
+	"ceterms:name": { "en": "Washington State University" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-91e8fcdd-e991-4964-83cd-0334a2ec2e37",
+	"@type": "ceterms:CertificateOfCompletion",
+	"ceterms:name": { "en": "WSU WICHE Passport" },
+	"ceterms:offeredBy": [ "https://credentialengineregistry.org/resources/ce-f6d7c9af-0ef1-4e23-9590-39eabd4954e9" ]
+	"ceterms:requires": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:targetPathway": [ "https://credentialengineregistry.org/resources/ce-dddfd6c9-ef35-4250-81cf-496ae5efbb2e" ]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-fadb8770-127e-4d63-940a-290f77ee8391",
+	"@type": "ceterms:TransferValueProfile",
+	"ceterms:ownedBy": [ "https://credentialengineregistry.org/resources/ce-c6860aa6-32ab-43fe-affd-eb3e0a716d22" ],
+	"ceterms:transferValueFrom": [ "https://credentialengineregistry.org/resources/ce-01011e42-0ba5-4602-af9a-a99c0acffc48" ],
+	"ceterms:transferValue": [
+		{
+			"@type": "ceterms:ValueProfile",
+			"schema:value": 63,
+			"ceterms:creditUnitType": [ "creditUnit:CompetencyCredit" ]
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-c6860aa6-32ab-43fe-affd-eb3e0a716d22",
+	"@type": "ceterms:CredentialOrganization",
+	"ceterms:name": { "en": "Black Hills State University" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-01011e42-0ba5-4602-af9a-a99c0acffc48",
+	"@type": "ceterms:CertificateOfCompletion",
+	"ceterms:name": { "en": "BSU WICHE Passport" },
+	"ceterms:offeredBy": [ "https://credentialengineregistry.org/resources/ce-c6860aa6-32ab-43fe-affd-eb3e0a716d22" ]
+	"ceterms:requires": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:targetLearningOpportunity": [
+				"https://credentialengineregistry.org/resources/ce-547a2d8d-e657-459a-b783-ad5113928f0a",
+				"https://credentialengineregistry.org/resources/ce-235cfa59-6330-4ab1-8012-5316b7c81a3a"
+			],
+			"ceterms:targetCompetency": [
+				"https://credentialengineregistry.org/resources/ce-cb398d41-0519-4bdc-9978-78980c8c69e0",
+				"https://credentialengineregistry.org/resources/ce-ed84c822-987e-497c-9433-27e3833ddb9f",
+				"https://credentialengineregistry.org/resources/ce-481eed2d-86a7-49b3-9058-0ef8dbeacd02",
+				"..."
+			]
+		}
+	]
+}
+
