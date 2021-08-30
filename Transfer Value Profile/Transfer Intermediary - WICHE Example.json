@@ -91,7 +91,7 @@
 	"@id": "https://credentialengineregistry.org/resources/ce-91e8fcdd-e991-4964-83cd-0334a2ec2e37",
 	"@type": "ceterms:CertificateOfCompletion",
 	"ceterms:name": { "en": "WSU WICHE Passport" },
-	"ceterms:offeredBy": [ "https://credentialengineregistry.org/resources/ce-f6d7c9af-0ef1-4e23-9590-39eabd4954e9" ]
+	"ceterms:offeredBy": [ "https://credentialengineregistry.org/resources/ce-f6d7c9af-0ef1-4e23-9590-39eabd4954e9" ],
 	"ceterms:requires": [
 		{
 			"@type": "ceterms:ConditionProfile",
