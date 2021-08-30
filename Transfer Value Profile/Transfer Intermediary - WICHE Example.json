@@ -124,7 +124,7 @@
 	"@id": "https://credentialengineregistry.org/resources/ce-01011e42-0ba5-4602-af9a-a99c0acffc48",
 	"@type": "ceterms:CertificateOfCompletion",
 	"ceterms:name": { "en": "BSU WICHE Passport" },
-	"ceterms:offeredBy": [ "https://credentialengineregistry.org/resources/ce-c6860aa6-32ab-43fe-affd-eb3e0a716d22" ]
+	"ceterms:offeredBy": [ "https://credentialengineregistry.org/resources/ce-c6860aa6-32ab-43fe-affd-eb3e0a716d22" ],
 	"ceterms:requires": [
 		{
 			"@type": "ceterms:ConditionProfile",
