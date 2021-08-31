@@ -1,0 +1,78 @@
+//Aspirational example
+//This includes the "inferredCompetency" property that references in the OSMT example
+//Below is a Competency Framework containing several competencies, of which two are shown
+//Both of these competencies are referenced by a Workforce Demand Action that provides demand level and related contextual data
+{
+	"@id": "https://credentialengineregistry.org/graph/ce-e668e97e-9a14-4b19-8303-a3ed095c548e",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-e668e97e-9a14-4b19-8303-a3ed095c548e",
+			"@type": "ceasn:CompetencyFramework",
+			"ceasn:name": { "en": "Aspirational Competencies" },
+			"ceasn:hasTopChild": [
+				"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+				"https://credentialengineregistry.org/resources/ce-d537e6ad-d228-4b9d-9efd-4b45e7bf2ed6",
+				"..."
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Manage Windows Active Directory accounts" },
+			"ceasn:inLanguage": [ "en" ],
+			"ceasn:substantiantingTask": [ "https://credentialengineregistry.org/resources/ce-3591a9bf-1fe9-4c46-bd26-1fc0d19799f4" ],
+			"ceterms:industryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "541511",
+					"ceterms:frameworkName": { "en": "NAICS" }
+				}
+			]
+			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Setup user networks" },
+			"ceasn:inLanguage": [ "en" ],
+			"ceterms:industryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:codedNotation": "541511",
+					"ceterms:frameworkName": { "en": "NAICS" }
+				}
+			]
+		},
+		{
+			"...": "//Other competencies"
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412",
+	"@type": "ceterms:WorkforceDemandAction",
+	"ceterms:startDate": "2021-01-01",
+	"ceterms:endDate": "2021-12-31",
+	"ceterms:object": [ 
+		"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+		"https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa"
+	],
+	"ceterms:result": [ "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af" ],
+	"ceterms:instrument": [ "https://example.com/acme/policy/workforce-demand-levels" ],
+	"ceterms:jurisdiction": [
+		{
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:mainJurisdiction": {
+				"@type": "ceterms:Place",
+				"ceterms:addressRegion": { "en": "Indiana" }
+			}
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Bright Outlook" }
+}
