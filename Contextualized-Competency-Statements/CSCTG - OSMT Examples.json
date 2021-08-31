@@ -2,7 +2,6 @@
 //Example based on OSMT sample data
 //First, a collection that is a flat list of competencies
 //Second, one of the competencies from that collection, with a robust set of contextualizing properties
-//Among these properties is "inferredCompetency", which references a competency from the Aspirational Example
 {
 	"@id": "https://credentialengineregistry.org/resources/ce-f1f441aa-b20d-4536-8c3a-2a22d2058767",
 	"@type": "ceterms:Collection",
@@ -43,6 +42,5 @@
 	],
 	"ceasn:license": "http://creativecommons.org/licenses/by/4.0/",
 	"ceasn:substantiatingCredential": [ "https://credentialengineregistry.org/resources/ce-8050ae26-859a-462a-8e89-de5696f8c475" ],
-	"ceasn:substantiatingJob": [ "https://credentialengineregistry.org/resources/ce-05a91343-f562-4d09-8fc5-19a4353ef89d" ],
-	"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82" ]
+	"ceasn:substantiatingJob": [ "https://credentialengineregistry.org/resources/ce-05a91343-f562-4d09-8fc5-19a4353ef89d" ]
 }
