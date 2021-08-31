@@ -1,5 +1,5 @@
 //Aspirational example
-//This includes the "inferredCompetency" referenced in the OSMT example
+//This includes the "inferredCompetency" property that references in the OSMT example
 //Below is a Competency Framework containing several competencies, of which two are shown
 //Both of these competencies reference some labor market information
 //Such labor market information is equally applicable to both competencies (and likely to other competencies that would be in this framework)
@@ -10,7 +10,7 @@
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-e668e97e-9a14-4b19-8303-a3ed095c548e",
 			"@type": "ceasn:CompetencyFramework",
-			"ceasn:name": { "en": "Inferred Competencies" },
+			"ceasn:name": { "en": "Aspirational Competencies" },
 			"ceasn:hasTopChild": [
 				"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
 				"https://credentialengineregistry.org/resources/ce-d537e6ad-d228-4b9d-9efd-4b45e7bf2ed6",
@@ -34,7 +34,8 @@
 				"_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
 				"_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
 				"..."
-			]
+			],
+			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ]
 		},
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
