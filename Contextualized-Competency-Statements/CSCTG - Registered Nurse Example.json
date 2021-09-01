@@ -43,31 +43,69 @@
 }
 
 {
-	"@id": "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "Bloodborne pathogens" }
+	"@id": "https://credentialengineregistry.org/graph/ce-f0bc134b-5557-459e-9dc8-1e8d8f22ce53",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-f0bc134b-5557-459e-9dc8-1e8d8f22ce53",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "Environmental Hazard Types" }
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Bloodborne pathogens" },
+			"skos:inScheme": [ "https://credentialengineregistry.org/resources/ce-f0bc134b-5557-459e-9dc8-1e8d8f22ce53" ]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Airborne communicable diseases" },
+			"skos:inScheme": [ "https://credentialengineregistry.org/resources/ce-f0bc134b-5557-459e-9dc8-1e8d8f22ce53" ]
+		},
+		{ "...": "etc." }
+	]
 }
 
 {
-	"@id": "https://credentialengineregistry.org/resources/ce-d8ee69d9-f90c-4e32-a52d-f1d4361703e2",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "Airborne communicable diseases" }
+	"@id": "https://credentialengineregistry.org/graph/ce-bd5431bf-efff-485e-84e0-30a231291fbb",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-bd5431bf-efff-485e-84e0-30a231291fbb",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "Physical Capability Types" }
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-4072b85e-33b9-487a-af61-d19fb446b4a9",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Carrying Objects" },
+			"skos:inScheme": [ "https://credentialengineregistry.org/resources/ce-bd5431bf-efff-485e-84e0-30a231291fbb" ]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-b862a6bd-77f9-4e88-93dd-21fac2f8e6cf",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Talk or Hear" },
+			"skos:inScheme": [ "https://credentialengineregistry.org/resources/ce-bd5431bf-efff-485e-84e0-30a231291fbb" ]
+		},
+		{ "...": "etc." }
+	]
 }
 
 {
-	"@id": "https://credentialengineregistry.org/resources/ce-4072b85e-33b9-487a-af61-d19fb446b4a9",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "Carrying Objects" }
+	"@id": "https://credentialengineregistry.org/graph/ce-70b01627-3e60-47db-ba23-e86ad17582de",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-70b01627-3e60-47db-ba23-e86ad17582de",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "Sensory Capability Types" }
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-606dfa41-8efb-441d-8fe4-efc25aeb7bb6",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Depth Perception" },
+			"skos:inScheme": [ "https://credentialengineregistry.org/resources/ce-70b01627-3e60-47db-ba23-e86ad17582de" ]
+		},
+		{ "...": "etc." }
+	]
 }
 
-{
-	"@id": "https://credentialengineregistry.org/resources/ce-606dfa41-8efb-441d-8fe4-efc25aeb7bb6",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "Depth Perception" }
-}
 
-{
-	"@id": "https://credentialengineregistry.org/resources/ce-b862a6bd-77f9-4e88-93dd-21fac2f8e6cf",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "Talk or Hear" }
-}
