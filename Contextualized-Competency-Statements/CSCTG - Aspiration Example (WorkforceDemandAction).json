@@ -43,7 +43,7 @@
 					"ceterms:frameworkName": { "en": "NAICS" }
 				}
 			],
-			"ceterms:demandLevel": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412"
+			"ceterms:hasWorkforceDemand": [ "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412" ]
 		},
 		{
 			"...": "//Other competencies"
