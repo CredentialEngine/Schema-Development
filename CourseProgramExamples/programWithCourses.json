@@ -1,0 +1,201 @@
+{
+  "@context": {
+    "ceterms": "https://purl.org/ctdl/terms/",
+    "ceasn": "https://purl.org/ctdlasn/terms/",
+    "res": "http://example.edu/resources/",
+    "credentialStat": "https://purl.org/ctdl/terms/CredentialStatus",
+    "orgType": "https://purl.org/ctdl/terms/OrganizationType",
+    "agentSector": "https://purl.org/ctdl/terms/AgentSector",
+    "ceterms:offeredBy": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c100",
+      "@type": "ceterms:MasterDegree",
+      "ceterms:name": {
+        "en-US": "MS Applied Data Science"
+      },
+      "ceterms:description": {
+        "en-US": "Masters degree in the scientific analysis of data, covering ..."
+      },
+      "ceterms:requires": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c101"
+      },
+      "ceterms:credentialStatusType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": {
+          "@id": "credentialStat:Deprecated"
+        },
+        "ceterms:targetName": {
+          "en-US": "Deprecated"
+        }
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Masters/AppliedDataScience/",
+      "ceterms:inLangaue": "en-US",
+      "ceterms:ownedBy": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c000"
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c101",
+      "@type": "ceterms:LearningProgram",
+      "ceterms:name": {
+        "en-US": "Applied Data Science"
+      },
+      "ceterms:description": {
+        "en-US": "The applied data science program leads to the Masters degree in Applied Data Science..."
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Programs/AppliedDataScience/",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      },
+      "ceterms:offeredBy": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c000"
+      },
+      "ceterms:isRequiredFor": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c100"
+      },
+      "ceterms:hasPart": [
+        {
+          "@id": "res:1ca80f84-9331-4855-a746-13613a08c201"
+        },
+        {
+          "@id": "res:1ca80f84-9331-4855-a746-13613a08c202"
+        },
+        {
+          "@id": "res:1ca80f84-9331-4855-a746-13613a08c203"
+        },
+        {
+          "@id": "res:1ca80f84-9331-4855-a746-13613a08c204"
+        }
+      ]
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c201",
+      "@type": "ceterms:Course",
+      "ceterms:name": {
+        "en-US": "Data Analysis with Python"
+      },
+      "ceterms:description": {
+        "en-US": "Students will learn how to perform statistical analysis using the Python programming language..."
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Courses/DataAnalysisPython/",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      },
+      "ceterms:offeredBy": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c000"
+      },
+      "ceterms:isPartOf": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c101"
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c202",
+      "@type": "ceterms:Course",
+      "ceterms:name": {
+        "en-US": "Data Analysis with R"
+      },
+      "ceterms:description": {
+        "en-US": "Students will learn how to program using the R statistical analysis language..."
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Courses/DataAnalysisR/",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      },
+      "ceterms:offeredBy": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c000"
+      },
+      "ceterms:isPartOf": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c101"
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c203",
+      "@type": "ceterms:Course",
+      "ceterms:name": {
+        "en-US": "Statistics"
+      },
+      "ceterms:description": {
+        "en-US": "An introductory course in statistical analysis..."
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Courses/Statistics/",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      },
+      "ceterms:offeredBy": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c000"
+      },
+      "ceterms:isPartOf": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c101"
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c204",
+      "@type": "ceterms:Course",
+      "ceterms:name": {
+        "en-US": "Data Management"
+      },
+      "ceterms:description": {
+        "en-US": "An introductory course in the curation of quantitative data..."
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Courses/DataManagement/",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      },
+      "ceterms:offeredBy": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c000"
+      },
+      "ceterms:isPartOf": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c101"
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c000",
+      "@type": "ceterms:CredentialOrganization",
+      "ceterms:name": {
+        "en-US": "UC Sunnydale"
+      },
+      "ceterms:description": {
+        "en-US": "University of California, Sunnydale abbreviated UC Sunnydale or UC☼D (with a sun symbol)..."
+      },
+      "ceterms:agentType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": {
+          "@id": "orgType:Postsecondary"
+        },
+        "ceterms:targetName": {
+          "en-US": "Postsecondary"
+        }
+      },
+      "ceterms:agentSectorType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": {
+          "@id": "agentSector:Public"
+        },
+        "ceterms:targetName": {
+          "en-US": "Public"
+        }
+      },
+      "ceterms:subjectWebpage": "https://example.edu/",
+      "ceterms:email": "buffy@example.edu",
+      "ceterms:address": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c001",
+      "@type": "ceterms:Address",
+      "ceterms:name": "UC Sunnydale Main Campus",
+      "ceterms:addressLocality": "Sunnydale",
+      "ceterms:addressRegion": "California"
+    }
+  ]
+}
