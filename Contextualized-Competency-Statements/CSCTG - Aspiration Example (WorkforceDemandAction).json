@@ -1,9 +1,7 @@
 //Aspirational example
 //This includes the "inferredCompetency" property that references in the OSMT example
 //Below is a Competency Framework containing several competencies, of which two are shown
-//Both of these competencies reference some labor market information
-//Such labor market information is equally applicable to both competencies (and likely to other competencies that would be in this framework)
-//Instead of repeating that information inside of each competency, it has been modeled using AggregateDataProfile
+//Both of these competencies are referenced by a Workforce Demand Action that provides demand level and related contextual data
 {
 	"@id": "https://credentialengineregistry.org/graph/ce-e668e97e-9a14-4b19-8303-a3ed095c548e",
 	"@graph": [
@@ -30,12 +28,8 @@
 					"ceterms:frameworkName": { "en": "NAICS" }
 				}
 			],
-			"ceterms:aggregateData": [
-				"_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
-				"_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
-				"..."
-			],
-			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ]
+			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ],
+			"ceterms:demandLevel": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412"
 		},
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
@@ -49,47 +43,33 @@
 					"ceterms:frameworkName": { "en": "NAICS" }
 				}
 			],
-			"ceterms:aggregateData": [
-				"_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
-				"_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
-				"..."
-			]
+			"ceterms:demandLevel": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412"
 		},
 		{
 			"...": "//Other competencies"
-		},
+		}
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412",
+	"@type": "ceterms:WorkforceDemandAction",
+	"ceterms:startDate": "2021-01-01",
+	"ceterms:endDate": "2021-12-31",
+	"ceterms:actingAgent": "https://credentialengineregistry.org/resources/ce-af67f02e-283e-47ef-b696-a62924296244",
+	"ceterms:object": [ 
+		"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
+		"https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa"
+	],
+	"ceterms:result": [ "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af" ],
+	"ceterms:instrument": [ "https://example.com/acme/policy/workforce-demand-levels" ],
+	"ceterms:jurisdiction": [
 		{
-			"@id": "_:50fc5ce1-60bf-4efa-a97c-8d9acd151888",
-			"@type": "ceterms:AggregateDataProfile",
-			"ceterms:jurisdiction": [
-				{
-					"@type": "ceterms:JurisdictionProfile",
-					"ceterms:mainJurisdiction": {
-						"@type": "ceterms:Place",
-						"ceterms:addressRegion": { "en": "Indiana" }
-					}
-				}
-			],
-			"ceterms:dateEffective": "2021-01-01",
-			"ceterms:expirationDate": "2021-12-31",
-			"ceterms:demandLevelType": [ "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af" ]
-		},
-		{
-			"@id": "_:66ff14b6-f2b1-42a6-b789-601e15376a0e",
-			"@type": "ceterms:AggregateDataProfile",
-			"ceterms:description": { "en": "Projected data based on current trends" },
-			"ceterms:jurisdiction": [
-				{
-					"@type": "ceterms:JurisdictionProfile",
-					"ceterms:mainJurisdiction": {
-						"@type": "ceterms:Place",
-						"ceterms:addressRegion": { "en": "Indiana" }
-					}
-				}
-			],
-			"ceterms:dateEffective": "2022-01-01",
-			"ceterms:expirationDate": "2022-12-31",
-			"ceterms:demandLevelType": [ "https://credentialengineregistry.org/resources/ce-c3708263-1c3d-417e-b0a7-681fecf7f4af" ]
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:mainJurisdiction": {
+				"@type": "ceterms:Place",
+				"ceterms:addressRegion": { "en": "Indiana" }
+			}
 		}
 	]
 }
