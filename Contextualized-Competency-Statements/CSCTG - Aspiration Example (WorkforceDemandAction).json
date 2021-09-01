@@ -29,7 +29,7 @@
 				}
 			],
 			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ],
-			"ceterms:demandLevel": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412"
+			"ceterms:hasWorkforceDemand": [ "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412" ]
 		},
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
