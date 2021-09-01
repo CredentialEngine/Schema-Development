@@ -28,7 +28,8 @@
 					"ceterms:frameworkName": { "en": "NAICS" }
 				}
 			],
-			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ]
+			"ceasn:inferredCompetency": [ "https://credentialengineregistry.org/resources/ce-225b5dfb-7fac-404d-aae4-3f2040fff9c2" ],
+			"ceterms:demandLevel": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412"
 		},
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa",
@@ -41,7 +42,8 @@
 					"ceterms:codedNotation": "541511",
 					"ceterms:frameworkName": { "en": "NAICS" }
 				}
-			]
+			],
+			"ceterms:demandLevel": "https://credentialengineregistry.org/resources/ce-fc8a4b7c-99db-488c-9a55-807bf9295412"
 		},
 		{
 			"...": "//Other competencies"
@@ -54,6 +56,7 @@
 	"@type": "ceterms:WorkforceDemandAction",
 	"ceterms:startDate": "2021-01-01",
 	"ceterms:endDate": "2021-12-31",
+	"ceterms:actingAgent": "https://credentialengineregistry.org/resources/ce-af67f02e-283e-47ef-b696-a62924296244",
 	"ceterms:object": [ 
 		"https://credentialengineregistry.org/resources/ce-07d3d4d2-1cdf-4009-837e-32d813e5cc82",
 		"https://credentialengineregistry.org/resources/ce-454647ab-9d99-47af-8246-5b61c295c1fa"
