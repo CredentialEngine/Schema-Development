@@ -3,9 +3,7 @@
     "ceterms": "https://purl.org/ctdl/terms/",
     "ceasn": "https://purl.org/ctdlasn/terms/",
     "res": "http://example.edu/resources/",
-    "credentialStat": "https://purl.org/ctdl/terms/CredentialStatus",
-    "orgType": "https://purl.org/ctdl/terms/OrganizationType",
-    "agentSector": "https://purl.org/ctdl/terms/AgentSector"
+    "lifeCycle": "https://purl.org/ctdl/terms/LifeCycleStatus"
   },
   "@id": "res:1ca80f84-9331-4855-a746-13613a08c101",
   "@type": "ceterms:LearningProgram",
