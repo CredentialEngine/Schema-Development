@@ -3,8 +3,14 @@
 Examples of new terms and concepts proposed Sept 2021.
 
 ### Examples
-The new terms and concepts are in __bold__
+New terms and concepts are _emphasized_
 
-1. programWithCourses.json a graph showing a Credential (a masters degree),  __LearningProgram__ that students must take to earn the credential, and the __Course__s that are parts of this program. The LearningProgram and Courses are offered by the institution that owns the Credential at that institutions main campus.
+1. __programWithCourses.json__ a graph showing a Credential (a masters degree),  _LearningProgram_ that students must take to earn the credential, and the _Courses_ that are parts of this program. The LearningProgram and Courses are offered by the institution that owns the Credential at that institutions main campus.
 
-2. courseWithLifeCycle.json a showing a single course with __lifeCycleStatusType__ of __lifeCycle:Ceased__ showing that it is no longer offered.  
+2. __courseWithLifeCycle.json__ a single course with _lifeCycleStatusType_ of _lifeCycle:Ceased_ showing that it is no longer offered.
+
+The next two examples show alternative approaches to modelling schedule patterns,  one is simple and the other is complex.
+
+3. __simpleScheduleOption__ a single course with _scheduleType_ of _schedule:Weekdays_ and _schedule:Evening_ showing it is offered on a weekly basis on one or more evening.
+
+4. __complexScheduleOption__ a single course with _typicalSchedule_ that has two _ScheduleProfiles_: one with a _scheduleFrequencyType_ of _scheduleFrequency:Weekly_ and _scheduleTimingType_ of _scheduleTiming:Evening_ and _scheduleTiming:Weekday_; the other with a _scheduleFrequencyType_ of _scheduleFrequency:Weekly_ and _scheduleTimingType_ of _scheduleTiming:Daytime_ and _scheduleTiming:Weekend_; showing that this course is scheduled for weekdays in the evening and weekends during the day time. 
