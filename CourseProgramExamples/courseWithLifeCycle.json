@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "ceterms": "https://purl.org/ctdl/terms/",
+    "ceasn": "https://purl.org/ctdlasn/terms/",
+    "res": "http://example.edu/resources/",
+    "credentialStat": "https://purl.org/ctdl/terms/CredentialStatus",
+    "orgType": "https://purl.org/ctdl/terms/OrganizationType",
+    "agentSector": "https://purl.org/ctdl/terms/AgentSector"
+  },
+  "@id": "res:1ca80f84-9331-4855-a746-13613a08c101",
+  "@type": "ceterms:LearningProgram",
+  "ceterms:name": {
+    "en-US": "Applied Data Science"
+  },
+  "ceterms:description": {
+    "en-US": "The applied data science program leads to the Masters degree in Applied Data Science..."
+  },
+  "ceterms:subjectWebpage": "https://example.edu/Programs/AppliedDataScience/",
+  "ceterms:inLanguage": "en-US",
+  "ceterms:lifeCycleStatusType": {
+    "@type": "ceterms:CredentialAlignmentObject",
+    "ceterms:targetNode": {
+      "@id": "lifeCycle:Ceased"
+    },
+    "ceterms:targetName": {
+      "en-US": "Ceased"
+    }
+  }
+}
