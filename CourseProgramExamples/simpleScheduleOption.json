@@ -3,7 +3,7 @@
     "ceterms": "https://purl.org/ctdl/terms/",
     "ceasn": "https://purl.org/ctdlasn/terms/",
     "res": "http://example.edu/resources/",
-    "schedule": "https://purl.org/ctdl/terms/Schedule"
+    "schedule": "https://purl.org/ctdl/terms/Schedule/"
   },
   "@id": "res:1ca80f84-9331-4855-a746-13613a08c201",
   "@type": "ceterms:Course",

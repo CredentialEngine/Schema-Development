@@ -3,9 +3,9 @@
     "ceterms": "https://purl.org/ctdl/terms/",
     "ceasn": "https://purl.org/ctdlasn/terms/",
     "res": "http://example.edu/resources/",
-    "credentialStat": "https://purl.org/ctdl/terms/CredentialStatus",
-    "orgType": "https://purl.org/ctdl/terms/OrganizationType",
-    "agentSector": "https://purl.org/ctdl/terms/AgentSector"
+    "credentialStat": "https://purl.org/ctdl/terms/CredentialStatus/",
+    "orgType": "https://purl.org/ctdl/terms/OrganizationType/",
+    "agentSector": "https://purl.org/ctdl/terms/AgentSector/"
   },
   "@graph": [
     {
