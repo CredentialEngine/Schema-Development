@@ -1,7 +1,34 @@
 {
+	"@id": "https://credentialengineregistry.org/resources/ce-db9ecead-dbe2-48fb-a413-81dc433042d6",
+	"@type": "ceterms:QACredentialOrganization",
+	"ceterms:name": { "en": "Indiana ETPL Board" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-753738df-002a-4eb7-86ae-774920219248",
+	"@type": "ceterms:QualityAssuranceCredential",
+	"ceterms:name": { "en": "State ETPL Requirements" },
+	"ceterms:ownedBy": [
+		"https://credentialengineregistry.org/resources/ce-db9ecead-dbe2-48fb-a413-81dc433042d6"
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-826e6a9e-782d-4b01-8288-4dcb7dc7d62c",
+	"@type": "skos:ConceptScheme",
+	"ceasn:name": { "en": "Workforce Demand Types" },
+	"ceasn:publisher": [
+		"https://credentialengineregistry.org/resources/ce-db9ecead-dbe2-48fb-a413-81dc433042d6"
+	]
+}
+
+{
 	"@id": "https://credentialengineregistry.org/resources/ce-70cf0795-0266-4ac9-8ea2-9a966c71c4c1",
 	"@type": "ceasn:Collection",
 	"ceasn:name": { "en": "State ETPL" },
+	"ceasn:publisher": [
+		"https://credentialengineregistry.org/resources/ce-db9ecead-dbe2-48fb-a413-81dc433042d6"
+	],
 	"ceterms:classification": [
 		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7"
 	],
@@ -17,7 +44,28 @@
 	"@id": "https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
 	"@type": "skos:Concept",
 	"skos:prefLabel": { "en": "State ETPL" },
-	"skos:definition": { "en": "A list of programs that the state has decided..." }
+	"skos:definition": { "en": "A list of programs that the state has decided..." },
+	"skos:inScheme": [
+		"https://credentialengineregistry.org/resources/ce-826e6a9e-782d-4b01-8288-4dcb7dc7d62c"
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-8d83f37b-99bc-4b21-ab5c-dfc7022db765",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Bright Outlook" },
+	"skos:inScheme": [
+		"https://credentialengineregistry.org/resources/ce-826e6a9e-782d-4b01-8288-4dcb7dc7d62c"
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-4bb7dbd2-3f25-4b00-b25a-e431526b5146",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "On Fire" },
+	"skos:inScheme": [
+		"https://credentialengineregistry.org/resources/ce-826e6a9e-782d-4b01-8288-4dcb7dc7d62c"
+	]
 }
 
 {
@@ -100,14 +148,3 @@
 	]
 }
 
-{
-	"@id": "https://credentialengineregistry.org/resources/ce-8d83f37b-99bc-4b21-ab5c-dfc7022db765",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "Bright Outlook" }
-}
-
-{
-	"@id": "https://credentialengineregistry.org/resources/ce-4bb7dbd2-3f25-4b00-b25a-e431526b5146",
-	"@type": "skos:Concept",
-	"skos:prefLabel": { "en": "On Fire" }
-}
