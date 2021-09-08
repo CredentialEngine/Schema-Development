@@ -34,6 +34,9 @@
 			}
 		}
 	],
+	"ceterms:instrument": [
+		"https://credentialengineregistry.org/some-URI-for-a-QA-Credential",
+	],
 	"ceterms:object": [
 		"https://credentialengineregistry.org/some-URI-for-a-course"
 	],
@@ -56,6 +59,9 @@
 				"ceterms:addressRegion": "Indiana"
 			}
 		}
+	],
+	"ceterms:instrument": [
+		"https://credentialengineregistry.org/some-URI-for-a-QA-Credential",
 	],
 	"ceterms:object": [
 		"https://credentialengineregistry.org/some-URI-for-another-course"
@@ -80,6 +86,9 @@
 				"ceterms:addressLocality": "Indianapolis"
 			}
 		}
+	],
+	"ceterms:instrument": [
+		"https://credentialengineregistry.org/some-URI-for-a-different-QA-Credential",
 	],
 	"ceterms:object": [
 		"https://credentialengineregistry.org/some-URI-for-a-third-course"
