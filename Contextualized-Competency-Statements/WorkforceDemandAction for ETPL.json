@@ -1,0 +1,104 @@
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-70cf0795-0266-4ac9-8ea2-9a966c71c4c1",
+	"@type": "ceasn:Collection",
+	"ceasn:name": { "en": "State ETPL" },
+	"ceterms:classification": [
+		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7"
+	],
+	"ceasn:hasMember": [
+		"https://credentialengineregistry.org/resources/ce-f8eb7606-667b-407a-9719-fbca1dd378dd",
+		"https://credentialengineregistry.org/resources/ce-e815c21d-e1a2-418c-b358-8d250f01bf56",
+		"https://credentialengineregistry.org/resources/ce-dff035e9-873b-4486-834e-d0d89ada71fd",
+		"..."
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "State ETPL" },
+	"skos:definition": { "en": "A list of programs that the state has decided..." }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-f8eb7606-667b-407a-9719-fbca1dd378dd",
+	"@type": "ceterms:WorkforceDemandAction",
+	"ceterms:startDate": "2021-01-01",
+	"ceterms:endDate": "2021-12-31",
+	"ceterms:jurisdiction": [
+		{
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:mainJurisdiction": {
+				"@type": "ceterms:Place",
+				"ceterms:addressRegion": "Indiana"
+			}
+		}
+	],
+	"ceterms:object": [
+		"https://credentialengineregistry.org/some-URI-for-a-course"
+	],
+	"ceterms:result": [
+		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
+		"https://credentialengineregistry.org/resources/ce-8d83f37b-99bc-4b21-ab5c-dfc7022db765"
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-e815c21d-e1a2-418c-b358-8d250f01bf56",
+	"@type": "ceterms:WorkforceDemandAction",
+	"ceterms:startDate": "2021-03-01",
+	"ceterms:endDate": "2021-12-31",
+	"ceterms:jurisdiction": [
+		{
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:mainJurisdiction": {
+				"@type": "ceterms:Place",
+				"ceterms:addressRegion": "Indiana"
+			}
+		}
+	],
+	"ceterms:object": [
+		"https://credentialengineregistry.org/some-URI-for-another-course"
+	],
+	"ceterms:result": [
+		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
+		"https://credentialengineregistry.org/resources/ce-8d83f37b-99bc-4b21-ab5c-dfc7022db765"
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-dff035e9-873b-4486-834e-d0d89ada71fd",
+	"@type": "ceterms:WorkforceDemandAction",
+	"ceterms:startDate": "2021-06-01",
+	"ceterms:endDate": "2022-06-31",
+	"ceterms:jurisdiction": [
+		{
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:mainJurisdiction": {
+				"@type": "ceterms:Place",
+				"ceterms:addressRegion": "Indiana",
+				"ceterms:addressLocality": "Indianapolis"
+			}
+		}
+	],
+	"ceterms:object": [
+		"https://credentialengineregistry.org/some-URI-for-a-third-course"
+	],
+	"ceterms:result": [
+		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
+		"https://credentialengineregistry.org/resources/ce-8d83f37b-99bc-4b21-ab5c-dfc7022db765",
+		"https://credentialengineregistry.org/resources/ce-4bb7dbd2-3f25-4b00-b25a-e431526b5146"
+	]
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-8d83f37b-99bc-4b21-ab5c-dfc7022db765",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "Bright Outlook" }
+}
+
+{
+	"@id": "https://credentialengineregistry.org/resources/ce-4bb7dbd2-3f25-4b00-b25a-e431526b5146",
+	"@type": "skos:Concept",
+	"skos:prefLabel": { "en": "On Fire" }
+}
