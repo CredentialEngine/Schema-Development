@@ -83,10 +83,10 @@
 		}
 	],
 	"ceterms:instrument": [
-		"https://credentialengineregistry.org/some-URI-for-a-QA-Credential",
+		"https://credentialengineregistry.org/resources/ce-753738df-002a-4eb7-86ae-774920219248"
 	],
 	"ceterms:object": [
-		"https://credentialengineregistry.org/some-URI-for-a-course"
+		"https://credentialengineregistry.org/some-URI-for-course-1"
 	],
 	"ceterms:result": [
 		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
@@ -109,10 +109,10 @@
 		}
 	],
 	"ceterms:instrument": [
-		"https://credentialengineregistry.org/some-URI-for-a-QA-Credential",
+		"https://credentialengineregistry.org/resources/ce-753738df-002a-4eb7-86ae-774920219248"
 	],
 	"ceterms:object": [
-		"https://credentialengineregistry.org/some-URI-for-another-course"
+		"https://credentialengineregistry.org/some-URI-for-course-2"
 	],
 	"ceterms:result": [
 		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
@@ -136,10 +136,10 @@
 		}
 	],
 	"ceterms:instrument": [
-		"https://credentialengineregistry.org/some-URI-for-a-different-QA-Credential",
+		"https://credentialengineregistry.org/resources/ce-753738df-002a-4eb7-86ae-774920219248"
 	],
 	"ceterms:object": [
-		"https://credentialengineregistry.org/some-URI-for-a-third-course"
+		"https://credentialengineregistry.org/some-URI-for-course-3"
 	],
 	"ceterms:result": [
 		"https://credentialengineregistry.org/resources/ce-3e3979fb-02a9-498e-8428-c6e2774811b7",
