@@ -1,0 +1,86 @@
+//See https://docs.google.com/spreadsheets/d/1q3hLYzdEksIGaxTUpY3naygalTxkm_Qmx5EWUtt6Dtw/edit#gid=1282711615
+{
+	"@context": "http://credreg.net/ctdl/schema/context/json",
+	"@graph": [
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-ed77d79d-1145-4f2e-a749-e547605bf110",
+			"@type": "ceterms:Collection",
+			"ceasn:name": { "en": "RSD Sample - 8/30/21" },
+			"ceasn:exactAlignment": [
+				"https://main.osmtpilot.openskillsnetwork.com/api/collections/fc6b636f-3a71-47fe-831f-7038c38ecfb7"
+			],
+			"ceasn:creator": [
+				"https://credentialengineregistry.org/resources/ce-036d082d-d80e-41a7-99a0-2d63a4ad3a4a"
+			],
+			"ceasn:publicationStatusType": "publicationStatus:Published",
+			"ceasn:codedNotation": "fc6b636f-3a71-47fe-831f-7038c38ecfb7",
+			"ceasn:author": [ 
+				"WGU"
+			],
+			"ceasn:repositoryDate": "2021-08-31T16:52:12.894464Z",
+			"ceasn:dateCreated": "2021-08-31T16:47:25.650296Z",
+			"ceasn:dateModified": "2021-08-31T16:52:12.894451Z",
+			"ceasn:hasMember": [
+				"https://credentialengineregistry.org/resources/ce-6211edf8-d72e-493e-a924-331dc69b5aec"
+			]
+		},
+		{
+			"@id": "https://credentialengineregistry.org/resources/ce-6211edf8-d72e-493e-a924-331dc69b5aec",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyLabel": { "en": "Cost Report Creation" },
+			"ceasn:competencyText": { "en": "Create daily cost reports for upper management." },
+			"ceasn:codedNotation": "ccaef9de-90b6-41b3-af79-8866a8a8fcc0",
+			"ceasn:author": [
+				"Western Governors University"
+			],
+			"ceasn:exactAlignment": [
+				"https://main.osmtpilot.openskillsnetwork.com/api/skills/17b3d3e3-cec7-437e-bbf4-e3919638487b"
+			],
+			"ceasn:competencyCategory": { "en": "Cost Management" },
+			"ceterms:occupationType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:frameworkName": { "en": "bls" },
+					"ceterms:codedNotation": "11-1011",
+					"ceterms:targetNodeName": { "en": "Chief Executives" }
+				}
+			],
+			"ceasn:substantiatingCredential": [
+				"_:9b7116b7-8f06-4382-99b0-c387fb81a2d9"
+			],
+			"ceasn:substantiatingWorkRole": [
+				"_:361e3eea-36ee-4c61-85e0-5816b8227d48"
+			],
+			"ceasn:substantiatingResource": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNode": "https://skills.emsidata.com/skills/KS1217J6B5FTXYYNSTZY",
+					"ceterms:targetNodeName": { "en": "Cost Management" }
+				}
+			],
+			"ceasn:substantiatingOrganization": [
+				"_:cb9685d6-7f8e-4094-a251-7420cde2a1e1"
+			],
+			"ceasn:isMemberOf": [
+				"https://credentialengineregistry.org/resources/ce-ed77d79d-1145-4f2e-a749-e547605bf110"
+			],
+			"ceasn:dateCreated": "2021-08-31T16:48:10.959142Z",
+			"ceasn:dateModified": "2021-08-31T16:52:03.030466Z"
+		},
+		{
+			"@id": "_:9b7116b7-8f06-4382-99b0-c387fb81a2d9",
+			"@type": "ceterms:Certification",
+			"ceterms:name": { "en": "CPA" }
+		},
+		{
+			"@id": "_:361e3eea-36ee-4c61-85e0-5816b8227d48",
+			"@type": "ceterms:WorkRole",
+			"ceterms:codedNotation": "NICE_AN_LNG"
+		},
+		{
+			"@id": "_:cb9685d6-7f8e-4094-a251-7420cde2a1e1",
+			"@type": "ceterms:Organization",
+			"ceterms:name": { "en": "ABC Tech data, Inc." }
+		}
+	]
+}
