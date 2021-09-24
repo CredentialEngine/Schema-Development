@@ -21,7 +21,12 @@
 			"ceasn:dateCreated": "2021-08-31T16:47:25.650296Z",
 			"ceasn:dateModified": "2021-08-31T16:52:12.894451Z",
 			"ceasn:hasMember": [
-				"https://credentialengineregistry.org/resources/ce-6211edf8-d72e-493e-a924-331dc69b5aec"
+				"https://credentialengineregistry.org/resources/ce-6211edf8-d72e-493e-a924-331dc69b5aec",
+				"https://credentialengineregistry.org/resources/ce-a06072d3-794f-4c18-a068-1c157aa21bc0",
+				"https://credentialengineregistry.org/resources/ce-e9486167-313e-4115-a83d-e81f224c8e37",
+				"https://credentialengineregistry.org/resources/ce-9a79b90a-957d-47b4-9228-1acd6fb7ac18",
+				"https://credentialengineregistry.org/resources/ce-33aa4e25-097c-4b16-a83c-a39592f823ab",
+				"..."
 			]
 		},
 		{
