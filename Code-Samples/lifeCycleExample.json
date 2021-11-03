@@ -1,0 +1,87 @@
+{
+  "@context": [
+    "http://credreg.net/ctdl/schema/context/json",
+    {
+      "res": "https://credentialengineregistry.org/resources/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "res:ce-01234567-abcd-abcd-abcd-000000000001",
+      "@type": "ceterms:CredentialOrganization",
+      "ctid": "ce-01234567-abcd-abcd-abcd-000000000001",
+      "ceterms:name": {
+        "en:us": "Sunnydale High School"
+      },
+      "ceterms:description": {
+        "en:us": "Sunnydale High School was a fictional public high school located in Sunnydale, in the tv series Buffy the Vampire Slayer. It was destroyed with the rest of Sunnydale in 2003."
+      },
+      "ceterms:agentType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": "orgType:HighSchool"
+      },
+      "ceterms:agentSectorType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": "agentSector:Public"
+      },
+      "ceterms:subjectWebPage": "https://buffy.fandom.com/wiki/Sunnydale_High_School",
+      "ceterms:email": "no.one.there@sdh.example.org",
+      "ceterms:lifeCycleStatusType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": "lifeCycle:Ceased",
+        "ceterms:frameworkName": "Life Cycle Status",
+        "ceterms:targetNodeName": "Ceased"
+      },
+      "ceterms:offers": [
+        "res:ce-01234567-abcd-abcd-abcd-000000000002",
+        "res:ce-01234567-abcd-abcd-abcd-000000000003"
+      ],
+      "ceterms:owns": [
+        "res:ce-01234567-abcd-abcd-abcd-000000000002",
+        "res:ce-01234567-abcd-abcd-abcd-000000000003"
+      ]
+    },
+    {
+      "@id": "res:ce-01234567-abcd-abcd-abcd-000000000002",
+      "@type": "ceterms:Certificate",
+      "ctid": "ce-01234567-abcd-abcd-abcd-000000000002",
+      "ceterms:name": {
+        "en:us": "Certificate in Applied Data Science"
+      },
+      "ceterms:description": {
+        "en:us": "Credential showing that the holder has satisfactorially completed the Applied Data Science program..."
+      },
+      "ceterms:credentialStatusType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": "credentialStat:Deprecated",
+        "ceterms:frameworkName": "Credential Status",
+        "ceterms:targetNodeName": "Deprecated"
+      },
+      "ceterms:subjectWebPage": "http://example.edu/0002",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:ownedBy": "res:ce-01234567-abcd-abcd-abcd-000000000001",
+      "ceterms:offeredBy": "res:ce-01234567-abcd-abcd-abcd-000000000001"
+    },
+    {
+      "@id": "res:ce-01234567-abcd-abcd-abcd-000000000003",
+      "@type": "ceterms:LearningProgram",
+      "ctid": "ce-01234567-abcd-abcd-abcd-000000000003",
+      "ceterms:name": {
+        "en:us": "Applied Data Science"
+      },
+      "ceterms:description": {
+        "en:us": "The applied data science program leads to the Certificate in Applied Data Science..."
+      },
+      "ceterms:subjectWebPage": "http://example.edu/0003",
+      "ceterms:lifeCycleStatusType": {
+        "@type": "ceterms:CredentialAlignmentObject",
+        "ceterms:targetNode": "lifeCycle:Ceased",
+        "ceterms:frameworkName": "Life Cycle Status",
+        "ceterms:targetNodeName": "Ceased"
+      },
+      "ceterms:inLanguage": "en-US",
+      "ceterms:ownedBy": "res:ce-01234567-abcd-abcd-abcd-000000000001",
+      "ceterms:offeredBy": "res:ce-01234567-abcd-abcd-abcd-000000000001"
+    }
+  ]
+}
