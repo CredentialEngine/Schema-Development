@@ -80,6 +80,7 @@
         "ceterms:targetNodeName": "Ceased"
       },
       "ceterms:inLanguage": "en-US",
+      "ceterms:isPreparationFor": "res:ce-01234567-abcd-abcd-abcd-000000000002",
       "ceterms:ownedBy": "res:ce-01234567-abcd-abcd-abcd-000000000001",
       "ceterms:offeredBy": "res:ce-01234567-abcd-abcd-abcd-000000000001"
     }
