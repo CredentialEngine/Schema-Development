@@ -11,6 +11,6 @@ New terms and concepts are _emphasized_
 
 The next two examples show alternative approaches to modelling schedule patterns,  one is simple and the other is complex.
 
-3. __simpleScheduleOption__ a single course with _scheduleType_ of _schedule:Weekdays_ and _schedule:Evening_ showing it is offered on a weekly basis on one or more evening.
+3. __scheduleExample1__ a single course with _typicalSchedule_ with _scheduleFrequency->Weekly_ and _scheduleTiming->Daytime_ showing it is offered on a weekly basis during the day.
 
-4. __complexScheduleOption__ a single course with _typicalSchedule_ that has two _ScheduleProfiles_: one with a _scheduleFrequencyType_ of _scheduleFrequency:Weekly_ and _scheduleTimingType_ of _scheduleTiming:Evening_ and _scheduleTiming:Weekday_; the other with a _scheduleFrequencyType_ of _scheduleFrequency:Weekly_ and _scheduleTimingType_ of _scheduleTiming:Daytime_ and _scheduleTiming:Weekend_; showing that this course is scheduled for weekdays in the evening and weekends during the day time. 
+3. __scheduleExample2__ a single course offered in two places with different _typicalSchedule_ for each place.

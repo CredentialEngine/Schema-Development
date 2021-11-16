@@ -25,12 +25,12 @@
         "scheduleFrequencyType": {
           "@type": "ceterms:CredentialAlignmentObject",
           "ceterms:targetNodeName": "Weekly",
-          "ceterms:targetNode": "http://purl.org/ctdl/terms/Schedule/Weekly"
+          "ceterms:targetNode": "http://purl.org/ctdl/vocabs/ScheduleFrequency/Weekly"
         },
         "scheduleTimingType": {
           "@type": "ceterms:CredentialAlignmentObject",
           "ceterms:targetNodeName": "Daytime",
-          "ceterms:targetNode": "http://purl.org/ctdl/terms/Schedule/Weekly"
+          "ceterms:targetNode": "http://purl.org/ctdl/vocabs/ScheduleTiming/Weekly"
         }
       }
     },
