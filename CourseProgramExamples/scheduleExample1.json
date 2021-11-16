@@ -36,11 +36,11 @@
     },
     {
       "@id": "res:1ca80f84-9331-4855-a746-13613a08c001",
-      "@type": "ceterms:Address",
+      "@type": "ceterms:Place",
       "ceterms:name": "Main Campus",
       "ceterms:addressStreet": "Campus Street",
       "ceterms:addressLocality": "Sunnydale",
-      "ceterms:addressRegion": "California"
+      "ceterms:addressRegion": "CA"
     }
   ]
 }
