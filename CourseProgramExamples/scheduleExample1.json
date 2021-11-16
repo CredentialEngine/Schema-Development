@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "http://credreg.net/ctdl/schema/context/json",
+    {
+      "res": "https://credentialengineregistry.org/resources/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c201",
+      "@type": "ceterms:Course",
+      "ceterms:name": {
+        "en-US": "Data Analysis with Python"
+      },
+      "ceterms:description": {
+        "en-US": "Students will learn how to perform statistical analysis using the Python programming language..."
+      },
+      "ceterms:subjectWebpage": "https://example.edu/Courses/DataAnalysisPython/",
+      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": {
+        "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
+      },
+      "ceterms:typicalSchedule": {
+        "@type": "ceterms:ScheduleProfile",
+        "scheduleFrequencyType": {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": "Weekly",
+          "ceterms:targetNode": "http://purl.org/ctdl/terms/Schedule/Weekly"
+        },
+        "scheduleTimingType": {
+          "@type": "ceterms:CredentialAlignmentObject",
+          "ceterms:targetNodeName": "Daytime",
+          "ceterms:targetNode": "http://purl.org/ctdl/terms/Schedule/Weekly"
+        }
+      }
+    },
+    {
+      "@id": "res:1ca80f84-9331-4855-a746-13613a08c001",
+      "@type": "ceterms:Address",
+      "ceterms:name": "Main Campus",
+      "ceterms:addressStreet": "Campus Street",
+      "ceterms:addressLocality": "Sunnydale",
+      "ceterms:addressRegion": "California"
+    }
+  ]
+}
