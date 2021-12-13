@@ -1,0 +1,67 @@
+{
+	"@id": "https://sandbox.credentialengineregistry.org/graph/ce-760dd799-0a6a-4834-83f0-8a829f6ab3bd",
+	"@graph": [
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-760dd799-0a6a-4834-83f0-8a829f6ab3bd",
+			"@type": "ceterms:Collection",
+			"ceterms:name": { "en": "Pro Path Courses" },
+			"ceterms:hasMember": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-a81a0019-6853-4cc9-b47d-5c1b908cdbfe",
+				"https://sandbox.credentialengineregistry.org/resources/ce-997d2f36-ced6-4856-a062-77f997f01995",
+				"..."
+			]
+		}
+	]
+}
+
+{
+	"@id": "https://sandbox.credentialengineregistry.org/graph/ce-a81a0019-6853-4cc9-b47d-5c1b908cdbfe"
+	"@graph": [
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-a81a0019-6853-4cc9-b47d-5c1b908cdbfe",
+			"@type": "ceterms:Collection",
+			"ceterms:name": { "en": "Pro Path Courses for 2021" },
+			"ceterms:startDate": "2021-01-01",
+			"ceterms:endDate": "2022-01-01",
+			"ceterms:hasMember": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-c7b9a991-7a8f-43d6-b865-0b4ad5234f60",
+				"https://sandbox.credentialengineregistry.org/resources/ce-4aee2d61-9b22-44bd-b6f1-e72f2eaaafab",
+				"_:8c1a16e4-3c21-4f34-b2cd-c5ac32ae1554"
+			]
+		},
+		{
+			"@id": "_:8c1a16e4-3c21-4f34-b2cd-c5ac32ae1554",
+			"@type": "ceterms:License",
+			"ceterms:industryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": { "en": "General Freight Trucking, Long-Distance, Truckload" },
+					"ceterms:codedNotation": "484121",
+					"ceterms:targetNode": "https://www.naics.com/naics-code-description/?code=484121"
+				}
+			],
+			"ceterms:sameAs": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-5c17baf9-877e-447b-a641-df97a6500e06"
+			]
+		}
+	]
+}
+
+{
+	"@id": "https://sandbox.credentialengineregistry.org/graph/ce-997d2f36-ced6-4856-a062-77f997f01995",
+	"@graph": [
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-a81a0019-6853-4cc9-b47d-5c1b908cdbfe",
+			"@type": "ceterms:Collection",
+			"ceterms:name": { "en": "Pro Path Courses for 2022" },
+			"ceterms:startDate": "2022-01-01",
+			"ceterms:endDate": "2023-01-01",
+			"ceterms:hasMember": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-69beda79-e74b-475b-9bbe-8537f89ed575",
+				"https://sandbox.credentialengineregistry.org/resources/ce-16d21556-e41c-4151-8634-4c1fb1419a9d",
+				"https://sandbox.credentialengineregistry.org/resources/ce-9abceac6-14b0-4e25-86c9-accba3d6de3c",
+				"..."
+			]
+		}
+	]
+}
