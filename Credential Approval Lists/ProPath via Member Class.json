@@ -1,0 +1,52 @@
+{
+	"@id": "https://sandbox.credentialengineregistry.org/graph/ce-760dd799-0a6a-4834-83f0-8a829f6ab3bd",
+	"@graph": [
+		{
+			"@id": "https://sandbox.credentialengineregistry.org/resources/ce-760dd799-0a6a-4834-83f0-8a829f6ab3bd",
+			"@type": "ceterms:Collection",
+			"ceterms:name": { "en": "Pro Path Courses" },
+			"ceterms:hasMember": [
+				"_:2bbbf9e4-e825-420c-9c53-6d1bcacd8899",
+				"_:efcc3fb3-567d-4ac1-942b-a7c22fe4c1ad",
+				"_:b6599347-8dc1-439c-8a2d-b4b8c4a079e6",
+				"..."
+			]
+		},
+		{
+			"@id": "_:2bbbf9e4-e825-420c-9c53-6d1bcacd8899",
+			"@type": "ceterms:Member",
+			"ceterms:startDate": "2020-01-01",
+			"ceterms:endDate": "2022-01-01",
+			"ceterms:proxyFor": "https://sandbox.credentialengineregistry.org/resources/ce-c7b9a991-7a8f-43d6-b865-0b4ad5234f60"
+		},
+		{
+			"@id": "_:efcc3fb3-567d-4ac1-942b-a7c22fe4c1ad",
+			"@type": "ceterms:Member",
+			"ceterms:startDate": "2019-01-01",
+			"ceterms:endDate": "2023-01-01",
+			"ceterms:proxyFor": "https://sandbox.credentialengineregistry.org/resources/ce-4aee2d61-9b22-44bd-b6f1-e72f2eaaafab"
+		},
+		{
+			"@id": "_:b6599347-8dc1-439c-8a2d-b4b8c4a079e6",
+			"@type": "ceterms:Member",
+			"ceterms:startDate": "2021-01-01",
+			"ceterms:endDate": "2023-01-01",
+			"ceterms:proxyFor": "_:671bfa36-ef45-4bc1-8c14-066ea61f733c"
+		},
+		{
+			"@id": "_:671bfa36-ef45-4bc1-8c14-066ea61f733c",
+			"@type": "ceterms:License",
+			"ceterms:industryType": [
+				{
+					"@type": "ceterms:CredentialAlignmentObject",
+					"ceterms:targetNodeName": { "en": "General Freight Trucking, Long-Distance, Truckload" },
+					"ceterms:codedNotation": "484121",
+					"ceterms:targetNode": "https://www.naics.com/naics-code-description/?code=484121"
+				}
+			],
+			"ceterms:sameAs": [
+				"https://sandbox.credentialengineregistry.org/resources/ce-5c17baf9-877e-447b-a641-df97a6500e06"
+			]
+		}
+	]
+}
