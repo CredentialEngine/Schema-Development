@@ -2,7 +2,9 @@
   "@context": [
     "http://credreg.net/ctdl/schema/context/json",
     {
-      "res": "https://credentialengineregistry.org/resources/"
+      "res": "http://example.edu/resources/",
+      "frequency": "https://purl.org/ctdl/vocabs/ScheduleFrequency/",
+      "timing": "https://purl.org/ctdl/vocabs/ScheduleTiming/"
     }
   ],
   "@graph": [
@@ -10,63 +12,77 @@
       "@id": "res:1ca80f84-9331-4855-a746-13613a08c201",
       "@type": "ceterms:Course",
       "ceterms:name": {
-        "en-US": "Data Analysis with Python"
+        "en": "Data Analysis with Python"
       },
       "ceterms:description": {
-        "en-US": "Students will learn how to perform statistical analysis using the Python programming language..."
+        "en": "Students will learn how to perform statistical analysis using the Python programming language..."
       },
-      "ceterms:subjectWebpage": "https://example.edu/Courses/DataAnalysisPython/",
-      "ceterms:inLanguage": "en-US",
+      "ceterms:availableAt": [
+        "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
+        "res:ce-190264f2-3235-41bd-8dde-5ffa79e2766b"
+      ],
       "ceterms:typicalSchedule": [
         {
-          "@type": "ceterms:ScheduleProfile",
-          "ceterms:availableAt": {
-            "@id": "res:1ca80f84-9331-4855-a746-13613a08c001"
-          },
-          "scheduleFrequencyType": {
+          "@type": "ceterms:ScheduledOffering",
+          "ceterms:availableAt": "res:ce-190264f2-3235-41bd-8dde-5ffa79e2766b",
+          "ceterms:scheduleFrequencyType": {
             "@type": "ceterms:CredentialAlignmentObject",
-            "ceterms:targetNodeName": "Weekly",
-            "ceterms:targetNode": "http://purl.org/ctdl/vocabs/ScheduleFrequency/Weekly"
+            "ceterms:targetNode": "frequency:Weekly",
+            "ceterms:targeName": "Weekly"
           },
-          "scheduleTimingType": {
+          "ceterms:scheduleTimingType": {
             "@type": "ceterms:CredentialAlignmentObject",
-            "ceterms:targetNodeName": "Daytime",
-            "ceterms:targetNode": "http://purl.org/ctdl/vocabs/ScheduleTiming/Weekly"
+            "ceterms:targetNode": "timing:Evening",
+            "ceterms:targeName": "Evening"
           }
         },
         {
-          "@type": "ceterms:ScheduleProfile",
-          "ceterms:availableAt": {
-            "@id": "res:1ca80f84-9331-4855-a746-13613a08c002"
-          },
-          "scheduleFrequencyType": {
+          "@type": "ceterms:ScheduledOffering",
+          "ceterms:availableAt": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
+          "ceterms:scheduleFrequencyType": {
             "@type": "ceterms:CredentialAlignmentObject",
-            "ceterms:targetNodeName": "Weekly",
-            "ceterms:targetNode": "http://purl.org/ctdl/vocabs/ScheduleFrequency/Weekly"
+            "ceterms:targetNode": "frequency:Weekly",
+            "ceterms:targeName": "Weekly"
           },
-          "scheduleTimingType": {
+          "ceterms:scheduleTimingType": {
             "@type": "ceterms:CredentialAlignmentObject",
-            "ceterms:targetNodeName": "Evening",
-            "ceterms:targetNode": "http://purl.org/ctdl/vocabs/ScheduleTiming/Weekly"
+            "ceterms:targetNode": "timing:Daytime",
+            "ceterms:targeName": "Daytime"
           }
         }
       ]
     },
     {
-      "@id": "res:1ca80f84-9331-4855-a746-13613a08c001",
+      "@id": "res:ce-190264f2-3235-41bd-8dde-5ffa79e2766b",
       "@type": "ceterms:Place",
-      "ceterms:name": "Main Campus",
-      "ceterms:addressStreet": "Campus Street",
-      "ceterms:addressLocality": "Sunnydale",
-      "ceterms:addressRegion": "CA"
+      "ceterms:name": {
+        "en": "The Other Place"
+      },
+      "ceterms:streetAddress": {
+        "en": "Campus St"
+      },
+      "ceterms:addressLocality": {
+        "en": "Moon Valley"
+      },
+      "ceterms:addressRegion": {
+        "en": "CA"
+      }
     },
     {
-      "@id": "res:1ca80f84-9331-4855-a746-13613a08c002",
+      "@id": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
       "@type": "ceterms:Place",
-      "ceterms:name": "The other place",
-      "ceterms:addressStreet": "Campus Street",
-      "ceterms:addressLocality": "Moon Valley",
-      "ceterms:addressRegion": "CA"
+      "ceterms:name": {
+        "en": "Main Campus"
+      },
+      "ceterms:streetAddress": {
+        "en": "Campus St"
+      },
+      "ceterms:addressLocality": {
+        "en": "Sunnydale"
+      },
+      "ceterms:addressRegion": {
+        "en": "CA"
+      }
     }
   ]
 }
