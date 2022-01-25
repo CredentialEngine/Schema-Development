@@ -2,6 +2,7 @@
 
 ### New Class
  **URI:** ceterms:ScheduledOffering
+ 
  **Label:** Scheduled Offering
 
  **Definition:** Offering of a Learning Opportunity or Assessment with a schedule associated with a specified location or modality.
