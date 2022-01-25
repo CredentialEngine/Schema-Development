@@ -1,6 +1,6 @@
 ## Scheduling Patterns for Learning Opportunities and Assessments
 
-Issue #778
+[Issue #778](https://github.com/CredentialEngine/Schema-Development/issues/778)
 
 - [x] [Proposal to TAG](https://docs.google.com/document/d/1onMYNgr7VWTqbhTe2USD8To3NjTLAhF-nfSH7-cm_pA/edit) (Google doc)
 - [x] [Diagram](https://app.diagrams.net/#G1y-jRHU9mtB9POU4yGGxnD7VCH92etsH6) (diagrams.net),
