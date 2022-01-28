@@ -5,22 +5,15 @@
 		{
 			"@id": "https://credentialengineregistry.org/resources/ce-ed77d79d-1145-4f2e-a749-e547605bf110",
 			"@type": "ceterms:Collection",
-			"ceasn:name": { "en": "RSD Sample - 8/30/21" },
-			"ceasn:exactAlignment": [
-				"https://main.osmtpilot.openskillsnetwork.com/api/collections/fc6b636f-3a71-47fe-831f-7038c38ecfb7"
-			],
-			"ceasn:creator": [
+			"ceterms:name": { "en": "RSD Sample - 8/30/21" },
+			"ceterms:description": { "en": "WGU RSD Sample" },
+			"ceterms:ownedBy": [
 				"https://credentialengineregistry.org/resources/ce-036d082d-d80e-41a7-99a0-2d63a4ad3a4a"
 			],
-			"ceasn:publicationStatusType": "publicationStatus:Published",
-			"ceasn:codedNotation": "fc6b636f-3a71-47fe-831f-7038c38ecfb7",
-			"ceasn:author": [ 
-				"WGU"
-			],
-			"ceasn:repositoryDate": "2021-08-31T16:52:12.894464Z",
-			"ceasn:dateCreated": "2021-08-31T16:47:25.650296Z",
-			"ceasn:dateModified": "2021-08-31T16:52:12.894451Z",
-			"ceasn:hasMember": [
+			"ceterms:lifeCycleStatusType": "lifeCycle:Active",
+			"ceterms:codedNotation": "fc6b636f-3a71-47fe-831f-7038c38ecfb7",
+			"ceterms:dateEffective": "2021-08-31T16:47:25.650296Z",
+			"ceterms:hasMember": [
 				"https://credentialengineregistry.org/resources/ce-6211edf8-d72e-493e-a924-331dc69b5aec",
 				"https://credentialengineregistry.org/resources/ce-a06072d3-794f-4c18-a068-1c157aa21bc0",
 				"https://credentialengineregistry.org/resources/ce-e9486167-313e-4115-a83d-e81f224c8e37",
