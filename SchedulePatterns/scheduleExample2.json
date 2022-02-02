@@ -9,7 +9,7 @@
   ],
   "@graph": [
     {
-      "@id": "res:1ca80f84-9331-4855-a746-13613a08c201",
+      "@id": "res:ce-1ca80f84-9331-4855-a746-13613a08c201",
       "@type": "ceterms:Course",
       "ceterms:name": {
         "en": "Data Analysis with Python"
@@ -18,13 +18,56 @@
         "en": "Students will learn how to perform statistical analysis using the Python programming language..."
       },
       "ceterms:availableAt": [
-        "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
-        "res:ce-190264f2-3235-41bd-8dde-5ffa79e2766b"
+        {
+          "@type": "ceterms:Place",
+          "ceterms:name": {
+            "en": "The Other Place"
+          },
+          "ceterms:streetAddress": {
+            "en": "Campus St"
+          },
+          "ceterms:addressLocality": {
+            "en": "Moon Valley"
+          },
+          "ceterms:addressRegion": {
+            "en": "CA"
+          }
+        },
+        {
+          "@type": "ceterms:Place",
+          "ceterms:name": {
+            "en": "Main Campus"
+          },
+          "ceterms:streetAddress": {
+            "en": "Campus St"
+          },
+          "ceterms:addressLocality": {
+            "en": "Sunnydale"
+          },
+          "ceterms:addressRegion": {
+            "en": "CA"
+          }
+        }
       ],
       "ceterms:typicalSchedule": [
         {
           "@type": "ceterms:ScheduledOffering",
-          "ceterms:availableAt": "res:ce-190264f2-3235-41bd-8dde-5ffa79e2766b",
+          "@id": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
+          "ceterms:availableAt": {
+            "@type": "ceterms:Place",
+            "ceterms:name": {
+              "en": "The Other Place"
+            },
+            "ceterms:streetAddress": {
+              "en": "Campus St"
+            },
+            "ceterms:addressLocality": {
+              "en": "Moon Valley"
+            },
+            "ceterms:addressRegion": {
+              "en": "CA"
+            }
+          },
           "ceterms:scheduleFrequencyType": {
             "@type": "ceterms:CredentialAlignmentObject",
             "ceterms:targetNode": "frequency:Weekly",
@@ -38,7 +81,22 @@
         },
         {
           "@type": "ceterms:ScheduledOffering",
-          "ceterms:availableAt": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
+          "@id": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
+          "ceterms:availableAt": {
+            "@type": "ceterms:Place",
+            "ceterms:name": {
+              "en": "Main Campus"
+            },
+            "ceterms:streetAddress": {
+              "en": "Campus St"
+            },
+            "ceterms:addressLocality": {
+              "en": "Sunnydale"
+            },
+            "ceterms:addressRegion": {
+              "en": "CA"
+            }
+          },
           "ceterms:scheduleFrequencyType": {
             "@type": "ceterms:CredentialAlignmentObject",
             "ceterms:targetNode": "frequency:Weekly",
@@ -51,38 +109,6 @@
           }
         }
       ]
-    },
-    {
-      "@id": "res:ce-190264f2-3235-41bd-8dde-5ffa79e2766b",
-      "@type": "ceterms:Place",
-      "ceterms:name": {
-        "en": "The Other Place"
-      },
-      "ceterms:streetAddress": {
-        "en": "Campus St"
-      },
-      "ceterms:addressLocality": {
-        "en": "Moon Valley"
-      },
-      "ceterms:addressRegion": {
-        "en": "CA"
-      }
-    },
-    {
-      "@id": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
-      "@type": "ceterms:Place",
-      "ceterms:name": {
-        "en": "Main Campus"
-      },
-      "ceterms:streetAddress": {
-        "en": "Campus St"
-      },
-      "ceterms:addressLocality": {
-        "en": "Sunnydale"
-      },
-      "ceterms:addressRegion": {
-        "en": "CA"
-      }
     }
   ]
 }
