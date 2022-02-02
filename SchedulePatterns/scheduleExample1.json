@@ -17,7 +17,21 @@
       "ceterms:description": {
         "en": "Students will learn how to perform statistical analysis using the Python programming language..."
       },
-      "ceterms:availableAt": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
+      "ceterms:availableAt": {
+        "@type": "ceterms:Place",
+        "ceterms:name": {
+          "en": "Main Campus"
+        },
+        "ceterms:streetAddress": {
+          "en": "Campus St"
+        },
+        "ceterms:addressLocality": {
+          "en": "Sunnydale"
+        },
+        "ceterms:addressRegion": {
+          "en": "CA"
+        }
+      },
       "ceterms:offerFrequencyType": {
         "@type": "ceterms:CredentialAlignmentObject",
         "ceterms:targetNode": "frequency:Annually",
@@ -32,22 +46,6 @@
         "@type": "ceterms:CredentialAlignmentObject",
         "ceterms:targetNode": "timing:Daytime",
         "ceterms:targeName": "Daytime"
-      }
-    },
-    {
-      "@id": "res:ce-4a780e11-d120-4e24-aa21-31ab0a74f184",
-      "@type": "ceterms:Place",
-      "ceterms:name": {
-        "en": "Main Campus"
-      },
-      "ceterms:streetAddress": {
-        "en": "Campus St"
-      },
-      "ceterms:addressLocality": {
-        "en": "Sunnydale"
-      },
-      "ceterms:addressRegion": {
-        "en": "CA"
       }
     }
   ]
