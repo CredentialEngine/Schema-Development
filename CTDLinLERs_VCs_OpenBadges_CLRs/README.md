@@ -19,7 +19,8 @@ CTDL can be used to describe the Credential that the subject has been awarded.
 ### Sample VCs asserting Pat has achieved a Competency
 CTDL can be used to describe Competencies. As with the BachelorDegree example above, more or less data about the competencies can be provided in the VC depending on the degree to which the parties are prepared to rely on being able to connect to get more data from the Registry, and how large a payload they can tolerate inside the VC.
 
-* [s_2_1_StandaloneCompetence.json](s_2_1_StandaloneCompetence.json): The competences are not stated to be associated with any other credential awarded. Link to JSON-LD playground: [https://tinyurl.com/yckzjcud](https://tinyurl.com/yckzjcud)
+* [s_2_1_StandaloneCompetence.json](s_2_1_StandaloneCompetence.json): The competences are not stated to be associated with any other credential awarded.
+  *  Link to JSON-LD playground: [https://tinyurl.com/yckzjcud](https://tinyurl.com/yckzjcud).
 * [s_2_2_CompetenceAndDegree.json](s_2_2_CompetenceAndDegree.json): the competencies Pat is stated to have acquired in the example above are the same as those required for the Bachelor's degree above, we can combine the two, illustrating a means of creating links between different achievements that may be useful in some scenarios.
 
 ### Sample VCs asserting Pat has completed a Course
