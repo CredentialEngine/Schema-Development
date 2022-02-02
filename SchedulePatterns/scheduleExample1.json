@@ -9,7 +9,7 @@
   ],
   "@graph": [
     {
-      "@id": "res:1ca80f84-9331-4855-a746-13613a08c201",
+      "@id": "res:ce-1ca80f84-9331-4855-a746-13613a08c201",
       "@type": "ceterms:Course",
       "ceterms:name": {
         "en": "Data Analysis with Python"
