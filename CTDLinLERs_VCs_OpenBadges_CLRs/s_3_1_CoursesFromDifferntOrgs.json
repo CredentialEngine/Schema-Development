@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://credreg.net/ctdl/schema/context/json",
+    "http://credreg.net/ctdlasn/schema/context/json",
+    {
+      "res": "https://credentialengineregistry.org/resources/"
+    },
+    {
+      "new": "http://example.org/new/",
+      "achievement": {
+        "@id": "new:achievement"
+      }
+    }
+  ],
+  "id": "http://example.edu/credentials/3732",
+  "type": "VerifiableCredential",
+  "issuer": "res:ce-ca493a91-b9ec-4a45-ac6f-a6259656ea50",
+  "issuanceDate": "2010-01-01T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+    "achievement": [
+      {
+        "id": "res:ce-fa8eea4f-448a-473b-b3e7-413fd17e96f0",
+        "type": "ceterms:LearningProgram",
+        "ceterms:name": {
+          "en-US": "Degree Program in Science and Arts"
+        },
+        "ceterms:offeredBy": "res:ce-ca493a91-b9ec-4a45-ac6f-a6259656ea50",
+        "ceterms:hasPart": [
+          "res:ce-bfb58e1d-0364-4677-adff-b58230a09d56",
+          "res:ce-862b6900-5cf9-44e0-b875-969ac8faa0f1"
+        ],
+        "ceterms:teaches": [
+          "res:ce-84958217-1323-46fe-87c8-652120800190",
+          "res:ce-8aa6b5b5-095c-4152-89b2-06438129002c"
+        ]
+      },
+      {
+        "id": "res:ce-bfb58e1d-0364-4677-adff-b58230a09d56",
+        "type": "ceterms:Course",
+        "ceterms:name": {
+          "en-US": "Physics 101"
+        },
+        "ceterms:teaches": "res:ce-84958217-1323-46fe-87c8-652120800190",
+        "ceterms:offeredBy": {
+          "id": "https://tinyurl.com/s7hp6ab6",
+          "ceterms:name": {
+            "en-US": "UC Sunnydale"
+          }
+        }
+      },
+      {
+        "id": "res:ce-862b6900-5cf9-44e0-b875-969ac8faa0f1",
+        "type": "ceterms:Course",
+        "ceterms:teaches": "res:ce-8aa6b5b5-095c-4152-89b2-06438129002c",
+        "ceterms:name": {
+          "en-US": "Literature 101"
+        },
+        "ceterms:offeredBy": {
+          "id": "https://tinyurl.com/s7hp6ab6",
+          "ceterms:name": {
+            "en-US": "UC Sunnydale"
+          }
+        }
+      }
+    ]
+  },
+  "proof": {}
+}

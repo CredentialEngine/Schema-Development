@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://credreg.net/ctdl/schema/context/json",
+    "http://credreg.net/ctdlasn/schema/context/json",
+    {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "owl:sameAs": {
+        "@type": "@id"
+      }
+    },
+    {
+      "res": "https://credentialengineregistry.org/resources/"
+    },
+    {
+      "new": "http://example.org/new/",
+      "achievement": {
+        "@id": "new:achievement"
+      }
+    }
+  ],
+  "id": "http://example.edu/credentials/3732",
+  "type": "VerifiableCredential",
+  "issuer": {
+    "id": "did:example:4bc4ba39fc280d2549863dc74f6",
+    "owl:sameAs": "res:ce-ca493a91-b9ec-4a45-ac6f-a6259656ea50"
+  },
+  "issuanceDate": "2010-01-01T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+    "achievement": {
+      "id": "http://inludo.docemus.edu/creds/BSSciArt",
+      "type": "ceterms:BachelorDegree",
+      "owl:sameAs": "res:ce-49247727-7cbd-4f0e-8179-e51036d1f14a",
+      "ceterms:name": {
+        "en-US": "Bachelor’s Degree"
+      }
+    }
+  },
+  "proof": {}
+}

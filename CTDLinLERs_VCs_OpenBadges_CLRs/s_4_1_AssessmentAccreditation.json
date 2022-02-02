@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://credreg.net/ctdl/schema/context/json",
+    "http://credreg.net/ctdlasn/schema/context/json",
+    {
+      "res": "https://credentialengineregistry.org/resources/"
+    },
+    {
+      "new": "http://example.org/new/",
+      "achievement": {
+        "@id": "new:achievement"
+      }
+    }
+  ],
+  "id": "http://example.edu/credentials/3732",
+  "type": "VerifiableCredential",
+  "issuer": "res:ce-ca493a91-b9ec-4a45-ac6f-a6259656ea50",
+  "issuanceDate": "2010-01-01T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+    "achievement": [
+      {
+        "id": "res:ce-122e67dd-2a5f-4bdf-845d-3d0e2a5feca4",
+        "type": "ceterms:AssessmentProfile",
+        "ceterms:name": {
+          "en-US": "Examination in Science and Arts"
+        },
+        "ceterms:offeredBy": "res:ce-ca493a91-b9ec-4a45-ac6f-a6259656ea50",
+        "ceterms:accreditedBy": {
+          "id": "res:ce-959dd970-e319-4057-8f7c-afe2fc293ba9",
+          "ceterms:name": {
+            "en-US": "Supreme Council for Science and Arts"
+          }
+        },
+        "ceterms:assesses": [
+          "res:ce-84958217-1323-46fe-87c8-652120800190",
+          "res:ce-8aa6b5b5-095c-4152-89b2-06438129002c"
+        ]
+      }
+    ]
+  },
+  "proof": {}
+}

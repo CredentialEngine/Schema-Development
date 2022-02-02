@@ -1,0 +1,51 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://credreg.net/ctdl/schema/context/json",
+    "http://credreg.net/ctdlasn/schema/context/json",
+    {
+      "res": "https://credentialengineregistry.org/resources/"
+    },
+    {
+      "new": "http://example.org/new/",
+      "achievement": {
+        "@id": "new:achievement"
+      }
+    }
+  ],
+  "id": "http://example.edu/credentials/3732",
+  "type": "VerifiableCredential",
+  "issuer": "res:ce-ca493a91-b9ec-4a45-ac6f-a6259656ea50",
+  "issuanceDate": "2010-01-01T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+    "achievement": [
+      {
+        "id": "res:ce-49247727-7cbd-4f0e-8179-e51036d1f14a",
+        "type": "ceterms:BachelorDegree",
+        "ceterms:name": {
+          "en-US": "Bachelor’s Degree"
+        },
+        "ceterms:requires": [
+          "res:ce-84958217-1323-46fe-87c8-652120800190",
+          "res:ce-8aa6b5b5-095c-4152-89b2-06438129002c"
+        ]
+      },
+      {
+        "id": "res:ce-84958217-1323-46fe-87c8-652120800190",
+        "type": "ceasn:Competency",
+        "ceasn:codedNotation": "EXKSCI1",
+        "ceasn:competencyLabel": "Knowledge of Science",
+        "ceasn:competencyText": "Demonstrate a good knowledge of science…"
+      },
+      {
+        "id": "res:ce-8aa6b5b5-095c-4152-89b2-06438129002c",
+        "type": "ceasn:Competency",
+        "ceasn:codedNotation": "EXKART1",
+        "ceasn:competencyLabel": "Knowledge of Arts",
+        "ceasn:competencyText": "Demonstrate a good knowledge of arts…"
+      }
+    ]
+  },
+  "proof": {}
+}
