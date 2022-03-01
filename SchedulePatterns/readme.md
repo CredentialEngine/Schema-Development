@@ -8,4 +8,4 @@
 - [x] Examples:
  - [scheduleExample1.json](scheduleExample1.json), [diagram](https://drive.google.com/file/d/1IP7PqLXyxMgZPjCHjlHPhY0y_LbSey56/view?usp=sharing) (png export)
  - [scheduleExample2.json](scheduleExample2.json) [diagram](https://drive.google.com/file/d/1Cr_iNr1MqZYFrvSUBTPaXjdchUt6lGk2/view?usp=sharing) (png export)
- - [x] [terms proposal](proposal.md)
+ - [x] [terms proposal](proposal.txt)
