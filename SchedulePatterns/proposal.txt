@@ -81,6 +81,14 @@ Add
 
 Add
 
+  Subject: ceterms:ctid
+
+  Predicate:  schema:domainIncludes
+
+  Object: ceterms:ScheduledOffering
+
+Add
+
  Subject: ceterms:description
 
  Predicate:  schema:domainIncludes
