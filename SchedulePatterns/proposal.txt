@@ -73,6 +73,14 @@ ceterms:offerFrequencyType
 ### Modified Properties
 Add
 
+ Subject: schema:about
+
+ Predicate:  schema:rangeIncludes
+
+ Object: ceterms:ScheduledOffering
+
+Add
+
  Subject: ceterms:name
 
  Predicate:  schema:domainIncludes
