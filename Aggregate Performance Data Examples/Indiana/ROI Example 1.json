@@ -1,0 +1,129 @@
+{
+	"@type": "qdata:DataSetProfile",
+	"schema:about": "https://credentialengineregistry.org/resources/tbd",
+	"qdata:dataSetTimePeriod": [
+		{
+			"@type": "qdata:DataSetTimeFrame",
+			"ceterms:startDate": "2000-01-01",
+			"ceterms:endDate": "2019-12-31",
+			"ceterms:description": { "en": "Median wages, in 2020 dollars, ten years after graduation for the graduating classes between 2000 and 2010." },
+			"qdata:dataAttributes": [
+				{
+					"@type": "qdata:DataProfile",
+					"ceterms:postReceiptMonths": 12,
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 63
+						}
+					],
+					"qdata:meetEmploymentCriteria": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 16
+						}
+					],
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:value": 42280.80
+						}
+					]
+				},
+				{
+					"@type": "qdata:DataProfile",
+					"ceterms:postReceiptMonths": 24,
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 63
+						}
+					],
+					"qdata:meetEmploymentCriteria": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 22
+						}
+					],
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:value": 45744.25
+						}
+					]
+				},
+				{
+					"@type": "qdata:DataProfile",
+					"ceterms:postReceiptMonths": 36,
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 63
+						}
+					],
+					"qdata:meetEmploymentCriteria": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 26
+						}
+					],
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:value": 47061.55
+						}
+					]
+				},
+				{
+					"@type": "qdata:DataProfile",
+					"ceterms:postReceiptMonths": 60,
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 63
+						}
+					],
+					"qdata:meetEmploymentCriteria": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 26
+						}
+					],
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:value": 50943.07
+						}
+					]
+				},
+				{
+					"@type": "qdata:DataProfile",
+					"ceterms:postReceiptMonths": 60,
+					"qdata:holdersInSet": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 63
+						}
+					],
+					"qdata:meetEmploymentCriteria": [
+						{
+							"@type": "schema:QuantitativeValue",
+							"schema:value": 28
+						}
+					],
+					"qdata:earningsAmount": [
+						{
+							"@type": "schema:MonetaryAmount",
+							"schema:currency": "USD",
+							"schema:value": 56540.24
+						}
+					]
+				}
+			]
+		}
+	]
+}
