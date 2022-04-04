@@ -1,0 +1,1057 @@
+@prefix ceterms: <https://purl.org/ctdl/terms/> .
+@prefix ceasn: <https://purl.org/ctdlasn/terms/> .
+@prefix qdata: <https://credreg.net/qdata/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <http://example.org/resources/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<res:ec071f65-2c5b-4b58-a2df-dd6287880a7a> a ceterms:Pathway ;
+	ceterms:name "BSCH - Bachelor of Science Honours"@en ;
+	ceterms:description "@@@"@en ;
+	ceterms:hasDestinationComponent <res:1a285e3e-35ce-476a-b592-af7ae4e732a3> .
+
+<res:1a285e3e-35ce-476a-b592-af7ae4e732a3> a ceterms:BachelorDegree ;
+	ceterms:name "Bachelor of Science in Computer Science"@en ;
+	ceterms:description "Honours Degree (inc. MA)"@en-US ;
+	ceterms:codedNotation "F291-COS" ;
+	ceterms:subjectWebpage <https://www.hw.ac.uk/uk/study/undergraduate/computer-science-bsc.htm> ;
+	ceterms:precededBy <res:ad7d4f8c-5230-4002-9e44-a29568985a6f> ;
+	ceterms:hasCondition 
+	   <res:f39bf394-5b6e-496c-b150-589bcc607a8e> ,
+	   <res:1b36dde9-dfe2-4c21-8de4-756e8d39ee6e> ,
+	   <res:9f64ce42-8654-4b96-89e1-ea33a94c6dff> ,
+	   <res:3e3165cd-ed60-4854-9991-97c22754a40b> .
+	
+<res:ad7d4f8c-5230-4002-9e44-a29568985a6f> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 4, Semester 2"@en ;
+	ceterms:precededBy <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> ;
+	ceterms:precedes <res:1a285e3e-35ce-476a-b592-af7ae4e732a3> ;
+	ceasn:hasChild (
+	       <res:57f9795d-1b1e-4986-9e48-1987719dabc5> 
+	       <res:e4232cef-9f7d-48cb-9847-08901d4bf99e> 
+	       <res:d4938e70-ce96-4ea7-a13a-60a82e452b64> 
+	       <res:c8cd38a4-17c0-4676-bd08-0972747b47ae> 
+	       <res:b836992d-4c7a-4347-9626-2e46824ce788> 
+	       <res:3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff> 
+	       <res:5d9f2a66-410c-448b-ab4d-d5579a9450fb> 
+	       <res:3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac> 
+	       <res:dffec39a-b180-4290-9084-4b00a06d5a24> 
+	       <res:860be930-0a1f-4b36-99ec-ae16f63f251d> 
+	       <res:5e3f543c-d89d-40bf-a4b7-38abd90a8679>  
+        );
+	ceterms:hasCondition <res:71099201-e520-46ed-aae1-84a56a924ced> . 
+	
+<res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 4, Semester 1"@en ;
+	ceterms:precededBy <res:bdb06663-8983-40b1-beee-0a77049b3360> ;
+	ceterms:precedes <res:ad7d4f8c-5230-4002-9e44-a29568985a6f> ;
+	ceasn:hasChild (
+	       <res:6dc96db8-a61b-4288-9b8f-6730e29688fa> 
+	       <res:8ccb3888-7fda-48a6-ae34-bca4eaee830a> 
+	       <res:dc57a1e2-66e7-4023-b3c7-ee4383a7df48> 
+	       <res:d0ddf127-29d0-4782-88d5-887078370748> 
+	       <res:278a604b-7a65-4146-be99-c2ef649153ff> 
+	       <res:451b0af8-7246-48d1-a0a9-5c6a491b2cb1> 
+	       <res:d380b323-e4e3-4108-a754-3d089da15750> 
+	       <res:e2180939-19de-4174-80d7-9791eb5c8ece> 
+	       <res:04def797-054f-4042-9f85-bd05636eefce> 
+	       <res:468297f8-7ba0-4cda-b31e-327df19b01d7>
+	   ). 
+	
+<res:bdb06663-8983-40b1-beee-0a77049b3360> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 3, Semester 2"@en ;
+	ceterms:precededBy <res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> ;
+	ceterms:precedes <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> ;
+	ceasn:hasChild (
+	       <res:c5af32f8-dafc-40f1-b868-64ffd2e39b45> 
+	       <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> 
+	       <res:650d92bf-1cb4-4542-b1bc-be6edf856011> 
+	       <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> 
+	   );
+	ceterms:hasCondition <369aeac0-72fb-4b2c-ae03-c13f643040b1> .
+	
+<res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 3, Semester 1"@en ;
+	ceterms:precededBy <res:41ab6ab88-361f-42c3-bac6-f373079e521c> ;
+	ceterms:precedes <res:bdb06663-8983-40b1-beee-0a77049b3360> ;
+	ceasn:hasChild (
+	       <res:b17fe8a9-e278-4462-8d69-75415a898739> 
+	       <res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4> 
+	       <res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650> 
+	       <res:3ab6530d-9a21-4123-8fd4-8614dff431f0>
+	   ).
+	
+<res:41ab6ab88-361f-42c3-bac6-f373079e521c> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 2, Semester 2"@en ;
+	ceterms:precededBy <res:67b870ed-b0e6-4a2b-a951-568876d1e6ff ;
+	ceterms:precedes <res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> ;
+	ceasn:hasChild (
+	       <res:4e6647b5-93b4-4014-91a9-897b315dfdcd> 
+	       <res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9> 
+	       <res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb> 
+	       <res:2d793d46-8e58-45d4-aba6-c6a16b131d03> 
+	   );
+	ceterms:hasCondition <a0e09db1-0008-436c-8631-42f67814f0e6> .
+	
+<res:67b870ed-b0e6-4a2b-a951-568876d1e6ff> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 2, Semester 1"@en ;
+	ceterms:precededBy <res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f> ;
+	ceterms:precedes <res:41ab6ab88-361f-42c3-bac6-f373079e521c> ;
+	ceasn:hasChild (
+	       <res:27f4713f-8232-4f11-b023-1acd7425bc14> 
+	       <res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0> 
+	       <res:ffc760f2-7fdc-4ac1-8545-317bce1114af> 
+	       <res:219e2d5a-935e-4abb-a8ef-94c29119b408> 
+	   ).
+	
+<res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 1, Semester 2"@en ;
+	ceterms:precededBy <res:4d214678-4b71-4f5f-9fd5-2486282f4d30> ;
+	ceterms:precedes <res:67b870ed-b0e6-4a2b-a951-568876d1e6ff> ;
+	ceasn:hasChild (
+	       <res:66a38893-e0b1-400c-9ad3-9234c7511c6b> 
+	       <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> 
+	       <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> 
+	       <res:06271243-bff2-461f-8777-b2c945338804> 
+	   );
+	ceterms:hasCondition <1fa863f0-9411-479a-90eb-cb529e720ac3> . 
+	
+	
+<res:4d214678-4b71-4f5f-9fd5-2486282f4d30> a ceterms:BasicComponent ;
+    ceterms:componentCategory "Stage" ;
+	ceterms:name "Stage 1, Semester 1"@en ;
+	ceterms:precedes <res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f> ;
+	ceasn:hasChild (
+	       <res:13bcff97-0fd9-4a2d-81d6-98177333581b> 
+	       <res:0954dc01-25e3-4bae-ac74-6bc7e2f22884> 
+	       <res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e> 
+	       <res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca> 
+	   ).
+	
+<res:13bcff97-0fd9-4a2d-81d6-98177333581b> a ceterms:CourseComponent ;
+	ceterms:name "Logic and Proof"@en ;
+	ceterms:codedNotation "F17LP" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:0954dc01-25e3-4bae-ac74-6bc7e2f22884> a ceterms:CourseComponent ;
+	ceterms:name "Introduction to Interaction Design"@en ;
+	ceterms:codedNotation "F27ID" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e> a ceterms:CourseComponent ;
+	ceterms:name "Praxis"@en ;
+	ceterms:codedNotation "F27PX" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca> a ceterms:CourseComponent ;
+	ceterms:name "Software Development 1"@en ;
+	ceterms:codedNotation "F27SA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .	
+	
+<res:66a38893-e0b1-400c-9ad3-9234c7511c6b> a ceterms:CourseComponent ;
+	ceterms:name "Discrete Mathematics"@en ;
+	ceterms:codedNotation "F17SC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> a ceterms:CourseComponent ;
+	ceterms:name "Introduction to Computer Systems"@en ;
+	ceterms:codedNotation "F27CS" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> a ceterms:CourseComponent ;
+	ceterms:name "Software Development 2"@en ;
+	ceterms:codedNotation "F27SB" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:06271243-bff2-461f-8777-b2c945338804> a ceterms:CourseComponent ;
+	ceterms:name "Web Design and Databases"@en ;
+	ceterms:codedNotation "F27WD" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:27f4713f-8232-4f11-b023-1acd7425bc14> a ceterms:CourseComponent ;
+	ceterms:name "User-Centered Experience Design"@en ;
+	ceterms:codedNotation "F28ED" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0> a ceterms:CourseComponent ;
+	ceterms:name "Programming Languages"@en ;
+	ceterms:codedNotation "F28PL" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+
+<res:ffc760f2-7fdc-4ac1-8545-317bce1114af> a ceterms:CourseComponent ;
+	ceterms:name "Introduction to Data Structures"@en ;
+	ceterms:codedNotation "F28SG" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:219e2d5a-935e-4abb-a8ef-94c29119b408> a ceterms:CourseComponent ;
+	ceterms:name "Web Programming"@en ;
+	ceterms:codedNotation "F28WP" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .   
+	
+<res:4e6647b5-93b4-4014-91a9-897b315dfdcd> a ceterms:CourseComponent ;
+	ceterms:name "Data Structures and Algorithms"@en ;
+	ceterms:codedNotation "F28DA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9> a ceterms:CourseComponent ;
+	ceterms:name "Database Management Systems"@en ;
+	ceterms:codedNotation "F28DM" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb> a ceterms:CourseComponent ;
+	ceterms:name "Hardware-Software Interface"@en ;
+	ceterms:codedNotation "F28HS" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:2d793d46-8e58-45d4-aba6-c6a16b131d03> a ceterms:CourseComponent ;
+	ceterms:name "Introduction to Software Engineering"@en ;
+	ceterms:codedNotation "F28SD" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:b17fe8a9-e278-4462-8d69-75415a898739> a ceterms:CourseComponent ;
+	ceterms:name "AI and Intelligent Agents"@en ;
+	ceterms:codedNotation "F29AI" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4> a ceterms:CourseComponent ;
+	ceterms:name "Data Communications & Networking"@en ;
+	ceterms:codedNotation "F29DC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650> a ceterms:CourseComponent ;
+	ceterms:name "Foundations 1"@en ;
+	ceterms:codedNotation "F29FA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:3ab6530d-9a21-4123-8fd4-8614dff431f0> a ceterms:CourseComponent ;
+	ceterms:name "Software Engineering"@en ;
+	ceterms:codedNotation "F29SO)" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .    
+	
+<res:c5af32f8-dafc-40f1-b868-64ffd2e39b45> a ceterms:CourseComponent ;
+	ceterms:name "Foundations 2"@en ;
+	ceterms:codedNotation "F29FB" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> a ceterms:CourseComponent ;
+	ceterms:name "Operating Systems and Concurrency"@en ;
+	ceterms:codedNotation "F29OC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:650d92bf-1cb4-4542-b1bc-be6edf856011> a ceterms:CourseComponent ;
+	ceterms:name "Language Processors"@en ;
+	ceterms:codedNotation "F29LP" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> a ceterms:CourseComponent ;
+	ceterms:name "Professional Development"@en ;
+	ceterms:codedNotation "F29PD" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+ <res:6dc96db8-a61b-4288-9b8f-6730e29688fa> a ceterms:CourseComponent ;
+	ceterms:name "Research Methods & Requirements Engineering"@en ;
+	ceterms:codedNotation "F20PA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:8ccb3888-7fda-48a6-ae34-bca4eaee830a> a ceterms:CourseComponent ;
+	ceterms:name "Bio@@@ Inspired Computation"@en ;
+	ceterms:codedNotation "F20BC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:dc57a1e2-66e7-4023-b3c7-ee4383a7df48> a ceterms:CourseComponent ;
+	ceterms:name "Intelligent Robots"@en ;
+	ceterms:codedNotation "F20RO" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:d0ddf127-29d0-4782-88d5-887078370748> a ceterms:CourseComponent ;
+	ceterms:name "Computer Network Security"@en ;
+	ceterms:codedNotation "F20CN" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:278a604b-7a65-4146-be99-c2ef649153ff> a ceterms:CourseComponent ;
+	ceterms:name "Rigorous Method for Software Engineering"@en ;
+	ceterms:codedNotation "F20RS" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:451b0af8-7246-48d1-a0a9-5c6a491b2cb1> a ceterms:CourseComponent ;
+	ceterms:name "Data Mining and Machine Learning"@en ;
+	ceterms:codedNotation "F20DL" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:d380b323-e4e3-4108-a754-3d089da15750> a ceterms:CourseComponent ;
+	ceterms:name "Statistical Modeling and Analysis"@en ;
+	ceterms:codedNotation "F20SA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:e2180939-19de-4174-80d7-9791eb5c8ece> a ceterms:CourseComponent ;
+	ceterms:name "3-D Graphics and Animation"@en ;
+	ceterms:codedNotation "F20GA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:04def797-054f-4042-9f85-bd05636eefce> a ceterms:CourseComponent ;
+	ceterms:name "Information Systems Methodologies"@en ;
+	ceterms:codedNotation "F20IF" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:468297f8-7ba0-4cda-b31e-327df19b01d7> a ceterms:CourseComponent ;
+	ceterms:name "Industrial Programming"@en ;
+	ceterms:codedNotation "F20SC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:57f9795d-1b1e-4986-9e48-1987719dabc5> a ceterms:CourseComponent ;
+	ceterms:name "Design & Implementation"@en ;
+	ceterms:codedNotation "F20PB" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:e4232cef-9f7d-48cb-9847-08901d4bf99e> a ceterms:CourseComponent ;
+	ceterms:name "Project Testing & Implementation"@en ;
+	ceterms:codedNotation "F20PC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:d4938e70-ce96-4ea7-a13a-60a82e452b64> a ceterms:CourseComponent ;
+	ceterms:name "Applied Text Analytics"@en ;
+	ceterms:codedNotation "F20AA" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:c8cd38a4-17c0-4676-bd08-0972747b47ae> a ceterms:CourseComponent ;
+	ceterms:name "Data Visualization and Analytics"@en ;
+	ceterms:codedNotation "F20DV" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:b836992d-4c7a-4347-9626-2e46824ce788> a ceterms:CourseComponent ;
+	ceterms:name "Advanced Interaction Design"@en ;
+	ceterms:codedNotation "F20AD" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff> a ceterms:CourseComponent ;
+	ceterms:name "e-Commerce Technology"@en ;
+	ceterms:codedNotation "F20EC" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:5d9f2a66-410c-448b-ab4d-d5579a9450fb> a ceterms:CourseComponent ;
+	ceterms:name "Advanced Network Security"@en ;
+	ceterms:codedNotation "F20AN" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac> a ceterms:CourseComponent ;
+	ceterms:name "Digital Forensics"@en ;
+	ceterms:codedNotation "F20FO" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:dffec39a-b180-4290-9084-4b00a06d5a24> a ceterms:CourseComponent ;
+	ceterms:name "Big Data Management"@en ;
+	ceterms:codedNotation "F20BD" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] . 
+	
+<res:860be930-0a1f-4b36-99ec-ae16f63f251d> a ceterms:CourseComponent ;
+	ceterms:name "Computer Games Programming"@en ;
+	ceterms:codedNotation "F20GP" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:5e3f543c-d89d-40bf-a4b7-38abd90a8679> a ceterms:CourseComponent ;
+	ceterms:name "Distributed and Parallel Technologies"@en ;
+	ceterms:codedNotation "F20DP" ;
+	ceterms:description "@@@"@en-US ;
+	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
+	ceterms:creditValue [ 
+	   a schema:QuantitativeValue ;
+	   schema:value 15 
+	] .
+	
+<res:f39bf394-5b6e-496c-b150-589bcc607a8e> a ceterms:ComponentCondition ;
+    ceterms:requiredNumber 2 ;
+    ceterms:description "Select 2 out of 2 conditions."@en-US ;
+    ceterms:hasCondition 
+        <res:167bbaf1-c6ac-4cb3-b03b-36df7cec256a> , 
+        <res:3a176a2b-85c2-4132-a028-eafa39de39d9> .
+    
+<res:167bbaf1-c6ac-4cb3-b03b-36df7cec256a> a ceterms:ComponentCondition ;
+    ceterms:description "Select 2 out of 2 conditions."@en-US ;
+    ceterms:hasCondition
+        <res:78226fb4-fee4-4d02-8b00-480eff9e1896> ,
+        <res:1fab69ca-9c88-4b09-a3f9-5916b6e9455c> .
+    
+<res:78226fb4-fee4-4d02-8b00-480eff9e1896> a ceterms:ComponentCondition ;
+    ceterms:description "Two required courses."@en-US ;
+    ceterms:requiredNumber 2 ;
+    ceterms:targetComponent 
+        <res:57f9795d-1b1e-4986-9e48-1987719dabc5> ,
+        <res:e4232cef-9f7d-48cb-9847-08901d4bf99e> .                
+
+<res:1fab69ca-9c88-4b09-a3f9-5916b6e9455c> a ceterms:ComponentCondition ;
+    ceterms:description "Select 2 out of 9 courses."@en-US ;
+    ceterms:requiredNumber 2 ;
+    ceterms:targetComponent 
+        <res:d4938e70-ce96-4ea7-a13a-60a82e452b64> ,
+        <res:e4232cef-9f7d-48cb-9847-08901d4bf99e> ,
+        <res:d4938e70-ce96-4ea7-a13a-60a82e452b64> ,
+        <res:c8cd38a4-17c0-4676-bd08-0972747b47ae> ,
+        <res:b836992d-4c7a-4347-9626-2e46824ce788> ,
+        <res:3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff> ,
+        <res:5d9f2a66-410c-448b-ab4d-d5579a9450fb> ,
+        <res:3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac> ,
+        <res:5e3f543c-d89d-40bf-a4b7-38abd90a8679> .
+
+<res:3a176a2b-85c2-4132-a028-eafa39de39d9> a ceterms:ComponentCondition ;
+    ceterms:description "Select 2 out of 2 conditions."@en-US ;
+    ceterms:hasCondition 
+        <res:a474f7e7-6406-4b4f-84f7-740c6af0944d>,
+        <res:72a6c8bf-1bf6-418d-a57b-af94f529755c> .
+    
+<res:a474f7e7-6406-4b4f-84f7-740c6af0944d> a ceterms:ComponentCondition ;
+    ceterms:description "One required courses."@en-US ;
+    ceterms:requiredNumber 1 ;
+    ceterms:targetComponent <res:6dc96db8-a61b-4288-9b8f-6730e29688fa> . 
+                            
+<res:72a6c8bf-1bf6-418d-a57b-af94f529755c> a ceterms:ComponentCondition ;
+    ceterms:description "Select 3 out of 9 courses."@en-US ;
+    ceterms:requiredNumber 3 ;
+    ceterms:targetComponent 
+        <res:8ccb3888-7fda-48a6-ae34-bca4eaee830a> ,
+        <res:dc57a1e2-66e7-4023-b3c7-ee4383a7df48> ,
+        <res:d0ddf127-29d0-4782-88d5-887078370748> ,
+        <res:278a604b-7a65-4146-be99-c2ef649153ff> ,
+        <res:451b0af8-7246-48d1-a0a9-5c6a491b2cb1> ,
+        <res:d380b323-e4e3-4108-a754-3d089da15750> ,
+        <res:e2180939-19de-4174-80d7-9791eb5c8ece> ,
+        <res:04def797-054f-4042-9f85-bd05636eefce> ,
+        <res:468297f8-7ba0-4cda-b31e-327df19b01d7> .
+
+
+<res:1b36dde9-dfe2-4c21-8de4-756e8d39ee6e> a ceterms:ComponentCondition ;
+    ceterms:description "Select 1 out of 2 alternatives."@en-US ;
+    ceterms:requiredNumber 1 ;
+    ceterms:hasCondition 
+        <res:0d02a8fb-c9b8-4324-a957-1259dd923ed4> ,
+        <res:82a4f31d-d152-407d-9bd1-3d7d24c440ef> .
+        
+<res:0d02a8fb-c9b8-4324-a957-1259dd923ed4> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 8 out of 8 courses."@en-US ;
+    ceterms:requiredNumber 8 ;
+    ceterms:targetComponent 
+        <res:b17fe8a9-e278-4462-8d69-75415a898739> ,
+        <res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4> ,
+        <res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650> ,
+        <res:3ab6530d-9a21-4123-8fd4-8614dff431f0> ,
+        <res:c5af32f8-dafc-40f1-b868-64ffd2e39b45> ,
+        <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> ,
+        <res:650d92bf-1cb4-4542-b1bc-be6edf856011> ,
+        <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> ;
+        ceterms:hasConstraint [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "exitProgram" ;
+            ceterms:operand "=" ;
+            ceterms:rightOperand "yes"
+        ] ;
+        ceterms:completionAward <res:758be891-e53a-4ea7-990d-5b2183edde28> .
+
+<res:82a4f31d-d152-407d-9bd1-3d7d24c440ef> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 8 out of 8 courses."@en-US ;
+    ceterms:requiredNumber 8 ;
+    ceterms:targetComponent 
+        <res:b17fe8a9-e278-4462-8d69-75415a898739> ,
+        <res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4> ,
+        <res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650> ,
+        <res:3ab6530d-9a21-4123-8fd4-8614dff431f0> ,
+        <res:c5af32f8-dafc-40f1-b868-64ffd2e39b45> ,
+        <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> ,
+        <res:650d92bf-1cb4-4542-b1bc-be6edf856011> ,
+        <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> ;
+    ceterms:hasConstraint [
+        a ceterms:Constraint ;
+        ceterms:leftOperand "exitProgram" ;
+        ceterms:operand "=" ;
+        ceterms:rightOperand "No" 
+    ] .
+
+<res:9f64ce42-8654-4b96-89e1-ea33a94c6dff> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 1 out of 2 alternatives."@en-US ;
+    ceterms:requiredNumber 1 ;
+    ceterms:hasCondition 
+        <res:7a5bae9b-0f0d-462a-8d1d-7a102270b652> ,
+        <res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3> .
+
+<res:7a5bae9b-0f0d-462a-8d1d-7a102270b652> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 8 out of 8 courses."@en-US ;
+    ceterms:requiredNumber 8 ;
+    ceterms:targetComponent 
+        <res:27f4713f-8232-4f11-b023-1acd7425bc14> ,
+        <res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0> ,
+        <res:ffc760f2-7fdc-4ac1-8545-317bce1114af> ,
+        <res:219e2d5a-935e-4abb-a8ef-94c29119b408> ,
+        <res:4e6647b5-93b4-4014-91a9-897b315dfdcd> ,
+        <res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9> ,
+        <res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb> ,
+        <res:2d793d46-8e58-45d4-aba6-c6a16b131d03> ;
+        ceterms:hasConstraint [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "exitProgram" ;
+            ceterms:operand "=" ;
+            ceterms:rightOperand "yes"
+        ] ;
+        ceterms:completionAward <res:e3bffc2f-0006-4f1d-b190-999befb5d717> .
+
+<res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 8 out of 8 courses."@en-US ;
+    ceterms:requiredNumber 8 ;
+    ceterms:targetComponent 
+        <res:27f4713f-8232-4f11-b023-1acd7425bc14> ,
+        <res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0> ,
+        <res:ffc760f2-7fdc-4ac1-8545-317bce1114af> ,
+        <res:219e2d5a-935e-4abb-a8ef-94c29119b408> ,
+        <res:4e6647b5-93b4-4014-91a9-897b315dfdcd> ,
+        <res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9> ,
+        <res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb> ,
+        <res:2d793d46-8e58-45d4-aba6-c6a16b131d03> ;
+    ceterms:hasConstraint [
+        a ceterms:Constraint ;
+        ceterms:leftOperand "exitProgram" ;
+        ceterms:operand "=" ;
+        ceterms:rightOperand "No"
+    ] .
+
+<res:3e3165cd-ed60-4854-9991-97c22754a40b> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 1 out of 2 alternatives."@en-US ;
+    ceterms:requiredNumber 1 ;
+    ceterms:hasCondition
+        <res:0cf91f88-ac68-4d3a-82d9-e87d4852b049> ,
+        <res:b653f152-b383-4d6b-b6cc-77b460c34f9e> . 
+    
+<res:0cf91f88-ac68-4d3a-82d9-e87d4852b049> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 8 out of 8 courses."@en-US ;
+    ceterms:requiredNumber 8 ;
+    ceterms:targetComponent 
+        <res:13bcff97-0fd9-4a2d-81d6-98177333581b> ,
+        <res:0954dc01-25e3-4bae-ac74-6bc7e2f22884> ,
+        <res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e> ,
+        <res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca> ,
+        <res:66a38893-e0b1-400c-9ad3-9234c7511c6b> ,
+        <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> ,
+        <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> ,
+        <res:06271243-bff2-461f-8777-b2c945338804> ;
+    ceterms:hasConstraint [
+        a ceterms:Constraint ;
+        ceterms:leftOperand "exitProgram" ;
+        ceterms:operand "=" ;
+        ceterms:rightOperand "yes"
+    ] ;
+    ceterms:completionAward <res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c> .
+
+<res:b653f152-b383-4d6b-b6cc-77b460c34f9e> a ceterms:ComponentCondition ;
+    ceterms:description "Complete 8 out of 8 courses."@en-US ;
+    ceterms:requiredNumber 8 ;
+    ceterms:targetComponent 
+        <res:13bcff97-0fd9-4a2d-81d6-98177333581b> ,
+        <res:0954dc01-25e3-4bae-ac74-6bc7e2f22884> ,
+        <res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e> ,
+        <res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca> ,
+        <res:66a38893-e0b1-400c-9ad3-9234c7511c6b> ,
+        <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> ,
+        <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> ,
+        <res:06271243-bff2-461f-8777-b2c945338804> ;
+        ceterms:hasConstraint [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "exitProgram" ;
+            ceterms:operand "=" ;
+            ceterms:rightOperand "No"
+        ] .
+
+    
+<1fa863f0-9411-479a-90eb-cb529e720ac3> a ceterms:ComponentCondition ;
+    ceterms:description "Constraints on Stage 1, Semester 2 attainment and for progression to Stage 2."@en-US ;
+    ceterms:hasConstraint [ 
+            a ceterms:Constraint ;
+            ceterms:leftOperand "aggregateCredits";
+            ceterms:operator "=" ;
+            ceterms:rightOperand 120 
+        ],
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "resitAllowed";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "yes" 
+        ] ;
+    ceterms:hasCondition <res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513> .
+    
+<res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 1, Semester 2 Contraint Group: [(courseNum = 7) AND (minGrade = \"D\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "courseNum";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "7"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "minGrade";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "D"
+        ] .
+
+<res:a0e09db1-0008-436c-8631-42f67814f0e6> a ceterms:ComponentCondition ;
+    ceterms:description "Constraints on Stage 2, Semester 2 attainment and for progression to Stage 3."@en-US ;
+    ceterms:hasConstraint  
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "aggregateCredits";
+            ceterms:operator "=" ;
+            ceterms:rightOperand 240 
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "resitAllowed";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "yes" 
+        ] ;
+    ceterms:hasCondition <res:b49c8937-5ba1-44f9-acf8-4b56dd025c03> .
+    
+<res:b49c8937-5ba1-44f9-acf8-4b56dd025c03> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 2, Semester 2 Contraint Group: [(courseNum = 7) AND (minGrade = \"D\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "courseCredits";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "120"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "scqf:Level";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "8"
+        ],
+        [ 
+            a ceterms:Constraint ;
+            ceterms:leftOperand "minGrade";
+            ceterms:operator "=" ;
+            ceterms:rightOperand "D"
+        ] .
+    
+
+<369aeac0-72fb-4b2c-ae03-c13f643040b1> a ceterms:ComponentCondition ;
+    ceterms:description "Constraints on Stage 3, Semester 2 attainment and for progression to Stage 4."@en-US ;
+    ceterms:hasConstraint 
+    [ 
+            a ceterms:Constraint ;
+            ceterms:leftOperand "aggregateCredits" ;
+            ceterms:operator "=" ;
+            ceterms:rightOperand 360 
+    ] ;
+    ceterms:hasCondition 
+        <res:b49c8937-5ba1-44f9-acf8-4b56dd025c03> ,
+        <res:41016408-ec54-4186-8143-eabe3503ad2a> ,
+        <res:425d61ac-ff6b-427a-a12a-a4b183e02ed9> ,
+        <res:f0550ade-e01d-489d-8df4-3f188a8cb318> ,
+        <res:a458ca7c-fa9e-470b-830c-b9d138f4f893> .
+    
+<res:b49c8937-5ba1-44f9-acf8-4b56dd025c03> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqfLevel = 9)]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "courseCredits";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "120"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "scqf:Level";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "9"
+        ] .
+    
+<res:41016408-ec54-4186-8143-eabe3503ad2a> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(assessAverage = \"50%\") AND (firstSit = \"yes\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "assessAverage";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "50%"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "firstSit";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "yes"
+        ] .
+    
+<res:425d61ac-ff6b-427a-a12a-a4b183e02ed9> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(course = \"F29SO\") AND (course = \"F29PD\") AND (minGrade = \"D\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "course";
+            ceterms:operator "=" ;
+            ceterms:leftOperand <res:3ab6530d-9a21-4123-8fd4-8614dff431f0>
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "course";
+            ceterms:operator "=" ;
+            ceterms:leftOperand <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed>
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "minGrade";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "D"
+        ] .
+    
+<res:f0550ade-e01d-489d-8df4-3f188a8cb318> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseNum = 6) AND (minGrade = \"D\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "courseNum";
+            ceterms:operator "=" ;
+            ceterms:leftOperand 6
+        ],
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "minGrade";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "D"
+        ] .
+    
+<res:71099201-e520-46ed-aae1-84a56a924ced> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(resitAllowed = \"yes\") AND (creditOnly = \"yes\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "aggregateCredits";
+            ceterms:operator "=" ;
+            ceterms:leftOperand 480
+        ] ;
+    ceterms:hasCondition 
+        <res:936cb9fc-e111-4289-8f41-468834eb687b> ,
+        <res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d> ,
+        <res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34> ,
+        <res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68> .
+        
+<res:936cb9fc-e111-4289-8f41-468834eb687b> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(course = \"F20PA\") AND (course = \"F20PB\") AND (course = \"F20PC\") AND (scqfLevel = 10)]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "course";
+            ceterms:operator "=" ;
+            ceterms:leftOperand <res:6dc96db8-a61b-4288-9b8f-6730e29688fa>
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "course";
+            ceterms:operator "=" ;
+            ceterms:leftOperand <res:57f9795d-1b1e-4986-9e48-1987719dabc5>
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "course";
+            ceterms:operator "=" ;
+            ceterms:leftOperand <res:e4232cef-9f7d-48cb-9847-08901d4bf99e>
+        ],
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "scqfLevel";
+            ceterms:operator "=" ;
+            ceterms:leftOperand 10
+        ] .
+    
+<res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(resit = \"yes\") AND (creditOnly = \"yes\")]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "resit";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "yes"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "creditOnly";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "yes"
+        ] .  
+                         
+<res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 180) AND (scqfLevel = 9)]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "courseCredits";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "180"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "scqfLevel";
+            ceterms:operator "=" ;
+            ceterms:leftOperand 9
+        ] .
+    
+<res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68> a ceterms:ComponentCondition ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 90) AND (scqfLevel = 10)]" ;
+    ceterms:logicalOperand "AND" ;
+    ceterms:hasConstraint 
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "courseCredits";
+            ceterms:operator "=" ;
+            ceterms:leftOperand "90"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftOperand "scqfLevel";
+            ceterms:operator "=" ;
+            ceterms:leftOperand 10
+        ] .
+
+<res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c> a ceterms:Certificate ;
+    ceterms:name "Certificate of Higher Education"@en-US .
+
+<res:e3bffc2f-0006-4f1d-b190-999befb5d717> a ceterms:Diploma ;
+    ceterms:name "Diploma of Higher Education"@en-US .
+
+<res:758be891-e53a-4ea7-990d-5b2183edde28> a ceterms:BachelorDegree ;
+    ceterms:name "Ordinary or General Degree"@en-US .
