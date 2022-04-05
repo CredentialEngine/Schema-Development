@@ -822,6 +822,7 @@
 
 <res:a0e09db1-0008-436c-8631-42f67814f0e6> a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 2, Semester 2 attainment and for progression to Stage 3."@en-US ;
+    ceterms:logicalOperand "AND" ;
     ceterms:hasConstraint  
         [
             a ceterms:Constraint ;
