@@ -1,0 +1,20 @@
+# to retrieve pathway components
+# tested on HW pathway data
+# won't work if child components are in a list
+prefix ceterms: <https://purl.org/ctdl/terms/>
+prefix ceasn: <https://purl.org/ctdlasn/terms/>
+prefix qdata: <https://credreg.net/qdata/terms/>
+prefix schema: <https://schema.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix res: <http://example.org/resources/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select ?pwName ?cName where {
+	?pathway a ceterms:Pathway ;
+             ceterms:name ?pwName ;
+             ceterms:hasDestinationComponent / ceterms:precededBy* / ceasn:hasChild* ?component .
+    ?component ceterms:name ?cName .
+
+}
