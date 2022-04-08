@@ -30,19 +30,18 @@
 	ceterms:name "Stage 4, Semester 2"@en ;
 	ceterms:precededBy <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> ;
 	ceterms:precedes <res:1a285e3e-35ce-476a-b592-af7ae4e732a3> ;
-	ceasn:hasChild (
-	       <res:57f9795d-1b1e-4986-9e48-1987719dabc5>
-	       <res:e4232cef-9f7d-48cb-9847-08901d4bf99e>
-	       <res:d4938e70-ce96-4ea7-a13a-60a82e452b64>
-	       <res:c8cd38a4-17c0-4676-bd08-0972747b47ae>
-	       <res:b836992d-4c7a-4347-9626-2e46824ce788>
-	       <res:3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff>
-	       <res:5d9f2a66-410c-448b-ab4d-d5579a9450fb>
-	       <res:3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac>
-	       <res:dffec39a-b180-4290-9084-4b00a06d5a24>
-	       <res:860be930-0a1f-4b36-99ec-ae16f63f251d>
-	       <res:5e3f543c-d89d-40bf-a4b7-38abd90a8679>
-        );
+	ceasn:hasChild 
+	       <res:57f9795d-1b1e-4986-9e48-1987719dabc5> ,
+	       <res:e4232cef-9f7d-48cb-9847-08901d4bf99e> ,
+	       <res:d4938e70-ce96-4ea7-a13a-60a82e452b64> ,
+	       <res:c8cd38a4-17c0-4676-bd08-0972747b47ae> ,
+	       <res:b836992d-4c7a-4347-9626-2e46824ce788> ,
+	       <res:3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff> ,
+	       <res:5d9f2a66-410c-448b-ab4d-d5579a9450fb> ,
+	       <res:3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac> ,
+	       <res:dffec39a-b180-4290-9084-4b00a06d5a24> ,
+	       <res:860be930-0a1f-4b36-99ec-ae16f63f251d> ,
+	       <res:5e3f543c-d89d-40bf-a4b7-38abd90a8679> ;
 	ceterms:hasCondition <res:71099201-e520-46ed-aae1-84a56a924ced> .
 
 <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> a ceterms:BasicComponent ;
@@ -50,30 +49,28 @@
 	ceterms:name "Stage 4, Semester 1"@en ;
 	ceterms:precededBy <res:bdb06663-8983-40b1-beee-0a77049b3360> ;
 	ceterms:precedes <res:ad7d4f8c-5230-4002-9e44-a29568985a6f> ;
-	ceasn:hasChild (
-	       <res:6dc96db8-a61b-4288-9b8f-6730e29688fa>
-	       <res:8ccb3888-7fda-48a6-ae34-bca4eaee830a>
-	       <res:dc57a1e2-66e7-4023-b3c7-ee4383a7df48>
-	       <res:d0ddf127-29d0-4782-88d5-887078370748>
-	       <res:278a604b-7a65-4146-be99-c2ef649153ff>
-	       <res:451b0af8-7246-48d1-a0a9-5c6a491b2cb1>
-	       <res:d380b323-e4e3-4108-a754-3d089da15750>
-	       <res:e2180939-19de-4174-80d7-9791eb5c8ece>
-	       <res:04def797-054f-4042-9f85-bd05636eefce>
-	       <res:468297f8-7ba0-4cda-b31e-327df19b01d7>
-	   ).
+	ceasn:hasChild
+	       <res:6dc96db8-a61b-4288-9b8f-6730e29688fa> ,
+	       <res:8ccb3888-7fda-48a6-ae34-bca4eaee830a> ,
+	       <res:dc57a1e2-66e7-4023-b3c7-ee4383a7df48> ,
+	       <res:d0ddf127-29d0-4782-88d5-887078370748> ,
+	       <res:278a604b-7a65-4146-be99-c2ef649153ff> ,
+	       <res:451b0af8-7246-48d1-a0a9-5c6a491b2cb1> ,
+	       <res:d380b323-e4e3-4108-a754-3d089da15750> ,
+	       <res:e2180939-19de-4174-80d7-9791eb5c8ece> ,
+	       <res:04def797-054f-4042-9f85-bd05636eefce> ,
+	       <res:468297f8-7ba0-4cda-b31e-327df19b01d7> .
 
 <res:bdb06663-8983-40b1-beee-0a77049b3360> a ceterms:BasicComponent ;
     ceterms:componentCategory "Stage" ;
 	ceterms:name "Stage 3, Semester 2"@en ;
 	ceterms:precededBy <res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> ;
 	ceterms:precedes <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> ;
-	ceasn:hasChild (
-	       <res:c5af32f8-dafc-40f1-b868-64ffd2e39b45>
-	       <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85>
-	       <res:650d92bf-1cb4-4542-b1bc-be6edf856011>
-	       <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed>
-	   );
+	ceasn:hasChild
+	       <res:c5af32f8-dafc-40f1-b868-64ffd2e39b45> ,
+	       <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> ,
+	       <res:650d92bf-1cb4-4542-b1bc-be6edf856011> ,
+	       <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> ;
 	ceterms:hasCondition <369aeac0-72fb-4b2c-ae03-c13f643040b1> .
 
 <res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> a ceterms:BasicComponent ;
@@ -81,24 +78,22 @@
 	ceterms:name "Stage 3, Semester 1"@en ;
 	ceterms:precededBy <res:41ab6ab88-361f-42c3-bac6-f373079e521c> ;
 	ceterms:precedes <res:bdb06663-8983-40b1-beee-0a77049b3360> ;
-	ceasn:hasChild (
-	       <res:b17fe8a9-e278-4462-8d69-75415a898739>
-	       <res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4>
-	       <res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650>
-	       <res:3ab6530d-9a21-4123-8fd4-8614dff431f0>
-	   ).
+	ceasn:hasChild
+	       <res:b17fe8a9-e278-4462-8d69-75415a898739> ,
+	       <res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4> ,
+	       <res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650> ,
+	       <res:3ab6530d-9a21-4123-8fd4-8614dff431f0> .
 
 <res:41ab6ab88-361f-42c3-bac6-f373079e521c> a ceterms:BasicComponent ;
     ceterms:componentCategory "Stage" ;
 	ceterms:name "Stage 2, Semester 2"@en ;
 	ceterms:precededBy <res:67b870ed-b0e6-4a2b-a951-568876d1e6ff> ;
 	ceterms:precedes <res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> ;
-	ceasn:hasChild (
-	       <res:4e6647b5-93b4-4014-91a9-897b315dfdcd>
-	       <res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9>
-	       <res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb>
-	       <res:2d793d46-8e58-45d4-aba6-c6a16b131d03>
-	   );
+	ceasn:hasChild
+	       <res:4e6647b5-93b4-4014-91a9-897b315dfdcd> ,
+	       <res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9> ,
+	       <res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb> ,
+	       <res:2d793d46-8e58-45d4-aba6-c6a16b131d03> ;
 	ceterms:hasCondition <a0e09db1-0008-436c-8631-42f67814f0e6> .
 
 <res:67b870ed-b0e6-4a2b-a951-568876d1e6ff> a ceterms:BasicComponent ;
@@ -106,24 +101,22 @@
 	ceterms:name "Stage 2, Semester 1"@en ;
 	ceterms:precededBy <res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f> ;
 	ceterms:precedes <res:41ab6ab88-361f-42c3-bac6-f373079e521c> ;
-	ceasn:hasChild (
-	       <res:27f4713f-8232-4f11-b023-1acd7425bc14>
-	       <res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0>
-	       <res:ffc760f2-7fdc-4ac1-8545-317bce1114af>
-	       <res:219e2d5a-935e-4abb-a8ef-94c29119b408>
-	   ).
+	ceasn:hasChild
+	       <res:27f4713f-8232-4f11-b023-1acd7425bc14> ,
+	       <res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0> ,
+	       <res:ffc760f2-7fdc-4ac1-8545-317bce1114af> ,
+	       <res:219e2d5a-935e-4abb-a8ef-94c29119b408> .
 
 <res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f> a ceterms:BasicComponent ;
     ceterms:componentCategory "Stage" ;
 	ceterms:name "Stage 1, Semester 2"@en ;
 	ceterms:precededBy <res:4d214678-4b71-4f5f-9fd5-2486282f4d30> ;
 	ceterms:precedes <res:67b870ed-b0e6-4a2b-a951-568876d1e6ff> ;
-	ceasn:hasChild (
-	       <res:66a38893-e0b1-400c-9ad3-9234c7511c6b>
-	       <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea>
-	       <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb>
-	       <res:06271243-bff2-461f-8777-b2c945338804>
-	   );
+	ceasn:hasChild
+	       <res:66a38893-e0b1-400c-9ad3-9234c7511c6b> ,
+	       <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> ,
+	       <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> ,
+	       <res:06271243-bff2-461f-8777-b2c945338804> ;
 	ceterms:hasCondition <1fa863f0-9411-479a-90eb-cb529e720ac3> .
 
 
@@ -131,12 +124,11 @@
     ceterms:componentCategory "Stage" ;
 	ceterms:name "Stage 1, Semester 1"@en ;
 	ceterms:precedes <res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f> ;
-	ceasn:hasChild (
-	       <res:13bcff97-0fd9-4a2d-81d6-98177333581b>
-	       <res:0954dc01-25e3-4bae-ac74-6bc7e2f22884>
-	       <res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e>
-	       <res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca>
-	   ).
+	ceasn:hasChild
+	       <res:13bcff97-0fd9-4a2d-81d6-98177333581b> ,
+	       <res:0954dc01-25e3-4bae-ac74-6bc7e2f22884> ,
+	       <res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e> ,
+	       <res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca> .
 
 <res:13bcff97-0fd9-4a2d-81d6-98177333581b> a ceterms:CourseComponent ;
 	ceterms:name "Logic and Proof"@en ;
