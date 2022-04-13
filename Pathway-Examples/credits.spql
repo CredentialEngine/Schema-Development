@@ -1,0 +1,17 @@
+# to calculate how many credits are offered at SCQF level 9
+# tested on HW pathway data
+prefix ceterms: <https://purl.org/ctdl/terms/> 
+prefix res: <http://example.org/resources/> 
+prefix scqflevel: <http://example.edu/scqf/levels/> 
+prefix scqfcredits: <http://example.edu/scqf/credits/> 
+prefix hwusubjects: <http://example.edu/hwu/subjects/>
+ 
+SELECT (SUM(?value) AS ?totalValue)
+where { 
+	?c a ceterms:CourseComponent ;
+         ceterms:name ?cname ;
+         ceterms:creditValue ?cred .
+    ?cred ceterms:creditLevelType scqflevel:9 ;
+          ceterms:value ?value ;
+    	  ceterms:subject hwusubjects:ComputerScience .
+}
