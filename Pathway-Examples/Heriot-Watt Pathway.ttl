@@ -7,6 +7,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix res: <http://example.org/resources/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix scqflevel: <http://example.edu/scqf/levels/> .
+@prefix scqfcredits: <http://example.edu/scqf/credits/> .
+@prefix hwusubjects: <http://example.edu/hwu/subjects/> .
 
 <res:ec071f65-2c5b-4b58-a2df-dd6287880a7a> a ceterms:Pathway ;
 	ceterms:name "BSCH - Bachelor of Science Honours"@en ;
@@ -30,7 +33,7 @@
 	ceterms:name "Stage 4, Semester 2"@en ;
 	ceterms:precededBy <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> ;
 	ceterms:precedes <res:1a285e3e-35ce-476a-b592-af7ae4e732a3> ;
-	ceasn:hasChild 
+	ceasn:hasChild
 	       <res:57f9795d-1b1e-4986-9e48-1987719dabc5> ,
 	       <res:e4232cef-9f7d-48cb-9847-08901d4bf99e> ,
 	       <res:d4938e70-ce96-4ea7-a13a-60a82e452b64> ,
@@ -45,7 +48,7 @@
 	ceterms:hasCondition <res:71099201-e520-46ed-aae1-84a56a924ced> .
 
 <res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc> a ceterms:BasicComponent ;
-    ceterms:componentCategory "Stage" ;
+  ceterms:componentCategory "Stage" ;
 	ceterms:name "Stage 4, Semester 1"@en ;
 	ceterms:precededBy <res:bdb06663-8983-40b1-beee-0a77049b3360> ;
 	ceterms:precedes <res:ad7d4f8c-5230-4002-9e44-a29568985a6f> ;
@@ -134,451 +137,270 @@
 	ceterms:name "Logic and Proof"@en ;
 	ceterms:codedNotation "F17LP" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280617> .
 
 <res:0954dc01-25e3-4bae-ac74-6bc7e2f22884> a ceterms:CourseComponent ;
 	ceterms:name "Introduction to Interaction Design"@en ;
 	ceterms:codedNotation "F27ID" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280627> .
 
 <res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e> a ceterms:CourseComponent ;
 	ceterms:name "Praxis"@en ;
 	ceterms:codedNotation "F27PX" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280627> .
 
 <res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca> a ceterms:CourseComponent ;
 	ceterms:name "Software Development 1"@en ;
 	ceterms:codedNotation "F27SA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280627> .
 
 <res:66a38893-e0b1-400c-9ad3-9234c7511c6b> a ceterms:CourseComponent ;
 	ceterms:name "Discrete Mathematics"@en ;
 	ceterms:codedNotation "F17SC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280617> .
 
 <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> a ceterms:CourseComponent ;
 	ceterms:name "Introduction to Computer Systems"@en ;
 	ceterms:codedNotation "F27CS" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280627> .
 
 <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> a ceterms:CourseComponent ;
 	ceterms:name "Software Development 2"@en ;
 	ceterms:codedNotation "F27SB" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280627> .
 
 <res:06271243-bff2-461f-8777-b2c945338804> a ceterms:CourseComponent ;
 	ceterms:name "Web Design and Databases"@en ;
 	ceterms:codedNotation "F27WD" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280627> .
 
 <res:27f4713f-8232-4f11-b023-1acd7425bc14> a ceterms:CourseComponent ;
 	ceterms:name "User-Centered Experience Design"@en ;
 	ceterms:codedNotation "F28ED" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:07dbe82d-bf5e-4ba5-8969-cf8377fd34e0> a ceterms:CourseComponent ;
 	ceterms:name "Programming Languages"@en ;
 	ceterms:codedNotation "F28PL" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:ffc760f2-7fdc-4ac1-8545-317bce1114af> a ceterms:CourseComponent ;
 	ceterms:name "Introduction to Data Structures"@en ;
 	ceterms:codedNotation "F28SG" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:219e2d5a-935e-4abb-a8ef-94c29119b408> a ceterms:CourseComponent ;
 	ceterms:name "Web Programming"@en ;
 	ceterms:codedNotation "F28WP" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:4e6647b5-93b4-4014-91a9-897b315dfdcd> a ceterms:CourseComponent ;
 	ceterms:name "Data Structures and Algorithms"@en ;
 	ceterms:codedNotation "F28DA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9> a ceterms:CourseComponent ;
 	ceterms:name "Database Management Systems"@en ;
 	ceterms:codedNotation "F28DM" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb> a ceterms:CourseComponent ;
 	ceterms:name "Hardware-Software Interface"@en ;
 	ceterms:codedNotation "F28HS" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:2d793d46-8e58-45d4-aba6-c6a16b131d03> a ceterms:CourseComponent ;
 	ceterms:name "Introduction to Software Engineering"@en ;
 	ceterms:codedNotation "F28SD" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:b17fe8a9-e278-4462-8d69-75415a898739> a ceterms:CourseComponent ;
 	ceterms:name "AI and Intelligent Agents"@en ;
 	ceterms:codedNotation "F29AI" ;
-	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4> a ceterms:CourseComponent ;
 	ceterms:name "Data Communications & Networking"@en ;
 	ceterms:codedNotation "F29DC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280628> .
 
 <res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650> a ceterms:CourseComponent ;
 	ceterms:name "Foundations 1"@en ;
 	ceterms:codedNotation "F29FA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:3ab6530d-9a21-4123-8fd4-8614dff431f0> a ceterms:CourseComponent ;
 	ceterms:name "Software Engineering"@en ;
 	ceterms:codedNotation "F29SO)" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:c5af32f8-dafc-40f1-b868-64ffd2e39b45> a ceterms:CourseComponent ;
 	ceterms:name "Foundations 2"@en ;
 	ceterms:codedNotation "F29FB" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> a ceterms:CourseComponent ;
 	ceterms:name "Operating Systems and Concurrency"@en ;
 	ceterms:codedNotation "F29OC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:650d92bf-1cb4-4542-b1bc-be6edf856011> a ceterms:CourseComponent ;
 	ceterms:name "Language Processors"@en ;
 	ceterms:codedNotation "F29LP" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> a ceterms:CourseComponent ;
 	ceterms:name "Professional Development"@en ;
 	ceterms:codedNotation "F29PD" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
  <res:6dc96db8-a61b-4288-9b8f-6730e29688fa> a ceterms:CourseComponent ;
 	ceterms:name "Research Methods & Requirements Engineering"@en ;
 	ceterms:codedNotation "F20PA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280629> .
 
 <res:8ccb3888-7fda-48a6-ae34-bca4eaee830a> a ceterms:CourseComponent ;
 	ceterms:name "Bio@@@ Inspired Computation"@en ;
 	ceterms:codedNotation "F20BC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:dc57a1e2-66e7-4023-b3c7-ee4383a7df48> a ceterms:CourseComponent ;
 	ceterms:name "Intelligent Robots"@en ;
 	ceterms:codedNotation "F20RO" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:d0ddf127-29d0-4782-88d5-887078370748> a ceterms:CourseComponent ;
 	ceterms:name "Computer Network Security"@en ;
 	ceterms:codedNotation "F20CN" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:278a604b-7a65-4146-be99-c2ef649153ff> a ceterms:CourseComponent ;
 	ceterms:name "Rigorous Method for Software Engineering"@en ;
 	ceterms:codedNotation "F20RS" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:451b0af8-7246-48d1-a0a9-5c6a491b2cb1> a ceterms:CourseComponent ;
 	ceterms:name "Data Mining and Machine Learning"@en ;
 	ceterms:codedNotation "F20DL" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:d380b323-e4e3-4108-a754-3d089da15750> a ceterms:CourseComponent ;
 	ceterms:name "Statistical Modeling and Analysis"@en ;
 	ceterms:codedNotation "F20SA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:e2180939-19de-4174-80d7-9791eb5c8ece> a ceterms:CourseComponent ;
 	ceterms:name "3-D Graphics and Animation"@en ;
 	ceterms:codedNotation "F20GA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:04def797-054f-4042-9f85-bd05636eefce> a ceterms:CourseComponent ;
 	ceterms:name "Information Systems Methodologies"@en ;
 	ceterms:codedNotation "F20IF" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:468297f8-7ba0-4cda-b31e-327df19b01d7> a ceterms:CourseComponent ;
 	ceterms:name "Industrial Programming"@en ;
 	ceterms:codedNotation "F20SC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:57f9795d-1b1e-4986-9e48-1987719dabc5> a ceterms:CourseComponent ;
 	ceterms:name "Design & Implementation"@en ;
 	ceterms:codedNotation "F20PB" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:e4232cef-9f7d-48cb-9847-08901d4bf99e> a ceterms:CourseComponent ;
 	ceterms:name "Project Testing & Implementation"@en ;
 	ceterms:codedNotation "F20PC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:d4938e70-ce96-4ea7-a13a-60a82e452b64> a ceterms:CourseComponent ;
 	ceterms:name "Applied Text Analytics"@en ;
 	ceterms:codedNotation "F20AA" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:c8cd38a4-17c0-4676-bd08-0972747b47ae> a ceterms:CourseComponent ;
 	ceterms:name "Data Visualization and Analytics"@en ;
 	ceterms:codedNotation "F20DV" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:b836992d-4c7a-4347-9626-2e46824ce788> a ceterms:CourseComponent ;
 	ceterms:name "Advanced Interaction Design"@en ;
 	ceterms:codedNotation "F20AD" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff> a ceterms:CourseComponent ;
 	ceterms:name "e-Commerce Technology"@en ;
 	ceterms:codedNotation "F20EC" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:5d9f2a66-410c-448b-ab4d-d5579a9450fb> a ceterms:CourseComponent ;
 	ceterms:name "Advanced Network Security"@en ;
 	ceterms:codedNotation "F20AN" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac> a ceterms:CourseComponent ;
 	ceterms:name "Digital Forensics"@en ;
 	ceterms:codedNotation "F20FO" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:dffec39a-b180-4290-9084-4b00a06d5a24> a ceterms:CourseComponent ;
 	ceterms:name "Big Data Management"@en ;
 	ceterms:codedNotation "F20BD" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:860be930-0a1f-4b36-99ec-ae16f63f251d> a ceterms:CourseComponent ;
 	ceterms:name "Computer Games Programming"@en ;
 	ceterms:codedNotation "F20GP" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:5e3f543c-d89d-40bf-a4b7-38abd90a8679> a ceterms:CourseComponent ;
 	ceterms:name "Distributed and Parallel Technologies"@en ;
 	ceterms:codedNotation "F20DP" ;
 	ceterms:description "@@@"@en-US ;
-	ceterms:creditUnitType: <https://purl.org/ctdl/vocabs/creditUnit/SemesterHour> ;
-	ceterms:creditValue [
-	   a schema:QuantitativeValue ;
-	   schema:value 15
-	] .
+  ceterms:creditValue <res:ba3b1c3f-d46d-4784-8ee0-68e566280620> .
 
 <res:f39bf394-5b6e-496c-b150-589bcc607a8e> a ceterms:ComponentCondition ;
     ceterms:requiredNumber 2 ;
@@ -1048,3 +870,33 @@
 
 <res:758be891-e53a-4ea7-990d-5b2183edde28> a ceterms:BachelorDegree ;
     ceterms:name "Ordinary or General Degree"@en-US .
+
+<res:ba3b1c3f-d46d-4784-8ee0-68e566280617> a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:7 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:Mathematics ;
+    ceterms:value 15 .
+
+<res:ba3b1c3f-d46d-4784-8ee0-68e566280627> a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:7 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
+
+<res:ba3b1c3f-d46d-4784-8ee0-68e566280628> a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:8 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
+
+<res:ba3b1c3f-d46d-4784-8ee0-68e566280629> a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:9 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
+
+<res:ba3b1c3f-d46d-4784-8ee0-68e566280620> a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:10 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
