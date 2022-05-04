@@ -700,13 +700,13 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "courseCredits";
             ceterms:operator "=" ;
-            ceterms:leftOperand "120"
+            ceterms:rightOperand "120"
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "scqf:Level";
             ceterms:operator "=" ;
-            ceterms:leftOperand "9"
+            ceterms:rightOperand "9"
         ] .
 
 <res:41016408-ec54-4186-8143-eabe3503ad2a> a ceterms:ComponentCondition ;
@@ -717,13 +717,13 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "assessAverage";
             ceterms:operator "=" ;
-            ceterms:leftOperand "50%"
+            ceterms:rightOperand "50%"
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "firstSit";
             ceterms:operator "=" ;
-            ceterms:leftOperand "yes"
+            ceterms:rightOperand "yes"
         ] .
 
 <res:425d61ac-ff6b-427a-a12a-a4b183e02ed9> a ceterms:ComponentCondition ;
@@ -734,19 +734,19 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "course";
             ceterms:operator "=" ;
-            ceterms:leftOperand <res:3ab6530d-9a21-4123-8fd4-8614dff431f0>
+            ceterms:rightOperand <res:3ab6530d-9a21-4123-8fd4-8614dff431f0>
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "course";
             ceterms:operator "=" ;
-            ceterms:leftOperand <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed>
+            ceterms:rightOperand <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed>
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "minGrade";
             ceterms:operator "=" ;
-            ceterms:leftOperand "D"
+            ceterms:rightOperand "D"
         ] .
 
 <res:f0550ade-e01d-489d-8df4-3f188a8cb318> a ceterms:ComponentCondition ;
@@ -757,13 +757,13 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "courseNum";
             ceterms:operator "=" ;
-            ceterms:leftOperand 6
+            ceterms:rightOperand 6
         ],
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "minGrade";
             ceterms:operator "=" ;
-            ceterms:leftOperand "D"
+            ceterms:rightOperand "D"
         ] .
 
 <res:71099201-e520-46ed-aae1-84a56a924ced> a ceterms:ComponentCondition ;
@@ -774,7 +774,7 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "aggregateCredits";
             ceterms:operator "=" ;
-            ceterms:leftOperand 480
+            ceterms:rightOperand 480
         ] ;
     ceterms:hasCondition
         <res:936cb9fc-e111-4289-8f41-468834eb687b> ,
@@ -790,25 +790,25 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "course";
             ceterms:operator "=" ;
-            ceterms:leftOperand <res:6dc96db8-a61b-4288-9b8f-6730e29688fa>
+            ceterms:rightOperand <res:6dc96db8-a61b-4288-9b8f-6730e29688fa>
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "course";
             ceterms:operator "=" ;
-            ceterms:leftOperand <res:57f9795d-1b1e-4986-9e48-1987719dabc5>
+            ceterms:rightOperand <res:57f9795d-1b1e-4986-9e48-1987719dabc5>
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "course";
             ceterms:operator "=" ;
-            ceterms:leftOperand <res:e4232cef-9f7d-48cb-9847-08901d4bf99e>
+            ceterms:rightOperand <res:e4232cef-9f7d-48cb-9847-08901d4bf99e>
         ],
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "scqfLevel";
             ceterms:operator "=" ;
-            ceterms:leftOperand 10
+            ceterms:rightOperand 10
         ] .
 
 <res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d> a ceterms:ComponentCondition ;
@@ -819,13 +819,13 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "resit";
             ceterms:operator "=" ;
-            ceterms:leftOperand "yes"
+            ceterms:rightOperand "yes"
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "creditOnly";
             ceterms:operator "=" ;
-            ceterms:leftOperand "yes"
+            ceterms:rightOperand "yes"
         ] .
 
 <res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34> a ceterms:ComponentCondition ;
@@ -836,13 +836,13 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "courseCredits";
             ceterms:operator "=" ;
-            ceterms:leftOperand "180"
+            ceterms:rightOperand "180"
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "scqfLevel";
             ceterms:operator "=" ;
-            ceterms:leftOperand 9
+            ceterms:rightOperand 9
         ] .
 
 <res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68> a ceterms:ComponentCondition ;
@@ -853,13 +853,13 @@
             a ceterms:Constraint ;
             ceterms:leftOperand "courseCredits";
             ceterms:operator "=" ;
-            ceterms:leftOperand "90"
+            ceterms:rightOperand "90"
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftOperand "scqfLevel";
             ceterms:operator "=" ;
-            ceterms:leftOperand 10
+            ceterms:rightOperand 10
         ] .
 
 <res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c> a ceterms:Certificate ;
