@@ -74,7 +74,7 @@
 	       <res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85> ,
 	       <res:650d92bf-1cb4-4542-b1bc-be6edf856011> ,
 	       <res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed> ;
-	ceterms:hasCondition <369aeac0-72fb-4b2c-ae03-c13f643040b1> .
+	ceterms:hasCondition <res:369aeac0-72fb-4b2c-ae03-c13f643040b1> .
 
 <res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1> a ceterms:BasicComponent ;
     ceterms:componentCategory "Stage" ;
@@ -120,7 +120,7 @@
 	       <res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea> ,
 	       <res:3f68f209-ce18-416e-8fa1-44721cf7cfcb> ,
 	       <res:06271243-bff2-461f-8777-b2c945338804> ;
-	ceterms:hasCondition <1fa863f0-9411-479a-90eb-cb529e720ac3> .
+	ceterms:hasCondition <res:1fa863f0-9411-479a-90eb-cb529e720ac3> .
 
 
 <res:4d214678-4b71-4f5f-9fd5-2486282f4d30> a ceterms:BasicComponent ;
@@ -676,7 +676,7 @@
         ] .
 
 
-<369aeac0-72fb-4b2c-ae03-c13f643040b1> a ceterms:ComponentCondition ;
+<res:369aeac0-72fb-4b2c-ae03-c13f643040b1> a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 3, Semester 2 attainment and for progression to Stage 4."@en-US ;
     ceterms:hasConstraint
     [
