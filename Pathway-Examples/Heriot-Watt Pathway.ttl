@@ -601,7 +601,7 @@
         ] .
 
 
-<1fa863f0-9411-479a-90eb-cb529e720ac3> a ceterms:ComponentCondition ;
+<res:1fa863f0-9411-479a-90eb-cb529e720ac3> a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 1, Semester 2 attainment and for progression to Stage 2."@en-US ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
