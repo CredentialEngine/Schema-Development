@@ -10,6 +10,7 @@
 @prefix scqflevel: <http://example.edu/scqf/levels/> .
 @prefix scqfcredits: <http://example.edu/scqf/credits/> .
 @prefix hwusubjects: <http://example.edu/hwu/subjects/> .
+@prefix hwugrades: <http://example.edu/hwu/grades/> .
 
 #===============#
 # Pathway data  #
@@ -529,8 +530,9 @@ res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 1, Semester 2 attainment and for progression to Stage 2."@en-US ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
-            ceterms:leftSource "aggregateCredits";
-            ceterms:operator "=" ;
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
             ceterms:rightSource 120
         ],
         [
@@ -553,9 +555,10 @@ res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "minGrade";
-            ceterms:operator "=" ;
-            ceterms:rightSource "D"
+            ceterms:leftSource "grade";
+            ceterms:operator "in" ;
+            ceterms:rightSource
+               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
         ] .
 
 res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
@@ -564,8 +567,9 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "aggregateCredits";
-            ceterms:operator "=" ;
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
             ceterms:rightSource 240
         ] ,
         [
@@ -582,21 +586,23 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "courseCredits";
-            ceterms:operator "=" ;
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
             ceterms:rightSource "120"
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "scqf:Level";
-            ceterms:operator "=" ;
-            ceterms:rightSource "8"
+            ceterms:leftSource "creditLevel";
+            ceterms:operator "is" ;
+            ceterms:rightSource scqfLevel:8
         ],
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "minGrade";
-            ceterms:operator "=" ;
-            ceterms:rightSource "D"
+            ceterms:leftSource "grade";
+            ceterms:operator "in" ;
+            ceterms:rightSource
+               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
         ] .
 
 
@@ -605,8 +611,9 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
     [
             a ceterms:Constraint ;
-            ceterms:leftSource "aggregateCredits" ;
-            ceterms:operator "=" ;
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
             ceterms:rightSource 360
     ] ;
     ceterms:hasCondition
@@ -622,15 +629,16 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "courseCredits";
-            ceterms:operator "=" ;
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
             ceterms:rightSource "120"
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "scqf:Level";
-            ceterms:operator "=" ;
-            ceterms:rightSource "9"
+            ceterms:leftSource "creditLevel";
+            ceterms:operator "is" ;
+            ceterms:rightSource "scqfLevel:9"
         ] .
 
 res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
@@ -639,9 +647,10 @@ res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "assessAverage";
-            ceterms:operator "=" ;
-            ceterms:rightSource "50%"
+            ceterms:action <Average> ;
+            ceterms:leftSource "PercentMark";
+            ceterms:operator ">=" ;
+            ceterms:rightSource "50"
         ] ,
         [
             a ceterms:Constraint ;
@@ -657,20 +666,21 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftSource "course";
-            ceterms:operator "=" ;
+            ceterms:operator "is" ;
             ceterms:rightSource res:3ab6530d-9a21-4123-8fd4-8614dff431f0
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftSource "course";
-            ceterms:operator "=" ;
+            ceterms:operator "is" ;
             ceterms:rightSource res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "minGrade";
-            ceterms:operator "=" ;
-            ceterms:rightSource "D"
+            ceterms:leftSource "grade";
+            ceterms:operator "in" ;
+            ceterms:rightSource
+               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
         ] .
 
 res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
@@ -685,9 +695,10 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
         ],
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "minGrade";
-            ceterms:operator "=" ;
-            ceterms:rightSource "D"
+            ceterms:leftSource "grade";
+            ceterms:operator "in" ;
+            ceterms:rightSource
+               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
         ] .
 
 res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
@@ -696,8 +707,9 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "aggregateCredits";
-            ceterms:operator "=" ;
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
             ceterms:rightSource 480
         ] ;
     ceterms:hasCondition
@@ -713,19 +725,19 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftSource "course";
-            ceterms:operator "=" ;
+            ceterms:operator "is" ;
             ceterms:rightSource res:6dc96db8-a61b-4288-9b8f-6730e29688fa
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftSource "course";
-            ceterms:operator "=" ;
+            ceterms:operator "is" ;
             ceterms:rightSource res:57f9795d-1b1e-4986-9e48-1987719dabc5
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftSource "course";
-            ceterms:operator "=" ;
+            ceterms:operator "is" ;
             ceterms:rightSource res:e4232cef-9f7d-48cb-9847-08901d4bf99e
         ],
         [
@@ -758,15 +770,16 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "courseCredits";
-            ceterms:operator "=" ;
-            ceterms:rightSource "180"
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
+            ceterms:rightSource 180
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "scqfLevel";
-            ceterms:operator "=" ;
-            ceterms:rightSource 9
+            ceterms:leftSource "creditLevel";
+            ceterms:operator "is" ;
+            ceterms:rightSource "scqfLevel:9"
         ] .
 
 res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
@@ -775,13 +788,14 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "courseCredits";
-            ceterms:operator "=" ;
-            ceterms:rightSource "90"
+            ceterms:action <Sum> ;
+            ceterms:leftSource "creditValue";
+            ceterms:operator ">=" ;
+            ceterms:rightSource 90
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "scqfLevel";
-            ceterms:operator "=" ;
-            ceterms:rightSource 10
+            ceterms:leftSource "creditLevel";
+            ceterms:operator "is" ;
+            ceterms:rightSource "scqfLevel:10"
         ] .
