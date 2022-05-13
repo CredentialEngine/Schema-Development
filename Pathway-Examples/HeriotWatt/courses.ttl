@@ -1,0 +1,284 @@
+@prefix ceterms: <https://purl.org/ctdl/terms/> .
+@prefix ceasn: <https://purl.org/ctdlasn/terms/> .
+@prefix qdata: <https://credreg.net/qdata/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <http://example.org/resources/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix scqflevel: <http://example.edu/scqf/levels/> .
+@prefix scqfcredits: <http://example.edu/scqf/credits/> .
+@prefix hwusubjects: <http://example.edu/hwu/subjects/> .
+
+#=============#
+# Course Data #
+#=============#
+res:2640de62-c440-46e3-8638-adfe187a7512 a ceterms:Course ;
+	ceterms:name "Logic and Proof"@en ;
+	ceterms:codedNotation "F17LP" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280617 .
+
+res:b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69 a ceterms:Course ;
+	ceterms:name "Introduction to Interaction Design"@en ;
+	ceterms:codedNotation "F27ID" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280627 .
+
+res:f36868ea-9e76-4fb1-b53e-eecb837ba9d6 a ceterms:Course ;
+	ceterms:name "Praxis"@en ;
+	ceterms:codedNotation "F27PX" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280627 .
+
+res:183a1296-464c-4fa0-a93f-e5c0e6f1d905 a ceterms:Course ;
+	ceterms:name "Software Development 1"@en ;
+	ceterms:codedNotation "F27SA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280627 .
+
+res:87de039c-3147-4082-8601-1c6e78376605 a ceterms:Course ;
+	ceterms:name "Discrete Mathematics"@en ;
+	ceterms:codedNotation "F17SC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280617 .
+
+res:ff83f280-260d-4479-aac8-ce5030f7748a a ceterms:Course ;
+	ceterms:name "Introduction to Computer Systems"@en ;
+	ceterms:codedNotation "F27CS" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280627 .
+
+res:135a6735-7af0-4ea1-842a-401b27371b93 a ceterms:Course ;
+	ceterms:name "Software Development 2"@en ;
+	ceterms:codedNotation "F27SB" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280627 .
+
+res:7ab9e8bb-1436-4927-a05e-271d4f7e29aa a ceterms:Course ;
+	ceterms:name "Web Design and Databases"@en ;
+	ceterms:codedNotation "F27WD" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280627 .
+
+res:37f468ab-2366-4b1f-9d44-02825fce9773 a ceterms:Course ;
+	ceterms:name "User-Centered Experience Design"@en ;
+	ceterms:codedNotation "F28ED" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:be67a3a4-def2-49e2-b9b1-8b392876bbd1 a ceterms:Course ;
+	ceterms:name "Programming Languages"@en ;
+	ceterms:codedNotation "F28PL" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:b3c50cf8-fe0d-4807-8609-d68822c62df6 a ceterms:Course ;
+	ceterms:name "Introduction to Data Structures"@en ;
+	ceterms:codedNotation "F28SG" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:301a0e59-7714-4d04-a014-47e866a30dd7 a ceterms:Course ;
+	ceterms:name "Web Programming"@en ;
+	ceterms:codedNotation "F28WP" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:817d9096-fc12-4e65-a9a6-2922e6f166a2 a ceterms:Course ;
+	ceterms:name "Data Structures and Algorithms"@en ;
+	ceterms:codedNotation "F28DA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:e2fa94fe-5df0-462f-9bb9-c12c04976a33 a ceterms:Course ;
+	ceterms:name "Database Management Systems"@en ;
+  	ceterms:codedNotation "F28DM" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:92bca3a8-79d3-4d48-b7e4-0c23e3540b55 a ceterms:Course ;
+	ceterms:name "Hardware-Software Interface"@en ;
+  	ceterms:codedNotation "F28HS" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:3eb8fcee-aae7-451c-9393-85ce3a97bb57 a ceterms:Course ;
+	ceterms:name "Introduction to Software Engineering"@en ;
+  	ceterms:codedNotation "F28SD" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:baf57dca-a2f1-4a20-a8f5-543c1702e9cb a ceterms:Course ;
+	ceterms:name "AI and Intelligent Agents"@en ;
+  	ceterms:codedNotation "F29AI" ;
+  ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:342fa4bf-5ac9-4d3e-abcd-1ae372951ac2 a ceterms:Course ;
+	ceterms:name "Data Communications & Networking"@en ;
+  	ceterms:codedNotation "F29DC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280628 .
+
+res:3b3b44b5-e1d3-461d-883b-26de906b4f50 a ceterms:Course ;
+	ceterms:name "Foundations 1"@en ;
+  	ceterms:codedNotation "F29FA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:2e271965-a4d8-4967-9dfc-9aec45447c4e a ceterms:Course ;
+	ceterms:name "Software Engineering"@en ;
+  	ceterms:codedNotation "F29SO" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:70562fd4-daec-4e93-acbc-03d446c01b17 a ceterms:Course ;
+	ceterms:name "Foundations 2"@en ;
+  	ceterms:codedNotation "F29FB" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:9c5d07ec-8baa-4847-b05f-65e6ea99d15d a ceterms:Course ;
+	ceterms:name "Operating Systems and Concurrency"@en ;
+  	ceterms:codedNotation "F29OC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:008208c3-0084-49e2-9ca2-fe1d0ff9c65d a ceterms:Course ;
+	ceterms:name "Language Processors"@en ;
+  	ceterms:codedNotation "F29LP" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:a5993b69-e780-4246-9b55-19e2afb5fc07 a ceterms:Course ;
+	ceterms:name "Professional Development"@en ;
+  	ceterms:codedNotation "F29PD" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+ res:7e680ffb-6bfe-4553-8715-59718620fb13 a ceterms:Course ;
+	ceterms:name "Research Methods & Requirements Engineering"@en ;
+  	ceterms:codedNotation "F20PA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280629 .
+
+res:154a4750-5531-4716-8dae-b18b5d8f2033 a ceterms:Course ;
+	ceterms:name "Bio Inspired Computation"@en ;
+  	ceterms:codedNotation "F20BC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:9dfc1ac9-fdb5-44c5-9504-bc1878ed553f a ceterms:Course ;
+	ceterms:name "Intelligent Robots"@en ;
+  	ceterms:codedNotation "F20RO" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:9290cec2-74e2-489b-bf6d-2f72df647ab0 a ceterms:Course ;
+	ceterms:name "Computer Network Security"@en ;
+  	ceterms:codedNotation "F20CN" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:843ef765-5c4c-4394-9343-b5d3590c3a5b a ceterms:Course ;
+	ceterms:name "Rigorous Method for Software Engineering"@en ;
+  	ceterms:codedNotation "F20RS" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:89f7aaae-4925-49dd-a451-a8d762e487f2 a ceterms:Course ;
+	ceterms:name "Data Mining and Machine Learning"@en ;
+  	ceterms:codedNotation "F20DL" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:8d02f98c-e49b-4f80-8456-8e4de17f0c4b a ceterms:Course ;
+	ceterms:name "Statistical Modeling and Analysis"@en ;
+  	ceterms:codedNotation "F20SA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:b6508309-a4f8-4dfb-b374-02e0aac06fdb a ceterms:Course ;
+	ceterms:name "3-D Graphics and Animation"@en ;
+  	ceterms:codedNotation "F20GA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:9ecd5ba7-1136-4d4e-aa76-437e962b3112 a ceterms:Course ;
+	ceterms:name "Information Systems Methodologies"@en ;
+  	ceterms:codedNotation "F20IF" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:c3a6ae9c-3874-42be-8358-8a01b0128412 a ceterms:Course ;
+	ceterms:name "Industrial Programming"@en ;
+  	ceterms:codedNotation "F20SC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:e2b8a9b8-8bc8-4ca9-8061-055839accd3c a ceterms:Course ;
+	ceterms:name "Design & Implementation"@en ;
+  	ceterms:codedNotation "F20PB" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:33481dc5-1079-442d-bb55-6384eb6c2767 a ceterms:Course ;
+	ceterms:name "Project Testing & Implementation"@en ;
+  	ceterms:codedNotation "F20PC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:f17018e3-0fe4-4767-b5a8-5a7badb82385 a ceterms:Course ;
+	ceterms:name "Applied Text Analytics"@en ;
+  	ceterms:codedNotation "F20AA" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:c7d10958-2182-4085-8cd0-56837f9ad48d a ceterms:Course ;
+	ceterms:name "Data Visualization and Analytics"@en ;
+  	ceterms:codedNotation "F20DV" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:9c229c49-a2db-4c84-8aa2-3a5210896932 a ceterms:Course ;
+	ceterms:name "Advanced Interaction Design"@en ;
+  	ceterms:codedNotation "F20AD" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:abe1d4b6-c3db-427f-8b81-1a1827c1a9ba a ceterms:Course ;
+	ceterms:name "e-Commerce Technology"@en ;
+  	ceterms:codedNotation "F20EC" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:c97d234b-7940-4f83-86d3-c72f22002134 a ceterms:Course ;
+	ceterms:name "Advanced Network Security"@en ;
+  	ceterms:codedNotation "F20AN" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:63ed531c-1c8a-400d-8f19-74f5bb1b2ffe a ceterms:Course ;
+	ceterms:name "Digital Forensics"@en ;
+  	ceterms:codedNotation "F20FO" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:1bcbedb4-cc54-4a94-bef5-da9bb8c16ec2 a ceterms:Course ;
+	ceterms:name "Big Data Management"@en ;
+  	ceterms:codedNotation "F20BD" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:fa79cf80-06c1-4d03-91e4-6ce5be9d60ef a ceterms:Course ;
+	ceterms:name "Computer Games Programming"@en ;
+  	ceterms:codedNotation "F20GP" ;
+  ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+res:967bd205-b759-4d20-a3ef-9d2723d08b06 a ceterms:Course ;
+	ceterms:name "Distributed and Parallel Technologies"@en ;
+  	ceterms:codedNotation "F20DP" ;
+	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
+
+
+  #============================#
+  # Credit and Credential data #
+  #============================#
+
+  res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c a ceterms:Certificate ;
+      ceterms:name "Certificate of Higher Education"@en-US .
+
+  res:e3bffc2f-0006-4f1d-b190-999befb5d717 a ceterms:Diploma ;
+      ceterms:name "Diploma of Higher Education"@en-US .
+
+  res:758be891-e53a-4ea7-990d-5b2183edde28 a ceterms:BachelorDegree ;
+      ceterms:name "Ordinary or General Degree"@en-US .
+
+  res:ba3b1c3f-d46d-4784-8ee0-68e566280617 a ceterms:ValueProfile ;
+      ceterms:creditLevelType scqflevel:7 ;
+      ceterms:creditUnitType scqfcredits: ;
+      ceterms:subject hwusubjects:Mathematics ;
+      ceterms:value 15 .
+
+  res:ba3b1c3f-d46d-4784-8ee0-68e566280627 a ceterms:ValueProfile ;
+      ceterms:creditLevelType scqflevel:7 ;
+      ceterms:creditUnitType scqfcredits: ;
+      ceterms:subject hwusubjects:ComputerScience ;
+      ceterms:value 15 .
+
+  res:ba3b1c3f-d46d-4784-8ee0-68e566280628 a ceterms:ValueProfile ;
+      ceterms:creditLevelType scqflevel:8 ;
+      ceterms:creditUnitType scqfcredits: ;
+      ceterms:subject hwusubjects:ComputerScience ;
+      ceterms:value 15 .
+
+  res:ba3b1c3f-d46d-4784-8ee0-68e566280629 a ceterms:ValueProfile ;
+      ceterms:creditLevelType scqflevel:9 ;
+      ceterms:creditUnitType scqfcredits: ;
+      ceterms:subject hwusubjects:ComputerScience ;
+      ceterms:value 15 .
+
+  res:ba3b1c3f-d46d-4784-8ee0-68e566280620 a ceterms:ValueProfile ;
+      ceterms:creditLevelType scqflevel:10 ;
+      ceterms:creditUnitType scqfcredits: ;
+      ceterms:subject hwusubjects:ComputerScience ;
+      ceterms:value 15 .
