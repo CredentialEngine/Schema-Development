@@ -720,6 +720,8 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
 
 res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
     ceterms:description "Stage 4, Semester 2 Contraint Group: [(course = \"F20PA\") AND (course = \"F20PB\") AND (course = \"F20PC\") AND (scqfLevel = 10)]" ;
+# What's this about? it's not an effective constraint as the courses are at the specified level.
+# To do, Ask Stuart, check against source docs.
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
@@ -740,12 +742,14 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
             ceterms:operator "is" ;
             ceterms:rightSource res:e4232cef-9f7d-48cb-9847-08901d4bf99e
         ],
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "scqfLevel";
-            ceterms:operator "=" ;
-            ceterms:rightSource 10
-        ] .
+# commenting out so as not to have to update
+#        [
+#            a ceterms:Constraint ;
+#            ceterms:leftSource "scqfLevel";
+#            ceterms:operator "=" ;
+#            ceterms:rightSource 10
+#        ]
+        .
 
 res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d a ceterms:ComponentCondition ;
     ceterms:description "Stage 4, Semester 2 Contraint Group: [(resit = \"yes\") AND (creditOnly = \"yes\")]" ;
