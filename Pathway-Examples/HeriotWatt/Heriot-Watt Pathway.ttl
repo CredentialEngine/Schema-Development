@@ -31,6 +31,10 @@ res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:BachelorDegree ;
 	   res:9f64ce42-8654-4b96-89e1-ea33a94c6dff ,
 	   res:3e3165cd-ed60-4854-9991-97c22754a40b .
 
+#=======================#
+# Stage Component Data  #
+#=======================#
+
 res:ad7d4f8c-5230-4002-9e44-a29568985a6f a ceterms:BasicComponent ;
   ceterms:componentCategory "Stage" ;
 	ceterms:name "Stage 4, Semester 2"@en ;
@@ -136,9 +140,9 @@ res:4d214678-4b71-4f5f-9fd5-2486282f4d30 a ceterms:BasicComponent ;
 	       res:df471a3a-8dc5-40ed-b5de-ebbbdb46008e ,
 	       res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca .
 
-#=============#
-# Course Data #
-#=============#
+#=======================#
+# Course Component Data #
+#=======================#
 res:13bcff97-0fd9-4a2d-81d6-98177333581b a ceterms:CourseComponent ;
 	ceterms:name "Logic and Proof"@en ;
   ceterms:proxyFor res:2640de62-c440-46e3-8638-adfe187a7512 .
@@ -319,6 +323,9 @@ res:5e3f543c-d89d-40bf-a4b7-38abd90a8679 a ceterms:CourseComponent ;
 	ceterms:name "Distributed and Parallel Technologies"@en ;
   ceterms:proxyFor res:967bd205-b759-4d20-a3ef-9d2723d08b06 .
 
+#=======================================#
+# Component condition & constraint Data #
+#=======================================#
 res:f39bf394-5b6e-496c-b150-589bcc607a8e a ceterms:ComponentCondition ;
     ceterms:requiredNumber 2 ;
     ceterms:description "Select 2 out of 2 conditions."@en-US ;
