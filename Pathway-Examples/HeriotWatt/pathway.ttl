@@ -12,6 +12,10 @@
 @prefix hwusubjects: <http://example.edu/hwu/subjects/> .
 @prefix hwugrades: <http://example.edu/hwu/grades/> .
 
+# To do: prefix for aggregation action concepts
+# To do: see others below.
+
+
 #===============#
 # Pathway data  #
 #===============#
@@ -21,6 +25,7 @@ res:ec071f65-2c5b-4b58-a2df-dd6287880a7a a ceterms:Pathway ;
 	ceterms:hasDestinationComponent res:1a285e3e-35ce-476a-b592-af7ae4e732a3 .
 
 res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:BachelorDegree ;
+# to do: should this be a CredentialComponent?
 	ceterms:name "Bachelor of Science in Computer Science"@en ;
 	ceterms:description "Honours Degree (inc. MA)"@en-US ;
 	ceterms:codedNotation "F291-COS" ;
@@ -482,6 +487,7 @@ res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
 res:3e3165cd-ed60-4854-9991-97c22754a40b a ceterms:ComponentCondition ;
     ceterms:description "Complete 1 out of 2 alternatives."@en-US ;
     ceterms:requiredNumber 1 ;
+# To do: ask Stuart about logicalOperator OR instead of requiredNumber
     ceterms:hasCondition
         res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 ,
         res:b653f152-b383-4d6b-b6cc-77b460c34f9e .
@@ -489,6 +495,7 @@ res:3e3165cd-ed60-4854-9991-97c22754a40b a ceterms:ComponentCondition ;
 res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
     ceterms:requiredNumber 8 ;
+# To do: ask Stuart about logicalOperator AND instead of requiredNumber
     ceterms:targetComponent
         res:13bcff97-0fd9-4a2d-81d6-98177333581b ,
         res:0954dc01-25e3-4bae-ac74-6bc7e2f22884 ,
@@ -509,6 +516,7 @@ res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
 res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
     ceterms:requiredNumber 8 ;
+    # To do: ask Stuart about logicalOperator AND instead of requiredNumber
     ceterms:targetComponent
         res:13bcff97-0fd9-4a2d-81d6-98177333581b ,
         res:0954dc01-25e3-4bae-ac74-6bc7e2f22884 ,
@@ -531,6 +539,7 @@ res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 120
@@ -568,6 +577,7 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 240
@@ -587,6 +597,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource "120"
@@ -612,6 +623,7 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
     [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 360
@@ -630,6 +642,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource "120"
@@ -708,6 +721,7 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 480
@@ -775,6 +789,7 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 180
@@ -793,6 +808,7 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
+            ceterms:requiredUnit scqfcredits: ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 90
