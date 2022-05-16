@@ -606,7 +606,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "creditLevel";
             ceterms:operator "is" ;
-            ceterms:rightSource scqfLevel:8
+            ceterms:rightSource scqflevel:8
         ],
         [
             a ceterms:Constraint ;
@@ -636,7 +636,7 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
         res:a458ca7c-fa9e-470b-830c-b9d138f4f893 .
 
 res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqfLevel = 9)]" ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqflevel = 9)]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
@@ -651,7 +651,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "creditLevel";
             ceterms:operator "is" ;
-            ceterms:rightSource "scqfLevel:9"
+            ceterms:rightSource "scqflevel:9"
         ] .
 
 res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
@@ -733,7 +733,7 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
         res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 .
 
 res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(course = \"F20PA\") AND (course = \"F20PB\") AND (course = \"F20PC\") AND (scqfLevel = 10)]" ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(course = \"F20PA\") AND (course = \"F20PB\") AND (course = \"F20PC\") AND (scqflevel = 10)]" ;
 # What's this about? it's not an effective constraint as the courses are at the specified level.
 # To do, Ask Stuart, check against source docs.
     ceterms:logicalOperator "AND" ;
@@ -759,7 +759,7 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
 # commenting out so as not to have to update
 #        [
 #            a ceterms:Constraint ;
-#            ceterms:leftSource "scqfLevel";
+#            ceterms:leftSource "scqflevel";
 #            ceterms:operator "=" ;
 #            ceterms:rightSource 10
 #        ]
@@ -783,7 +783,7 @@ res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d a ceterms:ComponentCondition ;
         ] .
 
 res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 180) AND (scqfLevel = 9)]" ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 180) AND (scqflevel = 9)]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
@@ -798,11 +798,11 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "creditLevel";
             ceterms:operator "is" ;
-            ceterms:rightSource "scqfLevel:9"
+            ceterms:rightSource "scqflevel:9"
         ] .
 
 res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 90) AND (scqfLevel = 10)]" ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 90) AND (scqflevel = 10)]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
@@ -817,5 +817,5 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "creditLevel";
             ceterms:operator "is" ;
-            ceterms:rightSource "scqfLevel:10"
+            ceterms:rightSource "scqflevel:10"
         ] .
