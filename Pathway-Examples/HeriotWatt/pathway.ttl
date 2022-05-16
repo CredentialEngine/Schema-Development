@@ -567,7 +567,7 @@ res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
             ceterms:leftSource "grade";
             ceterms:operator "in" ;
             ceterms:rightSource
-               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
+                hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] .
 
 res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
@@ -613,7 +613,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
             ceterms:leftSource "grade";
             ceterms:operator "in" ;
             ceterms:rightSource
-               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
+                hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] .
 
 
@@ -693,7 +693,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
             ceterms:leftSource "grade";
             ceterms:operator "in" ;
             ceterms:rightSource
-               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
+                hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] .
 
 res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
@@ -711,7 +711,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
             ceterms:leftSource "grade";
             ceterms:operator "in" ;
             ceterms:rightSource
-               [ hwugrades:A, hwugrades:B, hwugrades:C, hwugrades:D ]
+                hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] .
 
 res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
