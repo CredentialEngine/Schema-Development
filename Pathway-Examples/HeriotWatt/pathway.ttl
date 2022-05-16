@@ -26,12 +26,10 @@ res:ec071f65-2c5b-4b58-a2df-dd6287880a7a a ceterms:Pathway ;
 	ceterms:description "@@@"@en ;
 	ceterms:hasDestinationComponent res:1a285e3e-35ce-476a-b592-af7ae4e732a3 .
 
-res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:BachelorDegree ;
-# to do: should this be a CredentialComponent?
+res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:CredentialComponent ;
 	ceterms:name "Bachelor of Science in Computer Science"@en ;
-	ceterms:description "Honours Degree (inc. MA)"@en-US ;
-	ceterms:codedNotation "F291-COS" ;
-	ceterms:subjectWebpage <https://www.hw.ac.uk/uk/study/undergraduate/computer-science-bsc.htm> ;
+	ceterms:description "Proxy for BSc Hons in Computer Science from Heriot-Watt University"@en-US ;
+  ceterms:proxyFor res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 ;
 	ceterms:precededBy res:ad7d4f8c-5230-4002-9e44-a29568985a6f ;
 	ceterms:hasCondition
 	   res:f39bf394-5b6e-496c-b150-589bcc607a8e ,

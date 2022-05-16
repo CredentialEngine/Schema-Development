@@ -11,6 +11,84 @@
 @prefix scqfcredits: <http://example.edu/scqf/credits/> .
 @prefix hwusubjects: <http://example.edu/hwu/subjects/> .
 
+
+#=================#
+# Credential Data #
+#=================#
+
+res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 a ceterms:BachelorDegree ;
+	ceterms:name "Bachelor of Science in Computer Science"@en ;
+	ceterms:description "Degree awarded by Heriot-Watt University for successful completion of Computer Science program"@en-US ;
+  ceterms:preparationFrom  res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 ;
+  ceterms:targetPathway res:ec071f65-2c5b-4b58-a2df-dd6287880a7a .
+
+res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c a ceterms:Certificate ;
+  ceterms:description "Degree awarded by Heriot-Watt University for successful completion of stage 1 of Computer Science program"@en-US ;
+  ceterms:name "Certificate of Higher Education"@en-US .
+
+res:e3bffc2f-0006-4f1d-b190-999befb5d717 a ceterms:Diploma ;
+  ceterms:description "Degree awarded by Heriot-Watt University for successful completion of stage 2 of Computer Science program"@en-US ;
+  ceterms:name "Diploma of Higher Education"@en-US .
+
+res:758be891-e53a-4ea7-990d-5b2183edde28 a ceterms:BachelorDegree ;
+  ceterms:description "Degree awarded by Heriot-Watt University for successful completion of stage 3 of Computer Science program"@en-US ;
+  ceterms:name "Ordinary or General Degree"@en-US .
+
+#==============#
+# Program Data #
+#==============#
+res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 a ceterms:Program ;
+	ceterms:name "Bachelor of Science in Computer Science"@en ;
+	ceterms:description "Program in Computer Science offered by Heriot-Watt University as preparation for a BSc Hons Degree in Computer Science, and other qualifications."@en-US ;
+	ceterms:codedNotation "F291-COS" ;
+  ceterms:isPreparationFor res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 ;
+	ceterms:subjectWebpage <https://www.hw.ac.uk/uk/study/undergraduate/computer-science-bsc.htm> ;
+  ceterms:hasPart res:2640de62-c440-46e3-8638-adfe187a7512 ,
+        res:b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69 ,
+        res:f36868ea-9e76-4fb1-b53e-eecb837ba9d6 ,
+        res:183a1296-464c-4fa0-a93f-e5c0e6f1d905 ,
+        res:87de039c-3147-4082-8601-1c6e78376605 ,
+        res:ff83f280-260d-4479-aac8-ce5030f7748a ,
+        res:135a6735-7af0-4ea1-842a-401b27371b93 ,
+        res:7ab9e8bb-1436-4927-a05e-271d4f7e29aa ,
+        res:37f468ab-2366-4b1f-9d44-02825fce9773 ,
+        res:be67a3a4-def2-49e2-b9b1-8b392876bbd1 ,
+        res:b3c50cf8-fe0d-4807-8609-d68822c62df6 ,
+        res:301a0e59-7714-4d04-a014-47e866a30dd7 ,
+        res:817d9096-fc12-4e65-a9a6-2922e6f166a2 ,
+        res:e2fa94fe-5df0-462f-9bb9-c12c04976a33 ,
+        res:92bca3a8-79d3-4d48-b7e4-0c23e3540b55 ,
+        res:3eb8fcee-aae7-451c-9393-85ce3a97bb57 ,
+        res:baf57dca-a2f1-4a20-a8f5-543c1702e9cb ,
+        res:342fa4bf-5ac9-4d3e-abcd-1ae372951ac2 ,
+        res:2e271965-a4d8-4967-9dfc-9aec45447c4e ,
+        res:3b3b44b5-e1d3-461d-883b-26de906b4f50 ,
+        res:70562fd4-daec-4e93-acbc-03d446c01b17 ,
+        res:9c5d07ec-8baa-4847-b05f-65e6ea99d15d ,
+        res:a5993b69-e780-4246-9b55-19e2afb5fc07 ,
+        res:008208c3-0084-49e2-9ca2-fe1d0ff9c65d ,
+        res:7e680ffb-6bfe-4553-8715-59718620fb13 ,
+        res:154a4750-5531-4716-8dae-b18b5d8f2033 ,
+        res:9dfc1ac9-fdb5-44c5-9504-bc1878ed553f ,
+        res:9290cec2-74e2-489b-bf6d-2f72df647ab0 ,
+        res:843ef765-5c4c-4394-9343-b5d3590c3a5b ,
+        res:89f7aaae-4925-49dd-a451-a8d762e487f2 ,
+        res:8d02f98c-e49b-4f80-8456-8e4de17f0c4b ,
+        res:b6508309-a4f8-4dfb-b374-02e0aac06fdb ,
+        res:9ecd5ba7-1136-4d4e-aa76-437e962b3112 ,
+        res:c3a6ae9c-3874-42be-8358-8a01b0128412 ,
+        res:e2b8a9b8-8bc8-4ca9-8061-055839accd3c ,
+        res:33481dc5-1079-442d-bb55-6384eb6c2767 ,
+        res:f17018e3-0fe4-4767-b5a8-5a7badb82385 ,
+        res:c7d10958-2182-4085-8cd0-56837f9ad48d ,
+        res:9c229c49-a2db-4c84-8aa2-3a5210896932 ,
+        res:abe1d4b6-c3db-427f-8b81-1a1827c1a9ba ,
+        res:c97d234b-7940-4f83-86d3-c72f22002134 ,
+        res:63ed531c-1c8a-400d-8f19-74f5bb1b2ffe ,
+        res:1bcbedb4-cc54-4a94-bef5-da9bb8c16ec2 ,
+        res:fa79cf80-06c1-4d03-91e4-6ce5be9d60ef ,
+        res:967bd205-b759-4d20-a3ef-9d2723d08b06 .
+
 #=============#
 # Course Data #
 #=============#
@@ -240,45 +318,36 @@ res:967bd205-b759-4d20-a3ef-9d2723d08b06 a ceterms:Course ;
 	ceterms:creditValue res:ba3b1c3f-d46d-4784-8ee0-68e566280620 .
 
 
-  #============================#
-  # Credit and Credential data #
-  #============================#
+  #=============#
+  # Credit data #
+  #=============#
 
-  res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c a ceterms:Certificate ;
-      ceterms:name "Certificate of Higher Education"@en-US .
+res:ba3b1c3f-d46d-4784-8ee0-68e566280617 a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:7 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:Mathematics ;
+    ceterms:value 15 .
 
-  res:e3bffc2f-0006-4f1d-b190-999befb5d717 a ceterms:Diploma ;
-      ceterms:name "Diploma of Higher Education"@en-US .
+res:ba3b1c3f-d46d-4784-8ee0-68e566280627 a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:7 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
 
-  res:758be891-e53a-4ea7-990d-5b2183edde28 a ceterms:BachelorDegree ;
-      ceterms:name "Ordinary or General Degree"@en-US .
+res:ba3b1c3f-d46d-4784-8ee0-68e566280628 a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:8 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
 
-  res:ba3b1c3f-d46d-4784-8ee0-68e566280617 a ceterms:ValueProfile ;
-      ceterms:creditLevelType scqflevel:7 ;
-      ceterms:creditUnitType scqfcredits: ;
-      ceterms:subject hwusubjects:Mathematics ;
-      ceterms:value 15 .
+res:ba3b1c3f-d46d-4784-8ee0-68e566280629 a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:9 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
 
-  res:ba3b1c3f-d46d-4784-8ee0-68e566280627 a ceterms:ValueProfile ;
-      ceterms:creditLevelType scqflevel:7 ;
-      ceterms:creditUnitType scqfcredits: ;
-      ceterms:subject hwusubjects:ComputerScience ;
-      ceterms:value 15 .
-
-  res:ba3b1c3f-d46d-4784-8ee0-68e566280628 a ceterms:ValueProfile ;
-      ceterms:creditLevelType scqflevel:8 ;
-      ceterms:creditUnitType scqfcredits: ;
-      ceterms:subject hwusubjects:ComputerScience ;
-      ceterms:value 15 .
-
-  res:ba3b1c3f-d46d-4784-8ee0-68e566280629 a ceterms:ValueProfile ;
-      ceterms:creditLevelType scqflevel:9 ;
-      ceterms:creditUnitType scqfcredits: ;
-      ceterms:subject hwusubjects:ComputerScience ;
-      ceterms:value 15 .
-
-  res:ba3b1c3f-d46d-4784-8ee0-68e566280620 a ceterms:ValueProfile ;
-      ceterms:creditLevelType scqflevel:10 ;
-      ceterms:creditUnitType scqfcredits: ;
-      ceterms:subject hwusubjects:ComputerScience ;
-      ceterms:value 15 .
+res:ba3b1c3f-d46d-4784-8ee0-68e566280620 a ceterms:ValueProfile ;
+    ceterms:creditLevelType scqflevel:10 ;
+    ceterms:creditUnitType scqfcredits: ;
+    ceterms:subject hwusubjects:ComputerScience ;
+    ceterms:value 15 .
