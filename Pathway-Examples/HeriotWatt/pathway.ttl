@@ -12,10 +12,8 @@
 @prefix hwusubjects: <http://example.edu/hwu/subjects/> .
 @prefix hwugrades: <http://example.edu/hwu/grades/> .
 
-# To do: test import into triple store & query results
 # To do: prefix for aggregation action concepts
 # To do: see others below.
-
 
 
 #===============#
