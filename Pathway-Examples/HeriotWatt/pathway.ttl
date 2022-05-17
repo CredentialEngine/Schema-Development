@@ -586,7 +586,7 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
             ceterms:operator "=" ;
             ceterms:rightSource "yes"
         ] ;
-    ceterms:hasCondition res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 .
+     ceterms:hasCondition res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 .
 
 res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
     ceterms:description "Stage 2, Semester 2 Contraint Group: [(courseNum = 7) AND (minGrade = \"D\")]" ;
@@ -627,13 +627,13 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
             ceterms:rightSource 360
     ] ;
     ceterms:hasCondition
-        res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 ,
+        res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 ,
         res:41016408-ec54-4186-8143-eabe3503ad2a ,
         res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 ,
         res:f0550ade-e01d-489d-8df4-3f188a8cb318 ,
         res:a458ca7c-fa9e-470b-830c-b9d138f4f893 .
 
-res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
+res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
     ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqflevel = 9)]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
