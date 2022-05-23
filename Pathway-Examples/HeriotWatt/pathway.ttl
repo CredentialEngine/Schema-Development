@@ -21,12 +21,11 @@
 #===============#
 res:ec071f65-2c5b-4b58-a2df-dd6287880a7a a ceterms:Pathway ;
 	ceterms:name "BSCH - Bachelor of Science Honours"@en ;
-	ceterms:description "@@@"@en ;
 	ceterms:hasDestinationComponent res:1a285e3e-35ce-476a-b592-af7ae4e732a3 .
 
 res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:CredentialComponent ;
-	ceterms:name "Bachelor of Science in Computer Science"@en ;
-	ceterms:description "Proxy for BSc Hons in Computer Science from Heriot-Watt University"@en-US ;
+	ceterms:name "BSc (hons) in Computer Science"@en ;
+	ceterms:description "Proxy for Bachellor of Science Honours Degree in Computer Science from Heriot-Watt University"@en-US ;
   ceterms:proxyFor res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 ;
 	ceterms:precededBy res:ad7d4f8c-5230-4002-9e44-a29568985a6f ;
 	ceterms:hasCondition
@@ -56,7 +55,12 @@ res:ad7d4f8c-5230-4002-9e44-a29568985a6f a ceterms:BasicComponent ;
 	       res:dffec39a-b180-4290-9084-4b00a06d5a24 ,
 	       res:860be930-0a1f-4b36-99ec-ae16f63f251d ,
 	       res:5e3f543c-d89d-40bf-a4b7-38abd90a8679 ;
-	ceterms:hasCondition res:71099201-e520-46ed-aae1-84a56a924ced .
+	ceterms:hasCondition res:71099201-e520-46ed-aae1-84a56a924ced ,
+          res:936cb9fc-e111-4289-8f41-468834eb687b ,
+          res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d ,
+          res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 ,
+          res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 .
+
 
 res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc a ceterms:BasicComponent ;
   ceterms:componentCategory "Stage" ;
@@ -85,7 +89,12 @@ res:bdb06663-8983-40b1-beee-0a77049b3360 a ceterms:BasicComponent ;
 	       res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85 ,
 	       res:650d92bf-1cb4-4542-b1bc-be6edf856011 ,
 	       res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed ;
-	ceterms:hasCondition res:369aeac0-72fb-4b2c-ae03-c13f643040b1 .
+	ceterms:hasCondition
+          res:369aeac0-72fb-4b2c-ae03-c13f643040b1 ,
+          res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 ,
+          res:41016408-ec54-4186-8143-eabe3503ad2a ,
+          res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 ,
+          res:f0550ade-e01d-489d-8df4-3f188a8cb318 .
 
 res:75d40ceb-d2a2-458a-b35d-e89b709d0fe1 a ceterms:BasicComponent ;
     ceterms:componentCategory "Stage" ;
@@ -108,7 +117,9 @@ res:41ab6ab88-361f-42c3-bac6-f373079e521c a ceterms:BasicComponent ;
 	       res:9e3fa244-9911-4649-941e-f3f9d4d2a0f9 ,
 	       res:842902c1-7dbe-44ec-8581-3fdcb4cb95eb ,
 	       res:2d793d46-8e58-45d4-aba6-c6a16b131d03 ;
-	ceterms:hasCondition res:a0e09db1-0008-436c-8631-42f67814f0e6 .
+	ceterms:hasCondition
+         res:a0e09db1-0008-436c-8631-42f67814f0e6 ,
+         res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 .
 
 res:67b870ed-b0e6-4a2b-a951-568876d1e6ff a ceterms:BasicComponent ;
     ceterms:componentCategory "Stage" ;
@@ -131,7 +142,9 @@ res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f a ceterms:BasicComponent ;
 	       res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea ,
 	       res:3f68f209-ce18-416e-8fa1-44721cf7cfcb ,
 	       res:06271243-bff2-461f-8777-b2c945338804 ;
-	ceterms:hasCondition res:1fa863f0-9411-479a-90eb-cb529e720ac3 .
+	ceterms:hasCondition
+         res:1fa863f0-9411-479a-90eb-cb529e720ac3 ,
+         res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 .
 
 
 res:4d214678-4b71-4f5f-9fd5-2486282f4d30 a ceterms:BasicComponent ;
@@ -415,7 +428,7 @@ res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 a ceterms:ComponentCondition ;
             ceterms:comparitor "=" ;
             ceterms:rightSource "yes"
         ] ;
-# Q: I don't think we have discussed this
+# Q: I don't think we have discussed this; it could be the destination node of a distinct pathway
     ceterms:completionAward res:758be891-e53a-4ea7-990d-5b2183edde28 .
 
 res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
@@ -494,7 +507,6 @@ res:3e3165cd-ed60-4854-9991-97c22754a40b a ceterms:ComponentCondition ;
 res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
     ceterms:requiredNumber 8 ;
-# To do: ask Stuart about logicalOperator AND as well as requiredNumber
     ceterms:targetComponent
         res:13bcff97-0fd9-4a2d-81d6-98177333581b ,
         res:0954dc01-25e3-4bae-ac74-6bc7e2f22884 ,
@@ -534,6 +546,7 @@ res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
 
 res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 1, Semester 2 attainment and for progression to Stage 2."@en-US ;
+    ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
@@ -543,28 +556,29 @@ res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
         ],
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
-            ceterms:operator "=" ;
-            ceterms:rightSource "yes"
-        ] ;
-    ceterms:hasCondition res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 .
+            ceterms:operator "is" ;
+            ceterms:rightSource "1"
+        ]  .
 
 res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
     ceterms:description "Stage 1, Semester 2 Contraint Group: [(courseNum = 7) AND (minGrade = \"D\")]" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:requiredNumber 7 ;
+    ceterms:targetComponent
+        res:13bcff97-0fd9-4a2d-81d6-98177333581b ,
+        res:0954dc01-25e3-4bae-ac74-6bc7e2f22884 ,
+        res:f884ff7e-ceb8-4d8e-af73-52a9a307dbca ,
+        res:66a38893-e0b1-400c-9ad3-9234c7511c6b ,
+        res:ae17867c-ae0e-4eb6-b35f-d7e1c781bcea ,
+        res:3f68f209-ce18-416e-8fa1-44721cf7cfcb ,
+        res:06271243-bff2-461f-8777-b2c945338804 ;
     ceterms:hasConstraint
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "courseNum";
-            ceterms:operator "=" ;
-            ceterms:rightSource "7"
-        ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftSource "grade";
@@ -586,7 +600,7 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
@@ -594,12 +608,11 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "yes"
-        ] ;
-     ceterms:hasCondition res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 .
+            ceterms:rightSource "1"
+        ]  .
 
 res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 2, Semester 2 Contraint Group: [(courseNum = 7) AND (minGrade = \"D\")]" ;
+    ceterms:description "Stage 2, Semester 2 Contraint Group: [(courseNum = 8) AND (minGrade = \"D\")]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
@@ -611,7 +624,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
@@ -632,10 +645,17 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
 
 res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 3, Semester 2 attainment and for progression to Stage 4."@en-US ;
+    ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "resitAllowed";
+            ceterms:operator "=" ;
+            ceterms:rightSource "1"
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
@@ -645,18 +665,18 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
                 ceterms:leftSource "creditValue";
                 ceterms:operator ">=" ;
                 ceterms:rightSource 360
-        ] ;
-    ceterms:hasCondition
-        res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 ,
-        res:41016408-ec54-4186-8143-eabe3503ad2a ,
-        res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 ,
-        res:f0550ade-e01d-489d-8df4-3f188a8cb318 ,
-        res:a458ca7c-fa9e-470b-830c-b9d138f4f893 .
+        ] .
 
 res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
     ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqflevel = 9)]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
+        [
+            a ceterms:Constraint ;
+            ceterms:leftSource "resitAllowed";
+            ceterms:operator "=" ;
+            ceterms:rightSource "1"
+        ]  ,
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
@@ -666,7 +686,7 @@ res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
@@ -675,6 +695,28 @@ res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
             ceterms:leftSource "creditLevel";
             ceterms:operator "is" ;
             ceterms:rightSource "scqflevel:9"
+        ] .
+
+res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(course = \"F29SO\") AND (course = \"F29PD\") AND (minGrade = \"D\")]" ;
+    ceterms:requiredNumber 2 ;
+    ceterms:targetComponent
+         res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed ,
+         res:3ab6530d-9a21-4123-8fd4-8614dff431f0 ;
+    ceterms:logicalOperator "AND" ;
+    ceterms:hasConstraint
+        [
+            a ceterms:Constraint ;
+            ceterms:leftSource "grade";
+            ceterms:operator "in" ;
+            ceterms:rightSource
+                hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftSource "resitAllowed";
+            ceterms:operator "=" ;
+            ceterms:rightSource "0"
         ] .
 
 res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
@@ -690,60 +732,46 @@ res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "firstSit";
+            ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "yes"
-        ] .
-
-res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 3, Semester 2 Contraint Group: [(course = \"F29SO\") AND (course = \"F29PD\") AND (minGrade = \"D\")]" ;
-    ceterms:logicalOperator "AND" ;
-    ceterms:hasConstraint
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "course";
-            ceterms:operator "is" ;
-            ceterms:rightSource res:3ab6530d-9a21-4123-8fd4-8614dff431f0
-        ] ,
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "course";
-            ceterms:operator "is" ;
-            ceterms:rightSource res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed
-        ] ,
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "grade";
-            ceterms:operator "in" ;
-            ceterms:rightSource
-                hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
+            ceterms:rightSource "0"
         ] .
 
 res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseNum = 6) AND (minGrade = \"D\")]" ;
+    ceterms:description "Stage 3, Semester 2 Contraint Group: [(minGrade = \"D\") in 6 of 8 courses]" ;
+    ceterms:requiredNumber 6 ;
+    ceterms:targetComponent
+        res:c5af32f8-dafc-40f1-b868-64ffd2e39b45 ,
+        res:b3f0eb97-f67e-4607-80b8-cb1b13f82c85 ,
+        res:650d92bf-1cb4-4542-b1bc-be6edf856011 ,
+        res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed ,
+        res:b17fe8a9-e278-4462-8d69-75415a898739 ,
+	      res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4 ,
+ 	      res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650 ,
+ 	      res:3ab6530d-9a21-4123-8fd4-8614dff431f0 ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "courseNum";
-            ceterms:operator "=" ;
-            ceterms:rightSource 6
-        ],
         [
             a ceterms:Constraint ;
             ceterms:leftSource "grade";
             ceterms:operator "in" ;
             ceterms:rightSource
                 hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
+        ] ,
+        [
+            a ceterms:Constraint ;
+            ceterms:leftSource "resitAllowed";
+            ceterms:operator "=" ;
+            ceterms:rightSource "0"
         ] .
 
 res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(resitAllowed = \"yes\") AND (creditOnly = \"yes\")]" ;
+    ceterms:description "Stage 4, Semester 2 Contsraint Group 19: total scqfCredits ≥ 480" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
@@ -753,67 +781,37 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
             ceterms:rightSource 480
-        ] ;
-    ceterms:hasCondition
-        res:936cb9fc-e111-4289-8f41-468834eb687b ,
-        res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d ,
-        res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 ,
-        res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 .
+        ] .
 
 res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(course = \"F20PA\") AND (course = \"F20PB\") AND (course = \"F20PC\") AND (scqflevel = 10)]" ;
-# What's this about? it's not an effective constraint as the courses are at the specified level.
-# To do, Ask Stuart, check against source docs.
-    ceterms:logicalOperator "AND" ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group 20: [(required courses = F20PA, F20PB and F20PC" ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "course";
-            ceterms:operator "is" ;
-            ceterms:rightSource res:6dc96db8-a61b-4288-9b8f-6730e29688fa
+            ceterms:leftSource "resit";
+            ceterms:operator "=" ;
+            ceterms:rightSource 0
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "course";
-            ceterms:operator "is" ;
-            ceterms:rightSource res:57f9795d-1b1e-4986-9e48-1987719dabc5
-        ] ,
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "course";
-            ceterms:operator "is" ;
-            ceterms:rightSource res:e4232cef-9f7d-48cb-9847-08901d4bf99e
-        ],
-# commenting out so as not to have to update
-#        [
-#            a ceterms:Constraint ;
-#            ceterms:leftSource "scqflevel";
-#            ceterms:operator "=" ;
-#            ceterms:rightSource 10
-#        ]
-        .
+            ceterms:leftSource "requiredCourse";
+            ceterms:operator "all of" ;
+            ceterms:rightSource
+                res:6dc96db8-a61b-4288-9b8f-6730e29688fa ,
+                res:57f9795d-1b1e-4986-9e48-1987719dabc5 ,
+                res:e4232cef-9f7d-48cb-9847-08901d4bf99e
+        ] .
 
-res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(resit = \"yes\") AND (creditOnly = \"yes\")]" ;
+res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
+    ceterms:description "Stage 4, Semester 2 Contraint Group 22: [(courseCredits = 180) AND (scqflevel = 9)]" ;
     ceterms:logicalOperator "AND" ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
             ceterms:leftSource "resit";
             ceterms:operator "=" ;
-            ceterms:rightSource "yes"
+            ceterms:rightSource 0
         ] ,
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "creditOnly";
-            ceterms:operator "=" ;
-            ceterms:rightSource "yes"
-        ] .
-
-res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 180) AND (scqflevel = 9)]" ;
-    ceterms:logicalOperator "AND" ;
-    ceterms:hasConstraint
         [
             a ceterms:Constraint ;
             ceterms:action <Sum> ;
@@ -823,7 +821,7 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
@@ -840,6 +838,12 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
+            ceterms:leftSource "resit";
+            ceterms:operator "=" ;
+            ceterms:rightSource 0
+        ] ,
+        [
+            a ceterms:Constraint ;
             ceterms:action <Sum> ;
             ceterms:leftSource "creditValue";
             ceterms:operator ">=" ;
@@ -847,7 +851,7 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "unit";
+            ceterms:leftSource "creditUnit";
             ceterms:operator "is" ;
             ceterms:rightSource scqfcredits:
         ] ,
