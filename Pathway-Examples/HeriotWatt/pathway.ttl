@@ -564,7 +564,7 @@ res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "is" ;
-            ceterms:rightSource "1"
+            ceterms:rightSource 1
         ]  .
 
 res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
@@ -608,7 +608,7 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "1"
+            ceterms:rightSource 1
         ]  .
 
 res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
@@ -651,7 +651,7 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "1"
+            ceterms:rightSource 1
         ] ,
         [
             a ceterms:Constraint ;
@@ -675,7 +675,7 @@ res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "1"
+            ceterms:rightSource 1
         ]  ,
         [
             a ceterms:Constraint ;
@@ -716,7 +716,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "0"
+            ceterms:rightSource 0
         ] .
 
 res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
@@ -734,7 +734,7 @@ res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "0"
+            ceterms:rightSource 0
         ] .
 
 res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
@@ -762,7 +762,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
-            ceterms:rightSource "0"
+            ceterms:rightSource 0
         ] .
 
 res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
@@ -788,13 +788,13 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
             ceterms:rightSource 0
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "requiredCourse";
+            ceterms:leftSource "courseID";
             ceterms:operator "all of" ;
             ceterms:rightSource
                 res:6dc96db8-a61b-4288-9b8f-6730e29688fa ,
@@ -808,7 +808,7 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
             ceterms:rightSource 0
         ] ,
@@ -838,7 +838,7 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource "resitAllowed";
             ceterms:operator "=" ;
             ceterms:rightSource 0
         ] ,
