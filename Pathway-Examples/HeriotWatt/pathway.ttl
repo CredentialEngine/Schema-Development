@@ -30,9 +30,9 @@ res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:CredentialComponent ;
 	ceterms:precededBy res:ad7d4f8c-5230-4002-9e44-a29568985a6f ;
 	ceterms:hasCondition
 	   res:f39bf394-5b6e-496c-b150-589bcc607a8e ,
-	   res:1b36dde9-dfe2-4c21-8de4-756e8d39ee6e ,
-	   res:9f64ce42-8654-4b96-89e1-ea33a94c6dff ,
-	   res:3e3165cd-ed60-4854-9991-97c22754a40b .
+     res:b653f152-b383-4d6b-b6cc-77b460c34f9e ,
+     res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 ,
+     res:82a4f31d-d152-407d-9bd1-3d7d24c440ef .
 
 #=======================#
 # Stage Component Data  #
@@ -403,13 +403,6 @@ res:72a6c8bf-1bf6-418d-a57b-af94f529755c a ceterms:ComponentCondition ;
         res:468297f8-7ba0-4cda-b31e-327df19b01d7 .
 
 
-res:1b36dde9-dfe2-4c21-8de4-756e8d39ee6e a ceterms:ComponentCondition ;
-    ceterms:description "Select 1 out of 2 alternatives."@en-US ;
-    ceterms:requiredNumber 1 ;
-    ceterms:hasCondition
-        res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 ,
-        res:82a4f31d-d152-407d-9bd1-3d7d24c440ef .
-
 res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
     ceterms:requiredNumber 8 ;
@@ -450,13 +443,6 @@ res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
         ceterms:rightSource "No"
     ] .
 
-res:9f64ce42-8654-4b96-89e1-ea33a94c6dff a ceterms:ComponentCondition ;
-    ceterms:description "Complete 1 out of 2 alternatives."@en-US ;
-    ceterms:requiredNumber 1 ;
-    ceterms:hasCondition
-        res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 ,
-        res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 .
-
 res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
     ceterms:requiredNumber 8 ;
@@ -496,13 +482,6 @@ res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
         ceterms:rightSource "No"
     ] .
 
-res:3e3165cd-ed60-4854-9991-97c22754a40b a ceterms:ComponentCondition ;
-    ceterms:description "Complete 1 out of 2 alternatives."@en-US ;
-    ceterms:requiredNumber 1 ;
-# To do: ask Stuart about logicalOperator OR instead of requiredNumber
-    ceterms:hasCondition
-        res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 ,
-        res:b653f152-b383-4d6b-b6cc-77b460c34f9e .
 
 res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
