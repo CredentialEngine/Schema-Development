@@ -12,7 +12,7 @@ Working Docs in Google Drive:
 
 Required documentation
 - [ ] Proposal to TAG (Google Doc)
-- [x] [terms proposal](proposal.txt) (txt)
+- [ ] Draft [terms proposal](proposal.txt) (txt)
 - [ ] Domain model addtions (diagrams.net)
 - [ ] Examples:
  1. json-ld, diagram
