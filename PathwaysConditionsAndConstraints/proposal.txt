@@ -90,6 +90,7 @@ ceterms:prerequisite
   Domain: ceterms:Course, ceterms:LearningProgram ???
   Range: ceterms:Course, ceterms:LearningProgram ???
 
+
 ### Modify properties (REMOVE):
 
 ceterms:RuleSet (unstable)
