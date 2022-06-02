@@ -6,6 +6,20 @@ ceterms:Constraint
   Label: Constraint
   Definition: Resource that identifies the parameters defining a limitation or restriction applicable to candidate pathway components.
   
+### New Class:
+
+ceterms:Rule
+  Label: Rule
+  Definition: Abstract class of executable constraints.
+  Comment: An instance of the Rule class is a deployable machine solution for executing pathway constraints such as XPath, JSONPath, ShEx, SHACL, BPMN, XPDL and BPEL. 
+  
+
+### New Property
+
+ceterms:comparator
+  Definition: Type of symbol that denotes an operator in a constraint expression such as "gteq" (greater than or equal to), "eq" (equal to), "lt" (less than), "isAllOf" (is all of), "isAnyOf" (is any of); select from an existing enumeration of such types.
+  Domain: ceterms:Constraint
+  Range: ceterms:Concept (Select from a controlled vocabulary)
 
 ### New Property
 
@@ -27,13 +41,6 @@ ceterms:logicalOperator
   Definition: Type that denotes a logical operation such as "AND", "OR", "NOT"; select from an existing enumeration of such types.
   Domain: ceterms:ComponentCondition
   Comment: Only a single instance of logicalOperator is allowed defining operations on two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
-  Range: ceterms:Concept (Select from a controlled vocabulary)
-
-### New Property
-
-ceterms:comparator
-  Definition: Type of symbol that denotes an operator in a constraint expression such as "gteq" (greater than or equal to), "eq" (equal to), "lt" (less than), "isAllOf" (is all of), "isAnyOf" (is any of); select from an existing enumeration of such types.
-  Domain: ceterms:Constraint
   Range: ceterms:Concept (Select from a controlled vocabulary)
 
 ### New Property
