@@ -66,51 +66,93 @@ ceterms:rightAction
   Range: ceterms:Concept (Select from a controlled vocabulary)
 
 
-### Modify Properties (ADD)
+### Modify Existing Properties:
 
-ceterms:hasCondition
-  Domain: ceterms:ComponentCondition
-  Range: ceterms:ComponentCondition
+Add:
+URL: ceterms:hasCondition
+Domain: ceterms:ComponentCondition
+Range: ceterms:ComponentCondition
 
-ceterms:hasPart
-  Domain: ceterms:Pathway
-  Range: ceterms:PathwayComponent (subclasses)
-  InverseOf: ceterms:isPartOf
+Add:
+Subject: ceterms:hasPart
+Predicate: schema:domainIncludes
+Object: ceterms:Pathway
 
-ceasn:hasChild
-  InverseOf: ceasn:isChildOf
+Add:
+Subject: ceterms:hasPart
+Predicate: schema:rangeIncludes
+Object: ceterms:PathwayComponent subclasses
 
-ceasn:isChildOf
-  InverseOf: ceasn:hasChild
+Add:
+Subject: ceterms:isPartOf
+Predicate: schema:domainIncludes
+Object: ceterms:PathwayComponent subclasses
 
-ceterms:isPartOf
-  Domain: ceterms:PathwayComponent (subclasses)
-  Range: ceterms:Pathway
-  InverseOf: ceterms:hasPart
+Add:
+Subject: ceterms:hasPart
+Predicate: owl:inverseOf
+Object: ceterms:isPartOf
 
-ceterms:precedes
-  Domain: skos:Concept
-  Range: skos:Concept, ceterms:PathwayComponent (subclasses)
-  InverseOf: ceterms:precededBy
+Add:
+Subject: ceterms:isPartOf
+Predicate: owl:inverseOf
+Object: ceterms:hasPart
 
-ceterms:prerequisite
-  Domain: ceterms:Course, ceterms:LearningProgram ???
-  Range: ceterms:Course, ceterms:LearningProgram ???
+Add:
+Subject: ceasn:hasChild
+Predicate: owl:inverseOf
+Object: ceasn:isChildOf
 
+URL: ceterms:componentCondition
+Domain: ceterms:ComponentCondition
+Range: ceterms:ComponentCondition
 
-### Modify properties (REMOVE):
+Add:
+Subject: ceasn:isChildOf
+Predicate: owl:inverseOf
+Object: ceasn:hasChild
 
-ceterms:RuleSet (unstable)
+Add:
+Subject: ceterms:precedes
+Predicate: owl:inverseOf
+Object: ceterms:precededBy
 
-ceterms:RuleSetProfile (unstable)
+Add:
+Subject: ceterms:precedes
+Predicate: schema:domainIncludes
+Object: skos:Concept
 
-ceterms:alternativeRuleSet (unstable)
+Add:
+Subject: ceterms:precedes
+Predicate: schema:rangeIncludes
+Object: skos:Concept
 
-ceasn:hasChild
-  Domain: ceterms:Pathway
+Remove:
+Subject: ceasn:hasChild
+Predicate: schema:domainIncludes
+Object: ceterms:Pathway
 
-ceterms:prerequisite
-  Domain: ceterms:PathwayComponent (subclasses)
+Remove:
+URL: ceterms:prerequisite
+Predicate: schema:domainIncludes
+Object: ceterms:PathwayComponent subclasses
 
-ceterms:precedes
-  ceterms:PathwayComponent (subclasses)
+Remove:
+URL: ceterms:precedes
+Predicate: schema:domainIncludes
+Object: ceterms:PathwayComponent subclasses
+
+Drop Unstable Terms:
+
+URL: ceterms:RuleSet (unstable)
+
+URL: ceterms:RuleSetProfile (unstable)
+
+URL: ceterms:alternativeRuleSet (unstable)
+
+Not Used:
+These items were part of this proposal at one point, but have been removed:
+
+URL: ceterms:prerequisite (moved to #831)
+Domain: ceterms:Course, ceterms:LearningProgram
+Range: ceterms:Course, ceterms:LearningProgram
