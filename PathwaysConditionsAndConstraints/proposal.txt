@@ -11,7 +11,7 @@ ceterms:Constraint
 ceterms:Rule
   Label: Rule
   Definition: Abstract class of executable constraints.
-  Comment: An instance of the Rule class is a deployable machine solution for executing pathway constraints such as XPath, JSONPath, ShEx, SHACL, BPMN, XPDL and BPEL. 
+  Comment: An instance of the Rule class is a deployable machine solution for executing pathway constraints such as XPath, JSONPath, JsonLogic, ShEx, SHACL, BPMN, XPDL and BPEL. 
   
 
 ### New Property
