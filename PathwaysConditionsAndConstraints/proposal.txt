@@ -145,10 +145,3 @@ URL: ceterms:RuleSet (unstable)
 URL: ceterms:RuleSetProfile (unstable)
 
 URL: ceterms:alternativeRuleSet (unstable)
-
-Not Used:
-These items were part of this proposal at one point, but have been removed:
-
-URL: ceterms:prerequisite (moved to #831)
-Domain: ceterms:Course, ceterms:LearningProgram
-Range: ceterms:Course, ceterms:LearningProgram
