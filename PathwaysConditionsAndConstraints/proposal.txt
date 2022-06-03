@@ -137,12 +137,8 @@ URL: ceterms:prerequisite
 Predicate: schema:domainIncludes
 Object: ceterms:PathwayComponent subclasses
 
-Remove:
-URL: ceterms:precedes
-Predicate: schema:domainIncludes
-Object: ceterms:PathwayComponent subclasses
 
-Drop Unstable Terms:
+### Drop Unstable Terms:
 
 URL: ceterms:RuleSet (unstable)
 
