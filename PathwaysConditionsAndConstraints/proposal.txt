@@ -5,14 +5,14 @@
 ceterms:Constraint
   Label: Constraint
   Definition: Resource that identifies the parameters defining a limitation or restriction applicable to candidate pathway components.
-  
+
 ### New Class:
 
 ceterms:Rule
   Label: Rule
   Definition: Abstract class of executable constraints.
-  Comment: An instance of the Rule class is a deployable machine solution for executing pathway constraints such as XPath, JSONPath, JsonLogic, ShEx, SHACL, BPMN, XPDL and BPEL. 
-  
+  Comment: An instance of the Rule class is a deployable machine solution for executing pathway constraints such as XPath, JSONPath, JsonLogic, ShEx, SHACL, BPMN, XPDL and BPEL.
+
 
 ### New Property
 
@@ -145,3 +145,97 @@ URL: ceterms:RuleSet (unstable)
 URL: ceterms:RuleSetProfile (unstable)
 
 URL: ceterms:alternativeRuleSet (unstable)
+
+
+### New Concept Scheme (Comparators)
+ceterms:Comparators a skos:ConceptScheme
+  Title: Comparator Vocabulary
+  Description: Concepts used as values of the ceterms:operator property to make a comparison for a constraint. These should all yield a Boolean True/False result. In all cases the left is compared to the right, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers.
+
+### New Concepts (Comparators)
+Comparators:eq a skos:Concept
+  skos:prefLabel: Equal to
+  skos:definition: The value of the left is equal to the value of the right.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/eq
+  skos:inScheme: ceterms:Comparators
+
+Comparators:neq a skos:Concept
+  skos:prefLabel:  Not equal to
+  skos:definition: the value of the left is not equal to the value of the right.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/neq
+  skos:inScheme: ceterms:Comparators
+
+Comparators:gt a skos:Concept
+  skos:prefLabel:  Greater than
+  skos:definition: the value of the left is greater than the value of the right.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/gt
+  skos:inScheme: ceterms:Comparators
+
+Comparators:lt a skos:Concept
+  skos:prefLabel:  Less than
+  skos:definition: the value of the left is less than the value of the right.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/lt
+  skos:inScheme: ceterms:Comparators
+
+Comparators:gteq a skos:Concept
+  skos:prefLabel:  Greater than or equal to
+  skos:definition: the value of the left is greater than or equal to the value of the right.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/gteq
+  skos:inScheme: ceterms:Comparators
+
+Comparators:lteq a skos:Concept
+  skos:prefLabel:  Less than or equal
+  skos:definition: the value of the left is less than or equal to the value of the right.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/lteq
+  skos:inScheme: ceterms:Comparators
+
+### New Concept Scheme (Actions)
+ceterms:Actions a skos:ConceptScheme
+  Title: Actions Vocabulary
+  Description: Actions performed on arrays, lists or sets or values in order to obtain some other value. Unless otherwise noted the value obtained is the same data type as the input.
+
+Actions:sum a skos:Concept
+  skos:prefLabel: Sum
+  skos:definition: The numeric total obtained by adding all the values.
+  skos:inScheme: ceterms:Actions
+
+Actions:mean a skos:Concept
+  skos:prefLabel: Mean
+  skos:definition: The arithmetic mean of all the values.
+  skos:inScheme: ceterms:Actions
+
+Actions:min a skos:Concept
+  skos:prefLabel:  Minimum
+  skos:definition: The highest of all the values.
+  skos:inScheme: ceterms:Actions
+
+Actions:max a skos:Concept
+  skos:prefLabel:  Maximum
+  skos:definition: The lowest of all the values.
+  skos:inScheme: ceterms:Actions
+
+Actions:countDistinct a skos:Concept
+  skos:prefLabel:  Count distinct
+  skos:definition: The number of unique values, yields a number.
+  skos:inScheme: ceterms:Actions
+
+Actions:oneOf a skos:Concept
+  skos:prefLabel:  One of
+  skos:definition: Any one (but no more) of the values.
+  skos:relatedMatch http://www.w3.org/ns/odrl/2/isA
+  skos:relatedMatch http://www.w3.org/ns/odrl/2/isNoneOf
+  skos:inScheme: ceterms:Actions
+
+
+Actions:anyOf a skos:Concept
+  skos:prefLabel: Any of
+  skos:definition: Any (one or more) of the values.
+  skos:relatedMatch http://www.w3.org/ns/odrl/2/isAnyOf
+  skos:relatedMatch http://www.w3.org/ns/odrl/2/isNoneOf
+  skos:inScheme: ceterms:Actions
+
+Actions:allOf a skos:Concept
+  skos:prefLabel: All of
+  skos:definition: All of the values.
+  skos:relatedMatch http://www.w3.org/ns/odrl/2/isAllOf
+  skos:inScheme: ceterms:Actions
