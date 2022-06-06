@@ -2,7 +2,7 @@
 
 This folder is for materials for the pathway conditions and constraints proposal.
 
-Relevant issues:
+Relevant Guthub issues:
 - [Modeling complex rules with Pathways #797](https://github.com/CredentialEngine/Schema-Development/issues/797)
 (see also other issues tagged [Pathway Planning](https://github.com/CredentialEngine/Schema-Development/labels/Pathway%20Planning))
 
@@ -13,8 +13,8 @@ Working Docs in Google Drive:
 - [data examples](https://drive.google.com/drive/folders/1DUOTxljBkPO3FP41BKRXI8z3z3FAn1Eq)
 
 Required documentation
-- [ ] Proposal to TAG (Google Doc)
-- [ ] Draft [terms proposal](proposal.txt) (txt)
+- [ ] Pathways Constraints Task Group Charter ([Google Doc](https://docs.google.com/document/d/1xVOtn3kDq6hgQJVoQIqxXg9HRNe1Fa9qet_Pw-ZF8Dg/edit?usp=sharing)
+- [ ] Terms proposal](proposal.txt) (txt)
 - [ ] Domain model addtions (diagrams.net)
 - [ ] Examples:
  1. json-ld, diagram
