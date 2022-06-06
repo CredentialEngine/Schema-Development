@@ -150,7 +150,9 @@ URL: ceterms:alternativeRuleSet (unstable)
 ### New Concept Scheme (Comparators)
 ceterms:Comparators a skos:ConceptScheme
   Title: Comparator Vocabulary
-  Description: Concepts used as values of the ceterms:operator property to make a comparison for a constraint. These should all yield a Boolean True/False result. In all cases the left is compared to the right, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers.
+  Description: Types of comparisons between values.
+  skos:scopeNote: Used in CTDL constraints as values of the ceterms:operator property to make a comparison that should yield true or false. In all cases the left source of data is compared to the right source, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers.
+  dcterms:source: W3C Open Digital Rights Language (ODRL)
 
 ### New Concepts (Comparators)
 Comparators:eq a skos:Concept
@@ -192,7 +194,7 @@ Comparators:lteq a skos:Concept
 ### New Concept Scheme (Actions)
 ceterms:Actions a skos:ConceptScheme
   Title: Actions Vocabulary
-  Description: Actions performed on arrays, lists or sets or values in order to obtain some other value. Unless otherwise noted the value obtained is the same data type as the input.
+  Description: Types of action performed on arrays, lists or sets or values in order to obtain some other value.
 
 Actions:sum a skos:Concept
   skos:prefLabel: Sum
