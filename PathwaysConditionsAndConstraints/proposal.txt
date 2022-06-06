@@ -241,3 +241,38 @@ Actions:allOf a skos:Concept
   skos:definition: All of the values.
   skos:relatedMatch http://www.w3.org/ns/odrl/2/isAllOf
   skos:inScheme: ceterms:Actions
+
+### New Concept Scheme (Logical Operators)
+ceterms:LogicalOperators a skos:ConceptScheme
+  Title: Logical Operator Vocabulary
+  Description: Types of logical operator for combining two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
+  dcterms:source: W3C Open Digital Rights Language (ODRL)
+
+### New Concepts(Logical Operators)
+LogicalOperators:and a skos:Concept
+  skos:prefLabel: And
+  skos:definition: Relation is satisfied when all of the Constraints and Component Conditions are satisfied.
+  skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
+  skos:exactMatch http://www.w3.org/ns/odrl/2/and
+  skos:inScheme: ceterms:LogicalOperators
+
+LogicalOperators:or a skos:Concept
+  skos:prefLabel: Or
+  skos:definition: Relation is satisfied when at least one of the Constraints is satisfied.
+  skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
+  skos:exactMatch http://www.w3.org/ns/odrl/2/or
+  skos:inScheme: ceterms:LogicalOperators
+
+LogicalOperators:onlyOne a skos:Concept
+  skos:prefLabel: Only one
+  skos:definition: Relation is satisfied when at only one, and not more, of the Constraints is satisfied.
+  skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
+  skos:exactMatch http://www.w3.org/ns/odrl/2/xone
+  skos:inScheme: ceterms:LogicalOperators
+
+LogicalOperators:andSequence a skos:Concept
+  skos:prefLabel: And sequence
+  skos:definition: Relation is satisfied when each of the Constraints are satisfied in the order specified.
+  skos:scopeNote: This concept MUST only be used for Logical Constraints, and the list of operand values MUST be Constraint instances. The order of the list MUST be preserved.
+  skos:exactMatch http://www.w3.org/ns/odrl/2/andSequence
+  skos:inScheme: ceterms:LogicalOperators
