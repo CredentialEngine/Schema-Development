@@ -21,6 +21,6 @@ This folder is for materials for the pathway conditions and constraints proposal
 ### Examples:
  1. Heriot-Watt Computer Science ([diagram](); [turtle](https://github.com/CredentialEngine/Schema-Development/blob/master/Pathway-Examples/HeriotWatt/pathway))
  2. PCTW Use Cases Examples
- * UC10, 12 & 18 ([diagram](); [turtle](); [json-ld]())
- * UC17 & 19 ([diagram](); [turtle](); [json-ld]())
- * UC26 ([diagram](); [turtle](); [json-ld]())
+ * UC10, 12 & 18 ([diagram](https://drive.google.com/file/d/1fiqc2q0PYsS5viAkagG7lpTC4Zumg3p2/view?usp=sharing); [turtle](); [json-ld]())
+ * UC17 & 19 ([diagram](https://drive.google.com/file/d/1FrO1mgENJnGNzNnPg6EMTx-2Pt4A5RAf/view?usp=sharing); [turtle](); [json-ld]())
+ * UC26 ([diagram](https://drive.google.com/file/d/1hvYPk-lQk-3h1K59Vk0AUTtxcR-Ha-Y5/view?usp=sharing); [turtle](); [json-ld]())
