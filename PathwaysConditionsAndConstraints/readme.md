@@ -8,13 +8,14 @@ Relevant Guthub issues:
 
 - [Pathways Development Timeline](https://drive.google.com/file/d/1sVjJHGZJEBR5P22hLoxdArHE6zHV3r-z/view?usp=sharing)
 
-Working Docs in Google Drive:
-- [diagrams folder](https://drive.google.com/drive/folders/1cJLGGvhMrHkm6qeDtq5mxfR3CokjUrGZ)
-- [data examples](https://drive.google.com/drive/folders/1DUOTxljBkPO3FP41BKRXI8z3z3FAn1Eq)
+Working Pathway Constraints Docs & Folders in Google Drive:
+- [ ] [Task Group Charter](https://docs.google.com/document/d/1xVOtn3kDq6hgQJVoQIqxXg9HRNe1Fa9qet_Pw-ZF8Dg/edit?usp=sharing) (Doc)
+- [ ] [Task Group Meeting Agenda & Notes](https://docs.google.com/document/d/151fewrObFNi3VJMgiS7tOGzaR7SnkozKoMCr_MSftSs/edit?usp=sharing) (Doc)
+- [ ] [Pathways 2022](https://drive.google.com/drive/folders/1ypX65aBa7KrXdd9Ft0s-PMV3Qi0_Pnjb?usp=sharing) (Folder)
+- [ ] [Data Examples](https://drive.google.com/drive/folders/1DUOTxljBkPO3FP41BKRXI8z3z3FAn1Eq) (Folder)
 
 Required documentation
-- [ ] Pathways Constraints Task Group Charter ([Google Doc](https://docs.google.com/document/d/1xVOtn3kDq6hgQJVoQIqxXg9HRNe1Fa9qet_Pw-ZF8Dg/edit?usp=sharing)
-- [ ] Terms proposal](proposal.txt) (txt)
+- [ ] Terms proposal]([proposal.txt](https://github.com/CredentialEngine/Schema-Development/blob/master/PathwaysConditionsAndConstraints/proposal.txt) (txt)
 - [ ] Domain model addtions (diagrams.net)
 - [ ] Examples:
  1. json-ld, diagram
