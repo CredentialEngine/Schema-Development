@@ -19,8 +19,8 @@ This folder is for materials for the pathway conditions and constraints proposal
 - [ ] [Domain Model](https://drive.google.com/file/d/1grjaTLRDijtzBdpsCfy6TsI6Bwg7OnGz/view?usp=sharing) (diagram)
 
 ### Examples:
- 1. Heriot-Watt Computer Science ([diagram](https://drive.google.com/file/d/1qQjhMYfD2L_-XrHtFCtRXtir8kcrZMgV/view?usp=sharing); [turtle](https://github.com/CredentialEngine/Schema-Development/blob/master/Pathway-Examples/HeriotWatt/pathway.ttl))
+ 1. Heriot-Watt Computer Science ([diagram](https://drive.google.com/file/d/1qQjhMYfD2L_-XrHtFCtRXtir8kcrZMgV/view?usp=sharing); [turtle](https://github.com/CredentialEngine/Schema-Development/blob/master/Pathway-Examples/HeriotWatt/pathway.ttl) ; [json-ld](https://drive.google.com/file/d/1hvqtgtr1EJf0cXia0w0s0wJ0RMQRSYr9/view?usp=sharing))
  2. PCTW Use Cases Examples
- * UC10, 12 & 18 ([diagram](https://drive.google.com/file/d/1fiqc2q0PYsS5viAkagG7lpTC4Zumg3p2/view?usp=sharing); [turtle](); [json-ld]())
+ * UC10 ([turtle](https://drive.google.com/file/d/1vwmQdNZ1H-exMOJG2qHyglEBRsjln1Ne/view?usp=sharing)), 12 & 18 ([diagram](https://drive.google.com/file/d/1fiqc2q0PYsS5viAkagG7lpTC4Zumg3p2/view?usp=sharing); [turtle](); [json-ld]())
  * UC17 & 19 ([diagram](https://drive.google.com/file/d/1FrO1mgENJnGNzNnPg6EMTx-2Pt4A5RAf/view?usp=sharing); [turtle](); [json-ld]())
  * UC26 ([diagram](https://drive.google.com/file/d/1hvYPk-lQk-3h1K59Vk0AUTtxcR-Ha-Y5/view?usp=sharing); [turtle](); [json-ld]())
