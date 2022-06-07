@@ -147,132 +147,135 @@ URL: ceterms:RuleSetProfile (unstable)
 URL: ceterms:alternativeRuleSet (unstable)
 
 
-### New Concept Scheme (Comparators)
-ceterms:Comparators a skos:ConceptScheme
-  Title: Comparator Vocabulary
-  Description: Types of comparisons between values.
-  skos:scopeNote: Used in CTDL constraints as values of the ceterms:operator property to make a comparison that should yield true or false. In all cases the left source of data is compared to the right source, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers.
+### New Concept Scheme (Constraint concepts)
+ceterms:ConstraintConcepts a skos:ConceptScheme
+  Title: Constraint Concepts
+  Description: Concepts for describing constraints.
   dcterms:source: W3C Open Digital Rights Language (ODRL)
 
 ### New Concepts (Comparators)
-Comparators:eq a skos:Concept
+ConstraintConcepts:Comparators a skos:Collection
+  skos:prefLabel: Comparator Vocabulary
+  skos:scopeNote: Used in CTDL constraints as values of the ceterms:operator property to make a comparison that should yield true or false. In all cases the left source of data is compared to the right source, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers.
+  skos:member: ConstraintConcepts:eq, ConstraintConcepts:neq, ConstraintConcepts:gt, ConstraintConcepts:lt, ConstraintConcepts:gteq, ConstraintConcepts:lteq
+
+ConstraintConcepts:eq a skos:Concept
   skos:prefLabel: Equal to
   skos:definition: The value of the left is equal to the value of the right.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/eq
-  skos:inScheme: ceterms:Comparators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/eq
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Comparators:neq a skos:Concept
+ConstraintConcepts:neq a skos:Concept
   skos:prefLabel:  Not equal to
   skos:definition: the value of the left is not equal to the value of the right.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/neq
-  skos:inScheme: ceterms:Comparators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/neq
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Comparators:gt a skos:Concept
+ConstraintConcepts:gt a skos:Concept
   skos:prefLabel:  Greater than
   skos:definition: the value of the left is greater than the value of the right.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/gt
-  skos:inScheme: ceterms:Comparators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/gt
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Comparators:lt a skos:Concept
+ConstraintConcepts:lt a skos:Concept
   skos:prefLabel:  Less than
   skos:definition: the value of the left is less than the value of the right.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/lt
-  skos:inScheme: ceterms:Comparators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/lt
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Comparators:gteq a skos:Concept
+ConstraintConcepts:gteq a skos:Concept
   skos:prefLabel:  Greater than or equal to
   skos:definition: the value of the left is greater than or equal to the value of the right.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/gteq
-  skos:inScheme: ceterms:Comparators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/gteq
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Comparators:lteq a skos:Concept
+ConstraintConcepts:lteq a skos:Concept
   skos:prefLabel:  Less than or equal
   skos:definition: the value of the left is less than or equal to the value of the right.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/lteq
-  skos:inScheme: ceterms:Comparators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/lteq
+  skos:inScheme: ceterms:ConstraintConcepts
 
-### New Concept Scheme (Actions)
-ceterms:Actions a skos:ConceptScheme
-  Title: Actions Vocabulary
-  Description: Types of action performed on arrays, lists or sets or values in order to obtain some other value.
+### New Concepts (Array Operations)
+ConstraintConcepts:ArrayOperations a skos:Collection
+  skos:prefLabel: Array Operations
+  skos:scopeNote: Used in CTDL for actions performed on arrays, lists or sets or values in order to obtain some other value.
+  skos:member: ConstraintConcepts:sum, ConstraintConcepts:mean, ConstraintConcepts:min, ConstraintConcepts:max, ConstraintConcepts:countDistinct, ConstraintConcepts:oneOf, ConstraintConcepts:anyOf, ConstraintConcepts:allOf
 
-Actions:sum a skos:Concept
+ConstraintConcepts:sum a skos:Concept
   skos:prefLabel: Sum
   skos:definition: The numeric total obtained by adding all the values.
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Actions:mean a skos:Concept
+ConstraintConcepts:mean a skos:Concept
   skos:prefLabel: Mean
   skos:definition: The arithmetic mean of all the values.
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Actions:min a skos:Concept
+ConstraintConcepts:min a skos:Concept
   skos:prefLabel:  Minimum
   skos:definition: The highest of all the values.
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Actions:max a skos:Concept
+ConstraintConcepts:max a skos:Concept
   skos:prefLabel:  Maximum
   skos:definition: The lowest of all the values.
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Actions:countDistinct a skos:Concept
+ConstraintConcepts:countDistinct a skos:Concept
   skos:prefLabel:  Count distinct
   skos:definition: The number of unique values, yields a number.
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Actions:oneOf a skos:Concept
+ConstraintConcepts:oneOf a skos:Concept
   skos:prefLabel:  One of
   skos:definition: Any one (but no more) of the values.
   skos:relatedMatch http://www.w3.org/ns/odrl/2/isA
   skos:relatedMatch http://www.w3.org/ns/odrl/2/isNoneOf
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-
-Actions:anyOf a skos:Concept
+ConstraintConcepts:anyOf a skos:Concept
   skos:prefLabel: Any of
   skos:definition: Any (one or more) of the values.
   skos:relatedMatch http://www.w3.org/ns/odrl/2/isAnyOf
   skos:relatedMatch http://www.w3.org/ns/odrl/2/isNoneOf
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-Actions:allOf a skos:Concept
+ConstraintConcepts:allOf a skos:Concept
   skos:prefLabel: All of
   skos:definition: All of the values.
   skos:relatedMatch http://www.w3.org/ns/odrl/2/isAllOf
-  skos:inScheme: ceterms:Actions
+  skos:inScheme: ceterms:ConstraintConcepts
 
-### New Concept Scheme (Logical Operators)
-ceterms:LogicalOperators a skos:ConceptScheme
-  Title: Logical Operator Vocabulary
-  Description: Types of logical operator for combining two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
-  dcterms:source: W3C Open Digital Rights Language (ODRL)
+### New Concepts (Logical Operators)
+ConstraintConcepts:LogicalOperators a skos:Collection
+  skos:prefLabel: Logical Operators
+  skos:scopeNote: Used in CTDL for types of logical operator for combining two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
+  skos:member: ConstraintConcepts:and, ConstraintConcepts:or, ConstraintConcepts:onlyOne, ConstraintConcepts:andSequence
 
-### New Concepts(Logical Operators)
-LogicalOperators:and a skos:Concept
+ConstraintConcepts:and a skos:Concept
   skos:prefLabel: And
   skos:definition: Relation is satisfied when all of the Constraints and Component Conditions are satisfied.
   skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
-  skos:exactMatch http://www.w3.org/ns/odrl/2/and
-  skos:inScheme: ceterms:LogicalOperators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/and
+  skos:inScheme: ceterms:ConstraintConcepts
 
-LogicalOperators:or a skos:Concept
+ConstraintConcepts:or a skos:Concept
   skos:prefLabel: Or
   skos:definition: Relation is satisfied when at least one of the Constraints is satisfied.
   skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
-  skos:exactMatch http://www.w3.org/ns/odrl/2/or
-  skos:inScheme: ceterms:LogicalOperators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/or
+  skos:inScheme: ceterms:ConstraintConcepts
 
-LogicalOperators:onlyOne a skos:Concept
+ConstraintConcepts:onlyOne a skos:Concept
   skos:prefLabel: Only one
   skos:definition: Relation is satisfied when at only one, and not more, of the Constraints is satisfied.
   skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
-  skos:exactMatch http://www.w3.org/ns/odrl/2/xone
-  skos:inScheme: ceterms:LogicalOperators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/xone
+  skos:inScheme: ceterms:ConstraintConcepts
 
-LogicalOperators:andSequence a skos:Concept
+ConstraintConcepts:andSequence a skos:Concept
   skos:prefLabel: And sequence
   skos:definition: Relation is satisfied when each of the Constraints are satisfied in the order specified.
   skos:scopeNote: This concept MUST only be used for Logical Constraints, and the list of operand values MUST be Constraint instances. The order of the list MUST be preserved.
-  skos:exactMatch http://www.w3.org/ns/odrl/2/andSequence
-  skos:inScheme: ceterms:LogicalOperators
+  skos:exactMatch: http://www.w3.org/ns/odrl/2/andSequence
+  skos:inScheme: ceterms:ConstraintConcepts
