@@ -1,0 +1,8 @@
+res:UC10 a _:ComponentCondition ;
+	:description "Must be repeatable 3 or fewer times." ;
+	:hasConstraint
+    	[ 	a _:Constraint ;
+        	:leftSource :repeatability ;
+        	:comparator :lteq ;
+        	:rightSource 3
+    	] .

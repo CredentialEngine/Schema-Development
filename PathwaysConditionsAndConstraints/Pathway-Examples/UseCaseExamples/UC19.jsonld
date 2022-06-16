@@ -1,0 +1,13 @@
+{
+	"@id": "res:UC19",
+	"@type": "_:ComponentCondition",
+	":description": { "en": "Requires at least 3 years of experience." },
+	":hasConstraint": [
+		{
+			"@type": "_:Constraint",
+			":leftSource": ":repeatability",
+			":comparator": "gteq",
+			":rightSource": "P3Y"
+		}
+	]
+}

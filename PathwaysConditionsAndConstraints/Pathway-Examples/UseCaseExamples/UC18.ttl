@@ -1,0 +1,8 @@
+res:UC18 a _:ComponentCondition ;
+	:description "Must be repeatable 3 times or more." ;
+	:hasConstraint
+    	[   a _:Constraint ;
+        	:leftSource :repeatability ;
+        	:comparator :gteq ;
+        	:rightSource 3
+    	] .

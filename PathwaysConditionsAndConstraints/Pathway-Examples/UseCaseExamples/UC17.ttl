@@ -1,0 +1,8 @@
+res:UC17 a _:ComponentCondition ;
+    :description "Requires at least 500 hours of experience" ;
+    :hasConstraint
+        [   a _:Constraint ;
+            :leftSource :experienceTime ;
+            :comparator :gteq ;
+            :rightSource PT500H
+    	] .

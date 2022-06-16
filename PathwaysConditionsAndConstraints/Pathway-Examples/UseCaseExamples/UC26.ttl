@@ -1,0 +1,19 @@
+res:UC26 a _:CredentialComponent ;
+    :hasCondition res:UC26A,res:UC26A ;
+    :description "Must be in-person and be tied to a state/local grant, loan, or scholarship  
+        with a value of $1,000 or more."@en-us .
+
+res:UC26A a _:ComponentCondition
+    :logicalOperator :and ;
+    :hasConstraint
+    	[   a _:Constraint ;
+            :leftSource :deliveryType ;
+            :comparator :eq ;
+            :rightSource :inPerson
+    	] ,
+    	[   a _:Constraint ;
+            :leftSource :financialAssistanceType ;
+	        :comparator :eq ;
+	        :rightSource :StateLocalGrant, :StateLocalLoan, :StateLocalScholarship ;
+	        :rightAction :anyOf
+    	] .

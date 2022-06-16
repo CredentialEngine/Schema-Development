@@ -1,0 +1,8 @@
+res:UC12 a _:ComponentCondition ;
+	:description "Must not be repeatable." ;
+	:hasConstraint
+    	[   a _:Constraint ;
+        	:leftSource :repeatability ;
+        	:comparator :eq ;
+        	:rightSource false
+    	] .

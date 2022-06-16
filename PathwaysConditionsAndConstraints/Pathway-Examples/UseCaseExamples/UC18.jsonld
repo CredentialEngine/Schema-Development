@@ -1,0 +1,13 @@
+{
+    "@id": "res:UC18",
+    "@type": "_:ComponentCondition",
+    ":description": { "en": "Must be repeatable 3 times or more." },
+    ":hasConstraint": [
+        {
+            "@type": "_:Constraint",
+	        ":leftSource": ":repeatability",
+	        ":comparator": ":gteq",
+	        ":rightSource": 3
+        }
+    ]
+}

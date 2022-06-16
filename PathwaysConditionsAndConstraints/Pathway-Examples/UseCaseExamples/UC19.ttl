@@ -1,0 +1,8 @@
+res:UC19 a _:ComponentCondition ;
+	:description "Requires at least 3 years of experience." ;
+	:hasConstraint
+    	[   a _:Constraint ;
+            :leftSource :experienceTime ;
+        	:comparator :gteq ;
+        	:rightSource P3Y
+    	] .

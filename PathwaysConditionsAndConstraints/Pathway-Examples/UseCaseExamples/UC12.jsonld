@@ -1,0 +1,13 @@
+{
+    "@id": "res:UC12",
+    "@type": "_:ComponentCondition",
+    ":description": { "en": "Must not be repeatable." },
+    ":hasConstraint": [
+        {
+            "@type": "_:Constraint",
+            ":leftSource": ":repeatability",
+            ":comparator": ":eq",
+            ":rightSource": false
+        }
+    ]
+}

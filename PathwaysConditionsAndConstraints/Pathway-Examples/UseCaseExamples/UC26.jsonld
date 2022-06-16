@@ -1,0 +1,52 @@
+{
+    "@id": "res:UC26",
+    "@type": "_:CredentialComponent",
+    ":description": { "en": "Must be in-person and be tied to a state/local grant,loan, or scholarship with a value of $1,000 or more." },
+    ":hasCondition": [
+ 	   "res:UC26A", "res:UC26B"
+    ]
+},
+
+{
+    "@id": "res:UC26A",
+    "@type": "_:ComponentCondition",
+    ":logicalOperator": ":and",
+    ":hasConstraint": [
+        {
+             "@type": "_:Constraint",
+	         ":leftSource": ":deliveryType",
+	         ":comparator": ":eq",
+	         ":rightSource": ":InPerson"
+        },
+
+       {
+	         "@type": "_:Constraint",
+	         ":leftSource": ":financialAssistanceType",
+	         ":comparator": ":eq",
+	         ":rightAction": ":anyOf",
+	         ":rightSource": [
+	               ":StateLocalGrant", ":StateLocalLoan", ":StateLocalScholarship"
+	        ]
+       }
+    ]
+},
+
+{
+    "@id": "res:UC26B",
+    "@type": "_:ComponentCondition",
+    ":logicalOperator": ":and",
+    ":hasConstraint": [
+        {
+             "@type": "_:Constraint",
+	         ":leftSource": ":financialAssistanceValue",
+	         ":comparator": ":gteq",
+	         ":rightSource": 1000
+       },
+       {
+             "@type": "_:Constraint",
+	         ":leftSource": ":unitType",
+	         ":comparator": ":eq",
+	         ":rightSource": ":USD"
+       }
+    ]
+}
