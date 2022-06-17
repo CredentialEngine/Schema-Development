@@ -4,8 +4,8 @@
     ":description": { "en": "Must be repeatable 3 or fewer times." },
     ":hasConstraint": [
         {
-        	 "@type": "_:Constraint",
-       	  ":leftSource": ":repeatability",
+        	"@type": "_:Constraint",
+       	    ":leftSource": ":repeatability",
      	    ":comparator": ":lteq",
     ":rightSource": 3
         }
