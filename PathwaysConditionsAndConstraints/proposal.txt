@@ -274,28 +274,22 @@ ConstraintConcepts:LogicalOperators a skos:Collection
 
 ConstraintConcepts:and a skos:Concept
   skos:prefLabel: And
-  skos:definition: Relation is satisfied when all of the Constraints and Component Conditions are satisfied.
-  skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
+  skos:definition: Relation is satisfied when all of the conditions and constraints are satisfied.
+  skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
   skos:exactMatch: http://www.w3.org/ns/odrl/2/and
   skos:inScheme: ceterms:ConstraintConcepts
 
 ConstraintConcepts:or a skos:Concept
   skos:prefLabel: Or
   skos:definition: Relation is satisfied when at least one of the Constraints is satisfied.
-  skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
+  skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
   skos:exactMatch: http://www.w3.org/ns/odrl/2/or
   skos:inScheme: ceterms:ConstraintConcepts
 
 ConstraintConcepts:onlyOne a skos:Concept
   skos:prefLabel: Only one
-  skos:definition: Relation is satisfied when at only one, and not more, of the Constraints is satisfied.
-  skos:scopeNote: This concept MUST only be used for logical constraints, and the list of values MUST be instances of Constraint, Component Condition or a mix of Constraints and Component Conditions
+  skos:definition: Relation is satisfied when exactly one, and not more, of the conditions or constraints is satisfied.
+  skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
   skos:exactMatch: http://www.w3.org/ns/odrl/2/xone
   skos:inScheme: ceterms:ConstraintConcepts
 
-ConstraintConcepts:andSequence a skos:Concept
-  skos:prefLabel: And sequence
-  skos:definition: Relation is satisfied when each of the Constraints are satisfied in the order specified.
-  skos:scopeNote: This concept MUST only be used for Logical Constraints, and the list of operand values MUST be Constraint instances. The order of the list MUST be preserved.
-  skos:exactMatch: http://www.w3.org/ns/odrl/2/andSequence
-  skos:inScheme: ceterms:ConstraintConcepts
