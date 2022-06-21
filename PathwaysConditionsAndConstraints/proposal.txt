@@ -122,10 +122,6 @@ Subject: ceasn:hasChild
 Predicate: owl:inverseOf
 Object: ceasn:isChildOf
 
-URL: ceterms:componentCondition
-Domain: ceterms:ComponentCondition
-Range: ceterms:ComponentCondition
-
 Add:
 Subject: ceasn:isChildOf
 Predicate: owl:inverseOf
@@ -156,6 +152,10 @@ URL: ceterms:prerequisite
 Predicate: schema:domainIncludes
 Object: ceterms:PathwayComponent subclasses
 
+Remove:
+URL: ceterms:prerequisite
+Predicate: schema:rangeIncludes
+Object: ceterms:PathwayComponent subclasses
 
 ### Drop Unstable Terms:
 
@@ -233,12 +233,12 @@ ConstraintConcepts:mean a skos:Concept
 
 ConstraintConcepts:min a skos:Concept
   skos:prefLabel:  Minimum
-  skos:definition: The highest of all the values.
+  skos:definition: The lowest of all the values.
   skos:inScheme: ceterms:ConstraintConcepts
 
 ConstraintConcepts:max a skos:Concept
   skos:prefLabel:  Maximum
-  skos:definition: The lowest of all the values.
+  skos:definition: The highest of all the values.
   skos:inScheme: ceterms:ConstraintConcepts
 
 ConstraintConcepts:countDistinct a skos:Concept
