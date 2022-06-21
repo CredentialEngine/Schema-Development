@@ -173,7 +173,7 @@ ceterms:ConstraintConcepts a skos:ConceptScheme
   dcterms:source: W3C Open Digital Rights Language (ODRL)
 
 ### New Concepts (Comparator)
-ConstraintConcepts:Comparator a skos:Concept
+ConstraintConcepts:Comparator a skos:Collection
   skos:prefLabel: Comparator Vocabulary
   skos:definition Operator in a constraint expression; select from an existing enumeration.
   skos:scopeNote: Used in CTDL constraints as values of the ceterms:operator property to make a comparison that should yield true or false. In all cases the left source of data is compared to the right source, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers.
