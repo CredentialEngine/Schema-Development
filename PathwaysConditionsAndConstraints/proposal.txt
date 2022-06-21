@@ -17,6 +17,7 @@ ceterms:ConstraintRule
 ### New Property
 
 ceterms:comparator
+  Label: Comparator
   Definition: Type of symbol that denotes an operator in a constraint expression such as "gteq" (greater than or equal to), "eq" (equal to), "lt" (less than), "isAllOf" (is all of), "isAnyOf" (is any of); select from an existing enumeration of such types.
   Domain: ceterms:Constraint
   Range: ceterms:Concept (Select from a controlled vocabulary)
@@ -24,6 +25,7 @@ ceterms:comparator
 ### New Property
 
 ceterms:hasConstraint
+  Label: Has Constraint
   Definition: Referenced resource defines a single constraint.
   Domain: ceterms:ComponentCondition
   Range: ceterms:Constraint
@@ -31,6 +33,7 @@ ceterms:hasConstraint
 ### New Property
 
 ceterms:leftSource
+  Label: Left Source
   Definition: Left hand parameter of a constraint.
   Domain: ceterms:Constraint
   Range: rdf:Property, skos:Concept (Select from a controlled vocabulary)
@@ -38,6 +41,7 @@ ceterms:leftSource
 ### New Property
 
 ceterms:logicalOperator
+  Label: Logical Operator
   Definition: Type that denotes a logical operation such as "AND", "OR", "NOT"; select from an existing enumeration of such types.
   Domain: ceterms:ComponentCondition
   Comment: Only a single instance of logicalOperator is allowed defining operations on two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
@@ -46,6 +50,7 @@ ceterms:logicalOperator
 ### New Property
 
 ceterms:precededBy
+  Label: Preceded By
   Definition: Resource that logically comes before this resource.
   Domain: skos:Concept
   Range: skos:Concept, ceterms:PathwayComponent (subclasses)
@@ -54,6 +59,7 @@ ceterms:precededBy
 ### New Property
 
 ceterms:rightSource
+  Label: Right Source
   Definition: Constraint expression's righthand parameter.
   Domain: ceterms:Constraint
   Range: ceterms:Concept (Select from a controlled vocabulary), rdfs:Literal
@@ -61,6 +67,7 @@ ceterms:rightSource
 ### New Property
 
 ceterms:rightAction
+  Label: Right Action
   Definition: Action performed on the right constraint; select from an existing enumeration of such types.
   Domain: ceterms:Constraint
   Range: ceterms:Concept (Select from a controlled vocabulary)
