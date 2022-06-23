@@ -11,7 +11,7 @@ ceterms:Constraint
 ceterms:ConstraintRule
   Label: Constraint Rule
   Definition: Abstract class of executable constraints.
-  Comment: An instance of the Constraint Rule class is a deployable machine solution for executing pathway constraints such as XPath, JSONPath, JsonLogic, ShEx, SHACL, BPMN, XPDL and BPEL.
+  Comment: An instance of the Constraint Rule class is a deployable machine solution for executing pathway constraints using specifications such as XPath, JSONPath, JsonLogic, ShEx, SHACL, BPMN, XPDL and BPEL.
 
 
 ### New Property
@@ -42,7 +42,7 @@ ceterms:leftSource
 
 ceterms:logicalOperator
   Label: Logical Operator
-  Definition: Type that denotes a logical operation such as "AND", "OR", "NOT"; select from an existing enumeration of such types.
+  Definition: Type that denotes a logical operation such as "And", "Or", "Not"; select from an existing enumeration of such types.
   Domain: ceterms:ComponentCondition
   Comment: Only a single instance of logicalOperator is allowed defining operations on two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
   Range: skos:Concept (Select from a controlled vocabulary)
@@ -157,6 +157,31 @@ URL: ceterms:prerequisite
 Predicate: schema:rangeIncludes
 Object: ceterms:PathwayComponent subclasses
 
+Add:
+Subject: ceterms:description
+Predicate: schema:domainIncludes
+Object: ceterms:Constraint
+
+Remove:
+URL: ceterms:targetComponent
+Predicate: rdfs:comment
+Object: "Candidate PathwayComponent for the ComponentCondition as determined by applying the RuleSet."
+
+Add:
+URL: ceterms:targetComponent
+Predicate: rdfs:comment
+Object: "Candidate PathwayComponent for the ComponentCondition."
+
+Remove:
+URL: ceterms:precedes
+Predicate: dct:description
+Object: "The ceterms:precedes property indicates a simple or suggested ordering of resources; if a required ordering is intended, use ceterms:prerequisite instead."
+
+Add:
+URL: ceterms:precedes
+Predicate: dct:description
+Object: "The ceterms:precedes property indicates a simple or suggested ordering of resources."
+
 ### Drop Unstable Terms:
 
 URL: ceterms:RuleSet (unstable)
@@ -164,6 +189,8 @@ URL: ceterms:RuleSet (unstable)
 URL: ceterms:RuleSetProfile (unstable)
 
 URL: ceterms:alternativeRuleSet (unstable)
+
+URL: ceterms:ruleSetUsed (unstable)
 
 
 ### New Concept Scheme (Constraint concepts)
@@ -272,21 +299,21 @@ ConstraintConcepts:LogicalOperators a skos:Collection
   skos:scopeNote: Used in CTDL for types of logical operator for combining two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities.
   skos:member: ConstraintConcepts:and, ConstraintConcepts:or, ConstraintConcepts:onlyOne, ConstraintConcepts:andSequence
 
-ConstraintConcepts:and a skos:Concept
+ConstraintConcepts:And a skos:Concept
   skos:prefLabel: And
   skos:definition: Relation is satisfied when all of the conditions and constraints are satisfied.
   skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
   skos:exactMatch: http://www.w3.org/ns/odrl/2/and
   skos:inScheme: ceterms:ConstraintConcepts
 
-ConstraintConcepts:or a skos:Concept
+ConstraintConcepts:Or a skos:Concept
   skos:prefLabel: Or
   skos:definition: Relation is satisfied when at least one of the Constraints is satisfied.
   skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
   skos:exactMatch: http://www.w3.org/ns/odrl/2/or
   skos:inScheme: ceterms:ConstraintConcepts
 
-ConstraintConcepts:onlyOne a skos:Concept
+ConstraintConcepts:OnlyOne a skos:Concept
   skos:prefLabel: Only one
   skos:definition: Relation is satisfied when exactly one, and not more, of the conditions or constraints is satisfied.
   skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
