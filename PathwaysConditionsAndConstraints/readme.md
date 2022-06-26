@@ -17,6 +17,9 @@ This folder is for materials for the pathway conditions and constraints proposal
 ### Required Documentation
 - [x] [Terms proposal](https://github.com/CredentialEngine/Schema-Development/blob/master/PathwaysConditionsAndConstraints/proposal.txt) (text)
 - [x] [Domain Model](https://drive.google.com/file/d/1grjaTLRDijtzBdpsCfy6TsI6Bwg7OnGz/view?usp=sharing) (diagram)
+- [x] [Logical Operator Category](https://purl.org/ctdl/terms/LogicalOperatorCategory): Constraint Concept Vocabulary
+- [x] [Comparator Category](https://purl.org/ctdl/terms/ComparatorCategory): Constraint Concept Vocabulary
+- [x] [Array Operation Catrgory](https://purl.org/ctdl/terms/ArrayOperationCategory): Constraint Concept Vocabulary 
 
 ### Examples:
  1. Heriot-Watt Computer Science ([diagram](https://drive.google.com/file/d/1qQjhMYfD2L_-XrHtFCtRXtir8kcrZMgV/view?usp=sharing); [turtle](https://github.com/CredentialEngine/Schema-Development/blob/master/PathwaysConditionsAndConstraints/Pathway-Examples/HeriotWatt/pathway.ttl))
