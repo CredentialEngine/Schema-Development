@@ -18,7 +18,7 @@ ceterms:ConstraintRule
 
 ceterms:comparator
   Label: Comparator
-  Definition: Type of symbol that denotes an operator in a constraint expression such as "gteq" (greater than or equal to), "eq" (equal to), "lt" (less than), "isAllOf" (is all of), "isAnyOf" (is any of); select from an existing enumeration of such types.
+  Definition: Type of symbol that denotes an operator in a constraint expression such as "GTEQ" (greater than or equal to), "EQ" (equal to), "LT" (less than), "isAllOf" (is all of), "isAnyOf" (is any of); select from an existing enumeration of such types.
   Domain: ceterms:Constraint
   Range: skos:Concept (Select from a controlled vocabulary)
 
