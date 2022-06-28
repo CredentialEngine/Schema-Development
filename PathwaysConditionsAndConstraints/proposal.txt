@@ -18,7 +18,7 @@ ceterms:ConstraintRule
 
 ceterms:comparator
   Label: Comparator
-  Definition: Type of symbol that denotes an operator in a constraint expression such as "GTEQ" (greater than or equal to), "EQ" (equal to), "LT" (less than), "isAllOf" (is all of), "isAnyOf" (is any of); select from an existing enumeration of such types.
+  Definition: Type of symbol that denotes an operator in a constraint expression such as "GTEQ" (greater than or equal to), "EQ" (equal to), "LT" (less than); select from an existing enumeration of such types.
   Domain: ceterms:Constraint
   Range: skos:Concept (Select from a controlled vocabulary)
 
@@ -53,7 +53,7 @@ ceterms:precededBy
   Label: Preceded By
   Definition: Resource that logically comes before this resource.
   Domain: skos:Concept, ceterms:PathwayComponent (subclasses)
-  Range: skos:Concept, ceterms:PathwayComponent (subclasses)
+  Range: skos:Concept, ceterms:PathwayComponent (subclasses) 
   InverseOf: ceterms:precedes
 
 ### New Property
@@ -158,6 +158,11 @@ Predicate: schema:rangeIncludes
 Object: ceterms:PathwayComponent subclasses
 
 Add:
+Subject: ceterms:name
+Predicate: schema:domainIncludes
+Object: ceterms:Constraint
+
+Add:
 Subject: ceterms:description
 Predicate: schema:domainIncludes
 Object: ceterms:Constraint
@@ -181,6 +186,18 @@ Add:
 URL: ceterms:precedes
 Predicate: dct:description
 Object: "The ceterms:precedes property indicates a simple or suggested ordering of resources."
+
+
+Remove:
+URL: ceterms:hasCondition
+Predicate: rdfs:comment
+Object: "Resource referenced defines the conditions by which a rule set is satisfied."
+
+Remove:
+URL: ceterms:hasCondition
+Predicate: rdfs:comment
+Object: "Resource referenced defines a condition by which this resource is satisfied in full or in part."
+
 
 ### Drop Unstable Terms:
 
@@ -312,4 +329,3 @@ logic:OnlyOne a skos:Concept
   skos:scopeNote: When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints.
   skos:exactMatch: http://www.w3.org/ns/odrl/2/xone
   skos:inScheme: ceterms:LogicalOperatorCategory
-
