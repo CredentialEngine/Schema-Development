@@ -210,6 +210,28 @@ URL: ceterms:alternativeRuleSet (unstable)
 URL: ceterms:ruleSetUsed (unstable)
 
 
+### Deprecate ceterms:SelectionComponent
+
+Remove:
+URL: ceterms:SelectionComponent
+Predicate: vs:term_status
+Object: vs:stable
+
+Add:
+URL: ceterms:SelectionComponent
+Predicate: vs:term_status
+Object: vs:deprecated
+
+Remove:
+URLs: asn:hasProgressionLevel ceasn:hasChild ceasn:isChildOf ceterms:componentDesignation ceterms:ctid ceterms:description ceterms:hasCondition ceterms:identifier ceterms:isDestinationComponentOf ceterms:isPartOf ceterms:name ceterms:pointValue ceterms:precedes ceterms:prerequisite ceterms:proxyFor ceterms:sourceData ceterms:subjectWebpage
+Predicate: schema:domainIncludes
+Object: ceterms:SelectionComponent
+
+Remove:
+URLs: ceasn:hasChild ceasn:isChildOf ceterms:hasDestinationComponent ceterms:hasProxy ceterms:precedes ceterms:prerequisite ceterms:targetComponent
+Predicate: schema:rangeIncludes
+Object: ceterms:SelectionComponent
+
 ### New Concept Scheme (Comparator Category)
 ceterms:ComparatorCategory a skos:ConceptScheme
   rdfs:label: Comparator Category
