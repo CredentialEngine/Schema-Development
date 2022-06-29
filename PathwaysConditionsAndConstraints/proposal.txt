@@ -36,7 +36,7 @@ ceterms:leftSource
   Label: Left Source
   Definition: Left hand parameter of a constraint.
   Domain: ceterms:Constraint
-  Range: rdf:Property, skos:Concept (Select from a controlled vocabulary)
+  Range: rdf:Property, rdfs:Class, rdfs:Literal, skos:Concept (Select from a controlled vocabulary)
 
 ### New Property
 
@@ -62,7 +62,7 @@ ceterms:rightSource
   Label: Right Source
   Definition: Right hand parameter of a constraint.
   Domain: ceterms:Constraint
-  Range: skos:Concept (Select from a controlled vocabulary), rdfs:Literal
+  Range: rdf:Property, rdfs:Class, rdfs:Literal, skos:Concept (Select from a controlled vocabulary), rdfs:Literal
 
 ### New Property
 
