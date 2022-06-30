@@ -3,6 +3,8 @@
 This folder is for materials for the pathway conditions and constraints proposal.
 
 ### Working Pathway Constraints Google Docs & Folders:
+
+- [x] [Essential Reading: Pathways Overview](https://docs.google.com/document/d/1I5MHBTbZG04N-l6kCyMExdY8HXUXE8oN6RoDNT2KadM/edit#) (Doc)
 - [x] [Task Group Charter](https://docs.google.com/document/d/1xVOtn3kDq6hgQJVoQIqxXg9HRNe1Fa9qet_Pw-ZF8Dg/edit?usp=sharing) (Doc)
 - [x] [Task Group Meeting Agenda & Notes](https://docs.google.com/document/d/151fewrObFNi3VJMgiS7tOGzaR7SnkozKoMCr_MSftSs/edit?usp=sharing) (Doc)
 - [x] [Pathways Development Timeline](https://drive.google.com/file/d/1sVjJHGZJEBR5P22hLoxdArHE6zHV3r-z/view?usp=sharing) (graphic)
