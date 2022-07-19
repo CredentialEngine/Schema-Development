@@ -1,0 +1,1023 @@
+{
+    "rdfs:subClassOf": {
+        "ceterms:AccreditAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:AdvancedStandingAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:ApprenticeshipCertificate": [
+            "ceterms:Certificate"
+        ],
+        "ceterms:ApproveAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:AssessmentComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:AssessmentProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:AssociateDegree": [
+            "ceterms:Degree"
+        ],
+        "ceterms:BachelorDegree": [
+            "ceterms:Degree"
+        ],
+        "ceterms:Badge": [
+            "ceterms:Credential"
+        ],
+        "ceterms:BasicComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:Certificate": [
+            "ceterms:Credential"
+        ],
+        "ceterms:CertificateOfCompletion": [
+            "ceterms:Credential"
+        ],
+        "ceterms:Certification": [
+            "ceterms:Credential",
+            "ceterms:Credential"
+        ],
+        "ceterms:CocurricularComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:CompetencyComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:ConditionProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:CostProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:Course": [
+            "ceterms:LearningOpportunityProfile",
+            "schema:CreativeWork"
+        ],
+        "ceterms:CourseComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:Credential": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:CredentialAlignmentObject": [
+            "schema:AlignmentObject"
+        ],
+        "ceterms:CredentialComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:CredentialOrganization": [
+            "ceterms:Organization"
+        ],
+        "ceterms:CredentialPerson": [
+            "ceterms:Agent",
+            "dct:Agent",
+            "schema:Person"
+        ],
+        "ceterms:Degree": [
+            "ceterms:Credential"
+        ],
+        "ceterms:DigitalBadge": [
+            "ceterms:Badge"
+        ],
+        "ceterms:Diploma": [
+            "ceterms:Credential"
+        ],
+        "ceterms:DoctoralDegree": [
+            "ceterms:Degree"
+        ],
+        "ceterms:EarningsProfile": [
+            "ceterms:AggregateDataProfile",
+            "schema:CreativeWork"
+        ],
+        "ceterms:EmploymentOutcomeProfile": [
+            "ceterms:AggregateDataProfile",
+            "schema:CreativeWork"
+        ],
+        "ceterms:ExtracurricularComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:GeneralEducationDevelopment": [
+            "ceterms:Diploma"
+        ],
+        "ceterms:GeoCoordinates": [
+            "schema:StructuredValue"
+        ],
+        "ceterms:HoldersProfile": [
+            "ceterms:AggregateDataProfile",
+            "schema:CreativeWork"
+        ],
+        "ceterms:IdentifierValue": [
+            "dct:identifier"
+        ],
+        "ceterms:IndustryClassification": [
+            "ceterms:CredentialFramework"
+        ],
+        "ceterms:InstructionalProgramClassification": [
+            "ceterms:CredentialFramework"
+        ],
+        "ceterms:JobComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:JourneymanCertificate": [
+            "ceterms:Certificate"
+        ],
+        "ceterms:JurisdictionProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:LearningOpportunityProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:LearningProgram": [
+            "ceterms:LearningOpportunityProfile",
+            "schema:EducationalOccupationalProgram"
+        ],
+        "ceterms:LearningResource": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:License": [
+            "ceterms:Credential"
+        ],
+        "ceterms:MasterCertificate": [
+            "ceterms:Certificate"
+        ],
+        "ceterms:MasterDegree": [
+            "ceterms:Degree"
+        ],
+        "ceterms:MicroCredential": [
+            "ceterms:Credential"
+        ],
+        "ceterms:OccupationClassification": [
+            "ceterms:CredentialFramework"
+        ],
+        "ceterms:OfferAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:OpenBadge": [
+            "ceterms:Badge"
+        ],
+        "ceterms:Organization": [
+            "ceterms:Agent",
+            "dct:Agent"
+        ],
+        "ceterms:PathwaySet": [
+            "ceterms:Collection"
+        ],
+        "ceterms:PostalAddress": [
+            "ceterms:ContactPoint"
+        ],
+        "ceterms:ProcessProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:ProfessionalDoctorate": [
+            "ceterms:DoctoralDegree"
+        ],
+        "ceterms:QACredentialOrganization": [
+            "ceterms:Organization"
+        ],
+        "ceterms:QualityAssuranceCredential": [
+            "ceterms:Credential"
+        ],
+        "ceterms:RecognizeAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:RegulateAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:RenewAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:ResearchDoctorate": [
+            "ceterms:DoctoralDegree"
+        ],
+        "ceterms:RevocationProfile": [
+            "schema:CreativeWork"
+        ],
+        "ceterms:RevokeAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:RightsAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "ceterms:SecondarySchoolDiploma": [
+            "ceterms:Diploma"
+        ],
+        "ceterms:ValueProfile": [
+            "schema:QuantitativeValue"
+        ],
+        "ceterms:VerificationServiceProfile": [
+            "schema:Intangible"
+        ],
+        "ceterms:WorkExperienceComponent": [
+            "ceterms:PathwayComponent"
+        ],
+        "ceterms:WorkforceDemandAction": [
+            "ceterms:CredentialingAction"
+        ],
+        "asn:ProgressionLevel": [
+            "skos:Concept"
+        ],
+        "asn:ProgressionModel": [
+            "skos:ConceptScheme"
+        ],
+        "ceasn:CompetencyFramework": [
+            "ceterms:Collection"
+        ],
+        "ceasn:ProficiencyScale": [
+            "asn:EducationalFramework"
+        ]
+    },
+    "owl:equivalentClass": {
+        "ceterms:Agent": [
+            "dct:Agent"
+        ],
+        "ceterms:ContactPoint": [
+            "schema:ContactPoint"
+        ],
+        "ceterms:Course": [
+            "schema:Course"
+        ],
+        "ceterms:Credential": [
+            "obi:BadgeClass"
+        ],
+        "ceterms:CredentialAssertion": [
+            "obi:Assertion"
+        ],
+        "ceterms:CredentialFramework": [
+            "asn:EducationalFramework"
+        ],
+        "ceterms:GeoCoordinates": [
+            "schema:GeoCoordinates"
+        ],
+        "ceterms:LearningResource": [
+            "asn:LearningResource"
+        ],
+        "ceterms:Organization": [
+            "schema:Organization"
+        ],
+        "ceterms:Place": [
+            "schema:Place"
+        ],
+        "ceterms:PostalAddress": [
+            "schema:PostalAddress"
+        ],
+        "ceterms:ActionStatus": [
+            "schema:ActionStatus"
+        ],
+        "compare:EQ": [
+            "odrl2:eq"
+        ],
+        "compare:GT": [
+            "odrl2:gt"
+        ],
+        "compare:GTEQ": [
+            "odrl2:gteq"
+        ],
+        "compare:LT": [
+            "odrl2:lt"
+        ],
+        "compare:LTEQ": [
+            "odrl2:lteq"
+        ],
+        "compare:NEQ": [
+            "odrl2:neq"
+        ],
+        "financialAid:AcademicAssistantship": [
+            "ceds:000113#Assistantships"
+        ],
+        "financialAid:DoDTuitionAssistance": [
+            "ceds:001610#DODTuitionAssistance"
+        ],
+        "financialAid:FederalGrant": [
+            "ceds:000113#OtherFederalGrants"
+        ],
+        "financialAid:FederalScholarship": [
+            "ceds:000113#FederalScholarships"
+        ],
+        "financialAid:FederalSubsidizedLoan": [
+            "ceds:000113#FederalSubsidizedLoans"
+        ],
+        "financialAid:FederalUnsubsidizedLoan": [
+            "ceds:000113#FederalUnsubsidizedLoans"
+        ],
+        "financialAid:FederalWorkStudy": [
+            "ceds:000113#FederalWorkStudy"
+        ],
+        "financialAid:General": [
+            "ceds:000113"
+        ],
+        "financialAid:InstitutionalGrant": [
+            "ceds:000113#InstitutionalGrants"
+        ],
+        "financialAid:InstitutionalLoan": [
+            "ceds:000113#InstitutionalLoans"
+        ],
+        "financialAid:InstitutionalScholarship": [
+            "ceds:000113#InstitutionalScholarships"
+        ],
+        "financialAid:Military": [
+            "ceds:001610"
+        ],
+        "financialAid:OtherGrant": [
+            "ceds:000113#OtherGrants"
+        ],
+        "financialAid:OtherLoan": [
+            "ceds:000113#OtherLoans"
+        ],
+        "financialAid:OtherOnCampusWork": [
+            "ceds:000113#OtherOnCampusWork"
+        ],
+        "financialAid:OtherScholarship": [
+            "ceds:000113#OtherScholarships"
+        ],
+        "financialAid:ParentPLUSLoan": [
+            "ceds:000113#ParentPLUSLoans"
+        ],
+        "financialAid:PellGrant": [
+            "ceds:000113#PellGrants"
+        ],
+        "financialAid:Post911GIBill": [
+            "ceds:001610#Post911GIBill"
+        ],
+        "financialAid:PrivateGrant": [
+            "ceds:000113#PrivateGrants"
+        ],
+        "financialAid:PrivateLoan": [
+            "ceds:000113#PrivateLoans"
+        ],
+        "financialAid:PrivateScholarship": [
+            "ceds:000113#PrivateScholarships"
+        ],
+        "financialAid:StateLocalGrant": [
+            "ceds:000113#StateAndLocalGrants"
+        ],
+        "financialAid:StateLocalLoan": [
+            "ceds:000113#StateLoans"
+        ],
+        "financialAid:StateLocalScholarship": [
+            "ceds:000113#StateAndLocalScholarships"
+        ],
+        "financialAid:StateLocalWork": [
+            "ceds:000113#StateWork"
+        ],
+        "logic:And": [
+            "odrl2:and"
+        ],
+        "logic:OnlyOne": [
+            "odrl2:xone"
+        ],
+        "logic:Or": [
+            "odrl2:or"
+        ],
+        "ceasn:Competency": [
+            "asn:Statement"
+        ],
+        "ceasn:CompetencyFramework": [
+            "asn:StandardDocument"
+        ],
+        "ceasn:ProficiencyScale": [
+            "asn:ProficiencyScale"
+        ],
+        "ceasn:PublicationStatus": [
+            "asnscheme:ASNPublicationStatus"
+        ],
+        "publicationStatus:Deprecated": [
+            "asnPublicationStatus:Deprecated"
+        ],
+        "publicationStatus:Draft": [
+            "asnPublicationStatus:Draft"
+        ],
+        "publicationStatus:Published": [
+            "asnPublicationStatus:Published"
+        ]
+    },
+    "owl:equivalentProperty": {
+        "ceasn:comment": [
+            "asn:comment",
+            "case:v1p0/notes"
+        ],
+        "ceasn:hasChild": [
+            "gemq:hasChild"
+        ],
+        "ceasn:isChildOf": [
+            "gemq:isChildOf"
+        ],
+        "ceasn:listID": [
+            "case:v1p0/listEnumeration"
+        ],
+        "ceasn:skillEmbodied": [
+            "asn:skillEmbodied"
+        ],
+        "ceterms:actingAgent": [
+            "schema:agent"
+        ],
+        "ceterms:actionStatusType": [
+            "schema:actionStatusType"
+        ],
+        "ceterms:address": [
+            "schema:address"
+        ],
+        "ceterms:addressCountry": [
+            "schema:addressCountry"
+        ],
+        "ceterms:addressLocality": [
+            "schema:addressLocality"
+        ],
+        "ceterms:addressRegion": [
+            "schema:addressRegion"
+        ],
+        "ceterms:affiliation": [
+            "schema:affiliation"
+        ],
+        "ceterms:alignmentType": [
+            "lrmi:alignmentType",
+            "schema:alignmentType"
+        ],
+        "ceterms:audienceLevelType": [
+            "dct:educationLevel"
+        ],
+        "ceterms:broadAlignment": [
+            "asn:broadAlignment",
+            "skos:broader"
+        ],
+        "ceterms:copyrightHolder": [
+            "schema:copyrightHolder"
+        ],
+        "ceterms:currency": [
+            "schema:currency"
+        ],
+        "ceterms:department": [
+            "schema:department"
+        ],
+        "ceterms:description": [
+            "dct:description",
+            "schema:description"
+        ],
+        "ceterms:duns": [
+            "schema:duns"
+        ],
+        "ceterms:email": [
+            "schema:email"
+        ],
+        "ceterms:employee": [
+            "schema:employee"
+        ],
+        "ceterms:endDate": [
+            "schema:endDate"
+        ],
+        "ceterms:endTime": [
+            "schema:endTime"
+        ],
+        "ceterms:exactAlignment": [
+            "asn:exactAlignment",
+            "skos:exactMatch"
+        ],
+        "ceterms:familyName": [
+            "schema:familyName"
+        ],
+        "ceterms:faxNumber": [
+            "schema:faxNumber"
+        ],
+        "ceterms:foundingDate": [
+            "schema:foundingDate"
+        ],
+        "ceterms:frameworkName": [
+            "schema:educationalFramework"
+        ],
+        "ceterms:givenName": [
+            "schema:givenName"
+        ],
+        "ceterms:hasPart": [
+            "dct:hasPart",
+            "schema:hasPart"
+        ],
+        "ceterms:honorificSuffix": [
+            "ceterms:ContactPoint"
+        ],
+        "ceterms:image": [
+            "schema:image"
+        ],
+        "ceterms:inLanguage": [
+            "schema:inLanguage"
+        ],
+        "ceterms:instrument": [
+            "schema:instrument"
+        ],
+        "ceterms:isicV4": [
+            "schema:isicV4"
+        ],
+        "ceterms:isPartOf": [
+            "dct:isPartOf",
+            "schema:isPartOf"
+        ],
+        "ceterms:isSimilarTo": [
+            "schema:isSimilarTo",
+            "skos:related"
+        ],
+        "ceterms:keyword": [
+            "ceasn:conceptKeyword"
+        ],
+        "ceterms:latitude": [
+            "schema:latitude"
+        ],
+        "ceterms:leiCode": [
+            "schema:leiCode"
+        ],
+        "ceterms:longitude": [
+            "schema:longitude"
+        ],
+        "ceterms:majorAlignment": [
+            "asn:majorAlignment"
+        ],
+        "ceterms:minorAlignment": [
+            "asn:minorAlignment"
+        ],
+        "ceterms:naics": [
+            "schema:naics"
+        ],
+        "ceterms:name": [
+            "schema:name"
+        ],
+        "ceterms:narrowAlignment": [
+            "asn:narrowAlignment",
+            "skos:narrower"
+        ],
+        "ceterms:object": [
+            "schema:object"
+        ],
+        "ceterms:occupationType": [
+            "schema:occupationalCategory"
+        ],
+        "ceterms:offeredBy": [
+            "schema:provider"
+        ],
+        "ceterms:parentOrganization": [
+            "schema:parentOrganization"
+        ],
+        "ceterms:participant": [
+            "schema:participant"
+        ],
+        "ceterms:postalCode": [
+            "schema:postalCode"
+        ],
+        "ceterms:postOfficeBoxNumber": [
+            "schema:postOfficeBoxNumber"
+        ],
+        "ceterms:price": [
+            "schema:price"
+        ],
+        "ceterms:spatialCoverage": [
+            "schema:spatialCoverage"
+        ],
+        "ceterms:startDate": [
+            "schema:startDate"
+        ],
+        "ceterms:startTime": [
+            "schema:startTime"
+        ],
+        "ceterms:streetAddress": [
+            "schema:streetAddress"
+        ],
+        "ceterms:subjectWebpage": [
+            "schema:mainEntityOfPage"
+        ],
+        "ceterms:subOrganization": [
+            "schema:subOrganization"
+        ],
+        "ceterms:targetContactPoint": [
+            "schema:contactPoint"
+        ],
+        "ceterms:targetNode": [
+            "lrmi:targetUrl",
+            "schema:targetUrl"
+        ],
+        "ceterms:targetNodeDescription": [
+            "lrmi:targetDescription",
+            "schema:targetDescription"
+        ],
+        "ceterms:targetNodeName": [
+            "lrmi:targetName",
+            "schema:targetName"
+        ],
+        "ceterms:telephone": [
+            "schema:telephone"
+        ],
+        "ceterms:temporalCoverage": [
+            "schema:temporalCoverage"
+        ],
+        "ceterms:worksFor": [
+            "schema:worksFor"
+        ],
+        "ceasn:alignFrom": [
+            "asn:alignFrom"
+        ],
+        "ceasn:alignTo": [
+            "asn:alignTo"
+        ],
+        "ceasn:altCodedNotation": [
+            "asn:altStatementNotation"
+        ],
+        "ceasn:author": [
+            "locr:aut"
+        ],
+        "ceasn:broadAlignment": [
+            "asn:broadAlignment"
+        ],
+        "ceasn:codedNotation": [
+            "asn:statementNotation",
+            "case:v1p0/humanCodingScheme",
+            "ceterms:codedNotation"
+        ],
+        "ceasn:competencyCategory": [
+            "asn:statementLabel",
+            "case:v1p0/CFItemType"
+        ],
+        "ceasn:competencyText": [
+            "case:v1p0/fullStatement"
+        ],
+        "ceasn:complexityLevel": [
+            "asn:complexityLevel"
+        ],
+        "ceasn:comprisedOf": [
+            "asn:comprisedOf"
+        ],
+        "ceasn:conceptKeyword": [
+            "asn:conceptKeyword",
+            "ceterms:keyword"
+        ],
+        "ceasn:conceptTerm": [
+            "asn:conceptTerm",
+            "ceterms:subject"
+        ],
+        "ceasn:creator": [
+            "dct:creator"
+        ],
+        "ceasn:crossSubjectReference": [
+            "asn:crossSubjectReference"
+        ],
+        "ceasn:dateCopyrighted": [
+            "dct:dateCopyrighted"
+        ],
+        "ceasn:dateCreated": [
+            "dct:created"
+        ],
+        "ceasn:dateModified": [
+            "dct:modified",
+            "schema:dateModified"
+        ],
+        "ceasn:dateValidFrom": [
+            "schema:startDate"
+        ],
+        "ceasn:dateValidUntil": [
+            "schema:endDate"
+        ],
+        "ceasn:derivedFrom": [
+            "asn:derivedFrom"
+        ],
+        "ceasn:description": [
+            "dct:description",
+            "schema:description"
+        ],
+        "ceasn:educationLevelType": [
+            "case:v1p0/vocab#educationLevel",
+            "ceterms:audienceLevelType",
+            "dct:educationLevel"
+        ],
+        "ceasn:exactAlignment": [
+            "asn:exactAlignment"
+        ],
+        "ceasn:identifier": [
+            "asn:identifier"
+        ],
+        "ceasn:inLanguage": [
+            "case:v1p0/language",
+            "dct:language"
+        ],
+        "ceasn:isPartOf": [
+            "dct:isPartOf"
+        ],
+        "ceasn:isVersionOf": [
+            "dct:isVersionOf"
+        ],
+        "ceasn:license": [
+            "dct:license"
+        ],
+        "ceasn:localSubject": [
+            "asn:localSubject"
+        ],
+        "ceasn:majorAlignment": [
+            "asn:majorAlignment"
+        ],
+        "ceasn:minorAlignment": [
+            "asn:minorAlignment"
+        ],
+        "ceasn:name": [
+            "dc:title",
+            "schema:name"
+        ],
+        "ceasn:narrowAlignment": [
+            "asn:narrowAlignment"
+        ],
+        "ceasn:prerequisiteAlignment": [
+            "asn:prerequisiteAlignment"
+        ],
+        "ceasn:publicationStatusType": [
+            "asn:publicationStatus"
+        ],
+        "ceasn:publisher": [
+            "dct:publisher"
+        ],
+        "ceasn:publisherName": [
+            "dc:publisher"
+        ],
+        "ceasn:repositoryDate": [
+            "asn:repositoryDate"
+        ],
+        "ceasn:rights": [
+            "dct:rights"
+        ],
+        "ceasn:rightsHolder": [
+            "dct:rightsHolder"
+        ],
+        "ceasn:shouldIndex": [
+            "asn:indexingStatus"
+        ],
+        "ceasn:source": [
+            "dct:source"
+        ],
+        "ceasn:tableOfContents": [
+            "dct:tableOfContents"
+        ],
+        "ceasn:weight": [
+            "asn:weight"
+        ]
+    },
+    "rdfs:subPropertyOf": {
+        "ceasn:hasChild": [
+            "dc:relation"
+        ],
+        "ceasn:isChildOf": [
+            "dc:relation"
+        ],
+        "ceasn:listID": [
+            "asn:listID"
+        ],
+        "ceterms:actionStatusType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:agentSectorType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:alignmentDate": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:assesses": [
+            "ceterms:targetCompetency"
+        ],
+        "ceterms:assessmentDeliveryType": [
+            "ceterms:deliveryType"
+        ],
+        "ceterms:audienceLevelType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:audienceType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:availableAt": [
+            "ceterms:spatialCoverage"
+        ],
+        "ceterms:broadAlignment": [
+            "ceterms:isSimilarTo"
+        ],
+        "ceterms:condition": [
+            "ceterms:description"
+        ],
+        "ceterms:credentialStatusType": [
+            "ceterms:lifeCycleStatusType"
+        ],
+        "ceterms:ctid": [
+            "ceterms:credentialId"
+        ],
+        "ceterms:dateEffective": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:department": [
+            "ceterms:subOrganization"
+        ],
+        "ceterms:directCostType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:earnings": [
+            "ceterms:aggregateData"
+        ],
+        "ceterms:employmentOutcome": [
+            "ceterms:aggregateData"
+        ],
+        "ceterms:endDate": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:endTime": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:entryCondition": [
+            "ceterms:requires"
+        ],
+        "ceterms:exactAlignment": [
+            "ceterms:isSimilarTo"
+        ],
+        "ceterms:externalInputType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:foundingDate": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:hasWorkforceDemand": [
+            "ceterms:relatedAction"
+        ],
+        "ceterms:holders": [
+            "ceterms:aggregateData"
+        ],
+        "ceterms:inDemandAction": [
+            "ceterms:relatedAction"
+        ],
+        "ceterms:industryType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:instructionalProgramType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:jurisdictionException": [
+            "ceterms:spatialCoverage"
+        ],
+        "ceterms:keyword": [
+            "schema:about"
+        ],
+        "ceterms:learningDeliveryType": [
+            "ceterms:deliveryType"
+        ],
+        "ceterms:mainJurisdiction": [
+            "ceterms:spatialCoverage"
+        ],
+        "ceterms:majorAlignment": [
+            "ceterms:isSimilarTo"
+        ],
+        "ceterms:minorAlignment": [
+            "ceterms:isSimilarTo"
+        ],
+        "ceterms:narrowAlignment": [
+            "ceterms:isSimilarTo"
+        ],
+        "ceterms:occupationType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:region": [
+            "ceterms:spatialCoverage"
+        ],
+        "ceterms:renewalFrequency": [
+            "ceterms:maximumDuration"
+        ],
+        "ceterms:residencyType": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:resultingAward": [
+            "ceterms:result"
+        ],
+        "ceterms:startDate": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:startTime": [
+            "ceterms:temporalCoverage"
+        ],
+        "ceterms:subject": [
+            "schema:about"
+        ],
+        "ceterms:targetCompetency": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:targetCompetencyFramework": [
+            "ceterms:credentialAlignment"
+        ],
+        "ceterms:teaches": [
+            "ceterms:targetCompetency"
+        ],
+        "ceasn:altCodedNotation": [
+            "dct:identifier"
+        ],
+        "ceasn:author": [
+            "dct:contributor"
+        ],
+        "ceasn:codedNotation": [
+            "dct:identifier"
+        ],
+        "ceasn:competencyLabel": [
+            "ceasn:name",
+            "schema:name"
+        ],
+        "ceasn:competencyText": [
+            "dct:description"
+        ],
+        "ceasn:conceptKeyword": [
+            "dct:subject"
+        ],
+        "ceasn:conceptTerm": [
+            "dct:subject"
+        ],
+        "ceasn:creator": [
+            "dct:contributor"
+        ],
+        "ceasn:crossSubjectReference": [
+            "dct:relation"
+        ],
+        "ceasn:dateCopyrighted": [
+            "dct:date"
+        ],
+        "ceasn:dateCreated": [
+            "dct:date"
+        ],
+        "ceasn:dateModified": [
+            "dct:date"
+        ],
+        "ceasn:dateValidFrom": [
+            "dct:valid"
+        ],
+        "ceasn:dateValidUntil": [
+            "dct:valid"
+        ],
+        "ceasn:derivedFrom": [
+            "dc:relation"
+        ],
+        "ceasn:educationLevelType": [
+            "dct:audience"
+        ],
+        "ceasn:inProgressionModel": [
+            "skos:inScheme"
+        ],
+        "ceasn:isPartOf": [
+            "dc:relation"
+        ],
+        "ceasn:isTopChildOf": [
+            "ceasn:isChildOf"
+        ],
+        "ceasn:license": [
+            "dct:rights"
+        ],
+        "ceasn:localSubject": [
+            "dct:subject"
+        ],
+        "ceasn:rights": [
+            "dc:rights"
+        ],
+        "ceasn:source": [
+            "dct:relation"
+        ],
+        "ceasn:substantiatingCompetencyFramework": [
+            "ceasn:substantiatingResource"
+        ],
+        "ceasn:substantiatingCredential": [
+            "ceasn:substantiatingResource"
+        ],
+        "ceasn:substantiatingJob": [
+            "ceasn:substantiatingResource"
+        ],
+        "ceasn:substantiatingOccupation": [
+            "ceasn:substantiatingResource"
+        ],
+        "ceasn:substantiatingOrganization": [
+            "ceasn:substantiatingResource"
+        ],
+        "ceasn:substantiatingTask": [
+            "ceasn:substantiatingResource"
+        ],
+        "ceasn:substantiatingWorkRole": [
+            "ceasn:substantiatingResource"
+        ],
+        "qdata:regionalEarningsDistribution": [
+            "qdata:earningsDistribution"
+        ],
+        "qdata:regionalEmploymentRate": [
+            "qdata:employmentRate"
+        ]
+    },
+    "owl:inverseOf": {
+        "ceasn:hasChild": [
+            "ceasn:isChildOf"
+        ],
+        "ceasn:isChildOf": [
+            "ceasn:hasChild"
+        ],
+        "ceterms:hasPart": [
+            "ceterms:isPartOf"
+        ],
+        "ceterms:isPartOf": [
+            "ceterms:hasPart"
+        ],
+        "ceterms:precededBy": [
+            "ceterms:precedes"
+        ],
+        "ceterms:precedes": [
+            "ceterms:precededBy"
+        ]
+    }
+}
