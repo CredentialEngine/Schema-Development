@@ -1,0 +1,1797 @@
+[
+    {
+        "subject": "ceterms:AccreditAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:AdvancedStandingAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:ApprenticeshipCertificate",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Certificate"
+    },
+    {
+        "subject": "ceterms:ApproveAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:AssessmentComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:AssessmentProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:AssociateDegree",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Degree"
+    },
+    {
+        "subject": "ceterms:BachelorDegree",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Degree"
+    },
+    {
+        "subject": "ceterms:Badge",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:BasicComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:Certificate",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:CertificateOfCompletion",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:Certification",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:Certification",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:CocurricularComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:CompetencyComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:ConditionProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:CostProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:Course",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:LearningOpportunityProfile"
+    },
+    {
+        "subject": "ceterms:Course",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:CourseComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:Credential",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:CredentialAlignmentObject",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:AlignmentObject"
+    },
+    {
+        "subject": "ceterms:CredentialComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:CredentialOrganization",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Organization"
+    },
+    {
+        "subject": "ceterms:CredentialPerson",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Agent"
+    },
+    {
+        "subject": "ceterms:CredentialPerson",
+        "predicate": "rdfs:subClassOf",
+        "object": "dct:Agent"
+    },
+    {
+        "subject": "ceterms:CredentialPerson",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:Person"
+    },
+    {
+        "subject": "ceterms:Degree",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:DigitalBadge",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Badge"
+    },
+    {
+        "subject": "ceterms:Diploma",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:DoctoralDegree",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Degree"
+    },
+    {
+        "subject": "ceterms:EarningsProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:AggregateDataProfile"
+    },
+    {
+        "subject": "ceterms:EarningsProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:EmploymentOutcomeProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:AggregateDataProfile"
+    },
+    {
+        "subject": "ceterms:EmploymentOutcomeProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:ExtracurricularComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:GeneralEducationDevelopment",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Diploma"
+    },
+    {
+        "subject": "ceterms:GeoCoordinates",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:StructuredValue"
+    },
+    {
+        "subject": "ceterms:HoldersProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:AggregateDataProfile"
+    },
+    {
+        "subject": "ceterms:HoldersProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:IdentifierValue",
+        "predicate": "rdfs:subClassOf",
+        "object": "dct:identifier"
+    },
+    {
+        "subject": "ceterms:IndustryClassification",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialFramework"
+    },
+    {
+        "subject": "ceterms:InstructionalProgramClassification",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialFramework"
+    },
+    {
+        "subject": "ceterms:JobComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:JourneymanCertificate",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Certificate"
+    },
+    {
+        "subject": "ceterms:JurisdictionProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:LearningOpportunityProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:LearningProgram",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:LearningOpportunityProfile"
+    },
+    {
+        "subject": "ceterms:LearningProgram",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:EducationalOccupationalProgram"
+    },
+    {
+        "subject": "ceterms:LearningResource",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:License",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:MasterCertificate",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Certificate"
+    },
+    {
+        "subject": "ceterms:MasterDegree",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Degree"
+    },
+    {
+        "subject": "ceterms:MicroCredential",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:OccupationClassification",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialFramework"
+    },
+    {
+        "subject": "ceterms:OfferAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:OpenBadge",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Badge"
+    },
+    {
+        "subject": "ceterms:Organization",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Agent"
+    },
+    {
+        "subject": "ceterms:Organization",
+        "predicate": "rdfs:subClassOf",
+        "object": "dct:Agent"
+    },
+    {
+        "subject": "ceterms:PathwaySet",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Collection"
+    },
+    {
+        "subject": "ceterms:PostalAddress",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:ContactPoint"
+    },
+    {
+        "subject": "ceterms:ProcessProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:ProfessionalDoctorate",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:DoctoralDegree"
+    },
+    {
+        "subject": "ceterms:QACredentialOrganization",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Organization"
+    },
+    {
+        "subject": "ceterms:QualityAssuranceCredential",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Credential"
+    },
+    {
+        "subject": "ceterms:RecognizeAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:RegulateAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:RenewAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:ResearchDoctorate",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:DoctoralDegree"
+    },
+    {
+        "subject": "ceterms:RevocationProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:CreativeWork"
+    },
+    {
+        "subject": "ceterms:RevokeAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:RightsAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "ceterms:SecondarySchoolDiploma",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Diploma"
+    },
+    {
+        "subject": "ceterms:ValueProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:QuantitativeValue"
+    },
+    {
+        "subject": "ceterms:VerificationServiceProfile",
+        "predicate": "rdfs:subClassOf",
+        "object": "schema:Intangible"
+    },
+    {
+        "subject": "ceterms:WorkExperienceComponent",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:PathwayComponent"
+    },
+    {
+        "subject": "ceterms:WorkforceDemandAction",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:CredentialingAction"
+    },
+    {
+        "subject": "asn:ProgressionLevel",
+        "predicate": "rdfs:subClassOf",
+        "object": "skos:Concept"
+    },
+    {
+        "subject": "asn:ProgressionModel",
+        "predicate": "rdfs:subClassOf",
+        "object": "skos:ConceptScheme"
+    },
+    {
+        "subject": "ceasn:CompetencyFramework",
+        "predicate": "rdfs:subClassOf",
+        "object": "ceterms:Collection"
+    },
+    {
+        "subject": "ceasn:ProficiencyScale",
+        "predicate": "rdfs:subClassOf",
+        "object": "asn:EducationalFramework"
+    },
+    {
+        "subject": "ceterms:Agent",
+        "predicate": "owl:equivalentClass",
+        "object": "dct:Agent"
+    },
+    {
+        "subject": "ceterms:ContactPoint",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:ContactPoint"
+    },
+    {
+        "subject": "ceterms:Course",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:Course"
+    },
+    {
+        "subject": "ceterms:Credential",
+        "predicate": "owl:equivalentClass",
+        "object": "obi:BadgeClass"
+    },
+    {
+        "subject": "ceterms:CredentialAssertion",
+        "predicate": "owl:equivalentClass",
+        "object": "obi:Assertion"
+    },
+    {
+        "subject": "ceterms:CredentialFramework",
+        "predicate": "owl:equivalentClass",
+        "object": "asn:EducationalFramework"
+    },
+    {
+        "subject": "ceterms:GeoCoordinates",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:GeoCoordinates"
+    },
+    {
+        "subject": "ceterms:LearningResource",
+        "predicate": "owl:equivalentClass",
+        "object": "asn:LearningResource"
+    },
+    {
+        "subject": "ceterms:Organization",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:Organization"
+    },
+    {
+        "subject": "ceterms:Place",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:Place"
+    },
+    {
+        "subject": "ceterms:PostalAddress",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:PostalAddress"
+    },
+    {
+        "subject": "ceterms:ActionStatus",
+        "predicate": "owl:equivalentClass",
+        "object": "schema:ActionStatus"
+    },
+    {
+        "subject": "compare:EQ",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:eq"
+    },
+    {
+        "subject": "compare:GT",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:gt"
+    },
+    {
+        "subject": "compare:GTEQ",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:gteq"
+    },
+    {
+        "subject": "compare:LT",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:lt"
+    },
+    {
+        "subject": "compare:LTEQ",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:lteq"
+    },
+    {
+        "subject": "compare:NEQ",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:neq"
+    },
+    {
+        "subject": "financialAid:AcademicAssistantship",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#Assistantships"
+    },
+    {
+        "subject": "financialAid:DoDTuitionAssistance",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:001610#DODTuitionAssistance"
+    },
+    {
+        "subject": "financialAid:FederalGrant",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#OtherFederalGrants"
+    },
+    {
+        "subject": "financialAid:FederalScholarship",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#FederalScholarships"
+    },
+    {
+        "subject": "financialAid:FederalSubsidizedLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#FederalSubsidizedLoans"
+    },
+    {
+        "subject": "financialAid:FederalUnsubsidizedLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#FederalUnsubsidizedLoans"
+    },
+    {
+        "subject": "financialAid:FederalWorkStudy",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#FederalWorkStudy"
+    },
+    {
+        "subject": "financialAid:General",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113"
+    },
+    {
+        "subject": "financialAid:InstitutionalGrant",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#InstitutionalGrants"
+    },
+    {
+        "subject": "financialAid:InstitutionalLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#InstitutionalLoans"
+    },
+    {
+        "subject": "financialAid:InstitutionalScholarship",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#InstitutionalScholarships"
+    },
+    {
+        "subject": "financialAid:Military",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:001610"
+    },
+    {
+        "subject": "financialAid:OtherGrant",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#OtherGrants"
+    },
+    {
+        "subject": "financialAid:OtherLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#OtherLoans"
+    },
+    {
+        "subject": "financialAid:OtherOnCampusWork",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#OtherOnCampusWork"
+    },
+    {
+        "subject": "financialAid:OtherScholarship",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#OtherScholarships"
+    },
+    {
+        "subject": "financialAid:ParentPLUSLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#ParentPLUSLoans"
+    },
+    {
+        "subject": "financialAid:PellGrant",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#PellGrants"
+    },
+    {
+        "subject": "financialAid:Post911GIBill",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:001610#Post911GIBill"
+    },
+    {
+        "subject": "financialAid:PrivateGrant",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#PrivateGrants"
+    },
+    {
+        "subject": "financialAid:PrivateLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#PrivateLoans"
+    },
+    {
+        "subject": "financialAid:PrivateScholarship",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#PrivateScholarships"
+    },
+    {
+        "subject": "financialAid:StateLocalGrant",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#StateAndLocalGrants"
+    },
+    {
+        "subject": "financialAid:StateLocalLoan",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#StateLoans"
+    },
+    {
+        "subject": "financialAid:StateLocalScholarship",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#StateAndLocalScholarships"
+    },
+    {
+        "subject": "financialAid:StateLocalWork",
+        "predicate": "owl:equivalentClass",
+        "object": "ceds:000113#StateWork"
+    },
+    {
+        "subject": "logic:And",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:and"
+    },
+    {
+        "subject": "logic:OnlyOne",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:xone"
+    },
+    {
+        "subject": "logic:Or",
+        "predicate": "owl:equivalentClass",
+        "object": "odrl2:or"
+    },
+    {
+        "subject": "ceasn:Competency",
+        "predicate": "owl:equivalentClass",
+        "object": "asn:Statement"
+    },
+    {
+        "subject": "ceasn:CompetencyFramework",
+        "predicate": "owl:equivalentClass",
+        "object": "asn:StandardDocument"
+    },
+    {
+        "subject": "ceasn:ProficiencyScale",
+        "predicate": "owl:equivalentClass",
+        "object": "asn:ProficiencyScale"
+    },
+    {
+        "subject": "ceasn:PublicationStatus",
+        "predicate": "owl:equivalentClass",
+        "object": "asnscheme:ASNPublicationStatus"
+    },
+    {
+        "subject": "publicationStatus:Deprecated",
+        "predicate": "owl:equivalentClass",
+        "object": "asnPublicationStatus:Deprecated"
+    },
+    {
+        "subject": "publicationStatus:Draft",
+        "predicate": "owl:equivalentClass",
+        "object": "asnPublicationStatus:Draft"
+    },
+    {
+        "subject": "publicationStatus:Published",
+        "predicate": "owl:equivalentClass",
+        "object": "asnPublicationStatus:Published"
+    },
+    {
+        "subject": "ceasn:comment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:comment"
+    },
+    {
+        "subject": "ceasn:comment",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/notes"
+    },
+    {
+        "subject": "ceasn:hasChild",
+        "predicate": "owl:equivalentProperty",
+        "object": "gemq:hasChild"
+    },
+    {
+        "subject": "ceasn:isChildOf",
+        "predicate": "owl:equivalentProperty",
+        "object": "gemq:isChildOf"
+    },
+    {
+        "subject": "ceasn:listID",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/listEnumeration"
+    },
+    {
+        "subject": "ceasn:skillEmbodied",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:skillEmbodied"
+    },
+    {
+        "subject": "ceterms:actingAgent",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:agent"
+    },
+    {
+        "subject": "ceterms:actionStatusType",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:actionStatusType"
+    },
+    {
+        "subject": "ceterms:address",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:address"
+    },
+    {
+        "subject": "ceterms:addressCountry",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:addressCountry"
+    },
+    {
+        "subject": "ceterms:addressLocality",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:addressLocality"
+    },
+    {
+        "subject": "ceterms:addressRegion",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:addressRegion"
+    },
+    {
+        "subject": "ceterms:affiliation",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:affiliation"
+    },
+    {
+        "subject": "ceterms:alignmentType",
+        "predicate": "owl:equivalentProperty",
+        "object": "lrmi:alignmentType"
+    },
+    {
+        "subject": "ceterms:alignmentType",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:alignmentType"
+    },
+    {
+        "subject": "ceterms:audienceLevelType",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:educationLevel"
+    },
+    {
+        "subject": "ceterms:broadAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:broadAlignment"
+    },
+    {
+        "subject": "ceterms:broadAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "skos:broader"
+    },
+    {
+        "subject": "ceterms:copyrightHolder",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:copyrightHolder"
+    },
+    {
+        "subject": "ceterms:currency",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:currency"
+    },
+    {
+        "subject": "ceterms:department",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:department"
+    },
+    {
+        "subject": "ceterms:description",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:description"
+    },
+    {
+        "subject": "ceterms:description",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:description"
+    },
+    {
+        "subject": "ceterms:duns",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:duns"
+    },
+    {
+        "subject": "ceterms:email",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:email"
+    },
+    {
+        "subject": "ceterms:employee",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:employee"
+    },
+    {
+        "subject": "ceterms:endDate",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:endDate"
+    },
+    {
+        "subject": "ceterms:endTime",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:endTime"
+    },
+    {
+        "subject": "ceterms:exactAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:exactAlignment"
+    },
+    {
+        "subject": "ceterms:exactAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "skos:exactMatch"
+    },
+    {
+        "subject": "ceterms:familyName",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:familyName"
+    },
+    {
+        "subject": "ceterms:faxNumber",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:faxNumber"
+    },
+    {
+        "subject": "ceterms:foundingDate",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:foundingDate"
+    },
+    {
+        "subject": "ceterms:frameworkName",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:educationalFramework"
+    },
+    {
+        "subject": "ceterms:givenName",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:givenName"
+    },
+    {
+        "subject": "ceterms:hasPart",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:hasPart"
+    },
+    {
+        "subject": "ceterms:hasPart",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:hasPart"
+    },
+    {
+        "subject": "ceterms:honorificSuffix",
+        "predicate": "owl:equivalentProperty",
+        "object": "ceterms:ContactPoint"
+    },
+    {
+        "subject": "ceterms:image",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:image"
+    },
+    {
+        "subject": "ceterms:inLanguage",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:inLanguage"
+    },
+    {
+        "subject": "ceterms:instrument",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:instrument"
+    },
+    {
+        "subject": "ceterms:isicV4",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:isicV4"
+    },
+    {
+        "subject": "ceterms:isPartOf",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:isPartOf"
+    },
+    {
+        "subject": "ceterms:isPartOf",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:isPartOf"
+    },
+    {
+        "subject": "ceterms:isSimilarTo",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:isSimilarTo"
+    },
+    {
+        "subject": "ceterms:isSimilarTo",
+        "predicate": "owl:equivalentProperty",
+        "object": "skos:related"
+    },
+    {
+        "subject": "ceterms:keyword",
+        "predicate": "owl:equivalentProperty",
+        "object": "ceasn:conceptKeyword"
+    },
+    {
+        "subject": "ceterms:latitude",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:latitude"
+    },
+    {
+        "subject": "ceterms:leiCode",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:leiCode"
+    },
+    {
+        "subject": "ceterms:longitude",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:longitude"
+    },
+    {
+        "subject": "ceterms:majorAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:majorAlignment"
+    },
+    {
+        "subject": "ceterms:minorAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:minorAlignment"
+    },
+    {
+        "subject": "ceterms:naics",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:naics"
+    },
+    {
+        "subject": "ceterms:name",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:name"
+    },
+    {
+        "subject": "ceterms:narrowAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:narrowAlignment"
+    },
+    {
+        "subject": "ceterms:narrowAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "skos:narrower"
+    },
+    {
+        "subject": "ceterms:object",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:object"
+    },
+    {
+        "subject": "ceterms:occupationType",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:occupationalCategory"
+    },
+    {
+        "subject": "ceterms:offeredBy",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:provider"
+    },
+    {
+        "subject": "ceterms:parentOrganization",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:parentOrganization"
+    },
+    {
+        "subject": "ceterms:participant",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:participant"
+    },
+    {
+        "subject": "ceterms:postalCode",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:postalCode"
+    },
+    {
+        "subject": "ceterms:postOfficeBoxNumber",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:postOfficeBoxNumber"
+    },
+    {
+        "subject": "ceterms:price",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:price"
+    },
+    {
+        "subject": "ceterms:spatialCoverage",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:spatialCoverage"
+    },
+    {
+        "subject": "ceterms:startDate",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:startDate"
+    },
+    {
+        "subject": "ceterms:startTime",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:startTime"
+    },
+    {
+        "subject": "ceterms:streetAddress",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:streetAddress"
+    },
+    {
+        "subject": "ceterms:subjectWebpage",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:mainEntityOfPage"
+    },
+    {
+        "subject": "ceterms:subOrganization",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:subOrganization"
+    },
+    {
+        "subject": "ceterms:targetContactPoint",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:contactPoint"
+    },
+    {
+        "subject": "ceterms:targetNode",
+        "predicate": "owl:equivalentProperty",
+        "object": "lrmi:targetUrl"
+    },
+    {
+        "subject": "ceterms:targetNode",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:targetUrl"
+    },
+    {
+        "subject": "ceterms:targetNodeDescription",
+        "predicate": "owl:equivalentProperty",
+        "object": "lrmi:targetDescription"
+    },
+    {
+        "subject": "ceterms:targetNodeDescription",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:targetDescription"
+    },
+    {
+        "subject": "ceterms:targetNodeName",
+        "predicate": "owl:equivalentProperty",
+        "object": "lrmi:targetName"
+    },
+    {
+        "subject": "ceterms:targetNodeName",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:targetName"
+    },
+    {
+        "subject": "ceterms:telephone",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:telephone"
+    },
+    {
+        "subject": "ceterms:temporalCoverage",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:worksFor",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:worksFor"
+    },
+    {
+        "subject": "ceasn:alignFrom",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:alignFrom"
+    },
+    {
+        "subject": "ceasn:alignTo",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:alignTo"
+    },
+    {
+        "subject": "ceasn:altCodedNotation",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:altStatementNotation"
+    },
+    {
+        "subject": "ceasn:author",
+        "predicate": "owl:equivalentProperty",
+        "object": "locr:aut"
+    },
+    {
+        "subject": "ceasn:broadAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:broadAlignment"
+    },
+    {
+        "subject": "ceasn:codedNotation",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:statementNotation"
+    },
+    {
+        "subject": "ceasn:codedNotation",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/humanCodingScheme"
+    },
+    {
+        "subject": "ceasn:codedNotation",
+        "predicate": "owl:equivalentProperty",
+        "object": "ceterms:codedNotation"
+    },
+    {
+        "subject": "ceasn:competencyCategory",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:statementLabel"
+    },
+    {
+        "subject": "ceasn:competencyCategory",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/CFItemType"
+    },
+    {
+        "subject": "ceasn:competencyText",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/fullStatement"
+    },
+    {
+        "subject": "ceasn:complexityLevel",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:complexityLevel"
+    },
+    {
+        "subject": "ceasn:comprisedOf",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:comprisedOf"
+    },
+    {
+        "subject": "ceasn:conceptKeyword",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:conceptKeyword"
+    },
+    {
+        "subject": "ceasn:conceptKeyword",
+        "predicate": "owl:equivalentProperty",
+        "object": "ceterms:keyword"
+    },
+    {
+        "subject": "ceasn:conceptTerm",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:conceptTerm"
+    },
+    {
+        "subject": "ceasn:conceptTerm",
+        "predicate": "owl:equivalentProperty",
+        "object": "ceterms:subject"
+    },
+    {
+        "subject": "ceasn:creator",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:creator"
+    },
+    {
+        "subject": "ceasn:crossSubjectReference",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:crossSubjectReference"
+    },
+    {
+        "subject": "ceasn:dateCopyrighted",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:dateCopyrighted"
+    },
+    {
+        "subject": "ceasn:dateCreated",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:created"
+    },
+    {
+        "subject": "ceasn:dateModified",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:modified"
+    },
+    {
+        "subject": "ceasn:dateModified",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:dateModified"
+    },
+    {
+        "subject": "ceasn:dateValidFrom",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:startDate"
+    },
+    {
+        "subject": "ceasn:dateValidUntil",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:endDate"
+    },
+    {
+        "subject": "ceasn:derivedFrom",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:derivedFrom"
+    },
+    {
+        "subject": "ceasn:description",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:description"
+    },
+    {
+        "subject": "ceasn:description",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:description"
+    },
+    {
+        "subject": "ceasn:educationLevelType",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/vocab#educationLevel"
+    },
+    {
+        "subject": "ceasn:educationLevelType",
+        "predicate": "owl:equivalentProperty",
+        "object": "ceterms:audienceLevelType"
+    },
+    {
+        "subject": "ceasn:educationLevelType",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:educationLevel"
+    },
+    {
+        "subject": "ceasn:exactAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:exactAlignment"
+    },
+    {
+        "subject": "ceasn:identifier",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:identifier"
+    },
+    {
+        "subject": "ceasn:inLanguage",
+        "predicate": "owl:equivalentProperty",
+        "object": "case:v1p0/language"
+    },
+    {
+        "subject": "ceasn:inLanguage",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:language"
+    },
+    {
+        "subject": "ceasn:isPartOf",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:isPartOf"
+    },
+    {
+        "subject": "ceasn:isVersionOf",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:isVersionOf"
+    },
+    {
+        "subject": "ceasn:license",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:license"
+    },
+    {
+        "subject": "ceasn:localSubject",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:localSubject"
+    },
+    {
+        "subject": "ceasn:majorAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:majorAlignment"
+    },
+    {
+        "subject": "ceasn:minorAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:minorAlignment"
+    },
+    {
+        "subject": "ceasn:name",
+        "predicate": "owl:equivalentProperty",
+        "object": "dc:title"
+    },
+    {
+        "subject": "ceasn:name",
+        "predicate": "owl:equivalentProperty",
+        "object": "schema:name"
+    },
+    {
+        "subject": "ceasn:narrowAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:narrowAlignment"
+    },
+    {
+        "subject": "ceasn:prerequisiteAlignment",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:prerequisiteAlignment"
+    },
+    {
+        "subject": "ceasn:publicationStatusType",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:publicationStatus"
+    },
+    {
+        "subject": "ceasn:publisher",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:publisher"
+    },
+    {
+        "subject": "ceasn:publisherName",
+        "predicate": "owl:equivalentProperty",
+        "object": "dc:publisher"
+    },
+    {
+        "subject": "ceasn:repositoryDate",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:repositoryDate"
+    },
+    {
+        "subject": "ceasn:rights",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:rights"
+    },
+    {
+        "subject": "ceasn:rightsHolder",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:rightsHolder"
+    },
+    {
+        "subject": "ceasn:shouldIndex",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:indexingStatus"
+    },
+    {
+        "subject": "ceasn:source",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:source"
+    },
+    {
+        "subject": "ceasn:tableOfContents",
+        "predicate": "owl:equivalentProperty",
+        "object": "dct:tableOfContents"
+    },
+    {
+        "subject": "ceasn:weight",
+        "predicate": "owl:equivalentProperty",
+        "object": "asn:weight"
+    },
+    {
+        "subject": "ceasn:hasChild",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dc:relation"
+    },
+    {
+        "subject": "ceasn:isChildOf",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dc:relation"
+    },
+    {
+        "subject": "ceasn:listID",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "asn:listID"
+    },
+    {
+        "subject": "ceterms:actionStatusType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:agentSectorType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:alignmentDate",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:assesses",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:targetCompetency"
+    },
+    {
+        "subject": "ceterms:assessmentDeliveryType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:deliveryType"
+    },
+    {
+        "subject": "ceterms:audienceLevelType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:audienceType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:availableAt",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:spatialCoverage"
+    },
+    {
+        "subject": "ceterms:broadAlignment",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:isSimilarTo"
+    },
+    {
+        "subject": "ceterms:condition",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:description"
+    },
+    {
+        "subject": "ceterms:credentialStatusType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:lifeCycleStatusType"
+    },
+    {
+        "subject": "ceterms:ctid",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialId"
+    },
+    {
+        "subject": "ceterms:dateEffective",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:department",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:subOrganization"
+    },
+    {
+        "subject": "ceterms:directCostType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:earnings",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:aggregateData"
+    },
+    {
+        "subject": "ceterms:employmentOutcome",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:aggregateData"
+    },
+    {
+        "subject": "ceterms:endDate",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:endTime",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:entryCondition",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:requires"
+    },
+    {
+        "subject": "ceterms:exactAlignment",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:isSimilarTo"
+    },
+    {
+        "subject": "ceterms:externalInputType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:foundingDate",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:hasWorkforceDemand",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:relatedAction"
+    },
+    {
+        "subject": "ceterms:holders",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:aggregateData"
+    },
+    {
+        "subject": "ceterms:inDemandAction",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:relatedAction"
+    },
+    {
+        "subject": "ceterms:industryType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:instructionalProgramType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:jurisdictionException",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:spatialCoverage"
+    },
+    {
+        "subject": "ceterms:keyword",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "schema:about"
+    },
+    {
+        "subject": "ceterms:learningDeliveryType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:deliveryType"
+    },
+    {
+        "subject": "ceterms:mainJurisdiction",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:spatialCoverage"
+    },
+    {
+        "subject": "ceterms:majorAlignment",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:isSimilarTo"
+    },
+    {
+        "subject": "ceterms:minorAlignment",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:isSimilarTo"
+    },
+    {
+        "subject": "ceterms:narrowAlignment",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:isSimilarTo"
+    },
+    {
+        "subject": "ceterms:occupationType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:region",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:spatialCoverage"
+    },
+    {
+        "subject": "ceterms:renewalFrequency",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:maximumDuration"
+    },
+    {
+        "subject": "ceterms:residencyType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:resultingAward",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:result"
+    },
+    {
+        "subject": "ceterms:startDate",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:startTime",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:temporalCoverage"
+    },
+    {
+        "subject": "ceterms:subject",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "schema:about"
+    },
+    {
+        "subject": "ceterms:targetCompetency",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:targetCompetencyFramework",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:credentialAlignment"
+    },
+    {
+        "subject": "ceterms:teaches",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceterms:targetCompetency"
+    },
+    {
+        "subject": "ceasn:altCodedNotation",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:identifier"
+    },
+    {
+        "subject": "ceasn:author",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:contributor"
+    },
+    {
+        "subject": "ceasn:codedNotation",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:identifier"
+    },
+    {
+        "subject": "ceasn:competencyLabel",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:name"
+    },
+    {
+        "subject": "ceasn:competencyLabel",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "schema:name"
+    },
+    {
+        "subject": "ceasn:competencyText",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:description"
+    },
+    {
+        "subject": "ceasn:conceptKeyword",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:subject"
+    },
+    {
+        "subject": "ceasn:conceptTerm",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:subject"
+    },
+    {
+        "subject": "ceasn:creator",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:contributor"
+    },
+    {
+        "subject": "ceasn:crossSubjectReference",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:relation"
+    },
+    {
+        "subject": "ceasn:dateCopyrighted",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:date"
+    },
+    {
+        "subject": "ceasn:dateCreated",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:date"
+    },
+    {
+        "subject": "ceasn:dateModified",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:date"
+    },
+    {
+        "subject": "ceasn:dateValidFrom",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:valid"
+    },
+    {
+        "subject": "ceasn:dateValidUntil",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:valid"
+    },
+    {
+        "subject": "ceasn:derivedFrom",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dc:relation"
+    },
+    {
+        "subject": "ceasn:educationLevelType",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:audience"
+    },
+    {
+        "subject": "ceasn:inProgressionModel",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "skos:inScheme"
+    },
+    {
+        "subject": "ceasn:isPartOf",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dc:relation"
+    },
+    {
+        "subject": "ceasn:isTopChildOf",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:isChildOf"
+    },
+    {
+        "subject": "ceasn:license",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:rights"
+    },
+    {
+        "subject": "ceasn:localSubject",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:subject"
+    },
+    {
+        "subject": "ceasn:rights",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dc:rights"
+    },
+    {
+        "subject": "ceasn:source",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "dct:relation"
+    },
+    {
+        "subject": "ceasn:substantiatingCompetencyFramework",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "ceasn:substantiatingCredential",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "ceasn:substantiatingJob",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "ceasn:substantiatingOccupation",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "ceasn:substantiatingOrganization",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "ceasn:substantiatingTask",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "ceasn:substantiatingWorkRole",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "ceasn:substantiatingResource"
+    },
+    {
+        "subject": "qdata:regionalEarningsDistribution",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "qdata:earningsDistribution"
+    },
+    {
+        "subject": "qdata:regionalEmploymentRate",
+        "predicate": "rdfs:subPropertyOf",
+        "object": "qdata:employmentRate"
+    },
+    {
+        "subject": "ceasn:hasChild",
+        "predicate": "owl:inverseOf",
+        "object": "ceasn:isChildOf"
+    },
+    {
+        "subject": "ceasn:isChildOf",
+        "predicate": "owl:inverseOf",
+        "object": "ceasn:hasChild"
+    },
+    {
+        "subject": "ceterms:hasPart",
+        "predicate": "owl:inverseOf",
+        "object": "ceterms:isPartOf"
+    },
+    {
+        "subject": "ceterms:isPartOf",
+        "predicate": "owl:inverseOf",
+        "object": "ceterms:hasPart"
+    },
+    {
+        "subject": "ceterms:precededBy",
+        "predicate": "owl:inverseOf",
+        "object": "ceterms:precedes"
+    },
+    {
+        "subject": "ceterms:precedes",
+        "predicate": "owl:inverseOf",
+        "object": "ceterms:precededBy"
+    }
+]
