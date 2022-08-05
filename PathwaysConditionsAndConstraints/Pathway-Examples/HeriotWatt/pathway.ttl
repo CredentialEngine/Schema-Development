@@ -448,7 +448,7 @@ res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "exitProgram" ;
             ceterms:comparator compare:EQ ;
-            ceterms:rightSource "yes"
+            ceterms:rightSource "true"^^xsd:boolean
         ] .
 
 res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
@@ -467,7 +467,7 @@ res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
         a ceterms:Constraint ;
         ceterms:leftSource "exitProgram" ;
         ceterms:comparator compare:EQ ;
-        ceterms:rightSource "No"
+        ceterms:rightSource "false"^^xsd:boolean
     ] .
 
 res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 a ceterms:ComponentCondition ;
@@ -486,7 +486,7 @@ res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "exitProgram" ;
             ceterms:comparator compare:EQ ;
-            ceterms:rightSource "yes"
+            ceterms:rightSource "true"^^xsd:boolean
         ] .
 
 res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
@@ -505,7 +505,7 @@ res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
         a ceterms:Constraint ;
         ceterms:leftSource "exitProgram" ;
         ceterms:comparator compare:EQ ;
-        ceterms:rightSource "No"
+        ceterms:rightSource "false"^^xsd:boolean
     ] .
 
 
@@ -525,7 +525,7 @@ res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
         a ceterms:Constraint ;
         ceterms:leftSource "exitProgram" ;
         ceterms:comparator compare:EQ ;
-        ceterms:rightSource "yes"
+        ceterms:rightSource "true"^^xsd:boolean
     ] .
 
 res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
@@ -544,7 +544,7 @@ res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "exitProgram" ;
             ceterms:comparator compare:EQ ;
-            ceterms:rightSource "No"
+            ceterms:rightSource "false"^^xsd:boolean
         ] .
 
 
