@@ -11,7 +11,9 @@
 @prefix scqfcredits: <http://example.edu/scqf/credits/> .
 @prefix hwusubjects: <http://example.edu/hwu/subjects/> .
 @prefix hwugrades: <http://example.edu/hwu/grades/> .
-@prefix compare: <https://purl.org/ctdl/vocabs/compare/>.
+@prefix compare: <https://purl.org/ctdl/vocabs/compare/> .
+@prefix logic: <https://purl.org/ctdl/vocabs/logic/> .
+
 
 # To do: prefix for aggregation action concepts
 # To do: see others below.
@@ -548,7 +550,7 @@ res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
 
 res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 1, Semester 2 attainment and for progression to Stage 2."@en-US ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:leftAction <Sum> ;
@@ -592,7 +594,7 @@ res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
 
 res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 2, Semester 2 attainment and for progression to Stage 3."@en-US ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -616,7 +618,7 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
 
 res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
     ceterms:description "Stage 2, Semester 2 Contraint Group: [(courseNum = 8) AND (minGrade = \"D\")]" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -649,7 +651,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
 
 res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
     ceterms:description "Constraints on Stage 3, Semester 2 attainment and for progression to Stage 4."@en-US ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -673,7 +675,7 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
 
 res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
     ceterms:description "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqflevel = 9)]" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -707,7 +709,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
     ceterms:targetComponent
          res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed ,
          res:3ab6530d-9a21-4123-8fd4-8614dff431f0 ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -726,7 +728,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
 
 res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
     ceterms:description "Stage 3, Semester 2 Contraint Group: [(assessAverage = \"50%\") AND (firstSit = \"yes\")]" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -754,7 +756,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
 	      res:5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4 ,
  	      res:2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650 ,
  	      res:3ab6530d-9a21-4123-8fd4-8614dff431f0 ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -773,7 +775,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
 
 res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
     ceterms:description "Stage 4, Semester 2 Contsraint Group 19: total scqfCredits ≥ 480" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -810,7 +812,7 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
 
 res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
     ceterms:description "Stage 4, Semester 2 Contraint Group 22: [(courseCredits = 180) AND (scqflevel = 9)]" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
@@ -840,7 +842,7 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
 
 res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
     ceterms:description "Stage 4, Semester 2 Contraint Group: [(courseCredits = 90) AND (scqflevel = 10)]" ;
-    ceterms:logicalOperator "AND" ;
+    ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
