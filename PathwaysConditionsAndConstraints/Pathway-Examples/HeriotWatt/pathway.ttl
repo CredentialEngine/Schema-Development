@@ -34,6 +34,32 @@ res:1a285e3e-35ce-476a-b592-af7ae4e732a3 a ceterms:CredentialComponent ;
      res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 ,
      res:82a4f31d-d152-407d-9bd1-3d7d24c440ef .
 
+res:eea929ae-5067-4e1f-ac10-825637abc6cc a ceterms:CredentialComponent ;
+	ceterms:name "CertHE (exit certificate)"@en ;
+	ceterms:description "Proxy for Certificate of Higher Education in Computer Science from Heriot-Watt University"@en-US ;
+  ceterms:proxyFor res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c ;
+  ceterms:precededBy res:0d3c9836-b274-4d01-b059-f4dc1fd8ed2f ;
+	ceterms:hasCondition
+	   res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 .
+
+res:a7cd1db3-0dcd-42a8-b871-678ea7806c59 a ceterms:CredentialComponent ;
+	ceterms:name "DipHE (exit diploma)"@en ;
+	ceterms:description "Proxy for Diploma of Higher Education in Computer Science from Heriot-Watt University"@en-US ;
+  ceterms:proxyFor res:e3bffc2f-0006-4f1d-b190-999befb5d717 ;
+  ceterms:precededBy res:41ab6ab88-361f-42c3-bac6-f373079e521c ;
+	ceterms:hasCondition
+	   res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 .
+
+res:a7cd1db3-0dcd-42a8-b871-678ea7806c59 a ceterms:CredentialComponent ;
+	ceterms:name "BSCO (exit degree)"@en ;
+	ceterms:description "Proxy for Ordinary Degree in Computer Science from Heriot-Watt University"@en-US ;
+  ceterms:proxyFor res:758be891-e53a-4ea7-990d-5b2183edde28 ;
+  ceterms:precededBy res:bdb06663-8983-40b1-beee-0a77049b3360 ;
+	ceterms:hasCondition
+	   res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 .
+
+
+
 #=======================#
 # Stage Component Data  #
 #=======================#
@@ -418,11 +444,9 @@ res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 a ceterms:ComponentCondition ;
         ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:leftSource "exitProgram" ;
-            ceterms:comparitor "=" ;
+            ceterms:comparator "=" ;
             ceterms:rightSource "yes"
-        ] ;
-# Q: I don't think we have discussed this; it could be the destination node of a distinct pathway
-    ceterms:completionAward res:758be891-e53a-4ea7-990d-5b2183edde28 .
+        ] .
 
 res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
@@ -439,7 +463,7 @@ res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
     ceterms:hasConstraint [
         a ceterms:Constraint ;
         ceterms:leftSource "exitProgram" ;
-        ceterms:comparitor "=" ;
+        ceterms:comparator "=" ;
         ceterms:rightSource "No"
     ] .
 
@@ -458,10 +482,9 @@ res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 a ceterms:ComponentCondition ;
         ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:leftSource "exitProgram" ;
-            ceterms:comparitor "=" ;
+            ceterms:comparator "=" ;
             ceterms:rightSource "yes"
-        ] ;
-        ceterms:completionAward res:e3bffc2f-0006-4f1d-b190-999befb5d717 .
+        ] .
 
 res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
@@ -478,7 +501,7 @@ res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
     ceterms:hasConstraint [
         a ceterms:Constraint ;
         ceterms:leftSource "exitProgram" ;
-        ceterms:comparitor "=" ;
+        ceterms:comparator "=" ;
         ceterms:rightSource "No"
     ] .
 
@@ -498,10 +521,9 @@ res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
     ceterms:hasConstraint [
         a ceterms:Constraint ;
         ceterms:leftSource "exitProgram" ;
-        ceterms:comparitor "=" ;
+        ceterms:comparator "=" ;
         ceterms:rightSource "yes"
-    ] ;
-    ceterms:completionAward res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c .
+    ] .
 
 res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
     ceterms:description "Complete 8 out of 8 courses."@en-US ;
@@ -518,7 +540,7 @@ res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:leftSource "exitProgram" ;
-            ceterms:comparitor "=" ;
+            ceterms:comparator "=" ;
             ceterms:rightSource "No"
         ] .
 

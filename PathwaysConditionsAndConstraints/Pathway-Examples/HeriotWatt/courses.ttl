@@ -23,16 +23,16 @@ res:46942a57-b7f5-4ce7-bbf8-72976ac7bd23 a ceterms:BachelorDegree ;
   ceterms:targetPathway res:ec071f65-2c5b-4b58-a2df-dd6287880a7a .
 
 res:ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c a ceterms:Certificate ;
-  ceterms:description "Degree awarded by Heriot-Watt University for successful completion of stage 1 of Computer Science program"@en-US ;
+  ceterms:description "Certificate awarded by Heriot-Watt University for successful completion of stage 1 of Computer Science program"@en-US ;
   ceterms:name "Certificate of Higher Education"@en-US .
 
 res:e3bffc2f-0006-4f1d-b190-999befb5d717 a ceterms:Diploma ;
-  ceterms:description "Degree awarded by Heriot-Watt University for successful completion of stage 2 of Computer Science program"@en-US ;
+  ceterms:description "Diploma awarded by Heriot-Watt University for successful completion of stage 2 of Computer Science program"@en-US ;
   ceterms:name "Diploma of Higher Education"@en-US .
 
 res:758be891-e53a-4ea7-990d-5b2183edde28 a ceterms:BachelorDegree ;
   ceterms:description "Degree awarded by Heriot-Watt University for successful completion of stage 3 of Computer Science program"@en-US ;
-  ceterms:name "Ordinary or General Degree"@en-US .
+  ceterms:name "Ordinary Degree"@en-US .
 
 #==============#
 # Program Data #
