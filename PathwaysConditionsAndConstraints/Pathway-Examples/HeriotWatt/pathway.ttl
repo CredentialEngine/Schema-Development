@@ -13,6 +13,7 @@
 @prefix hwugrades: <http://example.edu/hwu/grades/> .
 @prefix compare: <https://purl.org/ctdl/vocabs/compare/> .
 @prefix logic: <https://purl.org/ctdl/vocabs/logic/> .
+@prefix array: <https://purl.org/ctdl/vocabs/array/> .
 
 
 # To do: prefix for aggregation action concepts
@@ -553,7 +554,7 @@ res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
     ceterms:logicalOperator logic:And ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:GTEQ" ;
             ceterms:rightSource 120
@@ -587,7 +588,7 @@ res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "grade";
             ceterms:comparator "compare:EQ" ;
-            ceterms:rightAction "oneOf" ;
+            ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
                 hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] .
@@ -598,7 +599,7 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:LTEQ" ;
             ceterms:rightSource 240
@@ -622,7 +623,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:GTEQ" ;
             ceterms:rightSource 120
@@ -643,7 +644,7 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "grade";
             ceterms:comparator "compare:EQ" ;
-            ceterms:rightAction "oneOf" ;
+            ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
                 hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] .
@@ -667,7 +668,7 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
         ] ,
         [
                 a ceterms:Constraint ;
-                ceterms:leftAction <Sum> ;
+                ceterms:leftAction array:Sum ;
                 ceterms:leftSource "creditValue";
                 ceterms:comparator "compare:GTEQ" ;
                 ceterms:rightSource 360
@@ -685,7 +686,7 @@ res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
         ]  ,
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:GTEQ" ;
             ceterms:rightSource 120
@@ -715,7 +716,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "grade";
             ceterms:comparator "compare:EQ" ;
-            ceterms:rightAction "oneOf" ;
+            ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
                 hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] ,
@@ -762,7 +763,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
             a ceterms:Constraint ;
             ceterms:leftSource "grade";
             ceterms:comparator "compare:EQ" ;
-            ceterms:rightOperation "oneOf" ;
+            ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
                 hwugrades:A , hwugrades:B , hwugrades:C , hwugrades:D
         ] ,
@@ -785,7 +786,7 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:GTEQ" ;
             ceterms:rightSource 480
@@ -803,7 +804,7 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftSource "courseID";
-            ceterms:comparator "allOf" ;
+            ceterms:comparator array:AllOf ;
             ceterms:rightSource
                 res:6dc96db8-a61b-4288-9b8f-6730e29688fa ,
                 res:57f9795d-1b1e-4986-9e48-1987719dabc5 ,
@@ -822,7 +823,7 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:GTEQ" ;
             ceterms:rightSource 180
@@ -852,7 +853,7 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Sum> ;
+            ceterms:leftAction array:Sum ;
             ceterms:leftSource "creditValue";
             ceterms:comparator "compare:GTEQ" ;
             ceterms:rightSource 90
