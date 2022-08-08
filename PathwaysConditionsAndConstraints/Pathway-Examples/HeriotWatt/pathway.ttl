@@ -715,7 +715,7 @@ res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftAction <Average> ;
+            ceterms:leftAction array:Mean ;
             ceterms:leftSource "PercentMark";
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 50
