@@ -16,10 +16,6 @@
 @prefix array: <https://purl.org/ctdl/vocabs/array/> .
 
 
-# To do: prefix for aggregation action concepts
-# To do: see others below.
-
-
 #===============#
 # Pathway data  #
 #===============#
