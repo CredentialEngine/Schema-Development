@@ -34,7 +34,7 @@
 								"ceterms:financialAssistanceType"
 							],
 							"ceterms:comparator": "compare:EQ",
-							"ceterms:rightOperator": "array:AnyOf",
+							"ceterms:rightAction": "array:AnyOf",
 							"ceterms:rightOperand": [
 								"financialAid:FederalGrant",
 								"financialAid:InstitutionalGrant",
@@ -43,14 +43,14 @@
 						},
 						{
 							"@type": "ceterms:Constraint",
-							"ceterms:leftOperator": "array:AllOf",
+							"ceterms:leftAction": "array:AllOf",
 							"ceterms:leftOperand": [
 								"User-entered text 1",
 								"User-entered text 2",
 								"User-entered text 3"
 							],
 							"ceterms:comparator": "compare:LT",
-							"ceterms:rightOperator": "array:AnyOf",
+							"ceterms:rightAction": "array:AnyOf",
 							"ceterms:rightOperand": [
 								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconcepta",
 								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconceptb",
