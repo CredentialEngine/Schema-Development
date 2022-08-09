@@ -15,8 +15,8 @@
 @prefix logic: <https://purl.org/ctdl/vocabs/logic/> .
 @prefix array: <https://purl.org/ctdl/vocabs/array/> .
 
-# Notes: left sources in constraints are still strings, leaving
-# an open issue of mapping these to the actual data source.
+# To do: left sources in constraints are still strings, make
+# properties to match the actual data source.
  
 #===============#
 # Pathway data  #
