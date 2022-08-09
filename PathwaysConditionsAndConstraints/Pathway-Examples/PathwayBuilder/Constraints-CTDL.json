@@ -50,7 +50,7 @@
 								"User-entered text 3"
 							],
 							"ceterms:comparator": "compare:LT",
-							"ceterms:rightAction": "array:AnyOf",
+							"ceterms:rightAction": "array:OneOf",
 							"ceterms:rightSource": [
 								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconcepta",
 								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconceptb",
