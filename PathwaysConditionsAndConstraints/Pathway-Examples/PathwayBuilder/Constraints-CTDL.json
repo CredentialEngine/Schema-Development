@@ -1,0 +1,65 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:CredentialComponent",
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 2,
+					"ceterms:logicalOperator": "logic:And",
+					"ceterms:hasConstraint": [
+						{
+							"@type": "ceterms:Constraint",
+							"ceterms:leftOperand": [
+								"ceterms:creditValue"
+							],
+							"ceterms:comparator": "compare:EQ",
+							"ceterms:rightOperand": [
+								"10"
+							]
+						},
+						{
+							"@type": "ceterms:Constraint",
+							"ceterms:leftOperand": [
+								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningstudentgrade"
+							],
+							"ceterms:comparator": "compare:GT",
+							"ceterms:rightOperand": [
+								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaninggradelevelc"
+							]
+						},
+						{
+							"@type": "ceterms:Constraint",
+							"ceterms:leftOperand": [
+								"ceterms:financialAssistanceType"
+							],
+							"ceterms:comparator": "compare:EQ",
+							"ceterms:rightOperator": "array:AnyOf",
+							"ceterms:rightOperand": [
+								"financialAid:FederalGrant",
+								"financialAid:InstitutionalGrant",
+								"financialAid:PrivateGrant"
+							]
+						},
+						{
+							"@type": "ceterms:Constraint",
+							"ceterms:leftOperator": "array:AllOf",
+							"ceterms:leftOperand": [
+								"User-entered text 1",
+								"User-entered text 2",
+								"User-entered text 3"
+							],
+							"ceterms:comparator": "compare:LT",
+							"ceterms:rightOperator": "array:AnyOf",
+							"ceterms:rightOperand": [
+								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconcepta",
+								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconceptb",
+								"https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconceptc",
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
