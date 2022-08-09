@@ -1,0 +1,111 @@
+{
+	"PathwayComponents": [
+		{
+			"HasCondition": [
+				"f836908f-d378-4017-b75e-daa1928ac766"
+			]
+		}
+	],
+	"ComponentConditions": [
+		{
+			"RowId": "f836908f-d378-4017-b75e-daa1928ac766",
+			"RequiredNumber": 2,
+			"LogicalOperator": "logic:And",
+			"HasConstraint": [
+				"91d00367-0f7f-4d4e-a5e0-9823f556a1d5",
+				"58d992f0-7326-4632-baf7-267de495e6d1",
+				"834d4dc1-1096-4031-b4b8-b34c274b7d91",
+				"4efb4131-0eee-45f5-a831-19a68af50a6a"
+			]
+		}
+	],
+	"Constraints": [
+		{
+			"RowId": "91d00367-0f7f-4d4e-a5e0-9823f556a1d5",
+			"LeftSource": [
+				{
+					"URI": "ceterms:creditValue",
+					"Name": "Credit Value"
+				}
+			],
+			"Comparator": "compare:EQ",
+			"RightSource": [
+				{
+					"Name": "10"
+				}
+			]
+		},
+		{
+			"RowId": "58d992f0-7326-4632-baf7-267de495e6d1",
+			"LeftSource": [
+				{
+					"URI": "https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningstudentgrade",
+					"Name": "Student Grade"
+				}
+			],
+			"Comparator": "compare:GT",
+			"RightSource": [
+				{
+					"URI": "https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaninggradelevelc",
+					"Name": "Grade Level C"
+				}
+			]
+		},
+		{
+			"RowId": "834d4dc1-1096-4031-b4b8-b34c274b7d91",
+			"LeftSource": [
+				{
+					"URI": "ceterms:financialAssistanceType",
+					"Name": "Financial Assistance Type"
+				}
+			],
+			"Comparator": "compare:EQ",
+			"RightAction": "array:AnyOf",
+			"RightSource": [
+				{
+					"URI": "financialAid:FederalGrant",
+					"Name": "Federal Grant"
+				},
+				{
+					"URI": "financialAid:InstitutionalGrant",
+					"Name": "Institutional Grant"
+				},
+				{
+					"URI": "financialAid:PrivateGrant",
+					"Name": "Private Grant"
+				}
+			]
+		},
+		{
+			"RowId": "4efb4131-0eee-45f5-a831-19a68af50a6a",
+			"LeftAction": "array:AllOf",
+			"LeftSource": [
+				{
+					"Name": "User-entered text 1"
+				},
+				{
+					"Name": "User-entered text 2"
+				},
+				{
+					"Name": "User-entered text 3"
+				}
+			],
+			"Comparator": "compare:LT",
+			"RightAction": "array:OneOf",
+			"RightSource": [
+				{
+					"URI": "https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconcepta",
+					"Name": "Concept A"
+				},
+				{
+					"URI": "https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconceptb",
+					"Name": "Concept B"
+				},
+				{
+					"URI": "https://credentialengineregistry.org/resources/ce-ctidforaconceptmeaningconceptc",
+					"Name": "Concept C"
+				}
+			]
+		},
+	]
+}
