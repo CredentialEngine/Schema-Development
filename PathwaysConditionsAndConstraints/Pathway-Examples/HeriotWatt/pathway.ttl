@@ -14,10 +14,11 @@
 @prefix compare: <https://purl.org/ctdl/vocabs/compare/> .
 @prefix logic: <https://purl.org/ctdl/vocabs/logic/> .
 @prefix array: <https://purl.org/ctdl/vocabs/array/> .
+@prefix stdtdata: <https://example.edu/studentData/> .
+   # stdtdata: is used to match constraints to data about students
+   # the details of which will vary between implementations of
+   # student records.
 
-# To do: left sources in constraints are still strings, make
-# properties to match the actual data source.
- 
 #===============#
 # Pathway data  #
 #===============#
@@ -445,7 +446,7 @@ res:0d02a8fb-c9b8-4324-a957-1259dd923ed4 a ceterms:ComponentCondition ;
         res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed ;
         ceterms:hasConstraint [
             a ceterms:Constraint ;
-            ceterms:leftSource "exitProgram" ;
+            ceterms:leftSource stdtdata:exitProgram ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "true"^^xsd:boolean
         ] .
@@ -464,7 +465,7 @@ res:82a4f31d-d152-407d-9bd1-3d7d24c440ef a ceterms:ComponentCondition ;
         res:978f61a4-bf4f-452c-ae10-cf2cf4c356ed ;
     ceterms:hasConstraint [
         a ceterms:Constraint ;
-        ceterms:leftSource "exitProgram" ;
+        ceterms:leftSource stdtdata:exitProgram ;
         ceterms:comparator compare:EQ ;
         ceterms:rightSource "false"^^xsd:boolean
     ] .
@@ -483,7 +484,7 @@ res:7a5bae9b-0f0d-462a-8d1d-7a102270b652 a ceterms:ComponentCondition ;
         res:2d793d46-8e58-45d4-aba6-c6a16b131d03 ;
         ceterms:hasConstraint [
             a ceterms:Constraint ;
-            ceterms:leftSource "exitProgram" ;
+            ceterms:leftSource stdtdata:exitProgram ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "true"^^xsd:boolean
         ] .
@@ -502,7 +503,7 @@ res:7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3 a ceterms:ComponentCondition ;
         res:2d793d46-8e58-45d4-aba6-c6a16b131d03 ;
     ceterms:hasConstraint [
         a ceterms:Constraint ;
-        ceterms:leftSource "exitProgram" ;
+        ceterms:leftSource stdtdata:exitProgram ;
         ceterms:comparator compare:EQ ;
         ceterms:rightSource "false"^^xsd:boolean
     ] .
@@ -522,7 +523,7 @@ res:0cf91f88-ac68-4d3a-82d9-e87d4852b049 a ceterms:ComponentCondition ;
         res:06271243-bff2-461f-8777-b2c945338804 ;
     ceterms:hasConstraint [
         a ceterms:Constraint ;
-        ceterms:leftSource "exitProgram" ;
+        ceterms:leftSource stdtdata:exitProgram ;
         ceterms:comparator compare:EQ ;
         ceterms:rightSource "true"^^xsd:boolean
     ] .
@@ -541,7 +542,7 @@ res:b653f152-b383-4d6b-b6cc-77b460c34f9e a ceterms:ComponentCondition ;
         res:06271243-bff2-461f-8777-b2c945338804 ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
-            ceterms:leftSource "exitProgram" ;
+            ceterms:leftSource stdtdata:exitProgram ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] .
@@ -553,19 +554,19 @@ res:1fa863f0-9411-479a-90eb-cb529e720ac3 a ceterms:ComponentCondition ;
     ceterms:hasConstraint [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 120
         ],
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ]  .
@@ -584,7 +585,7 @@ res:eeb5e5ea-bb37-45f5-82d9-290e0fc3c513 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "grade";
+            ceterms:leftSource stdtdata:grade ;
             ceterms:comparator compare:EQ ;
             ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
@@ -598,13 +599,13 @@ res:a0e09db1-0008-436c-8631-42f67814f0e6 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:LTEQ ;
             ceterms:rightSource 240
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ]  .
@@ -616,25 +617,25 @@ res:b49c8937-5ba1-44f9-acf8-4b56dd025c03 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 120
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditLevel";
+            ceterms:leftSource ceterms:creditLevelType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqflevel:8
         ],
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "grade";
+            ceterms:leftSource stdtdata:grade ;
             ceterms:comparator compare:EQ ;
             ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
@@ -648,14 +649,14 @@ res:369aeac0-72fb-4b2c-ae03-c13f643040b1 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
                 a ceterms:Constraint ;
                 ceterms:leftAction array:Sum ;
-                ceterms:leftSource "creditValue";
+                ceterms:leftSource schema:value ;
                 ceterms:comparator compare:GTEQ ;
                 ceterms:rightSource 360
         ] .
@@ -667,19 +668,19 @@ res:93e5d8f6-ec86-46d5-a5c6-4d0a0a161128 a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 120
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditLevel";
+            ceterms:leftSource ceterms:creditLevelType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqflevel:9
         ] .
@@ -694,7 +695,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "grade";
+            ceterms:leftSource stdtdata:grade ;
             ceterms:comparator compare:EQ ;
             ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
@@ -702,7 +703,7 @@ res:425d61ac-ff6b-427a-a12a-a4b183e02ed9 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] .
@@ -714,13 +715,13 @@ res:41016408-ec54-4186-8143-eabe3503ad2a a ceterms:ComponentCondition ;
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Mean ;
-            ceterms:leftSource "PercentMark";
+            ceterms:leftSource stdtdata:percentMark ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 50
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] .
@@ -741,7 +742,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "grade";
+            ceterms:leftSource stdtdata:grade ;
             ceterms:comparator compare:EQ ;
             ceterms:rightAction array:AnyOf ;
             ceterms:rightSource
@@ -749,7 +750,7 @@ res:f0550ade-e01d-489d-8df4-3f188a8cb318 a ceterms:ComponentCondition ;
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] .
@@ -760,14 +761,14 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 480
         ] .
@@ -777,7 +778,7 @@ res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] ,
@@ -797,26 +798,26 @@ res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 180
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditLevel";
+            ceterms:leftSource ceterms:creditLevelType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqflevel:9
         ] .
@@ -827,26 +828,26 @@ res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 a ceterms:ComponentCondition ;
     ceterms:hasConstraint
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "resit";
+            ceterms:leftSource stdtdata:resit ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource "false"^^xsd:boolean
         ] ,
         [
             a ceterms:Constraint ;
             ceterms:leftAction array:Sum ;
-            ceterms:leftSource "creditValue";
+            ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 90
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditUnit";
+            ceterms:leftSource ceterms:creditUnitType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqfcredits:
         ] ,
         [
             a ceterms:Constraint ;
-            ceterms:leftSource "creditLevel";
+            ceterms:leftSource ceterms:creditLevelType ;
             ceterms:comparator compare:EQ ;
             ceterms:rightSource scqflevel:10
         ] .
