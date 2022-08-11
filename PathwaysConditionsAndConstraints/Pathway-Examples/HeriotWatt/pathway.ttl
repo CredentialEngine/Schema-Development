@@ -85,10 +85,9 @@ res:ad7d4f8c-5230-4002-9e44-a29568985a6f a ceterms:BasicComponent ;
 	       res:860be930-0a1f-4b36-99ec-ae16f63f251d ,
 	       res:5e3f543c-d89d-40bf-a4b7-38abd90a8679 ;
 	ceterms:hasCondition res:71099201-e520-46ed-aae1-84a56a924ced ,
-          res:936cb9fc-e111-4289-8f41-468834eb687b ,
-          res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d ,
-          res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 ,
-          res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 .
+         res:2883cc8a-ed5c-420d-9a88-454b24fc2b9d ,
+         res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 ,
+         res:03639838-9d1d-493a-a4a3-e3f4c3d3ef68 .
 
 
 res:673f0254-3f00-42aa-ab3f-6c65b1d3e4cc a ceterms:BasicComponent ;
@@ -771,25 +770,6 @@ res:71099201-e520-46ed-aae1-84a56a924ced a ceterms:ComponentCondition ;
             ceterms:leftSource schema:value ;
             ceterms:comparator compare:GTEQ ;
             ceterms:rightSource 480
-        ] .
-
-res:936cb9fc-e111-4289-8f41-468834eb687b a ceterms:ComponentCondition ;
-    ceterms:description "Stage 4, Semester 2 Contraint Group 20: [(required courses = F20PA, F20PB and F20PC" ;
-    ceterms:hasConstraint
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource stdtdata:resit ;
-            ceterms:comparator compare:EQ ;
-            ceterms:rightSource "false"^^xsd:boolean
-        ] ,
-        [
-            a ceterms:Constraint ;
-            ceterms:leftSource "courseID";
-            ceterms:comparator array:AllOf ;
-            ceterms:rightSource
-                res:6dc96db8-a61b-4288-9b8f-6730e29688fa ,
-                res:57f9795d-1b1e-4986-9e48-1987719dabc5 ,
-                res:e4232cef-9f7d-48cb-9847-08901d4bf99e
         ] .
 
 res:ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34 a ceterms:ComponentCondition ;
