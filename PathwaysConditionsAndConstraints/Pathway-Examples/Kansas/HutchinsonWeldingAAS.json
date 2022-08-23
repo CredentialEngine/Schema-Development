@@ -1,0 +1,452 @@
+{
+	"@id": "graph:ce-386ea7b7-2301-4a6b-90d7-b65294558ba9",
+	"@graph": [
+		{
+			"@id": "res:ce-386ea7b7-2301-4a6b-90d7-b65294558ba9",
+			"@type": "ceterms:PathwaySet",
+			"ceterms:name": { "en": "Welding Technology - AAS" },
+			"ceterms:hasPathway": [
+				"res:ce-e05d6bfa-fbde-43f4-8168-2e5f9c9fa329",
+				"res:ce-fa444ea3-c91d-43c2-a8b3-cfae2da96329",
+				"res:ce-6715430b-6c01-401d-9feb-650d4491f477",
+				"res:ce-2befe6ee-7b13-4939-8470-15c29cac86fb"
+			],
+			"ceterms:hasPrimaryPathway": [
+				"res:ce-e05d6bfa-fbde-43f4-8168-2e5f9c9fa329"
+			]
+		}
+	]
+}
+
+{
+	"@id": "graph:ce-e05d6bfa-fbde-43f4-8168-2e5f9c9fa329",
+	"@graph": [
+		{
+			"@id": "res:ce-e05d6bfa-fbde-43f4-8168-2e5f9c9fa329",
+			"@type": "ceterms:Pathway",
+			"ceterms:name": { "en": "Welding Technology - AAS" },
+			"ceterms:hasDestinationComponent": [
+				"res:ce-5c1a3969-191e-416b-9e3e-c31f594a19cf"
+			]
+		},
+		{
+			"@id": "res:ce-5c1a3969-191e-416b-9e3e-c31f594a19cf",
+			"@type": "ceterms:CredentialComponent",
+			"ceterms:subjectWebpage": "http://www1.hutchcc.edu/catalog/major/?major=5308",
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 7,
+					"ceterms:targetComponent": [
+						"res:ce-55855116-298c-4977-9f5a-eec3f981da76",
+						"res:ce-704894d9-fbaa-4b17-a344-f7778eb8f612",
+						"res:ce-b3900b70-b298-45c1-9567-4771076c8524",
+						"res:ce-2570a9cc-48d0-447b-b897-c192bf9c07b4",
+						"res:ce-47f87a30-a133-4c53-beb0-365b30073874",
+						"res:ce-ce40830d-3907-4b44-b2b8-88d31543a6f0",
+						"res:ce-e7e42253-2b0b-4e07-9a42-a705bc2a292e"
+					]
+				},
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:name": { "en": "Welding Certificate A Option Block" },
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"res:ce-60a2eb0a-0d64-4490-92d2-12dc1c2c36dc",
+						"res:ce-7a62e832-5b26-4dfe-a236-64384cc9891b"
+					]
+				},
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:name": { "en": "WE116 or WE118" },
+					"ceterms:targetComponent": [
+						"res:ce-53bbbf4f-9890-4508-a831-3c62fd5c6659",
+						"res:ce-9223c4ee-ebe0-44da-91ad-37e1ab823f77"
+					]
+				},
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:name": { "en": "Welding Contextual Options" },
+					"ceterms:targetComponent": [
+						"res:ce-8ef59da7-8fd6-4fc9-879a-cbe15de9445e",
+						"res:ce-2d8e8e7d-60c2-4cf8-8a17-60bd41b34eec",
+						"res:ce-7e91915e-d546-4b37-afe7-6b2460b532d0",
+						"res:ce-ebc56856-2458-4014-b633-093986aeafa1",
+						"(and 14 more)"
+					]
+				},
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:name": { "en": "Welding Social Science Options" },
+					"ceterms:targetComponent": [
+						"(5 URIs)"
+					]
+				},
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:name": { "en": "Welding Written Communication Options" },
+					"ceterms:targetComponent": [
+						"(7 URIs)"
+					]
+				},
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:name": { "en": "General Education" },
+					"ceterms:targetComponent": [
+						"(143 URIs)"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-55855116-298c-4977-9f5a-eec3f981da76",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE111",
+			"ceterms:name": { "en": "Gas Metal Arc Welding II" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			],
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"res:ce-2fd55438-897f-4668-acac-fc1165fc11bd"
+					],
+					"ceterms:hasConstraint": [
+						"_:0fbf2af2-cbeb-40ff-be5f-cabf3b16ff5a"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-2fd55438-897f-4668-acac-fc1165fc11bd",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE110",
+			"ceterms:name": { "en": "Gas Metal Arc Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			]
+		},
+		{
+			"@id": "res:ce-704894d9-fbaa-4b17-a344-f7778eb8f612",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE220",
+			"ceterms:name": { "en": "Welding Inspection and Qualification II" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 4
+				}
+			],
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 2,
+					"ceterms:targetComponent": [
+						"res:ce-8fd769e2-8bff-40bb-ac9e-f1461ffa2c59",
+						"res:ce-d6645b64-b8dd-4102-8c88-062aebd067d5"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-8fd769e2-8bff-40bb-ac9e-f1461ffa2c59",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE217",
+			"ceterms:name": { "en": "Gas Tungsten Arc Welding III" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 4
+				}
+			],
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"res:ce-ed3e651e-79fc-42a9-96ab-7c21047f0e6e"
+					],
+					"ceterms:hasConstraint": [
+						"_:0fbf2af2-cbeb-40ff-be5f-cabf3b16ff5a"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-ed3e651e-79fc-42a9-96ab-7c21047f0e6e",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE113",
+			"ceterms:name": { "en": "Gas Tungsten Arc Welding II" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			],
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"res:ce-4ce4dc52-d90c-42e9-a2b6-2a08eec95490"
+					],
+					"ceterms:hasConstraint": [
+						"_:0fbf2af2-cbeb-40ff-be5f-cabf3b16ff5a"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-4ce4dc52-d90c-42e9-a2b6-2a08eec95490",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE112",
+			"ceterms:name": { "en": "Gas Tungsten Arc Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			]
+		},
+		{
+			"@id": "res:ce-d6645b64-b8dd-4102-8c88-062aebd067d5",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE218",
+			"ceterms:name": { "en": "Shielded Metal Arc Welding III" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 4
+				}
+			],
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"res:ce-1de35fd5-5985-42c5-bc5d-39d5ce26391a"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-1de35fd5-5985-42c5-bc5d-39d5ce26391a",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE106",
+			"ceterms:name": { "en": "Shielded Metal Arc Welding II" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			],
+			"ceterms:hasCondition": [
+				{
+					"@type": "ceterms:ComponentCondition",
+					"ceterms:requiredNumber": 1,
+					"ceterms:targetComponent": [
+						"res:ce-aa07e674-498a-471d-b24c-a18120a69854"
+					],
+					"ceterms:hasConstraint": [
+						"_:0fbf2af2-cbeb-40ff-be5f-cabf3b16ff5a"
+					]
+				}
+			]
+		},
+		{
+			"@id": "res:ce-aa07e674-498a-471d-b24c-a18120a69854",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE104",
+			"ceterms:name": { "en": "Shielded Metal Arc Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			]
+		},
+		{
+			"@id": "res:ce-b3900b70-b298-45c1-9567-4771076c8524",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE108",
+			"ceterms:name": { "en": "Cutting Processes for Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			]
+		},
+		{
+			"@id": "res:ce-2570a9cc-48d0-447b-b897-c192bf9c07b4",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE115",
+			"ceterms:name": { "en": "Welding Layout and Calculations" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-47f87a30-a133-4c53-beb0-365b30073874",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE117",
+			"ceterms:name": { "en": "Welding Inspection and Qualification I" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-ce40830d-3907-4b44-b2b8-88d31543a6f0",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE102",
+			"ceterms:name": { "en": "Welding Blueprint Reading" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			]
+		},
+		{
+			"@id": "res:ce-e7e42253-2b0b-4e07-9a42-a705bc2a292e",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE128",
+			"ceterms:name": { "en": "Welding Metallurgy" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-60a2eb0a-0d64-4490-92d2-12dc1c2c36dc",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "TR121",
+			"ceterms:name": { "en": "General Industrial Safety/OSHA10" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 1
+				}
+			]
+		},
+		{
+			"@id": "res:ce-7a62e832-5b26-4dfe-a236-64384cc9891b",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE101",
+			"ceterms:name": { "en": "Welding Safety" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 1
+				}
+			]
+		},
+		{
+			"@id": "res:ce-53bbbf4f-9890-4508-a831-3c62fd5c6659",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE116",
+			"ceterms:name": { "en": "Flux Cored Arc Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-9223c4ee-ebe0-44da-91ad-37e1ab823f77",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE118",
+			"ceterms:name": { "en": "Industrial Robotic Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-8ef59da7-8fd6-4fc9-879a-cbe15de9445e",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE100",
+			"ceterms:name": { "en": "Basic Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 3
+				}
+			]
+		},
+		{
+			"@id": "res:ce-2d8e8e7d-60c2-4cf8-8a17-60bd41b34eec",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE116",
+			"ceterms:name": { "en": "Flux Cored Arc Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-7e91915e-d546-4b37-afe7-6b2460b532d0",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE118",
+			"ceterms:name": { "en": "Industrial Robotic Welding" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "res:ce-ebc56856-2458-4014-b633-093986aeafa1",
+			"@type": "ceterms:CourseComponent",
+			"ceterms:codedNotation": "WE209",
+			"ceterms:name": { "en": "Welding Fabrication Processes" },
+			"ceterms:creditValue": [
+				{
+					"@type": "ceterms:ValueProfile",
+					"schema:value": 2
+				}
+			]
+		},
+		{
+			"@id": "_:0fbf2af2-cbeb-40ff-be5f-cabf3b16ff5a",
+			"@type": "ceterms:Constraint",
+			"ceterms:leftSource": [
+				"ex:StudentGrade"
+			],
+			"ceterms:comparator": "compare:EQ",,
+			"ceterms:rightAction": "array:AnyOf"
+			"ceterms:rightSource": [
+				"ex:GradeA",
+				"ex:GradeB",
+				"ex:GradeC"
+			]
+		}
+	]
+}
