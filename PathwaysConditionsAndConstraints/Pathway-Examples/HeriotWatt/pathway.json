@@ -1,0 +1,3064 @@
+[
+  {
+    "@id": "http://example.org/resources/4d214678-4b71-4f5f-9fd5-2486282f4d30",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 1, Semester 1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/0d3c9836-b274-4d01-b059-f4dc1fd8ed2f"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/13bcff97-0fd9-4a2d-81d6-98177333581b"
+      },
+      {
+        "@id": "http://example.org/resources/0954dc01-25e3-4bae-ac74-6bc7e2f22884"
+      },
+      {
+        "@id": "http://example.org/resources/df471a3a-8dc5-40ed-b5de-ebbbdb46008e"
+      },
+      {
+        "@id": "http://example.org/resources/f884ff7e-ceb8-4d8e-af73-52a9a307dbca"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/e4232cef-9f7d-48cb-9847-08901d4bf99e",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Project Testing & Implementation"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/33481dc5-1079-442d-bb55-6384eb6c2767"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/650d92bf-1cb4-4542-b1bc-be6edf856011",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Language Processors"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/008208c3-0084-49e2-9ca2-fe1d0ff9c65d"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/f0550ade-e01d-489d-8df4-3f188a8cb318",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 3, Semester 2 Contraint Group: [(minGrade = \"D\") in 6 of 8 courses]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b26"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b27"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 6
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/c5af32f8-dafc-40f1-b868-64ffd2e39b45"
+      },
+      {
+        "@id": "http://example.org/resources/b3f0eb97-f67e-4607-80b8-cb1b13f82c85"
+      },
+      {
+        "@id": "http://example.org/resources/650d92bf-1cb4-4542-b1bc-be6edf856011"
+      },
+      {
+        "@id": "http://example.org/resources/978f61a4-bf4f-452c-ae10-cf2cf4c356ed"
+      },
+      {
+        "@id": "http://example.org/resources/b17fe8a9-e278-4462-8d69-75415a898739"
+      },
+      {
+        "@id": "http://example.org/resources/5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4"
+      },
+      {
+        "@id": "http://example.org/resources/2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650"
+      },
+      {
+        "@id": "http://example.org/resources/3ab6530d-9a21-4123-8fd4-8614dff431f0"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b26",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/grade"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/AnyOf"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/hwu/grades/A"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/B"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/C"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/D"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b27",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/resit"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/03639838-9d1d-493a-a4a3-e3f4c3d3ef68",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 4, Semester 2 Contraint Group: [(courseCredits = 90) AND (scqflevel = 10)]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b34"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b35"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b36"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b37"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b34",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/resit"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b35",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 90
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b36",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b37",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditLevelType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/levels/10"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3a176a2b-85c2-4132-a028-eafa39de39d9",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Select 2 out of 2 conditions."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/a474f7e7-6406-4b4f-84f7-740c6af0944d"
+      },
+      {
+        "@id": "http://example.org/resources/72a6c8bf-1bf6-418d-a57b-af94f529755c"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/a474f7e7-6406-4b4f-84f7-740c6af0944d",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "One required courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 1
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/6dc96db8-a61b-4288-9b8f-6730e29688fa"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Digital Forensics"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/63ed531c-1c8a-400d-8f19-74f5bb1b2ffe"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/425d61ac-ff6b-427a-a12a-a4b183e02ed9",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 3, Semester 2 Contraint Group: [(course = \"F29SO\") AND (course = \"F29PD\") AND (minGrade = \"D\")]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b22"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b23"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 2
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/978f61a4-bf4f-452c-ae10-cf2cf4c356ed"
+      },
+      {
+        "@id": "http://example.org/resources/3ab6530d-9a21-4123-8fd4-8614dff431f0"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b22",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/grade"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/AnyOf"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/hwu/grades/A"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/B"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/C"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/D"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b23",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/resit"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/a7cd1db3-0dcd-42a8-b871-678ea7806c59",
+    "@type": [
+      "https://purl.org/ctdl/terms/CredentialComponent"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Proxy for Diploma of Higher Education in Computer Science from Heriot-Watt University"
+      },
+      {
+        "@language": "en-US",
+        "@value": "Proxy for Ordinary Degree in Computer Science from Heriot-Watt University"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/7a5bae9b-0f0d-462a-8d1d-7a102270b652"
+      },
+      {
+        "@id": "http://example.org/resources/0d02a8fb-c9b8-4324-a957-1259dd923ed4"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "DipHE (exit diploma)"
+      },
+      {
+        "@language": "en",
+        "@value": "BSCO (exit degree)"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/41ab6ab88-361f-42c3-bac6-f373079e521c"
+      },
+      {
+        "@id": "http://example.org/resources/bdb06663-8983-40b1-beee-0a77049b3360"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/e3bffc2f-0006-4f1d-b190-999befb5d717"
+      },
+      {
+        "@id": "http://example.org/resources/758be891-e53a-4ea7-990d-5b2183edde28"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/13bcff97-0fd9-4a2d-81d6-98177333581b",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Logic and Proof"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/2640de62-c440-46e3-8638-adfe187a7512"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3f68f209-ce18-416e-8fa1-44721cf7cfcb",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Software Development 2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/135a6735-7af0-4ea1-842a-401b27371b93"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/9e3fa244-9911-4649-941e-f3f9d4d2a0f9",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Database Management Systems"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/e2fa94fe-5df0-462f-9bb9-c12c04976a33"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/0954dc01-25e3-4bae-ac74-6bc7e2f22884",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Interaction Design"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "e-Commerce Technology"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/abe1d4b6-c3db-427f-8b81-1a1827c1a9ba"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ffc760f2-7fdc-4ac1-8545-317bce1114af",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Data Structures"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/b3c50cf8-fe0d-4807-8609-d68822c62df6"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/451b0af8-7246-48d1-a0a9-5c6a491b2cb1",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Mining and Machine Learning"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/89f7aaae-4925-49dd-a451-a8d762e487f2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/f39bf394-5b6e-496c-b150-589bcc607a8e",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Select 2 out of 2 conditions."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/167bbaf1-c6ac-4cb3-b03b-36df7cec256a"
+      },
+      {
+        "@id": "http://example.org/resources/3a176a2b-85c2-4132-a028-eafa39de39d9"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/07dbe82d-bf5e-4ba5-8969-cf8377fd34e0",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Programming Languages"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/be67a3a4-def2-49e2-b9b1-8b392876bbd1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/41016408-ec54-4186-8143-eabe3503ad2a",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 3, Semester 2 Contraint Group: [(assessAverage = \"50%\") AND (firstSit = \"yes\")]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b24"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b25"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b24",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Mean"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/percentMark"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 50
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b25",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/resit"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b49c8937-5ba1-44f9-acf8-4b56dd025c03",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 2, Semester 2 Contraint Group: [(courseNum = 8) AND (minGrade = \"D\")]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b13"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b14"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b15"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b16"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b13",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 120
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b14",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b15",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditLevelType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/levels/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b16",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/grade"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/AnyOf"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/hwu/grades/A"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/B"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/C"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/D"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ae17867c-ae0e-4eb6-b35f-d7e1c781bcea",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Computer Systems"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/ff83f280-260d-4479-aac8-ce5030f7748a"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/c8cd38a4-17c0-4676-bd08-0972747b47ae",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Visualization and Analytics"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/c7d10958-2182-4085-8cd0-56837f9ad48d"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/167bbaf1-c6ac-4cb3-b03b-36df7cec256a",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Select 2 out of 2 conditions."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/78226fb4-fee4-4d02-8b00-480eff9e1896"
+      },
+      {
+        "@id": "http://example.org/resources/1fab69ca-9c88-4b09-a3f9-5916b6e9455c"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/67b870ed-b0e6-4a2b-a951-568876d1e6ff",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 2, Semester 1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/0d3c9836-b274-4d01-b059-f4dc1fd8ed2f"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/41ab6ab88-361f-42c3-bac6-f373079e521c"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/27f4713f-8232-4f11-b023-1acd7425bc14"
+      },
+      {
+        "@id": "http://example.org/resources/07dbe82d-bf5e-4ba5-8969-cf8377fd34e0"
+      },
+      {
+        "@id": "http://example.org/resources/ffc760f2-7fdc-4ac1-8545-317bce1114af"
+      },
+      {
+        "@id": "http://example.org/resources/219e2d5a-935e-4abb-a8ef-94c29119b408"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/c5af32f8-dafc-40f1-b868-64ffd2e39b45",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Foundations 2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/70562fd4-daec-4e93-acbc-03d446c01b17"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b653f152-b383-4d6b-b6cc-77b460c34f9e",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Complete 8 out of 8 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b6"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 8
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/13bcff97-0fd9-4a2d-81d6-98177333581b"
+      },
+      {
+        "@id": "http://example.org/resources/0954dc01-25e3-4bae-ac74-6bc7e2f22884"
+      },
+      {
+        "@id": "http://example.org/resources/df471a3a-8dc5-40ed-b5de-ebbbdb46008e"
+      },
+      {
+        "@id": "http://example.org/resources/f884ff7e-ceb8-4d8e-af73-52a9a307dbca"
+      },
+      {
+        "@id": "http://example.org/resources/66a38893-e0b1-400c-9ad3-9234c7511c6b"
+      },
+      {
+        "@id": "http://example.org/resources/ae17867c-ae0e-4eb6-b35f-d7e1c781bcea"
+      },
+      {
+        "@id": "http://example.org/resources/3f68f209-ce18-416e-8fa1-44721cf7cfcb"
+      },
+      {
+        "@id": "http://example.org/resources/06271243-bff2-461f-8777-b2c945338804"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b6",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/exitProgram"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/2d793d46-8e58-45d4-aba6-c6a16b131d03",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Software Engineering"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/3eb8fcee-aae7-451c-9393-85ce3a97bb57"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/1fab69ca-9c88-4b09-a3f9-5916b6e9455c",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Select 2 out of 9 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 2
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/d4938e70-ce96-4ea7-a13a-60a82e452b64"
+      },
+      {
+        "@id": "http://example.org/resources/e4232cef-9f7d-48cb-9847-08901d4bf99e"
+      },
+      {
+        "@id": "http://example.org/resources/c8cd38a4-17c0-4676-bd08-0972747b47ae"
+      },
+      {
+        "@id": "http://example.org/resources/b836992d-4c7a-4347-9626-2e46824ce788"
+      },
+      {
+        "@id": "http://example.org/resources/3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff"
+      },
+      {
+        "@id": "http://example.org/resources/5d9f2a66-410c-448b-ab4d-d5579a9450fb"
+      },
+      {
+        "@id": "http://example.org/resources/3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac"
+      },
+      {
+        "@id": "http://example.org/resources/5e3f543c-d89d-40bf-a4b7-38abd90a8679"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/673f0254-3f00-42aa-ab3f-6c65b1d3e4cc",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 4, Semester 1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/bdb06663-8983-40b1-beee-0a77049b3360"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/ad7d4f8c-5230-4002-9e44-a29568985a6f"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/6dc96db8-a61b-4288-9b8f-6730e29688fa"
+      },
+      {
+        "@id": "http://example.org/resources/8ccb3888-7fda-48a6-ae34-bca4eaee830a"
+      },
+      {
+        "@id": "http://example.org/resources/dc57a1e2-66e7-4023-b3c7-ee4383a7df48"
+      },
+      {
+        "@id": "http://example.org/resources/d0ddf127-29d0-4782-88d5-887078370748"
+      },
+      {
+        "@id": "http://example.org/resources/278a604b-7a65-4146-be99-c2ef649153ff"
+      },
+      {
+        "@id": "http://example.org/resources/451b0af8-7246-48d1-a0a9-5c6a491b2cb1"
+      },
+      {
+        "@id": "http://example.org/resources/d380b323-e4e3-4108-a754-3d089da15750"
+      },
+      {
+        "@id": "http://example.org/resources/e2180939-19de-4174-80d7-9791eb5c8ece"
+      },
+      {
+        "@id": "http://example.org/resources/04def797-054f-4042-9f85-bd05636eefce"
+      },
+      {
+        "@id": "http://example.org/resources/468297f8-7ba0-4cda-b31e-327df19b01d7"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/eeb5e5ea-bb37-45f5-82d9-290e0fc3c513",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 1, Semester 2 Contraint Group: [(courseNum = 7) AND (minGrade = \"D\")]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b10"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 7
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/13bcff97-0fd9-4a2d-81d6-98177333581b"
+      },
+      {
+        "@id": "http://example.org/resources/0954dc01-25e3-4bae-ac74-6bc7e2f22884"
+      },
+      {
+        "@id": "http://example.org/resources/f884ff7e-ceb8-4d8e-af73-52a9a307dbca"
+      },
+      {
+        "@id": "http://example.org/resources/66a38893-e0b1-400c-9ad3-9234c7511c6b"
+      },
+      {
+        "@id": "http://example.org/resources/ae17867c-ae0e-4eb6-b35f-d7e1c781bcea"
+      },
+      {
+        "@id": "http://example.org/resources/3f68f209-ce18-416e-8fa1-44721cf7cfcb"
+      },
+      {
+        "@id": "http://example.org/resources/06271243-bff2-461f-8777-b2c945338804"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b10",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/grade"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/AnyOf"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/hwu/grades/A"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/B"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/C"
+      },
+      {
+        "@id": "http://example.edu/hwu/grades/D"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/8ccb3888-7fda-48a6-ae34-bca4eaee830a",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Bio-Inspired Computation"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/154a4750-5531-4716-8dae-b18b5d8f2033"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/219e2d5a-935e-4abb-a8ef-94c29119b408",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Web Programming"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/301a0e59-7714-4d04-a014-47e866a30dd7"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/41ab6ab88-361f-42c3-bac6-f373079e521c",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/a0e09db1-0008-436c-8631-42f67814f0e6"
+      },
+      {
+        "@id": "http://example.org/resources/b49c8937-5ba1-44f9-acf8-4b56dd025c03"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 2, Semester 2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/67b870ed-b0e6-4a2b-a951-568876d1e6ff"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/75d40ceb-d2a2-458a-b35d-e89b709d0fe1"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/4e6647b5-93b4-4014-91a9-897b315dfdcd"
+      },
+      {
+        "@id": "http://example.org/resources/9e3fa244-9911-4649-941e-f3f9d4d2a0f9"
+      },
+      {
+        "@id": "http://example.org/resources/842902c1-7dbe-44ec-8581-3fdcb4cb95eb"
+      },
+      {
+        "@id": "http://example.org/resources/2d793d46-8e58-45d4-aba6-c6a16b131d03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Foundations 1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/3b3b44b5-e1d3-461d-883b-26de906b4f50"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b836992d-4c7a-4347-9626-2e46824ce788",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Advanced Interaction Design"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/9c229c49-a2db-4c84-8aa2-3a5210896932"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/0d02a8fb-c9b8-4324-a957-1259dd923ed4",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Complete 8 out of 8 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 8
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/b17fe8a9-e278-4462-8d69-75415a898739"
+      },
+      {
+        "@id": "http://example.org/resources/5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4"
+      },
+      {
+        "@id": "http://example.org/resources/2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650"
+      },
+      {
+        "@id": "http://example.org/resources/3ab6530d-9a21-4123-8fd4-8614dff431f0"
+      },
+      {
+        "@id": "http://example.org/resources/c5af32f8-dafc-40f1-b868-64ffd2e39b45"
+      },
+      {
+        "@id": "http://example.org/resources/b3f0eb97-f67e-4607-80b8-cb1b13f82c85"
+      },
+      {
+        "@id": "http://example.org/resources/650d92bf-1cb4-4542-b1bc-be6edf856011"
+      },
+      {
+        "@id": "http://example.org/resources/978f61a4-bf4f-452c-ae10-cf2cf4c356ed"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b1",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/exitProgram"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/df471a3a-8dc5-40ed-b5de-ebbbdb46008e",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Praxis"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/f36868ea-9e76-4fb1-b53e-eecb837ba9d6"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3ab6530d-9a21-4123-8fd4-8614dff431f0",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Software Engineering"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/2e271965-a4d8-4967-9dfc-9aec45447c4e"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ec071f65-2c5b-4b58-a2df-dd6287880a7a",
+    "@type": [
+      "https://purl.org/ctdl/terms/Pathway"
+    ],
+    "https://purl.org/ctdl/terms/hasDestinationComponent": [
+      {
+        "@id": "http://example.org/resources/1a285e3e-35ce-476a-b592-af7ae4e732a3"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "BSCH - Bachelor of Science Honours"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/369aeac0-72fb-4b2c-ae03-c13f643040b1",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Constraints on Stage 3, Semester 2 attainment and for progression to Stage 4."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b17"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b18"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b17",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b18",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 360
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Complete 8 out of 8 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b4"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 8
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/27f4713f-8232-4f11-b023-1acd7425bc14"
+      },
+      {
+        "@id": "http://example.org/resources/07dbe82d-bf5e-4ba5-8969-cf8377fd34e0"
+      },
+      {
+        "@id": "http://example.org/resources/ffc760f2-7fdc-4ac1-8545-317bce1114af"
+      },
+      {
+        "@id": "http://example.org/resources/219e2d5a-935e-4abb-a8ef-94c29119b408"
+      },
+      {
+        "@id": "http://example.org/resources/4e6647b5-93b4-4014-91a9-897b315dfdcd"
+      },
+      {
+        "@id": "http://example.org/resources/9e3fa244-9911-4649-941e-f3f9d4d2a0f9"
+      },
+      {
+        "@id": "http://example.org/resources/842902c1-7dbe-44ec-8581-3fdcb4cb95eb"
+      },
+      {
+        "@id": "http://example.org/resources/2d793d46-8e58-45d4-aba6-c6a16b131d03"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b4",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/exitProgram"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/82a4f31d-d152-407d-9bd1-3d7d24c440ef",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Complete 8 out of 8 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 8
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/b17fe8a9-e278-4462-8d69-75415a898739"
+      },
+      {
+        "@id": "http://example.org/resources/5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4"
+      },
+      {
+        "@id": "http://example.org/resources/2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650"
+      },
+      {
+        "@id": "http://example.org/resources/3ab6530d-9a21-4123-8fd4-8614dff431f0"
+      },
+      {
+        "@id": "http://example.org/resources/c5af32f8-dafc-40f1-b868-64ffd2e39b45"
+      },
+      {
+        "@id": "http://example.org/resources/b3f0eb97-f67e-4607-80b8-cb1b13f82c85"
+      },
+      {
+        "@id": "http://example.org/resources/650d92bf-1cb4-4542-b1bc-be6edf856011"
+      },
+      {
+        "@id": "http://example.org/resources/978f61a4-bf4f-452c-ae10-cf2cf4c356ed"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b2",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/exitProgram"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/d380b323-e4e3-4108-a754-3d089da15750",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Statistical Modeling and Analysis"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/8d02f98c-e49b-4f80-8456-8e4de17f0c4b"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/75d40ceb-d2a2-458a-b35d-e89b709d0fe1",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 3, Semester 1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/41ab6ab88-361f-42c3-bac6-f373079e521c"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/bdb06663-8983-40b1-beee-0a77049b3360"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/b17fe8a9-e278-4462-8d69-75415a898739"
+      },
+      {
+        "@id": "http://example.org/resources/5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4"
+      },
+      {
+        "@id": "http://example.org/resources/2e0a8044-1c6a-4ba9-8ca7-3ae2e04a3650"
+      },
+      {
+        "@id": "http://example.org/resources/3ab6530d-9a21-4123-8fd4-8614dff431f0"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/0cf91f88-ac68-4d3a-82d9-e87d4852b049",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Complete 8 out of 8 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b5"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 8
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/13bcff97-0fd9-4a2d-81d6-98177333581b"
+      },
+      {
+        "@id": "http://example.org/resources/0954dc01-25e3-4bae-ac74-6bc7e2f22884"
+      },
+      {
+        "@id": "http://example.org/resources/df471a3a-8dc5-40ed-b5de-ebbbdb46008e"
+      },
+      {
+        "@id": "http://example.org/resources/f884ff7e-ceb8-4d8e-af73-52a9a307dbca"
+      },
+      {
+        "@id": "http://example.org/resources/66a38893-e0b1-400c-9ad3-9234c7511c6b"
+      },
+      {
+        "@id": "http://example.org/resources/ae17867c-ae0e-4eb6-b35f-d7e1c781bcea"
+      },
+      {
+        "@id": "http://example.org/resources/3f68f209-ce18-416e-8fa1-44721cf7cfcb"
+      },
+      {
+        "@id": "http://example.org/resources/06271243-bff2-461f-8777-b2c945338804"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b5",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/exitProgram"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/842902c1-7dbe-44ec-8581-3fdcb4cb95eb",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Hardware-Software Interface"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/92bca3a8-79d3-4d48-b7e4-0c23e3540b55"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/860be930-0a1f-4b36-99ec-ae16f63f251d",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Computer Games Programming"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/fa79cf80-06c1-4d03-91e4-6ce5be9d60ef"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/06271243-bff2-461f-8777-b2c945338804",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Web Design and Databases"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/7ab9e8bb-1436-4927-a05e-271d4f7e29aa"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/eea929ae-5067-4e1f-ac10-825637abc6cc",
+    "@type": [
+      "https://purl.org/ctdl/terms/CredentialComponent"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Proxy for Certificate of Higher Education in Computer Science from Heriot-Watt University"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/0cf91f88-ac68-4d3a-82d9-e87d4852b049"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "CertHE (exit certificate)"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/0d3c9836-b274-4d01-b059-f4dc1fd8ed2f"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/72a6c8bf-1bf6-418d-a57b-af94f529755c",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Select 3 out of 9 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 3
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/8ccb3888-7fda-48a6-ae34-bca4eaee830a"
+      },
+      {
+        "@id": "http://example.org/resources/dc57a1e2-66e7-4023-b3c7-ee4383a7df48"
+      },
+      {
+        "@id": "http://example.org/resources/d0ddf127-29d0-4782-88d5-887078370748"
+      },
+      {
+        "@id": "http://example.org/resources/278a604b-7a65-4146-be99-c2ef649153ff"
+      },
+      {
+        "@id": "http://example.org/resources/451b0af8-7246-48d1-a0a9-5c6a491b2cb1"
+      },
+      {
+        "@id": "http://example.org/resources/d380b323-e4e3-4108-a754-3d089da15750"
+      },
+      {
+        "@id": "http://example.org/resources/e2180939-19de-4174-80d7-9791eb5c8ece"
+      },
+      {
+        "@id": "http://example.org/resources/04def797-054f-4042-9f85-bd05636eefce"
+      },
+      {
+        "@id": "http://example.org/resources/468297f8-7ba0-4cda-b31e-327df19b01d7"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/1a285e3e-35ce-476a-b592-af7ae4e732a3",
+    "@type": [
+      "https://purl.org/ctdl/terms/CredentialComponent"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Proxy for Bachellor of Science Honours Degree in Computer Science from Heriot-Watt University"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/f39bf394-5b6e-496c-b150-589bcc607a8e"
+      },
+      {
+        "@id": "http://example.org/resources/b653f152-b383-4d6b-b6cc-77b460c34f9e"
+      },
+      {
+        "@id": "http://example.org/resources/7d5c3efb-a168-4dcc-acbc-00fca7d2bfa3"
+      },
+      {
+        "@id": "http://example.org/resources/82a4f31d-d152-407d-9bd1-3d7d24c440ef"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "BSc (hons) in Computer Science"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/ad7d4f8c-5230-4002-9e44-a29568985a6f"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/46942a57-b7f5-4ce7-bbf8-72976ac7bd23"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/7a5bae9b-0f0d-462a-8d1d-7a102270b652",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Complete 8 out of 8 courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b3"
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 8
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/27f4713f-8232-4f11-b023-1acd7425bc14"
+      },
+      {
+        "@id": "http://example.org/resources/07dbe82d-bf5e-4ba5-8969-cf8377fd34e0"
+      },
+      {
+        "@id": "http://example.org/resources/ffc760f2-7fdc-4ac1-8545-317bce1114af"
+      },
+      {
+        "@id": "http://example.org/resources/219e2d5a-935e-4abb-a8ef-94c29119b408"
+      },
+      {
+        "@id": "http://example.org/resources/4e6647b5-93b4-4014-91a9-897b315dfdcd"
+      },
+      {
+        "@id": "http://example.org/resources/9e3fa244-9911-4649-941e-f3f9d4d2a0f9"
+      },
+      {
+        "@id": "http://example.org/resources/842902c1-7dbe-44ec-8581-3fdcb4cb95eb"
+      },
+      {
+        "@id": "http://example.org/resources/2d793d46-8e58-45d4-aba6-c6a16b131d03"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b3",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/exitProgram"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/6dc96db8-a61b-4288-9b8f-6730e29688fa",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Research Methods & Requirements Engineering"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/7e680ffb-6bfe-4553-8715-59718620fb13"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/f884ff7e-ceb8-4d8e-af73-52a9a307dbca",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Software Development 1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/183a1296-464c-4fa0-a93f-e5c0e6f1d905"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b17fe8a9-e278-4462-8d69-75415a898739",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "AI and Intelligent Agents"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/baf57dca-a2f1-4a20-a8f5-543c1702e9cb"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/57f9795d-1b1e-4986-9e48-1987719dabc5",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Design & Implementation"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/e2b8a9b8-8bc8-4ca9-8061-055839accd3c"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/dc57a1e2-66e7-4023-b3c7-ee4383a7df48",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Intelligent Robots"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/9dfc1ac9-fdb5-44c5-9504-bc1878ed553f"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/a0e09db1-0008-436c-8631-42f67814f0e6",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Constraints on Stage 2, Semester 2 attainment and for progression to Stage 3."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b11"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b12"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b11",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/LTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 240
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b12",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 4, Semester 2 Contraint Group 22: [(courseCredits = 180) AND (scqflevel = 9)]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b30"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b31"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b32"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b33"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b30",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/resit"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b31",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 180
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b32",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b33",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditLevelType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/levels/9"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/4e6647b5-93b4-4014-91a9-897b315dfdcd",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Structures and Algorithms"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/817d9096-fc12-4e65-a9a6-2922e6f166a2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/5abe7a04-f9a0-473e-abfb-cf1db7a8b0b4",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Communications & Networking"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/342fa4bf-5ac9-4d3e-abcd-1ae372951ac2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/5e3f543c-d89d-40bf-a4b7-38abd90a8679",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Distributed and Parallel Technologies"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/967bd205-b759-4d20-a3ef-9d2723d08b06"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/93e5d8f6-ec86-46d5-a5c6-4d0a0a161128",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 3, Semester 2 Contraint Group: [(courseCredits = 120) AND (scqflevel = 9)]"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b19"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b20"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b21"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b19",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 120
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b20",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b21",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditLevelType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/levels/9"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/bdb06663-8983-40b1-beee-0a77049b3360",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/369aeac0-72fb-4b2c-ae03-c13f643040b1"
+      },
+      {
+        "@id": "http://example.org/resources/93e5d8f6-ec86-46d5-a5c6-4d0a0a161128"
+      },
+      {
+        "@id": "http://example.org/resources/41016408-ec54-4186-8143-eabe3503ad2a"
+      },
+      {
+        "@id": "http://example.org/resources/425d61ac-ff6b-427a-a12a-a4b183e02ed9"
+      },
+      {
+        "@id": "http://example.org/resources/f0550ade-e01d-489d-8df4-3f188a8cb318"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 3, Semester 2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/75d40ceb-d2a2-458a-b35d-e89b709d0fe1"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/673f0254-3f00-42aa-ab3f-6c65b1d3e4cc"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/c5af32f8-dafc-40f1-b868-64ffd2e39b45"
+      },
+      {
+        "@id": "http://example.org/resources/b3f0eb97-f67e-4607-80b8-cb1b13f82c85"
+      },
+      {
+        "@id": "http://example.org/resources/650d92bf-1cb4-4542-b1bc-be6edf856011"
+      },
+      {
+        "@id": "http://example.org/resources/978f61a4-bf4f-452c-ae10-cf2cf4c356ed"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/78226fb4-fee4-4d02-8b00-480eff9e1896",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Two required courses."
+      }
+    ],
+    "https://purl.org/ctdl/terms/requiredNumber": [
+      {
+        "@value": 2
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetComponent": [
+      {
+        "@id": "http://example.org/resources/57f9795d-1b1e-4986-9e48-1987719dabc5"
+      },
+      {
+        "@id": "http://example.org/resources/e4232cef-9f7d-48cb-9847-08901d4bf99e"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/278a604b-7a65-4146-be99-c2ef649153ff",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Rigorous Method for Software Engineering"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/843ef765-5c4c-4394-9343-b5d3590c3a5b"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/dffec39a-b180-4290-9084-4b00a06d5a24",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Big Data Management"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/1bcbedb4-cc54-4a94-bef5-da9bb8c16ec2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/04def797-054f-4042-9f85-bd05636eefce",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Information Systems Methodologies"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/9ecd5ba7-1136-4d4e-aa76-437e962b3112"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/978f61a4-bf4f-452c-ae10-cf2cf4c356ed",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Professional Development"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/a5993b69-e780-4246-9b55-19e2afb5fc07"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/1fa863f0-9411-479a-90eb-cb529e720ac3",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Constraints on Stage 1, Semester 2 attainment and for progression to Stage 2."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b7"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b8"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b9"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b7",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 120
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b8",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b9",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://example.edu/studentData/resit"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": false
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/0d3c9836-b274-4d01-b059-f4dc1fd8ed2f",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/1fa863f0-9411-479a-90eb-cb529e720ac3"
+      },
+      {
+        "@id": "http://example.org/resources/eeb5e5ea-bb37-45f5-82d9-290e0fc3c513"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 1, Semester 2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/4d214678-4b71-4f5f-9fd5-2486282f4d30"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/67b870ed-b0e6-4a2b-a951-568876d1e6ff"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/66a38893-e0b1-400c-9ad3-9234c7511c6b"
+      },
+      {
+        "@id": "http://example.org/resources/ae17867c-ae0e-4eb6-b35f-d7e1c781bcea"
+      },
+      {
+        "@id": "http://example.org/resources/3f68f209-ce18-416e-8fa1-44721cf7cfcb"
+      },
+      {
+        "@id": "http://example.org/resources/06271243-bff2-461f-8777-b2c945338804"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/d4938e70-ce96-4ea7-a13a-60a82e452b64",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Applied Text Analytics"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/f17018e3-0fe4-4767-b5a8-5a7badb82385"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/27f4713f-8232-4f11-b023-1acd7425bc14",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "User-Centered Experience Design"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/37f468ab-2366-4b1f-9d44-02825fce9773"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/468297f8-7ba0-4cda-b31e-327df19b01d7",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Industrial Programming"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/c3a6ae9c-3874-42be-8358-8a01b0128412"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/e2180939-19de-4174-80d7-9791eb5c8ece",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "3-D Graphics and Animation"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/b6508309-a4f8-4dfb-b374-02e0aac06fdb"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/d0ddf127-29d0-4782-88d5-887078370748",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Computer Network Security"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/9290cec2-74e2-489b-bf6d-2f72df647ab0"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/5d9f2a66-410c-448b-ab4d-d5579a9450fb",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Advanced Network Security"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/c97d234b-7940-4f83-86d3-c72f22002134"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ad7d4f8c-5230-4002-9e44-a29568985a6f",
+    "@type": [
+      "https://purl.org/ctdl/terms/BasicComponent"
+    ],
+    "https://purl.org/ctdl/terms/componentCategory": [
+      {
+        "@value": "Stage"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasCondition": [
+      {
+        "@id": "http://example.org/resources/71099201-e520-46ed-aae1-84a56a924ced"
+      },
+      {
+        "@id": "http://example.org/resources/2883cc8a-ed5c-420d-9a88-454b24fc2b9d"
+      },
+      {
+        "@id": "http://example.org/resources/ca2b0c9c-9c4f-42f7-85d2-d2dc12a44f34"
+      },
+      {
+        "@id": "http://example.org/resources/03639838-9d1d-493a-a4a3-e3f4c3d3ef68"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Stage 4, Semester 2"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precededBy": [
+      {
+        "@id": "http://example.org/resources/673f0254-3f00-42aa-ab3f-6c65b1d3e4cc"
+      }
+    ],
+    "https://purl.org/ctdl/terms/precedes": [
+      {
+        "@id": "http://example.org/resources/1a285e3e-35ce-476a-b592-af7ae4e732a3"
+      }
+    ],
+    "https://purl.org/ctdlasn/terms/hasChild": [
+      {
+        "@id": "http://example.org/resources/57f9795d-1b1e-4986-9e48-1987719dabc5"
+      },
+      {
+        "@id": "http://example.org/resources/e4232cef-9f7d-48cb-9847-08901d4bf99e"
+      },
+      {
+        "@id": "http://example.org/resources/d4938e70-ce96-4ea7-a13a-60a82e452b64"
+      },
+      {
+        "@id": "http://example.org/resources/c8cd38a4-17c0-4676-bd08-0972747b47ae"
+      },
+      {
+        "@id": "http://example.org/resources/b836992d-4c7a-4347-9626-2e46824ce788"
+      },
+      {
+        "@id": "http://example.org/resources/3f3b3a5b-afdf-42d2-a979-d99b1f0be6ff"
+      },
+      {
+        "@id": "http://example.org/resources/5d9f2a66-410c-448b-ab4d-d5579a9450fb"
+      },
+      {
+        "@id": "http://example.org/resources/3cfd1635-a42d-45c8-a5e4-d8b8a9df99ac"
+      },
+      {
+        "@id": "http://example.org/resources/dffec39a-b180-4290-9084-4b00a06d5a24"
+      },
+      {
+        "@id": "http://example.org/resources/860be930-0a1f-4b36-99ec-ae16f63f251d"
+      },
+      {
+        "@id": "http://example.org/resources/5e3f543c-d89d-40bf-a4b7-38abd90a8679"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b3f0eb97-f67e-4607-80b8-cb1b13f82c85",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Operating Systems and Concurrency"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/9c5d07ec-8baa-4847-b05f-65e6ea99d15d"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/71099201-e520-46ed-aae1-84a56a924ced",
+    "@type": [
+      "https://purl.org/ctdl/terms/ComponentCondition"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@value": "Stage 4, Semester 2 Contsraint Group 19: total scqfCredits ≥ 480"
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasConstraint": [
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b28"
+      },
+      {
+        "@id": "_:n3183b507e803424c9adaa7df83806927b29"
+      }
+    ],
+    "https://purl.org/ctdl/terms/logicalOperator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/logic/And"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b28",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/EQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://purl.org/ctdl/terms/creditUnitType"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3183b507e803424c9adaa7df83806927b29",
+    "@type": [
+      "https://purl.org/ctdl/terms/Constraint"
+    ],
+    "https://purl.org/ctdl/terms/comparator": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/compare/GTEQ"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftAction": [
+      {
+        "@id": "https://purl.org/ctdl/vocabs/array/Sum"
+      }
+    ],
+    "https://purl.org/ctdl/terms/leftSource": [
+      {
+        "@id": "https://schema.org/value"
+      }
+    ],
+    "https://purl.org/ctdl/terms/rightSource": [
+      {
+        "@value": 480
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/66a38893-e0b1-400c-9ad3-9234c7511c6b",
+    "@type": [
+      "https://purl.org/ctdl/terms/CourseComponent"
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Discrete Mathematics"
+      }
+    ],
+    "https://purl.org/ctdl/terms/proxyFor": [
+      {
+        "@id": "http://example.org/resources/87de039c-3147-4082-8601-1c6e78376605"
+      }
+    ]
+  }
+]

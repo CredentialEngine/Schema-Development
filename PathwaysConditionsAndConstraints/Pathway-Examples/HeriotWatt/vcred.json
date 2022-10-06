@@ -1,0 +1,107 @@
+[
+  {
+    "@id": "http://example.edu/hwu/people/pat",
+    "@type": [
+      "https://schema.org/Person"
+    ],
+    "http://example.org/terms/achievement": [
+      {
+        "@id": "http://example.org/resources/2640de62-c440-46e3-8638-adfe187a7512"
+      },
+      {
+        "@id": "http://example.org/resources/b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69"
+      },
+      {
+        "@id": "http://example.org/resources/f36868ea-9e76-4fb1-b53e-eecb837ba9d6"
+      },
+      {
+        "@id": "http://example.org/resources/183a1296-464c-4fa0-a93f-e5c0e6f1d905"
+      },
+      {
+        "@id": "http://example.org/resources/87de039c-3147-4082-8601-1c6e78376605"
+      },
+      {
+        "@id": "http://example.org/resources/ff83f280-260d-4479-aac8-ce5030f7748a"
+      },
+      {
+        "@id": "http://example.org/resources/135a6735-7af0-4ea1-842a-401b27371b93"
+      },
+      {
+        "@id": "http://example.org/resources/7ab9e8bb-1436-4927-a05e-271d4f7e29aa"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.edu/hwu/awards/002",
+    "@type": [
+      "https://www.w3.org/2018/credentials#VerifiableCredential"
+    ],
+    "https://www.w3.org/2018/credentials#credentialSubject": [
+      {
+        "@id": "http://example.edu/hwu/people/bryan"
+      }
+    ],
+    "https://www.w3.org/2018/credentials#issuanceDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2010-01-01"
+      }
+    ],
+    "https://www.w3.org/2018/credentials#issuer": [
+      {
+        "@id": "http://example.org/resources/hwu"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.edu/hwu/awards/001",
+    "@type": [
+      "https://www.w3.org/2018/credentials#VerifiableCredential"
+    ],
+    "https://www.w3.org/2018/credentials#credentialSubject": [
+      {
+        "@id": "http://example.edu/hwu/people/pat"
+      }
+    ],
+    "https://www.w3.org/2018/credentials#issuanceDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2010-01-01"
+      }
+    ],
+    "https://www.w3.org/2018/credentials#issuer": [
+      {
+        "@id": "http://example.org/resources/hwu"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.edu/hwu/people/bryan",
+    "@type": [
+      "https://schema.org/Person"
+    ],
+    "http://example.org/terms/achievement": [
+      {
+        "@id": "http://example.org/resources/2640de62-c440-46e3-8638-adfe187a7512"
+      },
+      {
+        "@id": "http://example.org/resources/b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69"
+      },
+      {
+        "@id": "http://example.org/resources/f36868ea-9e76-4fb1-b53e-eecb837ba9d6"
+      },
+      {
+        "@id": "http://example.org/resources/7ab9e8bb-1436-4927-a05e-271d4f7e29aa"
+      },
+      {
+        "@id": "http://example.org/resources/be67a3a4-def2-49e2-b9b1-8b392876bbd1"
+      },
+      {
+        "@id": "http://example.org/resources/301a0e59-7714-4d04-a014-47e866a30dd7"
+      },
+      {
+        "@id": "http://example.org/resources/92bca3a8-79d3-4d48-b7e4-0c23e3540b55"
+      }
+    ]
+  }
+]

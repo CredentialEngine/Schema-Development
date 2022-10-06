@@ -1,0 +1,1361 @@
+[
+  {
+    "@id": "http://example.org/resources/967bd205-b759-4d20-a3ef-9d2723d08b06",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20DP"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Distributed and Parallel Technologies"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/7e680ffb-6bfe-4553-8715-59718620fb13",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20PA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Research Methods & Requirements Engineering"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/843ef765-5c4c-4394-9343-b5d3590c3a5b",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20RS"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Rigorous Method for Software Engineering"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/9290cec2-74e2-489b-bf6d-2f72df647ab0",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20CN"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Computer Network Security"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3b3b44b5-e1d3-461d-883b-26de906b4f50",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29FA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Foundations 1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/abe1d4b6-c3db-427f-8b81-1a1827c1a9ba",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20EC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "e-Commerce Technology"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/e2b8a9b8-8bc8-4ca9-8061-055839accd3c",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20PB"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Design & Implementation"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/3eb8fcee-aae7-451c-9393-85ce3a97bb57",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28SD"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Software Engineering"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/c7d10958-2182-4085-8cd0-56837f9ad48d",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20DV"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Visualization and Analytics"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/9ecd5ba7-1136-4d4e-aa76-437e962b3112",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20IF"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Information Systems Methodologies"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/008208c3-0084-49e2-9ca2-fe1d0ff9c65d",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29LP"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Language Processors"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F27ID"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Interaction Design"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ff83f280-260d-4479-aac8-ce5030f7748a",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F27CS"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Computer Systems"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/e3bffc2f-0006-4f1d-b190-999befb5d717",
+    "@type": [
+      "https://purl.org/ctdl/terms/Diploma"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Diploma awarded by Heriot-Watt University for successful completion of stage 2 of Computer Science program"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en-US",
+        "@value": "Diploma of Higher Education"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628",
+    "@type": [
+      "https://purl.org/ctdl/terms/ValueProfile"
+    ],
+    "https://purl.org/ctdl/terms/creditLevelType": [
+      {
+        "@id": "http://example.edu/scqf/levels/8"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditUnitType": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ],
+    "https://purl.org/ctdl/terms/subject": [
+      {
+        "@id": "http://example.edu/hwu/subjects/ComputerScience"
+      }
+    ],
+    "https://purl.org/ctdl/terms/value": [
+      {
+        "@value": 15
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/9c229c49-a2db-4c84-8aa2-3a5210896932",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20AD"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Advanced Interaction Design"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/758be891-e53a-4ea7-990d-5b2183edde28",
+    "@type": [
+      "https://purl.org/ctdl/terms/BachelorDegree"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Degree awarded by Heriot-Watt University for successful completion of stage 3 of Computer Science program"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en-US",
+        "@value": "Ordinary Degree"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/183a1296-464c-4fa0-a93f-e5c0e6f1d905",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F27SA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Software Development 1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/f17018e3-0fe4-4767-b5a8-5a7badb82385",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20AA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Applied Text Analytics"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/baf57dca-a2f1-4a20-a8f5-543c1702e9cb",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29AI"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "AI and Intelligent Agents"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b3c50cf8-fe0d-4807-8609-d68822c62df6",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28SG"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Introduction to Data Structures"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/1bcbedb4-cc54-4a94-bef5-da9bb8c16ec2",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20BD"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Big Data Management"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/7ab9e8bb-1436-4927-a05e-271d4f7e29aa",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F27WD"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Web Design and Databases"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/37f468ab-2366-4b1f-9d44-02825fce9773",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28ED"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "User-Centered Experience Design"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/be67a3a4-def2-49e2-b9b1-8b392876bbd1",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28PL"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Programming Languages"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/c3a6ae9c-3874-42be-8358-8a01b0128412",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20SC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Industrial Programming"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/9c5d07ec-8baa-4847-b05f-65e6ea99d15d",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29OC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Operating Systems and Concurrency"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280617",
+    "@type": [
+      "https://purl.org/ctdl/terms/ValueProfile"
+    ],
+    "https://purl.org/ctdl/terms/creditLevelType": [
+      {
+        "@id": "http://example.edu/scqf/levels/7"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditUnitType": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ],
+    "https://purl.org/ctdl/terms/subject": [
+      {
+        "@id": "http://example.edu/hwu/subjects/Mathematics"
+      }
+    ],
+    "https://purl.org/ctdl/terms/value": [
+      {
+        "@value": 15
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/9dfc1ac9-fdb5-44c5-9504-bc1878ed553f",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20RO"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Intelligent Robots"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/817d9096-fc12-4e65-a9a6-2922e6f166a2",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28DA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Structures and Algorithms"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620",
+    "@type": [
+      "https://purl.org/ctdl/terms/ValueProfile"
+    ],
+    "https://purl.org/ctdl/terms/creditLevelType": [
+      {
+        "@id": "http://example.edu/scqf/levels/10"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditUnitType": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ],
+    "https://purl.org/ctdl/terms/subject": [
+      {
+        "@id": "http://example.edu/hwu/subjects/ComputerScience"
+      }
+    ],
+    "https://purl.org/ctdl/terms/value": [
+      {
+        "@value": 15
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/8d02f98c-e49b-4f80-8456-8e4de17f0c4b",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20SA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Statistical Modeling and Analysis"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627",
+    "@type": [
+      "https://purl.org/ctdl/terms/ValueProfile"
+    ],
+    "https://purl.org/ctdl/terms/creditLevelType": [
+      {
+        "@id": "http://example.edu/scqf/levels/7"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditUnitType": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ],
+    "https://purl.org/ctdl/terms/subject": [
+      {
+        "@id": "http://example.edu/hwu/subjects/ComputerScience"
+      }
+    ],
+    "https://purl.org/ctdl/terms/value": [
+      {
+        "@value": 15
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/70562fd4-daec-4e93-acbc-03d446c01b17",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29FB"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Foundations 2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/63ed531c-1c8a-400d-8f19-74f5bb1b2ffe",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20FO"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Digital Forensics"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/301a0e59-7714-4d04-a014-47e866a30dd7",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28WP"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Web Programming"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/2640de62-c440-46e3-8638-adfe187a7512",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F17LP"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280617"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Logic and Proof"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/342fa4bf-5ac9-4d3e-abcd-1ae372951ac2",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29DC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Communications & Networking"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/92bca3a8-79d3-4d48-b7e4-0c23e3540b55",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28HS"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Hardware-Software Interface"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/a5993b69-e780-4246-9b55-19e2afb5fc07",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29PD"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Professional Development"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629",
+    "@type": [
+      "https://purl.org/ctdl/terms/ValueProfile"
+    ],
+    "https://purl.org/ctdl/terms/creditLevelType": [
+      {
+        "@id": "http://example.edu/scqf/levels/9"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditUnitType": [
+      {
+        "@id": "http://example.edu/scqf/credits/"
+      }
+    ],
+    "https://purl.org/ctdl/terms/subject": [
+      {
+        "@id": "http://example.edu/hwu/subjects/ComputerScience"
+      }
+    ],
+    "https://purl.org/ctdl/terms/value": [
+      {
+        "@value": 15
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/135a6735-7af0-4ea1-842a-401b27371b93",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F27SB"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Software Development 2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/ea4e5c8d-7028-4b33-b3fc-b4cf8b98061c",
+    "@type": [
+      "https://purl.org/ctdl/terms/Certificate"
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Certificate awarded by Heriot-Watt University for successful completion of stage 1 of Computer Science program"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en-US",
+        "@value": "Certificate of Higher Education"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/c97d234b-7940-4f83-86d3-c72f22002134",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20AN"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Advanced Network Security"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/b6508309-a4f8-4dfb-b374-02e0aac06fdb",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20GA"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "3-D Graphics and Animation"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/154a4750-5531-4716-8dae-b18b5d8f2033",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20BC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Bio Inspired Computation"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/33481dc5-1079-442d-bb55-6384eb6c2767",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20PC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Project Testing & Implementation"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/46942a57-b7f5-4ce7-bbf8-72976ac7bd23",
+    "@type": [
+      "https://purl.org/ctdl/terms/BachelorDegree",
+      "https://purl.org/ctdl/terms/Program"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F291-COS"
+      }
+    ],
+    "https://purl.org/ctdl/terms/description": [
+      {
+        "@language": "en-US",
+        "@value": "Degree awarded by Heriot-Watt University for successful completion of Computer Science program"
+      },
+      {
+        "@language": "en-US",
+        "@value": "Program in Computer Science offered by Heriot-Watt University as preparation for a BSc Hons Degree in Computer Science, and other qualifications."
+      }
+    ],
+    "https://purl.org/ctdl/terms/hasPart": [
+      {
+        "@id": "http://example.org/resources/2640de62-c440-46e3-8638-adfe187a7512"
+      },
+      {
+        "@id": "http://example.org/resources/b1e6f9a0-cc7e-410f-8a5c-dc90b2545b69"
+      },
+      {
+        "@id": "http://example.org/resources/f36868ea-9e76-4fb1-b53e-eecb837ba9d6"
+      },
+      {
+        "@id": "http://example.org/resources/183a1296-464c-4fa0-a93f-e5c0e6f1d905"
+      },
+      {
+        "@id": "http://example.org/resources/87de039c-3147-4082-8601-1c6e78376605"
+      },
+      {
+        "@id": "http://example.org/resources/ff83f280-260d-4479-aac8-ce5030f7748a"
+      },
+      {
+        "@id": "http://example.org/resources/135a6735-7af0-4ea1-842a-401b27371b93"
+      },
+      {
+        "@id": "http://example.org/resources/7ab9e8bb-1436-4927-a05e-271d4f7e29aa"
+      },
+      {
+        "@id": "http://example.org/resources/37f468ab-2366-4b1f-9d44-02825fce9773"
+      },
+      {
+        "@id": "http://example.org/resources/be67a3a4-def2-49e2-b9b1-8b392876bbd1"
+      },
+      {
+        "@id": "http://example.org/resources/b3c50cf8-fe0d-4807-8609-d68822c62df6"
+      },
+      {
+        "@id": "http://example.org/resources/301a0e59-7714-4d04-a014-47e866a30dd7"
+      },
+      {
+        "@id": "http://example.org/resources/817d9096-fc12-4e65-a9a6-2922e6f166a2"
+      },
+      {
+        "@id": "http://example.org/resources/e2fa94fe-5df0-462f-9bb9-c12c04976a33"
+      },
+      {
+        "@id": "http://example.org/resources/92bca3a8-79d3-4d48-b7e4-0c23e3540b55"
+      },
+      {
+        "@id": "http://example.org/resources/3eb8fcee-aae7-451c-9393-85ce3a97bb57"
+      },
+      {
+        "@id": "http://example.org/resources/baf57dca-a2f1-4a20-a8f5-543c1702e9cb"
+      },
+      {
+        "@id": "http://example.org/resources/342fa4bf-5ac9-4d3e-abcd-1ae372951ac2"
+      },
+      {
+        "@id": "http://example.org/resources/2e271965-a4d8-4967-9dfc-9aec45447c4e"
+      },
+      {
+        "@id": "http://example.org/resources/3b3b44b5-e1d3-461d-883b-26de906b4f50"
+      },
+      {
+        "@id": "http://example.org/resources/70562fd4-daec-4e93-acbc-03d446c01b17"
+      },
+      {
+        "@id": "http://example.org/resources/9c5d07ec-8baa-4847-b05f-65e6ea99d15d"
+      },
+      {
+        "@id": "http://example.org/resources/a5993b69-e780-4246-9b55-19e2afb5fc07"
+      },
+      {
+        "@id": "http://example.org/resources/008208c3-0084-49e2-9ca2-fe1d0ff9c65d"
+      },
+      {
+        "@id": "http://example.org/resources/7e680ffb-6bfe-4553-8715-59718620fb13"
+      },
+      {
+        "@id": "http://example.org/resources/154a4750-5531-4716-8dae-b18b5d8f2033"
+      },
+      {
+        "@id": "http://example.org/resources/9dfc1ac9-fdb5-44c5-9504-bc1878ed553f"
+      },
+      {
+        "@id": "http://example.org/resources/9290cec2-74e2-489b-bf6d-2f72df647ab0"
+      },
+      {
+        "@id": "http://example.org/resources/843ef765-5c4c-4394-9343-b5d3590c3a5b"
+      },
+      {
+        "@id": "http://example.org/resources/89f7aaae-4925-49dd-a451-a8d762e487f2"
+      },
+      {
+        "@id": "http://example.org/resources/8d02f98c-e49b-4f80-8456-8e4de17f0c4b"
+      },
+      {
+        "@id": "http://example.org/resources/b6508309-a4f8-4dfb-b374-02e0aac06fdb"
+      },
+      {
+        "@id": "http://example.org/resources/9ecd5ba7-1136-4d4e-aa76-437e962b3112"
+      },
+      {
+        "@id": "http://example.org/resources/c3a6ae9c-3874-42be-8358-8a01b0128412"
+      },
+      {
+        "@id": "http://example.org/resources/e2b8a9b8-8bc8-4ca9-8061-055839accd3c"
+      },
+      {
+        "@id": "http://example.org/resources/33481dc5-1079-442d-bb55-6384eb6c2767"
+      },
+      {
+        "@id": "http://example.org/resources/f17018e3-0fe4-4767-b5a8-5a7badb82385"
+      },
+      {
+        "@id": "http://example.org/resources/c7d10958-2182-4085-8cd0-56837f9ad48d"
+      },
+      {
+        "@id": "http://example.org/resources/9c229c49-a2db-4c84-8aa2-3a5210896932"
+      },
+      {
+        "@id": "http://example.org/resources/abe1d4b6-c3db-427f-8b81-1a1827c1a9ba"
+      },
+      {
+        "@id": "http://example.org/resources/c97d234b-7940-4f83-86d3-c72f22002134"
+      },
+      {
+        "@id": "http://example.org/resources/63ed531c-1c8a-400d-8f19-74f5bb1b2ffe"
+      },
+      {
+        "@id": "http://example.org/resources/1bcbedb4-cc54-4a94-bef5-da9bb8c16ec2"
+      },
+      {
+        "@id": "http://example.org/resources/fa79cf80-06c1-4d03-91e4-6ce5be9d60ef"
+      },
+      {
+        "@id": "http://example.org/resources/967bd205-b759-4d20-a3ef-9d2723d08b06"
+      }
+    ],
+    "https://purl.org/ctdl/terms/isPreparationFor": [
+      {
+        "@id": "http://example.org/resources/46942a57-b7f5-4ce7-bbf8-72976ac7bd23"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Bachelor of Science in Computer Science"
+      }
+    ],
+    "https://purl.org/ctdl/terms/preparationFrom": [
+      {
+        "@id": "http://example.org/resources/46942a57-b7f5-4ce7-bbf8-72976ac7bd23"
+      }
+    ],
+    "https://purl.org/ctdl/terms/subjectWebpage": [
+      {
+        "@id": "https://www.hw.ac.uk/uk/study/undergraduate/computer-science-bsc.htm"
+      }
+    ],
+    "https://purl.org/ctdl/terms/targetPathway": [
+      {
+        "@id": "http://example.org/resources/ec071f65-2c5b-4b58-a2df-dd6287880a7a"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/f36868ea-9e76-4fb1-b53e-eecb837ba9d6",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F27PX"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280627"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Praxis"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/fa79cf80-06c1-4d03-91e4-6ce5be9d60ef",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20GP"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Computer Games Programming"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/e2fa94fe-5df0-462f-9bb9-c12c04976a33",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F28DM"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280628"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Database Management Systems"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/89f7aaae-4925-49dd-a451-a8d762e487f2",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F20DL"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280620"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Data Mining and Machine Learning"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/2e271965-a4d8-4967-9dfc-9aec45447c4e",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F29SO"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280629"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Software Engineering"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/resources/87de039c-3147-4082-8601-1c6e78376605",
+    "@type": [
+      "https://purl.org/ctdl/terms/Course"
+    ],
+    "https://purl.org/ctdl/terms/codedNotation": [
+      {
+        "@value": "F17SC"
+      }
+    ],
+    "https://purl.org/ctdl/terms/creditValue": [
+      {
+        "@id": "http://example.org/resources/ba3b1c3f-d46d-4784-8ee0-68e566280617"
+      }
+    ],
+    "https://purl.org/ctdl/terms/name": [
+      {
+        "@language": "en",
+        "@value": "Discrete Mathematics"
+      }
+    ]
+  }
+]
