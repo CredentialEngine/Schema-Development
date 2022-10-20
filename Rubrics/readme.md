@@ -3,7 +3,7 @@
 This folder is for materials for the proposal to include Rebrics in CTDL-ASN, following the same approach as ASN.
 
 ### Backgroud Docs & Folders:
-- [Issue #530](#530).
+- Issue #530.
 - ASN [Model for Rubrics](http://standards.asn.desire2learn.com/rubric.html). Includes:
   - Entity-relation diagram
   - Example
@@ -43,4 +43,4 @@ This folder is for materials for the proposal to include Rebrics in CTDL-ASN, fo
   - [ ] GitHub project updates
 
 ### Final Announcement
-- [ ] 
+- [ ] Announced
