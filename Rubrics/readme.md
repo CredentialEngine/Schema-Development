@@ -10,9 +10,10 @@ This folder is for materials for the proposal to include Rebrics in CTDL-ASN, fo
   - Term definitions
 
 ### Required Documentation
-- [ ] Use case
+- [ ] [Use cases](https://docs.google.com/document/d/1dIqdOtyN_pYCNHUONeanHusWwuSBsax7lUpz4QBHPoA/edit#)
 - [x] real world data
   - [From ASN web page](http://standards.asn.desire2learn.com/rubric.html#ex)
+  - [Several VALUE rubrics from AAc&U](https://www.aacu.org/initiatives/value-initiative/value-rubrics)
 - [ ] [Domain Model](https://drive.google.com/file/d/1Wm0nLqm_Ny5sbxv8Db_FR58E3q-44MAs/view?usp=sharing) (diagram)
 - [ ] Proposal narrative (doc)
 - [ ] Term changes proposal (text)
