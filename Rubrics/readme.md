@@ -1,0 +1,46 @@
+## Pathway Conditions and Constraints
+
+This folder is for materials for the proposal to include Rebrics in CTDL-ASN, following the same approach as ASN.
+
+### Backgroud Docs & Folders:
+- [Issue #530](#530).
+- ASN [Model for Rubrics](http://standards.asn.desire2learn.com/rubric.html). Includes:
+  - Entity-relation diagram
+  - Example
+  - Term definitions
+
+### Required Documentation
+- [ ] Use case
+- [x] real world data
+  - [From ASN web page](http://standards.asn.desire2learn.com/rubric.html#ex)
+- [ ] [Domain Model](https://drive.google.com/file/d/1Wm0nLqm_Ny5sbxv8Db_FR58E3q-44MAs/view?usp=sharing) (diagram)
+- [ ] Proposal narrative (doc)
+- [ ] Term changes proposal (text)
+- [ ] Data examples
+- [ ] Minmimum & benchmark data policy
+
+### Approval
+- [ ] Proposal approved (date: tbc)
+
+### Implementation
+- Schema update
+  - [ ] Additions as pending (date: tbc)
+  - [ ] Stable/unstable entries (date: tbc)
+- update handbook
+  - [ ] Identify sections in handbook to be amended
+  - [ ] Content written for handbook
+- Publishing tools
+  - [ ] Bulk upload
+  - [ ] Bulk upload instructions
+  - [ ] Registry assistant API
+- Consuming
+  - [ ] Config updates for indexing all new terms
+  - [ ] Description sets (?)
+- Registry Publishing and Query Documentation
+  - [ ] Use Cases Page Updated
+  - [ ] Registry Handbook publishing sections
+  - [ ] Query examples in searching section
+  - [ ] GitHub project updates
+
+### Final Announcement
+- [ ] 
