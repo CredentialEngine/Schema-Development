@@ -1,0 +1,20 @@
+
+asn:hasCriterion
+  rdfs:label "Has Criterion"
+  rdfs:description "RubricCriterian referenced by the Rubric that defining criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objectivetask."
+
+-- what is objectivetask ?
+
+asn:criterionFor
+  rdfs:label "Criterian For"
+  rdfs:description "Reference to the asn:Rubric to which the asn:RubricCriteria being described belongs."
+
+-- spelling in label "Criterian"
+-- should it be asn:RubricCriterion? or Rubric Criterion
+
+asn:levelFor
+  rdfs:label "Level For"
+  rdfs:description "Reference to the asn:RubricCriterian to which the asn:CriterionLevel being described belongs."
+
+-- spelling "Criterian"
+-- should it be asn:RubricCriterion? or Rubric Criterion

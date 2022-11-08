@@ -1,0 +1,83 @@
+### namespace
+asn: <http://purl.org/ASN/schema/core/> .
+
+### Add New Classes
+asn:Rubric
+  rdfs:label  "Rubric"
+  rdfs:comment "Resource providing guidance in evaluating the quality and level of person's responses or actions based on an explicit set of criteria."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+
+asn:RubricCriterion
+  rdfs:label "Rubric Criterion"
+  rdfs:comment "Resource identifying a criterion that must be met to demonstrate quality performance of a objective or task."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+
+asn:CriterionLevel
+  rdfs:label "Criterion Level"
+  rdfs:comment "Resource identifying one or more benchmarks that must be met to achieve a performance task."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+
+
+### Add New Properties
+asn:hasScope
+  rdfs:label "Has Scope"
+  rdfs:comment "Description of what the rubric's creator intended to assess or evaluate."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:Rubric
+  schema:rangeIncludes rdf:langString
+
+asn:hasCriterion
+  rdfs:label "Has Criterion"
+  rdfs:comment "RubricCriterian referenced by the Rubric that defining criterion to be met to demonstrate quality in execution in performance of a task or obtaining an objectivetask."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:Rubric
+  schema:rangeIncludes asn:RubricCriterion
+
+asn:criterionFor
+  rdfs:label "Criterian For"
+  rdfs:comment "Reference to the asn:Rubric to which the asn:RubricCriteria being described belongs."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:RubricCriterion
+  schema:rangeIncludes asn:Rubric
+
+asn:hasLevel
+  rdfs:label "Has Level"
+  rdfs:comment "Resource description of a level of performance based on a RubricCriterion."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:RubricCriterion
+  schema:rangeIncludes asn:CriterionLevel
+
+asn:levelFor
+  rdfs:label "Level For"
+  rdfs:comment "Reference to the asn:RubricCriterian to which the asn:CriterionLevel being described belongs."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:CriterionLevel
+  schema:rangeIncludes asn:RubricCriterion
+
+asn:benchmark
+  rdfs:label "Benchmark"
+  rdfs:comment "Description of a level of achievement on a performance task defined by the RubricCriterion."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:CriterionLevel
+  schema:rangeIncludes rdf:langString
+
+asn:qualityLabel
+  rdfs:label "Quality Label"
+  rdfs:comment "Qualitative description of this degree of achievement used for column headers in tabular rubrics."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:CriterionLevel
+  schema:rangeIncludes rdfs:Literal
+
+asn:score
+  rdfs:label "Criterion Level Score"
+  rdfs:comment "Points to be awarded for achieving this level for a RubricCriterion."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes asn:CriterionLevel
+  schema:rangeIncludes xsd:float
+
+ceasn:hasRubric
+  rdfs:label "Has Rubric"
+  rdfs:comment "Indicates a rubric associated with this resource."
+  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
+  schema:domainIncludes ceterms:AssessmentProfile, ceterms:Job, ceterms:Task
+  schema:rangeIncludes asn:Rubric
