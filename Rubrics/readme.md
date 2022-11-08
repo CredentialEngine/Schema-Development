@@ -4,19 +4,22 @@ This folder is for materials for the proposal to include Rebrics in CTDL-ASN, fo
 
 ### Backgroud Docs & Folders:
 - Issue [#530](https://github.com/CredentialEngine/Schema-Development/issues/530).
+- Ontology: [Panulla & kohler](https://openaccess.uoc.edu/bitstream/10609/5222/6/Panulla.pdf)
+  - [ ] make sure this is referenced as source somehow.
 - ASN [Model for Rubrics](http://standards.asn.desire2learn.com/rubric.html). Includes:
   - Entity-relation diagram
   - Example
   - Term definitions
+  - [ ] make sure this is referenced as source somehow.
 
 ### Required Documentation
-- [ ] [Use cases](https://docs.google.com/document/d/1dIqdOtyN_pYCNHUONeanHusWwuSBsax7lUpz4QBHPoA/edit#)
+- [x] [Use cases](https://docs.google.com/document/d/1dIqdOtyN_pYCNHUONeanHusWwuSBsax7lUpz4QBHPoA/edit#)
 - [x] real world data
   - [From ASN web page](http://standards.asn.desire2learn.com/rubric.html#ex)
   - [Several VALUE rubrics from AAc&U](https://www.aacu.org/initiatives/value-initiative/value-rubrics)
-- [ ] [Domain Model](https://drive.google.com/file/d/1Wm0nLqm_Ny5sbxv8Db_FR58E3q-44MAs/view?usp=sharing) (diagram)
+- [x] [Domain Model](https://drive.google.com/file/d/1Wm0nLqm_Ny5sbxv8Db_FR58E3q-44MAs/view?usp=sharing) (diagram)
 - [ ] Proposal narrative (doc)
-- [ ] Term changes proposal (text)
+- [ ] Term definition changes proposal (text)
 - [ ] Data examples
 - [ ] Minmimum & benchmark data policy
 
