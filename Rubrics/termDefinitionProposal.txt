@@ -1,7 +1,15 @@
-### namespace
+// Work in progress
+// Todo:
+// [ ] Ordering & grouping is optimised for checking against diagram; alphabetise when diagram is signed-off & checking is complete
+// [ ] Check that modified properties do not need definition tweaks
+// [ ] Get errors/typos in asn: property definitions fixed
+
+## namespace ##
+===============
 asn: <http://purl.org/ASN/schema/core/> .
 
-### Add New Classes
+## Classes reused 'as-is' from ASN ##
+=====================================
 asn:Rubric
   rdfs:label  "Rubric"
   rdfs:comment "Resource providing guidance in evaluating the quality and level of person's responses or actions based on an explicit set of criteria."
@@ -18,7 +26,8 @@ asn:CriterionLevel
   rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
 
 
-### Add New Properties
+## Properties reused 'as-is' from ASN ##
+========================================
 asn:hasScope
   rdfs:label "Has Scope"
   rdfs:comment "Description of what the rubric's creator intended to assess or evaluate."
@@ -75,9 +84,63 @@ asn:score
   schema:domainIncludes asn:CriterionLevel
   schema:rangeIncludes xsd:float
 
+## New Property ##
+==================
 ceasn:hasRubric
   rdfs:label "Has Rubric"
   rdfs:comment "Indicates a rubric associated with this resource."
-  rdfs:isDefinedBy <http://purl.org/ASN/schema/core/>
   schema:domainIncludes ceterms:AssessmentProfile, ceterms:Job, ceterms:Task
   schema:rangeIncludes asn:Rubric
+
+## Modified Properties ##
+=========================
+**Add**
+> schema:domainIncludes asn:Rubric
+to:
+* ceterms:ctid
+* ceasn:name
+* ceasn:author
+* ceasn:codedNotation
+* ceasn:dateCopyrighted
+* ceasn:datModified
+* ceasn:description
+* ceasn:inLanguage
+* ceasn:license
+* ceasn:publisherName
+* ceasn:rights
+* ceterms:isicV4
+* ceterms:naics
+* ceterms:source
+* ceterms:subjectWebPage
+
+* ceasn:creator
+* ceasn:publisher
+* ceasn:rightsHolder
+
+* ceterms:audienceType
+* ceterms:audienceLevelType
+* ceterms:instructionalProgramType
+* ceterms:occupationType
+* ceterms:industryType
+
+* ceterms:hasOccupation
+* asn:hasProgressionModel
+* ceterms:identifier
+* ceterms:publicationStatusType
+
+**Add**
+> schema:domainIncludes asn:RubricCriterion
+to:
+* ceasn:description
+* ceasn:inLanguage
+* ceasn:listID
+* ceasn:name
+* ceterms:classification
+
+**Add**
+> schema:domainIncludes asn:CriterionLevel
+to:
+* ceasn:description
+* ceasn:inLanguage
+* ceasn:listID
+* asn:hasProgressionModel
