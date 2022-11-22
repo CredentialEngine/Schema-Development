@@ -19,7 +19,7 @@ This folder is for materials for the proposal to include Rebrics in CTDL-ASN, fo
   - [Several VALUE rubrics from AAc&U](https://www.aacu.org/initiatives/value-initiative/value-rubrics)
 - [x] [Domain Model](https://drive.google.com/file/d/1Wm0nLqm_Ny5sbxv8Db_FR58E3q-44MAs/view?usp=sharing) (diagram)
 - [ ] Proposal narrative (doc)
-- [ ] Term definition changes proposal (text)
+- [ ] Term definition changes proposal ([text](./termDefinitionProposal.txt))
 - [ ] Data examples
 - [ ] Minmimum & benchmark data policy
 
