@@ -118,7 +118,7 @@ to:
 * ceasn:rightsHolder
 
 * ceterms:audienceType
-* ceterms:audienceLevelType
+* ceasn:educationLevelType
 * ceterms:instructionalProgramType
 * ceterms:occupationType
 * ceterms:industryType
