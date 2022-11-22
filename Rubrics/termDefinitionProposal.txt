@@ -89,7 +89,7 @@ asn:score
 ceasn:hasRubric
   rdfs:label "Has Rubric"
   rdfs:comment "Indicates a rubric associated with this resource."
-  schema:domainIncludes ceterms:AssessmentProfile, ceterms:Job, ceterms:Task
+  schema:domainIncludes ceterms:AssessmentProfile, ceterms:Job, ceterms:Task, ceasn:CompetencyFramework
   schema:rangeIncludes asn:Rubric
 
 ## Modified Properties ##
