@@ -1,0 +1,73 @@
+{
+	"@id": "res:ce-0f0d84f5-5c32-4526-ad39-1db0adbdbe93",
+	"@type": "ceterms:CredentialOrganization",
+	"ceterms:name": { "en": "SNHU" },
+	"ceterms:offers": [
+		"res:ce-abc",
+		"res:ce-def",
+		"res:ce-ghi"
+	]
+}
+
+{
+	"@id": "res:ce-abc",
+	"@type": "ceterms:SupportService",
+	"ceterms:supportServiceType": [
+		"support:AcademicGuidance",
+		"support:ImmigrationService",
+		"support:TransportationService",
+		"support:LegalService"
+	]
+},
+
+{
+	"@id": "res:ce-def",
+	"@type": "ceterms:SupportService",
+	"ceterms:accommodationType": [
+		"accommodation:ClearSignage",
+		"accommodation:PhysicalAccessibility",
+		"accommodation:AlternativeFormats",
+		"accommodation:HousingAccommodation",
+		"accommodation:MealPlanAccommodation"
+	],
+	"ceterms:supportServiceType": [
+		"support:AudiologicalService",
+		"support:VisionService",
+		"support:TestAssistance",
+		"support:HealthcareService",
+		"support:MentalHealthService",
+		"support:SecurityService"
+	],
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:name": { "en": "Main Campus" },
+			"ceterms:streetAddress": { "en": "2500 North River Road" },
+			"ceterms:addressLocality": { "en": "Manchester" },
+			"ceterms:addressRegion": { "en": "NH" },
+			"ceterms:postalCode": "03106"
+		}
+	]
+}
+
+{
+	"@id": "res:ce-def",
+	"@type": "ceterms:SupportService",
+	"ceterms:supportServiceType": [
+		"support:TutoringService",
+		"support:StudySkillsService",
+		"support:PeerService",
+		"support:MentoringService",
+		"support:LearningResourceService"
+	],
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:name": { "en": "Shapiro Library" },
+			"ceterms:streetAddress": { "en": "2515 North River Road" },
+			"ceterms:addressLocality": { "en": "Manchester" },
+			"ceterms:addressRegion": { "en": "NH" },
+			"ceterms:postalCode": "03106"
+		}
+	]
+}
