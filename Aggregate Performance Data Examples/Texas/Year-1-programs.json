@@ -1,0 +1,78 @@
+"@graph": [
+	{
+		"@type": "qdata:DataSetProfile",
+		"ceterms:description": { "en": "First-year wages and loan information for a credential from [offerer name] with CIP code [CIP code] in Texas." },
+		"qdata:dataSuppressionPolicy": { "en": "Program years with fewer than 5 graduates are suppressed." },
+		"ceterms:source": "https://texaswebsite",
+		"schema:about": "_:credential",
+		"qdata:dataProvider": [ "res:ce-ctid-for-state-org" ],
+		"qdata:dataSetTimePeriod": [
+			{
+				"@type": "qdata:DataSetTimeFrame",
+				"ceterms:startDate": "2019-1-1",
+				"ceterms:endDate": "2019-12-31",
+				"qdata:dataAttributes": [
+					{
+						"@type": "qdata:DataProfile",
+						"qdata:holdersInSet": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"schema:description": { "en": "Number of graduates." },
+								"schema:value": 66
+							}
+						],
+						"qdata:earningsAmount": [
+							{
+								"@type": "schema:MonetaryAmount",
+								"schema:value": 33319,
+								"schema:description": { "en": "The median earnings during the calendar year presented." },
+								"schema:currency": "USD"
+							}
+						],
+						"qdata:subjectValue": [
+							{
+								"@type": "schema:QuantitativeValue",
+								"schema:description": { "en": "Percent of graduates with loans." },
+								"qdata:percentage": 0.61
+							},
+							{
+								"@type": "schema:QuantitativeValue",
+								"schema:description": { "en": "Average loan amount at graduation." },
+								"schema:value": 19224,
+								"schema:unitText": "USD"
+							},
+							{
+								"@type": "schema:QuantitativeValue",
+								"schema:description": { "en": "The percentage of graduates found with wages earned in Texas in the first year after graduation." },
+								"schema:percentage": 0.74
+							},
+							{
+								"@type": "schema:QuantitativeValue",
+								"schema:description": { "en": "Loan to first wage ratio." },
+								"schema:percentage": 0.49
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"@id": "_:credential",
+		"@type": "ceterms:MasterDegree",
+		"ceterms:offeredBy": [ "res:ce-ctid-for-offering-org-looked-up-via-fice_code" ],
+		"ceterms:instructionalProgramType": [
+			{
+				"@type": "ceterms:CredentialAlignmentObject",
+				"ceterms:codedNotation": "3099"
+			}
+		],
+		"ceterms:estimatedDuration": [
+			{
+				"@type": "ceterms:DurationProfile",
+				"ceterms:description": { "en": "Degree Time to Finish" }
+				"ceterms:exactDuration": "P6.54Y"
+			}
+		]
+	}
+]
