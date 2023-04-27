@@ -4,7 +4,7 @@
 		"ceterms:description": { "en": "First-year wages and loan information for a credential from [offerer name] with CIP code [CIP code] in Texas." },
 		"qdata:dataSuppressionPolicy": { "en": "Program years with fewer than 5 graduates are suppressed." },
 		"ceterms:source": "https://texaswebsite",
-		"schema:about": [ "_:credential" ],
+		"schema:about": [ "res:ce-ctid-for-the-related-credential" ],
 		"qdata:dataProvider": [ "res:ce-ctid-for-state-org" ],
 		"qdata:dataSetTimePeriod": [
 			{
