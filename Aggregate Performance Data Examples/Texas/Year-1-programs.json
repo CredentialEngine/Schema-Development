@@ -39,7 +39,7 @@
 								"@type": "schema:QuantitativeValue",
 								"schema:description": { "en": "Average loan amount at graduation." },
 								"schema:value": 19224,
-								"schema:unitText": "USD"
+								"schema:unitText": "res:ce-ctid-for-concept-representing-USD"
 							},
 							{
 								"@type": "schema:QuantitativeValue",
