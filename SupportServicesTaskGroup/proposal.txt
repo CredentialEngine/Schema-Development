@@ -1,0 +1,940 @@
+###
+### rdfs:Class Changes
+###
+
+### Create rdfs:Class
+ceterms:SupportService a rdfs:Class
+	vs:term_status vs:pending ;
+	rdfs:label "Support Service"@en-US ;
+	rdfs:comment "Resources and assistance that help people overcome barriers to succeed in their education and career goals."@en-US ;
+	dct:description "Support services can be provided at any stage of an individual's education or career, and may be targeted towards people with or without direct affiliation with an organization. The goal of support services is to provide people with the assistance they need to achieve their full potential.  Examples of Support Services include career advice, job placement, childcare, transportation, tools, mentorship, counseling, and other forms of aid."@en-US .
+
+
+###
+### rdf:Property Changes
+###
+
+### Create rdf:Property
+ceterms:accommodationType a rdf:Property
+	vs:term_status vs:pending ;
+	rdfs:label "Accommodation Type"@en-US ;
+	rdfs:comment "Type of modification to facilitate equal access for people to a physical location, resource, or service."@en-US ;
+	schema:domainIncludes ceterms:SupportService ;
+	schema:rangeIncludes ceterms:CredentialAlignmentObject .
+
+
+### Create rdf:Property
+ceterms:hasSupportService a rdf:Property
+	vs:term_status vs:pending ;
+	rdfs:label "Has Support Service"@en-US ;
+	rdfs:comment "Reference to a relevant support service."@en-US ;
+	schema:domainIncludes ceterms:ApprenticeshipCertificate, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:Certification, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:JourneymanCertificate, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:ProfessionalDoctorate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:AssessmentProfile, ceterms:Collection, ceterms:Course, ceterms:Job, ceterms:LearningOpportunityProfile, ceterms:LearningProgram, ceterms:Pathway, ceterms:WorkRole, ceterms:ScheduledOffering ;
+	schema:rangeIncludes ceterms:SupportService .
+
+
+### Create rdf:Property
+ceterms:supportServiceCondition a rdf:Property
+	vs:term_status vs:pending ;
+	rdfs:label "Support Service Condition"@en-US ;
+	rdfs:comment "Requirements to qualify for  a support service."@en-US ;
+	schema:domainIncludes ceterms:SupportService ;
+	schema:rangeIncludes ceterms:ConditionProfile .
+
+
+### Create rdf:Property
+ceterms:supportServiceFor a rdf:Property
+	vs:term_status vs:pending ;
+	rdfs:label "Support Service For"@en-US ;
+	rdfs:comment "Resource to which this support service is applicable."@en-US ;
+	schema:domainIncludes ceterms:SupportService ;
+	schema:rangeIncludes ceterms:AssessmentProfile, ceterms:Collection, ceterms:Course, ceterms:Job, ceterms:LearningOpportunityProfile, ceterms:LearningProgram, ceterms:Pathway, ceterms:WorkRole, ceterms:ScheduledOffering, ceterms:ApprenticeshipCertificate, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:Certification, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:JourneymanCertificate, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:ProfessionalDoctorate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree .
+
+
+### Create rdf:Property
+ceterms:supportServiceType a rdf:Property
+	vs:term_status vs:pending ;
+	rdfs:label "Support Service Type"@en-US ;
+	rdfs:comment "Types of support services offered by an agent; select from an existing enumeration of such types."@en-US ;
+	schema:domainIncludes ceterms:SupportService ;
+	schema:rangeIncludes ceterms:CredentialAlignmentObject .
+
+
+###Modify rdf:Property - ceterms:alternateName
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:availabilityListing
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:availableAt
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:availableOnlineAt
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:commonConditions
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:commonCosts
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:ctid
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:dateEffective
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:deliveryType
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:description
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:estimatedCost
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:expirationDate
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:financialAssistance
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:identifier
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:inLanguage
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:keyword
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:lifeCycleStatusType
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:name
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:occupationType
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:offeredBy
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:offeredIn
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###Modify rdf:Property - ceterms:subjectWebpage
+	Add schema:domainIncludes ceterms:SupportService .
+
+
+###
+### skos:ConceptScheme Changes
+###
+
+### Create skos:ConceptScheme
+ceterms:Accommodation a skos:ConceptScheme
+	vs:term_status vs:pending ;
+	rdfs:label "Accommodation"@en-US ;
+	rdfs:comment "Types of features, changes, modifications, or adjustments made to a facility, service, or resource to provide equal access and opportunity to people with diverse needs and preferences."@en-US ;
+	dct:description "These accommodations can include existing physical features or modifications to the environment, alternative formats or modes of communication, flexible scheduling, and personal assistance services, among others."@en-US .
+
+
+### Create skos:ConceptScheme
+ceterms:SupportServiceCategory a skos:ConceptScheme
+	vs:term_status vs:pending ;
+	rdfs:label "Support Service Category"@en-US ;
+	rdfs:comment "Types of support services to help people succeed in their education and career goals."@en-US .
+
+
+###
+### skos:Concept Changes
+###
+
+### Create skos:Concept
+accommodation:AccessibleHousing a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Accessible Housing"@en-US ;
+	skos:definition "Housing with features, modifications, or adjustments to ensure that individuals with disabilities can access and use the space on an equal basis with others."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:AccessibleParking a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Accessible Parking"@en-US ;
+	skos:definition "A designated parking spot close to a building entrance, with adequate space to allow for accessible van or car parking, and with appropriate signage and markings."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:AccessibleRestroom a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Accessible Restroom"@en-US ;
+	skos:definition "Accessible restrooms with grab bars, accessible toilets, and sinks at different heights."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:AdjustableLighting a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Adjustable Lighting"@en-US ;
+	skos:definition "Adjustable lighting levels and glare reduction."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:AdjustableWorkstations a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Adjustable Workstations"@en-US ;
+	skos:definition "Adjustable counters and workstations."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:AlternativeFormats a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Alternative Formats"@en-US ;
+	skos:definition "Alternative formats for print and display materials."@en-US ;
+	dct:description "Examples include large print books or accessible PDFs."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:AssistiveTechnology a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Assistive Technology"@en-US ;
+	skos:definition "Assistive technology and software to enable or improve access."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:AudioCaptioning a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Audio Captioning"@en-US ;
+	skos:definition "Displays for text corresponding to spoken words and audio cues."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:CaptioningAndTranscripts a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Captioning and Transcripts"@en-US ;
+	skos:definition "Captioning and/or transcripts for audio and video content."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:ClearSignage a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Clear Signage"@en-US ;
+	skos:definition "Clear and simple signage with high contrast and easy-to-read fonts."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:ColorBlindness a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Color Blindness"@en-US ;
+	skos:definition "Accessibility feature or accommodation that is designed to address color vision deficiency or color blindness."@en-US ;
+	dct:description "This service typically involves adjusting the colors used in visual materials, such as websites, videos, or other digital content, to make them more distinguishable."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:Communication a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Communication"@en-US ;
+	skos:definition "Verbal or non-verbal communication assistance."@en-US ;
+	dct:description "Examples include written communication, picture communication, or communication boards, telephone relay, assistive listening devices, Braille print, audio communication, or other accommodations."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:DietaryAccommodation a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Dietary Accommodation"@en-US ;
+	skos:definition "Alternative meal options to suit dietary needs, restrictions, or preferences."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:FacilityAccommodation a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Facility Accommodation"@en-US ;
+	skos:definition "Features, modifications or adjustments made to a physical space or facility to ensure that individuals with disabilities can access and use the space on an equal basis with others."@en-US ;
+	dct:description "This can include existing features and modifications to the built environment, such as the installation of ramps, accessible restrooms, or wider doorways, as well as adjustments to lighting, signage, and other environmental factors."@en-US .
+
+
+### Create skos:Concept
+accommodation:FlexibleSchedule a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Flexible Schedule"@en-US ;
+	skos:definition "Accommodations made for the time frames to complete work or tasks."@en-US ;
+	dct:description "Examples include adjustments to working hours, extended deadlines, assessment times, or other modifications to schedules."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:HearingLoops a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Hearing Loops"@en-US ;
+	skos:definition "Audio induction loops that transmit signals to hearing aids, cochlear implants or other listening devices."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:MultipleLanguage a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Multiple Language"@en-US ;
+	skos:definition "Provision of materials or communication in languages other than the primary language used."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:PhysicalAccessibility a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Physical Accessibility"@en-US ;
+	skos:definition "Accommodations to ensure entry and mobility throughout a facility."@en-US ;
+	dct:description "Examples include ramps or lifts for wheelchair accessibility, elevators, automatic doors, and wider doorways to accommodate mobility devices."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:PlainLanguage a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Plain Language"@en-US ;
+	skos:definition "Communication that is clear, concise, and easy to understand for all participants."@en-US ;
+	dct:description "Examples include using everyday language, avoiding technical jargon, and providing relevant context to aid comprehension."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:ResourceAndServiceAccommodation a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Resource and Service Accommodation"@en-US ;
+	skos:definition "Accommodations that are designed to provide equal access to resources and services and are not related to physical facilities."@en-US .
+
+
+### Create skos:Concept
+accommodation:ScreenReader a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Screen Reader"@en-US ;
+	skos:definition "Screen reader compatibility for digital materials."@en-US ;
+	skos:broader accommodation:ResourceAndServiceAccommodation .
+
+
+### Create skos:Concept
+accommodation:Sensory a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Sensory"@en-US ;
+	skos:definition "Accommodations for hypersensitivity or aversion to certain sounds, lights, textures, or smells."@en-US ;
+	dct:description "This can include quiet rooms, and reduced lighting."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:ServiceAnimal a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Service Animal"@en-US ;
+	skos:definition "Service animal accommodations, including clear guidelines, policies, and facilities for allowing service and support animals."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+accommodation:TactileSignage a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Accommodation ;
+	skos:prefLabel "Tactile Signage"@en-US ;
+	skos:definition "Braille signage and tactile cues."@en-US ;
+	skos:broader accommodation:FacilityAccommodation .
+
+
+### Create skos:Concept
+audience:CulturalEthnicMinority a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Cultural/Ethnic Minority"@en-US ;
+	skos:definition "Person who belongs to a cultural and/or ethnic minority group, relative to the surrounding population."@en-US .
+
+
+### Create skos:Concept
+audience:CurrentlyIncarcerated a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Currently Incarcerated"@en-US ;
+	skos:definition "Person who is currently incarcerated."@en-US .
+
+
+### Create skos:Concept
+audience:FormerMember a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Former Member"@en-US ;
+	skos:definition "Former member of an organization, society, or recognized group."@en-US ;
+	dct:description "Membership includes types of affiliation such as employment or other work relationships, enrollment at an educational institution etc."@en-US .
+
+
+### Create skos:Concept
+audience:FormerlyIncarcerated a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Formerly Incarcerated"@en-US ;
+	skos:definition "Person who was formerly incarcerated."@en-US .
+
+
+### Create skos:Concept
+audience:FutureMember a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Future Member"@en-US ;
+	skos:definition "Future member of an organization, society, or recognized group."@en-US ;
+	dct:description "Membership includes types of affiliation such as employment or other work relationships, enrollment at an educational institution etc."@en-US .
+
+
+### Create skos:Concept
+audience:FutureStudent a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Future Student"@en-US ;
+	skos:definition "Student who intends to participate in a learning opportunity."@en-US .
+
+
+### Create skos:Concept
+audience:JobSeeker a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Job Seeker"@en-US ;
+	skos:definition "Person who is currently seeking work."@en-US ;
+	dct:description "This includes new job seekers as well as those who already have work and are seeking other work."@en-US .
+
+
+### Create skos:Concept
+audience:Youth a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Audience ;
+	skos:prefLabel "Youth"@en-US ;
+	skos:definition "Person roughly between the ages of 15 and 24."@en-US .
+
+
+### Create skos:Concept
+deliveryType:VariableSite a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:Delivery ;
+	skos:prefLabel "Variable Site"@en-US ;
+	skos:definition "Delivery is not tied to a specific site."@en-US ;
+	dct:description "Includes physical/in-person delivery to a range of locations, whether predetermined or customized to a specific need. Examples include equipment for dispensing information to mobile devices in locations with limited/no connection."@en-US .
+
+
+### Create skos:Concept
+financialAid:Stipend a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:FinancialAssistance ;
+	skos:prefLabel "Stipend"@en-US ;
+	skos:definition "A fixed sum of money paid for services or to defray expenses incurred through specific activities, which is typically distinct from wages or a salary."@en-US .
+
+
+### Create skos:Concept
+learnMethod:CohortBased a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:LearningMethod ;
+	skos:prefLabel "Cohort-Based"@en-US ;
+	skos:definition "Format in which people  progress as a group."@en-US .
+
+
+### Create skos:Concept
+support:AcademicAdvising a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Academic Advising"@en-US ;
+	skos:definition "Personalized process that assists people in achieving educational goals and navigating academic journeys."@en-US .
+
+
+### Create skos:Concept
+support:AssistiveTechnology a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Assistive Technology"@en-US ;
+	skos:definition "Service that directly assists an individual in the selection, acquisition, or use of assistive technology devices."@en-US ;
+	skos:narrowMatch ceds:000273/#00292 .
+
+
+### Create skos:Concept
+support:AudiologicalHealthcare a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Audiological Healthcare"@en-US ;
+	skos:definition "Healthcare and related services covering hearing loss or impairment."@en-US ;
+	skos:relatedMatch ceds:000273/#00293 .
+
+
+### Create skos:Concept
+support:BehavioralService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Behavioral Service"@en-US ;
+	skos:definition "Personalized service focused on addressing problem behaviors and developing positive and adaptive behaviors."@en-US ;
+	skos:narrowMatch ceds:000273/#73052 .
+
+
+### Create skos:Concept
+support:BenefitsSupport a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Benefits Support"@en-US ;
+	skos:definition "Service that provides guidance and assistance to people in accessing and maintaining the financial and other benefits that can support their academic and career goals."@en-US ;
+	dct:description "This can include support in understanding and maintaining eligibility, completing related forms, and navigating application and verification processes."@en-US .
+
+
+### Create skos:Concept
+support:CareerAdvising a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Career Advising"@en-US ;
+	skos:definition "Personalized process that helps individuals identify and pursue their professional goals, and how to develop the skills and strategies necessary to achieve them."@en-US .
+
+
+### Create skos:Concept
+support:CareerAssessment a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Career Assessment"@en-US ;
+	skos:definition "Personalized process that helps individuals to identify their interests, skills, values, and personality traits, and to explore how they relate to different career paths and job opportunities."@en-US .
+
+
+### Create skos:Concept
+support:CareerExploration a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Career Exploration"@en-US ;
+	skos:definition "Service that provides opportunities or information to discover and learn about careers."@en-US ;
+	dct:description "This service can offer information and experiences about job market trends, salary expectations, working conditions and other factors that can help people identify and pursue their career goals."@en-US .
+
+
+### Create skos:Concept
+support:CaseManagement a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Case Management"@en-US ;
+	skos:definition "Long-term, client-centered service for delivering comprehensive health and human services that involves ongoing assessment, planning, coordination, monitoring, and evaluation of a client's needs and services provided."@en-US ;
+	skos:relatedMatch ceds:000273/#00878 .
+
+
+### Create skos:Concept
+support:Childcare a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Childcare"@en-US ;
+	skos:definition "Provision of supervision, care, and activities for children in the absence of their parents or guardians."@en-US .
+
+
+### Create skos:Concept
+support:ClothingAssistance a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Clothing Assistance"@en-US ;
+	skos:definition "Service that pays for or provides clothing to people who need appropriate attire."@en-US ;
+	skos:narrowMatch ceds:000273/#00319 .
+
+
+### Create skos:Concept
+support:ComputerHub a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Computer Hub"@en-US ;
+	skos:definition "Physical location for accessing computers and other technology resources."@en-US .
+
+
+### Create skos:Concept
+support:Counseling a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Counseling"@en-US ;
+	skos:definition "Personalized process that helps individuals improve their mental health and well-being by exploring their emotions, behaviors, and relationships with the guidance of a trained professional."@en-US ;
+	dct:description "Personalized service that provides guidance and support to individuals experiencing personal, work-related, or academic challenges."@en-US .
+
+
+### Create skos:Concept
+support:CrisisSupport a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Crisis Support"@en-US ;
+	skos:definition "Services that provide immediate assistance to people who are facing unexpected challenges or crises that may interfere with their ability to pursue their academic or career goals."@en-US ;
+	dct:description "These services can include financial assistance, housing assistance, crisis hotlines, and counseling services among others."@en-US .
+
+
+### Create skos:Concept
+support:DiversityEquityInclusion a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Diversity Equity Inclusion"@en-US ;
+	skos:definition "Services, programs, and initiatives that promote a welcoming and inclusive environment for individuals of all backgrounds."@en-US .
+
+
+### Create skos:Concept
+support:EquipmentProvision a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Equipment Provision"@en-US ;
+	skos:definition "Service that provides people with access to the equipment, tools, or other physical resources necessary for education, training, or work."@en-US .
+
+
+### Create skos:Concept
+support:FinancialLiteracy a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Financial Literacy"@en-US ;
+	skos:definition "Provides people with the knowledge, skills, and resources necessary to make informed decisions about managing their personal finances."@en-US .
+
+
+### Create skos:Concept
+support:HealthCare a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Health Care"@en-US ;
+	skos:definition "Programs whose primary purpose is to help individuals achieve and maintain physical well-being through the study, prevention, screening, evaluation and treatment of individuals who have illnesses, injuries, or disabilities."@en-US .
+
+
+### Create skos:Concept
+support:ImmigrationAssistance a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Immigration Assistance"@en-US ;
+	skos:definition "Assistance for people in navigating legal and administrative procedures involved in immigrating to a new country."@en-US ;
+	dct:description "Examples include assistance with visa applications, documentation requirements, and settlement services."@en-US ;
+	skos:relatedMatch ceds:000273/#73052 .
+
+
+### Create skos:Concept
+support:InternetAccess a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Internet Access"@en-US ;
+	skos:definition "Service where individuals can connect to the internet using their own devices."@en-US ;
+	dct:description "Examples include connecting smartphones, Laptops or tablets."@en-US .
+
+
+### Create skos:Concept
+support:JobPlacement a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Job Placement"@en-US ;
+	skos:definition "Assistance for individuals in finding suitable work."@en-US ;
+	dct:description "Examples include providing job searching and matching resources, and facilitating the application, interview, and background check processes."@en-US .
+
+
+### Create skos:Concept
+support:LearningResourceProvision a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Learning Resource Provision"@en-US ;
+	skos:definition "Service that provides people with access to educational materials."@en-US ;
+	dct:description "Examples of support materials include textbooks, multimedia resources, research papers, journals, and online courses."@en-US ;
+	vann:usageNote "Use for libraries and specialized resource centers."@en-US .
+
+
+### Create skos:Concept
+support:LegalService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Legal Service"@en-US ;
+	skos:definition "Service that provides people with advice, representation, and/or support in navigating the legal system."@en-US ;
+	dct:description "Examples include the interpretation and application of laws and regulations, and advocating for the individual's legal rights and interests."@en-US .
+
+
+### Create skos:Concept
+support:MentalHealthCounseling a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Mental Health Counseling"@en-US ;
+	skos:definition "Personalized service that provides therapeutic support to individuals experiencing mental health issues such as anxiety, depression, or trauma."@en-US ;
+	dct:description "Examples of mental health issues include behavior problems, emotional disturbances, personality disorders, incipient illnesses, and/or other comparable conditions."@en-US ;
+	skos:narrowMatch ceds:000273/#00305 .
+
+
+### Create skos:Concept
+support:Mentoring a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Mentoring"@en-US ;
+	skos:definition "Service that pairs individuals with people experienced in professions who can offer guidance and support as they pursue their academic or career goals."@en-US .
+
+
+### Create skos:Concept
+support:Networking a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Networking"@en-US ;
+	skos:definition "Service that connects people with employers and professional communities to expand their professional networks and gain access to new job opportunities and career pathways."@en-US ;
+	dct:description "Examples include providing opportunities to attend networking events and connect with professionals."@en-US .
+
+
+### Create skos:Concept
+support:NeurodivergenceService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Neurodivergence Service"@en-US ;
+	skos:definition "Services related to neurodivergence."@en-US ;
+	dct:description "Neurodivergence means relating to having a mind that functions in ways that are not considered typical according to societal norms."@en-US ;
+	vann:usageNote "Use for services relating to autism, tics/Tourettes Syndrome, Attention Deficit Hyperactivity Disorder (ADHD), and other similar conditions."@en-US ;
+	skos:narrowMatch ceds:000273/#73051 .
+
+
+### Create skos:Concept
+support:NoteTakingAssistance a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Note Taking Assistance"@en-US ;
+	skos:definition "Service that assists individuals to make their own record of classes or lectures."@en-US ;
+	skos:narrowMatch ceds:000273/#00308 .
+
+
+### Create skos:Concept
+support:PeerService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Peer Service"@en-US ;
+	skos:definition "Service that specializes in facilitating peer interaction."@en-US ;
+	dct:description "Examples include peer interactions such as counseling, tutoring, and leadership activities."@en-US ;
+	skos:narrowMatch ceds:000273/#00312 .
+
+
+### Create skos:Concept
+support:PersonalAssistance a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Personal Assistance"@en-US ;
+	skos:definition "Personalized service to help and accompany an individual who would otherwise be unable to participate in education, training, and/or work."@en-US .
+
+
+### Create skos:Concept
+support:PostalAddress a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Postal Address"@en-US ;
+	skos:definition "Service to provide people who do not have a suitable mailing address with a means to receive their mail."@en-US ;
+	dct:description "This service is intended to help individuals receive documents and correspondence."@en-US .
+
+
+### Create skos:Concept
+support:PsychologicalService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Psychological Service"@en-US ;
+	skos:definition "Personalized service that provides assessment, diagnosis, and treatment for mental health disorders."@en-US ;
+	skos:narrowMatch ceds:000273/#00331 .
+
+
+### Create skos:Concept
+support:PublicBenefitsCaseManagement a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Public Benefits Case Management"@en-US ;
+	skos:definition "Specialized, long-term, and client-centered service for delivering comprehensive public benefits services that involves ongoing assessment, planning, coordination, monitoring, and evaluation of a client's needs and services provided related to public assistance programs."@en-US ;
+	skos:relatedMatch ceds:000273/#00294 .
+
+
+### Create skos:Concept
+support:ReaderService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Reader Service"@en-US ;
+	skos:definition "Service for reading text or describing visual content."@en-US ;
+	vann:usageNote "For pre-recorded formats such as audio books use the accommodationType property with the value "AlternativeFormats"."@en-US ;
+	skos:narrowMatch ceds:000273/#00314 .
+
+
+### Create skos:Concept
+support:RehabilitationCounseling a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Rehabilitation Counseling"@en-US ;
+	skos:definition "Service that provides a combination of treatment and education designed to restore maximum functioning, independence,  and a sense of well-being for individuals who have temporary or permanent disabilities."@en-US ;
+	skos:narrowMatch ceds:000273/#00318 .
+
+
+### Create skos:Concept
+support:ResidentialLiving a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Residential Living"@en-US ;
+	skos:definition "Service that provides a therapeutic living environment in community-based residential facilities for individuals with special needs, including those with emotional and/or behavioral problems."@en-US ;
+	skos:narrowMatch ceds:000273/#00885 .
+
+
+### Create skos:Concept
+support:RespiteCare a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Respite Care"@en-US ;
+	skos:definition "Service that provides temporary care to relieve a caregiver."@en-US ;
+	skos:narrowMatch ceds:000273/#73046 .
+
+
+### Create skos:Concept
+support:SignLanguage a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Sign Language"@en-US ;
+	skos:definition "Service that provides sign language interpretation."@en-US ;
+	skos:narrowMatch ceds:000273/#73058 .
+
+
+### Create skos:Concept
+support:SkillMapping a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Skill Mapping"@en-US ;
+	skos:definition "Service that helps identify and assess an individual's specific skills and qualifications to determine any gaps or overlaps in their knowledge or experience as they relate to a career pathway."@en-US ;
+	dct:description "This process can identify opportunities for advanced standing, transfer credit, or other forms of recognition for their skills, which can help people save time and money in pursuit of their education or career goals."@en-US .
+
+
+### Create skos:Concept
+support:StudySkills a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Study Skills"@en-US ;
+	skos:definition "Service that provides assistance for people who want to improve their study habits, test preparation skills and test-taking techniques."@en-US ;
+	skos:narrowMatch ceds:000273/#00323 .
+
+
+### Create skos:Concept
+support:SubstanceAbusePrevention a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Substance Abuse Prevention"@en-US ;
+	skos:definition "Service related to preventing the misuse or abuse of drugs, alcohol, or other substances."@en-US ;
+	skos:narrowMatch ceds:000273/#00324 .
+
+
+### Create skos:Concept
+support:SupportCoordination a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Support Coordination"@en-US ;
+	skos:definition "Service that involves coordinating and integrating various other services to provide comprehensive support to individuals."@en-US ;
+	dct:description "Support coordination emphasizes a holistic and personalized approach where services are delivered in a comprehensive manner, rather than in isolation."@en-US ;
+	vann:usageNote "Use for services known as "wraparound services" in the U.S."@en-US .
+
+
+### Create skos:Concept
+support:SupportedWork a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Supported Work"@en-US ;
+	skos:definition "Service that helps people with special needs find and retain paid work."@en-US ;
+	dct:description "This can include advocacy and support services to address behaviors and basic skills required to stay employed."@en-US ;
+	skos:narrowMatch ceds:000273/#00886 .
+
+
+### Create skos:Concept
+support:TalentMarketplaceSignaling a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Talent Marketplace Signaling"@en-US ;
+	skos:definition "Service that enables employers to provide information that helps education and training providers align their offerings to current and future job opportunities."@en-US .
+
+
+### Create skos:Concept
+support:TechnologyLending a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Technology Lending"@en-US ;
+	skos:definition "Service that loans out technology equipment such as laptops, tablets, and other devices."@en-US ;
+	skos:narrowMatch ceds:000273/#00887 .
+
+
+### Create skos:Concept
+support:TestAssistance a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Test Assistance"@en-US ;
+	skos:definition "Service that provides assistance for people who need help in reading or writing responses to test items."@en-US ;
+	skos:narrowMatch ceds:000273/#00326 .
+
+
+### Create skos:Concept
+support:Translation a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Translation"@en-US ;
+	skos:definition "Service that provides spoken or written language translation."@en-US ;
+	vann:usageNote "For sign language, use Sign Language Service"@en-US ;
+	skos:relatedMatch ceds:000273/#00327 .
+
+
+### Create skos:Concept
+support:Transportation a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Transportation"@en-US ;
+	skos:definition "Service that provides or arranges  transportation for people."@en-US ;
+	skos:narrowMatch ceds:000273/#00888, ceds:000273/#00321 .
+
+
+### Create skos:Concept
+support:Tutoring a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Tutoring"@en-US ;
+	skos:definition "Individualized or small group teaching."@en-US ;
+	vann:usageNote "Tutoring as a support service is normally provided as a supplement to a regular teaching program."@en-US ;
+	skos:narrowMatch ceds:000273/#00329 .
+
+
+### Create skos:Concept
+support:VisionService a skos:Concept
+	vs:term_status vs:pending ;
+	skos:inScheme ceterms:SupportServiceCategory ;
+	skos:prefLabel "Vision Service"@en-US ;
+	skos:definition "Healthcare and related services related to vision loss or impairment."@en-US ;
+	skos:narrowMatch ceds:000273/#00330 .
+
+
+###Modify skos:Concept - audience:Member
+	Remove skos:definition "Member of an organization, society, or recognized group."@en-US ;
+	Add skos:definition "Current member of an organization, society, or recognized group."@en-US ;
+	Add dct:description "Membership includes types of affiliation such as employment or other work relationships, enrollment at an educational institution etc."@en-US .
+
