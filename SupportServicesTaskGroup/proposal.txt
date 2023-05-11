@@ -166,6 +166,11 @@ ceterms:supportServiceType a rdf:Property ;
 	ceterms:offeredIn schema:domainIncludes ceterms:SupportService .
 
 
+### Modify rdf:Property - ceterms:ownedBy
+### Add :
+	ceterms:ownedBy schema:domainIncludes ceterms:SupportService .
+
+
 ### Modify rdf:Property - ceterms:subjectWebpage
 ### Add :
 	ceterms:subjectWebpage schema:domainIncludes ceterms:SupportService .
