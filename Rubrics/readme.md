@@ -1,4 +1,4 @@
-## Pathway Conditions and Constraints
+## Rubrics
 
 This folder is for materials for the proposal to include Rebrics in CTDL-ASN, following the same approach as ASN.
 
