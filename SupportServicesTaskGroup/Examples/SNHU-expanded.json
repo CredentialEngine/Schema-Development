@@ -1,0 +1,295 @@
+{
+	"@type": "ceterms:CredentialOrganization", //Existing data
+	"@id": "https://credentialengineregistry.org/resources/ce-0f0d84f5-5c32-4526-ad39-1db0adbdbe93", //Existing data
+	"ceterms:name": { "en": "Southern New Hampshire University" }, //Existing data
+	"ceterms:alternateName": { "en": [ "SNHU" ] },
+	"ceterms:transferValueStatement": "https://www.snhu.edu/admission/campus-admission/transfer-and-readmits",
+	"ceterms:hasSupportService": 
+		"res:ce-742fd726-21b7-4457-8c8b-ffe8aafb6d75",
+		"res:ce-af070ee4-cc96-4ec7-9841-b15c06971c09",
+		"res:ce-80feb94e-607c-4d9d-898e-060064fdf2de",
+		"res:ce-ebcdf4b6-8372-4bdf-8383-ffa08892e6e7",
+		"res:ce-8f11a9ad-8e67-494c-8d32-5ed4cc03e751",
+		"res:ce-7644fd6e-85fd-4d91-ae13-7562ff848a65",
+		"res:ce-b5acac45-6dc2-4bb6-ac29-0be26fc692c0",
+		"res:ce-a8dc9cb0-535f-4dba-83e3-f08f7c143700"
+	]
+}
+
+//Consider adding targetContactPoint to Support Service directly
+//The URLs for housing accommodations and meal plan accommodations are the same in the source data
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-742fd726-21b7-4457-8c8b-ffe8aafb6d75",
+	"ceterms:name": { "en": "Campus Accessibility Services" },
+	"ceterms:description": { "en": "Southern New Hampshire University is dedicated to providing equal access to students with documented disabilities, in accordance with Section 504 of the Rehabilitation Act of 1973, Title III of the Americans with Disabilities Act (ADA) of 1990, and the Americans with Disabilities Act Amendments Act of 2008.\n\nThe University prohibits unlawful discrimination on the basis of disability, and takes action to prevent such discrimination by providing reasonable accommodations to eligible students with disabilities.\n\nThe university makes no pre-admission inquiry about an applicant's disability. We recognize that to disclose any disability is a personal choice that every applicant may exercise. We respect this choice; however, we encourage individuals with a disability to self- disclose to the Campus Accessibility Center and provide necessary information. The Campus Accessibility Center will assist in the process of identifying accommodation needs.\n\nPersonal services and personal aides (PCA) are not ADA/504 accommodations and are not provided by the University." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/campus-experience/student-services/campus-accessibility-center",
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:targetContactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:email": "cac@snhu.edu",
+					"ceterms:telephone": "603.644.3118"
+				}
+			]
+		}
+	]
+	"ceterms:supportServiceCondition": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "Procedure for Students Requesting Disability Support Services" },
+			"ceterms:description": { "en": "It is the responsibility of a student with disabilities to complete the following steps to be considered for accommodations at SNHU." },
+			"ceterms:condition": { "en": [
+				"Review the Disability Verification Guideline and Form and have the form completed by your healthcare professional, or gather equivalent documentation. https://mysnhu.force.com/mysnhu/s/article/Campus-Accessibility-Center",
+				"Complete and submit the Accessibility Center Intake Request Form with documentation. https://snhu-accommodate.symplicity.com/public_accommodation/",
+				"Complete an intake interview with assigned Accommodations Specialist (in person, by phone, or via email) to discuss documentation and accommodation history to determine one's disability status and the need for particular accommodations. These determinations are made on a case-by-case basis."
+			] }
+		},
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "Special Housing Requests" },
+			"ceterms:description": { "en": "Accommodations for housing, if approved, address the needs of the documented disability and not a specific location or roommate request. In order to be considered for a housing accommodation, a student must submit the Housing Accommodation Request Procedure and Forms to the Campus Accessibility Center." },
+			"ceterms:subjectWebpage": "https://mysnhu.force.com/mysnhu/s/article/Campus-Accessibility-Center"
+		},
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "Meal Plan Accommodations" },
+			"ceterms:description": { "en": "In order to accurately and equitably evaluate meal plan accommodation requests based on medical or disability related conditions, Meal Plan Accommodation Request Procedure and Forms must be submitted to the Campus Accessibility Center to establish the existence of the condition and substantiate the need for the accommodations." },
+			"ceterms:subjectWebpage": "https://mysnhu.force.com/mysnhu/s/article/Campus-Accessibility-Center"
+		}
+	],
+	"ceterms:accommodationType": [
+		"accommodation:AudioCaptioning",
+		"accommodation:AlternativeFormats",
+		"accommodation:AccessibleHousing",
+		"accommodation:DietaryAccommodation"
+	],
+	"ceterms:supportServiceType": [
+		"support:SignLanguage",
+		"support:TestAssistance"
+	]
+}
+
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-af070ee4-cc96-4ec7-9841-b15c06971c09",
+	"ceterms:name": { "en": "Wellness Center" },
+	"ceterms:description": { "en": "The Wellness Center is a licensed Educational Health Center in the State of New Hampshire providing Health Services, Counseling Services and Health Promotion/ Educational Programming to support the physical health, emotional health and overall wellness needs of the SNHU campus community. All Wellness Center services are free and confidential and are provided by licensed medical and mental health professionals." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/campus-experience/student-services/wellness-center",
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:name": { "en": "SNHU Wellness Center" },
+			"ceterms:streetAddress": { "en": "2500 North River Road" },
+			"ceterms:addressLocality": { "en": "Manchester" },
+			"ceterms:addressRegion": { "en": "New Hampshire" },
+			"ceterms:postalCode": "03106",
+			"ceterms:targetContactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:telephone": "603.645.9679",
+					"ceterms:faxNumber": "603.645.9711",
+					"ceterms:email": "wellness@snhu.edu"
+				}
+			]
+		}
+	],
+	"ceterms:supportServiceCondition": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "Medical Record Requirements" },
+			"ceterms:description": { "en": "The Wellness Center is licensed by the State of New Hampshire as an Educational Health Facility and is here to provide medical and mental health care for campus students.\n\nAs a way to provide the best care possible and ensure the health and safety of the campus community, all residential students, full time undergraduate campus students, international students, and full time graduate campus students taking classes on the Manchester campus must provide the following medical record requirements prior to the start of classes on campus.",
+			"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/campus-experience/student-services/wellness-center",
+			"ceterms:condition": { "en": [
+				"A health history form (including consent for treatment while on campus",
+				"Accurate immunization records",
+				"Tuberculosis screen and any needed tuberculosis test results",
+				"Physical exam report (required for All Athletes within 6 months of term start, optional for all others)",
+			] },
+			"ceterms:submissionOf": [
+				"https://snhuweb.snhu.edu/Redirect/MedicatSSO/Index?_gl=1*130m6bd*_ga*NDU3NTQ3MDc1LjE2ODE5MjQxMzQ.*_ga_JFPHZGFXPH*MTY4NzM3NDAzMS45LjEuMTY4NzM3NDAzNC4wLjAuMA..",
+				"https://snhu-externalaffairs.app.box.com/s/enwduz4wwzqxsmbgxgtrpnejm34hxq5y"
+			],
+			"ceterms:submissionOfDescription": { "en": "To submit your Medical Requirements, complete the following steps: 1) Click on Patient Portal/Medical Records. 2) Follow instructions to enter all required immunizations, complete required online forms and upload any needed corroborating documentation." }
+		},
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "Vaccination Policy" },
+			"ceterms:condition": { "en": [
+				"All residential students, all full time undergraduate students, all international students and all full time graduate day students taking classes on the Manchester campus must provide complete and accurate immunization records. Students are required to provide proof of immunization against measles, mumps, rubella, tetanus, diphtheria, pertussis, hepatitis b, meningitis, and varicella. When appropriate, titers demonstrating immunity will be accepted.",
+				"Beginning May 1, 2023, campus students will not be required to provide proof of COVID-19 vaccination in order to enroll. Instead, the University will strongly encourage students be up to date with all COVID-19 vaccines and boosters, as that remains the optimal degree of protection against COVID-19."
+			] }
+		}
+	],
+	"ceterms:supportServiceType": [
+		"support:HealthCare",
+		"support:Counseling",
+		"support:MentalHealthCounseling",
+		"support:PsychologicalService",
+		"support:Mentoring"
+	]
+}
+
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-80feb94e-607c-4d9d-898e-060064fdf2de",
+	"ceterms:name": { "en": "The Wolak Learning Center" },
+	"ceterms:description": { "en": "The Wolak Leaning Center is available to all SNHU students who either need or desire improvement in academic performance. The Wolak Learning Center's services are provided year round on the Manchester campus. Please contact our office and we will recommend the most appropriate program for you.\n\nLocated on the second floor of the library, Wolak Learning Center provides a broad selection of academic support services. These carefully designed services are available to meet specific needs that may arise during a student's course of study at Southern New Hampshire University." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/campus-experience/student-services/learning-center",
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:contactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:telephone": "603.645.9606",
+					"ceterms:email": "wolaklearningcenter@snhu.edu"
+				}
+			]
+		}
+	],
+	"ceterms:supportServiceType": [
+		"support:Tutoring",
+		"support:Mentoring",
+		"support:PeerService"
+	]
+}
+
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-ebcdf4b6-8372-4bdf-8383-ffa08892e6e7",
+	"ceterms:name": { "en": "Office of Diversity Programs" },
+	"ceterms:description": { "en": "No matter who you are, we want you to feel at home on our campus. SNHU is dedicated to building a diverse and inclusive campus community, and our students are a major part of that. Listen to why our students call SNHU home.\n\nSouthern New Hampshire University is a multi-cultural, multi-ethnic, multi-generational, and multi-gender university. We believe diversity is integral to our university culture. Our campus environment encourages and empowers students to develop priorities, values, critical thinking, and behaviors appropriate to positive, personal, and professional lives. The ideas, cultures, practices and religions brought by each student enhance the entire college experience, from the classroom to residence halls and athletics to campus organizations.\n\nThe Office of Diversity Programs works with students, faculty and staff from across the university to create a welcoming and supportive campus environment." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/campus-experience/student-services/office-of-diversity-programs",
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:contactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:telephone": "603.645.9653",
+					"ceterms:email": "inclusion@snhu.edu"
+				}
+			]
+		}
+	],
+	"ceterms:supportServiceType": [
+		"support:PeerService",
+		"support:LearningResourceProvision",
+		"support:AcademicAdvising"
+	]
+}
+
+//Tech Support is a proposed service type
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-8f11a9ad-8e67-494c-8d32-5ed4cc03e751",
+	"ceterms:name": { "en": "SNHU Services for Online Students" },
+	"ceterms:description": { "en": "At SNHU, your success is our only mission. As an accredited, nonprofit online university, we’ve helped thousands of students reach their goals with flexible, career-focused online college degree programs. As part of our commitment to student success, we offer some of the lowest online tuition rates in the nation. Find your program to see how SNHU can help you succeed." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/online-degrees",
+	"ceterms:supportServiceType": [
+		"support:TechSupport",
+		"support:PeerService",
+		"support:ComputerHub",
+		"support:InternetAccess"
+	]
+},
+
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-7644fd6e-85fd-4d91-ae13-7562ff848a65",
+	"ceterms:name": { "en": "Online Accessibility Center (OAC)" },
+	"ceterms:description": { "en": "Southern New Hampshire University is dedicated to providing equal access to students with documented disabilities, in accordance with Section 504 of the Rehabilitation Act of 1973, Title III of the Americans with Disabilities Act (ADA) of 1990, and the Americans with Disabilities Act Amendments Act of 2008.\n\nThe University prohibits unlawful discrimination on the basis of disability, and takes action to prevent such discrimination by providing reasonable accommodations to eligible students with disabilities.\n\nThe university makes no pre-admission inquiry about an applicant's disability. We recognize that to disclose any disability is a personal choice that every applicant may exercise. We respect this choice; however, we encourage individuals with a disability to self- disclose to the Online Accessibility Center and provide necessary information. The Online Accessibility Center will assist in the process of identifying accommodation needs.\n\nPersonal services and personal aides (PCA) are not ADA/504 accommodations and are not provided by the University." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/military-student-experience",
+	"ceterms:supportServiceCondition": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "Procedure for Students Requesting Disability Support Services" },
+			"ceterms:description": { "en": "It is the responsibility of a student with disabilities to complete the following steps to be considered for accommodations at SNHU." },
+			"ceterms:condition": { "en": [
+				"Online students may complete an Accessibility Center Intake Request Form and submit documentation.",
+				"Review and submit the Disability Verification Form. If you have not heard back within two (2) business days after your submission of documentation, please contact us for a status update.",
+				"Complete intake interview with assigned Accommodation Specialist (by phone or via email) to discuss documentation and accommodation history to determine one's disability status and the need for particular accommodations. These determinations are made on a case-by-case basis.",
+				"If approved for accommodations, students with disabilities are responsible for communicating via phone or email with their assigned Accommodation Specialist at the beginning of each term/semester to review appropriate accommodations and update as needed. Students with disabilities are also expected to follow established procedures for specific accommodations."
+			] },
+			"ceterms:submissionOf": "https://forms.office.com/Pages/ResponsePage.aspx?id=W_GuK964P0KdikbzaG2ISMFf6D28rpJJu9x8mmvb7nxUM1ROV1FENjUyR0M5M05KS0FRNURBT1BMMC4u",
+		}
+	],
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:contactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:name": { "en": "Online Accessibility Center" },
+					"ceterms:telephone": "866.305.9430",
+					"ceterms:email": "oac@snhu.edu"
+				}
+			]
+		}
+	],
+	"ceterms:accommodationType": [
+		"accommodation:AlternativeFormats",
+		"accommodation:FlexibleSchedule"
+	]
+}
+
+//Most of the military services would be captured by financial assistance data rather than support service data
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-b5acac45-6dc2-4bb6-ac29-0be26fc692c0",
+	"ceterms:name": { "en": "Military Tuition Assistance, Discounts & Benefits" },
+	"ceterms:description": { "en": "At Southern New Hampshire University, we recognize the sacrifices our service members and their families have made for our country. That's why SNHU offers discounts of up to 30% for U.S. Active Duty, National Guard and Selected Reserve and the spouses of those on active duty.\n\nWe also accept Tuition Assistance (TA), VA education benefits, as well as military scholarships for spouses through MyCAA." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/military-student-experience/military-benefits-and-discounts",
+	"ceterms:supportServiceType": [
+		"support:BenefitsSupport"
+	],
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:contactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:name": { "en": "Military Benefits" },
+					"ceterms:telephone": "800.695.7408",
+					"ceterms:email": "militarybenefits@snhu.edu"
+				}
+			]
+		}
+	]
+}
+
+{
+	"@type": "ceterms:SupportService",
+	"@id": "res:ce-a8dc9cb0-535f-4dba-83e3-f08f7c143700",
+	"ceterms:name": { "en": "International Student Services" },
+	"ceterms:description": { "en": "International Student Services (ISS) provides support to SNHU students in immigration, transition support and intercultural learning. We work in tandem with International Admission, Campus Involvement, Advising, Career Services, Residence Life and other units on campus.\n\nWe also provide opportunities for intercultural learning to the broader campus community by partnering with the student-led International Student Association, various campus departments and the greater Manchester community. These events and initiatives include International Education Week, International Women’s Day, the International Gala and community connection programs, which provide opportunities for people of all backgrounds to engage in mutual learning and understanding." },
+	"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/international-experience/international-student-services",
+	"ceterms:supportServiceCondition": [
+		{
+			"@type": "ceterms:ConditionProfile",
+			"ceterms:name": { "en": "International Student Services Requirements" },
+			"ceterms:submissionOfDescription": { "en": "The first step toward becoming a student at SNHU after you’re accepted is obtaining your student visa. Most students request an F-1 visa, with a smaller number requesting J-1 visas – which are usually reserved for short-term exchange students." }
+		}
+	],
+	"ceterms:supportServiceType": [
+		"support:ImmigrationAssistance",
+		"support:Transportation",
+		"support:BenefitsSupport"
+	],
+	"ceterms:availableAt": [
+		{
+			"@type": "ceterms:Place",
+			"ceterms:contactPoint": [
+				{
+					"@type": "ceterms:ContactPoint",
+					"ceterms:name": { "en": "International Student Services" },
+					"ceterms:telephone": "603.645.9676",
+					"ceterms:email": "intlwelcome@snhu.edu"
+				}
+			]
+		}
+	]
+}
