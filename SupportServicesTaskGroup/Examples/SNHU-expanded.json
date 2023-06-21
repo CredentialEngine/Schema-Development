@@ -196,7 +196,7 @@
 		"support:InternetAccess"
 	],
 	"ceterms:deliveryType": [
-		"delivery:OnlineOnly"
+		"deliveryType:OnlineOnly"
 	]
 },
 
@@ -238,7 +238,7 @@
 		"accommodation:FlexibleSchedule"
 	],
 	"ceterms:deliveryType": [
-		"delivery:OnlineOnly"
+		"deliveryType:OnlineOnly"
 	]
 }
 
