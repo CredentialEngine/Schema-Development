@@ -4,7 +4,7 @@
 	"ceterms:name": { "en": "Southern New Hampshire University" }, //Existing data
 	"ceterms:alternateName": { "en": [ "SNHU" ] },
 	"ceterms:transferValueStatement": "https://www.snhu.edu/admission/campus-admission/transfer-and-readmits",
-	"ceterms:hasSupportService": 
+	"ceterms:hasSupportService": [
 		"res:ce-742fd726-21b7-4457-8c8b-ffe8aafb6d75",
 		"res:ce-af070ee4-cc96-4ec7-9841-b15c06971c09",
 		"res:ce-80feb94e-607c-4d9d-898e-060064fdf2de",
