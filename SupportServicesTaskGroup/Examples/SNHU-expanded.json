@@ -194,6 +194,9 @@
 		"support:PeerService",
 		"support:ComputerHub",
 		"support:InternetAccess"
+	],
+	"ceterms:deliveryType": [
+		"delivery:OnlineOnly"
 	]
 },
 
@@ -233,6 +236,9 @@
 	"ceterms:accommodationType": [
 		"accommodation:AlternativeFormats",
 		"accommodation:FlexibleSchedule"
+	],
+	"ceterms:deliveryType": [
+		"delivery:OnlineOnly"
 	]
 }
 
