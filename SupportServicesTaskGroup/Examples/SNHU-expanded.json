@@ -100,7 +100,7 @@
 		{
 			"@type": "ceterms:ConditionProfile",
 			"ceterms:name": { "en": "Medical Record Requirements" },
-			"ceterms:description": { "en": "The Wellness Center is licensed by the State of New Hampshire as an Educational Health Facility and is here to provide medical and mental health care for campus students.\n\nAs a way to provide the best care possible and ensure the health and safety of the campus community, all residential students, full time undergraduate campus students, international students, and full time graduate campus students taking classes on the Manchester campus must provide the following medical record requirements prior to the start of classes on campus.",
+			"ceterms:description": { "en": "The Wellness Center is licensed by the State of New Hampshire as an Educational Health Facility and is here to provide medical and mental health care for campus students.\n\nAs a way to provide the best care possible and ensure the health and safety of the campus community, all residential students, full time undergraduate campus students, international students, and full time graduate campus students taking classes on the Manchester campus must provide the following medical record requirements prior to the start of classes on campus." },
 			"ceterms:subjectWebpage": "https://www.snhu.edu/student-experience/campus-experience/student-services/wellness-center",
 			"ceterms:condition": { "en": [
 				"A health history form (including consent for treatment while on campus",
