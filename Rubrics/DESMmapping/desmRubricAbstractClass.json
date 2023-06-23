@@ -21,6 +21,10 @@
             "@id": "dcterms:description",
             "@container": "@language"
         },
+        "definition": {
+            "@id": "skos:definition",
+            "@container": "@language"
+        },
         "hasTopConcept": {
             "@id": "skos:hasTopConcept",
             "@type": "@id"
