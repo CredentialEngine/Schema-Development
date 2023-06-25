@@ -6,19 +6,9 @@
     skos:inScheme <http://desm.org/concepts/mappingClasses> ;
     skos:prefLabel "Competence"@en-us .
 
-<http://desm.org/concepts/person> a skos:Concept ;
-    skos:inScheme <http://desm.org/concepts/mappingClasses> ;
-    skos:prefLabel "Person"@en-us .
-
-<http://desm.org/concepts/organization> a skos:Concept ;
-    skos:inScheme <http://desm.org/concepts/mappingClasses> ;
-    skos:prefLabel "Organization"@en-us .
-
 <http://desm.org/concepts/mappingClasses> a skos:ConceptScheme ;
     dcterms:created "2022-10-31"^^xsd:date ;
     dcterms:creator <https://people.pjjk.net/phil> ;
     dcterms:description "This concept scheme identifies the abstract mapping classes used by the DESM pilot project."@en-us ;
     dcterms:title "DESM Pilot Project Abstract Mapping Classes"@en-us ;
-    skos:hasTopConcept <http://desm.org/concepts/competence>,
-        <http://desm.org/concepts/person>,
-        <http://desm.org/concepts/organization> .
+    skos:hasTopConcept <http://desm.org/concepts/competence> .
