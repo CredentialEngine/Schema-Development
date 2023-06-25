@@ -3,9 +3,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://desm.org/concepts/rubric> a skos:Concept ;
-    skos:definition "Resource providing guidance in evaluating the quality and level of a person's responses or actions based on an explicit set of criteria."@en-us ;
-    skos:inScheme <http://desm.org/concepts/rubricMappingClass> ;
-    skos:topConceptOf <http://desm.org/concepts/rubricMappingClass> ;
+    skos:inScheme <http://desm.org/concepts/mappingClass> ;
     skos:prefLabel "Rubric"@en-us .
 
 <http://desm.org/concepts/mappingClass> a skos:ConceptScheme ;
