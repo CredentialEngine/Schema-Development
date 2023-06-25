@@ -3,12 +3,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://desm.org/concepts/rubric> a skos:Concept ;
-    skos:inScheme <http://desm.org/concepts/mappingClass> ;
+    skos:inScheme <http://desm.org/concepts/mappingClasses> ;
     skos:prefLabel "Rubric"@en-us .
 
-<http://desm.org/concepts/mappingClass> a skos:ConceptScheme ;
+<http://desm.org/concepts/mappingClasses> a skos:ConceptScheme ;
     dcterms:created "2023-06-21"^^xsd:date ;
     dcterms:creator <https://people.pjjk.net/phil> ;
-    dcterms:description """This concept scheme identifies the abstract class of Rubric and may include any rubric-associated classes beyond an encompassing Rubric such as Criteria, Criteria Levels, and Criteria Categories etc. necessary to the description of a rubric's entities, components and relationships. As used here, the term Rubric explicitly EXCLUDES: (1) the abstract class of Assessment or any other class that may rely on or reference the Rubrics being crosswalked or their components; (2) aspects of the data models being crosswalked that are not central to the rubric domain such as progression models or controlled vocabularies referenced by a Rubric; and (3) Agents being assessed or doing the assessing (including self-assessment) using the rubric. Research reveals three types of rubrics within scope: (1) analytic rubrics, (2) holistic rubrics, and (3) primary trait rubrics. (see, Panulla & Kohler, https://openaccess.uoc.edu/bitstream/10609/5222/6/Panulla.pdf."""@en-us ;
+    dcterms:description "This concept scheme identifies the abstract class of Rubric and may include any rubric-associated classes beyond an encompassing Rubric such as Criteria, Criteria Levels, and Criteria Categories etc. necessary to the description of a rubric."@en-us ;
     dcterms:title "DESM Schema Abstract Mapping Class for Rubrics"@en-us ;
     skos:hasTopConcept <http://desm.org/concepts/rubric> .
