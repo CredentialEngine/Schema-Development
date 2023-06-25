@@ -12,7 +12,7 @@
     skos:definition "Criterion used in assessing performance."@en-us ;
     skos:inScheme <http://desm.org/concepts/rubricMappingClass> ;
     skos:topConceptOf <http://desm.org/concepts/rubricMappingClass> ;
-    skos:prefLabel "Rubric"@en-us .
+    skos:prefLabel "Rubric Criterion"@en-us .
 
 <http://desm.org/concepts/rubricMappingClass> a skos:ConceptScheme ;
     dcterms:created "2023-06-21"^^xsd:date ;
