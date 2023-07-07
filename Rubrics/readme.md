@@ -18,7 +18,7 @@ This folder is for materials for the proposal to include Rebrics in CTDL-ASN, fo
   - [ ] see [examples folder]([url](https://drive.google.com/drive/folders/1u5BynZiLG-GyfakUoZGU3RHUTjCxxyjU?usp=drive_link)) on Google drive 
   - [From ASN web page](http://standards.asn.desire2learn.com/rubric.html#ex)
   - [Several VALUE rubrics from AAc&U](https://www.aacu.org/initiatives/value-initiative/value-rubrics)
-- [ ] [Domain Model](https://drive.google.com/file/d/1Wm0nLqm_Ny5sbxv8Db_FR58E3q-44MAs/view?usp=sharing) (diagram)
+- [ ] [Domain Model](https://app.diagrams.net/#G1wXcXld3Zjh0tnPm_CsH_ogtor08NlV0G) (diagram)
 - [ ] Proposal narrative (doc)
 - [ ] Term definition changes proposal ([text](./termDefinitionProposal.txt))
 - [ ] Data examples
