@@ -3,6 +3,7 @@
 		"@type": "ceasn:Rubric",
 		"@id": "res:ce-9b6111ab-c591-4d0d-a819-43de1555de27",
 		"ceasn:name": { "en": "Breakfast in Bed: Holistic Rubric" },
+		"ceterms:subjectWebpage": "https://www.cultofpedagogy.com/holistic-analytic-single-point-rubrics/",
 		"ceasn:hasRubricCriterion": [
 			"res:ce-bb031091-dc5c-4b74-ae85-9ce599d8b102"
 		]
