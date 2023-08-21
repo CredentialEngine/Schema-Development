@@ -67,7 +67,7 @@
 			"ceasn:name": { "en": "Meets expectations" },
 			"ceasn:hasCriterionLevel": [
 				"_:item2a",
-				"_:item2b"
+				"_:item3a"
 			]
 		},
 		{
@@ -75,8 +75,8 @@
 			"@id": "_:level3",
 			"ceasn:name": { "en": "Does not meet expectations" },
 			"ceasn:hasCriterionLevel": [
-				"_:item3a",
-				"_:item4a"
+				"_:item4a",
+				"_:item5a"
 			]
 		},
 		{
