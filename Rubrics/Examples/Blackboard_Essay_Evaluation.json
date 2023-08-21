@@ -1,268 +1,212 @@
-[
-	{
-		"@type": "ceasn:Rubric",
-		"@id": "res:ce-90c72107-89ea-4ecb-92fc-0791c9ea896b",
-		"ceasn:name": {
-			"en": "Essay Evaluation"
+{
+	"@graph": [
+		{
+			"@type": "ceasn:Rubric",
+			"ceasn:name": { "en": "Essay Evaluation" },
+			"ceasn:hasRubricCriterion": [
+				"_:criterion1",
+				"_:criterion2",
+				"_:criterion3",
+				"_:criterion4"
+			],
+			"ceasn:hasRubricLevel": [
+				"_:level1",
+				"_:level2",
+				"_:level3",
+				"_:level4"
+			]
 		},
-		"ceasn:hasRubricCriterion": [
-			"res:ce-e012d028-0df5-49d2-855e-4ad3a1a1473f",
-			"res:ce-3784fee2-ffc9-4bf0-87c7-149e4406ea8e",
-			"res:ce-b86fa1af-ee56-4376-9136-0e8b02317679",
-			"res:ce-75e5386f-9542-4615-accc-b536e02f4703"
-		],
-		"ceterms:subjectWebpage": "https://help.blackboard.com/Learn/Instructor/Ultra/Grade/Rubrics"
-	},
-	{
-		"@type": "ceasn:RubricCriterion",
-		"@id": "res:ce-e012d028-0df5-49d2-855e-4ad3a1a1473f",
-		"ceterms:weight": 0.25,
-		"ceasn:name": {
-			"en": "State a position"
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion1",
+			"ceasn:name": { "en": "State a position" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1a",
+				"_:item2a",
+				"_:item3a",
+				"_:item4a"
+			]
 		},
-		"ceasn:hasRubricItem": [
-			"res:ce-15b9244c-580e-44f9-88e3-067248f7b728",
-			"res:ce-7f431df8-ad03-4556-bd51-aaa9e27e2664",
-			"res:ce-bea5459b-92a6-40fe-a1a8-76e9e6e6b232",
-			"res:ce-438f0b70-260d-447e-a54f-ce87a0056755"
-		]
-	},
-	{
-		"@type": "ceasn:RubricCriterion",
-		"@id": "res:ce-3784fee2-ffc9-4bf0-87c7-149e4406ea8e",
-		"ceterms:weight": 0.25,
-		"ceasn:name": {
-			"en": "Support hypothesis"
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion2",
+			"ceasn:name": { "en": "Support hypothesis" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1b",
+				"_:item2b",
+				"_:item3b",
+				"_:item4b"
+			]
 		},
-		"ceasn:hasRubricItem": [
-			"res:ce-9639b615-2fd3-4348-9ed9-0bc60d36d7d5",
-			"res:ce-fe23ae87-0a65-484a-9cc2-217d13c3feba",
-			"res:ce-dfa60a02-2a46-41cb-b732-5a8c66d6469e",
-			"res:ce-7a1593dc-8f6d-4392-a99d-8c2cbc478946"
-		]
-	},
-	{
-		"@type": "ceasn:RubricCriterion",
-		"@id": "res:ce-b86fa1af-ee56-4376-9136-0e8b02317679",
-		"ceterms:weight": 0.25,
-		"ceasn:name": {
-			"en": "Organization"
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion3",
+			"ceasn:name": { "en": "Organization" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1c",
+				"_:item2c",
+				"_:item3c",
+				"_:item4c"
+			]
 		},
-		"ceasn:hasRubricItem": [
-			"res:ce-93a16edb-68c1-403a-9b17-83b78be0165b",
-			"res:ce-2fcd5691-2e57-4052-bc5b-3f5e4f7e4dd5",
-			"res:ce-5e3944a0-1d25-448d-9637-eb644e9c4fb3",
-			"res:ce-7d2d6f80-f4d8-436d-a389-a42ede1b278f"
-		]
-	},
-	{
-		"@type": "ceasn:RubricCriterion",
-		"@id": "res:ce-75e5386f-9542-4615-accc-b536e02f4703",
-		"ceterms:weight": 0.25,
-		"ceasn:name": {
-			"en": "Overall impression"
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion4",
+			"ceasn:name": { "en": "Overall impression" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1d",
+				"_:item2d",
+				"_:item3d",
+				"_:item4d"
+			]
 		},
-		"ceasn:hasRubricItem": [
-			"res:ce-3ab0ca81-665e-4a80-bf50-1b18d9baea42",
-			"res:ce-449ba06f-ddac-45f1-bfcb-79445000f7a0",
-			"res:ce-5962e51f-8d53-4f0a-8aff-9dfc66529321",
-			"res:ce-1be88a17-3979-41f4-a7c4-20c2b82d5521"
-		]
-	},
-	{
-		"@type": "skos:Concept",
-		"@id": "res:ce-77d7ae0c-4a82-4a3c-9bf7-9264f87ff124",
-		"skos:prefLabel": { "en": "Excellent" }
-	},
-	{
-		"@type": "skos:Concept",
-		"@id": "res:ce-c3d9e319-2315-4bdb-b278-8a045a8230a4",
-		"skos:prefLabel": { "en": "Proficient" }
-	},
-	{
-		"@type": "skos:Concept",
-		"@id": "res:ce-2664707f-410d-49ea-98d5-91113182c62c",
-		"skos:prefLabel": { "en": "Satisfactory" }
-	},
-	{
-		"@type": "skos:Concept",
-		"@id": "res:ce-f4cb5f6b-93d8-43b8-88ce-ec9074534dd0",
-		"skos:prefLabel": { "en": "Unsatisfactory" }
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-15b9244c-580e-44f9-88e3-067248f7b728",
-		"ceasn:description": {
-			"en": "Makes a strong stand and defines the context in the introductory paragraph. Position is restated throughout and reinforced with examples and included in the conclusion."
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level1",
+			"ceasn:name": { "en": "State a position" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1a",
+				"_:item1b",
+				"_:item1c",
+				"_:item1d"
+			]
 		},
-		"schema:percentage": 1,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-77d7ae0c-4a82-4a3c-9bf7-9264f87ff124"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-7f431df8-ad03-4556-bd51-aaa9e27e2664",
-		"ceasn:description": {
-			"en": "Makes strong stand and defines the context in an introductory paragraph."
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level2",
+			"ceasn:name": { "en": "Support hypothesis" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item2a",
+				"_:item2b",
+				"_:item2c",
+				"_:item2d"
+			]
 		},
-		"schema:percentage": 0.75,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-c3d9e319-2315-4bdb-b278-8a045a8230a4"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-bea5459b-92a6-40fe-a1a8-76e9e6e6b232",
-		"ceasn:description": {
-			"en": "Makes a stand, but could be more powerful."
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level3",
+			"ceasn:name": { "en": "Organization" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item3a",
+				"_:item3b",
+				"_:item3c",
+				"_:item3d"
+			]
 		},
-		"schema:percentage": 0.5,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-2664707f-410d-49ea-98d5-91113182c62c"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-438f0b70-260d-447e-a54f-ce87a0056755",
-		"ceasn:description": {
-			"en": "Doesn't take a stand or provide context."
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level4",
+			"ceasn:name": { "en": "Overall impression" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item4a",
+				"_:item4b",
+				"_:item4c",
+				"_:item4d"
+			]
 		},
-		"schema:percentage": 0.25,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-f4cb5f6b-93d8-43b8-88ce-ec9074534dd0"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-9639b615-2fd3-4348-9ed9-0bc60d36d7d5",
-		"ceasn:description": {
-			"en": "Provided more than three arguments in support of the hypothesis. Arguments supported with more than citations. Writer incorporated own opinions. Examples incorporated in storytelling fashion."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item1a",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand and defines the context in the introductory paragraph. Position is restated throughout and reinforced with examples and included in the conclusion." },
+			"qdata:percentage": 1.0
 		},
-		"schema:percentage": 1,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-77d7ae0c-4a82-4a3c-9bf7-9264f87ff124"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-fe23ae87-0a65-484a-9cc2-217d13c3feba",
-		"ceasn:description": {
-			"en": "Provides three main arguments in support of the hypothesis. Gives clear and accurate examples and development of the three main arguments."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2a",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand and defines the context in the introductory paragraph." },
+			"qdata:percentage": 0.75
 		},
-		"schema:percentage": 0.75,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-c3d9e319-2315-4bdb-b278-8a045a8230a4"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-dfa60a02-2a46-41cb-b732-5a8c66d6469e",
-		"ceasn:description": {
-			"en": "Fewer than three main arguments and incomplete examples in support of arguments."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3a",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand, but could be more powerful." },
+			"qdata:percentage": 0.5
 		},
-		"schema:percentage": 0.5,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-2664707f-410d-49ea-98d5-91113182c62c"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-7a1593dc-8f6d-4392-a99d-8c2cbc478946",
-		"ceasn:description": {
-			"en": "Minimal idea development, limited and/or unrelated details. Doesn't give arguments in support of the hypothesis."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4a",
+			"ceasn:benchmarkText": { "en": "Doesn't take a stand or provide context." },
+			"qdata:percentage": 0.25
 		},
-		"schema:percentage": 0.25,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-f4cb5f6b-93d8-43b8-88ce-ec9074534dd0"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-93a16edb-68c1-403a-9b17-83b78be0165b",
-		"ceasn:description": {
-			"en": "Depth and complexity of dieas supported by rich, engaging and/or pertinent details. Evidence analysis, reflection and insight."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item1b",
+			"ceasn:benchmarkText": { "en": "Provided more than three arguments in support of the hypothesis. Arguments supported with more than citations. Writer incorporated own opinions. Examples incorporated in storytelling fashion." },
+			"qdata:percentage": 1.0
 		},
-		"schema:percentage": 1,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-77d7ae0c-4a82-4a3c-9bf7-9264f87ff124"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-2fcd5691-2e57-4052-bc5b-3f5e4f7e4dd5",
-		"ceasn:description": {
-			"en": "Logical organization. Includes a compelling introduction, strong informative body, and satisfying conclusion. Has appropriate paragraph format."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2b",
+			"ceasn:benchmarkText": { "en": "Provides three main arguments in support of the hypothesis. Gives clear and accurate examples and development of the three main arguments." },
+			"qdata:percentage": 0.75
 		},
-		"schema:percentage": 0.75,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-c3d9e319-2315-4bdb-b278-8a045a8230a4"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-5e3944a0-1d25-448d-9637-eb644e9c4fb3",
-		"ceasn:description": {
-			"en": "Writing has a clear beginning, middle, and end. General use of appropriate paragraph format."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2c",
+			"ceasn:benchmarkText": { "en": "Fewer than three main arguments and incomplete examples in support of arguments." },
+			"qdata:percentage": 0.5
 		},
-		"schema:percentage": 0.5,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-2664707f-410d-49ea-98d5-91113182c62c"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-7d2d6f80-f4d8-436d-a389-a42ede1b278f",
-		"ceasn:description": {
-			"en": "Random or weak organization. No introduction and/or conclusion. Paragraphs lack development and coherence."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2d",
+			"ceasn:benchmarkText": { "en": "Minimal idea development, limited and/or unrelated details. Doesn't give arguments in support of the hypothesis." },
+			"qdata:percentage": 0.25
 		},
-		"schema:percentage": 0.25,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-f4cb5f6b-93d8-43b8-88ce-ec9074534dd0"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-3ab0ca81-665e-4a80-bf50-1b18d9baea42",
-		"ceasn:description": {
-			"en": "Superior in all ways. Precise, rich language. Establishes and maintains clear focus; evidence of distinctive voice and/or..."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3a",
+			"ceasn:benchmarkText": { "en": "Depth and complexity of ideas supported by rich, engaging and/or pertinent details. Evidence analysis, reflection and insight." },
+			"qdata:percentage": 1.0
 		},
-		"schema:percentage": 1,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-77d7ae0c-4a82-4a3c-9bf7-9264f87ff124"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-449ba06f-ddac-45f1-bfcb-79445000f7a0",
-		"ceasn:description": {
-			"en": "Accomplished writing that entices reader to continue. Good flow and description."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3b",
+			"ceasn:benchmarkText": { "en": "Logical organization. Includes a compelling introduction, strong informative body, and satisfying conclusion. Has appropriate paragraph format." },
+			"qdata:percentage": 0.75
 		},
-		"schema:percentage": 0.75,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-c3d9e319-2315-4bdb-b278-8a045a8230a4"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-5962e51f-8d53-4f0a-8aff-9dfc66529321",
-		"ceasn:description": {
-			"en": "Spoke to audience and drew them in. Purpose established. Acceptable, effective language."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3c",
+			"ceasn:benchmarkText": { "en": "Writing has a clear beginning, middle, and end. General use of appropriate paragraph format." },
+			"qdata:percentage": 0.5
 		},
-		"schema:percentage": 0.5,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-2664707f-410d-49ea-98d5-91113182c62c"
-		]
-	},
-	{
-		"@type": "ceasn:CriterionItem",
-		"@id": "res:ce-1be88a17-3979-41f4-a7c4-20c2b82d5521",
-		"ceasn:description": {
-			"en": "Limited awareness of audience and/or purpose. Incorrect and/or ineffective language."
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3d",
+			"ceasn:benchmarkText": { "en": "Random or weak organization. No introduction and/or conclusion. Paragraphs lack development and coherence." },
+			"qdata:percentage": 0.25
 		},
-		"schema:percentage": 0.25,
-		"ceasn:hasCriterionCategory": [
-			"res:ce-f4cb5f6b-93d8-43b8-88ce-ec9074534dd0"
-		]
-	}
-]
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4a",
+			"ceasn:benchmarkText": { "en": "Superior in all ways. Precise, rich language. Establishes and maintains clear focus; evidence of distinctive voice and/or information." },
+			"qdata:percentage": 1.0
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4b",
+			"ceasn:benchmarkText": { "en": "Accomplished writing that entices reader to continue. Good flow and description." },
+			"qdata:percentage": 0.75
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4c",
+			"ceasn:benchmarkText": { "en": "Spoke to audience and drew them in. Purpose established. Acceptable, effective language." },
+			"qdata:percentage": 0.5
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4d",
+			"ceasn:benchmarkText": { "en": "Limited awareness of audience and/or purpose. Incorrect and/or ineffective language." },
+			"qdata:percentage": 0.25
+		}
+	]
+}
