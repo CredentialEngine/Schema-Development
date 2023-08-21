@@ -3,15 +3,38 @@
 		{
 			"@type": "skos:ConceptScheme",
 			"@id": "res:ConceptScheme",
+			"skos:hasTopConcept": [
+				"res:see",
+				"res:communicate",
+				"res:navigate"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:see",
+			"skos:prefLabel": { "en": "See" }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:communicate",
+			"skos:prefLabel": { "en": "Communicate" }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:navigate",
+			"skos:prefLabel": { "en": "Navigate" }
 		}
 	]
 }
+
+
 {
 	"@graph": [
 		{
 			"@type": "ceasn:Rubric",
 			"@id": "_:Rubric",
 			"ceasn:name": { "en": "Soldier Training Tracker (Common Task Skill Level 1)" },
+			"ceasn:hasCriterionCategorySet": "res:ConceptScheme",
 			"ceasn:hasRubricCriterion": [
 				"_:criterion1",
 				"_:criterion2",
@@ -30,6 +53,7 @@
 			"@id": "_:criterion1",
 			"ceasn:description": { "en": "Report Information Of Potential Intelligence Value." },
 			"ceasn:codedNotation": "301-348-1050",
+			"ceasn:hasCriterionCategory": "res:see",
 			"ceasn:hasCriterionLevel": [
 				"_:item1a"
 			]
@@ -39,6 +63,7 @@
 			"@id": "_:criterion2",
 			"ceasn:description": { "en": "Perform Voice Communications." },
 			"ceasn:codedNotation": "113-571-1022",
+			"ceasn:hasCriterionCategory": "res:communicate",
 			"ceasn:hasCriterionLevel": [
 				"_:item1a"
 			]
@@ -48,6 +73,7 @@
 			"@id": "_:criterion3",
 			"ceasn:description": { "en": "Identify Topographic Symbols On A Military Map." },
 			"ceasn:codedNotation": "071-329-1000",
+			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
 				"_:item1a"
 			]
@@ -57,6 +83,7 @@
 			"@id": "_:criterion4",
 			"ceasn:description": { "en": "Identify Terrain Features On A Military Map." },
 			"ceasn:codedNotation": "071-329-1001",
+			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
 				"_:item1a"
 			]
@@ -66,6 +93,7 @@
 			"@id": "_:criterion5",
 			"ceasn:description": { "en": "Determine Grid Coord. Of A Point On A Military Map." },
 			"ceasn:codedNotation": "071-329-1002",
+			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
 				"_:item1a"
 			]
@@ -75,6 +103,7 @@
 			"@id": "_:criterion6",
 			"ceasn:description": { "en": "Determine A Magnetic Az. Using a Lensatic Compass." },
 			"ceasn:codedNotation": "071-329-1003",
+			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
 				"_:item1a"
 			]
