@@ -1,6 +1,6 @@
 ## Rubrics
 
-This folder is for materials for the proposal to include Rebrics in CTDL-ASN.
+This folder is for materials for the proposal to include Rubrics in CTDL-ASN.
 
 ### Backgroud Docs & Folders:
 - Issue [#530](https://github.com/CredentialEngine/Schema-Development/issues/530).
@@ -12,14 +12,14 @@ This folder is for materials for the proposal to include Rebrics in CTDL-ASN.
 - 1EdTech [Rubric](https://www.imsglobal.org/sites/default/files/CASE/casev1p0/information_model/caseservicev1p0_infomodelv1p0.html#FigInterfaceClass_InterfaceModel_CFRubric) (part of CASE standard)
 - IEEE [1484.20.3­—2022](https://standards.ieee.org/ieee/1484.20.3/10749/) Data Model for Shareable Competency Definitions (includes rubrics)
  
-### Task group 
+### Task Group 
 - [Meetings and shared documents](https://drive.google.com/drive/folders/1-hYoDxtPVC-r9YdxWnqe-lSxSFdtVpW5?usp=sharing) (Google folder)
 
 ### Required Documentation
 - Use cases
   - [High-level "indicative" use cases](https://docs.google.com/document/d/1dIqdOtyN_pYCNHUONeanHusWwuSBsax7lUpz4QBHPoA/edit#)
   - [Analysis spreadsheet of contributed use cases](https://docs.google.com/spreadsheets/d/1bh2FZXerdd3G9Uu4mXqsRi-V8PO971jG/edit#gid=1902322117)
-- real world data
+- Real world data
   - [Contributed examples folder](https://drive.google.com/drive/folders/1u5BynZiLG-GyfakUoZGU3RHUTjCxxyjU?usp=drive_link) on Google drive 
   - [From ASN web page](http://standards.asn.desire2learn.com/rubric.html#ex)
   - [Several VALUE rubrics from AAc&U](https://www.aacu.org/initiatives/value-initiative/value-rubrics)
