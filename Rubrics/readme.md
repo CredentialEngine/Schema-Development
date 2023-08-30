@@ -1,27 +1,33 @@
 ## Rubrics
 
-This folder is for materials for the proposal to include Rebrics in CTDL-ASN, following the same approach as ASN.
+This folder is for materials for the proposal to include Rebrics in CTDL-ASN.
 
 ### Backgroud Docs & Folders:
 - Issue [#530](https://github.com/CredentialEngine/Schema-Development/issues/530).
-- Ontology: [Panulla & kohler](https://openaccess.uoc.edu/bitstream/10609/5222/6/Panulla.pdf)
-  - [ ] make sure this is referenced as source somehow.
-- ASN [Model for Rubrics](http://standards.asn.desire2learn.com/rubric.html). Includes:
-  - Entity-relation diagram
-  - Example
-  - Term definitions
-  - [ ] make sure this is referenced as source somehow.
+- Issue [#892](https://github.com/CredentialEngine/Schema-Development/issues/892).
+### Existing Ontologies and Standards
+- [Panulla & kohler](https://openaccess.uoc.edu/bitstream/10609/5222/6/Panulla.pdf)
+- ASN [Model for Rubrics](http://standards.asn.desire2learn.com/rubric.html).
+- [CEDS](https://ceds.ed.gov/elements.aspx?v=11#) (search for Rubric)
+- 1EdTech [Rubric](https://www.imsglobal.org/sites/default/files/CASE/casev1p0/information_model/caseservicev1p0_infomodelv1p0.html#FigInterfaceClass_InterfaceModel_CFRubric) (part of CASE standard)
+- IEEE [1484.20.3­—2022](https://standards.ieee.org/ieee/1484.20.3/10749/) Data Model for Shareable Competency Definitions (includes rubrics)
+ 
+### Task group 
+- [Meetings and shared documents](https://drive.google.com/drive/folders/1-hYoDxtPVC-r9YdxWnqe-lSxSFdtVpW5?usp=sharing) (Google folder)
 
 ### Required Documentation
-- [ ] [Use cases](https://docs.google.com/document/d/1dIqdOtyN_pYCNHUONeanHusWwuSBsax7lUpz4QBHPoA/edit#)
-- [ ] real world data
-  - [ ] see [examples folder]([url](https://drive.google.com/drive/folders/1u5BynZiLG-GyfakUoZGU3RHUTjCxxyjU?usp=drive_link)) on Google drive 
+- Use cases
+  - [High-level "indicative" use cases](https://docs.google.com/document/d/1dIqdOtyN_pYCNHUONeanHusWwuSBsax7lUpz4QBHPoA/edit#)
+  - [Analysis spreadsheet of contributed use cases](https://docs.google.com/spreadsheets/d/1bh2FZXerdd3G9Uu4mXqsRi-V8PO971jG/edit#gid=1902322117)
+- real world data
+  - [Contributed examples folder](https://drive.google.com/drive/folders/1u5BynZiLG-GyfakUoZGU3RHUTjCxxyjU?usp=drive_link) on Google drive 
   - [From ASN web page](http://standards.asn.desire2learn.com/rubric.html#ex)
   - [Several VALUE rubrics from AAc&U](https://www.aacu.org/initiatives/value-initiative/value-rubrics)
-- [ ] [Domain Model (draw.io)](https://app.diagrams.net/#G1wXcXld3Zjh0tnPm_CsH_ogtor08NlV0G#%7B%22pageId%22%3A%22sfqcQSeyot_BauRWTSwP%22%7D) ; [Latest version png export (02 Aug 2023)](https://drive.google.com/file/d/1lBcLDFe2YXaMTxuJY0aHrqomumvglE0s/view?usp=drive_link)
-- [ ] Proposal narrative (doc)
-- [ ] Term definition changes proposal ([text](./termDefinitionProposal.txt))
-- [ ] Data examples
+- Proposal
+  - [Domain Model (draw.io)](https://app.diagrams.net/#G1wXcXld3Zjh0tnPm_CsH_ogtor08NlV0G#%7B%22pageId%22%3A%22sfqcQSeyot_BauRWTSwP%22%7D) (may have limited access); [Latest version png export (23 Aug 2023)](https://drive.google.com/file/d/1SKvZLjs_kXyOL_2r49EiuXdjzo_QMh6b/view?usp=sharing)
+  - [Terms Proposal](https://docs.google.com/document/d/15ZXhI4jC-u5NKcuc4yRPz4SzjNoTAaf725HZHsB2_gY/edit?usp=sharing) (narrative doc)
+  - [Term definition changes proposal](./termDefinitionProposal.txt) (code / text)
+- [Data examples](Examples) (JSON-LD files in github repo folder)
 - [ ] Minmimum & benchmark data policy
 
 ### Approval
