@@ -1,0 +1,46 @@
+[
+	{
+		"@type": "ceasn:Rubric",
+		"@id": "res:ce-9b6111ab-c591-4d0d-a819-43de1555de27",
+		"ceasn:name": { "en": "Breakfast in Bed: Holistic Rubric" },
+		"ceterms:subjectWebpage": "https://www.cultofpedagogy.com/holistic-analytic-single-point-rubrics/",
+		"ceasn:hasRubricCriterion": [
+			"res:ce-bb031091-dc5c-4b74-ae85-9ce599d8b102"
+		]
+	},
+	{
+		"@type": "ceasn:RubricCriterion",
+		"@id": "res:ce-bb031091-dc5c-4b74-ae85-9ce599d8b102",
+		"ceasn:name": { "en": "Score and Description" },
+		"ceasn:hasCriterionItem": [
+			"res:ce-2fb71c70-a993-4b92-9e24-274f2e81c3fd",
+			"res:ce-161749af-e31f-4e0d-9ae5-2bc9c6a83b5d",
+			"res:ce-b9c3c5c8-fe71-4fe1-8760-7ad459d2e910",
+			"res:ce-4a8e3507-3896-4b3b-bb99-ab1c4d22c54b"
+		]
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-2fb71c70-a993-4b92-9e24-274f2e81c3fd",
+		"ceasn:description": { "en": "All food is perfectly cooked, presentation surpasses expectations, and recipient is kept exceptionally comfortable throughout the meal." },
+		"schema:value": 4
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-161749af-e31f-4e0d-9ae5-2bc9c6a83b5d",
+		"ceasn:description": { "en": "Food is cooked perfectly, the meal is presented in a clean and well-organized manner, and the recipient is kept comfortable throughout the meal." },
+		"schema:value": 3
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-b9c3c5c8-fe71-4fe1-8760-7ad459d2e910",
+		"ceasn:description": { "en": "Some food is cooked poorly, some aspects of presentation are sloppy or unclean, or the recipient is uncomfortable at times." },
+		"schema:value": 2
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-4a8e3507-3896-4b3b-bb99-ab1c4d22c54b",
+		"ceasn:description": { "en": "Most of the food is cooked poorly, the presentation is sloppy or unclean, and the recipient is uncomfortable most of the time." },
+		"schema:value": 1
+	}
+]

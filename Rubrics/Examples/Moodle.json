@@ -1,0 +1,96 @@
+[
+	{
+		"@type": "ceasn:Rubric",
+		"@id": "res:ce-91681997-4ca8-40f3-95ac-d7a4bd5acea5",
+		"ceasn:name": { "en": "Moodle Rubric" },
+		"ceasn:hasRubricCriterion": [
+			"res:ce-435c023a-1346-4d0a-9ed5-64057b55c92c",
+			"res:ce-4d378d2c-dcdb-4148-8179-8e289267c0f1",
+			"res:ce-f25bb77e-336f-4600-860c-2a50978073cb"
+		],
+		"ceterms:subjectWebpage": "https://docs.moodle.org/402/en/Rubrics",
+		"ceterms:administrationProcess": [
+			{
+				"@type": "ceterms:ProcessProfile",
+				"ceterms:scoringMethodDescription": { "en": "This calculation may be different from how you intuitively use rubric. For example, when the teacher in the previous example chose both levels with 1 point, the plain sum would be 2 points. But that is actually the lowest possible score so it maps to the grade 0 in Moodle." }
+			}
+		]
+	},
+	{
+		"@type": "ceasn:RubricCriterion",
+		"@id": "res:ce-435c023a-1346-4d0a-9ed5-64057b55c92c",
+		"ceasn:name": { "en": "Style" },
+		"ceasn:hasCriterionItem": [
+			"res:ce-543cae2b-9a1b-4a8b-9ca1-65b4efc1b53d",
+			"res:ce-6fb487de-1d53-42a7-a213-abe336d01b58",
+			"res:ce-d1636e13-b1bc-4e1c-9827-8bc985bf505f"
+		]
+	},
+	{
+		"@type": "ceasn:RubricCriterion",
+		"@id": "res:ce-4d378d2c-dcdb-4148-8179-8e289267c0f1",
+		"ceasn:name": { "en": "Content" },
+		"ceasn:hasCriterionItem": [
+			"res:ce-7a6c5ae5-dbc9-4cac-bf69-766cf9049ced",
+			"res:ce-bedcfbe7-cfdc-480f-85f5-1f2d04511cc2",
+			"res:ce-0cb44a7b-2e12-4da7-b2d4-03598eec43ea"
+		]
+	},
+	{
+		"@type": "ceasn:RubricCriterion",
+		"@id": "res:ce-f25bb77e-336f-4600-860c-2a50978073cb",
+		"ceasn:name": { "en": "Late submission penalty" },
+		"ceasn:hasCriterionItem": [
+			"res:ce-82fa5a68-c8c6-4ab3-ac93-75197cb7d49d",
+			"res:ce-22e47ba9-2212-43e1-b358-7c25483bfd57"
+		]
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-543cae2b-9a1b-4a8b-9ca1-65b4efc1b53d",
+		"ceasn:description": { "en": "Very poor" },
+		"schema:value": 0
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-6fb487de-1d53-42a7-a213-abe336d01b58",
+		"ceasn:description": { "en": "Some effort at consistent and appropriate style" },
+		"schema:value": 1
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-d1636e13-b1bc-4e1c-9827-8bc985bf505f",
+		"ceasn:description": { "en": "Good effort at consistent and appropriate style" },
+		"schema:value": 2
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-7a6c5ae5-dbc9-4cac-bf69-766cf9049ced",
+		"ceasn:description": { "en": "No relevant content" },
+		"schema:value": 0
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-bedcfbe7-cfdc-480f-85f5-1f2d04511cc2",
+		"ceasn:description": { "en": "Limited content and of limited relevance" },
+		"schema:value": 1
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-0cb44a7b-2e12-4da7-b2d4-03598eec43ea",
+		"ceasn:description": { "en": "Good content with suitable relevance" },
+		"schema:value": 2
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-82fa5a68-c8c6-4ab3-ac93-75197cb7d49d",
+		"ceasn:description": { "en": "Submitted late" },
+		"schema:value": -1
+	},
+	{
+		"@type": "ceasn:CriterionItem",
+		"@id": "res:ce-22e47ba9-2212-43e1-b358-7c25483bfd57",
+		"ceasn:description": { "en": "Submitted on time" },
+		"schema:value": 0
+	}
+]

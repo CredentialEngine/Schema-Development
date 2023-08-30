@@ -1,0 +1,212 @@
+{
+	"@graph": [
+		{
+			"@type": "ceasn:Rubric",
+			"ceasn:name": { "en": "Essay Evaluation" },
+			"ceasn:hasRubricCriterion": [
+				"_:criterion1",
+				"_:criterion2",
+				"_:criterion3",
+				"_:criterion4"
+			],
+			"ceasn:hasRubricLevel": [
+				"_:level1",
+				"_:level2",
+				"_:level3",
+				"_:level4"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion1",
+			"ceasn:name": { "en": "State a position" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1a",
+				"_:item2a",
+				"_:item3a",
+				"_:item4a"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion2",
+			"ceasn:name": { "en": "Support hypothesis" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1b",
+				"_:item2b",
+				"_:item3b",
+				"_:item4b"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion3",
+			"ceasn:name": { "en": "Organization" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1c",
+				"_:item2c",
+				"_:item3c",
+				"_:item4c"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion4",
+			"ceasn:name": { "en": "Overall impression" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1d",
+				"_:item2d",
+				"_:item3d",
+				"_:item4d"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level1",
+			"ceasn:name": { "en": "State a position" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item1a",
+				"_:item1b",
+				"_:item1c",
+				"_:item1d"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level2",
+			"ceasn:name": { "en": "Support hypothesis" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item2a",
+				"_:item2b",
+				"_:item2c",
+				"_:item2d"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level3",
+			"ceasn:name": { "en": "Organization" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item3a",
+				"_:item3b",
+				"_:item3c",
+				"_:item3d"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level4",
+			"ceasn:name": { "en": "Overall impression" },
+			"ceterms:weight": 0.25,
+			"ceasn:hasCriterionLevel": [
+				"_:item4a",
+				"_:item4b",
+				"_:item4c",
+				"_:item4d"
+			]
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item1a",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand and defines the context in the introductory paragraph. Position is restated throughout and reinforced with examples and included in the conclusion." },
+			"qdata:percentage": 1.0
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2a",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand and defines the context in the introductory paragraph." },
+			"qdata:percentage": 0.75
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3a",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand, but could be more powerful." },
+			"qdata:percentage": 0.5
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4a",
+			"ceasn:benchmarkText": { "en": "Doesn't take a stand or provide context." },
+			"qdata:percentage": 0.25
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item1b",
+			"ceasn:benchmarkText": { "en": "Provided more than three arguments in support of the hypothesis. Arguments supported with more than citations. Writer incorporated own opinions. Examples incorporated in storytelling fashion." },
+			"qdata:percentage": 1.0
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2b",
+			"ceasn:benchmarkText": { "en": "Provides three main arguments in support of the hypothesis. Gives clear and accurate examples and development of the three main arguments." },
+			"qdata:percentage": 0.75
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2c",
+			"ceasn:benchmarkText": { "en": "Fewer than three main arguments and incomplete examples in support of arguments." },
+			"qdata:percentage": 0.5
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item2d",
+			"ceasn:benchmarkText": { "en": "Minimal idea development, limited and/or unrelated details. Doesn't give arguments in support of the hypothesis." },
+			"qdata:percentage": 0.25
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3a",
+			"ceasn:benchmarkText": { "en": "Depth and complexity of ideas supported by rich, engaging and/or pertinent details. Evidence analysis, reflection and insight." },
+			"qdata:percentage": 1.0
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3b",
+			"ceasn:benchmarkText": { "en": "Logical organization. Includes a compelling introduction, strong informative body, and satisfying conclusion. Has appropriate paragraph format." },
+			"qdata:percentage": 0.75
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3c",
+			"ceasn:benchmarkText": { "en": "Writing has a clear beginning, middle, and end. General use of appropriate paragraph format." },
+			"qdata:percentage": 0.5
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item3d",
+			"ceasn:benchmarkText": { "en": "Random or weak organization. No introduction and/or conclusion. Paragraphs lack development and coherence." },
+			"qdata:percentage": 0.25
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4a",
+			"ceasn:benchmarkText": { "en": "Superior in all ways. Precise, rich language. Establishes and maintains clear focus; evidence of distinctive voice and/or information." },
+			"qdata:percentage": 1.0
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4b",
+			"ceasn:benchmarkText": { "en": "Accomplished writing that entices reader to continue. Good flow and description." },
+			"qdata:percentage": 0.75
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4c",
+			"ceasn:benchmarkText": { "en": "Spoke to audience and drew them in. Purpose established. Acceptable, effective language." },
+			"qdata:percentage": 0.5
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:item4d",
+			"ceasn:benchmarkText": { "en": "Limited awareness of audience and/or purpose. Incorrect and/or ineffective language." },
+			"qdata:percentage": 0.25
+		}
+	]
+}
