@@ -89,25 +89,25 @@
 			"@type": "ceasn:CriterionLevel",
 			"@id": "_:item2a",
 			"ceasn:benchmarkText": { "en": "Student met the minimum expectation on the outcome or criteria, and is developing beyond this level." },
-			"qdata:percentage": 3.0
+			"schema:value": 3.0
 		},
 		{
 			"@type": "ceasn:CriterionLevel",
 			"@id": "_:item3a",
 			"ceasn:benchmarkText": { "en": "Student met the minimum expectation on the outcome or criteria." },
-			"qdata:percentage": 2.0
+			"schema:value": 2.0
 		},
 		{
 			"@type": "ceasn:CriterionLevel",
 			"@id": "_:item4a",
 			"ceasn:benchmarkText": { "en": "Student does not meet the minimum expectation on the outcome or criteria, but is developing proficiency." },
-			"qdata:percentage": 1.0
+			"schema:value": 1.0
 		},
 		{
 			"@type": "ceasn:CriterionLevel",
 			"@id": "_:item5a",
 			"ceasn:benchmarkText": { "en": "Student does not meet the minimum expectations on the outcome or criteria." },
-			"qdata:percentage": 0.0
+			"schema:value": 0.0
 		}
 	]
 }
