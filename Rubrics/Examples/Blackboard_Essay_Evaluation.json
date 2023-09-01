@@ -67,8 +67,7 @@
 		{
 			"@type": "ceasn:RubricLevel",
 			"@id": "_:level1",
-			"ceasn:name": { "en": "State a position" },
-			"ceterms:weight": 0.25,
+			"ceasn:name": { "en": "Excellent" },
 			"ceasn:hasCriterionLevel": [
 				"_:item1a",
 				"_:item1b",
@@ -79,8 +78,7 @@
 		{
 			"@type": "ceasn:RubricLevel",
 			"@id": "_:level2",
-			"ceasn:name": { "en": "Support hypothesis" },
-			"ceterms:weight": 0.25,
+			"ceasn:name": { "en": "Proficient" },
 			"ceasn:hasCriterionLevel": [
 				"_:item2a",
 				"_:item2b",
@@ -91,8 +89,7 @@
 		{
 			"@type": "ceasn:RubricLevel",
 			"@id": "_:level3",
-			"ceasn:name": { "en": "Organization" },
-			"ceterms:weight": 0.25,
+			"ceasn:name": { "en": "Satisfactory" },
 			"ceasn:hasCriterionLevel": [
 				"_:item3a",
 				"_:item3b",
@@ -103,8 +100,7 @@
 		{
 			"@type": "ceasn:RubricLevel",
 			"@id": "_:level4",
-			"ceasn:name": { "en": "Overall impression" },
-			"ceterms:weight": 0.25,
+			"ceasn:name": { "en": "Unsatisfactory" },
 			"ceasn:hasCriterionLevel": [
 				"_:item4a",
 				"_:item4b",
