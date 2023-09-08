@@ -1,0 +1,605 @@
+###
+### rdfs:Class Changes
+###
+
+### Create rdfs:Class
+ceasn:CriterionLevel a rdfs:Class ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Criterion Level"@en-US ;
+	rdfs:comment "An individual component or specific element within a criterion that defines a particular aspect or standard for evaluation."@en-US .
+
+
+### Create rdfs:Class
+ceasn:Rubric a rdfs:Class ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Rubric"@en-US ;
+	rdfs:comment "A structured and systematic evaluation tool used to assess performance, quality, and/or criteria."@en-US ;
+	owl:equivalentClass asn:Rubric .
+
+
+### Create rdfs:Class
+ceasn:RubricCriterion a rdfs:Class ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Rubric Criterion"@en-US ;
+	rdfs:comment "Resource providing explicit criteria for ensuring specific and measurable evaluation."@en-US ;
+	owl:equivalentClass asn:RubricCriterion .
+
+
+### Create rdfs:Class
+ceasn:RubricLevel a rdfs:Class ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Rubric Level"@en-US ;
+	rdfs:comment "Level or quality indicator used with Rubric Criteria."@en-US .
+
+
+###
+### rdf:Property Changes
+###
+
+### Create rdf:Property
+ceasn:benchmarkLabel a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Benchmark Label"@en-US ;
+	rdfs:comment "Label for the level achieved as defined by the Rubric Criterion."@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes rdf:langString .
+
+
+### Create rdf:Property
+ceasn:benchmarkText a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Benchmark Text"@en-US ;
+	rdfs:comment "Description of the level achieved as defined by the Rubric Criterion."@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes rdf:langString .
+
+
+### Create rdf:Property
+ceasn:evaluatorType a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Evaluator Type"@en-US ;
+	rdfs:comment "Type of evaluator; select from an existing enumeration of such types."@en-US ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes skos:Concept ;
+	meta:targetScheme ceasn:EvaluatorCategory .
+
+
+### Create rdf:Property
+ceasn:feedback a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Feedback"@en-US ;
+	rdfs:comment "Predefined feedback text for the benefit of the subject being evaluated."@en-US ;
+	dct:description "This may include guidance and suggestions for improvement or development."@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes rdf:langString .
+
+
+### Create rdf:Property
+ceasn:hasCriterionCategory a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Criterion Category"@en-US ;
+	rdfs:comment "Indicates a Concept for clustering logical sets of Rubric Criteria."@en-US ;
+	schema:domainIncludes ceasn:RubricCriterion ;
+	schema:rangeIncludes skos:Concept .
+
+
+### Create rdf:Property
+ceasn:hasCriterionCategorySet a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Criterion Category Set"@en-US ;
+	rdfs:comment "Indicates the Concept Scheme for clustering logical sets of Rubric Criteria."@en-US ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes skos:ConceptScheme .
+
+
+### Create rdf:Property
+ceasn:hasCriterionLevel a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Criterion Level"@en-US ;
+	rdfs:comment "Criterion Level for this resource."@en-US ;
+	schema:domainIncludes ceasn:RubricCriterion, ceasn:RubricLevel, ceasn:CriterionLevel ;
+	schema:rangeIncludes ceasn:CriterionLevel .
+
+
+### Create rdf:Property
+ceasn:hasRubricCriterion a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Rubric Criterion"@en-US ;
+	rdfs:comment "Explicit criterion for ensuring specific and measurable evaluation."@en-US ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes ceasn:RubricCriterion ;
+	rdfs:subPropertyOf asn:hasCriterion .
+
+
+### Create rdf:Property
+ceasn:hasRubricLevel a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Rubric Level"@en-US ;
+	rdfs:comment "Resource describing a level or quality indicator used with Rubric Criteria."@en-US ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes ceasn:RubricLevel .
+
+
+### Create rdf:Property
+ceasn:hasScope a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Scope"@en-US ;
+	rdfs:comment "Description of what the rubric's creator intended to assess or evaluate."@en-US ;
+	owl:equivalentProperty asn:hasScope .
+
+
+### Create rdf:Property
+ceasn:isBinaryEvaluation a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Is Binary Evaluation"@en-US ;
+	rdfs:comment "Indicates whether the criterion level is evaluated as having been met or not."@en-US ;
+	vann:usageNote "A value of true does not mean the subject of evaluation has met this criterion level; it means that the criterion level itself only permits a binary evaluation such as "pass/fail", "checked/unchecked", "yes/no", and so on."@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes xsd:boolean .
+
+
+### Create rdf:Property
+ceterms:hasRubric a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Rubric"@en-US ;
+	rdfs:comment "Rubric related to this resource."@en-US ;
+	schema:domainIncludes ceterms:AssessmentProfile, ceasn:CompetencyFramework, ceterms:Job, ceterms:LearningOpportunityProfile, ceterms:Course, ceterms:LearningProgram, ceterms:ApprenticeshipCertificate, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:Certification, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:JourneymanCertificate, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:ProfessionalDoctorate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:Task ;
+	schema:rangeIncludes ceasn:Rubric .
+
+
+### Create rdf:Property
+qdata:maxPercentage a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Max Percentage"@en-US ;
+	rdfs:comment "The upper percentage of some characteristic or property."@en-US ;
+	vann:usageNote "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes xsd:float .
+
+
+### Create rdf:Property
+qdata:minPercentage a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Min Percentage"@en-US ;
+	rdfs:comment "The lower percentage of some characteristic or property."@en-US ;
+	vann:usageNote "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes xsd:float .
+
+
+### Modify rdf:Property - asn:hasProgressionLevel
+### Add :
+	asn:hasProgressionLevel schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - asn:hasProgressionLevel
+### Add :
+	asn:hasProgressionLevel schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - asn:hasProgressionLevel
+### Add :
+	asn:hasProgressionLevel schema:domainIncludes ceasn:RubricLevel .
+
+
+### Modify rdf:Property - asn:hasProgressionModel
+### Add :
+	asn:hasProgressionModel schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:altCodedNotation
+### Add :
+	ceasn:altCodedNotation schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:codedNotation
+### Add :
+	ceasn:codedNotation schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:codedNotation
+### Add :
+	ceasn:codedNotation schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceasn:codedNotation
+### Add :
+	ceasn:codedNotation schema:domainIncludes ceasn:RubricLevel .
+
+
+### Modify rdf:Property - ceasn:codedNotation
+### Add :
+	ceasn:codedNotation schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - ceasn:conceptKeyword
+### Add :
+	ceasn:conceptKeyword schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:creator
+### Add :
+	ceasn:creator schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:dateCopyrighted
+### Add :
+	ceasn:dateCopyrighted schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:dateCreated
+### Add :
+	ceasn:dateCreated schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:dateModified
+### Add :
+	ceasn:dateModified schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:dateValidFrom
+### Add :
+	ceasn:dateValidFrom schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:dateValidFrom
+### Remove :
+	ceasn:dateValidFrom rdfs:comment "Beginning date of validity of this competency framework."@en-US ;
+### Add :
+	ceasn:dateValidFrom dct:description "Beginning date of validity of this resource."@en-US ;
+### Remove :
+	ceasn:dateValidFrom vann:usageNote "Where the competency document is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."@en-US ;
+### Add :
+	ceasn:dateValidFrom vann:usageNote "Where the resource is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."@en-US .
+
+
+### Modify rdf:Property - ceasn:dateValidUntil
+### Add :
+	ceasn:dateValidUntil schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:dateValidUntil
+### Remove :
+	ceasn:dateValidUntil rdfs:comment "End date of validity of this competency framework."@en-US ;
+### Add :
+	ceasn:dateValidUntil rdfs:comment "End date of validity of this resource."@en-US ;
+### Remove :
+	ceasn:dateValidUntil vann:usageNote "Where the competency document is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."@en-US ;
+### Add :
+	ceasn:dateValidUntil vann:usageNote "Where the resource is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."@en-US .
+
+
+### Modify rdf:Property - ceasn:derivedFrom
+### Add :
+	ceasn:derivedFrom schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:description
+### Add :
+	ceasn:description schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:description
+### Add :
+	ceasn:description schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceasn:educationLevelType
+### Add :
+	ceasn:educationLevelType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:inLanguage
+### Add :
+	ceasn:inLanguage schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:license
+### Add :
+	ceasn:license schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:listID
+### Add :
+	ceasn:listID schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceasn:listID
+### Add :
+	ceasn:listID schema:domainIncludes ceasn:RubricLevel .
+
+
+### Modify rdf:Property - ceasn:listID
+### Add :
+	ceasn:listID schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - ceasn:name
+### Add :
+	ceasn:name schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:name
+### Add :
+	ceasn:name schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceasn:name
+### Add :
+	ceasn:name schema:domainIncludes ceasn:RubricLevel .
+
+
+### Modify rdf:Property - ceasn:name
+### Add :
+	ceasn:name schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - ceasn:publicationStatusType
+### Add :
+	ceasn:publicationStatusType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:publicationStatusType
+### Remove :
+	ceasn:publicationStatusType rdfs:comment "The publication status of the of this resource."@en-US ;
+### Add :
+	ceasn:publicationStatusType rdfs:comment "The publication status of the resource."@en-US .
+
+
+### Modify rdf:Property - ceasn:publisher
+### Add :
+	ceasn:publisher schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:publisherName
+### Add :
+	ceasn:publisherName schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:rights
+### Add :
+	ceasn:rights schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceasn:weight
+### Add :
+	ceasn:weight schema:domainIncludes ceasn:RubricCriterion .
+
+### Modify rdf:Property - ceterms:administrationProcess
+### Add :
+	ceterms:administrationProcess schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:administrationProcess
+### Remove :
+	ceterms:administrationProcess rdfs:comment "Entity describing the process by which a credential, assessment, organization, or aspects of it, are administered."@en-US ;
+### Add :
+	ceterms:administrationProcess rdfs:comment "Entity describing the process by which a resource, or aspects of it, are administered."@en-US ;
+### Add :
+	ceterms:administrationProcess vann:usageNote "For assessments and rubrics, this can be used to indicate the scoring algorithm."@en-US .
+
+### Modify rdf:Property - ceterms:audienceLevelType
+### Add :
+	ceterms:audienceLevelType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:audienceLevelType
+### Remove :
+	ceterms:audienceLevelType rdfs:comment "Type of level indicating a point in a progression through an educational or training context, for which the credential is intended; select from an existing enumeration of such types."@en-US ;
+### Add :
+	ceterms:audienceLevelType rdfs:comment "Type of level indicating a point in a progression through an educational or training context, for which the resource is intended; select from an existing enumeration of such types."@en-US .
+
+
+### Modify rdf:Property - ceterms:audienceType
+### Add :
+	ceterms:audienceType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:classification
+### Add :
+	ceterms:classification schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:ctid
+### Add :
+	ceterms:ctid schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:ctid
+### Add :
+	ceterms:ctid schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceterms:deliveryType
+### Add :
+	ceterms:deliveryType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:description
+### Add :
+	ceterms:description schema:domainIncludes ceasn:RubricLevel .
+	
+	
+### Modify rdf:Property - ceterms:identifier
+### Add :
+	ceterms:identifier schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:industryType
+### Add :
+	ceterms:industryType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:instructionalProgramType
+### Add :
+	ceterms:instructionalProgramType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:latestVersion
+### Add :
+	ceterms:latestVersion schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:latestVersion
+### Remove :
+	ceterms:latestVersion rdfs:comment "Latest version of the credential."@en-US ;
+### Add :
+	ceterms:latestVersion rdfs:comment "Latest version of the resource."@en-US .
+
+
+### Modify rdf:Property - ceterms:lifeCycleStatusType
+### Add :
+	ceterms:lifeCycleStatusType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:nextVersion
+### Add :
+	ceterms:nextVersion schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:occupationType
+### Add :
+	ceterms:occupationType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:offeredIn
+### Add :
+	ceterms:offeredIn schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:previousVersion
+### Add :
+	ceterms:previousVersion schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:subject
+### Add :
+	ceterms:subject schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:subjectWebpage
+### Add :
+	ceterms:subjectWebpage schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:targetCompetency
+### Add :
+	ceterms:targetCompetency schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceterms:targetCompetency
+### Remove :
+	ceterms:targetCompetency rdfs:comment "A competency relevant to the condition being described."@en-US ;
+### Add :
+	ceterms:targetCompetency rdfs:comment "A competency relevant to the resource being described."@en-US .
+
+
+### Modify rdf:Property - ceterms:targetOccupation
+### Add :
+	ceterms:targetOccupation schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:targetTask
+### Add :
+	ceterms:targetTask schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceterms:versionIdentifier
+### Add :
+	ceterms:versionIdentifier schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:versionIdentifier
+### Remove :
+	ceterms:versionIdentifier rdfs:comment "Alphanumeric identifier of the version of the credential that is unique within the organizational context of its owner."@en-US ;
+### Add :
+	ceterms:versionIdentifier rdfs:comment "Alphanumeric identifier of the version of the resource that is unique within the organizational context of its owner."@en-US ;
+### Remove :
+	ceterms:versionIdentifier dct:description "The credential version captured here is any local identifier used by the credential owner to identify the version of the credential in the its local system."@en-US ;
+### Add :
+	ceterms:versionIdentifier dct:description "The resource version captured here is any local identifier used by the resource owner to identify the version of the resource in the local system."@en-US .
+
+
+### Modify rdf:Property - ceterms:occupationType
+### Add :
+	ceterms:occupationType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - qdata:percentage
+### Add :
+	qdata:percentage schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - schema:maxValue
+### Add :
+	schema:maxValue schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - schema:minValue
+### Add :
+	schema:minValue schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - schema:value
+### Add :
+	schema:value schema:domainIncludes ceasn:CriterionLevel .
+
+
+
+###
+### skos:ConceptScheme Changes
+###
+
+### Create skos:ConceptScheme
+ceasn:EvaluatorCategory a skos:ConceptScheme ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Evaluator Category"@en-US ;
+	rdfs:comment "Category of agents that perform evaluation."@en-US .
+
+
+###
+### skos:Concept Changes
+###
+
+### Create skos:Concept
+evalCat:Authority a skos:Concept ;
+	vs:term_status vs:unstable ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:prefLabel "Authority"@en-US ;
+	skos:definition "Evaluator is an agent with authority over the person,  group, or thing being evaluated in the relevant context."@en-US ;
+	dct:description "Examples include teachers, supervisors, managers, or others with positions over the person or group being evaluated."@en-US .
+
+
+### Create skos:Concept
+evalCat:Automated a skos:Concept ;
+	vs:term_status vs:unstable ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:prefLabel "Automated"@en-US ;
+	skos:definition "Evaluator is an automated agent or process."@en-US .
+
+
+### Create skos:Concept
+evalCat:External a skos:Concept ;
+	vs:term_status vs:unstable ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:prefLabel "External"@en-US ;
+	skos:definition "Evaluator is an agent who is outside the context of the person, group, or thing being evaluated."@en-US ;
+	dct:description "Evaluator is typically independent of the person, group, or thing being evaluated."@en-US .
+
+
+### Create skos:Concept
+evalCat:Peer a skos:Concept ;
+	vs:term_status vs:unstable ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:prefLabel "Peer"@en-US ;
+	skos:definition "Evaluator is one or more peers of the person, group, or thing being evaluated."@en-US ;
+	dct:description "Peers may be people taking the same course or in similar job roles."@en-US .
+
+
+### Create skos:Concept
+evalCat:Self a skos:Concept ;
+	vs:term_status vs:unstable ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:prefLabel "Self"@en-US ;
+	skos:definition "Evaluator is the person or group being evaluated."@en-US .
+
