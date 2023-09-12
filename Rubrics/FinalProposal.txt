@@ -1,4 +1,176 @@
 ###
+### CTDL Changes
+###
+
+###
+### rdf:Property Changes
+###
+
+### Create rdf:Property
+ceterms:hasRubric a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Has Rubric"@en-US ;
+	rdfs:comment "Rubric related to this resource."@en-US ;
+	schema:domainIncludes ceterms:AssessmentProfile, ceterms:Job, ceterms:LearningOpportunityProfile, ceterms:Course, ceterms:LearningProgram, ceterms:ApprenticeshipCertificate, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:Certification, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:JourneymanCertificate, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:ProfessionalDoctorate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:Task ;
+	schema:rangeIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:administrationProcess
+### Add :
+	ceterms:administrationProcess schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:administrationProcess
+### Remove :
+	ceterms:administrationProcess rdfs:comment "Entity describing the process by which a credential, assessment, organization, or aspects of it, are administered."@en-US ;
+### Add :
+	ceterms:administrationProcess rdfs:comment "Entity describing the process by which a resource, or aspects of it, are administered."@en-US ;
+### Add :
+	ceterms:administrationProcess vann:usageNote "For assessments and rubrics, this can be used to indicate the scoring algorithm."@en-US .
+
+
+### Modify rdf:Property - ceterms:audienceLevelType
+### Add :
+	ceterms:audienceLevelType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:audienceLevelType
+### Remove :
+	ceterms:audienceLevelType rdfs:comment "Type of level indicating a point in a progression through an educational or training context, for which the credential is intended; select from an existing enumeration of such types."@en-US ;
+### Add :
+	ceterms:audienceLevelType rdfs:comment "Type of level indicating a point in a progression through an educational or training context, for which the resource is intended; select from an existing enumeration of such types."@en-US .
+
+
+### Modify rdf:Property - ceterms:audienceType
+### Add :
+	ceterms:audienceType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:classification
+### Add :
+	ceterms:classification schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:ctid
+### Add :
+	ceterms:ctid schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:ctid
+### Add :
+	ceterms:ctid schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceterms:deliveryType
+### Add :
+	ceterms:deliveryType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:identifier
+### Add :
+	ceterms:identifier schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:industryType
+### Add :
+	ceterms:industryType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:instructionalProgramType
+### Add :
+	ceterms:instructionalProgramType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:latestVersion
+### Add :
+	ceterms:latestVersion schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:latestVersion
+### Remove :
+	ceterms:latestVersion rdfs:comment "Latest version of the credential."@en-US ;
+### Add :
+	ceterms:latestVersion rdfs:comment "Latest version of the resource."@en-US .
+
+
+### Modify rdf:Property - ceterms:lifeCycleStatusType
+### Add :
+	ceterms:lifeCycleStatusType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:nextVersion
+### Add :
+	ceterms:nextVersion schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:occupationType
+### Add :
+	ceterms:occupationType schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:offeredIn
+### Add :
+	ceterms:offeredIn schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:previousVersion
+### Add :
+	ceterms:previousVersion schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:subject
+### Add :
+	ceterms:subject schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:subjectWebpage
+### Add :
+	ceterms:subjectWebpage schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:targetCompetency
+### Add :
+	ceterms:targetCompetency schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceterms:targetCompetency
+### Remove :
+	ceterms:targetCompetency rdfs:comment "A competency relevant to the condition being described."@en-US ;
+### Add :
+	ceterms:targetCompetency rdfs:comment "A competency relevant to the resource being described."@en-US .
+
+
+### Modify rdf:Property - ceterms:targetOccupation
+### Add :
+	ceterms:targetOccupation schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:targetTask
+### Add :
+	ceterms:targetTask schema:domainIncludes ceasn:RubricCriterion .
+
+
+### Modify rdf:Property - ceterms:versionIdentifier
+### Add :
+	ceterms:versionIdentifier schema:domainIncludes ceasn:Rubric .
+
+
+### Modify rdf:Property - ceterms:versionIdentifier
+### Remove :
+	ceterms:versionIdentifier rdfs:comment "Alphanumeric identifier of the version of the credential that is unique within the organizational context of its owner."@en-US ;
+### Add :
+	ceterms:versionIdentifier rdfs:comment "Alphanumeric identifier of the version of the resource that is unique within the organizational context of its owner."@en-US ;
+### Remove :
+	ceterms:versionIdentifier dct:description "The credential version captured here is any local identifier used by the credential owner to identify the version of the credential in the its local system."@en-US ;
+### Add :
+	ceterms:versionIdentifier dct:description "The resource version captured here is any local identifier used by the resource owner to identify the version of the resource in the local system."@en-US .
+
+
+###
+### CTDL-ASN Changes
+###
+
+###
 ### rdfs:Class Changes
 ###
 
@@ -138,35 +310,6 @@ ceasn:isBinaryEvaluation a rdf:Property ;
 	schema:rangeIncludes xsd:boolean .
 
 
-### Create rdf:Property
-ceterms:hasRubric a rdf:Property ;
-	vs:term_status vs:unstable ;
-	rdfs:label "Has Rubric"@en-US ;
-	rdfs:comment "Rubric related to this resource."@en-US ;
-	schema:domainIncludes ceterms:AssessmentProfile, ceasn:CompetencyFramework, ceterms:Job, ceterms:LearningOpportunityProfile, ceterms:Course, ceterms:LearningProgram, ceterms:ApprenticeshipCertificate, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:Certification, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:JourneymanCertificate, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:ProfessionalDoctorate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:Task ;
-	schema:rangeIncludes ceasn:Rubric .
-
-
-### Create rdf:Property
-qdata:maxPercentage a rdf:Property ;
-	vs:term_status vs:unstable ;
-	rdfs:label "Max Percentage"@en-US ;
-	rdfs:comment "The upper percentage of some characteristic or property."@en-US ;
-	vann:usageNote "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"@en-US ;
-	schema:domainIncludes ceasn:CriterionLevel ;
-	schema:rangeIncludes xsd:float .
-
-
-### Create rdf:Property
-qdata:minPercentage a rdf:Property ;
-	vs:term_status vs:unstable ;
-	rdfs:label "Min Percentage"@en-US ;
-	rdfs:comment "The lower percentage of some characteristic or property."@en-US ;
-	vann:usageNote "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"@en-US ;
-	schema:domainIncludes ceasn:CriterionLevel ;
-	schema:rangeIncludes xsd:float .
-
-
 ### Modify rdf:Property - asn:hasProgressionLevel
 ### Add :
 	asn:hasProgressionLevel schema:domainIncludes ceasn:Rubric .
@@ -284,6 +427,11 @@ qdata:minPercentage a rdf:Property ;
 	ceasn:description schema:domainIncludes ceasn:RubricCriterion .
 
 
+### Modify rdf:Property - ceasn:description
+### Add :
+	ceasn:description schema:domainIncludes ceasn:RubricLevel .
+
+
 ### Modify rdf:Property - ceasn:educationLevelType
 ### Add :
 	ceasn:educationLevelType schema:domainIncludes ceasn:Rubric .
@@ -329,11 +477,6 @@ qdata:minPercentage a rdf:Property ;
 	ceasn:name schema:domainIncludes ceasn:RubricLevel .
 
 
-### Modify rdf:Property - ceasn:name
-### Add :
-	ceasn:name schema:domainIncludes ceasn:CriterionLevel .
-
-
 ### Modify rdf:Property - ceasn:publicationStatusType
 ### Add :
 	ceasn:publicationStatusType schema:domainIncludes ceasn:Rubric .
@@ -364,186 +507,6 @@ qdata:minPercentage a rdf:Property ;
 ### Modify rdf:Property - ceasn:weight
 ### Add :
 	ceasn:weight schema:domainIncludes ceasn:RubricCriterion .
-
-### Modify rdf:Property - ceterms:administrationProcess
-### Add :
-	ceterms:administrationProcess schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:administrationProcess
-### Remove :
-	ceterms:administrationProcess rdfs:comment "Entity describing the process by which a credential, assessment, organization, or aspects of it, are administered."@en-US ;
-### Add :
-	ceterms:administrationProcess rdfs:comment "Entity describing the process by which a resource, or aspects of it, are administered."@en-US ;
-### Add :
-	ceterms:administrationProcess vann:usageNote "For assessments and rubrics, this can be used to indicate the scoring algorithm."@en-US .
-
-### Modify rdf:Property - ceterms:audienceLevelType
-### Add :
-	ceterms:audienceLevelType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:audienceLevelType
-### Remove :
-	ceterms:audienceLevelType rdfs:comment "Type of level indicating a point in a progression through an educational or training context, for which the credential is intended; select from an existing enumeration of such types."@en-US ;
-### Add :
-	ceterms:audienceLevelType rdfs:comment "Type of level indicating a point in a progression through an educational or training context, for which the resource is intended; select from an existing enumeration of such types."@en-US .
-
-
-### Modify rdf:Property - ceterms:audienceType
-### Add :
-	ceterms:audienceType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:classification
-### Add :
-	ceterms:classification schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:ctid
-### Add :
-	ceterms:ctid schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:ctid
-### Add :
-	ceterms:ctid schema:domainIncludes ceasn:RubricCriterion .
-
-
-### Modify rdf:Property - ceterms:deliveryType
-### Add :
-	ceterms:deliveryType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:description
-### Add :
-	ceterms:description schema:domainIncludes ceasn:RubricLevel .
-	
-	
-### Modify rdf:Property - ceterms:identifier
-### Add :
-	ceterms:identifier schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:industryType
-### Add :
-	ceterms:industryType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:instructionalProgramType
-### Add :
-	ceterms:instructionalProgramType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:latestVersion
-### Add :
-	ceterms:latestVersion schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:latestVersion
-### Remove :
-	ceterms:latestVersion rdfs:comment "Latest version of the credential."@en-US ;
-### Add :
-	ceterms:latestVersion rdfs:comment "Latest version of the resource."@en-US .
-
-
-### Modify rdf:Property - ceterms:lifeCycleStatusType
-### Add :
-	ceterms:lifeCycleStatusType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:nextVersion
-### Add :
-	ceterms:nextVersion schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:occupationType
-### Add :
-	ceterms:occupationType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:offeredIn
-### Add :
-	ceterms:offeredIn schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:previousVersion
-### Add :
-	ceterms:previousVersion schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:subject
-### Add :
-	ceterms:subject schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:subjectWebpage
-### Add :
-	ceterms:subjectWebpage schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:targetCompetency
-### Add :
-	ceterms:targetCompetency schema:domainIncludes ceasn:RubricCriterion .
-
-
-### Modify rdf:Property - ceterms:targetCompetency
-### Remove :
-	ceterms:targetCompetency rdfs:comment "A competency relevant to the condition being described."@en-US ;
-### Add :
-	ceterms:targetCompetency rdfs:comment "A competency relevant to the resource being described."@en-US .
-
-
-### Modify rdf:Property - ceterms:targetOccupation
-### Add :
-	ceterms:targetOccupation schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:targetTask
-### Add :
-	ceterms:targetTask schema:domainIncludes ceasn:RubricCriterion .
-
-
-### Modify rdf:Property - ceterms:versionIdentifier
-### Add :
-	ceterms:versionIdentifier schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - ceterms:versionIdentifier
-### Remove :
-	ceterms:versionIdentifier rdfs:comment "Alphanumeric identifier of the version of the credential that is unique within the organizational context of its owner."@en-US ;
-### Add :
-	ceterms:versionIdentifier rdfs:comment "Alphanumeric identifier of the version of the resource that is unique within the organizational context of its owner."@en-US ;
-### Remove :
-	ceterms:versionIdentifier dct:description "The credential version captured here is any local identifier used by the credential owner to identify the version of the credential in the its local system."@en-US ;
-### Add :
-	ceterms:versionIdentifier dct:description "The resource version captured here is any local identifier used by the resource owner to identify the version of the resource in the local system."@en-US .
-
-
-### Modify rdf:Property - ceterms:occupationType
-### Add :
-	ceterms:occupationType schema:domainIncludes ceasn:Rubric .
-
-
-### Modify rdf:Property - qdata:percentage
-### Add :
-	qdata:percentage schema:domainIncludes ceasn:CriterionLevel .
-
-
-### Modify rdf:Property - schema:maxValue
-### Add :
-	schema:maxValue schema:domainIncludes ceasn:CriterionLevel .
-
-
-### Modify rdf:Property - schema:minValue
-### Add :
-	schema:minValue schema:domainIncludes ceasn:CriterionLevel .
-
-
-### Modify rdf:Property - schema:value
-### Add :
-	schema:value schema:domainIncludes ceasn:CriterionLevel .
-
 
 
 ###
@@ -602,4 +565,52 @@ evalCat:Self a skos:Concept ;
 	skos:inScheme ceasn:EvaluatorCategory ;
 	skos:prefLabel "Self"@en-US ;
 	skos:definition "Evaluator is the person or group being evaluated."@en-US .
+
+###
+### QData Changes
+###
+
+###
+### rdf:Property Changes
+###
+
+### Create rdf:Property
+qdata:maxPercentage a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Max Percentage"@en-US ;
+	rdfs:comment "The upper percentage of some characteristic or property."@en-US ;
+	vann:usageNote "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes xsd:float .
+
+
+### Create rdf:Property
+qdata:minPercentage a rdf:Property ;
+	vs:term_status vs:unstable ;
+	rdfs:label "Min Percentage"@en-US ;
+	rdfs:comment "The lower percentage of some characteristic or property."@en-US ;
+	vann:usageNote "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"@en-US ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes xsd:float .
+
+
+### Modify rdf:Property - qdata:percentage
+### Add :
+	qdata:percentage schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - schema:maxValue
+### Add :
+	schema:maxValue schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - schema:minValue
+### Add :
+	schema:minValue schema:domainIncludes ceasn:CriterionLevel .
+
+
+### Modify rdf:Property - schema:value
+### Add :
+	schema:value schema:domainIncludes ceasn:CriterionLevel .
+
 
