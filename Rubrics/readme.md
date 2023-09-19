@@ -26,7 +26,7 @@ This folder is for materials for the proposal to include Rubrics in CTDL-ASN.
 - Proposal
   - [Domain Model (draw.io)](https://app.diagrams.net/#G1wXcXld3Zjh0tnPm_CsH_ogtor08NlV0G#%7B%22pageId%22%3A%22sfqcQSeyot_BauRWTSwP%22%7D) (may have limited access); [Latest version png export (23 Aug 2023)](https://drive.google.com/file/d/1SKvZLjs_kXyOL_2r49EiuXdjzo_QMh6b/view?usp=sharing)
   - [Terms Proposal](https://docs.google.com/document/d/15ZXhI4jC-u5NKcuc4yRPz4SzjNoTAaf725HZHsB2_gY/edit?usp=sharing) (narrative doc)
-  - [Term definition changes proposal](./termDefinitionProposal.txt) (code / text)
+  - [Term definition changes proposal](./FinalProposal.txt) (code / text)
 - [Data examples](Examples) (JSON-LD files in github repo folder)
 - [ ] Minmimum & benchmark data policy
 
