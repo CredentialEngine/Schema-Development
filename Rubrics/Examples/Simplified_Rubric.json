@@ -1,0 +1,102 @@
+{
+	"@graph": [
+		{
+			"@type": "ceasn:Rubric",
+			"ceasn:name": { "en": "Essay Evaluation" },
+			"ceasn:hasRubricCriterion": [
+				"_:criterion1",
+				"_:criterion2"
+			],
+			"ceasn:hasRubricLevel": [
+				"_:level1",
+				"_:level2",
+				"_:level3"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion1",
+			"ceasn:name": { "en": "State a position" },
+			"ceterms:weight": 0.5,
+			"ceasn:hasCriterionLevel": [
+				"_:c1l1",
+				"_:c1l2",
+				"_:c1l3"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion2",
+			"ceasn:name": { "en": "Support hypothesis" },
+			"ceterms:weight": 0.5,
+			"ceasn:hasCriterionLevel": [
+				"_:c2l1",
+				"_:c2l2",
+				"_:c1l3"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level1",
+			"ceasn:name": { "en": "Excellent" },
+			"ceasn:hasCriterionLevel": [
+				"_:c1l1",
+				"_:c2l1"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level2",
+			"ceasn:name": { "en": "Satisfactory" },
+			"ceasn:hasCriterionLevel": [
+				"_:c1l2",
+				"_:c2l2"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level3",
+			"ceasn:name": { "en": "Unsatisfactory" },
+			"ceasn:hasCriterionLevel": [
+				"_:c1l3",
+				"_:c1l3"
+			]
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c1l1",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand and defines the context in the introductory paragraph. Position is restated throughout and reinforced with examples and included in the conclusion." },
+			"qdata:percentage": 100
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c1l2",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand, but could be more powerful." },
+			"qdata:percentage": 66
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c1l3",
+			"ceasn:benchmarkText": { "en": "Doesn't take a stand or provide context." },
+			"qdata:percentage": 25
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c2l1",
+			"ceasn:benchmarkText": { "en": "Provided more than three arguments in support of the hypothesis. Arguments supported with more than citations. Writer incorporated own opinions. Examples incorporated in storytelling fashion." },
+			"qdata:percentage": 100
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c2l2",
+			"ceasn:benchmarkText": { "en": "Fewer than three main arguments and incomplete examples in support of arguments." },
+			"qdata:percentage": 66
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c2l3",
+			"ceasn:benchmarkText": { "en": "Minimal idea development, limited and/or unrelated details. Doesn't give arguments in support of the hypothesis." },
+			"qdata:percentage": 25
+		}
+	]
+}
