@@ -1,0 +1,27 @@
+{
+	"@graph": [
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion1",
+			"ceasn:name": { "en": "State a position" },
+			"ceterms:weight": 0.5,
+			"ceasn:hasCriterionLevel": [
+				"_:c1l1"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level1",
+			"ceasn:name": { "en": "Excellent" },
+			"ceasn:hasCriterionLevel": [
+				"_:c1l1"
+			]
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:c1l1",
+			"ceasn:benchmarkText": { "en": "Makes a strong stand and defines the context in the introductory paragraph. Position is restated throughout and reinforced with examples and included in the conclusion." },
+			"qdata:percentage": 100
+		}
+	]
+}
