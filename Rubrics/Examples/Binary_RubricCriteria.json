@@ -1,0 +1,77 @@
+{
+	"@graph": [
+		{
+			"@type": "ceasn:Rubric",
+			"@id": "_:Rubric",
+			"ceasn:name": { "en": "Soldier Training Tracker (Common Task Skill Level 1)" },
+			"ceasn:hasRubricCriterion": [
+				"_:criterion1",
+				"_:criterion2",
+				"_:criterion3",
+				"_:criterion4"
+			],
+			"ceasn:hasRubricLevel": [
+				"_:level1",
+				"_:level2"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion1",
+			"ceasn:description": { "en": "Report Information Of Potential Intelligence Value." },
+			"ceasn:codedNotation": "301-348-1050",
+			"ceasn:hasCriterionLevel": [
+				"_:binaryCriterionLevel"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion2",
+			"ceasn:description": { "en": "Perform Voice Communications." },
+			"ceasn:codedNotation": "113-571-1022",
+			"ceasn:hasCriterionLevel": [
+				"_:binaryCriterionLevel"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion3",
+			"ceasn:description": { "en": "Identify Topographic Symbols On A Military Map." },
+			"ceasn:codedNotation": "071-329-1000",
+			"ceasn:hasCriterionLevel": [
+				"_:binaryCriterionLevel"
+			]
+		},
+		{
+			"@type": "ceasn:RubricCriterion",
+			"@id": "_:criterion4",
+			"ceasn:description": { "en": "Identify Terrain Features On A Military Map." },
+			"ceasn:codedNotation": "071-329-1001",
+			"ceasn:hasCriterionCategory": "res:navigate",
+			"ceasn:hasCriterionLevel": [
+				"_:binaryCriterionLevel"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level1",
+			"ceasn:name": { "en": "Go" },
+			"ceasn:hasCriterionLevel": [
+				"_:binaryCriterionLevel"
+			]
+		},
+		{
+			"@type": "ceasn:RubricLevel",
+			"@id": "_:level2",
+			"ceasn:name": { "en": "No-Go" },
+			"ceasn:hasCriterionLevel": [
+				"_:binaryCriterionLevel"
+			]
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:binaryCriterionLevel",
+			"ceasn:isBinaryEvaluation": true
+		}
+	]
+}
