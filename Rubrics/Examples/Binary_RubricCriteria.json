@@ -47,7 +47,6 @@
 			"@id": "_:criterion4",
 			"ceasn:description": { "en": "Identify Terrain Features On A Military Map." },
 			"ceasn:codedNotation": "071-329-1001",
-			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
 				"_:binaryCriterionLevel"
 			]
