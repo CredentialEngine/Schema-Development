@@ -21,7 +21,8 @@
 			"ceasn:description": { "en": "Report Information Of Potential Intelligence Value." },
 			"ceasn:codedNotation": "301-348-1050",
 			"ceasn:hasCriterionLevel": [
-				"_:binaryCriterionLevel"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -30,7 +31,8 @@
 			"ceasn:description": { "en": "Perform Voice Communications." },
 			"ceasn:codedNotation": "113-571-1022",
 			"ceasn:hasCriterionLevel": [
-				"_:binaryCriterionLevel"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -39,7 +41,8 @@
 			"ceasn:description": { "en": "Identify Topographic Symbols On A Military Map." },
 			"ceasn:codedNotation": "071-329-1000",
 			"ceasn:hasCriterionLevel": [
-				"_:binaryCriterionLevel"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -48,7 +51,8 @@
 			"ceasn:description": { "en": "Identify Terrain Features On A Military Map." },
 			"ceasn:codedNotation": "071-329-1001",
 			"ceasn:hasCriterionLevel": [
-				"_:binaryCriterionLevel"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -56,7 +60,7 @@
 			"@id": "_:level1",
 			"ceasn:name": { "en": "Go" },
 			"ceasn:hasCriterionLevel": [
-				"_:binaryCriterionLevel"
+				"_:criterionLevel_g"
 			]
 		},
 		{
@@ -64,13 +68,16 @@
 			"@id": "_:level2",
 			"ceasn:name": { "en": "No-Go" },
 			"ceasn:hasCriterionLevel": [
-				"_:binaryCriterionLevel"
+				"_:criterionLevel_ng"
 			]
 		},
 		{
 			"@type": "ceasn:CriterionLevel",
-			"@id": "_:binaryCriterionLevel",
-			"ceasn:isBinaryEvaluation": true
+			"@id": 	"_:criterionLevel_g"
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:criterionLevel_ng"
 		}
 	]
 }
