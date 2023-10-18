@@ -53,7 +53,8 @@
 			"ceasn:codedNotation": "301-348-1050",
 			"ceasn:hasCriterionCategory": "res:see",
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -63,7 +64,8 @@
 			"ceasn:codedNotation": "113-571-1022",
 			"ceasn:hasCriterionCategory": "res:communicate",
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -73,7 +75,8 @@
 			"ceasn:codedNotation": "071-329-1000",
 			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -83,7 +86,8 @@
 			"ceasn:codedNotation": "071-329-1001",
 			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -93,7 +97,8 @@
 			"ceasn:codedNotation": "071-329-1002",
 			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -103,7 +108,8 @@
 			"ceasn:codedNotation": "071-329-1003",
 			"ceasn:hasCriterionCategory": "res:navigate",
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g",
+				"_:criterionLevel_ng"
 			]
 		},
 		{
@@ -111,7 +117,7 @@
 			"@id": "_:level1",
 			"ceasn:name": { "en": "Go" },
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_g"
 			]
 		},
 		{
@@ -119,13 +125,16 @@
 			"@id": "_:level2",
 			"ceasn:name": { "en": "No-Go" },
 			"ceasn:hasCriterionLevel": [
-				"_:item1a"
+				"_:criterionLevel_ng"
 			]
 		},
 		{
 			"@type": "ceasn:CriterionLevel",
-			"@id": "_:item1a",
-			"ceasn:isBinaryEvaluation": true
+			"@id": 	"_:criterionLevel_g"
+		},
+		{
+			"@type": "ceasn:CriterionLevel",
+			"@id": "_:criterionLevel_ng"
 		}
 	]
 }]
