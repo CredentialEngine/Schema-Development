@@ -1,4 +1,4 @@
-{
+[{
 	"@graph": [
 		{
 			"@type": "skos:ConceptScheme",
@@ -25,9 +25,7 @@
 			"skos:prefLabel": { "en": "Navigate" }
 		}
 	]
-}
-
-
+},
 {
 	"@graph": [
 		{
@@ -130,4 +128,4 @@
 			"ceasn:isBinaryEvaluation": true
 		}
 	]
-}
+}]
