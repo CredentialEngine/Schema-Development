@@ -1,0 +1,211 @@
+{
+	"@graph": [
+		{
+			"@type": "qdata:DataSetProfile",
+			"@id": "res:abc",
+			"ceterms:description": { "en": "80% of graduates with full-time wages fall within this range." },
+			"qdata:dataSuppressionPolicy": { "en": "Only years/programs meeting disclosure rules will be displayed to protect individual confidentiality." },
+			"schema:about": [
+				"_:123"
+			],
+			"qdata:dataSetTimePeriod": [
+				{
+					"@type": "qdata:DataSetTimeFrame",
+					"ceterms:startDate": "2022-01-01",
+					"ceterms:endDate": "2022-12-31",
+					"ceterms:description": { "en": "Earnings in 2022 by Years Post-Completion" },
+					"qdata:dataAttributes": [
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "20 Years (2001-02 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 49
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 28310.00,
+									"qdata:percentile25": 51821.00,
+									"qdata:median": 70990.00,
+									"qdata:percentile75": 102094.00,
+									"qdata:percentile90": 143947.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "15 Years (2006-07 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 53
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 33920.00,
+									"qdata:percentile25": 53698.00,
+									"qdata:median": 72010.00,
+									"qdata:percentile75": 102903.00,
+									"qdata:percentile90": 145160.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "10 Years (2011-12 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 52
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 33317.00,
+									"qdata:percentile25": 52862.00,
+									"qdata:median": 70504.00,
+									"qdata:percentile75": 97877.00,
+									"qdata:percentile90": 139647.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "8 Years (2013-14 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 53
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 31079.00,
+									"qdata:percentile25": 49517.00,
+									"qdata:median": 66323.00,
+									"qdata:percentile75": 90423.00,
+									"qdata:percentile90": 128677.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "5 Years (2016-17 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 57
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 27283.00,
+									"qdata:percentile25": 43826.00,
+									"qdata:median": 58684.00,
+									"qdata:percentile75": 77264.00,
+									"qdata:percentile90": 102961.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "3 Years (2018-19 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 58
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 20236.00,
+									"qdata:percentile25": 35873.00,
+									"qdata:median": 53074.00,
+									"qdata:percentile75": 68009.00,
+									"qdata:percentile90": 88051.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "18 Months (2020-21 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 58
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 12439.00,
+									"qdata:percentile25": 23122.00,
+									"qdata:median": 37213.00,
+									"qdata:percentile75": 54802.00,
+									"qdata:percentile90": 71133.00
+								}
+							]
+						},
+						{
+							"@type": "qdata:DataProfile",
+							"ceterms:description": { "en": "18 Months (2020-21 graduates)" },
+							"qdata:dataAvailable": [
+								{
+									"@type": "schema:QuantitativeValue",
+									"ceterms:description": { "en": "Percentage of Graduates w/ Reported Wage" },
+									"qdata:percentage": 57
+								}
+							],
+							"qdata:earningsDistribution": [
+								{
+									"@type": "schema:MonetaryAmountDistribution",
+									"schema:currency": "USD",
+									"qdata:percentile10": 12527.00,
+									"qdata:percentile25": 23324.00,
+									"qdata:median": 37152.00,
+									"qdata:percentile75": 54648.00,
+									"qdata:percentile90": 71054.00
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"@type": "ceterms:BachelorDegree",
+			"@id": "_:123",
+			"ceterms:offeredBy": [
+				"_:abc"
+			]
+		},
+		{
+			"@type": "ceterms:CredentialOrganization",
+			"@id": "_:abc",
+			"ceterms:name": { "en": "Christopher Newport University" }
+		}
+	]
+}
