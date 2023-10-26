@@ -5,6 +5,9 @@
 			"@id": "res:abc",
 			"ceterms:description": { "en": "80% of graduates with full-time wages fall within this range." },
 			"qdata:dataSuppressionPolicy": { "en": "Only years/programs meeting disclosure rules will be displayed to protect individual confidentiality." },
+			"qdata:dataProvider": [ 
+				"https://credentialengineregistry.org/resources/ce-ctid-for-schev"
+			],
 			"schema:about": [
 				"_:123"
 			],
@@ -205,7 +208,35 @@
 		{
 			"@type": "ceterms:CredentialOrganization",
 			"@id": "_:abc",
-			"ceterms:name": { "en": "Christopher Newport University" }
+			"ceterms:name": { "en": "Christopher Newport University" },
+			"ceterms:description": { "en": "Virginia four-year public institution." },
+			"ceterms:subjectWebpage": "https://cnu.edu/",
+			"ceterms:accreditedBy": [
+				"_:def"
+			]
+		},
+		{
+			"@type": "ceterms:QACredentialOrganization",
+			"@id": "_:def",
+			"ceterms:name": { "en": "Southern Association of Colleges and Schools Commision on Colleges" },
+			"ceterms:alternateName": { "en": [ "SACSOC" ] },
+			"ceterms:address": [
+				{
+					"@type": "ceterms:Place",
+					"ceterms:streetAddress": { "en": "1 Avenue of the Arts" },
+					"ceterms:addressLocality": { "en": "Newport News" },
+					"ceterms:addressRegion": { "en": "Virginia" },
+					"ceterms:addressCountry": { "en": "USA" },
+					"ceterms:postalCode": "23606",
+					"ceterms:targetContactPoint": [
+						{
+							"@type": "ceterms:ContactPoint",
+							"ceterms:telephone": "(757) 594-7000",
+							"ceterms:faxNumber": "(757) 594-7864"
+						}
+					]
+				}
+			]
 		}
 	]
 }
