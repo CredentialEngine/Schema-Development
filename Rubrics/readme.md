@@ -31,27 +31,27 @@ This folder is for materials for the proposal to include Rubrics in CTDL-ASN.
 - [ ] Minmimum & benchmark data policy
 
 ### Approval
-- [ ] Proposal approved (date: tbc)
+- [x] Proposal approved
 
 ### Implementation
 - Schema update
-  - [ ] Additions as pending (date: tbc)
-  - [ ] Stable/unstable entries (date: tbc)
+  - [x] Additions as pending (date: tbc)
+  - [x] Stable/unstable entries (date: tbc)
 - update handbook
-  - [ ] Identify sections in handbook to be amended
-  - [ ] Content written for handbook
+  - [x] Identify sections in handbook to be amended
+  - [x] Content written for handbook
 - Publishing tools
-  - [ ] Bulk upload
-  - [ ] Bulk upload instructions
-  - [ ] Registry assistant API
+  - [x] Bulk upload
+  - [x] Bulk upload instructions
+  - [X] Registry assistant API
 - Consuming
-  - [ ] Config updates for indexing all new terms
-  - [ ] Description sets (?)
+  - [x] Config updates for indexing all new terms
+  - [X] Description sets (?)
 - Registry Publishing and Query Documentation
-  - [ ] Use Cases Page Updated
-  - [ ] Registry Handbook publishing sections
-  - [ ] Query examples in searching section
-  - [ ] GitHub project updates
+  - [x] Use Cases Page Updated
+  - [x] Registry Handbook publishing sections
+  - [x] Query examples in searching section
+  - [x] GitHub project updates
 
 ### Final Announcement
-- [ ] Announced
+- [X] Announced
