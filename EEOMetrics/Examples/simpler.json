@@ -1,0 +1,65 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@type": "qdata:DataSetProfile",
+            "@id": "https://credentialengineregistry.org/resources/84db2bd2-5100-457e-aab6-7ddb5c7fe6f7",
+            "ceterms:ctid": "ce-84db2bd2-5100-457e-aab6-7ddb5c7fe6f7",
+            "ceterms:name": {
+                "en-US": "PASSHE Workforce Outcomes Data"
+            },
+            "ceterms:description": {
+                "en-US": "The workforce outcomes data include median earnings for graduates in inflation-adjusted 2022 dollars at 10 years after graduation.  Earnings are based on unemployment insurance covered wages in Pennsylvania.  Non-covered wages, out-of-state wages, and any other income sources are not included."
+            },
+            "qdata:dataProvider": "https://credentialengineregistry.org/resources/ce-a38117e5-a6bd-4fad-bf09-f15a575274df",
+            "qdata:relevantDataSetFor": "https://credentialengineregistry.org/resources/ce-13419d37-ef56-4a0b-8659-7286ff57513f",
+            "qdata:dataSetTemporalCoverage": {
+                "@type": "qdata:DataSetTimeFrame",
+                "qdata:startDate": "2015",
+                "qdata:endDate": "2022",
+                "qdata:timeInterval": "P10Y"
+            },
+            "ceterms:dateEffective": "2023-06-30",
+            "qdata:dataSetSpatialCoverage": {
+                "@type": "ceterms:Place",
+                "ceterms:addressRegion": "PA"
+            },
+            "qdata:dataSuppressionPolicy": {
+                "en-US": "Programs with fewer than 10 employed graduates are suppressed."
+            },
+            "qdata:hasDataSetService": {
+                "@type": "qdata:DataSetService",
+                "ceterms:subjectWebpage": "https://viz.passhe.edu/t/Public/views/PASSHEWorkforceOutcomes/WorkforceOutcomes"
+            },
+            "qdata:hasObservation": [
+                {
+                    "@type": "qdata:Observation",
+                    "qdata:median": 70629,
+                    "schema:currency": "USD",
+                    "qdata:isObservationOf": {
+                        "@type": "qdata:Metric",
+                        "ceterms:name": {
+                            "en-US": "Earnings Amount"
+                        },
+                        "ceterms:description": {
+                            "en-US": "Median earnings of graduates who were employed in Pennsylvania and who graduated between academic years 2004-05 and 2012-13, as of their 10th year after graduation.  For example, earnings for a 2004-05 graduate were earned in 2014-15.  All earnings are in inflation-adjusted 2022 dollars."
+                        }
+                    }
+                },
+                {
+                    "@type": "qdata:Observation",
+                    "qdata:percentage": 69,
+                    "qdata:isObservationOf": {
+                        "@type": "qdata:Metric",
+                        "ceterms:name": {
+                            "en-US": "Employment Rate"
+                        },
+                        "ceterms:description": {
+                            "en-US": "Percent of graduates who were employed in Pennsylvania at 10 years after graduation."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

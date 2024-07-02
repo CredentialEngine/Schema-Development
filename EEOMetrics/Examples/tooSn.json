@@ -1,0 +1,98 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@type": "qdata:DataSetProfile",
+            "@id": "https://credentialengineregistry.org/resources/84db2bd2-5100-457e-aab6-7ddb5c7fe6f7",
+            "ceterms:ctid": "ce-84db2bd2-5100-457e-aab6-7ddb5c7fe6f7",
+            "ceterms:name": {
+                "en-US": "PASSHE Workforce Outcomes Data"
+            },
+            "ceterms:description": {
+                "en-US": "The workforce outcomes data include median earnings for graduates in inflation-adjusted 2022 dollars at 10 years after graduation.  Earnings are based on unemployment insurance covered wages in Pennsylvania.  Non-covered wages, out-of-state wages, and any other income sources are not included."
+            },
+            "qdata:dataProvider": "https://credentialengineregistry.org/resources/ce-a38117e5-a6bd-4fad-bf09-f15a575274df",
+            "qdata:hasMetric": [
+                "https://credentialengineregistry.org/resources/1f646165-6cd3-4080-999f-ccefa22a32ad",
+                "https://credentialengineregistry.org/resources/dbad8996-de5a-4f56-b7cd-fb88908f8b93"
+            ],
+            "qdata:hasDimension": [
+                {
+                    "@type": "qdata:Dimension",
+                    "qdata:dimensionType": "ceterms:Credential",
+                    "ceterms:name": {
+                        "en-US": "Credential Earned"
+                    },
+                    "hasPoint": [
+                        "https://credentialengineregistry.org/resources/ce-13419d37-ef56-4a0b-8659-7286ff57513f",
+                        "https://credentialengineregistry.org/resources/ce-13419d37-ef56-4a0b-8659-7286ff57513f"
+                    ]
+                },
+                {
+                    "@type": "qdata:Dimension",
+                    "qdata:dimensionType": "skos:ConceptScheme",
+                    "ceterms:name": {
+                        "en-US": "Cohort Group"
+                    },
+                    "ceterms:description": {
+                        "en-US": "Each concept represents a group of several Cohorts each of which graduated in a certain year."
+                    },
+                    "hasPoint": [
+                        {
+                            "@type": "skos:Concept",
+                            "@id": "_:C1",
+                            "skos:prefLabel": "2005-2013",
+                            "skos:definition": "Graduates who graduated between academic years 2004-05 and 2012-13."
+                        },
+                        {
+                            "@type": "skos:Concept",
+                            "@id": "_:C2",
+                            "skos:prefLabel": "2006-2014",
+                            "skos:definition": "Graduates who graduated between academic years 2005-06 and 2013-14."
+                        }
+                    ]
+                }
+            ],
+            "qdata:dataSetTemporalCoverage": {
+                "@type": "qdata:DataSetTimeFrame",
+                "qdata:startDate": "2015",
+                "qdata:endDate": "2022",
+                "qdata:timeInterval": "P10Y"
+            },
+            "ceterms:dateEffective": "2023-06-30",
+            "qdata:dataSetSpatialCoverage": {
+                "@type": "ceterms:Place",
+                "ceterms:addressRegion": "PA"
+            },
+            "qdata:dataSuppressionPolicy": {
+                "en-US": "Programs with fewer than 10 employed graduates are suppressed."
+            },
+            "qdata:hasDataSetService": {
+                "@type": "qdata:DataSetService",
+                "ceterms:subjectWebpage": "https://viz.passhe.edu/t/Public/views/PASSHEWorkforceOutcomes/WorkforceOutcomes"
+            },
+            "qdata:hasObservation": [
+                {
+                    "@type": "qdata:Observation",
+                    "qdata:median": 70629,
+                    "schema:currency": "USD",
+                    "qdata:isObservationOf": "https://credentialengineregistry.org/resources/1f646165-6cd3-4080-999f-ccefa22a32ad",
+                    "qdata:atPoint": [
+                        "https://credentialengineregistry.org/resources/ce-13419d37-ef56-4a0b-8659-7286ff57513f",
+                        "_:C1"
+                    ]
+                },
+                {
+                    "@type": "qdata:Observation",
+                    "qdata:median": 70629,
+                    "schema:currency": "USD",
+                    "qdata:isObservationOf": "https://credentialengineregistry.org/resources/1f646165-6cd3-4080-999f-ccefa22a32ad",
+                    "qdata:atPoint": [
+                        "https://credentialengineregistry.org/resources/ce-13419d37-ef56-4a0b-8659-7286ff57513f",
+                        "_:C2"
+                    ]
+                }
+            ]
+        }
+    ]
+}
