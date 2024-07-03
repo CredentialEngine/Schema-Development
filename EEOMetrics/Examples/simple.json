@@ -57,7 +57,7 @@
             "qdata:recordType": "adminRecord:Tax1099",
             "qdata:dataSourceCoverageType": "sourceCoverage:Region",
             "qdata:incomeDeterminationType": "incomeDetermination:ActualEarnings",
-            "qdata:metricType": "Earnings"
+            "qdata:metricType": ":Earnings"
         },
         {
             "@id": "https://credentialengineregistry.org/resources/dbad8996-de5a-4f56-b7cd-fb88908f8b93",
