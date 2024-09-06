@@ -1,0 +1,43 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Accounting Assistant"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:43545db0-02c4-4bfd-9c94-6af856e26c0c"
+        },
+        {
+            "@id": "res:43545db0-02c4-4bfd-9c94-6af856e26c0c",
+            "@type": "qdata:DataSetProfile",
+            "qdata:hasMetric": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:hasObservation": "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a",
+            "qdata:dataProvider": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b"
+        },
+        {
+            "@id": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "@type": "qdata:Metric",
+            "ceterms:name": {
+                "en": "Completion Rate"
+            },
+            "ceterms:description": {
+                "en": "The percentage of enroled students who reach the end of the program, regardless of whether they pass."
+            }
+        },
+        {
+            "@id": "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:precentage": 80,
+            "qdata:sizeOfPopulation": 145,
+            "qdata:sizeOfData": 145
+        },
+        {
+            "@id": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "@type": "ceterms:CredentialOrganization"
+        }
+    ]
+}

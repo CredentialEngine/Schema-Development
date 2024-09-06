@@ -1,0 +1,144 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf",
+            "@type": "qdata:DataSetProfile",
+            "qdata:hasMetric": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:dataProvider": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:hasDimension": [
+                {
+                    "ceterms:name": {
+                        "en": "Program"
+                    },
+                    "ceterms:description": {
+                        "en": "The program of study undertaken."
+                    },
+                    "qdata:dimensionType": "ceterms:LearningProgram",
+                    "hasPoint": [
+                        "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                        "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                        "res:33f4b162-9d3a-48ed-81a7-5d5694617636"
+                    ]
+                },
+                {
+                    "ceterms:name": {
+                        "en": "Gender"
+                    },
+                    "ceterms:description": {
+                        "en": "The gender of the subject."
+                    },
+                    "qdata:dimensionType": [
+                        "demoCat:Gender",
+                        "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+                    ],
+                    "hasPoint": [
+                        "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf",
+                        "res:32c7ecbc-b871-41c4-adef-c3ec27578e56",
+                        "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+                    ]
+                },
+                {
+                    "ceterms:name": {
+                        "en": "Year"
+                    },
+                    "ceterms:description": {
+                        "en": "The year in which the subject was enrolled in the program."
+                    },
+                    "qdata:dimensionType": "schema:Date",
+                    "hasPoint": [
+                        "2021",
+                        "2022",
+                        "2023"
+                    ]
+                }
+            ],
+            "qdata:hasObservation": [
+                "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a"
+            ]
+        },
+        {
+            "@id": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "@type": "qdata:Metric",
+            "ceterms:name": {
+                "en": "Completion Rate"
+            },
+            "ceterms:description": {
+                "en": "The percentage of enroled students who reach the end of the program, regardless of whether they pass."
+            }
+        },
+        {
+            "@id": "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 80
+        },
+        {
+            "@id": "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Accounting Assistant"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf"
+        },
+        {
+            "@id": "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Bookkeeping"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf"
+        },
+        {
+            "@id": "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Office Management"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf"
+        },
+        {
+            "@id": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9",
+            "@type": "skos:ConceptScheme",
+            "rdfs:label": "Gender Concept Scheme",
+            "skos:hasTopConcept": [
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ]
+        },
+        {
+            "@id": "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf",
+            "@type": "skos:Concept",
+            "skos:prefLabel": "Male",
+            "skos:notation": "M",
+            "skos:inScheme": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+        },
+        {
+            "@id": "res:32c7ecbc-b871-41c4-adef-c3ec27578e56",
+            "@type": "skos:Concept",
+            "skos:prefLabel": "Female",
+            "skos:notation": "F",
+            "skos:inScheme": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+        },
+        {
+            "@id": "res:5c8bae5f-5032-4a83-a433-5baed890aa97",
+            "@type": "skos:Concept",
+            "skos:prefLabel": "Other/Undisclosed",
+            "skos:notation": "X",
+            "skos:inScheme": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+        },
+        {
+            "@id": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "@type": "ceterms:CredentialOrganization"
+        }
+    ]
+}
