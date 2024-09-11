@@ -24,14 +24,14 @@
                 "en": "Completion Rate"
             },
             "ceterms:description": {
-                "en": "The percentage of enroled students who reach the end of the program, regardless of whether they pass."
+                "en": "The percentage of enrolled students who reach the end of the program, regardless of whether they pass."
             }
         },
         {
             "@id": "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a",
             "@type": "qdata:Observation",
             "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
-            "qdata:precentage": 80,
+            "qdata:percentage": 80,
             "qdata:sizeOfPopulation": 145,
             "qdata:sizeOfData": 145
         },
