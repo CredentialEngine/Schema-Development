@@ -10,9 +10,11 @@
             "qdata:hasDataSetService": {
                 "@type": "qdata:DataSetService",
                 "ceterms:name": {
-                    "en": "National Educational Achievement Analytics Service"},
+                    "en": "National Educational Achievement Analytics Service"
+                },
                 "ceasn:rights": {
-                    "en": "Data is owned by the National Education Board..."},
+                    "en": "Data is owned by the National Education Board..."
+                },
                 "ceterms:subjectWebpage": "http://example.com/NEAAS/dashboard/"
             },
             "qdata:hasDataSetDistribution": [
