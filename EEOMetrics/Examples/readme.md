@@ -1,6 +1,16 @@
 ## JSON-LD Examples illustrating data for Educational and Occupational Outcomes
 
+The following are used as examples in the QData Handbook
+
+- handbookSimpleExample.json
+- handbookQDataMultiDim.json
+- handbookQDataServcieDistribution.json
+
+hanbookMultiDim.json is drafted for inclusion as an advanced example.
+
 ### Examples based on PASSHE Workforce Outcomes Data
+These are older examples and may not reflect the final changes made as a result of the EEOM task group.
+
 Source data in the registry: https://credentialfinder.org/outcomeData/8433/PASSHE_Workforce_Outcomes_Data
 
 - simpler.json : Uses BNodes and no dimensions, not quite the simplest possible.
