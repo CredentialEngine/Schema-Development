@@ -1,0 +1,184 @@
+{
+	"@graph": [
+		{
+			"@id": "res:acqf",
+			"@type": "???:QualificationsFramework",
+			"ceasn:name": { "en": "African Continental Qualifications Framework" },
+			"ceterms:alternateName": { "en": "ACQF" },
+			"ceasn:description": { "en": "The ACQF is a comprehensive and inclusive meta-referencing qualifications framework, designed to support a holistic and systemic vision of learning, qualifications, and credentials. The ACQF is oriented to lifelong learning and supports parity of esteem of learning outcomes acquired in formal, non-formal and informal contexts, and all levels of education and training." },
+			"ceasn:dateValidFrom": "2022-11-01",
+			"ceterms:versionCode": "17",
+			"ceasn:source": [
+				"https://drive.google.com/file/d/1BnU5VOqS6hu2YRhowC7x6J1R1_p6UblV/view"
+			],
+			"ceasn:hasGlossary": [
+				"res:acqfGlossary"
+			],
+			"asn:hasProgressionModel": [
+				"res:acqfLevels"
+			]
+		},
+		{
+			"@id": "res:acqfGlossary",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "ACQF Acronym Glossary" },
+			"skos:hasTopConcept": [
+				"res:acqfGlossary_acqf",
+				"res:acqfGlossary_acts",
+				"etc"
+			]
+		},
+		{
+			"@id": "res:acqfGlossary_acqf",
+			"@type": "skos:Concept",
+			"skos:notation": "ACQF",
+			"skos:prefLabel": { "en": "African Continental Qualifications Framework" },
+			"skos:inScheme": [
+				"res:acqfGlossary"
+			]
+		},
+		{
+			"@id": "res:acqfGlossary_acts",
+			"@type": "skos:Concept",
+			"skos:notation": "ACTS",
+			"skos:prefLabel": { "en": "African Credit and Transfer System" },
+			"skos:inScheme": [
+				"res:acqfGlossary"
+			]
+		},
+		{
+			"@id": "res:acqfFacets",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "Domains of Learning" },
+			"ceasn:description": { "en": "Definition of the domains of learning" },
+			"ceasn:hasTopConcept": [
+				"res:facetKnowledge",
+				"res:facetSkills",
+				"res:facetAutonomy"
+			]
+		},
+		{
+			"@id": "res:facetKnowledge",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Knowledge" },
+			"skos:definition": { "en": "Includes various kinds of knowledge such as facts, principles, and theories in various areas. The learning outcomes at all ten ACQF levels relate to formal, non-formal and informal learning. The knowledge domain comprises two sub-domains or elements:\n- Type of knowledge\n- Scope of knowledge" },
+			"skos:note": { "en": "In the context of ACQF \"Knowledge\" includes various kinds of knowledge such as facts, principles, and theories in various areas" }
+		},
+		{
+			"@id": "res:facetSkills",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Skills" },
+			"skos:definition": { "en": "Refer to the ability to use knowledge to respond to information and address problems/ issues. Skills include cognitive, communication, digital, green, innovation, practical and social skills. The learning outcomes at all ten ACQF levels relate to formal, non-formal and informal learning. The skills domain comprises three sub-domains:\n- Type of skills required\n- How the skills are used to respond to information\n- How skills are used to address types of problems" },
+			"skos:note": { "en": "In the context of ACQF \"Skills\" refer to the ability to use knowledge to respond to information and address problems. Skills include cognitive, communication, digital, green, innovation, practical and social skills." }
+		},
+		{
+			"@id": "res:facetAutonomy",
+			"@type": "skos:Concept",
+			"skos:prefLabel": { "en": "Autonomy and Responsibility" },
+			"skos:definition": { "en": "Refers to the context and extent of the application of autonomy and responsibility. The learning outcomes at all ten ACQF levels relate to formal, non-formal and informal learning. The autonomy and responsibility domain comprises 3 sub-domains:\n- the context in which autonomy and responsibility is applied\n- the extent to which autonomy is applied\n- the extent to which responsibility is applied.\nResponsibility as a domain of level descriptors has three elements: self, group outcomes, and resources." },
+			"skos:note": { "en": "In the context of ACQF \"Autonomy and responsibility\" refers to the context and extent of the application of autonomy and responsibility" }
+		},
+		{
+			"@id": "res:acqfLevels",
+			"@type": "asn:ProgressionModel",
+			"ceasn:name": { "en": "ACQF Level Descriptors" },
+			"ceasn:definition": { "en": "Each of the ten ACQF levels represents learning outcomes related to formal, non-formal and informal learning at that level. The ACQF level descriptors capture how the three domains of knowledge, skills and autonomy and responsibility (A&R) increase in breadth, depth and complexity when moving from lower to higher levels and are supported by a glossary explaining the terms." },
+			"ceasn:hasGlossary": [
+				"res:acqfGlossary"
+			],
+			"asn:hasProgressionLevel": [
+				"res:acqfLevel01",
+				"res:acqfLevel02",
+				"etc"
+			]
+		},
+		{
+			"@id": "res:acqfLevel01",
+			"@type": "asn:ProgressionLevel",
+			"skos:prefLabel": { "en": "Level 1" },
+			"skos:definition": { "en": "The learning outcomes related to formal, non-formal, and informal learning at this level include:" }
+			"ceasn:facetedDescription": [
+				"res:knowledge_01",
+				"res:skill_01",
+				"res:autonomy_01"
+			]
+		},
+		{
+			"@id": "res:knowledge_01",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Simple knowledge, literacy, and numeracy" },
+			"???:facetType": [
+				"res:facetKnowledge"
+			],
+			"ceasn:isPartOf": [
+				"res:acqf"
+			]
+		},
+		{
+			"@id": "res:skill_01",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Simple communication, cognitive and practical skills required to follow simple instructions, and use simple, repetitive solutions to address simple problems" },
+			"???:facetType": [
+				"res:facetSkills"
+			],
+			"ceasn:isPartOf": [
+				"res:acqf"
+			]
+		},
+		{
+			"@id": "res:autonomy_01",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Highly structured, repetitive contexts under close supervision and guidance taking minimal responsibility for self" },
+			"???:facetType": [
+				"res:facetAutonomy"
+			],
+			"ceasn:isPartOf": [
+				"res:acqf"
+			]
+		},
+		{
+			"@id": "res:acqfLevel02",
+			"@type": "asn:ProgressionLevel",
+			"skos:prefLabel": { "en": "Level 2" },
+			"skos:definition": { "en": "The learning outcomes related to formal, non-formal and informal learning at this level include:" }
+			"???:facetedDescription": [
+				"res:knowledge_02",
+				"res:skill_02",
+				"res:autonomy_02"
+			]
+		},
+		{
+			"@id": "res:knowledge_02",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Basic knowledge incorporating comprehension and recall of factual and operational knowledge in some areas" },
+			"???:facetType": [
+				"res:facetKnowledge"
+			],
+			"ceasn:isPartOf": [
+				"res:acqf"
+			]
+		},
+		{
+			"@id": "res:skill_02",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Basic communication, cognitive and practical skills required to use concrete information, ideas and known solutions to address straight forward problems" },
+			"???:facetType": [
+				"res:facetSkills"
+			],
+			"ceasn:isPartOf": [
+				"res:acqf"
+			]
+		},
+		{
+			"@id": "res:autonomy_02",
+			"@type": "ceasn:Competency",
+			"ceasn:competencyText": { "en": "Structured contexts under limited supervision and guidance taking limited responsibility for self and group outcomes" },
+			"???:facetType": [
+				"res:facetAutonomy"
+			],
+			"ceasn:isPartOf": [
+				"res:acqf"
+			]
+		},
+	]
+}
