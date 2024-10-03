@@ -1,0 +1,457 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf",
+            "@type": "qdata:DataSetProfile",
+            "qdata:hasMetric": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:dataProvider": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:hasDimension": [
+                {
+                    "ceterms:name": {
+                        "en": "Program"
+                    },
+                    "ceterms:description": {
+                        "en": "The program of study undertaken."
+                    },
+                    "qdata:dimensionType": "ceterms:LearningProgram",
+                    "hasPoint": [
+                        "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                        "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                        "res:33f4b162-9d3a-48ed-81a7-5d5694617636"
+                    ]
+                },
+                {
+                    "ceterms:name": {
+                        "en": "Gender"
+                    },
+                    "ceterms:description": {
+                        "en": "The gender of the subject."
+                    },
+                    "qdata:dimensionType": [
+                        "demoCat:Gender",
+                        "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+                    ],
+                    "hasPoint": [
+                        "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf",
+                        "res:32c7ecbc-b871-41c4-adef-c3ec27578e56",
+                        "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+                    ]
+                },
+                {
+                    "ceterms:name": {
+                        "en": "Year"
+                    },
+                    "ceterms:description": {
+                        "en": "The year in which the subject was enrolled in the program."
+                    },
+                    "qdata:dimensionType": "schema:Date",
+                    "hasPoint": [
+                        "2021",
+                        "2022",
+                        "2023"
+                    ]
+                }
+            ],
+            "qdata:hasObservation": [
+                "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a",
+                "res:df9b1981-1fa0-4893-ba41-0630c47c6471",
+                "res:7c00afb2-913a-43db-83c4-4e2226ea364d",
+                "res:b091b32c-545e-4c6c-b1fd-b3dc884a7fdb",
+                "res:83c1492e-033e-49c9-8cb9-95867e79177f",
+                "res:62b72129-ebc1-4eb7-ad3a-eaa4d26f77e4",
+                "res:a23b10fa-e3cd-4a17-939b-3226ccc4f816",
+                "res:748a98d3-8222-4860-ad94-2de5cf20c961",
+                "res:14600af2-cbb7-4ffc-b10a-5511fa880ff8",
+                "res:34c94a82-3770-466a-b217-e73d691ef092",
+                "res:fcfe65cd-fdc0-48ea-99e8-1ecb3fafdf90",
+                "res:2b1e2130-d2bc-4575-a77b-569f5f806375",
+                "res:3432c795-ac95-42e5-8964-7cf4dee8d0a6",
+                "res:d410f473-fbce-4135-b4c3-0f1c333b4c61",
+                "res:a773cd19-5593-479a-a5c3-c3bea78248cb",
+                "res:cb5c5c90-13a9-463c-b61b-9813e513492e",
+                "res:e8127fcd-9a48-401e-a695-aa385084973f",
+                "res:526c4739-21e9-4798-8920-d4ae3486cce9",
+                "res:06cf865a-a4f6-45d0-b390-af6cca849409",
+                "res:b597ed69-7683-4811-be5d-29796d247d81",
+                "res:7ec2aa0a-7dd5-4c28-9197-90d6ec1d590c",
+                "res:2022fa72-79c4-46a0-a7a6-5b042c9b9389",
+                "res:b2fbb788-6b81-45dd-a88b-38211243db0f",
+                "res:54d55362-860c-4541-b989-52f5e5511fbf",
+                "res:d9b04205-fa47-432a-86b5-4ee9ab96bd62",
+                "res:b2641164-b297-45c4-aa15-7275a097c4e8",
+                "res:46e56b9a-f747-43ee-9e2f-2633e5b64de7"
+            ]
+        },
+        {
+            "@id": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "@type": "qdata:Metric",
+            "ceterms:name": {
+                "en": "Completion Rate"
+            },
+            "ceterms:description": {
+                "en": "The percentage of enrolled students who reach the end of the program, regardless of whether they pass."
+            }
+        },
+        {
+            "@id": "res:dc9796b7-e7d2-4bde-a2c6-37963daa902a",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 80
+        },
+        {
+            "@id": "res:df9b1981-1fa0-4893-ba41-0630c47c6471",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 78
+        },
+        {
+            "@id": "res:7c00afb2-913a-43db-83c4-4e2226ea364d",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:b091b32c-545e-4c6c-b1fd-b3dc884a7fdb",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 76
+        },
+        {
+            "@id": "res:83c1492e-033e-49c9-8cb9-95867e79177f",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 75
+        },
+        {
+            "@id": "res:62b72129-ebc1-4eb7-ad3a-eaa4d26f77e4",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:a23b10fa-e3cd-4a17-939b-3226ccc4f816",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 75
+        },
+        {
+            "@id": "res:748a98d3-8222-4860-ad94-2de5cf20c961",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 73
+        },
+        {
+            "@id": "res:14600af2-cbb7-4ffc-b10a-5511fa880ff8",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2023",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:34c94a82-3770-466a-b217-e73d691ef092",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 78
+        },
+        {
+            "@id": "res:fcfe65cd-fdc0-48ea-99e8-1ecb3fafdf90",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 83
+        },
+        {
+            "@id": "res:2b1e2130-d2bc-4575-a77b-569f5f806375",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:3432c795-ac95-42e5-8964-7cf4dee8d0a6",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed",
+            "qdata:value": 80
+        },
+        {
+            "@id": "res:d410f473-fbce-4135-b4c3-0f1c333b4c61",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 85
+        },
+        {
+            "@id": "res:a773cd19-5593-479a-a5c3-c3bea78248cb",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:cb5c5c90-13a9-463c-b61b-9813e513492e",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 69
+        },
+        {
+            "@id": "res:e8127fcd-9a48-401e-a695-aa385084973f",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 73
+        },
+        {
+            "@id": "res:526c4739-21e9-4798-8920-d4ae3486cce9",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2022",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:06cf865a-a4f6-45d0-b390-af6cca849409",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 74
+        },
+        {
+            "@id": "res:b597ed69-7683-4811-be5d-29796d247d81",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 82
+        },
+        {
+            "@id": "res:7ec2aa0a-7dd5-4c28-9197-90d6ec1d590c",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:2022fa72-79c4-46a0-a7a6-5b042c9b9389",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 81
+        },
+        {
+            "@id": "res:b2fbb788-6b81-45dd-a88b-38211243db0f",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 78
+        },
+        {
+            "@id": "res:54d55362-860c-4541-b989-52f5e5511fbf",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:d9b04205-fa47-432a-86b5-4ee9ab96bd62",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf"
+            ],
+            "qdata:value": 65
+        },
+        {
+            "@id": "res:b2641164-b297-45c4-aa15-7275a097c4e8",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56"
+            ],
+            "qdata:value": 70
+        },
+        {
+            "@id": "res:46e56b9a-f747-43ee-9e2f-2633e5b64de7",
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:040c8cfc-9d44-4fe6-b1c1-452535f152a3",
+            "qdata:atPoint": [
+                "2021",
+                "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ],
+            "qdata:dataWithholdingType": "dataWithholding:DataSuppressed"
+        },
+        {
+            "@id": "res:0175d37f-44cc-460b-9045-c5d01f9018b2",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Accounting Assistant"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf"
+        },
+        {
+            "@id": "res:b9a2d6ad-dc3c-4de8-87e6-b9da27404d64",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Bookkeeping"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf"
+        },
+        {
+            "@id": "res:33f4b162-9d3a-48ed-81a7-5d5694617636",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Office Management"
+            },
+            "ceterms:offeredBy": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "qdata:relevantDataSet": "res:ade5b7a4-3c3c-4551-a324-e94cddc7baaf"
+        },
+        {
+            "@id": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9",
+            "@type": "skos:ConceptScheme",
+            "rdfs:label": "Gender Concept Scheme",
+            "skos:hasTopConcept": [
+                "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf",
+                "res:32c7ecbc-b871-41c4-adef-c3ec27578e56",
+                "res:5c8bae5f-5032-4a83-a433-5baed890aa97"
+            ]
+        },
+        {
+            "@id": "res:51c42ff1-8a2b-4418-8fac-ba81db8301cf",
+            "@type": "skos:Concept",
+            "skos:prefLabel": "Male",
+            "skos:notation": "M",
+            "skos:inScheme": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+        },
+        {
+            "@id": "res:32c7ecbc-b871-41c4-adef-c3ec27578e56",
+            "@type": "skos:Concept",
+            "skos:prefLabel": "Female",
+            "skos:notation": "F",
+            "skos:inScheme": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+        },
+        {
+            "@id": "res:5c8bae5f-5032-4a83-a433-5baed890aa97",
+            "@type": "skos:Concept",
+            "skos:prefLabel": "Other/Undisclosed",
+            "skos:notation": "X",
+            "skos:inScheme": "res:eb40b14f-ea17-4849-8812-1ff33013f2a9"
+        },
+        {
+            "@id": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
+            "@type": "ceterms:CredentialOrganization"
+        }
+    ]
+}
