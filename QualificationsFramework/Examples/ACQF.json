@@ -2,46 +2,92 @@
 	"@graph": [
 		{
 			"@id": "res:acqf",
-			"@type": "???:QualificationsFramework",
-			"ceasn:name": { "en": "African Continental Qualifications Framework" },
+			"@type": "ceterms:QualificationsFramework",
+			"ceterms:name": { "en": "African Continental Qualifications Framework" },
 			"ceterms:alternateName": { "en": "ACQF" },
-			"ceasn:description": { "en": "The ACQF is a comprehensive and inclusive meta-referencing qualifications framework, designed to support a holistic and systemic vision of learning, qualifications, and credentials. The ACQF is oriented to lifelong learning and supports parity of esteem of learning outcomes acquired in formal, non-formal and informal contexts, and all levels of education and training." },
-			"ceasn:dateValidFrom": "2022-11-01",
-			"ceterms:versionCode": "17",
-			"ceasn:source": [
-				"https://drive.google.com/file/d/1BnU5VOqS6hu2YRhowC7x6J1R1_p6UblV/view"
+			"ceterms:description": { "en": "The ACQF is a comprehensive and inclusive meta-referencing qualifications framework, designed to support a holistic and systemic vision of learning, qualifications, and credentials. The ACQF is oriented to lifelong learning and supports parity of esteem of learning outcomes acquired in formal, non-formal and informal contexts, and all levels of education and training." },
+			"ceasn:dateEffective": "2022-11-17",
+			"ceterms:versionCode": "6",
+			"ceasn:author": [
+				"Eduarda Castel-Branco",
+				"Coleen Jaftha",
+				"Eusebius J. Mukhwana",
+				"Kaylash Allgoo",
+				"Jeffy Mukora"
 			],
-			"ceasn:hasGlossary": [
+			"ceasn:sourceDocumentation": [
+				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en",
+			],
+			"ceasn:source": [
+				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en/@@display-file/file/ACQF%20Policy%20document_for%20validation%20process_17Nov2022_EN_WEB.pdf"
+			],
+			"ceterms:hasGlossary": [
+				"res:acqfAcronyms",
 				"res:acqfGlossary"
+			],
+			"ceterms:hasFacetScheme": [
+				"res:acqfFacets"
 			],
 			"asn:hasProgressionModel": [
 				"res:acqfLevels"
 			]
 		},
 		{
-			"@id": "res:acqfGlossary",
+			"@id": "res:acqfAcronyms",
 			"@type": "skos:ConceptScheme",
-			"ceasn:name": { "en": "ACQF Acronym Glossary" },
+			"ceasn:name": { "en": "ACQF Acronyms" },
 			"skos:hasTopConcept": [
-				"res:acqfGlossary_acqf",
-				"res:acqfGlossary_acts",
+				"res:acqfAcronyms_acqf",
+				"res:acqfAcronyms_acts",
 				"etc"
 			]
 		},
 		{
-			"@id": "res:acqfGlossary_acqf",
+			"@id": "res:acqfAcronyms_acqf",
 			"@type": "skos:Concept",
 			"skos:notation": "ACQF",
 			"skos:prefLabel": { "en": "African Continental Qualifications Framework" },
+			"skos:inScheme": [
+				"res:acqfAcronyms"
+			]
+		},
+		{
+			"@id": "res:acqfAcronyms_acts",
+			"@type": "skos:Concept",
+			"skos:notation": "ACTS",
+			"skos:prefLabel": { "en": "African Credit and Transfer System" },
+			"skos:inScheme": [
+				"res:acqfAcronyms"
+			]
+		},
+		{
+			"@id": "res:acqfGlossary",
+			"@type": "skos:ConceptScheme",
+			"ceasn:name": { "en": "ACQF Glossary" },
+			"ceasn:description": { "en": "For the purposes of the ACQF policy and technical document, the following definitions apply. This list of definitions is not exhaustive but is complemented by the specific glossaries annexed to each of the Guidelines and are included in ACQF Thematic Brief 1. Concepts and definitions (updated in 2022) and in other sources listed in of this document." },
+			"ceasn:sourceDocumentation": [
+				"https://acqf.africa/capacity-development-programme/thematic-briefs/acqf-thematic-brief-1-concepts-and-definitions"
+			],
+			"skos:hasTopConcept": [
+				"res:acqfGlossary_Qualification",
+				"res:acqfGlossary_InternationalQualifications",
+				"etc"
+			]
+		},
+		{
+			"@id": "res:acqfGlossary_Qualification",
+			"@type": "skos:Concept",
+			"skos:notation": "Qualification",
+			"skos:prefLabel": { "en": "Means a formal outcome of an assessment and validation process which is obtained when a competent authority determines that an individual has achieved learning outcomes to given standards" },
 			"skos:inScheme": [
 				"res:acqfGlossary"
 			]
 		},
 		{
-			"@id": "res:acqfGlossary_acts",
+			"@id": "res:acqfGlossary_InternationalQualifications",
 			"@type": "skos:Concept",
-			"skos:notation": "ACTS",
-			"skos:prefLabel": { "en": "African Credit and Transfer System" },
+			"skos:notation": "International qualifications",
+			"skos:prefLabel": { "en": "International qualifications are awarded by a legally established international body (association, organisation, professional sector, or company) or by a national body acting on behalf of an international body, are used in more than one country and include learning outcomes assessed with reference to standards established by an international body." },
 			"skos:inScheme": [
 				"res:acqfGlossary"
 			]
@@ -84,7 +130,7 @@
 			"ceasn:name": { "en": "ACQF Level Descriptors" },
 			"ceasn:definition": { "en": "Each of the ten ACQF levels represents learning outcomes related to formal, non-formal and informal learning at that level. The ACQF level descriptors capture how the three domains of knowledge, skills and autonomy and responsibility (A&R) increase in breadth, depth and complexity when moving from lower to higher levels and are supported by a glossary explaining the terms." },
 			"ceasn:hasGlossary": [
-				"res:acqfGlossary"
+				"res:acqfAcronyms"
 			],
 			"asn:hasProgressionLevel": [
 				"res:acqfLevel01",
@@ -97,7 +143,7 @@
 			"@type": "asn:ProgressionLevel",
 			"skos:prefLabel": { "en": "Level 1" },
 			"skos:definition": { "en": "The learning outcomes related to formal, non-formal, and informal learning at this level include:" }
-			"ceasn:facetedDescription": [
+			"ceterms:facetedDescription": [
 				"res:knowledge_01",
 				"res:skill_01",
 				"res:autonomy_01"
@@ -107,7 +153,7 @@
 			"@id": "res:knowledge_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Simple knowledge, literacy, and numeracy" },
-			"???:facetType": [
+			"ceterms:facetType": [
 				"res:facetKnowledge"
 			],
 			"ceasn:isPartOf": [
@@ -118,7 +164,7 @@
 			"@id": "res:skill_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Simple communication, cognitive and practical skills required to follow simple instructions, and use simple, repetitive solutions to address simple problems" },
-			"???:facetType": [
+			"ceterms:facetType": [
 				"res:facetSkills"
 			],
 			"ceasn:isPartOf": [
@@ -129,7 +175,7 @@
 			"@id": "res:autonomy_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Highly structured, repetitive contexts under close supervision and guidance taking minimal responsibility for self" },
-			"???:facetType": [
+			"ceterms:facetType": [
 				"res:facetAutonomy"
 			],
 			"ceasn:isPartOf": [
@@ -141,7 +187,7 @@
 			"@type": "asn:ProgressionLevel",
 			"skos:prefLabel": { "en": "Level 2" },
 			"skos:definition": { "en": "The learning outcomes related to formal, non-formal and informal learning at this level include:" }
-			"???:facetedDescription": [
+			"ceterms:facetedDescription": [
 				"res:knowledge_02",
 				"res:skill_02",
 				"res:autonomy_02"
@@ -151,7 +197,7 @@
 			"@id": "res:knowledge_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Basic knowledge incorporating comprehension and recall of factual and operational knowledge in some areas" },
-			"???:facetType": [
+			"ceterms:facetType": [
 				"res:facetKnowledge"
 			],
 			"ceasn:isPartOf": [
@@ -162,7 +208,7 @@
 			"@id": "res:skill_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Basic communication, cognitive and practical skills required to use concrete information, ideas and known solutions to address straight forward problems" },
-			"???:facetType": [
+			"ceterms:facetType": [
 				"res:facetSkills"
 			],
 			"ceasn:isPartOf": [
@@ -173,7 +219,7 @@
 			"@id": "res:autonomy_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Structured contexts under limited supervision and guidance taking limited responsibility for self and group outcomes" },
-			"???:facetType": [
+			"ceterms:facetType": [
 				"res:facetAutonomy"
 			],
 			"ceasn:isPartOf": [
