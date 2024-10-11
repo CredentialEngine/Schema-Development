@@ -8,6 +8,7 @@
             "qdata:dataProvider": "res:ab39eb19-eb0b-4aaf-8bdf-fde524fcf14b",
             "qdata:hasDimension": [
                 {
+                    "@type": "qdata:Dimension",
                     "ceterms:name": {
                         "en": "Program"
                     },
@@ -22,6 +23,7 @@
                     ]
                 },
                 {
+                    "@type": "qdata:Dimension",
                     "ceterms:name": {
                         "en": "Gender"
                     },
@@ -39,6 +41,7 @@
                     ]
                 },
                 {
+                    "@type": "qdata:Dimension",
                     "ceterms:name": {
                         "en": "Year"
                     },
