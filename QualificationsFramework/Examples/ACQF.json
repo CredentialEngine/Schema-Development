@@ -22,7 +22,7 @@
 				"res:AfricanUnion"
 			],
 			"ceasn:sourceDocumentation": [
-				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en",
+				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en"
 			],
 			"ceasn:source": [
 				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en/@@display-file/file/ACQF%20Policy%20document_for%20validation%20process_17Nov2022_EN_WEB.pdf"
@@ -154,7 +154,7 @@
 			"@id": "res:acqfLevel01",
 			"@type": "asn:ProgressionLevel",
 			"skos:prefLabel": { "en": "Level 1" },
-			"skos:definition": { "en": "The learning outcomes related to formal, non-formal, and informal learning at this level include:" }
+			"skos:definition": { "en": "The learning outcomes related to formal, non-formal, and informal learning at this level include:" },
 			"ceterms:facetedDescription": [
 				"res:knowledge_01",
 				"res:skill_01",
@@ -198,7 +198,7 @@
 			"@id": "res:acqfLevel02",
 			"@type": "asn:ProgressionLevel",
 			"skos:prefLabel": { "en": "Level 2" },
-			"skos:definition": { "en": "The learning outcomes related to formal, non-formal and informal learning at this level include:" }
+			"skos:definition": { "en": "The learning outcomes related to formal, non-formal and informal learning at this level include:" },
 			"ceterms:facetedDescription": [
 				"res:knowledge_02",
 				"res:skill_02",
@@ -237,6 +237,6 @@
 			"ceasn:isPartOf": [
 				"res:acqf"
 			]
-		},
+		}
 	]
 }
