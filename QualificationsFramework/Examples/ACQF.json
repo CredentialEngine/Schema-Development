@@ -89,8 +89,8 @@
 		{
 			"@id": "res:acqfGlossary_Qualification",
 			"@type": "skos:Concept",
-			"skos:notation": "Qualification",
-			"skos:prefLabel": { "en": "Means a formal outcome of an assessment and validation process which is obtained when a competent authority determines that an individual has achieved learning outcomes to given standards" },
+			"skos:prefLabel": "Qualification",
+			"skos:defintion": { "en": "Means a formal outcome of an assessment and validation process which is obtained when a competent authority determines that an individual has achieved learning outcomes to given standards" },
 			"skos:inScheme": [
 				"res:acqfGlossary"
 			]
@@ -98,8 +98,8 @@
 		{
 			"@id": "res:acqfGlossary_InternationalQualifications",
 			"@type": "skos:Concept",
-			"skos:notation": "International qualifications",
-			"skos:prefLabel": { "en": "International qualifications are awarded by a legally established international body (association, organisation, professional sector, or company) or by a national body acting on behalf of an international body, are used in more than one country and include learning outcomes assessed with reference to standards established by an international body." },
+			"skos:prefLabel": "International qualifications",
+			"skos:defintion": { "en": "International qualifications are awarded by a legally established international body (association, organisation, professional sector, or company) or by a national body acting on behalf of an international body, are used in more than one country and include learning outcomes assessed with reference to standards established by an international body." },
 			"skos:inScheme": [
 				"res:acqfGlossary"
 			]
