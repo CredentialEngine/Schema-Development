@@ -138,9 +138,6 @@
 			"@type": "asn:ProgressionModel",
 			"ceasn:name": { "en": "ACQF Level Descriptors" },
 			"ceasn:definition": { "en": "Each of the ten ACQF levels represents learning outcomes related to formal, non-formal and informal learning at that level. The ACQF level descriptors capture how the three domains of knowledge, skills and autonomy and responsibility (A&R) increase in breadth, depth and complexity when moving from lower to higher levels and are supported by a glossary explaining the terms." },
-			"ceasn:hasGlossary": [
-				"res:acqfAcronyms"
-			],
 			"asn:hasProgressionLevel": [
 				"res:acqfLevel01",
 				"res:acqfLevel02",
