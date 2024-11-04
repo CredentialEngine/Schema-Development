@@ -21,10 +21,7 @@
 			"ceasn:publisher": [
 				"res:AfricanUnion"
 			],
-			"ceasn:sourceDocumentation": [
-				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en"
-			],
-			"ceasn:source": [
+			"ceterms:source": [
 				"https://acqf.africa/resources/policy-guidelines/acqf-policy-document-upon-validation-by-au-member-states-en-fr-pt/acqf-policy-document-en/@@display-file/file/ACQF%20Policy%20document_for%20validation%20process_17Nov2022_EN_WEB.pdf"
 			],
 			"ceterms:hasGlossary": [
@@ -89,8 +86,8 @@
 		{
 			"@id": "res:acqfGlossary_Qualification",
 			"@type": "skos:Concept",
-			"skos:notation": "Qualification",
-			"skos:prefLabel": { "en": "Means a formal outcome of an assessment and validation process which is obtained when a competent authority determines that an individual has achieved learning outcomes to given standards" },
+			"skos:prefLabel": "Qualification",
+			"skos:defintion": { "en": "Means a formal outcome of an assessment and validation process which is obtained when a competent authority determines that an individual has achieved learning outcomes to given standards" },
 			"skos:inScheme": [
 				"res:acqfGlossary"
 			]
@@ -98,8 +95,8 @@
 		{
 			"@id": "res:acqfGlossary_InternationalQualifications",
 			"@type": "skos:Concept",
-			"skos:notation": "International qualifications",
-			"skos:prefLabel": { "en": "International qualifications are awarded by a legally established international body (association, organisation, professional sector, or company) or by a national body acting on behalf of an international body, are used in more than one country and include learning outcomes assessed with reference to standards established by an international body." },
+			"skos:prefLabel": "International qualifications",
+			"skos:defintion": { "en": "International qualifications are awarded by a legally established international body (association, organisation, professional sector, or company) or by a national body acting on behalf of an international body, are used in more than one country and include learning outcomes assessed with reference to standards established by an international body." },
 			"skos:inScheme": [
 				"res:acqfGlossary"
 			]
@@ -109,7 +106,7 @@
 			"@type": "skos:ConceptScheme",
 			"ceasn:name": { "en": "Domains of Learning" },
 			"ceasn:description": { "en": "Definition of the domains of learning" },
-			"ceasn:hasTopConcept": [
+			"skos:hasTopConcept": [
 				"res:facetKnowledge",
 				"res:facetSkills",
 				"res:facetAutonomy"
@@ -140,10 +137,7 @@
 			"@id": "res:acqfLevels",
 			"@type": "asn:ProgressionModel",
 			"ceasn:name": { "en": "ACQF Level Descriptors" },
-			"ceasn:definition": { "en": "Each of the ten ACQF levels represents learning outcomes related to formal, non-formal and informal learning at that level. The ACQF level descriptors capture how the three domains of knowledge, skills and autonomy and responsibility (A&R) increase in breadth, depth and complexity when moving from lower to higher levels and are supported by a glossary explaining the terms." },
-			"ceasn:hasGlossary": [
-				"res:acqfAcronyms"
-			],
+			"ceasn:description": { "en": "Each of the ten ACQF levels represents learning outcomes related to formal, non-formal and informal learning at that level. The ACQF level descriptors capture how the three domains of knowledge, skills and autonomy and responsibility (A&R) increase in breadth, depth and complexity when moving from lower to higher levels and are supported by a glossary explaining the terms." },
 			"asn:hasProgressionLevel": [
 				"res:acqfLevel01",
 				"res:acqfLevel02",
