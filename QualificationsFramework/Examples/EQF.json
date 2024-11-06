@@ -1,0 +1,147 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:QualificationFramework",
+			"@id": "res:framework",
+			"ceterms:name": { "en": "European Qualifications Framework" },
+			"ceterms:description": { "en": "The European Qualifications Framework for lifelong learning (EQF) aims to improve the transparency, comparability and portability of people’s qualifications. The EQF was set up in 2008 as a common reference framework of qualifications, expressed as learning outcomes at increasing levels of proficiency. The framework serves as a translation device between different qualifications systems and their levels. It is intended to benefit learners, workers, job-seekers, employers, trade unions, education and training providers, qualification recognition bodies, government authorities and international organisations." },
+			"ceterms:hasFacetScheme": [
+				"res:facets"
+			],
+			"asn:hasProgressionModel": [
+				"res:levels"
+			],
+			"ceterms:hasGlossary": [
+				"res:acronyms"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:facets",
+			"ceasn:name": { "Descriptors defining levels in the EQF" },
+			"skos:hasTopConcept": [
+				"res:knowledge",
+				"res:skills",
+				"res:responsibility"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:knowledge",
+			"skos:prefLabel": { "en": "Knowledge" },
+			"skos:definition": { "en": "In the context of the EQF, knowledge is described as theoretical and/or factual." }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:skills",
+			"skos:prefLabel": { "en": "Skills" },
+			"skos:definition": { "en": "In the context of EQF, skills are described as cognitive (involving the use of logical, intuitive and creative thinking) and practical (involving manual dexterity and the use of methods, materials, tools and instruments)." }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:responsibility",
+			"skos:prefLabel": { "en": "Responsibility and autonomy" },
+			"skos:definition": { "en": "In the context of the EQF, responsibility and autonomy is described as the ability of the learner to apply knowledge and skills autonomously and with responsibility." }
+		},
+		{
+			"@type": "asn:ProgressionModel",
+			"@id": "res:levels",
+			"ceasn:name": { "en": "Levels" },
+			"asn:hasProgressionLevel": [
+				"res:level1",
+				"res:level2",
+				"etc"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:level1",
+			"skos:prefLabel": { "en": "Level 1" },
+			"ceterms:facetedDescription": [
+				"res:knowledge-1",
+				"res:skills-1",
+				"res:responsibility-1"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:knowledge-1",
+			"ceasn:competencyText": { "en": "Basic general knowledge." },
+			"ceasn:conceptTerm": [
+				"res:knowledge"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:skills-1",
+			"ceasn:competencyText": { "en": "Basic skills required to carry out simple tasks." },
+			"ceasn:conceptTerm": [
+				"res:skills"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:responsibility-1",
+			"ceasn:competencyText": { "en": "Work or study under direct supervision in a structured context." },
+			"ceasn:conceptTerm": [
+				"res:responsibility"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:level2",
+			"skos:prefLabel": { "en": "Level 2" },
+			"ceterms:facetedDescription": [
+				"res:knowledge-2",
+				"res:skills-2",
+				"res:responsibility-2"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:knowledge-2",
+			"ceasn:competencyText": { "en": "Basic factual knowledge of a field of work or study." },
+			"ceasn:conceptTerm": [
+				"res:knowledge"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:skills-2",
+			"ceasn:competencyText": { "en": "Basic cognitive and practical skills required to use relevant information in order to carry out tasks and solve routine problems using simple rules and tools." },
+			"ceasn:conceptTerm": [
+				"res:skills"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:responsibility-2",
+			"ceasn:competencyText": { "en": "Work or study under supervision with some autonomy." },
+			"ceasn:conceptTerm": [
+				"res:responsibility"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:acronyms",
+			"ceasn:name": { "en": "Glossary" },
+			"skos:hasTopConcept": [
+				"res:abbr1",
+				"res:abbr2",
+				"etc"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:abbr1",
+			"skos:prefLabel": { "en": "Cedefop" },
+			"skos:definition": { "en": "European Centre for the Development of Vocational Training" }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:abbr2",
+			"skos:prefLabel": { "en": "ECVET" },
+			"skos:definition": { "en": "European Credit system for Vocational Education and Training" }
+		}
+	]
+}
