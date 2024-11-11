@@ -161,7 +161,8 @@
 			"ceasn:competencyText": { "en": "Simple knowledge, literacy, and numeracy" },
 			"ceterms:facetType": [
 				"res:facetKnowledge"
-			]
+			],
+			"asn:hasProgressionLevel" : "res:acqfLevel01"
 		},
 		{
 			"@id": "res:skill_01",
@@ -169,7 +170,8 @@
 			"ceasn:competencyText": { "en": "Simple communication, cognitive and practical skills required to follow simple instructions, and use simple, repetitive solutions to address simple problems" },
 			"ceterms:facetType": [
 				"res:facetSkills"
-			]
+			],
+			"asn:hasProgressionLevel" : "res:acqfLevel01"
 		},
 		{
 			"@id": "res:autonomy_01",
@@ -177,7 +179,8 @@
 			"ceasn:competencyText": { "en": "Highly structured, repetitive contexts under close supervision and guidance taking minimal responsibility for self" },
 			"ceterms:facetType": [
 				"res:facetAutonomy"
-			]
+			],
+			"asn:hasProgressionLevel" : "res:acqfLevel01"
 		},
 		{
 			"@id": "res:acqfLevel02",
@@ -196,7 +199,8 @@
 			"ceasn:competencyText": { "en": "Basic knowledge incorporating comprehension and recall of factual and operational knowledge in some areas" },
 			"ceterms:facetType": [
 				"res:facetKnowledge"
-			]
+			],
+			"asn:hasProgressionLevel" : "res:acqfLevel02"
 		},
 		{
 			"@id": "res:skill_02",
@@ -204,7 +208,8 @@
 			"ceasn:competencyText": { "en": "Basic communication, cognitive and practical skills required to use concrete information, ideas and known solutions to address straight forward problems" },
 			"ceterms:facetType": [
 				"res:facetSkills"
-			]
+			],
+			"asn:hasProgressionLevel" : "res:acqfLevel02"
 		},
 		{
 			"@id": "res:autonomy_02",
@@ -212,7 +217,8 @@
 			"ceasn:competencyText": { "en": "Structured contexts under limited supervision and guidance taking limited responsibility for self and group outcomes" },
 			"ceterms:facetType": [
 				"res:facetAutonomy"
-			]
+			],
+			"asn:hasProgressionLevel" : "res:acqfLevel02"
 		}
 	]
 }
