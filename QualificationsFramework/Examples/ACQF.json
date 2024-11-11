@@ -161,9 +161,6 @@
 			"ceasn:competencyText": { "en": "Simple knowledge, literacy, and numeracy" },
 			"ceterms:facetType": [
 				"res:facetKnowledge"
-			],
-			"ceasn:isPartOf": [
-				"res:acqf"
 			]
 		},
 		{
@@ -172,9 +169,6 @@
 			"ceasn:competencyText": { "en": "Simple communication, cognitive and practical skills required to follow simple instructions, and use simple, repetitive solutions to address simple problems" },
 			"ceterms:facetType": [
 				"res:facetSkills"
-			],
-			"ceasn:isPartOf": [
-				"res:acqf"
 			]
 		},
 		{
@@ -183,9 +177,6 @@
 			"ceasn:competencyText": { "en": "Highly structured, repetitive contexts under close supervision and guidance taking minimal responsibility for self" },
 			"ceterms:facetType": [
 				"res:facetAutonomy"
-			],
-			"ceasn:isPartOf": [
-				"res:acqf"
 			]
 		},
 		{
@@ -205,9 +196,6 @@
 			"ceasn:competencyText": { "en": "Basic knowledge incorporating comprehension and recall of factual and operational knowledge in some areas" },
 			"ceterms:facetType": [
 				"res:facetKnowledge"
-			],
-			"ceasn:isPartOf": [
-				"res:acqf"
 			]
 		},
 		{
@@ -216,9 +204,6 @@
 			"ceasn:competencyText": { "en": "Basic communication, cognitive and practical skills required to use concrete information, ideas and known solutions to address straight forward problems" },
 			"ceterms:facetType": [
 				"res:facetSkills"
-			],
-			"ceasn:isPartOf": [
-				"res:acqf"
 			]
 		},
 		{
@@ -227,9 +212,6 @@
 			"ceasn:competencyText": { "en": "Structured contexts under limited supervision and guidance taking limited responsibility for self and group outcomes" },
 			"ceterms:facetType": [
 				"res:facetAutonomy"
-			],
-			"ceasn:isPartOf": [
-				"res:acqf"
 			]
 		}
 	]
