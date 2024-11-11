@@ -153,7 +153,9 @@
 				"res:knowledge_01",
 				"res:skill_01",
 				"res:autonomy_01"
-			]
+			],
+			"asn:inProgressionModel": "res:acqfLevels",
+			"ceterms:preceeds": "res:acqfLevel02"
 		},
 		{
 			"@id": "res:knowledge_01",
@@ -191,7 +193,10 @@
 				"res:knowledge_02",
 				"res:skill_02",
 				"res:autonomy_02"
-			]
+			],
+			"asn:inProgressionModel": "res:acqfLevels",
+			"ceterms:preceededBy": "res:acqfLevel01",
+			"ceterms:preceeds": "etc"
 		},
 		{
 			"@id": "res:knowledge_02",
