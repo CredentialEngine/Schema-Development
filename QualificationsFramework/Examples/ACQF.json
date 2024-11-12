@@ -153,7 +153,9 @@
 				"res:knowledge_01",
 				"res:skill_01",
 				"res:autonomy_01"
-			]
+			],
+			"asn:inProgressionModel": "res:acqfLevels",
+			"ceterms:preceeds": "res:acqfLevel02"
 		},
 		{
 			"@id": "res:knowledge_01",
@@ -162,9 +164,7 @@
 			"ceterms:facetType": [
 				"res:facetKnowledge"
 			],
-			"ceasn:isPartOf": [
-				"res:acqf"
-			]
+			"asn:hasProgressionLevel" : "res:acqfLevel01"
 		},
 		{
 			"@id": "res:skill_01",
@@ -173,9 +173,7 @@
 			"ceterms:facetType": [
 				"res:facetSkills"
 			],
-			"ceasn:isPartOf": [
-				"res:acqf"
-			]
+			"asn:hasProgressionLevel" : "res:acqfLevel01"
 		},
 		{
 			"@id": "res:autonomy_01",
@@ -184,9 +182,7 @@
 			"ceterms:facetType": [
 				"res:facetAutonomy"
 			],
-			"ceasn:isPartOf": [
-				"res:acqf"
-			]
+			"asn:hasProgressionLevel" : "res:acqfLevel01"
 		},
 		{
 			"@id": "res:acqfLevel02",
@@ -197,7 +193,10 @@
 				"res:knowledge_02",
 				"res:skill_02",
 				"res:autonomy_02"
-			]
+			],
+			"asn:inProgressionModel": "res:acqfLevels",
+			"ceterms:preceededBy": "res:acqfLevel01",
+			"ceterms:preceeds": "etc"
 		},
 		{
 			"@id": "res:knowledge_02",
@@ -206,9 +205,7 @@
 			"ceterms:facetType": [
 				"res:facetKnowledge"
 			],
-			"ceasn:isPartOf": [
-				"res:acqf"
-			]
+			"asn:hasProgressionLevel" : "res:acqfLevel02"
 		},
 		{
 			"@id": "res:skill_02",
@@ -217,9 +214,7 @@
 			"ceterms:facetType": [
 				"res:facetSkills"
 			],
-			"ceasn:isPartOf": [
-				"res:acqf"
-			]
+			"asn:hasProgressionLevel" : "res:acqfLevel02"
 		},
 		{
 			"@id": "res:autonomy_02",
@@ -228,9 +223,7 @@
 			"ceterms:facetType": [
 				"res:facetAutonomy"
 			],
-			"ceasn:isPartOf": [
-				"res:acqf"
-			]
+			"asn:hasProgressionLevel" : "res:acqfLevel02"
 		}
 	]
 }

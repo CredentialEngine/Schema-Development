@@ -1,0 +1,98 @@
+{
+    "@context": "http://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "res:mapscqf-eqf",
+            "@type": "ceterms:AlignmentMap",
+            "ceterms:name": {
+                "en": "Comparing Scottish and European Qualifications Frameworks."
+            },
+            "ceterms:description": {
+                "en": "Shows a comparison between qualification levels on the Scottish Credit and Qualifications Framework (SCQF) and the European Qualifications Framework (EQF)."
+            },
+            "ceterms:source": "https://www.sqa.org.uk/sqa/64561.html",
+            "ceasn:creator": "res:SCQF_org",
+            "ceasn:publisher": "res:SCQF_org",
+            "schema:about": [
+                "res:scqf",
+                "res:eqf"
+            ],
+            "ceterms:compares": [
+                "res:scqfLevels",
+                "res:eqfLevels"
+            ],
+            "ceterms:hasPart": [
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level1",
+                    "ceterms:alignmentType": "align:NoMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level2",
+                    "ceterms:alignmentType": "align:NoMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level3",
+                    "ceterms:targetNode": "eqf:level1",
+                    "ceterms:alignmentType": "skos:closeMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level4",
+                    "ceterms:targetNode": "eqf:level2",
+                    "ceterms:alignmentType": "skos:closeMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level5",
+                    "ceterms:targetNode": "eqf:level3",
+                    "ceterms:alignmentType": "skos:closeMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level6",
+                    "ceterms:targetNode": "eqf:level3",
+                    "ceterms:alignmentType": "skos:closeMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level7",
+                    "ceterms:targetNode": "eqf:level5",
+                    "ceterms:alignmentType": "skos:broadMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level8",
+                    "ceterms:targetNode": "eqf:level5",
+                    "ceterms:alignmentType": "skos:broadMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level9",
+                    "ceterms:targetNode": "eqf:level6",
+                    "ceterms:alignmentType": "skos:broadMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level10",
+                    "ceterms:targetNode": "eqf:level6",
+                    "ceterms:alignmentType": "skos:broadMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level11",
+                    "ceterms:targetNode": "eqf:level7",
+                    "ceterms:alignmentType": "skos:closeMatch"
+                },
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "scqf:level12",
+                    "ceterms:targetNode": "eqf:level8",
+                    "ceterms:alignmentType": "skos:closeMatch"
+                }
+            ]
+        }
+    ]
+}
