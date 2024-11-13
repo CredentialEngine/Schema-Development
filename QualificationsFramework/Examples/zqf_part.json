@@ -1,0 +1,376 @@
+{
+    "@context": "http://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "res:zcqf",
+            "@type": "ceterms:QualificationsFramework",
+            "ceterms:name": {
+                "en": "Zambia Qualifications Framework Level Descriptors"
+            },
+            "ceterms:alternateName": {
+                "en": "ZQF"
+            },
+            "ceasn:sourceDocumentation": "https://drive.google.com/file/d/14W5cvFZytsoQ3iJLhYsT1bfOSPt-RUOv",
+            "ceterms:description": {
+                "en": "The Zambia Qualifications Framework (ZQF) is the NQF for Zambia. It is a single integrated system comprising three (3) co-ordinated qualifications sub-framework"
+            },
+            "ceterms:hasGlossary": [
+                "res:zqfContexts"
+            ],
+            "ceterms:hasFacetScheme": [
+                "res:zqfFacets"
+            ],
+            "asn:hasProgressionModel": [
+                "res:zqfLevels"
+            ]
+        },
+        {
+            "@id": "res:zqfSubs",
+            "@type": "skos:ConceptScheme",
+            "ceasn:name": {
+                "en": "Qualifications sub-frameworks"
+            },
+            "ceasn:description": {
+                "en": "Descriptors for the three (3) co-ordinated qualifications sub-frameworks,that the Zambia Qualifications Framework comprises."
+            },
+            "skos:hasTopConcept": [
+                "res:zqfGen",
+                "res:zqfTEVET",
+                "res:zqfHE",
+                "res:zqfCPD"
+            ]
+        },
+        {
+            "@id": "res:zqfGen",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {
+                "en": "General and further education and training"
+            },
+            "skos:altLabel": {
+                "en": "General Education"
+            },
+            "skos:definition": {
+                "en": "General and further education and training, contemplated in the Education Act No.23 of 2011."
+            },
+            "skos:inScheme": [
+                "res:zqfSubs"
+            ],
+            "skos:topConceptOf": [
+                "res:zqfSubs"
+            ],
+            "ceterms:precedes": "res:zqfTEVET"
+        },
+        {
+            "@id": "res:zqfTEVET",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {
+                "en": "Trades and Occupations"
+            },
+            "skos:altLabel": {
+                "en": "TEVET"
+            },
+            "skos:definition": {
+                "en": "Trades and Occupations, contemplated in the Technical Education Vocational Entrepreneurship Training (TEVET) Act No. 13 of 1998 and the Apprenticeship Act, Cap 275."
+            },
+            "skos:inScheme": [
+                "res:zqfSubs"
+            ],
+            "skos:topConceptOf": [
+                "res:zqfSubs"
+            ],
+            "ceterms:precededBy": "res:zqfGen",
+            "ceterms:precedes": "res:zqfHE"
+        },
+        {
+            "@id": "res:zqfHE",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {
+                "en": "Higher Education"
+            },
+            "skos:definition": {
+                "en": "Higher Education, contemplated in the University Act No. 11 of 1999 and the Higher Education Act No. 4 of 2013."
+            },
+            "skos:inScheme": [
+                "res:zqfSubs"
+            ],
+            "skos:topConceptOf": [
+                "res:zqfSubs"
+            ],
+            "ceterms:precededBy": "res:zqfTEVET",
+            "ceterms:precedes": "res:zqfCPD"
+        },
+        {
+            "@id": "res:zqfCPD",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {
+                "en": "Continuous Professional Development"
+            },
+            "skos:altLabel": {
+                "en": "CPD"
+            },
+            "skos:definition": {
+                "en": "Continuous Professional Development, that cuts across the first three."
+            },
+            "skos:inScheme": [
+                "res:zqfSubs"
+            ],
+            "skos:topConceptOf": [
+                "res:zqfSubs"
+            ],
+            "ceterms:precededBy": "res:zqfHE"
+        },
+        {
+            "@id": "res:zqfFacets",
+            "@type": "skos:ConceptScheme",
+            "etc": "etc"
+        },
+        {
+            "@id": "res:zqfLevels",
+            "@type": "asn:ProgressionModel",
+            "ceasn:name": {
+                "en": "ZQF Level Descriptors"
+            },
+            "ceasn:definition": {
+                "en": ""
+            },
+            "asn:hasProgressionLevel": [
+                "res:zqfLevel01",
+                "res:zqfLevel02A",
+                "res:zqfLevel02B",
+                "res:zqfLevel03",
+                "res:zqfLevel04",
+                "res:zqfLevel05",
+                "res:zqfLevel06",
+                "res:zqfLevel07",
+                "res:zqfLevel08",
+                "res:zqfLevel09",
+                "res:zqfLevel10"
+            ]
+        },
+        {
+            "@id": "res:zqfLevel01",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "1"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Primary Education - Grade 7"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd1-1",
+                "res:fd1-2",
+                "res:fd1-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfGen",
+            "ceterms:precedes": "res:zqfLevel02A"
+        },
+        {
+            "@id": "res:zqfLevel02A",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "2 A"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Junior Secondary Education - Grade 9"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd2a-1",
+                "res:fd2a-2",
+                "res:fd2a-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfGen",
+            "ceterms:precededBy": "res:zqfLevel01",
+            "ceterms:precedes": "res:zqfLevel02B"
+        },
+        {
+            "@id": "res:zqfLevel02B",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "2 B"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Senior Secondary Education - Grade 12"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd2b-1",
+                "res:fd2b-2",
+                "res:fd2b-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfGen",
+            "ceterms:precededBy": "res:zqfLevel02A",
+            "ceterms:precedes": "res:zqfLevel03"
+        },
+        {
+            "@id": "res:zqfLevel03",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "3"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Level 3 Certificate"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd3-1",
+                "res:fd3-2",
+                "res:fd3-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfTEVET",
+            "ceterms:precededBy": "res:zqfLevel02B",
+            "ceterms:precedes": "res:zqfLevel04"
+        },
+        {
+            "@id": "res:zqfLevel04",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "4"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Level 4 Certificate"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd4-1",
+                "res:fd4-2",
+                "res:fd4-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfTEVET",
+            "ceterms:precededBy": "res:zqfLevel03",
+            "ceterms:precedes": "res:zqfLevel05"
+        },
+        {
+            "@id": "res:zqfLevel05",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "5"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Level 5 Certificate"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd5-1",
+                "res:fd5-2",
+                "res:fd5-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfTEVET",
+            "ceterms:precededBy": "res:zqfLevel04",
+            "ceterms:precedes": "res:zqfLevel06"
+        },
+        {
+            "@id": "res:zqfLevel06",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "6"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Diploma"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd6-1",
+                "res:fd6-2",
+                "res:fd6-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfTEVET",
+            "ceterms:precededBy": "res:zqfLevel05",
+            "ceterms:precedes": "res:zqfLevel07"
+        },
+        {
+            "@id": "res:zqfLevel07",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "7"
+            },
+            "ceterms:indicativeCredentialType": [
+                {
+                    "ceterms:name": {
+                        "en": "Bachelors' Degree (Ordinary)"
+                    }
+                },
+                {
+                    "ceterms:name": {
+                        "en": "Bachelors' Degree (Honours)"
+                    }
+                }
+            ],
+            "ceterms:facetedDescription": [
+                "res:fd7-1",
+                "res:fd7-2",
+                "res:fd7-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfHE",
+            "ceterms:precededBy": "res:zqfLevel06",
+            "ceterms:precedes": "res:zqfLevel08"
+        },
+        {
+            "@id": "res:zqfLevel08",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "8"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Post-Graduate Diploma"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd8-1",
+                "res:fd8-2",
+                "res:fd8-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfHE",
+            "ceterms:precededBy": "res:zqfLevel08",
+            "ceterms:precedes": "res:zqfLevel09"
+        },
+        {
+            "@id": "res:zqfLevel09",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "9"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Master’s Degree"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd9-1",
+                "res:fd9-2",
+                "res:fd9-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfHE",
+            "ceterms:precededBy": "res:zqfLevel08",
+            "ceterms:precedes": "res:zqfLevel10"
+        },
+        {
+            "@id": "res:zqfLevel10",
+            "@type": "asn:ProgressionLevel",
+            "skos:prefLabel": {
+                "en": "10"
+            },
+            "ceterms:indicativeCredentialType": {
+                "ceterms:name": {
+                    "en": "Doctorate Degree"
+                }
+            },
+            "ceterms:facetedDescription": [
+                "res:fd10-1",
+                "res:fd10-2",
+                "res:fd10-3"
+            ],
+            "ceasn:conceptTerm": "res:zqfHE",
+            "ceterms:precededBy": "res:zqfLevel09"
+        }
+    ]
+}
