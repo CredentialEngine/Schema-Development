@@ -74,7 +74,7 @@
 			"@type": "skos:ConceptScheme",
 			"ceasn:name": { "en": "Characteristics" },
 			"ceasn:description": { "en": "Each level descriptor has five characteristics which provide a reference point for determining the level of a qualification, learning programme, module and unit of learning or for the recognition of prior learning (RPL). They are not intended to give precise or comprehensive statements of required learning for individual qualifications." },
-			"ceasn:hasTopConcept": [
+			"skos:hasTopConcept": [
 				"res:facetKnowledge+Understanding",
 				"res:facetPractice",
 				"res:facetGenericCognitiveSkills",
