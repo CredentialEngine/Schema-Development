@@ -5,6 +5,7 @@
 			"@id": "res:framework",
 			"ceterms:name": { "en": "European Qualifications Framework" },
 			"ceterms:description": { "en": "The European Qualifications Framework for lifelong learning (EQF) aims to improve the transparency, comparability and portability of people’s qualifications. The EQF was set up in 2008 as a common reference framework of qualifications, expressed as learning outcomes at increasing levels of proficiency. The framework serves as a translation device between different qualifications systems and their levels. It is intended to benefit learners, workers, job-seekers, employers, trade unions, education and training providers, qualification recognition bodies, government authorities and international organisations." },
+			"ceterms:source": "https://europass.europa.eu/en/europass-digital-tools/european-qualifications-framework",
 			"ceterms:hasFacetScheme": [
 				"res:facets"
 			],
@@ -18,7 +19,7 @@
 		{
 			"@type": "skos:ConceptScheme",
 			"@id": "res:facets",
-			"ceasn:name": { "Descriptors defining levels in the EQF" },
+			"ceasn:name": { "en": "Descriptors defining levels in the EQF" },
 			"skos:hasTopConcept": [
 				"res:knowledge",
 				"res:skills",
@@ -29,19 +30,25 @@
 			"@type": "skos:Concept",
 			"@id": "res:knowledge",
 			"skos:prefLabel": { "en": "Knowledge" },
-			"skos:definition": { "en": "In the context of the EQF, knowledge is described as theoretical and/or factual." }
+			"skos:definition": { "en": "In the context of the EQF, knowledge is described as theoretical and/or factual." },
+			"skos:inScheme": "res:facets",
+			"skos:topConceptOf": "res:facets"
 		},
 		{
 			"@type": "skos:Concept",
 			"@id": "res:skills",
 			"skos:prefLabel": { "en": "Skills" },
-			"skos:definition": { "en": "In the context of EQF, skills are described as cognitive (involving the use of logical, intuitive and creative thinking) and practical (involving manual dexterity and the use of methods, materials, tools and instruments)." }
+			"skos:definition": { "en": "In the context of EQF, skills are described as cognitive (involving the use of logical, intuitive and creative thinking) and practical (involving manual dexterity and the use of methods, materials, tools and instruments)." },
+			"skos:inScheme": "res:facets",
+			"skos:topConceptOf": "res:facets"
 		},
 		{
 			"@type": "skos:Concept",
 			"@id": "res:responsibility",
 			"skos:prefLabel": { "en": "Responsibility and autonomy" },
-			"skos:definition": { "en": "In the context of the EQF, responsibility and autonomy is described as the ability of the learner to apply knowledge and skills autonomously and with responsibility." }
+			"skos:definition": { "en": "In the context of the EQF, responsibility and autonomy is described as the ability of the learner to apply knowledge and skills autonomously and with responsibility." },
+			"skos:inScheme": "res:facets",
+			"skos:topConceptOf": "res:facets"
 		},
 		{
 			"@type": "asn:ProgressionModel",
@@ -57,6 +64,7 @@
 			"@type": "asn:ProgressionLevel",
 			"@id": "res:level1",
 			"skos:prefLabel": { "en": "Level 1" },
+			"ceterms:precedes": "res:level2",
 			"ceterms:facetedDescription": [
 				"res:knowledge-1",
 				"res:skills-1",
@@ -67,6 +75,7 @@
 			"@type": "ceasn:Competency",
 			"@id": "res:knowledge-1",
 			"ceasn:competencyText": { "en": "Basic general knowledge." },
+			"asn:hasProgressionLevel": "res:level1",
 			"ceasn:conceptTerm": [
 				"res:knowledge"
 			]
@@ -75,6 +84,7 @@
 			"@type": "ceasn:Competency",
 			"@id": "res:skills-1",
 			"ceasn:competencyText": { "en": "Basic skills required to carry out simple tasks." },
+			"asn:hasProgressionLevel": "res:level1",
 			"ceasn:conceptTerm": [
 				"res:skills"
 			]
@@ -83,6 +93,7 @@
 			"@type": "ceasn:Competency",
 			"@id": "res:responsibility-1",
 			"ceasn:competencyText": { "en": "Work or study under direct supervision in a structured context." },
+			"asn:hasProgressionLevel": "res:level1",
 			"ceasn:conceptTerm": [
 				"res:responsibility"
 			]
@@ -90,6 +101,8 @@
 		{
 			"@type": "asn:ProgressionLevel",
 			"@id": "res:level2",
+			"ceterms:precededBy": "level1",
+			"ceterms:precedes": "level3",
 			"skos:prefLabel": { "en": "Level 2" },
 			"ceterms:facetedDescription": [
 				"res:knowledge-2",
@@ -101,6 +114,7 @@
 			"@type": "ceasn:Competency",
 			"@id": "res:knowledge-2",
 			"ceasn:competencyText": { "en": "Basic factual knowledge of a field of work or study." },
+			"asn:hasProgressionLevel": "res:level2",
 			"ceasn:conceptTerm": [
 				"res:knowledge"
 			]
@@ -109,6 +123,7 @@
 			"@type": "ceasn:Competency",
 			"@id": "res:skills-2",
 			"ceasn:competencyText": { "en": "Basic cognitive and practical skills required to use relevant information in order to carry out tasks and solve routine problems using simple rules and tools." },
+			"asn:hasProgressionLevel": "res:level2",
 			"ceasn:conceptTerm": [
 				"res:skills"
 			]
@@ -117,6 +132,7 @@
 			"@type": "ceasn:Competency",
 			"@id": "res:responsibility-2",
 			"ceasn:competencyText": { "en": "Work or study under supervision with some autonomy." },
+			"asn:hasProgressionLevel": "res:level2",
 			"ceasn:conceptTerm": [
 				"res:responsibility"
 			]
@@ -135,13 +151,17 @@
 			"@type": "skos:Concept",
 			"@id": "res:abbr1",
 			"skos:prefLabel": { "en": "Cedefop" },
-			"skos:definition": { "en": "European Centre for the Development of Vocational Training" }
+			"skos:definition": { "en": "European Centre for the Development of Vocational Training" },
+			"skos:inScheme": "res:acroynms",
+			"skos:topConceptOf": "res:acronyms"
 		},
 		{
 			"@type": "skos:Concept",
 			"@id": "res:abbr2",
 			"skos:prefLabel": { "en": "ECVET" },
-			"skos:definition": { "en": "European Credit system for Vocational Education and Training" }
+			"skos:definition": { "en": "European Credit system for Vocational Education and Training" },
+			"skos:inScheme": "res:acroynms",
+			"skos:topConceptOf": "res:acronyms"
 		}
 	]
 }
