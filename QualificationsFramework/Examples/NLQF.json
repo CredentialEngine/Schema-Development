@@ -1,0 +1,50 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:QualificationFramework",
+			"@id": "res:framework",
+			"ceterms:name": { 
+				"nl-nl": "Nederlandskwalificatieraamwerk",
+				"en": "Dutch National Qualifications Framework" 
+			},
+			"ceterms:description": {
+				"en": "The Dutch Qualifications Framework (NLQF) is a way of describing Dutch qualification levels. It is a systematic organisation of all existing qualification levels in The Netherlands, from Level 1 basic education to the Master’s degree at level 7 and a Doctorate's degree at level 8. Qualifications are classified in NLQF levels and are given a level indication."
+			},
+			"ceterms:codedNotation": "NLQF",
+			"ceasn:creator": [
+				"res:ministry"
+			],
+			"asn:hasProgressionModel": [
+				"res:levels"
+			]
+		},
+		{
+			"@type": "ceterms:Organization",
+			"@id": "res:ministry",
+			"ceterms:name": { "en": "Ministry of Education, Culture and Science of the Netherlands" }
+		},
+		{
+			"@type": "asn:ProgressionModel",
+			"@id": "res:levels",
+			"ceasn:name": { "en": "NLQF Levels" },
+			"ceasn:description": { "en": "The levels are based on descriptions of what someone knows and is able to do after completion of a learning process, regardless of where and, to an extent, in what timeframe this took place. These descriptions of the levels of knowledge, skills, autonomy and responsibility are referred to as learning outcomes. Higher general secondary education (Havo), for example, is classified at NLQF Level 4 and Master programmes at NLQF Level 7." },
+			"asn:hasProgressionLevel": [
+				"res:levelentry",
+				"res:level1",
+				"etc"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:levelentry",
+			"skos:prefLabel": { "en": "Entry Level" },
+			"skos:definition": { "en": "Basic Education 1 (for adults)" }
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:level1",
+			"skos:prefLabel": { "en": "NLQF Level 1" },
+			"skos:definition": { "en": "Basic Education 2 (for adults); pre-vocational secondary education - basic vocational pathway (vmbo bb); VET level 1 (MBO1)" }
+		}
+	]
+}
