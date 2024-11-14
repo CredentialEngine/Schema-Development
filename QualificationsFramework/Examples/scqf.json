@@ -162,7 +162,7 @@
 			"@id": "res:facetKnowledge+Understanding_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -171,7 +171,7 @@
 			"@id": "res:facetPractice_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -181,7 +181,7 @@
 			"@id": "res:facetGenericCognitiveSkills_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -190,7 +190,7 @@
 			"@id": "res:facetC+ICT+Numeracy_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -199,7 +199,7 @@
 			"@id": "res:facetAutonomy_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -223,7 +223,7 @@
 			"@id": "res:facetKnowledge+Understanding_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Demonstrate and/or work with: • Basic knowledge. • Simple facts and ideas." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -232,7 +232,7 @@
 			"@id": "res:facetPractice_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Relate knowledge to a few simple everyday contexts with prompting. • Use a few very simple skills. • Carry out, with guidance, a few familiar tasks. • Use, under supervision, basic tools and materials." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -242,7 +242,7 @@
 			"@id": "res:facetGenericCognitiveSkills_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Use rehearsed stages for solving problems. • Operate in personal and/or everyday contexts. • Take some account, with prompting, of identified consequences of action." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -251,7 +251,7 @@
 			"@id": "res:facetC+ICT+Numeracy_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Use simple skills with assistance, for example: • Produce and respond to a limited range of very simple written and oral communication in familiar/routine contexts. • Carry out a limited range of simple tasks to process and access information. • Use a limited range of simple numerical and graphical data in familiar and everyday contexts." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -260,7 +260,7 @@
 			"@id": "res:facetAutonomy_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Work alone or with others on simple routine, familiar tasks under frequent directive supervision. • Identify, given simple criteria, some strengths and/or weaknesses of the work." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -285,7 +285,7 @@
 			"@id": "res:facetKnowledge+Understanding_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Demonstrate and/or work with: • Basic knowledge. • Simple facts and ideas in, and associated with, a subject/discipline/sector." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -294,7 +294,7 @@
 			"@id": "res:facetPractice_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Relate knowledge to personal and/or everyday contexts with some prompting. • Use a few basic, routine skills to undertake familiar and routine tasks. • Complete pre-planned tasks. • Use, with guidance, basic tools and materials safely and effectively." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -304,7 +304,7 @@
 			"@id": "res:facetGenericCognitiveSkills_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Identify with some prompting a process to deal with a situation or issue. • Operate in familiar contexts using given criteria. • Take account of some identified consequences of action." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -313,7 +313,7 @@
 			"@id": "res:facetC+ICT+Numeracy_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Use simple skills, for example: • Produce and respond to simple written and oral communication in familiar/routine contexts. • Carry out simple tasks to process and access information. • Use simple numerical and graphical data in everyday contexts." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -322,7 +322,7 @@
 			"@id": "res:facetAutonomy_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Work alone or with others on simple tasks under frequent directive supervision. • Participate in the setting of goals, timelines, etc. • Participate in the review of completed work and the identification of ways of improving practices and processes. • Identify, given simple criteria, own strengths and weaknesses relative to the work." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -347,7 +347,7 @@
 			"@id": "res:facetKnowledge+Understanding_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Demonstrate and/or work with: • Basic knowledge. • Some simple facts and ideas in, about, and associated with, a subject/discipline/sector. • Knowledge of basic processes, materials and terminology." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -356,7 +356,7 @@
 			"@id": "res:facetPractice_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Relate knowledge to personal and/or practical contexts. • Use a few skills to complete straightforward tasks with some non-routine elements. • Prepare for familiar and routine tasks. • Select and use, with guidance, appropriate tools and materials safely and effectively." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -366,7 +366,7 @@
 			"@id": "res:facetGenericCognitiveSkills_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Use, with guidance, given stages of a process to deal with a problem, situation or issue. • Operate in straightforward contexts. • Identify and/or take account of some of the consequences of action/inaction." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -375,7 +375,7 @@
 			"@id": "res:facetC+ICT+Numeracy_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Use some routine skills, for example: • Produce and respond to simple but detailed written and oral communication in familiar contexts. • Use the basic features of familiar ICT applications to process and obtain information. • Use basic numerical and graphical data in straightforward and familiar contexts." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -384,7 +384,7 @@
 			"@id": "res:facetAutonomy_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Work alone or with others on tasks with regular, directive supervision. • Contribute to the setting of goals, timelines, etc. • Contribute to the review of completed work and offer suggestions for improving practices and processes. • Identify own strengths and weaknesses relative to the work." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
