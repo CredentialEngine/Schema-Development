@@ -1,0 +1,246 @@
+{
+	"@graph": [
+		{
+			"@type": "ceterms:QualificationFramework",
+			"@id": "res:framework",
+			"ceterms:name": { 
+				"dz-bt": "འབྲུག་གི་ཤེས་ཚད་གཞི་བཀོད། ༢༠༢༣",
+				"en": "Bhutan Qualifications Framework 2023" 
+			},
+			"ceterms:description": {
+				"en": "Bhutan Qualifications Framework (BQF) is an integrated national framework that outlines all types of qualification in Bhutan. As an established and nationally accepted instrument, the BQF has been benchmarked against international practices in terms of standards.\nThe BQF aims to recognize all forms of learning systems, including formal, non-formal, and informal learning. It acknowledges technological advancements and recognizes contemporary modes of delivery.\nThe BQF outlines various Bhutanese qualifications to help learners, education and training providers, employing agencies, and the public understand the qualifications and related pathways across various education sectors."
+			},
+			"ceterms:codedNotation": "BQF",
+			"ceasn:publisher": [
+				"res:publisher1",
+				"res:publisher2",
+				"res:publisher3"
+			],
+			"ceterms:identifier": [
+				{
+					"@type": "ceterms:IdentifierValue",
+					"ceterms:identifierTypeName": { "en": "ISBN" },
+					"ceterms:identifierValueCode": "978-99980-41-22-6"
+				}
+			],
+			"ceterms:hasFacetScheme": [
+				"res:levelfacets"
+			],
+			"asn:hasProgressionModel": [
+				"res:leveldescriptors"
+			],
+			"ceterms:hasGlossary": [
+				"res:abbreviations",
+				"res:glossary"
+			]
+		},
+		{
+			"@type": "ceterms:Organization",
+			"@id": "res:publisher1",
+			"ceterms:name": {
+				"dz-bt": "འབྲུག་ཤེས་ཚད་དང་ཁྱད་རིག་ངོ་སྦྱོར་དབང་འཛིན།",
+				"en": "Bhutan Qualifications & Professionals Certification Authority"
+			},
+			"ceterms:subjectWebpage": "www.bqpca.gov.bt"
+		},
+		{
+			"@type": "ceterms:Organization",
+			"@id": "res:publisher2",
+			"ceterms:name": {
+				"en": "Ministry of Education & Skills Development"
+			}
+		},
+		{
+			"@type": "ceterms:Organization",
+			"@id": "res:publisher3",
+			"ceterms:name": {
+				"en": "Royal Government of Bhutan"
+			}
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:levelfacets",
+			"skos:hasTopConcept": [
+				"res:knowledge",
+				"res:skills",
+				"res:values",
+				"res:application"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:knowledge",
+			"skos:prefLabel": { "en": "Knowledge" },
+			"skos:definition": { "en": "The knowledge domain of the BQF describes the expected level of knowledge and understanding for each qualification level." }
+		
+		{
+			"@type": "skos:Concept",
+			"@id": "res:skills",
+			"skos:prefLabel": { "en": "Skills" },
+			"skos:definition": { "en": "The skills domain in this framework outlines the types, ranges, and complexities of skills that a learner is expected to demonstrate at each level." }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:values",
+			"skos:prefLabel": { "en": "Values" },
+			"skos:definition": { "en": "The values domain in the BQF describes what a learner is expected to demonstrate at each level in terms of civic sense, sense of community, human dignity and self-efficacy." }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:application",
+			"skos:prefLabel": { "en": "Application" },
+			"skos:definition": { "en": "The application domain in this framework describes how a learner can combine the knowledge, skills, and values domains and apply them at each level." }
+		},
+		{
+			"@type": "asn:ProgressionModel",
+			"@id": "res:leveldescriptors",
+			"asn:hasProgressionLevel": [
+				"res:level8",
+				"res:level7",
+				"etc"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:level8",
+			"skos:prefLabel": { "en": "Level 8" },
+			"ceterms:facetedDescription": [
+				"res:knowledge-8A",
+				"res:skills-8A",
+				"res:skills-8B",
+				"res:skills-8C",
+				"res:values-8A",
+				"res:values-8B",
+				"res:values-8C",
+				"res:application-8A",
+				"res:application-8B",
+				"res:application-8C",
+			],
+			"skos:notation": "8"
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:knowledge-8A",
+			"ceasn:competencyText": { "en": "Knowledge that is substantial in broad areas and in-depth in specialised subject areas." },
+			"ceasn:conceptTerm": [
+				"res:knowledge"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:skills-8A",
+			"ceasn:competencyText": { "en": "Demonstrate skills that involve applying expert and advanced processes to highly complex, diverse and emergent tasks or research." },
+			"ceasn:conceptTerm": [
+				"res:skills"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:skills-8B",
+			"ceasn:competencyText": { "en": "Demonstrate skills that involve formulating and testing of theories and processes to resolve significant, highly complex, abstract and emerging issues for the creation of new knowledge." },
+			"ceasn:conceptTerm": [
+				"res:skills"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:skills-8C",
+			"ceasn:competencyText": { "en": "Demonstrate skills that involve communicating research findings in the field of expertise and conveying ideas effectively and coherently to peers." },
+			"ceasn:conceptTerm": [
+				"res:skills"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:values-8A",
+			"ceasn:competencyText": { "en": "Demonstrate values that involve sustained awareness of self, others, and global character; respect for divergent views of norms and values; respect for diversity and interdependence with profound belief system; and be exemplary service to humanity and well-being." },
+			"ceasn:conceptTerm": [
+				"res:values"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:values-8B",
+			"ceasn:competencyText": { "en": "Demonstrate values that involve appreciation of complex and potentially divergent ethical standards and works to resolve these and tackle emerging ethical issues." },
+			"ceasn:conceptTerm": [
+				"res:values"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:values-8C",
+			"ceasn:competencyText": { "en": "Demonstrate values that involve sustained commitment to professional integrity, knowledge creation, resilience, and demonstrate high entrepreneurial and intellectual flexibility." },
+			"ceasn:conceptTerm": [
+				"res:values"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:application-8A",
+			"ceasn:competencyText": { "en": "Applied in contexts that involve highly complex tasks, specialised with new and emerging aspects." },
+			"ceasn:conceptTerm": [
+				"res:application"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:application-8B",
+			"ceasn:competencyText": { "en": "Applied in contexts that involve high level of autonomy and self-direction with authoritative and expert judgement." },
+			"ceasn:conceptTerm": [
+				"res:application"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:application-8C",
+			"ceasn:competencyText": { "en": "Applied in contexts that involve significant responsibility for self, others and outcomes, and for challenging new knowledge and ideas." },
+			"ceasn:conceptTerm": [
+				"res:application"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:acronyms",
+			"ceasn:name": { "en": "Acronyms" },
+			"skos:hasTopConcept": [
+				"res:abbr1",
+				"res:abbr2",
+				"etc"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:abbr1",
+			"skos:prefLabel": { "en": "Advanced Learning Course" },
+			"skos:altLabel": { "en": "ALC" }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:abbr2",
+			"skos:prefLabel": { "en": "Bhutan Certificate for Secondary Education" },
+			"skos:altLabel": { "en": "BCSE" }
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:glossary",
+			"ceasn:name": { "en": "Glossary" },
+			"skos:hasTopConcept": [
+				"res:glossary1",
+				"res:glossary2",
+				"etc"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:glossary1",
+			"skos:prefLabel": { "en": "Accreditation of a qualification" },
+			"skos:definition": { "en": "Accreditation of a qualification means approval by the competent authority that the qualification meets the requirements of Bhutan Qualifications Framework (BQF) and any quality standards set by the relevant competent body." }
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:glossary2",
+			"skos:prefLabel": { "en": "Approved providers" },
+			"skos:definition": { "en": "Approved providers are those approved by the competent authority based on the quality standards within the respective sector. These providers deliver programmes leading to an accredited BQF qualification." }
+		}
+	]
+}
