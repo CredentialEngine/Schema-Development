@@ -42,8 +42,8 @@
 		{
 			"@id": "res:scqfGlossary",
 			"@type": "skos:ConceptScheme",
-			"ceterms:name": { "en": "SCQF Glossary" },
-			"ceterms:description": { "en": "Following an extensive and rigorous review process, the SCQF Level Descriptors were revised in 2012. This glossary provides an explanation of terms used in describing them. Consultation during the review indicated a general consensus amongst users and Practitioners that a glossary of key terminology used in the Descriptors would be extremely helpful, serving to assist and clarify interpretation in context. This glossary draws on pre-existing SCQF glossaries, standard dictionary definitions and, crucially, the context in which the term is being used. It is designed as a pragmatic tool to assign meanings to words in a highly specific context - that of the SCQF Level Descriptors. As such, its definitions are not absolute; rather, they are intended to amplify and decode the Descriptors. The review was conducted on the basis that any change to the Descriptors must not be made simply for its own sake. This has had implications for the glossary which, in seeking to standardise and explain usage within the Descriptors, works with the grain of terms already in use rather than import new ones which could, potentially, destabilise the Descriptors. The glossary is not comprehensive: only the terms which require contextualisation, explanation or mitigation regarding their use or meaning in the context of the SCQF Level Descriptors have been included. However, further terms could be added in a subsequent edition, subject to demand. In using the glossary four key factors should be kept in mind: • the Level Descriptors are for guidance only - it is not expected that every point will necessarily be covered; • context is absolutely key - much depends on the focus of the Characteristic and/or Level Descriptor in which the term is applied; • the terms are used in a broadly linear manner from least to most advanced across the Level Descriptors for each Characteristic, but no term is exclusively the domain of one particular level; and • from the point of view of the terminology used, each Characteristic is a separate strand and the sequencing described in the glossary does not automatically work between the Characteristics." },
+			"ceasn:name": { "en": "SCQF Glossary" },
+			"ceasn:description": { "en": "Following an extensive and rigorous review process, the SCQF Level Descriptors were revised in 2012. This glossary provides an explanation of terms used in describing them. Consultation during the review indicated a general consensus amongst users and Practitioners that a glossary of key terminology used in the Descriptors would be extremely helpful, serving to assist and clarify interpretation in context. This glossary draws on pre-existing SCQF glossaries, standard dictionary definitions and, crucially, the context in which the term is being used. It is designed as a pragmatic tool to assign meanings to words in a highly specific context - that of the SCQF Level Descriptors. As such, its definitions are not absolute; rather, they are intended to amplify and decode the Descriptors. The review was conducted on the basis that any change to the Descriptors must not be made simply for its own sake. This has had implications for the glossary which, in seeking to standardise and explain usage within the Descriptors, works with the grain of terms already in use rather than import new ones which could, potentially, destabilise the Descriptors. The glossary is not comprehensive: only the terms which require contextualisation, explanation or mitigation regarding their use or meaning in the context of the SCQF Level Descriptors have been included. However, further terms could be added in a subsequent edition, subject to demand. In using the glossary four key factors should be kept in mind: • the Level Descriptors are for guidance only - it is not expected that every point will necessarily be covered; • context is absolutely key - much depends on the focus of the Characteristic and/or Level Descriptor in which the term is applied; • the terms are used in a broadly linear manner from least to most advanced across the Level Descriptors for each Characteristic, but no term is exclusively the domain of one particular level; and • from the point of view of the terminology used, each Characteristic is a separate strand and the sequencing described in the glossary does not automatically work between the Characteristics." },
             "skos:note": {"en": "USING THE DEFINITE OR INDEFINITE ARTICLE: When applied to Characteristic 1: Knowledge and understanding, ie specific knowledge, the Level Descriptors refer to 'the' subject/discipline/sector. When applied to Characteristic 2: Practice: applied knowledge, skills and understanding, the Level Descriptors refer to 'the' subject/discipline/sector. BUT: When applied to Characteristic 3: Generic cognitive skills, ie generic skills and knowledge, the Level Descriptors refer to 'a' subject/discipline/sector. When applied to Characteristic 4: Communication, ICT and numeracy skills, the Level Descriptors refer to 'a' subject/discipline/sector. When applied to Characteristic 5: Autonomy, accountability and working with others, the Level Descriptors refer to 'a' subject/discipline/sector."},
 			"skos:hasTopConcept": [
 				"res:scqfGlossary_simple",
@@ -74,7 +74,7 @@
 			"@type": "skos:ConceptScheme",
 			"ceasn:name": { "en": "Characteristics" },
 			"ceasn:description": { "en": "Each level descriptor has five characteristics which provide a reference point for determining the level of a qualification, learning programme, module and unit of learning or for the recognition of prior learning (RPL). They are not intended to give precise or comprehensive statements of required learning for individual qualifications." },
-			"ceasn:hasTopConcept": [
+			"skos:hasTopConcept": [
 				"res:facetKnowledge+Understanding",
 				"res:facetPractice",
 				"res:facetGenericCognitiveSkills",
@@ -162,7 +162,7 @@
 			"@id": "res:facetKnowledge+Understanding_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -171,7 +171,7 @@
 			"@id": "res:facetPractice_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -181,7 +181,7 @@
 			"@id": "res:facetGenericCognitiveSkills_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -190,7 +190,7 @@
 			"@id": "res:facetC+ICT+Numeracy_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -199,7 +199,7 @@
 			"@id": "res:facetAutonomy_01",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "SCQF Level 1 recognises learning development and achievement that ranges from participation in experiential situations to the achievement of basic tasks, with varying degrees of support." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel01"
@@ -223,7 +223,7 @@
 			"@id": "res:facetKnowledge+Understanding_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Demonstrate and/or work with: • Basic knowledge. • Simple facts and ideas." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -232,7 +232,7 @@
 			"@id": "res:facetPractice_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Relate knowledge to a few simple everyday contexts with prompting. • Use a few very simple skills. • Carry out, with guidance, a few familiar tasks. • Use, under supervision, basic tools and materials." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -242,7 +242,7 @@
 			"@id": "res:facetGenericCognitiveSkills_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Use rehearsed stages for solving problems. • Operate in personal and/or everyday contexts. • Take some account, with prompting, of identified consequences of action." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -251,7 +251,7 @@
 			"@id": "res:facetC+ICT+Numeracy_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Use simple skills with assistance, for example: • Produce and respond to a limited range of very simple written and oral communication in familiar/routine contexts. • Carry out a limited range of simple tasks to process and access information. • Use a limited range of simple numerical and graphical data in familiar and everyday contexts." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -260,7 +260,7 @@
 			"@id": "res:facetAutonomy_02",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Work alone or with others on simple routine, familiar tasks under frequent directive supervision. • Identify, given simple criteria, some strengths and/or weaknesses of the work." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel02"
@@ -285,7 +285,7 @@
 			"@id": "res:facetKnowledge+Understanding_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Demonstrate and/or work with: • Basic knowledge. • Simple facts and ideas in, and associated with, a subject/discipline/sector." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -294,7 +294,7 @@
 			"@id": "res:facetPractice_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Relate knowledge to personal and/or everyday contexts with some prompting. • Use a few basic, routine skills to undertake familiar and routine tasks. • Complete pre-planned tasks. • Use, with guidance, basic tools and materials safely and effectively." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -304,7 +304,7 @@
 			"@id": "res:facetGenericCognitiveSkills_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Identify with some prompting a process to deal with a situation or issue. • Operate in familiar contexts using given criteria. • Take account of some identified consequences of action." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -313,7 +313,7 @@
 			"@id": "res:facetC+ICT+Numeracy_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Use simple skills, for example: • Produce and respond to simple written and oral communication in familiar/routine contexts. • Carry out simple tasks to process and access information. • Use simple numerical and graphical data in everyday contexts." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -322,7 +322,7 @@
 			"@id": "res:facetAutonomy_03",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Work alone or with others on simple tasks under frequent directive supervision. • Participate in the setting of goals, timelines, etc. • Participate in the review of completed work and the identification of ways of improving practices and processes. • Identify, given simple criteria, own strengths and weaknesses relative to the work." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel03"
@@ -347,7 +347,7 @@
 			"@id": "res:facetKnowledge+Understanding_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Demonstrate and/or work with: • Basic knowledge. • Some simple facts and ideas in, about, and associated with, a subject/discipline/sector. • Knowledge of basic processes, materials and terminology." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetKnowledge+Understanding"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -356,7 +356,7 @@
 			"@id": "res:facetPractice_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Relate knowledge to personal and/or practical contexts. • Use a few skills to complete straightforward tasks with some non-routine elements. • Prepare for familiar and routine tasks. • Select and use, with guidance, appropriate tools and materials safely and effectively." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetPractice"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -366,7 +366,7 @@
 			"@id": "res:facetGenericCognitiveSkills_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Use, with guidance, given stages of a process to deal with a problem, situation or issue. • Operate in straightforward contexts. • Identify and/or take account of some of the consequences of action/inaction." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetGenericCognitiveSkills"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -375,7 +375,7 @@
 			"@id": "res:facetC+ICT+Numeracy_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "Use some routine skills, for example: • Produce and respond to simple but detailed written and oral communication in familiar contexts. • Use the basic features of familiar ICT applications to process and obtain information. • Use basic numerical and graphical data in straightforward and familiar contexts." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetC+ICT+Numeracy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
@@ -384,7 +384,7 @@
 			"@id": "res:facetAutonomy_04",
 			"@type": "ceasn:Competency",
 			"ceasn:competencyText": { "en": "• Work alone or with others on tasks with regular, directive supervision. • Contribute to the setting of goals, timelines, etc. • Contribute to the review of completed work and offer suggestions for improving practices and processes. • Identify own strengths and weaknesses relative to the work." },
-			"ceterms:facetType": [
+			"ceterms:conceptTerm": [
 				"res:facetAutonomy"
 			],
 			"asn:hasProgressionLevel" : "res:scqfLevel04"
