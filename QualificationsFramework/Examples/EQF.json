@@ -1,11 +1,25 @@
 {
+	"@context": "http://credreg.net/ctdl/schema/context/json",
 	"@graph": [
 		{
 			"@type": "ceterms:QualificationFramework",
-			"@id": "res:framework",
-			"ceterms:name": { "en": "European Qualifications Framework" },
+			"@id": "res:eqf",
+			"ceterms:name": { "en": "The European Qualifications Framework", 
+							  "el": "Το ευρωπαϊκό πλαίσιο επαγγελματικών προσόντων"},
 			"ceterms:description": { "en": "The European Qualifications Framework for lifelong learning (EQF) aims to improve the transparency, comparability and portability of people’s qualifications. The EQF was set up in 2008 as a common reference framework of qualifications, expressed as learning outcomes at increasing levels of proficiency. The framework serves as a translation device between different qualifications systems and their levels. It is intended to benefit learners, workers, job-seekers, employers, trade unions, education and training providers, qualification recognition bodies, government authorities and international organisations." },
-			"ceterms:source": "https://europass.europa.eu/en/europass-digital-tools/european-qualifications-framework",
+			"ceterms:source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017H0615(01)&from=EN",
+			"ceterms:identifier": {
+				"@type": "ceterms:IdentiferValue",
+				"ceterms:identifierTypeName": "CELEX",
+				"ceterms:identifierValueCode": "32017H0615"
+			},
+			"ceterms:dateEffective": "2017-05-22",
+			"ceterms:publisher": "res:CouncilEU",
+			"ceterms:approvedBy": "res:CouncilEU",
+			"ceterms:jurisdiction": "res:EU",
+			"ceterms:approvedIn": "res:EU",
+			"ceterms:recognizedIn": ["res:EU", "res:Others"],
+			"ceterms:subjectWebpage": "https://europass.europa.eu/en/europass-digital-tools/european-qualifications-framework",
 			"ceterms:hasFacetScheme": [
 				"res:facets"
 			],
