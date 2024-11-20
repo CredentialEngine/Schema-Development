@@ -1,7 +1,7 @@
 {
 	"@graph": [
 		{
-			"@type": "ceterms:QualificationFramework",
+			"@type": "ceterms:QualificationsFramework",
 			"@id": "res:framework",
 			"ceterms:name": { 
 				"nl-nl": "Nederlandskwalificatieraamwerk",

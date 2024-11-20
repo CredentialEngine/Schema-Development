@@ -2,7 +2,7 @@
 	"@context": "http://credreg.net/ctdl/schema/context/json",
 	"@graph": [
 		{
-			"@type": "ceterms:QualificationFramework",
+			"@type": "ceterms:QualificationsFramework",
 			"@id": "res:eqf",
 			"ceterms:name": { "en": "The European Qualifications Framework", 
 							  "el": "Το ευρωπαϊκό πλαίσιο επαγγελματικών προσόντων"},
