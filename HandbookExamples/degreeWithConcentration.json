@@ -1,0 +1,72 @@
+{
+    "@context": "http://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@type": "ceterms:BachelorOfScienceDegree",
+            "@id": "res:ce-d4884357-0a56-4f44-bb6f-182d7db51d2d",
+            "ceterms:name": {
+                "en": "B.S. in Data Science"
+            },
+            "ceterms:degreeConcentration": [
+                {
+                    "@type": "ceterms:CredentialAlignmentObject",
+                    "ceterms:targetNodeName": {
+                        "en": "Business Analytics"
+                    }
+                },
+                {
+                    "@type": "ceterms:CredentialAlignmentObject",
+                    "ceterms:targetNodeName": {
+                        "en": "Geographic Information Systems (GIS)"
+                    }
+                }
+            ],
+            "ceterms:requires": {
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:targetLearningOpportunity": "res:ce-4ced86ab-0d91-400e-a6bc-39449756016c",
+                "ceterms:alternativeCondition": [
+                    {
+                        "@type": "ceterms:ConditionProfile",
+                        "ceterms:name": {
+                            "en": "Requirements for Business Analytics"
+                        },
+                        "ceterms:targetLearningOpportunity": [
+                            "res:ce-d55c2f32-d311-444d-8445-a4e35d187bbd",
+                            "res:ce-12ebd695-8075-451b-b672-a6a7e885aa31"
+                        ]
+                    },
+                    {
+                        "@type": "ceterms:ConditionProfile",
+                        "ceterms:name": {
+                            "en": "Requirements for GIS"
+                        },
+                        "ceterms:targetLearningOpportunity": [
+                            "res:ce-213a716e-4fe9-45a5-be8a-bfe10b2b332b",
+                            "res:ce-d1e848de-b4e3-4ef6-9348-9b5e1f0dea4d"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-4ced86ab-0d91-400e-a6bc-39449756016c"
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-d55c2f32-d311-444d-8445-a4e35d187bbd"
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-12ebd695-8075-451b-b672-a6a7e885aa31"
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-213a716e-4fe9-45a5-be8a-bfe10b2b332b"
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-d1e848de-b4e3-4ef6-9348-9b5e1f0dea4d"
+        }
+    ]
+}
