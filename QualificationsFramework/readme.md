@@ -19,5 +19,6 @@ This folder if for materials relating to the proposal to extend data capabilitie
     - [Full model](Diagrams/fullDomainModel.png).
     - [Source](https://drive.google.com/file/d/1szUEGm4Ic9t283InbBwmjCSuX1S0xch0/view?usp=drive_link) (restricted access).
 - [Terms proposal (doc)](https://docs.google.com/document/d/1QzRBjZFhGLC5SRKEufU0dO9bfPKIR8HijoDqh2pw-TA/edit?usp=drive_link).
+    - [Master sheet for proposal](https://docs.google.com/spreadsheets/d/1xVxGOtmjEow41aVWwBoPcNGQ02RRwJR_R6DcPr5vlkA/edit?usp=sharing) (restricted access).
 - [Changes (code)](https://github.com/CredentialEngine/Schema-Development/issues/970).
 - [Code Examples](Examples/).
