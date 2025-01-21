@@ -1,0 +1,27 @@
+{
+	"@context": "http://credreg.net/ctdl/schema/context/json",
+	"@graph": [
+		{
+			"@type": "ceterms:QualificationsFramework",
+			"@id": "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+			"ceterms:name": { "en": "The Erewhon Qualifications Framework"},
+			"ceterms:description": { "en": "The Erewhon Qualifications Framework aims to ..." },
+			"ceterms:ctid" : "ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+			"ceterms:identifier": {
+				"@type": "ceterms:IdentiferValue",
+				"ceterms:identifierTypeName": "EWN",
+				"ceterms:identifierValueCode": "1234r2"
+			},
+			"ceterms:lifeCycleStatusType": {
+				"@type": "ceterms:CredentialAlignmentObject",
+				"targetNode": "lifeCycle:Active"
+			},
+			"ceterms:inLanguage": "en",
+			"ceterms:dateEffective": "2025-01-15",
+			"ceterms:ownedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+			"ceterms:approvedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+			"ceterms:jurisdiction": "res:ce-e6ce7f93-5fca-4048-a85b-2202da791bc5",
+			"ceterms:subjectWebpage": "https://example.edu/erewhonQF"
+		}
+	]
+}
