@@ -1,0 +1,36 @@
+{
+    "@context": "http://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "res:5d8e4a04-8cf8-4355-ab52-d48354ab5fc2",
+            "@type": "ceterms:AlignmentMap",
+            "ceterms:name": {
+                "en": "Erewhon to Utopia Qualifications Framework Alignment."
+            },
+            "ceterms:description": {
+                "en": "Alignment mapping from the levels in the Erewhon Qualificaitons Framework to those in the Utopia Regional Qualifications Framework."
+            },
+            "ceterms:source": "https:/example.edu/alignment",
+            "ceterms:date": "2025-01-20",
+            "ceasn:publisher": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "schema:about": [
+                "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+                "res:ce-84a6294a-5cb2-4c53-84be-5534fab076fa"
+            ],
+            "ceterms:compares": [
+                "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+                "res:ce-8a517432-0ca1-479f-9d3c-46a44072b4df"
+            ],
+            "ceterms:hasPart": [
+                {
+                    "@type": "ceterms:AlignmentObject",
+                    "ceterms:sourceNode": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+                    "ceterms:targetNode": "res:ce-916e175b-e6ab-423d-8cb6-dd798054dc46",
+                    "ceterms:alignmentType": "skos:exactMatch"
+                }
+            ]
+        }
+    ]
+}
+
+

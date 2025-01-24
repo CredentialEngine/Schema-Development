@@ -1,0 +1,182 @@
+{
+	"@context": "http://credreg.net/ctdl/schema/context/json",
+	"@graph": [
+		{
+			"@type": "ceterms:QualificationsFramework",
+			"@id": "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+			"ceterms:name": { "en": "The Erewhon Qualifications Framework"},
+			"ceterms:hasFacetScheme": [
+				"res:ce-840a40f0-09af-42a4-8778-4d428e055c4c"
+			],
+			"asn:hasProgressionModel": [
+				"res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c",
+			"ceasn:name": { "en": "Erewhon Level Descriptor Facets" },
+			"skos:hasTopConcept": [
+				"res:ce-c4def948-b68f-4b9a-84c2-96037fcd024f",
+				"res:ce-be03ca76-450e-45c4-8c88-0d8567cf6a77",
+				"res:ce-2a2f7a2d-9b24-4aff-bb34-26fa471ab5a9"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:ce-c4def948-b68f-4b9a-84c2-96037fcd024f",
+			"skos:prefLabel": { "en": "Knowledge" },
+			"skos:definition": { "en": "Understanding theoretical and/or factual information." },
+			"skos:inScheme": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c",
+			"skos:topConceptOf": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c"
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:ce-be03ca76-450e-45c4-8c88-0d8567cf6a77",
+			"skos:prefLabel": { "en": "Application of knowledge" },
+			"skos:definition": { "en": "The ability to use knowledge to achieve desired outcomes." },
+			"skos:inScheme": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c",
+			"skos:topConceptOf": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c"
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:ce-2a2f7a2d-9b24-4aff-bb34-26fa471ab5a9",
+			"skos:prefLabel": { "en": "Personal Attributes" },
+			"skos:definition": { "en": "Developed traits and abilities of an individual that are important in personal and social development." },
+			"skos:inScheme": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c",
+			"skos:topConceptOf": "res:ce-840a40f0-09af-42a4-8778-4d428e055c4c"
+		},
+		{
+			"@type": "asn:ProgressionModel",
+			"@id": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"ceasn:name": { "en": "Erewhon Qualification Levels" },
+			"ceterms:inQualificationsFramework": "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+			"asn:hasProgressionLevel": [
+				"res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+				"res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+				"res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+			"skos:prefLabel": { "en": "Level 1" },
+			"ceasn:inProgressionModel": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"skos:topConceptOf": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"ceterms:precedes": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"ceterms:facetedDescription": [
+				"res:ce-4d3a28c1-4dca-4739-8c00-4674258db1bc",
+				"res:ce-4ddfc125-eeee-4df5-a66e-a3950b26fe2a",
+				"res:ce-118ff2f9-1a0c-469a-ba52-6ee99360e0a9"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-4d3a28c1-4dca-4739-8c00-4674258db1bc",
+			"ceasn:competencyText": { "en": "Basic general knowledge." },
+			"asn:hasProgressionLevel": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+			"ceasn:conceptTerm": [
+				"res:ce-c4def948-b68f-4b9a-84c2-96037fcd024f"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-4ddfc125-eeee-4df5-a66e-a3950b26fe2a",
+			"ceasn:competencyText": { "en": "Basic skills required to carry out simple tasks." },
+			"asn:hasProgressionLevel": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+			"ceasn:conceptTerm": [
+				"res:ce-be03ca76-450e-45c4-8c88-0d8567cf6a77"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-118ff2f9-1a0c-469a-ba52-6ee99360e0a9",
+			"ceasn:competencyText": { "en": "Work or study under direct supervision in a structured context." },
+			"asn:hasProgressionLevel": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+			"ceasn:conceptTerm": [
+				"res:ce-2a2f7a2d-9b24-4aff-bb34-26fa471ab5a9"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"ceasn:inProgressionModel": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"skos:topConceptOf": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"ceterms:precededBy": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+			"ceterms:precedes": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"skos:prefLabel": { "en": "Level 2" },
+			"ceterms:facetedDescription": [
+				"res:ce-2542388f-229d-42e7-8b9e-08337d82e207",
+				"res:ce-e214138a-1f85-4fd4-84e2-569d519d0757",
+				"res:ce-5e8d8f2c-67d7-4185-ae7d-97c3e7c3d845"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-2542388f-229d-42e7-8b9e-08337d82e207",
+			"ceasn:competencyText": { "en": "Basic factual knowledge of a field of work or study." },
+			"asn:hasProgressionLevel": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"ceasn:conceptTerm": [
+				"res:ce-c4def948-b68f-4b9a-84c2-96037fcd024f"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-e214138a-1f85-4fd4-84e2-569d519d0757",
+			"ceasn:competencyText": { "en": "Basic cognitive and practical skills required to use relevant information in order to carry out tasks and solve routine problems using simple rules and tools." },
+			"asn:hasProgressionLevel": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"ceasn:conceptTerm": [
+				"res:ce-be03ca76-450e-45c4-8c88-0d8567cf6a77"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-5e8d8f2c-67d7-4185-ae7d-97c3e7c3d845",
+			"ceasn:competencyText": { "en": "Work or study under supervision with some autonomy." },
+			"asn:hasProgressionLevel": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"ceasn:conceptTerm": [
+				"res:ce-2a2f7a2d-9b24-4aff-bb34-26fa471ab5a9"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"ceasn:inProgressionModel": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"skos:topConceptOf": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"ceterms:precededBy": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"skos:prefLabel": { "en": "Level 3" },
+			"ceterms:facetedDescription": [
+				"res:ce-828b3dee-7d17-46d7-92bb-5ab46043f995",
+				"res:ce-d687196a-b112-4db5-ae8f-015bb3045ef5",
+				"res:ce-266694c7-adba-4b34-8361-0d223514f111"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-828b3dee-7d17-46d7-92bb-5ab46043f995",
+			"ceasn:competencyText": { "en": "Knowledge of facts, principles, processes and general concepts relevant to a field of work or study." },
+			"asn:hasProgressionLevel": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"ceasn:conceptTerm": [
+				"res:ce-c4def948-b68f-4b9a-84c2-96037fcd024f"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-d687196a-b112-4db5-ae8f-015bb3045ef5",
+			"ceasn:competencyText": { "en": "A range of cognitive and practical skills required to accomplish tasks and solve problems under supervision." },
+			"asn:hasProgressionLevel": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"ceasn:conceptTerm": [
+				"res:ce-be03ca76-450e-45c4-8c88-0d8567cf6a77"
+			]
+		},
+		{
+			"@type": "ceasn:Competency",
+			"@id": "res:ce-266694c7-adba-4b34-8361-0d223514f111",
+			"ceasn:competencyText": { "en": "Take responsibility for completion of tasks in work or study; adapt own behaviour to circumstances in solving problems." },
+			"asn:hasProgressionLevel": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"ceasn:conceptTerm": [
+				"res:ce-2a2f7a2d-9b24-4aff-bb34-26fa471ab5a9"
+			]
+		}
+	]
+}
