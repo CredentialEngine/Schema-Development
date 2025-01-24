@@ -50,6 +50,7 @@
 			"@type": "asn:ProgressionModel",
 			"@id": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
 			"ceasn:name": { "en": "Erewhon Qualification Levels" },
+			"ceterms:inQualificationsFramework": "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
 			"asn:hasProgressionLevel": [
 				"res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
 				"res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
@@ -60,6 +61,8 @@
 			"@type": "asn:ProgressionLevel",
 			"@id": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
 			"skos:prefLabel": { "en": "Level 1" },
+			"ceasn:inProgressionModel": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"skos:topConceptOf": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
 			"ceterms:precedes": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
 			"ceterms:facetedDescription": [
 				"res:ce-4d3a28c1-4dca-4739-8c00-4674258db1bc",
@@ -97,6 +100,8 @@
 		{
 			"@type": "asn:ProgressionLevel",
 			"@id": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"ceasn:inProgressionModel": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"skos:topConceptOf": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
 			"ceterms:precededBy": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
 			"ceterms:precedes": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
 			"skos:prefLabel": { "en": "Level 2" },
@@ -136,6 +141,8 @@
 		{
 			"@type": "asn:ProgressionLevel",
 			"@id": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"ceasn:inProgressionModel": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"skos:topConceptOf": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
 			"ceterms:precededBy": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
 			"skos:prefLabel": { "en": "Level 3" },
 			"ceterms:facetedDescription": [
