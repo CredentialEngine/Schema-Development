@@ -12,7 +12,7 @@
 				"ceterms:identifierTypeName": "EWN",
 				"ceterms:identifierValueCode": "1234r2"
 			},
-			"ceasn:plublicationStatusType": {
+			"ceasn:publicationStatusType": {
 				"@type": "ceterms:CredentialAlignmentObject",
 				"targetNode": "publicationStatus:Published"
 			},
