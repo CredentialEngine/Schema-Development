@@ -1,7 +1,7 @@
 {
 	"@context": [
-		"http://credreg.net/ctdl/schema/context/json",
-	 	{"res": "http://example.org/resources/"}
+		"https://credreg.net/ctdl/schema/context/json",
+	 	{"res": "https://example.org/resources/"}
 	],
 	"@graph": [
 		{
