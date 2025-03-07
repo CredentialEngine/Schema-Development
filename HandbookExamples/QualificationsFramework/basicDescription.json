@@ -1,5 +1,8 @@
 {
-	"@context": "http://credreg.net/ctdl/schema/context/json",
+	"@context": [
+		"http://credreg.net/ctdl/schema/context/json",
+	 	{"res": "http://example.org/resources/"}
+	],
 	"@graph": [
 		{
 			"@type": "ceterms:QualificationsFramework",
@@ -14,7 +17,7 @@
 			},
 			"ceasn:publicationStatusType": {
 				"@type": "ceterms:CredentialAlignmentObject",
-				"targetNode": "publicationStatus:Published"
+				"ceterms:targetNode": "publicationStatus:Published"
 			},
 			"ceterms:inLanguage": "en",
 			"ceterms:dateEffective": "2025-01-15",
