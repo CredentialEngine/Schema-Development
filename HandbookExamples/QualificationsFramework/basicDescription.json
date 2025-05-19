@@ -1,5 +1,8 @@
 {
-	"@context": "http://credreg.net/ctdl/schema/context/json",
+	"@context": [
+		"https://credreg.net/ctdl/schema/context/json",
+	 	{"res": "https://example.org/resources/"}
+	],
 	"@graph": [
 		{
 			"@type": "ceterms:QualificationsFramework",
@@ -12,9 +15,9 @@
 				"ceterms:identifierTypeName": "EWN",
 				"ceterms:identifierValueCode": "1234r2"
 			},
-			"ceasn:plublicationStatusType": {
+			"ceasn:publicationStatusType": {
 				"@type": "ceterms:CredentialAlignmentObject",
-				"targetNode": "publicationStatus:Published"
+				"ceterms:targetNode": "publicationStatus:Published"
 			},
 			"ceterms:inLanguage": "en",
 			"ceterms:dateEffective": "2025-01-15",
