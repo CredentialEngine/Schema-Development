@@ -1,0 +1,50 @@
+{
+	"@context": [
+		"https://credreg.net/ctdl/schema/context/json",
+	 	{"res": "https://example.org/resources/"}
+	],
+	"@graph": [
+		{
+			"@id": "res:ce-12f6f7c3-bfec-4bef-a1dd-0256df5170ce",
+			"@type": "ceterms:CredentialType",
+			"ceterms:ctid" : "ce-12f6f7c3-bfec-4bef-a1dd-0256df5170ce",
+			"ceterms:name": { "en": "Honours Degree"},
+			"ceterms:description": { "en": "Undergraduate degree typically requiring four years of higher education including an element of individual research in the final year..." },
+			"ceterms:ownedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+			"ceterms:regulatedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+			"ceterms:jurisdiction": "res:ce-e6ce7f93-5fca-4048-a85b-2202da791bc5",
+			"ceterms:subclassOf": "ceterms:BachelorDegree",
+			"ceterms:classification": "res:ce-74227472-0257-407c-8528-53653ae5e13b"
+		},
+		{
+			"@id": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+			"@type": "ceterms:QACredentialOrganization",
+			"ceterms:name": {"en": "Erewhon Education Agency"},
+			"ceterms:jurisdiction": "res:ce-e6ce7f93-5fca-4048-a85b-2202da791bc5",
+			"ceterms:accredits": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6"
+		},
+		{
+			"@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+			"@type": "ceterms:CredentialOrganization",
+			"ceterms:name": {"en":"Erewhon University"}
+		},
+		{
+			"@id": "res:ce-6ca7423e-b67e-466d-9c55-7627b0991cb5",
+			"@type": "ceterms:BachelorDegree",
+			"ceterms:name": {"en": "BSc (hons) Accountancy"},
+			"ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+			"ceterms:offeredBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+			"ceterms:credentialType": "res:ce-12f6f7c3-bfec-4bef-a1dd-0256df5170ce"			
+		},
+		{
+			"@id": "res:ce-e6ce7f93-5fca-4048-a85b-2202da791bc5",
+			"@type": "ceterms:JurisdictionProfile",
+			"ceterms:name": {"en": "Erewhon"}
+		},
+		{
+			"@id": "res:ce-74227472-0257-407c-8528-53653ae5e13b",
+			"@type": "skos:concept",
+			"skos:prefLabel": "Higher Education"
+		}
+	]
+}

@@ -1,0 +1,144 @@
+{
+	"@context": [
+		"https://credreg.net/ctdl/schema/context/json",
+	 	{"res": "https://example.org/resources/"}
+	],
+	"@graph": [
+		{
+			"@type": "ceterms:QualificationsFramework",
+			"@id": "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+			"ceterms:name": {
+				"en": "The Erewhon Qualifications Framework"
+			},
+			"ceterms:hasSubFrameworkScheme": [
+				"res:ce-fece71b1-cfae-420a-92d2-e73629dc1005"
+			],
+			"asn:hasProgressionModel": [
+				"res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db"
+			]
+		},
+		{
+			"@type": "asn:ProgressionModel",
+			"@id": "res:ce-b3fcd2f2-2ff7-4623-8ed3-c2790e9112db",
+			"ceasn:name": {
+				"en": "Erewhon Qualification Levels"
+			},
+			"ceterms:inQualificationsFramework": "res:ce-488c5056-6b75-4db3-95d2-403262f4a5a4",
+			"asn:hasProgressionLevel": [
+				"res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+				"res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+				"res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+				"res:ce-e8d237b1-50f5-4e05-a240-cea1b3b1668d"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-d2edcf17-81ee-4f6b-b29c-8b3a7ab466b7",
+			"skos:prefLabel": {
+				"en": "Level 1"
+			},
+			"ceterms:indicativeCredentialType": [
+				"res:ce-02b16c53-f24a-4cbd-a2c5-b81f85d21409"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-bb80718c-9724-4720-9b31-c3cbc1e33288",
+			"skos:prefLabel": {
+				"en": "Level 2"
+			},
+			"ceterms:indicativeCredentialType": [
+				"res:ce-98a55b79-79ec-4c13-bb3e-5d7eec5ee1bf"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-0a8de4f6-0fd8-4b44-b8f9-81849de880ba",
+			"skos:prefLabel": {
+				"en": "Level 3"
+			},
+			"ceterms:indicativeCredentialType": [
+				"res:ce-15e71afb-d9d3-45c2-bc58-2bba6bddb0dd"
+			]
+		},
+		{
+			"@type": "asn:ProgressionLevel",
+			"@id": "res:ce-e8d237b1-50f5-4e05-a240-cea1b3b1668d",
+			"skos:prefLabel": {
+				"en": "Level 4"
+			},
+			"ceterms:indicativeCredentialType": [
+				"res:ce-b21fcbd1-d22e-4cd8-b930-d1430fbe677d",
+				"res:ce-37763cca-c079-40cf-932d-d2dfafb2783a"
+			]
+		},
+		{
+			"@id": "res:ce-02b16c53-f24a-4cbd-a2c5-b81f85d21409",
+			"@type": "ceterms:CredentialType",
+			"ceterms:name": {"en": "National Certificate Level 1"},
+			"ceterms:classification": "res:ce-d55749e5-864e-43d5-b085-6a6facba4645"
+		},
+		{
+			"@id": "res:ce-98a55b79-79ec-4c13-bb3e-5d7eec5ee1bf",
+			"@type": "ceterms:CredentialType",
+			"ceterms:name": {"en": "National Certificate Level 2"},
+			"ceterms:classification": "res:ce-d55749e5-864e-43d5-b085-6a6facba4645"
+		},
+		{
+			"@id": "res:ce-15e71afb-d9d3-45c2-bc58-2bba6bddb0dd",
+			"@type": "ceterms:CredentialType",
+			"ceterms:name": {"en": "Higher National Certificate"},
+			"ceterms:classification": "res:ce-d55749e5-864e-43d5-b085-6a6facba4645"
+		},
+		{
+			"@id": "res:ce-b21fcbd1-d22e-4cd8-b930-d1430fbe677d",
+			"@type": "ceterms:CredentialType",
+			"ceterms:name": {"en": "Higher Technical Diploma"},
+			"ceterms:classification": "res:ce-c055d7b3-dbc0-4b53-8f6d-a2f23a94129d"
+		},
+		{
+			"@id": "res:ce-37763cca-c079-40cf-932d-d2dfafb2783a",
+			"@type": "ceterms:CredentialType",
+			"ceterms:name": {"en": "Higher Education Diploma"},
+			"ceterms:classification": "res:ce-b263c915-5b16-4c57-ac30-5ca1c3c0b2bd"
+		},		{
+			"@type": "skos:ConceptScheme",
+			"@id": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005",
+			"ceasn:name": {
+				"en": "Erewhon Learning Sectors"
+			},
+			"skos:hasTopConcept": [
+				"res:ce-d55749e5-864e-43d5-b085-6a6facba4645",
+				"res:ce-c055d7b3-dbc0-4b53-8f6d-a2f23a94129d",
+				"res:ce-b263c915-5b16-4c57-ac30-5ca1c3c0b2bd"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:ce-d55749e5-864e-43d5-b085-6a6facba4645",
+			"skos:prefLabel": {
+				"en": "General Education"
+			},
+			"skos:inScheme": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005",
+			"skos:topConceptOf": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005"
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:ce-c055d7b3-dbc0-4b53-8f6d-a2f23a94129d",
+			"skos:prefLabel": {
+				"en": "Vocational Education & Training"
+			},
+			"skos:inScheme": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005",
+			"skos:topConceptOf": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005"
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "res:ce-b263c915-5b16-4c57-ac30-5ca1c3c0b2bd",
+			"skos:prefLabel": {
+				"en": "Higher & Further Education"
+			},
+			"skos:inScheme": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005",
+			"skos:topConceptOf": "res:ce-fece71b1-cfae-420a-92d2-e73629dc1005"
+		}
+	]
+}
