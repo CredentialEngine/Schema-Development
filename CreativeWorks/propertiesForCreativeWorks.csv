@@ -1,0 +1,89 @@
+Theme,Property ID,Property Definition
+Basic identification and description,,
+,ceterms:alternateName,"Alias for the entity including acronyms, alpha-numeric notations, and other forms of name abbreviations in common use such as PhD, MA, and BA."
+,ceterms:classification,Category or classification of this resource.
+,ceterms:codedNotation,Set of alpha-numeric symbols as defined by the body responsible for this resource that uniquely identifies this resource and supports its discovery and use.
+,ceterms:ctid,"Globally unique Credential Transparency Identifier (CTID) by which the creator, owner or provider of a resource recognizes it in transactions with the external environment (e.g., in verifiable claims involving the resource)."
+,ceterms:description,"Statement, characterization or account of the entity."
+,ceterms:estimatedDuration,"Estimated time it will take to complete an activity, event, or resource."
+,ceterms:identifier,Alphanumeric token that identifies this resource and information about the token's originating context or scheme.
+,ceterms:image,"Image, icon or logo that represents the entity including registered trade or service marks."
+,ceterms:inLanguage,"The primary language or languages of the entity, even if it makes use of other languages."
+,ceterms:keyword,Keyword or key phrase describing relevant aspects of an entity.
+,ceterms:name,Name or title of the resource.
+,ceterms:sameAs,Another source of information about the entity being described.
+,ceterms:subject,Words or brief phrases describing the topicality of the entity; select subject terms from an existing enumeration of such terms.
+,ceasn:description,A short description of this resource.
+,ceasn:identifier,An alternative URI by which this competency framework or competency is identified.
+,ceasn:localSubject,The text string denoting the subject of the competency framework or competency as designated by the promulgating agency.
+,ceasn:name,The name or title of this resource.
+,schema:about,Subject matter of the resource.
+Lifecycle (incl. QA),,
+,ceterms:complaintProcess,Description of a process for handling complaints about a resource or related resources.
+,ceterms:dateEffective,Effective date of this resource's content.
+,ceterms:developmentProcess,Description of a process by which a resource was created.
+,ceterms:expirationDate,Date beyond which the resource is no longer offered or available.
+,ceterms:latestVersion,Latest version of the resource.
+,ceterms:lifeCycleStatusType,Type of state of the resource in terms of its stage in a life cycle; select from an enumeration of such types.
+,ceterms:maintenanceProcess,"Description of a process by which a resource is maintained, including review and updating."
+,ceterms:nextVersion,Version of the resource that immediately follows this version.
+,ceterms:previousVersion,Version of the resource that immediately precedes this version.
+,ceterms:processStandards,"Webpage or online document that describes the criteria, standards, and/or requirements used with a process."
+,ceterms:processStandardsDescription,"Textual description of the criteria, standards, and/or requirements used with a process."
+,ceterms:supersededBy,Resource that replaces this resource.
+,ceterms:supersedes,Resource that this resource replaces.
+,ceterms:versionIdentifier,Alphanumeric identifier of the version of the resource and information about the identifier's originating context or scheme.
+,ceasn:author,A person or organization chiefly responsible for the intellectual or artistic content of this competency framework or competency.
+,ceasn:creator,An entity primarily responsible for making this resource.
+,ceasn:dateCreated,Date of creation of this resource.
+,ceasn:dateModified,The date on which this resource was most recently modified in some way.
+,ceasn:dateValidFrom,Beginning date of validity of this resource.
+,ceasn:dateValidUntil,End date of validity of this resource.
+,ceasn:derivedFrom,"The entity being described has been modified, extended or refined from the referenced resource."
+,ceasn:publicationStatusType,The publication status of the resource.
+"Recognition, approval, actions",,
+,ceterms:approvedBy,"Organization that pronounces favorable judgment for this credential, assessment, learning opportunity, or organization."
+,ceterms:approvedIn,"Region or political jurisdiction such as a state, province or locale in which an organization pronounces favorable judgment for this credential, assessment, learning opportunity, or organization."
+,ceterms:objectOfAction,Action carried out upon this resource.
+,ceterms:recognizedBy,"Agent that acknowledges the validity of the credential, learning opportunity of assessment."
+,ceterms:recognizedIn,"Region or political jurisdiction such as a state, province or locale in which the credential, learning resource, or assessment has been publicly recommended, acknowledged or endorsed."
+,ceterms:relatedAction,Action related to the resource.
+,ceterms:reviewProcess,Description of a process by which a resource is reviewed.
+Licensing and availability,,
+,ceterms:availabilityListing,Listing of online and/or physical locations where a resource can be found or pursued.
+,ceterms:availableAt,"Physical location where the credential, assessment, or learning opportunity can be pursued."
+,ceterms:availableOnlineAt,"Online location where the credential, assessment, or learning opportunity can be pursued."
+,ceterms:copyrightHolder,"Person or organization holding the rights in copyright to entities such as credentials, learning opportunities, assessments, competencies or concept schemes."
+,ceterms:estimatedCost,"Estimated cost of a credential, learning opportunity or assessment."
+,ceterms:offeredBy,Agent that offers the resource.
+,ceterms:offeredIn,"Region or political jurisdiction such as a state, province or locale where the credential, learning resource or assessment is offered."
+,ceterms:ownedBy,Organization or person with an enforceable claim or legal title to the resource.
+,ceasn:license,A legal document giving official permission to do something with this resource.
+,ceasn:dateCopyrighted,"Date of a statement of copyright for this resource, such as ©2017."
+,ceasn:publisher,An agent responsible for making this resource available.
+,ceasn:publisherName,Name of an agent responsible for making this resource available.
+,ceasn:rights,Information about rights held in and over this resource.
+,ceasn:rightsHolder,An agent owning or managing rights over this resource.
+Audience,,
+,ceterms:audienceLevelType,"Type of level indicating a point in a progression through an educational or training context, for which the resource is intended; select from an existing enumeration of such types."
+,ceterms:audienceType,"The type of audience for which the resource is applicable, intended, or useful; select from an existing enumeration of such types."
+,ceterms:jurisdiction,Geographic or political region in which the resource is formally applicable or an organization has authority to act.
+,ceasn:educationLevelType,"A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context."
+Related resources,,
+,ceterms:subjectWebpage,Webpage that describes this entity.
+,ceasn:source,The original competency framework which this resource is based on or derived from.
+,ceasn:sourceDocumentation,Human-readable information resource other than a competency framework from which this resource was generated or identified by humans or machines.
+"Parts, collections, listing",,
+,ceterms:hasPart,Indicates a separately identifiable and independently useful component of the entity.
+,ceterms:hasGlossary,Terms and definitions applicable to the resource.
+,ceterms:inCatalog,An inventory or listing of resources that includes this resource.
+,ceterms:isMemberOf,Collection to which this resource belongs.
+,ceterms:isPartOf,Indicates another entity of which this entity is a component.
+,ceasn:tableOfContents,A list of sub-units of this competency framework.
+"Preparation, recommendation and requirements",,
+,ceterms:isPreparationFor,"This credential, assessment, or learning opportunity provides preparation for the credential, assessment, or learning opportunity being referenced."
+,ceterms:isRecommendedFor,"It is recommended to earn or complete this credential, assessment, or learning opportunity before attempting to earn or complete the referenced credential, assessment, or learning opportunity."
+,ceterms:isRequiredFor,"This credential, assessment, or learning opportunity must be earned or completed prior to attempting to earn or complete the referenced credential, assessment, or learning opportunity."
+,ceterms:preparationFrom,"Another credential, learning opportunity or assessment that provides preparation for this credential, learning opportunity or assessment."
+,ceterms:recommends,"Recommended credential, learning opportunity or assessment."
+,ceterms:requires,Requirement or set of requirements for this resource.
