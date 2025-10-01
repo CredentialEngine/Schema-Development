@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "http://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "http://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-56615a9f-256c-4557-8554-ce4df58905fa",
+            "@type": "ceterms:TransferAgreement",
+            "ceasn:creator": "res:ce-6a3e5259-f51b-40c8-a39b-639a731eab40",
+            "ceterms:sendingOrganization": "res:ce-8be8cbc5-7764-4339-9c2b-82cda031dd1c",
+            "ceterms:receivingOrganization": "res:ce-e12beb02-b506-401b-a898-f5de69a072c0",
+            "ceterms:sendingDepartment": "res:ce-ad7df1a4-2829-4eb4-a23a-79b7e0fd0eba",
+            "ceterms:receivingDepartment": "res:ce-b662de80-7ae2-4e53-a8ca-5cf4856e7e23",
+            "ceterms:sendingProgram": "res:ce-79c8319b-35f8-4b5b-87c9-51df174febf3",
+            "ceterms:receivingProgram": "res:ce-8e3d83ee-bf56-439c-98d8-0f269dafd3a5",
+            "ceterms:hasTransferValueProfile": [
+                "res:ce-ecdf8840-2222-4832-bed0-0af77d7a4a0c",
+                "res:ce-f26b1a44-cd78-4987-94cc-48179152e444",
+                "res:ce-0fc28030-93af-4c26-b5f2-330e2115588b",
+                "res:ce-293f4b50-f608-4602-b8bf-89e744f12f0f"
+            ],
+            "ceterms:hasSupportService": "res:ce-7544deb5-dd0b-4d6e-afdb-690fb9289061"
+        }
+    ]
+}
