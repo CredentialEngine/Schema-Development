@@ -9,12 +9,12 @@
         {
             "@id": "res:ce-ecdf8840-2222-4832-bed0-0af77d7a4a0c",
             "@type": "ceterms:TransferValueProfile",
-            "ceterms:ownedBy": "res:ce-6a3e5259-f51b-40c8-a39b-639a731eab40",
+            "ceterms:ownedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
             "ceterms:evaluationProcess": {
                 "@type": "ceterms:ProcessProfile",
                 "ceterms:processMethod": "http://example.org/processes/001#method",
                 "ceterms:processStandards": "http://example.org/Pprocesses/001#standards",
-                "ceterms:processingAgent": "res:ce-6a3e5259-f51b-40c8-a39b-639a731eab40"
+                "ceterms:processingAgent": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4"
             },
             "ceterms:evaluationEvidence": {
                 "@type": "ceterms:EvidenceOutcome",

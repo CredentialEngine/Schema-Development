@@ -1,0 +1,250 @@
+{
+    "@context": [
+        "http://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "http://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-56615a9f-256c-4557-8554-ce4df58905fa",
+            "@type": "ceterms:TransferAgreement",
+            "ceterms:name": {
+                "en": "Transfer Agreement between Erewhon College and Erewhon University"
+            },
+            "cterms:description": {
+                "en": "An agreement to facilitate a pathway from the Diploma of Applied Science in Advanced Manufacturing Technology Erewhon College to the Bachelor of Science in Automation Leadership program at Erewehon University."
+            },
+            "ceterms:agreementType": "agreementCat:Articulation",
+            "ceterms:dateEffective": "2025-07-06",
+            "ceterms:dateSigned": "2025-01-24",
+            "ceterms:sendingOrganization": "res:ce-8be8cbc5-7764-4339-9c2b-82cda031dd1c",
+            "ceterms:receivingOrganization": "res:ce-e12beb02-b506-401b-a898-f5de69a072c0",
+            "ceterms:sendingDepartment": "res:ce-ad7df1a4-2829-4eb4-a23a-79b7e0fd0eba",
+            "ceterms:receivingDepartment": "res:ce-b662de80-7ae2-4e53-a8ca-5cf4856e7e23",
+            "ceterms:sendingProgram": "res:ce-79c8319b-35f8-4b5b-87c9-51df174febf3",
+            "ceterms:receivingProgram": "res:ce-8e3d83ee-bf56-439c-98d8-0f269dafd3a5",
+            "ceterms:learningRecognitionMethodType": "lrMethod:CreditRecRev",
+            "ceterms:hasTransferValueProfile": [
+                "res:ce-ecdf8840-2222-4832-bed0-0af77d7a4a0c",
+                "res:ce-f26b1a44-cd78-4987-94cc-48179152e444",
+                "res:ce-0fc28030-93af-4c26-b5f2-330e2115588b",
+                "res:ce-293f4b50-f608-4602-b8bf-89e744f12f0f"
+            ],
+            "ceterms:hasStatement": [
+                {
+                    "@type": "StructuredStatement",
+                    "statementType": "statementCat:purpose",
+                    "ceasn:listId": "1.1a",
+                    "ceterms:name": {
+                        "en": "Facilitating Seamless Transfer & Degree Completion"
+                    },
+                    "ceterms:statementText": {
+                        "en": "This agreement provides a structured pathway for students completing the Diploma of Applied Science in Advanced Manufacturing Technology at Erewhon College to transfer into the Bachelor of Science in Automation Leadership program at Erewehon University."
+                    }
+                },
+                {
+                    "@type": "StructuredStatement",
+                    "ceterms:statementType": "statementCat:purpose",
+                    "ceasn:listId": "1.1b",
+                    "ceterms:name": {
+                        "en": "Expanding Access & Supporting Student Mobility"
+                    },
+                    "ceterms:statementText": {
+                        "en": "The purpose of this transfer agreement is to establish a cooperative relationship between the College and the University to allow College students completing a diploma to transition smoothly into an University degree program."
+                    }
+                },
+                {
+                    "@type": "StructuredStatement",
+                    "ceasn:listId": "1.2a",
+                    "ceterms:statementType": "statementCat:Overview",
+                    "ceterms:name": {
+                        "en": "Summary"
+                    },
+                    "ceterms:statementText": {
+                        "en": "Students who have completed the Diploma of Applied Science in Advanced Manufacturing Technology at Erewhon College will be able to transfer into stage 3 of the Bachelor of Science in Automation Leadership program at Erewehon University, providing they fulfil certain conditions."
+                    }
+                },
+                {
+                    "@type": "StructuredStatement",
+                    "ceasn:listId": "2.1a",
+                    "ceterms:statementType": "statementCat:LRMethod",
+                    "ceterms:name": {
+                        "en": "Credit Recommendations"
+                    },
+                    "ceterms:statementText": {
+                        "en": "The credit transfer values are based on recommendations from the Erewhon Education Agency as reviewed and accepted by the University of Erewhon."
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "res:ce-ecdf8840-2222-4832-bed0-0af77d7a4a0c",
+            "@type": "ceterms:TransferValueProfile",
+            "ceterms:name": {
+                "en": "Transfer equivalency for Intro to Mechanical Engineering"
+            },
+            "ceterms:description": {
+                "en": "A good pass in Erewhon College's Intro to Mechancical Engineering shall count as fulfilling the same requirement as Erewhon University's Mechanical Engineering 1A."
+            },
+            "ceterms:transferValueFrom": "res:ce-2630ec3d-4119-4bd2-b8c2-6876e50d2d82",
+            "ceterms:transferValueFor": "res:ce-1e942ea6-833b-4c2b-98bd-623e80bc4ffc",
+            "ceterms:transferValue": {
+                "@type": "ceterms:ValueProfile",
+                "ceterms:creditUnitType": {
+                    "@type": "skos:Concept",
+                    "skos:prefLabel": "Erewehon Credit Unit",
+                    "skos:notation": "ECU"
+                },
+                "ceterms:creditLevelType": {
+                    "@type": "skos:Concept",
+                    "skos:prefLabel": "Lower Division Level"
+                },
+                "schema:value": 15
+            },
+            "ceterms:requires": {
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:targetLearningOpportunity": "res:ce-2630ec3d-4119-4bd2-b8c2-6876e50d2d82",
+                "ceterms:condition": {"en": "The student grade in Erewhon College's Intro to Mechancical Engineering must be higher than a C."},
+                "ceterms:hasConstraint": {
+                    "ceterms:leftSource": ":AssessmentScore",
+                    "ceterms:comparator": "compare:GTEQ",
+                    "ceterms:rightSource": "C"
+                }
+            },
+            "ceterms:evaluationEvidence": "https://example.edu/creditEvauations/001",
+            "ceterms:evaluationProcess": "https://example.edu/processes/CreditEvaluation"
+        },
+        {
+            "@id": "res:ce-f26b1a44-cd78-4987-94cc-48179152e444",
+            "@type": "ceterms:TransferValueProfile",
+            "...": "..."
+        },
+        {
+            "@id": "res:ce-0fc28030-93af-4c26-b5f2-330e2115588b",
+            "@type": "ceterms:TransferValueProfile",
+            "...": "..."
+        },
+        {
+            "@id": "res:ce-293f4b50-f608-4602-b8bf-89e744f12f0f",
+            "@type": "ceterms:TransferValueProfile",
+            "...": "..."
+        },
+        {
+            "@id": "res:ce-8be8cbc5-7764-4339-9c2b-82cda031dd1c",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:accreditedBy": "res:ce-6a3e5259-f51b-40c8-a39b-639a731eab40",
+            "ceterms:agentType": "orgType:TwoYear",
+            "ceterms:name": "Erewhon College",
+            "ceterms:department": "res:ce-ad7df1a4-2829-4eb4-a23a-79b7e0fd0eba",
+            "ceterms:offers": "res:ce-79c8319b-35f8-4b5b-87c9-51df174febf3"
+        },
+        {
+            "@id": "res:ce-ad7df1a4-2829-4eb4-a23a-79b7e0fd0eba",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Department of Manufacturing Sciences"
+            },
+            "ceterms:offers": "res:ce-79c8319b-35f8-4b5b-87c9-51df174febf3"
+        },
+        {
+            "@id": "res:ce-79c8319b-35f8-4b5b-87c9-51df174febf3",
+            "@type": "ceterms:Diploma",
+            "ceterms:name": {
+                "en": "Diploma of Applied Science in Advanced Manufacturing Technology"
+            }
+        },
+        {
+            "@id": "res:ce-62a4e696-b195-4a93-80d2-c2f4f7ee333c",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Advanced Manufacturing Technology"
+            },
+            "ceterms:isPreparationFor": "res:ce-79c8319b-35f8-4b5b-87c9-51df174febf3",
+            "ceterms:hasPart": [
+                "res:ce-2630ec3d-4119-4bd2-b8c2-6876e50d2d82",
+                "res:etc..."
+            ]
+        },
+        {
+            "@id": "res:ce-2630ec3d-4119-4bd2-b8c2-6876e50d2d82",
+            "@type": "ceterms:Course",
+            "ceterms:name": {
+                "en": "Intro to Mechancical Engineering"
+            },
+            "ceterms:offeredBy": "res:ce-8be8cbc5-7764-4339-9c2b-82cda031dd1c",
+            "ceterms:creditValue": {
+                "@type": "ceterms:ValueProfile",
+                "ceterms:creditUnitType": {
+                    "@type": "skos:Concept",
+                    "skos:prefLabel": "Erewehon Credit Unit",
+                    "skos:notation": "ECU"
+                },
+                "schema:value": 15
+            }
+        },
+        {
+            "@id": "res:ce-e12beb02-b506-401b-a898-f5de69a072c0",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:accreditedBy": "res:ce-6a3e5259-f51b-40c8-a39b-639a731eab40",
+            "ceterms:agentType": "orgType:FourYear",
+            "ceterms:name": {
+                "en": "Erewhon University"
+            },
+            "ceterms:subOrganization": "res:ce-b662de80-7ae2-4e53-a8ca-5cf4856e7e23",
+            "ceterms:offers": "res:ce-8e3d83ee-bf56-439c-98d8-0f269dafd3a5"
+        },
+        {
+            "@id": "res:ce-b662de80-7ae2-4e53-a8ca-5cf4856e7e23",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "School of Engineering"
+            },
+            "ceterms:offers": "res:ce-71333582-35ae-4ff0-a205-247133e322e4"
+        },
+        {
+            "@id": "res:ce-8e3d83ee-bf56-439c-98d8-0f269dafd3a5",
+            "@type": "ceterms:BachelorOfScienceDegree",
+            "ceterms:name": {
+                "en": "Bachelor of Science in Automation Leadership"
+            }
+        },
+        {
+            "@id": "res:ce-71333582-35ae-4ff0-a205-247133e322e4",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Automation Leadership"
+            },
+            "ceterms:offeredBy": "res:ce-b662de80-7ae2-4e53-a8ca-5cf4856e7e23",
+            "ceterms:isPreparationFor": "res:ce-8e3d83ee-bf56-439c-98d8-0f269dafd3a5",
+            "ceterms:hasPart": "res:ce-1e942ea6-833b-4c2b-98bd-623e80bc4ffc"
+        },
+        {
+            "@id": "res:ce-1e942ea6-833b-4c2b-98bd-623e80bc4ffc",
+            "@type": "ceterms:Course",
+            "ceterms:name": {
+                "en": "Mechanical Engineering 101"
+            },
+            "ceterms:creditValue": {
+                "@type": "ceterms:ValueProfile",
+                "ceterms:creditUnitType": {
+                    "@type": "skos:Concept",
+                    "skos:prefLabel": "Erewehon Credit Unit",
+                    "skos:notation": "ECU"
+                },
+                "ceterms:creditLevelType": {
+                    "@type": "skos:Concept",
+                    "skos:prefLabel": "Lower Division Level"
+                },
+                "schema:value": 15
+            }
+        },
+        {
+            "@id": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "@type": "ceterms:QACredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon Education Agency"
+            }
+        }
+    ]
+}
