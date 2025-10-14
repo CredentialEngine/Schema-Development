@@ -15,8 +15,10 @@ This folder is for materials relating to the proposal to extend data capabilitie
 
 ### Proposal
 
-- Domain model
-  - Overview (TBD)
+- Domain model (divided in three parts for ease of viewing).
+  - [Transfer Agreements](Diagrams/TA-Model.png)
+  - [Policies](Diagrams/Policy-Model.png)
+  - [Transfer Value](Diagrams/TV-Model.png)
   - [Source](https://drive.google.com/file/d/1QxCkGTC-PbeEmaDAh0MUAr-mr2oRNPaf/view?usp=drive_link) (restricted access).
 - [Terms proposal (doc)](https://docs.google.com/document/d/1TLt0HHNkz8IgdcW3AkwjkJXIMAcdyK70KW1XEfJhY4c/edit?usp=drive_link)
 - Technical proposals and discussion

@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "http://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "http://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-ecdf8840-2222-4832-bed0-0af77d7a4a0c",
+            "@type": "ceterms:TransferValueProfile",
+            "ceterms:ownedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "ceterms:evaluationProcess": {
+                "@type": "ceterms:ProcessProfile",
+                "ceterms:processMethod": "http://example.org/processes/001#method",
+                "ceterms:processStandards": "http://example.org/Pprocesses/001#standards",
+                "ceterms:processingAgent": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4"
+            },
+            "ceterms:evaluationEvidence": {
+                "@type": "ceterms:EvidenceOutcome",
+                "ceterms:subjectWebPage": "http://example.org/evidenceOutcome/001",
+                "ceterms:hasStatement": {
+                    "@type": "ceterms:StructuredStatement",
+                    "ceterms:statementText": {
+                        "en": "..."
+                    }
+                }
+            },
+            "ceterms:transferValueFrom": "res:ce-4a96e17f-aba7-41a2-b4ae-df88ba23dee6",
+            "ceterms:transferValueFor": "res:ce-dab6c03f-4209-4310-8723-40ef7f25a2cb",
+            "ceterms:transferValue": {
+                "@type": "ceterms:ValueProfile",
+                "ceterms:value": 15,
+                "ceterms:creditUnitType": "creditUnit:DegreeCredit",
+                "ceterms:credtiLevelType": "audLevel:UpperDivisionLevel"
+            }
+        }
+    ]
+}
