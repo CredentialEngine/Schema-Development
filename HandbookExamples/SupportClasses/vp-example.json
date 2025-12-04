@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "_:tvp1",
+            "@type": "ceterms:ValueProfile",
+            "schema:value": 3,
+            "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
+            "ceterms:creditLevelType": "audLevel:LowerDivisionLevel",
+            "ceterms:subject": "_:cao1"
+        },
+        {
+            "@id": "_:cao1",
+            "@type": "ceterms:CredentialAlignmentObject",
+            "ceterms:targetNodeName": {
+                "en": "Finance"
+            }
+        }
+    ]
+}

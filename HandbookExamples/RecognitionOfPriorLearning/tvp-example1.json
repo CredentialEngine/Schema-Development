@@ -1,0 +1,73 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-abaabbd8-0690-4b21-819a-001467b8c7cb",
+            "@type": "ceterms:TransferValueProfile",
+            "ceterms:description": {
+                "en": "Example transfer value profile showing 3 degree credits at lower division level transfered to a Learning Program in Accountancy from a Finance Exam."
+            },
+            "ceterms:ownedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "ceterms:transferValue": "_:tv1",
+            "ceterms:transferValueFrom": "res:ce-55caa0b0-c024-4326-8b75-88e2ee0e3ff6",
+            "ceterms:transferValueFor": "res:ce-bb08c8f1-7376-4c41-b08d-885469a96802"
+        },
+        {
+            "@id": "_:tv1",
+            "@type": "ceterms:ValueProfile",
+            "schema:value": 3,
+            "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
+            "ceterms:creditLevelType": "audLevel:LowerDivisionLevel",
+            "ceterms:subject": "_:cao1"
+        },
+        {
+            "@id": "_:cao1",
+            "@type": "ceterms:CredentialAlignmentObject",
+            "ceterms:targetNodeName": {
+                "en": "Finance"
+            }
+        },
+        {
+            "@id": "res:ce-55caa0b0-c024-4326-8b75-88e2ee0e3ff6",
+            "@type": "ceterms:AssessmentProfile",
+            "ceterms:name": {
+                "en": "Finance Exam"
+            },
+            "ceterms:ownedBy": "res:ce-a6c76c5e-7f3d-495c-9f42-7ca890b6864d"
+        },
+        {
+            "@id": "res:ce-bb08c8f1-7376-4c41-b08d-885469a96802",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Accountancy"
+            },
+            "ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6"
+        },
+        {
+            "@id": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "@type": "ceterms:QACredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon Education Agency"
+            }
+        },
+        {
+            "@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon University"
+            }
+        },
+        {
+            "@id": "res:ce-a6c76c5e-7f3d-495c-9f42-7ca890b6864d",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon College"
+            }
+        }
+    ]
+}
