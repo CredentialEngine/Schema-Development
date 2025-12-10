@@ -105,12 +105,7 @@
             "ceterms:requires": {
                 "@type": "ceterms:ConditionProfile",
                 "ceterms:targetLearningOpportunity": "res:ce-2630ec3d-4119-4bd2-b8c2-6876e50d2d82",
-                "ceterms:condition": {"en": "The student grade in Erewhon College's Intro to Mechancical Engineering must be higher than a C."},
-                "ceterms:hasConstraint": {
-                    "ceterms:leftSource": ":AssessmentScore",
-                    "ceterms:comparator": "compare:GTEQ",
-                    "ceterms:rightSource": "C"
-                }
+                "ceterms:condition": {"en": "The student grade in Erewhon College's Intro to Mechancical Engineering must be higher than a C."}
             },
             "ceterms:evaluationEvidence": "https://example.edu/creditEvauations/001",
             "ceterms:evaluationProcess": "https://example.edu/processes/CreditEvaluation"
