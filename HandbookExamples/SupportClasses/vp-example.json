@@ -7,18 +7,15 @@
     ],
     "@graph": [
         {
-            "@id": "_:tvp1",
             "@type": "ceterms:ValueProfile",
             "schema:value": 3,
             "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
             "ceterms:creditLevelType": "audLevel:LowerDivisionLevel",
-            "ceterms:subject": "_:cao1"
-        },
-        {
-            "@id": "_:cao1",
-            "@type": "ceterms:CredentialAlignmentObject",
-            "ceterms:targetNodeName": {
-                "en": "Finance"
+            "ceterms:subject": {
+                "@type": "ceterms:CredentialAlignmentObject",
+                "ceterms:targetNodeName": {
+                    "en": "Finance"
+                }
             }
         }
     ]

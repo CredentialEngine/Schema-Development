@@ -13,24 +13,20 @@
                 "en": "Example transfer value profile showing 3 degree credits at lower division level transfered to a Learning Program in Accountancy from a Finance Exam."
             },
             "ceterms:ownedBy": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
-            "ceterms:transferValue": "_:tv1",
+            "ceterms:transferValue": {
+                "@type": "ceterms:ValueProfile",
+                "schema:value": 3,
+                "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
+                "ceterms:creditLevelType": "audLevel:LowerDivisionLevel",
+                "ceterms:subject": {
+                    "@type": "ceterms:CredentialAlignmentObject",
+                    "ceterms:targetNodeName": {
+                        "en": "Finance"
+                    }
+                }
+            },
             "ceterms:transferValueFrom": "res:ce-55caa0b0-c024-4326-8b75-88e2ee0e3ff6",
             "ceterms:transferValueFor": "res:ce-bb08c8f1-7376-4c41-b08d-885469a96802"
-        },
-        {
-            "@id": "_:tv1",
-            "@type": "ceterms:ValueProfile",
-            "schema:value": 3,
-            "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
-            "ceterms:creditLevelType": "audLevel:LowerDivisionLevel",
-            "ceterms:subject": "_:cao1"
-        },
-        {
-            "@id": "_:cao1",
-            "@type": "ceterms:CredentialAlignmentObject",
-            "ceterms:targetNodeName": {
-                "en": "Finance"
-            }
         },
         {
             "@id": "res:ce-55caa0b0-c024-4326-8b75-88e2ee0e3ff6",

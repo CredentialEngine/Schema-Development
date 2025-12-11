@@ -13,10 +13,19 @@
                 "en": "Example transfer value profile showing 6 degree credits at lower division level for a Learing Program in Computer Systems resulting from having the Nave occupation Information Systems Technician at level E1."
             },
             "ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
-            "ceterms:transferValue": "_:vp1",
+            "ceterms:transferValue": {
+                "@type": "ceterms:ValueProfile",
+                "schema:value": 6,
+                "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
+                "ceterms:creditLevelType": "audLevel:LowerDivisionLevel"
+            },
             "ceterms:transferValueFor": "res:ce-913ef890-a07a-4140-b9f9-5f49281f2f6a",
             "ceterms:transferValueFrom": "res:ce-bcac64b0-814b-4913-bdde-d598a941af9f",
-            "ceterms:requires": "_:cond1"
+            "ceterms:requires": {
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:condition": "Level E1.",
+                "ceterms:targetOccupation": "res:ce-bcac64b0-814b-4913-bdde-d598a941af9f"
+            }
         },
         {
             "@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
@@ -39,19 +48,6 @@
             "ceterms:name": {
                 "en": "Navy Information Systems Technician"
             }
-        },
-        {
-            "@id": "_:cond1",
-            "@type": "ceterms:ConditionProfile",
-            "ceterms:condition": "Level E1.",
-            "ceterms:targetOccupation": "res:ce-bcac64b0-814b-4913-bdde-d598a941af9f"
-        },
-        {
-            "@id": "_:vp1",
-            "@type": "ceterms:ValueProfile",
-            "schema:value": 6,
-            "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
-            "ceterms:creditLevelType": "audLevel:LowerDivisionLevel"
         }
     ]
 }

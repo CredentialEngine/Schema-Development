@@ -9,29 +9,25 @@
         {
             "@id": "res:ce-abaabbd8-0690-4b21-819a-001467b8c7cb",
             "@type": "ceterms:TransferValueProfile",
-            "ceterms:transferValue": "_:tvp1",
-            "ceterms:evaluationEvidence": "_:evo1",
-            "ceterms:evaluationProcess": "_:proc1"
-        },
-        {
-            "@id": "_:tvp1",
-            "@type": "ceterms:ValueProfile",
-            "schema:value": 3,
-            "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
-            "ceterms:creditLevelType": "audLevel:LowerDivisionLevel"
-        },
-        {
-            "@id": "_:evo1",
-            "@type": "ceterms:EvaluationOutcome",
-            "ceterms:name": {
-                "en": "Evaluation of the Finance Assessment offered by Erewhon College"
+            "ceterms:transferValue": {
+                "@type": "ceterms:ValueProfile",
+                "schema:value": 3,
+                "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
+                "ceterms:creditLevelType": "audLevel:LowerDivisionLevel"
             },
-            "ceterms:subjectWebpage": "http://example.edu/resources/evo1",
-            "ceterms:isEvaluationOf": "res:ce-abaabbd8-0690-4b21-819a-001467b8c7cb",
-            "ceterms:developmentProcess": "_:proc1"
+            "ceterms:evaluationEvidence": {
+                "@type": "ceterms:EvaluationOutcome",
+                "ceterms:name": {
+                    "en": "Evaluation of the Finance Assessment offered by Erewhon College"
+                },
+                "ceterms:subjectWebpage": "http://example.edu/resources/evo1",
+                "ceterms:isEvaluationOf": "res:ce-abaabbd8-0690-4b21-819a-001467b8c7cb",
+                "ceterms:developmentProcess": "res:ce-990d1660-e04f-4bdb-a0e9-befd483dc0a8"
+            },
+            "ceterms:evaluationProcess": "res:ce-990d1660-e04f-4bdb-a0e9-befd483dc0a8"
         },
         {
-            "@id": "_:proc1",
+            "@id": "res:ce-990d1660-e04f-4bdb-a0e9-befd483dc0a8",
             "@type": "ceterms:ProcessProfile",
             "ceterms:name": {
                 "en": "Standards for the evaluation of the credit value of assessments."
