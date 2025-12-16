@@ -1,0 +1,22 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-dd03498a-d076-4f4c-9eb5-4eda05ab7beb",
+            "@type": "ceterms:PriorLearningPolicy",
+            "ceterms:learningRecognitionMethodType": "lrMethod:IndividualizedPriorLearningAssessment",
+            "ceterms:hasStructuredStatement": {
+                "@type": "ceterms:StructuredStatement",
+                "ceterms:statementText": {
+                    "en": "Prospective students will be assessed individually in order to place them at an appropriatestage of the program..."
+                },
+                "ceterms:statementType": "statementCat:LearningRecognitionMethodRelated"
+            }
+        }
+    ]
+}

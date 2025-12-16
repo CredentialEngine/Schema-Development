@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-b1f879e8-a4c2-47f0-b97d-6498de9b35f8",
+            "@type": "ceterms:TransferAgreement",
+            "ceasn:creator": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "ceterms:hasSupportService": "res:ce-b21a2aae-fb66-4f1f-83a9-5f630082fd4e",
+            "ceterms:sendingOrganization": "res:ce-a6c76c5e-7f3d-495c-9f42-7ca890b6864d",
+            "ceterms:receivingOrganization": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6"
+        },
+        {
+            "@id": "res:ce-b21a2aae-fb66-4f1f-83a9-5f630082fd4e",
+            "@type": "ceterms:SupportService",
+            "ceterms:supportServiceType": "support:TransferAdvising"
+        },
+        {
+            "@id": "res:ce-ac346c60-9f8c-4130-b955-ed947603fbd4",
+            "@type": "ceterms:QACredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon Education Agency"
+            }
+        },
+        {
+            "@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon University"
+            },
+            "ceterms:offers": "res:ce-b21a2aae-fb66-4f1f-83a9-5f630082fd4e"
+        },
+        {
+            "@id": "res:ce-a6c76c5e-7f3d-495c-9f42-7ca890b6864d",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon College"
+            }
+        }
+    ]
+}

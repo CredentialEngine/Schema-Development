@@ -1,0 +1,53 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-6911cd7c-906a-4cc9-8a35-b846875e6b5b",
+            "@type": "ceterms:TransferValueProfile",
+            "ceterms:description": {
+                "en": "Example transfer value profile showing 6 degree credits at lower division level for a Learing Program in Computer Systems resulting from having the Nave occupation Information Systems Technician at level E1."
+            },
+            "ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "ceterms:transferValue": {
+                "@type": "ceterms:ValueProfile",
+                "schema:value": 6,
+                "ceterms:creditUnitType": "creditUnit:DegreeeCredit",
+                "ceterms:creditLevelType": "audLevel:LowerDivisionLevel"
+            },
+            "ceterms:transferValueFor": "res:ce-913ef890-a07a-4140-b9f9-5f49281f2f6a",
+            "ceterms:transferValueFrom": "res:ce-bcac64b0-814b-4913-bdde-d598a941af9f",
+            "ceterms:requires": {
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:condition": "Level E1.",
+                "ceterms:targetOccupation": "res:ce-bcac64b0-814b-4913-bdde-d598a941af9f"
+            }
+        },
+        {
+            "@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon University"
+            }
+        },
+        {
+            "@id": "res:ce-913ef890-a07a-4140-b9f9-5f49281f2f6a",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:name": {
+                "en": "Computer Systems"
+            },
+            "ceterms:offeredBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6"
+        },
+        {
+            "@id": "res:ce-bcac64b0-814b-4913-bdde-d598a941af9f",
+            "@type": "ceterms:Occupation",
+            "ceterms:name": {
+                "en": "Navy Information Systems Technician"
+            }
+        }
+    ]
+}

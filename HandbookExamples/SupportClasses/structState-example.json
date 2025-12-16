@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-dd03498a-d076-4f4c-9eb5-4eda05ab7123",
+            "@type": "ceterms:TransferAgreement",
+            "ceterms:hasStructuredStatement": {
+                "@type": "ceterms:StructuredStatement",
+                "ceasn:listID": "5.6",
+                "ceterms:name": {
+                    "en": "Student Contact Points"
+                },
+                "ceterms:statementText": {
+                    "en": "Both Parties agree that they maintain contact points for students who..."
+                },
+                "ceterms:statementType": "statementCat:MutualObligation",
+                "ceterms:subjectWebpage": "http://example.edu/agreement/123#5_6"
+            }
+        }
+    ]
+}
