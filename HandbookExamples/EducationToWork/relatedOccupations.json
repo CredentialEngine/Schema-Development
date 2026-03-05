@@ -26,7 +26,7 @@
             }
         },
         {
-            "@id": "res:res:ce-3217399b-f9d3-4fc6-a7b9-70f4ec436519",
+            "@id": "res:ce-3217399b-f9d3-4fc6-a7b9-70f4ec436519",
             "@type": "ceterms:Occupation",
             "ceterms:name": {
                 "en": "Bar Tender"
