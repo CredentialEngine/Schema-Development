@@ -1,0 +1,41 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-abdee59f-9774-45db-abc2-7c5fdca85ed9",
+            "@type": "ceterms:FinancialAssistanceProfile",
+            "ceterms:offeredBy": "res:ce-e74cb5f7-e043-47af-afac-20781a27d1f3",
+            "ceterms:financialAssistanceType": {
+                "@type": "ceterms:CredentialAlignmentObject",
+                "ceterms:targetNode": "financialAid:Loan"
+            },
+            "ceterms:financialAssistanceValue": {
+                "@type": "schema:QuantitativeValue",
+                "schema:value": "1000",
+                "schema:unitText": {
+                    "@type": "ceterms:CredentialAlignmentObject",
+                    "ceterms:codedNotation": "EWD"
+                }
+            },
+            "ceterms:requires": {
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:condition": {
+                    "en": "For students attending college or university more than 20km from their home address."
+                }
+            },
+            "ceterms:financialAssistanceForType": "costType:Travel"
+        },
+        {
+            "@id": "res:ce-e74cb5f7-e043-47af-afac-20781a27d1f3",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon Department of Education"
+            }
+        }
+    ]
+}
