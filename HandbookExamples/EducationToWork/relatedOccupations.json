@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-c3b3abf0-3d52-4dff-8207-0c20d2a7e1d8",
+            "@type": "ceterms:Occupation",
+            "ceterms:name": {
+                "en": "Bar Tender (cocktails)"
+            },
+            "ceterms:description": {
+                "en": "Mix and serve cocktais to patrons, directly or through waitstaff."
+            },
+            "ceterms:assertedBy": "res:ce-3fe531a0-0ad2-4cd6-af5c-5d2ba923b777",
+            "ceterms:isSpecializationOf": "res:ce-3217399b-f9d3-4fc6-a7b9-70f4ec436519"
+        },
+        {
+            "@id": "res:ce-3fe531a0-0ad2-4cd6-af5c-5d2ba923b777",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Mixologists of Erewhon"
+            }
+        },
+        {
+            "@id": "res:res:ce-3217399b-f9d3-4fc6-a7b9-70f4ec436519",
+            "@type": "ceterms:Occupation",
+            "ceterms:name": {
+                "en": "Bar Tender"
+            },
+            "ceterms:description": {
+                "en": "Mix and serve drinks to patrons, directly or through waitstaff."
+            },
+            "ceterms:assertedBy": "res:ce-c2405507-a2bb-4c01-ae1c-272a53f60a7f"
+        },
+        {
+            "@id": "res:ce-c2405507-a2bb-4c01-ae1c-272a53f60a7f",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en": "Erewhon National Employment Agency"
+            }
+        }
+    ]
+}
