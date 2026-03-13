@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-d2ede5c5-e3bf-40f3-87eb-93f06560c872",
+            "@type": "ceterms:Job",
+            "ceterms:name": {
+                "en": "Research Fellow in Machine Intelligence"
+            },
+            "ceterms:workPay": "res:ce-3e4e12cc-edf6-4c9e-a6b6-ad5aee9337f5"
+        },
+        {
+            "@id": "res:ce-3e4e12cc-edf6-4c9e-a6b6-ad5aee9337f5",
+            "@type": "ceterms:PayProfile",
+            "ceterms:currency": "USD",
+            "schema:value": "70000",
+            "ceterms:basePeriod": "P1Y",
+            "ceterms:dateEffective": "2026-04-01",
+            "ceterms:paymentPatternType": "scheduleFrequency:Monthly",
+            "ceterms:requires": {
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:condition": {
+                    "en": "Appointment at Grade 7 is dependent upon having been awarded a PhD."
+                }
+            },
+            "ceterms:payBandType": "res:ce-c1d17f9d-29bc-4488-95ad-f3ce94a061f3"
+        },
+        {
+            "@id": "res:ce-c1d17f9d-29bc-4488-95ad-f3ce94a061f3",
+            "@type": "skos:Concept",
+            "skos:prefLabel": {
+                "en": "Grade 7"
+            },
+            "skos:inScheme": "res:ce-c71c2ab0-f037-42fe-98d1-b9793de72c10"
+        },
+        {
+            "@id": "res:ce-c71c2ab0-f037-42fe-98d1-b9793de72c10",
+            "@type": "skos:ConceptScheme",
+            "rdfs:label": {
+                "en": "2025/26 Erewhon Research Pay Scheme"
+            }
+        }
+    ]
+}
