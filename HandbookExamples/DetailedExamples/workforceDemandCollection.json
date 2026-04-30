@@ -16,41 +16,58 @@
             "ceterms:name": {
                 "en": "High demand occupations in Erewhon"
             },
-            "ceterms:ownedBy": "res:ce-deba59ad-bd3e-4ada-8f7c-dc275538f561",
+            "ceterms:ownedBy": [
+                "res:ce-deba59ad-bd3e-4ada-8f7c-dc275538f561"
+            ],
             "ceterms:jurisdiction": {
                 "@type": "ceterms:JurisdictionProfile",
                 "ceterms:name": {
                     "en": "Erewhon"
                 }
             },
-            "ceterms:developmentProcess": "res:ce-c14849ce-4b85-4c56-acf4-e30682d1e305",
-            "ceterms:membershipCondition": "res:ce-3d576c4e-e34e-45e7-acbd-36d41590362b",
+            "ceterms:developmentProcess": [
+                "res:ce-c14849ce-4b85-4c56-acf4-e30682d1e305"
+            ],
+            "ceterms:membershipCondition": {
+                "@id": "res:ce-3d576c4e-e34e-45e7-acbd-36d41590362b",
+                "@type": "ceterms:ConditionProfile",
+                "ceterms:condition": {
+                    "en": "Occupation demand must be higher that 75%."
+                },
+                "ceterms:targetMetric": "res:ce-b00745f9-a1f2-4805-a8ef-c7bbf255f38a"
+            },
             "ceterms:hasMember": [
-                {
-                    "@type": "ceterms:CollectionMember",
-                    "ceterms:name": {
-                        "en": "Registered Nurse"
-                    },
-                    "ceterms:proxyFor": "res:b434948c-66e0-4d66-94d9-da62f6563e95",
-                    "ceterms:startDate": "2025-06-28"
-                },
-                {
-                    "@type": "ceterms:CollectionMember",
-                    "ceterms:name": {
-                        "en": "Welder"
-                    },
-                    "ceterms:proxyFor": "res:776abfdc-5844-4cbb-85d8-6bd8d119585b",
-                    "ceterms:startDate": "2025-09-28"
-                },
-                {
-                    "@type": "ceterms:CollectionMember",
-                    "ceterms:name": {
-                        "en": "etc..."
-                    },
-                    "ceterms:proxyFor": "res:a867211a-cf58-4f2f-9d19-d81ea5c0ba3e",
-                    "ceterms:startDate": "2025-12-01"
-                }
+                "_:cm1",
+                "_:cm2",
+                "_:cm3"
             ]
+        },
+        {
+            "@id": "_:cm1",
+            "@type": "ceterms:CollectionMember",
+            "ceterms:name": {
+                "en": "Registered Nurse"
+            },
+            "ceterms:proxyFor": "res:b434948c-66e0-4d66-94d9-da62f6563e95",
+            "ceterms:startDate": "2025-06-28"
+        },
+        {
+            "@id": "_:cm2",
+            "@type": "ceterms:CollectionMember",
+            "ceterms:name": {
+                "en": "Welder"
+            },
+            "ceterms:proxyFor": "res:776abfdc-5844-4cbb-85d8-6bd8d119585b",
+            "ceterms:startDate": "2025-09-28"
+        },
+        {
+            "@id": "_:cm3",
+            "@type": "ceterms:CollectionMember",
+            "ceterms:name": {
+                "en": "etc..."
+            },
+            "ceterms:proxyFor": "res:a867211a-cf58-4f2f-9d19-d81ea5c0ba3e",
+            "ceterms:startDate": "2025-12-01"
         },
         {
             "@id": "res:ce-deba59ad-bd3e-4ada-8f7c-dc275538f561",
@@ -74,17 +91,9 @@
             "ceterms:instrument": "res:ce-6dc758dc-219e-4e1a-90b1-40f78b81cb88"
         },
         {
-            "@id": "res:ce-3d576c4e-e34e-45e7-acbd-36d41590362b",
-            "@type": "ceterms:ConditionProfile",
-            "ceterms:condition": {
-                "en": "Occupation demand must be higher that 75%."
-            },
-            "ceterms:targetMetric": "res:ce-b00745f9-a1f2-4805-a8ef-c7bbf255f38a"
-        },
-        {
             "@id": "res:ce-6dc758dc-219e-4e1a-90b1-40f78b81cb88",
             "@type": "ceterms:DataSetProfile",
-            "ceterms:hasMetric": "res:ce-b00745f9-a1f2-4805-a8ef-c7bbf255f38a"
+            "ceterms:hasMetric": ["res:ce-b00745f9-a1f2-4805-a8ef-c7bbf255f38a"]
         },
         {
             "@id": "res:ce-b00745f9-a1f2-4805-a8ef-c7bbf255f38a",
