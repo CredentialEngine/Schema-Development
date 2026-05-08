@@ -13,13 +13,17 @@ pool:
 
 variables:
   BuildConfiguration: 'Release'
-  DotNetVersion: '10.0.x'
+  DotNetVersion: '10.0.203'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+
+- task: UseDotNet@2
+  displayName: 'Install .NET 10 SDK'
+  inputs:
+    packageType: 'sdk'
+    version: '$(DotNetVersion)'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    dotnet --info
+  displayName: 'Display .NET Info'
+
