@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "ceterms": "https://purl.org/ctdl/terms/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "ceterms:TestClass": "https://purl.org/ctdl/terms/TestClass",
+        "ceterms:TestProperty": "https://purl.org/ctdl/terms/TestProperty",
+        "ceterms:TestConcept": "https://purl.org/ctdl/terms/TestConcept",
+        "ceterms:TestConceptScheme": "https://purl.org/ctdl/terms/TestConceptScheme",
+        "ceterms:name": {
+            "@container": "@language",
+            "@type": "xsd:string"
+        }
+    }
+}

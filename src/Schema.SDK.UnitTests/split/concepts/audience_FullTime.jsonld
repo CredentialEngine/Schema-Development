@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:FullTime",
+    "skos:prefLabel": {
+        "en-US": "Full-Time"
+    },
+    "skos:definition": {
+        "en-US": "Participation in a learning opportunity to an extent that meets the opportunity's requirements for full-time status."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/FullTime/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

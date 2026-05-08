@@ -1,0 +1,36 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:ArrayOperationCategory",
+  "rdfs:label": {
+    "en-US": "Array Operation Category"
+  },
+  "rdfs:comment": {
+    "en-US": "Concepts describing an action to be taken on an array of values."
+  },
+  "vann:usageNote": {
+    "en-US": "Used in CTDL for actions performed on arrays, lists or sets or values in order to obtain some other value."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ArrayOperationCategory/json",
+  "meta:hasConcept": [
+    "array:AllOf",
+    "array:AnyOf",
+    "array:CountDistinct",
+    "array:Max",
+    "array:Mean",
+    "array:Min",
+    "array:OneOf",
+    "array:Sum"
+  ],
+  "skos:hasTopConcept": [
+    "array:AllOf",
+    "array:AnyOf",
+    "array:CountDistinct",
+    "array:Max",
+    "array:Mean",
+    "array:Min",
+    "array:OneOf",
+    "array:Sum"
+  ]
+}

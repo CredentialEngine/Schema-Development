@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionCategory:StateApprovedPostsecondary",
+    "skos:prefLabel": {
+        "en-US": "State Approved Postsecondary Programs"
+    },
+    "skos:definition": {
+        "en-US": "Learning Opportunities, Learning Programs, Courses, Assessments or Credentials approved by a state agency to be offered within that state’s jurisdiction by postsecondary institutions."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/StateApprovedPostsecondary/json",
+    "skos:inScheme": [
+        "ceterms:CollectionCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CollectionCategory"
+    ]
+}

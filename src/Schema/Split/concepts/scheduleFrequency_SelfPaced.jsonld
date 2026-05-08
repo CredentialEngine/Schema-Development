@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleFrequency:SelfPaced",
+  "skos:prefLabel": {
+    "en-US": "Self-Paced"
+  },
+  "skos:definition": {
+    "en-US": "Schedule allows for participation at a self-determined pace, though some specific dates and deadlines may be involved."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/SelfPaced/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleFrequency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

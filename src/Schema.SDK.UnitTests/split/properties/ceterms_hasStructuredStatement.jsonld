@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasStructuredStatement",
+    "rdfs:label": {
+        "en-US": "Has Structured Statement"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates contextualized data that reproduces or links to text such as part of a document or information about some aspect of a resource."
+    },
+    "vann:usageNote": {
+        "en-US": "Do not use this property if a simple text property such as ceterms:description is adequate."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasStructuredStatement/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:hasPart"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:EvaluationOutcome",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:StructuredStatement"
+    ]
+}

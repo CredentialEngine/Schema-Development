@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:CohortBased",
+    "skos:prefLabel": {
+        "en-US": "Cohort-Based"
+    },
+    "skos:definition": {
+        "en-US": "Format in which people  progress as a group."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/CohortBased/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:jobLevelType",
+    "rdfs:label": {
+        "en-US": "Job Level Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of level or grade indicating a point in a job or role progression, such as seniority or responsibility; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/jobLevelType/json",
+    "schema:domainIncludes": [
+        "ceterms:Job"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

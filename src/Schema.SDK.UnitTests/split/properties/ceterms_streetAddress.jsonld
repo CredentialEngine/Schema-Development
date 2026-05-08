@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:streetAddress",
+    "rdfs:label": {
+        "en-US": "Street Address"
+    },
+    "rdfs:comment": {
+        "en-US": "Street address. e.g. \"1600 Amphitheatre Pkwy\"."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/streetAddress/json",
+    "schema:domainIncludes": [
+        "ceterms:Place",
+        "ceterms:PostalAddress"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "owl:equivalentProperty": [
+        "schema:streetAddress"
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:FinancialAssistance",
+    "rdfs:label": {
+        "en-US": "Financial Assistance"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of financial assistance typically available in the United States."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/FinancialAssistance/json",
+    "meta:hasConcept": [
+        "financialAid:AcademicAssistantship",
+        "financialAid:Apprenticeship",
+        "financialAid:CoOperative",
+        "financialAid:DoDTuitionAssistance",
+        "financialAid:FederalGrant",
+        "financialAid:FederalScholarship",
+        "financialAid:FederalSubsidizedLoan",
+        "financialAid:FederalUnsubsidizedLoan",
+        "financialAid:FederalWorkStudy",
+        "financialAid:General",
+        "financialAid:Grant",
+        "financialAid:InstitutionalGrant",
+        "financialAid:InstitutionalLoan",
+        "financialAid:InstitutionalScholarship",
+        "financialAid:Internship",
+        "financialAid:Loan",
+        "financialAid:LoanForgivenessProgram",
+        "financialAid:Military",
+        "financialAid:OtherGrant",
+        "financialAid:OtherLoan",
+        "financialAid:OtherOnCampusWork",
+        "financialAid:OtherScholarship",
+        "financialAid:ParentPLUSLoan",
+        "financialAid:PellGrant",
+        "financialAid:Post911GIBill",
+        "financialAid:PrivateGrant",
+        "financialAid:PrivateLoan",
+        "financialAid:PrivateScholarship",
+        "financialAid:PromiseProgram",
+        "financialAid:Scholarship",
+        "financialAid:StateLocalGrant",
+        "financialAid:StateLocalLoan",
+        "financialAid:StateLocalMilitaryAssistance",
+        "financialAid:StateLocalScholarship",
+        "financialAid:StateLocalWork",
+        "financialAid:Stipend",
+        "financialAid:VEAP",
+        "financialAid:VocationalRehabilitation",
+        "financialAid:WIOA",
+        "financialAid:WorkBased"
+    ],
+    "skos:hasTopConcept": [
+        "financialAid:General",
+        "financialAid:Military"
+    ]
+}

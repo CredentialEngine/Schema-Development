@@ -1,0 +1,48 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Task",
+    "rdfs:label": {
+        "en-US": "Task"
+    },
+    "rdfs:comment": {
+        "en-US": "Specific activity, typically related to performing a function or achieving a goal."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Task/json",
+    "meta:domainFor": [
+        "ceasn:abilityEmbodied",
+        "ceasn:comment",
+        "ceasn:hasChild",
+        "ceasn:isChildOf",
+        "ceasn:knowledgeEmbodied",
+        "ceasn:listID",
+        "ceasn:skillEmbodied",
+        "ceterms:alternateName",
+        "ceterms:assertedBy",
+        "ceterms:classification",
+        "ceterms:codedNotation",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:environmentalHazardType",
+        "ceterms:hasJob",
+        "ceterms:hasOccupation",
+        "ceterms:hasRubric",
+        "ceterms:hasWorkRole",
+        "ceterms:identifier",
+        "ceterms:inCatalog",
+        "ceterms:isMemberOf",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:performanceLevelType",
+        "ceterms:physicalCapabilityType",
+        "ceterms:reviewProcess",
+        "ceterms:sensoryCapabilityType",
+        "ceterms:subjectWebpage",
+        "ceterms:targetCompetency",
+        "ceterms:versionCode",
+        "ceterms:versionIdentifier"
+    ]
+}

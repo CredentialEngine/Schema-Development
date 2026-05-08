@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleTiming:Daytime",
+  "skos:prefLabel": {
+    "en-US": "Daytime"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is typically during daytime hours."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleTiming/Daytime/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleTiming"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleTiming"
+  ]
+}

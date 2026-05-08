@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasCostManifest",
+    "rdfs:label": {
+        "en-US": "Has Cost Manifest"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes a set of cost data applicable across the organization, sub-organization or sets of credentials or acitivites."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasCostManifest/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CostManifest"
+    ],
+    "owl:inverseOf": [
+        "ceterms:costManifestOf"
+    ]
+}

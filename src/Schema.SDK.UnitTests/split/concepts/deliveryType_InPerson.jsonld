@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "deliveryType:InPerson",
+    "skos:prefLabel": {
+        "en-US": "In-Person Only"
+    },
+    "skos:definition": {
+        "en-US": "Delivery is only face-to-face."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/deliveryType/InPerson/json",
+    "skos:inScheme": [
+        "ceterms:Delivery"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Delivery"
+    ]
+}

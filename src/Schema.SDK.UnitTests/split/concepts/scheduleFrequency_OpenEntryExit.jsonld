@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleFrequency:OpenEntryExit",
+    "skos:prefLabel": {
+        "en-US": "Open Entry/Exit"
+    },
+    "skos:definition": {
+        "en-US": "Schedule allows for the participant to enter, participate with, and complete the resource during any period of the resource's run time."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/OpenEntryExit/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleFrequency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

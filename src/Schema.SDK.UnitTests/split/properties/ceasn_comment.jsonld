@@ -1,0 +1,32 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceasn:comment",
+    "rdfs:label": {
+        "en-US": "Comment"
+    },
+    "rdfs:comment": {
+        "en-US": "Supplemental text provided by the promulgating body that clarifies the nature, scope or use of this resource."
+    },
+    "dct:description": {
+        "en-US": "Use this property when the text provides useful context for this resource."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceasn/comment/json",
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Industry",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole",
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "owl:equivalentProperty": [
+        "asn:comment",
+        "case:v1p0/notes"
+    ]
+}

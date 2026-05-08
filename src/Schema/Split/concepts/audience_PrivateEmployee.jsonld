@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audience:PrivateEmployee",
+  "skos:prefLabel": {
+    "en-US": "Private Employee"
+  },
+  "skos:definition": {
+    "en-US": "Person employed in the private sector."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/PrivateEmployee/json",
+  "skos:inScheme": [
+    "ceterms:Audience"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Audience"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:postOfficeBoxNumber",
+    "rdfs:label": {
+        "en-US": "Post Office Box Number"
+    },
+    "rdfs:comment": {
+        "en-US": "Post office box number for post office addresses."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/postOfficeBoxNumber/json",
+    "schema:domainIncludes": [
+        "ceterms:Place",
+        "ceterms:PostalAddress"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "owl:equivalentProperty": [
+        "schema:postOfficeBoxNumber"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:costManifestOf",
+    "rdfs:label": {
+        "en-US": "Cost Manifest Of"
+    },
+    "rdfs:comment": {
+        "en-US": "Organization maintaining the cost manifest."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/costManifestOf/json",
+    "schema:domainIncludes": [
+        "ceterms:CostManifest"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "owl:inverseOf": [
+        "ceterms:hasCostManifest"
+    ]
+}

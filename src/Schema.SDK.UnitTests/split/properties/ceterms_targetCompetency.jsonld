@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:targetCompetency",
+    "rdfs:label": {
+        "en-US": "Target Competency"
+    },
+    "rdfs:comment": {
+        "en-US": "A competency relevant to the resource being described."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetCompetency/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:credentialAlignment"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:RubricCriterion",
+        "ceterms:ConditionProfile",
+        "ceterms:Industry",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

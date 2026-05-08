@@ -1,0 +1,40 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:codedNotation",
+    "rdfs:label": {
+        "en-US": "Coded Notation"
+    },
+    "rdfs:comment": {
+        "en-US": "Set of alpha-numeric symbols as defined by the body responsible for this resource that uniquely identifies this resource and supports its discovery and use."
+    },
+    "dct:description": {
+        "en-US": "Examples include course codes (e.g., \"ENG101\"), US Standard Occupation Codes (e.g., \"31-9091\"), North American Industry Classification System codes (e.g., \"236117\"), or any other bespoke code used by the provider of the resource to identify it."
+    },
+    "vann:usageNote": {
+        "en-US": "For identifiers that come from a recognized identification scheme use the specific property for that identifier type, such as ceterms:opeID, ceterms:ncesID, ceterms:leiCode, etc., or use ceterms:identifier so that the identification schema can be named."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/codedNotation/json",
+    "schema:domainIncludes": [
+        "ceterms:AlignmentMap",
+        "ceterms:Collection",
+        "ceterms:Course",
+        "ceterms:CredentialAlignmentObject",
+        "ceterms:Industry",
+        "ceterms:Job",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:Occupation",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:StructuredStatement",
+        "ceterms:Task",
+        "ceterms:TransferAgreement",
+        "ceterms:TransferIntermediary",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
+}

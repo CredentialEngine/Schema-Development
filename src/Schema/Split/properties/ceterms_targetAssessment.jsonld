@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetAssessment",
+  "rdfs:label": {
+    "en-US": "Target Assessment"
+  },
+  "rdfs:comment": {
+    "en-US": "Assessment that provides direct, indirect, formative or summative evaluation or estimation of the nature, ability, or quality for an entity."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetAssessment/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:ConditionProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram",
+    "ceterms:ProcessProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Assessment",
+    "ceterms:AssessmentProfile"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:Rehabilitation",
+  "skos:prefLabel": {
+    "en-US": "Rehabilitation"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides a combination of treatment and education designed to restore maximum functioning, independence,  and a sense of well-being for individuals who have temporary or permanent disabilities."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Rehabilitation/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00318"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

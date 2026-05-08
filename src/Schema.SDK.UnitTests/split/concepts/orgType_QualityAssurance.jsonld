@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:QualityAssurance",
+    "skos:prefLabel": {
+        "en-US": "Quality Assurance Body"
+    },
+    "skos:definition": {
+        "en-US": "External body that performs accreditation, endorsement, approval, and/or recognition of a credential issuer."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/QualityAssurance/json",
+    "skos:narrower": [
+        "orgType:AccreditationBody",
+        "orgType:Regulator"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

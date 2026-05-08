@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:StateLocalMilitaryAssistance",
+  "skos:prefLabel": {
+    "en-US": "State or Local Military Assistance"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid provided by a state or local government to active duty service members, veterans, and/or qualified family members."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/StateLocalMilitaryAssistance/json",
+  "skos:broader": [
+    "financialAid:Military"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

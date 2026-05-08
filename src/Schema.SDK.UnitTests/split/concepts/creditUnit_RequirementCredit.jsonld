@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "creditUnit:RequirementCredit",
+    "skos:prefLabel": {
+        "en-US": "Requirement Credit"
+    },
+    "skos:definition": {
+        "en-US": "Credit that is issued or accepted for some type of requirement."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/RequirementCredit/json",
+    "skos:broader": [
+        "creditUnit:TypeBasedCredit"
+    ],
+    "skos:inScheme": [
+        "ceterms:CreditUnit"
+    ]
+}

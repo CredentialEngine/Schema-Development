@@ -1,0 +1,35 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:RegulateAction",
+    "rdfs:label": {
+        "en-US": "Regulate Action"
+    },
+    "rdfs:comment": {
+        "en-US": "Action by an independent, neutral, and authoritative agent enforcing the legal requirements of a resource."
+    },
+    "dct:description": {
+        "en-US": "Since an instance of ceterms:CredentialingAction is a claim that a certain agent has taken the action being described, creation of such a ceterms:CredentialingAction should be reserved to the agent of that action."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/RegulateAction/json",
+    "rdfs:subClassOf": [
+        "ceterms:CredentialingAction"
+    ],
+    "meta:domainFor": [
+        "ceterms:actingAgent",
+        "ceterms:actionStatusType",
+        "ceterms:administrationProcess",
+        "ceterms:classification",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:endDate",
+        "ceterms:evidenceOfAction",
+        "ceterms:identifier",
+        "ceterms:instrument",
+        "ceterms:name",
+        "ceterms:object",
+        "ceterms:participant",
+        "ceterms:startDate"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:worksFor",
+    "rdfs:label": {
+        "en-US": "Works For"
+    },
+    "rdfs:comment": {
+        "en-US": "Person's place of employment."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/worksFor/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialPerson"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "owl:equivalentProperty": [
+        "schema:worksFor"
+    ]
+}

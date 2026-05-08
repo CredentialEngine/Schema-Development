@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:InstructionalProgramClassification",
+    "rdfs:label": {
+        "en-US": "Instructional Program Classification"
+    },
+    "rdfs:comment": {
+        "en-US": "Class of concept schemes defining instructional program types such as the CIP codes in the U.S."
+    },
+    "vann:usageNote": {
+        "en-US": "Class of concept schemes defining types"
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/InstructionalProgramClassification/json",
+    "rdfs:subClassOf": [
+        "ceterms:CredentialFramework"
+    ]
+}

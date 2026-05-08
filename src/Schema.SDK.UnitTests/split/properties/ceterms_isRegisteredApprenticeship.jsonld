@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:isRegisteredApprenticeship",
+    "rdfs:label": {
+        "en-US": "Is Registered Apprenticeship"
+    },
+    "rdfs:comment": {
+        "en-US": "The resource is registered with a governmental agency or other authorized organization because it has been vetted, approved and validated to meet specific criteria."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isRegisteredApprenticeship/json",
+    "schema:domainIncludes": [
+        "ceterms:ApprenticeshipCertificate",
+        "ceterms:Course",
+        "ceterms:JourneymanCertificate",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:MasterCertificate",
+        "ceterms:PreApprenticeshipCertificate",
+        "ceterms:WorkBasedLearningCertificate"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:boolean"
+    ]
+}

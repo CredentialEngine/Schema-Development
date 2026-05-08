@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:price",
+  "rdfs:label": {
+    "en-US": "Price"
+  },
+  "rdfs:comment": {
+    "en-US": "Offer price of a credential, learning resource, assessment, related activity or resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/price/json",
+  "schema:domainIncludes": [
+    "ceterms:CostProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:decimal"
+  ],
+  "owl:equivalentProperty": [
+    "schema:price"
+  ]
+}

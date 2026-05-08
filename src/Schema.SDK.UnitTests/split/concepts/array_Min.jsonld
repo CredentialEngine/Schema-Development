@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "array:Min",
+    "skos:prefLabel": {
+        "en-US": "Minimum"
+    },
+    "skos:definition": {
+        "en-US": "The lowest of all the values."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/array/Min/json",
+    "skos:inScheme": [
+        "ceterms:ArrayOperationCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ArrayOperationCategory"
+    ]
+}

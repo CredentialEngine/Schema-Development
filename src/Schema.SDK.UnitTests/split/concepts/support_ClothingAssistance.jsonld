@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:ClothingAssistance",
+    "skos:prefLabel": {
+        "en-US": "Clothing Assistance"
+    },
+    "skos:definition": {
+        "en-US": "Service that pays for or provides clothing to people who need appropriate attire."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/ClothingAssistance/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00319"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

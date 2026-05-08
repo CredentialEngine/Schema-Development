@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:NeurodivergenceService",
+    "skos:prefLabel": {
+        "en-US": "Neurodivergence Service"
+    },
+    "skos:definition": {
+        "en-US": "Services related to neurodivergence."
+    },
+    "dct:description": {
+        "en-US": "Neurodivergence means relating to having a mind that functions in ways that are not considered typical according to societal norms."
+    },
+    "vann:usageNote": {
+        "en-US": "Use for services relating to autism, tics/Tourettes Syndrome, Attention Deficit Hyperactivity Disorder (ADHD), and other similar conditions."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/NeurodivergenceService/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#73051"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

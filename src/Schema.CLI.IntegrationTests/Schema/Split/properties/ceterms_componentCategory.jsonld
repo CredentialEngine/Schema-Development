@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:componentCategory",
+  "rdfs:label": {
+    "en-US": "Component Category"
+  },
+  "rdfs:comment": {
+    "en-US": "Identifies the type of PathwayComponent subclass not explicitly covered in the current array of PathwayComponent subclasses."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/componentCategory/json",
+  "schema:domainIncludes": [
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:ExtracurricularComponent"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

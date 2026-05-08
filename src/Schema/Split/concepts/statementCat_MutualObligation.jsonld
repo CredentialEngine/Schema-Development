@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:MutualObligation",
+  "skos:prefLabel": {
+    "en-US": "Mutual Obligation"
+  },
+  "skos:definition": {
+    "en-US": "Obligation that applies equally to all parties in the agreement."
+  },
+  "dct:description": {
+    "en-US": "Often covers shared responsibilities such as maintaining accreditation."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/MutualObligation/json",
+  "skos:broader": [
+    "statementCat:Obligation"
+  ],
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ]
+}

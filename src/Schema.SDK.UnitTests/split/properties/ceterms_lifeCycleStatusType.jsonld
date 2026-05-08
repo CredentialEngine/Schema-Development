@@ -1,0 +1,40 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:lifeCycleStatusType",
+    "rdfs:label": {
+        "en-US": "Life Cycle Status Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of state of the resource in terms of its stage in a life cycle; select from an enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/lifeCycleStatusType/json",
+    "schema:domainIncludes": [
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:AssessmentProfile",
+        "ceterms:Collection",
+        "ceterms:Course",
+        "ceterms:CredentialOrganization",
+        "ceterms:Industry",
+        "ceterms:Job",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:Occupation",
+        "ceterms:Organization",
+        "ceterms:Pathway",
+        "ceterms:QACredentialOrganization",
+        "ceterms:QualificationsFramework",
+        "ceterms:SupportService",
+        "ceterms:Task",
+        "ceterms:TransferValueProfile",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ],
+    "meta:targetScheme": [
+        "ceterms:LifeCycleStatus"
+    ]
+}

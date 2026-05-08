@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:DietaryAccommodation",
+  "skos:prefLabel": {
+    "en-US": "Dietary Accommodation"
+  },
+  "skos:definition": {
+    "en-US": "Alternative meal options to suit dietary needs, restrictions, or preferences."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/DietaryAccommodation/json",
+  "skos:broader": [
+    "accommodation:ResourceAndServiceAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

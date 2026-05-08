@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:SelfPaced",
+    "skos:prefLabel": {
+        "en-US": "Self Paced"
+    },
+    "skos:definition": {
+        "en-US": "Provides for personalization and flexibility in the timing and progression of learning for individual learners based on their preferences and needs, prior learning experiences, and ability to progress through learning opportunities."
+    },
+    "dct:description": {
+        "en-US": "Applies to methods such as competency-based education, open-entry/open exit, independent study, private study, and correspondence."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/SelfPaced/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

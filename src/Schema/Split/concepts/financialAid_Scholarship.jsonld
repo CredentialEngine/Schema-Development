@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:Scholarship",
+  "skos:prefLabel": {
+    "en-US": "Scholarship"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid award based on student achievement and other criteria for education that doesn’t require repayment."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Scholarship/json",
+  "skos:broader": [
+    "financialAid:General"
+  ],
+  "skos:narrower": [
+    "financialAid:FederalScholarship",
+    "financialAid:InstitutionalScholarship",
+    "financialAid:OtherScholarship",
+    "financialAid:PrivateScholarship",
+    "financialAid:StateLocalScholarship"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

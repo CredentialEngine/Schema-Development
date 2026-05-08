@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:timeRequired",
+    "rdfs:label": {
+        "en-US": "Time Required"
+    },
+    "rdfs:comment": {
+        "en-US": "Total engaged or participating time it will take to complete the activity, event, or resource."
+    },
+    "dct:description": {
+        "en-US": "This is intended to indicate only the sum of the individual amounts of time which are spent actively engaged in pursuing the completion of the activity, event, or resource, regardless of the overall time span required to complete it."
+    },
+    "vann:usageNote": {
+        "en-US": "If a resource takes 50 hours over a span of 6 months to complete, use this to record 50 hours as PT50H."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/timeRequired/json",
+    "schema:domainIncludes": [
+        "ceterms:DurationProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:Duration"
+    ]
+}

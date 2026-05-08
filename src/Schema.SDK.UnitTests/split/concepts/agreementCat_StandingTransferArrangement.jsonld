@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "agreementCat:StandingTransferArrangement",
+    "skos:prefLabel": {
+        "en-US": "Standing Transfer Arrangement"
+    },
+    "skos:definition": {
+        "en-US": "A formal mechanism applying standardized recognition rules across defined sets of courses or programs."
+    },
+    "vann:usageNote": {
+        "en-US": "Applicable only to Transfer Agreements."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/agreementCat/StandingTransferArrangement/json",
+    "skos:inScheme": [
+        "ceterms:AgreementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgreementCategory"
+    ]
+}

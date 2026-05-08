@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:isProctored",
+    "rdfs:label": {
+        "en-US": "Is Proctored"
+    },
+    "rdfs:comment": {
+        "en-US": "Whether or not the assessment is supervised or monitored by an agent."
+    },
+    "dct:description": {
+        "en-US": "Such supervision or proctoring includes: (1)  guaranteeing of the identities of the examinees; (2) the conditions of the examination including instructions, time, materials, equipment and completion, and (3) completed without unauthorized assistance."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isProctored/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:boolean"
+    ]
+}

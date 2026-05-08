@@ -1,0 +1,27 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:TimeBasedCredit",
+  "skos:prefLabel": {
+    "en-US": "Time-Based Credit"
+  },
+  "skos:definition": {
+    "en-US": "Credit with a unit of measurement based on time, either figuratively or literally."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/TimeBasedCredit/json",
+  "skos:narrower": [
+    "creditUnit:AcademicYear",
+    "creditUnit:CarnegieUnit",
+    "creditUnit:ClockHour",
+    "creditUnit:ContactHour",
+    "creditUnit:QuarterHour",
+    "creditUnit:SemesterHour"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CreditUnit"
+  ]
+}

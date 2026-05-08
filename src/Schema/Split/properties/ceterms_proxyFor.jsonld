@@ -1,0 +1,33 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:proxyFor",
+  "rdfs:label": {
+    "en-US": "Proxy For"
+  },
+  "rdfs:comment": {
+    "en-US": "Indicates the resource for which a pathway component or similar proxy resource is a stand-in."
+  },
+  "dct:description": {
+    "en-US": "The subject for this property will be acting as proxy in a context such as a pathway for the resource that is its object, so that assertions can be made about relationships between things in that context that are not universally true of the resources for which they are proxies."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/proxyFor/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CollectionMember",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:WorkExperienceComponent"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

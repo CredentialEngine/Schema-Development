@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:relevantPolicy",
+    "rdfs:label": {
+        "en-US": "Relevant Policy"
+    },
+    "rdfs:comment": {
+        "en-US": "Policy that is important in some way to this resource."
+    },
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/relevantPolicy/json",
+    "schema:domainIncludes": [
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:PriorLearningPolicy"
+    ]
+}

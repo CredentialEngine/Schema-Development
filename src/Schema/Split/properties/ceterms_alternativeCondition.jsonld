@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:alternativeCondition",
+  "rdfs:label": {
+    "en-US": "Alternative Condition"
+  },
+  "rdfs:comment": {
+    "en-US": "Constraints, prerequisites, entry conditions, or requirements in a context where more than one alternative condition or path has been defined and from which any one path fulfills the parent condition."
+  },
+  "dct:description": {
+    "en-US": "A set of alternative conditions are not necessarily mutually exclusive paths; for example, a set of alternative concentrations for a degree may allow a person to optionally complete more than one concentration even though only one is required to earn the degree."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/alternativeCondition/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:ConditionProfile"
+  ]
+}

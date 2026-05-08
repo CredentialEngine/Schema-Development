@@ -1,0 +1,37 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:VerificationServiceProfile",
+  "rdfs:label": {
+    "en-US": "Verification Service Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing the means by which someone can verify whether a credential has been attained."
+  },
+  "dct:description": {
+    "en-US": "Includes, but is not limited to, verification of whether quality assurance credentials have been issued for organizations, learning opportunities, and assessments."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/VerificationServiceProfile/json",
+  "rdfs:subClassOf": [
+    "schema:Intangible"
+  ],
+  "meta:domainFor": [
+    "ceterms:administrationProcess",
+    "ceterms:ctid",
+    "ceterms:dateEffective",
+    "ceterms:description",
+    "ceterms:estimatedCost",
+    "ceterms:holderMustAuthorize",
+    "ceterms:jurisdiction",
+    "ceterms:offeredBy",
+    "ceterms:offeredIn",
+    "ceterms:region",
+    "ceterms:subjectWebpage",
+    "ceterms:targetCredential",
+    "ceterms:verificationDirectory",
+    "ceterms:verificationMethodDescription",
+    "ceterms:verificationService",
+    "ceterms:verifiedClaimType"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:scoringMethodDescription",
+    "rdfs:label": {
+        "en-US": "Scoring Method Description"
+    },
+    "rdfs:comment": {
+        "en-US": "Textual description of the method used to score the assessment."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/scoringMethodDescription/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile",
+        "ceterms:ProcessProfile"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "alignment:NarrowMatch",
+    "skos:prefLabel": {
+        "en-US": "Narrow Match"
+    },
+    "skos:definition": {
+        "en-US": "Assertion indicates that the referenced concept is narrower in some way than this concept."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/alignment/NarrowMatch/json",
+    "skos:relatedMatch": [
+        "skos:narrowMatch"
+    ],
+    "skos:inScheme": [
+        "ceterms:Alignment"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Alignment"
+    ]
+}

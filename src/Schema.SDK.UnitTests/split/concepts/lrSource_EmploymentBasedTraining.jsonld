@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrSource:EmploymentBasedTraining",
+    "skos:prefLabel": {
+        "en-US": "Employment-Based Training"
+    },
+    "skos:definition": {
+        "en-US": "Learning completed through formal training provided by an employer or workforce development program."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/EmploymentBasedTraining/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ]
+}

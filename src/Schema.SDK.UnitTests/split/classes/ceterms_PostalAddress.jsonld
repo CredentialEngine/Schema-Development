@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:PostalAddress",
+    "rdfs:label": {
+        "en-US": "Postal Address"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity describing a mailing address."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/PostalAddress/json",
+    "rdfs:subClassOf": [
+        "ceterms:ContactPoint"
+    ],
+    "owl:equivalentClass": [
+        "schema:PostalAddress"
+    ],
+    "meta:domainFor": [
+        "ceterms:addressCountry",
+        "ceterms:addressLocality",
+        "ceterms:addressRegion",
+        "ceterms:alternateName",
+        "ceterms:name",
+        "ceterms:postalCode",
+        "ceterms:postOfficeBoxNumber",
+        "ceterms:streetAddress"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "actionStat:CompletedActionStatus",
+  "skos:prefLabel": {
+    "en-US": "Completed Action Status"
+  },
+  "skos:definition": {
+    "en-US": "Action that has already taken place."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/actionStat/CompletedActionStatus/json",
+  "skos:inScheme": [
+    "ceterms:ActionStatus"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ActionStatus"
+  ]
+}

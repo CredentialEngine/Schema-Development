@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:VEAP",
+    "skos:prefLabel": {
+        "en-US": "Veteran Educational Assistance Program"
+    },
+    "skos:definition": {
+        "en-US": "Financial assistance provided to qualified active duty service members and veterans as a matching program that is intended to offset educational expenses."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/VEAP/json",
+    "skos:broader": [
+        "financialAid:Military"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

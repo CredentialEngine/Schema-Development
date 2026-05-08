@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:TwoYear",
+    "skos:prefLabel": {
+        "en-US": "Two-Year College"
+    },
+    "skos:definition": {
+        "en-US": "Authorized postsecondary institution that primarily offers associate degrees and certificates, and, if authorized, may also award higher degrees."
+    },
+    "dct:description": {
+        "en-US": "Includes occupational and vocational schools with programs of at least 1800 hours, academic institutions with programs of less than 4 years, etc."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/TwoYear/json",
+    "skos:broader": [
+        "orgType:Postsecondary"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ]
+}

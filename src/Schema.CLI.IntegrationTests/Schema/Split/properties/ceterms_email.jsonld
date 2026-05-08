@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:email",
+  "rdfs:label": {
+    "en-US": "Email"
+  },
+  "rdfs:comment": {
+    "en-US": "Email address of the organization or person."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/email/json",
+  "schema:domainIncludes": [
+    "ceterms:ContactPoint",
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:string"
+  ],
+  "owl:equivalentProperty": [
+    "schema:email"
+  ]
+}

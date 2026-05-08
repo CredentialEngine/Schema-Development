@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:frameworkName",
+  "rdfs:label": {
+    "en-US": "Framework Name"
+  },
+  "rdfs:comment": {
+    "en-US": "Name of the framework."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/frameworkName/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialAlignmentObject",
+    "ceterms:FinancialAlignmentObject"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ],
+  "owl:equivalentProperty": [
+    "schema:educationalFramework"
+  ]
+}

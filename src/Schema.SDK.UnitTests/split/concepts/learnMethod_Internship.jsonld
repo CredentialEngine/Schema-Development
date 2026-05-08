@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:Internship",
+    "skos:prefLabel": {
+        "en-US": "Internship"
+    },
+    "skos:definition": {
+        "en-US": "Work position that is intended to provide a learner with an opportunity to gain experience but that is not structured around learning and does not itself lead to a credential recognized by a relevant authority."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Internship/json",
+    "skos:broader": [
+        "learnMethod:WorkBased"
+    ],
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ]
+}

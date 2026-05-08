@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:LearningRecognitionMethodRelated",
+    "skos:prefLabel": {
+        "en-US": "Learning Recognition Method Related"
+    },
+    "skos:definition": {
+        "en-US": "Statement that defines the method(s) used to evaluate and recognize prior learning."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/LearningRecognitionMethodRelated/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

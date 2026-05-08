@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:Transcript",
+  "skos:prefLabel": {
+    "en-US": "Transcript"
+  },
+  "skos:definition": {
+    "en-US": "Official academic record of a person’s achievements issued by the record holder."
+  },
+  "dct:description": {
+    "en-US": "May be issued by the originating institution or a recognized clearinghouse."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/Transcript/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

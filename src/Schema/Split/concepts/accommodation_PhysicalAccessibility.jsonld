@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:PhysicalAccessibility",
+  "skos:prefLabel": {
+    "en-US": "Physical Accessibility"
+  },
+  "skos:definition": {
+    "en-US": "Accommodations to ensure entry and mobility throughout a facility."
+  },
+  "dct:description": {
+    "en-US": "Examples include ramps or lifts for wheelchair accessibility, elevators, automatic doors, and wider doorways to accommodate mobility devices."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/PhysicalAccessibility/json",
+  "skos:broader": [
+    "accommodation:FacilityAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

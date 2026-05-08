@@ -1,0 +1,18 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:affiliatedAgent",
+  "rdfs:label": {
+    "en-US": "Affiliated Agent"
+  },
+  "rdfs:comment": {
+    "en-US": "Organization or person that plays some role in assigning, performing, assisting with, facilitating, approving of, or otherwise being involved with the task being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/affiliatedAgent/json",
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:WIOA",
+  "skos:prefLabel": {
+    "en-US": "Workforce Innovation and Opportunity Act (WIOA)"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid established on behalf of a qualified participant with a training provider that is on the state's Eligible Training Provider List (ETPL)."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/WIOA/json",
+  "skos:broader": [
+    "financialAid:Grant"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

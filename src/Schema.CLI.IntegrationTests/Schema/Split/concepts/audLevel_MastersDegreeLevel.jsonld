@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:MastersDegreeLevel",
+  "skos:prefLabel": {
+    "en-US": "Masters Degree Level"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those who have completed a Bachelor's Degree or equivalent."
+  },
+  "dct:description": {
+    "en-US": "Aligns to ISCED 2011 level 7 – Master’s or equivalent level."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/MastersDegreeLevel/json",
+  "skos:broader": [
+    "audLevel:PostSecondaryLevel"
+  ],
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ]
+}

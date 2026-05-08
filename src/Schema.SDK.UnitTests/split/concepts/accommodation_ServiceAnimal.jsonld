@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:ServiceAnimal",
+    "skos:prefLabel": {
+        "en-US": "Service Animal"
+    },
+    "skos:definition": {
+        "en-US": "Service animal accommodations, including clear guidelines, policies, and facilities for allowing service and support animals."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/ServiceAnimal/json",
+    "skos:broader": [
+        "accommodation:FacilityAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

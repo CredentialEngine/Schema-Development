@@ -1,0 +1,32 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:ComparatorCategory",
+    "rdfs:label": {
+        "en-US": "Comparator Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Concepts for comparing two values."
+    },
+    "vann:usageNote": {
+        "en-US": "Used in CTDL constraints as values of the ceterms:comparator property to make a comparison that should yield true or false. In all cases the left source of data is compared to the right source, sometimes the comparison is made after an action is applied, e.g. finding the mean of several numbers."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ComparatorCategory/json",
+    "meta:hasConcept": [
+        "compare:EQ",
+        "compare:GT",
+        "compare:GTEQ",
+        "compare:LT",
+        "compare:LTEQ",
+        "compare:NEQ"
+    ],
+    "skos:hasTopConcept": [
+        "compare:EQ",
+        "compare:GT",
+        "compare:GTEQ",
+        "compare:LT",
+        "compare:LTEQ",
+        "compare:NEQ"
+    ]
+}

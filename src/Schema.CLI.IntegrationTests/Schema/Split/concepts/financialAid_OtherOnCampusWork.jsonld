@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:OtherOnCampusWork",
+  "skos:prefLabel": {
+    "en-US": "Other On-Campus Work"
+  },
+  "skos:definition": {
+    "en-US": "Paid non-academic employment available for students on an educational institution’s campus."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/OtherOnCampusWork/json",
+  "skos:broader": [
+    "financialAid:WorkBased"
+  ],
+  "owl:equivalentClass": [
+    "ceds:000113#OtherOnCampusWork"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:LearningRecognitionEvidenceCategory",
+    "rdfs:label": {
+        "en-US": "Learning Recognition Evidence Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Concepts describing types of evidence accepted for learning recognition evaluation."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningRecognitionEvidenceCategory/json",
+    "meta:hasConcept": [
+        "lrEvidence:AssessmentScore",
+        "lrEvidence:CompletionRecord",
+        "lrEvidence:Credential",
+        "lrEvidence:CreditRecommendation",
+        "lrEvidence:EmployerAttestation",
+        "lrEvidence:HoursVerification",
+        "lrEvidence:JobVerification",
+        "lrEvidence:MilitaryTranscript",
+        "lrEvidence:Portfolio",
+        "lrEvidence:ReflectiveNarrative",
+        "lrEvidence:ResumeVerification",
+        "lrEvidence:SkillProfile",
+        "lrEvidence:Syllabus",
+        "lrEvidence:Transcript",
+        "lrEvidence:WorkplaceLearningRecord",
+        "lrEvidence:WorkProduct"
+    ],
+    "skos:hasTopConcept": [
+        "lrEvidence:AssessmentScore",
+        "lrEvidence:CompletionRecord",
+        "lrEvidence:Credential",
+        "lrEvidence:CreditRecommendation",
+        "lrEvidence:EmployerAttestation",
+        "lrEvidence:HoursVerification",
+        "lrEvidence:JobVerification",
+        "lrEvidence:MilitaryTranscript",
+        "lrEvidence:Portfolio",
+        "lrEvidence:ReflectiveNarrative",
+        "lrEvidence:ResumeVerification",
+        "lrEvidence:SkillProfile",
+        "lrEvidence:Syllabus",
+        "lrEvidence:Transcript",
+        "lrEvidence:WorkplaceLearningRecord",
+        "lrEvidence:WorkProduct"
+    ]
+}

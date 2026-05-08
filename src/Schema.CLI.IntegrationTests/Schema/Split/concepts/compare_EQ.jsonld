@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "compare:EQ",
+  "skos:prefLabel": {
+    "en-US": "Equal To"
+  },
+  "skos:definition": {
+    "en-US": "The value of the left is equal to the value of the right."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/compare/EQ/json",
+  "owl:equivalentClass": [
+    "odrl2:eq"
+  ],
+  "skos:inScheme": [
+    "ceterms:ComparatorCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ComparatorCategory"
+  ]
+}

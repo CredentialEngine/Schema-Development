@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:scheduleTimingType",
+  "rdfs:label": {
+    "en-US": "Schedule Timing Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of time at which events typically occur; select from an existing enumeration of such types."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/scheduleTimingType/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram",
+    "ceterms:ScheduledOffering"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:ScheduleTiming"
+  ]
+}

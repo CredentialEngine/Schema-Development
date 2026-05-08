@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:collectionType",
+  "rdfs:label": {
+    "en-US": "Collection Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of collection, list, array, or other grouping of resources; select from an existing enumeration of such types."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/collectionType/json",
+  "schema:domainIncludes": [
+    "ceterms:Collection"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:CollectionCategory"
+  ]
+}

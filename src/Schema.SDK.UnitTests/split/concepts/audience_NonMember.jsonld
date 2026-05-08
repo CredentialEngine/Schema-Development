@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:NonMember",
+    "skos:prefLabel": {
+        "en-US": "Non-Member"
+    },
+    "skos:definition": {
+        "en-US": "Individual without membership status or privileges conferred by an organization, society, or recognized group."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/NonMember/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:PriorLearningAssessmentAdvising",
+  "skos:prefLabel": {
+    "en-US": "Prior Learning Assessment Advising"
+  },
+  "skos:definition": {
+    "en-US": "A service that guides learners in selecting, documenting, and submitting evidence for recognition of prior learning."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/PriorLearningAssessmentAdvising/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

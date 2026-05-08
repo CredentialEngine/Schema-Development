@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:CulturalEthnicMinority",
+    "skos:prefLabel": {
+        "en-US": "Cultural/Ethnic Minority"
+    },
+    "skos:definition": {
+        "en-US": "Person who belongs to a cultural and/or ethnic minority group, relative to the surrounding population."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/CulturalEthnicMinority/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

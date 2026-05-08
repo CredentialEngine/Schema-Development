@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:Childcare",
+    "skos:prefLabel": {
+        "en-US": "Childcare"
+    },
+    "skos:definition": {
+        "en-US": "Financial aid towards paying for supervision, care, and activities for children."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/Childcare/json",
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CostType"
+    ]
+}

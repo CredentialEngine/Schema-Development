@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:sendingDepartment",
+  "rdfs:label": {
+    "en-US": "Sending Department"
+  },
+  "rdfs:comment": {
+    "en-US": "Department (or other subdivision of an organization) from which students transfer under the provisions of an agreement."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/sendingDepartment/json",
+  "schema:domainIncludes": [
+    "ceterms:TransferAgreement"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization"
+  ]
+}

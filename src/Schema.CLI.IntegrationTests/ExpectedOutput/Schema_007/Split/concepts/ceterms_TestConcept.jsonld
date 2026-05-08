@@ -1,0 +1,5 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@id": "ceterms:TestConcept",
+    "@type": "skos:Concept"
+}

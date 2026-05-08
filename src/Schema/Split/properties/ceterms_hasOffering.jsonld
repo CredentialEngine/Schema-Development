@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasOffering",
+  "rdfs:label": {
+    "en-US": "Has Offering"
+  },
+  "rdfs:comment": {
+    "en-US": "Indicates an offering and typical schedule."
+  },
+  "vann:usageNote": {
+    "en-US": "Only use this property when it is necessary and useful to provide data about specific offerings of a learning opportunity or assessment, such as particular combinations of schedule, location, and delivery."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasOffering/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:ScheduledOffering"
+  ]
+}

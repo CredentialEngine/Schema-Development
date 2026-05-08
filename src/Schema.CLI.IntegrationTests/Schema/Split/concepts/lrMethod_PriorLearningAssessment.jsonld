@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrMethod:PriorLearningAssessment",
+  "skos:prefLabel": {
+    "en-US": "Prior Learning Assessment"
+  },
+  "skos:definition": {
+    "en-US": "A structured method used to evaluate an individual's prior learning and its applicability to requirements."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/PriorLearningAssessment/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ]
+}

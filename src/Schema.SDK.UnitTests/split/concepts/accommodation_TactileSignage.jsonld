@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:TactileSignage",
+    "skos:prefLabel": {
+        "en-US": "Tactile Signage"
+    },
+    "skos:definition": {
+        "en-US": "Braille signage and tactile cues."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/TactileSignage/json",
+    "skos:broader": [
+        "accommodation:FacilityAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

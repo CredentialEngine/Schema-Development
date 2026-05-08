@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:AssociatesDegreeLevel",
+  "skos:prefLabel": {
+    "en-US": "Associates Degree Level"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those completing college/university-level programs within their first one to two years (lower-division) of post-secondary education."
+  },
+  "dct:description": {
+    "en-US": "Aligns to ISCED 2011 level 5 – Short-cycle tertiary education."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/AssociatesDegreeLevel/json",
+  "skos:broader": [
+    "audLevel:PostSecondaryLevel"
+  ],
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ]
+}

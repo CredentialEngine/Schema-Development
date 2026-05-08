@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:transferValue",
+  "rdfs:label": {
+    "en-US": "Transfer Value"
+  },
+  "rdfs:comment": {
+    "en-US": "Value that may be transferred."
+  },
+  "dct:description": {
+    "en-US": "For example, this may be the credit value earned in one context that may be applied to another, but other forms of recognition of prior learning are also relevant."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/transferValue/json",
+  "schema:domainIncludes": [
+    "ceterms:TransferValueProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:ValueProfile"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audience:Displaced",
+  "skos:prefLabel": {
+    "en-US": "Displaced"
+  },
+  "skos:definition": {
+    "en-US": "Person who has been displaced from their home or community."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/Displaced/json",
+  "skos:inScheme": [
+    "ceterms:Audience"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Audience"
+  ]
+}

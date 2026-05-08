@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:UpperSecondary",
+    "skos:prefLabel": {
+        "en-US": "Upper Secondary"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those at the later stages of secondary education, preparing for tertiary education or employment."
+    },
+    "dct:description": {
+        "en-US": "Aligns to ISCED 2011 level 3 – Upper secondary education."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/UpperSecondary/json",
+    "skos:broader": [
+        "audLevel:SecondaryLevel"
+    ],
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ]
+}

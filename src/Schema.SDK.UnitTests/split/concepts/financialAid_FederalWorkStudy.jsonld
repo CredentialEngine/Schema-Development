@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:FederalWorkStudy",
+    "skos:prefLabel": {
+        "en-US": "Federal Work Study"
+    },
+    "skos:definition": {
+        "en-US": "Program funded by the Federal Government designed to provide part-time jobs for students to offset educational expenses."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/FederalWorkStudy/json",
+    "skos:broader": [
+        "financialAid:WorkBased"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#FederalWorkStudy"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

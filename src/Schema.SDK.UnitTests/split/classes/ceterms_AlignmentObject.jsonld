@@ -1,0 +1,32 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:AlignmentObject",
+    "rdfs:label": {
+        "en-US": "Alignment Object"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity describing the relationship between two nodes in different frameworks."
+    },
+    "dct:description": {
+        "en-US": "\"Frameworks\" may be interpreted broadly to include any scheme or schema for organizing and referencing resources."
+    },
+    "vann:usageNote": {
+        "en-US": "Used to compare concepts in concept schemes, levels in progression models, types of resource in an ontology etc."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AlignmentObject/json",
+    "meta:domainFor": [
+        "ceterms:alignmentDate",
+        "ceterms:alignmentType",
+        "ceterms:description",
+        "ceterms:isPartOf",
+        "ceterms:sourceNode",
+        "ceterms:sourceNodeDescription",
+        "ceterms:sourceNodeName",
+        "ceterms:targetNode",
+        "ceterms:targetNodeDescription",
+        "ceterms:targetNodeName",
+        "ceterms:weight"
+    ]
+}

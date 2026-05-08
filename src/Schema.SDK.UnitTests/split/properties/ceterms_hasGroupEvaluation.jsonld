@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasGroupEvaluation",
+    "rdfs:label": {
+        "en-US": "Has Group Evaluation"
+    },
+    "rdfs:comment": {
+        "en-US": "Whether or not the assessment activity is scored as a group."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasGroupEvaluation/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:boolean"
+    ]
+}

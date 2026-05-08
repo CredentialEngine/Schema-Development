@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:LearningRecognitionOutcomeRelated",
+    "skos:prefLabel": {
+        "en-US": "Learning Recognition Outcome Related"
+    },
+    "skos:definition": {
+        "en-US": "Statement that defines the outcomes that are possible after evaluation of evidence of prior learning."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/LearningRecognitionOutcomeRelated/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

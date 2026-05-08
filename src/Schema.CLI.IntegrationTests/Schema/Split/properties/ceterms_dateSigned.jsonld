@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:dateSigned",
+  "rdfs:label": {
+    "en-US": "Date Signed"
+  },
+  "rdfs:comment": {
+    "en-US": "Date on which the document being described was signed."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/dateSigned/json",
+  "schema:domainIncludes": [
+    "ceterms:PriorLearningPolicy",
+    "ceterms:TransferAgreement"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:date"
+  ]
+}

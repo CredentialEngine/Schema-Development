@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audience:FutureMember",
+  "skos:prefLabel": {
+    "en-US": "Future Member"
+  },
+  "skos:definition": {
+    "en-US": "Future member of an organization, society, or recognized group."
+  },
+  "dct:description": {
+    "en-US": "Membership includes types of affiliation such as employment or other work relationships, enrollment at an educational institution etc."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/FutureMember/json",
+  "skos:inScheme": [
+    "ceterms:Audience"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Audience"
+  ]
+}

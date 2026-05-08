@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "agentSector:PrivateForProfit",
+  "skos:prefLabel": {
+    "en-US": "Private For-Profit"
+  },
+  "skos:definition": {
+    "en-US": "Sector that contains privately-owned organizations that operate for profit."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/agentSector/PrivateForProfit/json",
+  "skos:inScheme": [
+    "ceterms:AgentSector"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AgentSector"
+  ]
+}

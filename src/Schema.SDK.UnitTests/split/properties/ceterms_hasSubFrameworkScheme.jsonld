@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasSubFrameworkScheme",
+    "rdfs:label": {
+        "en-US": "Has Sub-framework scheme"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates a Concept Scheme used to differentiate parts of a framework or related resources that are considered to be somewhat independent."
+    },
+    "dct:description": {
+        "en-US": "Examples include differentiating those progression levels or credential types that are relevant to different sectors, such as General Education, Higher Education and Technical / Vocational Education and Training."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasSubFrameworkScheme/json",
+    "schema:domainIncludes": [
+        "ceterms:QualificationsFramework"
+    ],
+    "schema:rangeIncludes": [
+        "skos:ConceptScheme"
+    ]
+}

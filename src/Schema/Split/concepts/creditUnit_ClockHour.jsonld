@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:ClockHour",
+  "skos:prefLabel": {
+    "en-US": "Clock Hour"
+  },
+  "skos:definition": {
+    "en-US": "Credit that is issued or accepted as being related to one or more temporal hours."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/ClockHour/json",
+  "skos:broader": [
+    "creditUnit:TimeBasedCredit"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ]
+}

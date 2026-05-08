@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:source",
+  "rdfs:label": {
+    "en-US": "Source URL"
+  },
+  "rdfs:comment": {
+    "en-US": "Authoritative source of an entity's information."
+  },
+  "dct:description": {
+    "en-US": "Citation or description of an authoritative source from which information or description has been derived."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/source/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:AlignmentMap",
+    "ceterms:EarningsProfile",
+    "ceterms:EmploymentOutcomeProfile",
+    "ceterms:HoldersProfile",
+    "ceterms:QualificationsFramework",
+    "qdata:DataSetDistribution",
+    "qdata:DataSetProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

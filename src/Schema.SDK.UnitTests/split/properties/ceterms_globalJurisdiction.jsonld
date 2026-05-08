@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:globalJurisdiction",
+    "rdfs:label": {
+        "en-US": "Global Jurisdiction"
+    },
+    "rdfs:comment": {
+        "en-US": "Whether or not the credential is useful, applicable or recognized everywhere."
+    },
+    "dct:description": {
+        "en-US": "Exceptions indicated by the ceterms:jurisdictionException property apply."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/globalJurisdiction/json",
+    "schema:domainIncludes": [
+        "ceterms:JurisdictionProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:boolean"
+    ]
+}

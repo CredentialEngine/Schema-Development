@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:ProfessionalAssociation",
+    "skos:prefLabel": {
+        "en-US": "Professional Association"
+    },
+    "skos:definition": {
+        "en-US": "Membership organization primarily engaged in promoting the interests of a particular profession, the interests of individuals engaged in that profession, and providing them with services that may involve the provision of education and credentialing services."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/ProfessionalAssociation/json",
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

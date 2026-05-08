@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:ActionStatus",
+    "rdfs:label": {
+        "en-US": "Action Status"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of current status of an action."
+    },
+    "dct:description": {
+        "en-US": "Available statuses include ActiveActionStatus, CompletedActionStatus, FailedActionStatus, PotentialActionStatus."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ActionStatus/json",
+    "meta:hasConcept": [
+        "actionStat:ActiveActionStatus",
+        "actionStat:CompletedActionStatus",
+        "actionStat:FailedActionStatus",
+        "actionStat:PotentialActionStatus"
+    ],
+    "skos:hasTopConcept": [
+        "actionStat:ActiveActionStatus",
+        "actionStat:CompletedActionStatus",
+        "actionStat:FailedActionStatus",
+        "actionStat:PotentialActionStatus"
+    ]
+}

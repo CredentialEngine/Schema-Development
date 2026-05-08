@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:PathwayComponent",
+    "rdfs:label": {
+        "en-US": "Pathway Component"
+    },
+    "rdfs:comment": {
+        "en-US": "Resource that serves as a defined point along the route of a Pathway which describes an objective and its completion requirements through reference to one or more instances of ComponentCondition."
+    },
+    "dct:description": {
+        "en-US": "An instance of PathwayComponent may serve as the goal or destination node of a Pathway."
+    },
+    "vann:usageNote": {
+        "en-US": "PathwayComponent is a super-type that represents a family of more precise sub-types. In pathway descriptions, always use the sub-type of PathwayComponent appropriate to your circumstances, e.g., AssessmentComponent, CocurricularComponent, CompetencyComponent, CourseComponent, CredentialComponent, ExtracurricularComponent, JobComponent, and WorkExperienceComponent. Use BasicComponent for types of entities not covered by the current set of sub-types."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/PathwayComponent/json"
+}

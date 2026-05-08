@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:SpecialHardship",
+    "skos:prefLabel": {
+        "en-US": "Special Hardship"
+    },
+    "skos:definition": {
+        "en-US": "Financial aid towards covering hardship arising from unforeseen circumstances."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/SpecialHardship/json",
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CostType"
+    ]
+}

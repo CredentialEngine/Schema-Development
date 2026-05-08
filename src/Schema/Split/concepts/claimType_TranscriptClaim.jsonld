@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "claimType:TranscriptClaim",
+  "skos:prefLabel": {
+    "en-US": "Transcript Claim"
+  },
+  "skos:definition": {
+    "en-US": "Verifiable representation of postsecondary courses and degrees completed."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/claimType/TranscriptClaim/json",
+  "skos:inScheme": [
+    "ceterms:ClaimType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ClaimType"
+  ]
+}

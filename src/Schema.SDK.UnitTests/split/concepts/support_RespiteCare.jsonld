@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:RespiteCare",
+    "skos:prefLabel": {
+        "en-US": "Respite Care"
+    },
+    "skos:definition": {
+        "en-US": "Service that provides temporary care to relieve a caregiver."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/RespiteCare/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#73046"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

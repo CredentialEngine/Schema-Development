@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:DoDTuitionAssistance",
+  "skos:prefLabel": {
+    "en-US": "Department of Defense Tuition Assistance"
+  },
+  "skos:definition": {
+    "en-US": "Financial assistance provided to qualified active duty service members and their families for voluntary off-duty educational programs in support of professional and personal self-development goals."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/DoDTuitionAssistance/json",
+  "skos:broader": [
+    "financialAid:Military"
+  ],
+  "owl:equivalentClass": [
+    "ceds:001610#DODTuitionAssistance"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

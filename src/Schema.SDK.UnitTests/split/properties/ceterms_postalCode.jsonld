@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:postalCode",
+    "rdfs:label": {
+        "en-US": "Postal Code"
+    },
+    "rdfs:comment": {
+        "en-US": "The postal code. For example, 94043."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/postalCode/json",
+    "schema:domainIncludes": [
+        "ceterms:Place",
+        "ceterms:PostalAddress"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "owl:equivalentProperty": [
+        "schema:postalCode"
+    ]
+}

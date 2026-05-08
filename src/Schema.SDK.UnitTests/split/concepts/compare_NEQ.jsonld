@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "compare:NEQ",
+    "skos:prefLabel": {
+        "en-US": "Not Equal To"
+    },
+    "skos:definition": {
+        "en-US": "The value of the left is not equal to the value of the right."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/compare/NEQ/json",
+    "owl:equivalentClass": [
+        "odrl2:neq"
+    ],
+    "skos:inScheme": [
+        "ceterms:ComparatorCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ComparatorCategory"
+    ]
+}

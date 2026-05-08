@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:Alignment",
+  "rdfs:label": {
+    "en-US": "Alignment"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of relationship that can be asserted as existing between nodes in frameworks."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Alignment/json",
+  "meta:hasConcept": [
+    "alignment:BroadMatch",
+    "alignment:CloseMatch",
+    "alignment:ExactMatch",
+    "alignment:NarrowMatch",
+    "alignment:NoMatch",
+    "alignment:RelatedMatch"
+  ],
+  "skos:hasTopConcept": [
+    "alignment:BroadMatch",
+    "alignment:CloseMatch",
+    "alignment:ExactMatch",
+    "alignment:NarrowMatch",
+    "alignment:NoMatch",
+    "alignment:RelatedMatch"
+  ]
+}

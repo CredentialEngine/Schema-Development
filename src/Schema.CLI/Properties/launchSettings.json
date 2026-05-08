@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "remove property --subject ceterms:AcademicCertificate --predicate meta:domainFor"
+    }
+  }
+}

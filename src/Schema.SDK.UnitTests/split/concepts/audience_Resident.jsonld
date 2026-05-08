@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:Resident",
+    "skos:prefLabel": {
+        "en-US": "Resident"
+    },
+    "skos:definition": {
+        "en-US": "Person whose permanent and principal home is in a particular nation, state, province, or commonwealth."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/Resident/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:holderMustAuthorize",
+    "rdfs:label": {
+        "en-US": "Holder Must Authorize"
+    },
+    "rdfs:comment": {
+        "en-US": "Whether or not the credential holder must authorize the organization to provide the verification service."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/holderMustAuthorize/json",
+    "schema:domainIncludes": [
+        "ceterms:VerificationServiceProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:boolean"
+    ]
+}

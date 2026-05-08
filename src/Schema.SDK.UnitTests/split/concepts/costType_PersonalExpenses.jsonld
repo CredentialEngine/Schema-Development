@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:PersonalExpenses",
+    "skos:prefLabel": {
+        "en-US": "Personal Expenses"
+    },
+    "skos:definition": {
+        "en-US": "Cost for personal living or incidental expenses."
+    },
+    "vann:usageNote": {
+        "en-US": "Where possible use a more specific Cost Type, such as costType:Travel or costType:Meals."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/PersonalExpenses/json",
+    "skos:broader": [
+        "ceterms:CostType"
+    ],
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ]
+}

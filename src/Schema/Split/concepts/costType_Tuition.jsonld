@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:Tuition",
+  "skos:prefLabel": {
+    "en-US": "Tuition"
+  },
+  "skos:definition": {
+    "en-US": "Cost for teaching and instruction."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/Tuition/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

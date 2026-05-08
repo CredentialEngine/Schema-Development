@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:identifierTypeName",
+    "rdfs:label": {
+        "en-US": "Identifier Type Name"
+    },
+    "rdfs:comment": {
+        "en-US": "Formal name or acronym of the framework, scheme, type, or other organizing principle of this identifier, such as ISBN or ISSN."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/identifierTypeName/json",
+    "schema:domainIncludes": [
+        "ceterms:IdentifierValue"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

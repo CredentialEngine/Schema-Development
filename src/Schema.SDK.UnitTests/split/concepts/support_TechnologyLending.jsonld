@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:TechnologyLending",
+    "skos:prefLabel": {
+        "en-US": "Technology Lending"
+    },
+    "skos:definition": {
+        "en-US": "Service that loans out technology equipment such as laptops, tablets, and other devices."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TechnologyLending/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00887"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

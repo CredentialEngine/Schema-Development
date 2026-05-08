@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:financialAssistanceType",
+    "rdfs:label": {
+        "en-US": "Financial Assistance Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of financial assistance; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/financialAssistanceType/json",
+    "schema:domainIncludes": [
+        "ceterms:FinancialAssistanceProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ],
+    "meta:targetScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

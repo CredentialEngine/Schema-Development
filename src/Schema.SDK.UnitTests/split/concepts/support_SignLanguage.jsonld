@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:SignLanguage",
+    "skos:prefLabel": {
+        "en-US": "Sign Language"
+    },
+    "skos:definition": {
+        "en-US": "Service that provides sign language interpretation."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/SignLanguage/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#73058"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

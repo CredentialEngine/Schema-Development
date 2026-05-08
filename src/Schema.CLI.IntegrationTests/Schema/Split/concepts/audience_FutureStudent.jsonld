@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audience:FutureStudent",
+  "skos:prefLabel": {
+    "en-US": "Future Student"
+  },
+  "skos:definition": {
+    "en-US": "Student who intends to participate in a learning opportunity."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/FutureStudent/json",
+  "skos:inScheme": [
+    "ceterms:Audience"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Audience"
+  ]
+}

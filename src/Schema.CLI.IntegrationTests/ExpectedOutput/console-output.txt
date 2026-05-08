@@ -1,0 +1,111 @@
+> schema init --path {WorkDir}/Schema
+Initialized schema at: {WorkDir}/Schema
+.env file created.
+
+ExitCode: 0
+
+> schema add context --term ceterms:TestClass --uri https://purl.org/ctdl/terms/TestClass
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add class --term ceterms:TestClass
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add context --term ceterms:TestProperty --uri https://purl.org/ctdl/terms/TestProperty
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add property --term ceterms:TestProperty
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add context --term ceterms:TestConcept --uri https://purl.org/ctdl/terms/TestConcept
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add concept --term ceterms:TestConcept
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add context --term ceterms:TestConceptScheme --uri https://purl.org/ctdl/terms/TestConceptScheme
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add conceptscheme --term ceterms:TestConceptScheme
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add value --subject ceterms:TestProperty --predicate schema:domainIncludes --value ceterms:TestClass
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add value --subject ceterms:TestConcept --predicate skos:inScheme --value ceterms:TestConceptScheme
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema set field --subject ceterms:TestClass --predicate vs:term_status --value stable
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --value "Test Class"
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema add context --term ceterms:name --field @@container --value @@language
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema update context --term ceterms:name --field @@type --value xsd:string
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema remove context --term ceterms:name --field @container
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema remove value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema remove field --subject ceterms:TestClass --predicate vs:term_status
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema remove value --subject ceterms:TestConcept --predicate skos:inScheme --value ceterms:TestConceptScheme
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema remove concept --term ceterms:TestConcept
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
+> schema remove conceptscheme --term ceterms:TestConceptScheme
+New version created: {WorkDir}/Schema-{Timestamp}
+
+ExitCode: 0
+
