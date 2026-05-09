@@ -5,19 +5,25 @@ using Json.Path;
 
 namespace Final;
 
+/// <summary>
+/// Helper for applying JsonPath-based transformations to JSON-LD files.
+/// Provides methods to remove nodes, set values and manipulate arrays using JsonPath expressions.
+/// </summary>
 public class JsonLdJsonPathProcessor
 {
-    private readonly JsonSerializerOptions _serializerOptions;
-
-    public JsonLdJsonPathProcessor(JsonSerializerOptions? options = null)
+    private readonly JsonSerializerOptions _serializerOptions = new()
     {
-        _serializerOptions = options ?? new JsonSerializerOptions
-        {
-            WriteIndented = true,
-            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
-        };
-    }
+        WriteIndented = true,
+        TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
+        NewLine = "\n"
+    };
 
+    /// <summary>
+    /// Remove nodes matching any of the provided JsonPath expressions from the input file and write the result.
+    /// </summary>
+    /// <param name="inputFile">Path to the input JSON file.</param>
+    /// <param name="outputFile">Path to write the modified JSON.</param>
+    /// <param name="jsonPaths">JsonPath expressions to remove.</param>
     public void CleanFileByJsonPath(
         string inputFile,
         string outputFile,
@@ -36,6 +42,13 @@ public class JsonLdJsonPathProcessor
         Save(outputFile, root);
     }
 
+    /// <summary>
+    /// Set the value at nodes matched by the JsonPath expression.
+    /// </summary>
+    /// <param name="inputFile">Path to the input JSON file.</param>
+    /// <param name="outputFile">Path to write the modified JSON.</param>
+    /// <param name="jsonPath">JsonPath expression to target nodes.</param>
+    /// <param name="value">Value to set.</param>
     public void SetValue(string inputFile, string outputFile, string jsonPath, object value)
     {
         var root = Load(inputFile);
@@ -49,6 +62,13 @@ public class JsonLdJsonPathProcessor
         Save(outputFile, root);
     }
 
+    /// <summary>
+    /// Add a value to arrays identified by the JsonPath expression.
+    /// </summary>
+    /// <param name="inputFile">Path to the input JSON file.</param>
+    /// <param name="outputFile">Path to write the modified JSON.</param>
+    /// <param name="jsonPath">JsonPath expression targeting arrays.</param>
+    /// <param name="value">Value to append.</param>
     public void AddValueToArray(string inputFile, string outputFile, string jsonPath, object value)
     {
         var root = Load(inputFile);
@@ -66,6 +86,13 @@ public class JsonLdJsonPathProcessor
         Save(outputFile, root);
     }
 
+    /// <summary>
+    /// Remove occurrences of a value from arrays matched by the JsonPath expression.
+    /// </summary>
+    /// <param name="inputFile">Path to the input JSON file.</param>
+    /// <param name="outputFile">Path to write the modified JSON.</param>
+    /// <param name="jsonPath">JsonPath expression targeting arrays.</param>
+    /// <param name="value">Value to remove.</param>
     public void RemoveValueFromArray(string inputFile, string outputFile, string jsonPath, object value)
     {
         var root = Load(inputFile);

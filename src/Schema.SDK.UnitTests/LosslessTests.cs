@@ -7,8 +7,13 @@ namespace Schema.SDK.UnitTests;
 [TestClass]
 public class LosslessTests
 {
-    private const string Input = "split/";
-    private const string Output = "out/";
+    private static readonly string TestRoot =
+    AppContext.BaseDirectory;
+
+    private static readonly string Input = Path.Combine(TestRoot, "Schema");
+
+    private static readonly string Output =
+        Path.Combine(TestRoot, "Out");
 
     [TestInitialize]
     public void TestInitialize()
@@ -16,18 +21,23 @@ public class LosslessTests
         if (Directory.Exists(Output))
             Directory.Delete(Output, true);
     }
+    public TestContext TestContext { get; set; } = null!;
 
     [TestMethod]
     public void RoundTrip_Should_Be_ByteIdentical()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.LoadFromFolder(Input);
         api.SaveFolder(Output);
 
+        var inputSplit = Path.Combine(Input, "Split");
         var outputSplit = Path.Combine(Output, "Split");
 
-        var inputFiles = Directory.GetFiles(Input, "*.jsonld", SearchOption.AllDirectories)
+        TestContext.WriteLine($"Input split dir: {inputSplit}");
+        TestContext.WriteLine($"Output split dir: {outputSplit}");
+
+        var inputFiles = Directory.GetFiles(inputSplit, "*.jsonld", SearchOption.AllDirectories)
             .Where(f => Path.GetFileName(f) != "_meta.json")
             .OrderBy(Path.GetFileName)
             .ToList();
@@ -42,7 +52,13 @@ public class LosslessTests
         foreach (var f in inputFiles)
         {
             var name = Path.GetFileName(f);
-            var outFile = outputFiles.First(x => Path.GetFileName(x) == name);
+            var outFile = outputFiles
+                .FirstOrDefault(x => Path.GetFileName(x) == name);
+
+            Assert.IsNotNull(
+                outFile,
+                $"No output match for input file '{name}'.\n\nOutput files:\n" +
+                string.Join("\n", outputFiles.Select(Path.GetFileName)));
 
             var a = File.ReadAllText(f);
             var b = File.ReadAllText(outFile);
@@ -54,7 +70,7 @@ public class LosslessTests
     [TestMethod]
     public void CreatePropertyAndClass_Then_AddDomain_Should_Work()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
         api.LoadFromFolder(Input);
 
         var prop = "https://example.org/p";
@@ -87,7 +103,7 @@ public class LosslessTests
     [TestMethod]
     public void SetProperty_Should_Persist()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
         api.LoadFromFolder(Input);
 
         var cls = "https://example.org/c";
@@ -111,7 +127,7 @@ public class LosslessTests
     [TestMethod]
     public void RemoveProperty_Should_Remove_FromJsonAndGraph()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
         api.LoadFromFolder(Input);
 
         var cls = "https://example.org/c";
@@ -145,7 +161,7 @@ public class LosslessTests
     [TestMethod]
     public void GetAllClasses_Should_ReturnCreatedClasses()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c1", "https://example.org/c1");
         api.AddContextTerm("c2", "https://example.org/c2");
@@ -163,7 +179,7 @@ public class LosslessTests
     [TestMethod]
     public void GetAllClasses_Should_ReturnEmpty_WhenNoneExist()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         var result = api.GetAllClasses().ToList();
 
@@ -173,7 +189,7 @@ public class LosslessTests
     [TestMethod]
     public void GetAllProperties_Should_ReturnCreatedProperties()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("p1", "https://example.org/p1");
         api.AddContextTerm("p2", "https://example.org/p2");
@@ -191,7 +207,7 @@ public class LosslessTests
     [TestMethod]
     public void GetAllConcepts_Should_ReturnCreatedConcepts()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("concept1", "https://example.org/concept1");
 
@@ -206,7 +222,7 @@ public class LosslessTests
     [TestMethod]
     public void GetAllConceptSchemes_Should_ReturnCreatedSchemes()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("scheme1", "https://example.org/scheme1");
 
@@ -221,7 +237,7 @@ public class LosslessTests
     [TestMethod]
     public void GetSchemaItem_Should_ReturnItem_ByTerm()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.CreateClass("c");
@@ -235,7 +251,7 @@ public class LosslessTests
     [TestMethod]
     public void GetSchemaItem_Should_ReturnNull_WhenMissing()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         var item = api.GetSchemaItem("missing");
 
@@ -245,7 +261,7 @@ public class LosslessTests
     [TestMethod]
     public void GetPropertiesOfClass_Should_ReturnMatchingProperties()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.AddContextTerm("p", "https://example.org/p");
@@ -264,7 +280,7 @@ public class LosslessTests
     [TestMethod]
     public void GetPropertiesOfClass_Should_ReturnEmpty_WhenNoMatches()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.CreateClass("c");
@@ -277,7 +293,7 @@ public class LosslessTests
     [TestMethod]
     public void GetClassesUsingProperty_Should_ReturnDomains()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.AddContextTerm("p", "https://example.org/p");
@@ -296,7 +312,7 @@ public class LosslessTests
     [TestMethod]
     public void GetClassesUsingProperty_Should_ReturnEmpty_WhenNoDomain()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("p", "https://example.org/p");
         api.CreateProperty("p");
@@ -309,7 +325,7 @@ public class LosslessTests
     [TestMethod]
     public void GetRangeOfProperty_Should_ReturnRanges()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("range", "https://example.org/range");
         api.AddContextTerm("p", "https://example.org/p");
@@ -328,7 +344,7 @@ public class LosslessTests
     [TestMethod]
     public void GetRangeOfProperty_Should_ReturnEmpty_WhenNoRange()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("p", "https://example.org/p");
         api.CreateProperty("p");
@@ -341,7 +357,7 @@ public class LosslessTests
     [TestMethod]
     public void GetPropertiesWithRange_Should_ReturnMatchingProperties()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("range", "https://example.org/range");
         api.AddContextTerm("p", "https://example.org/p");
@@ -360,7 +376,7 @@ public class LosslessTests
     [TestMethod]
     public void GetPropertiesWithRange_Should_ReturnEmpty_WhenNoMatches()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("range", "https://example.org/range");
         api.CreateClass("range");
@@ -373,7 +389,7 @@ public class LosslessTests
     [TestMethod]
     public void GetSubClasses_Should_ReturnChildren()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("parent", "https://example.org/parent");
         api.AddContextTerm("child", "https://example.org/child");
@@ -392,7 +408,7 @@ public class LosslessTests
     [TestMethod]
     public void GetSubClasses_Should_ReturnEmpty_WhenNoChildren()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("parent", "https://example.org/parent");
         api.CreateClass("parent");
@@ -405,7 +421,7 @@ public class LosslessTests
     [TestMethod]
     public void GetConceptsInScheme_Should_ReturnConcepts()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("scheme", "https://example.org/scheme");
         api.AddContextTerm("concept", "https://example.org/concept");
@@ -424,7 +440,7 @@ public class LosslessTests
     [TestMethod]
     public void GetConceptsInScheme_Should_ReturnEmpty_WhenNoneExist()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("scheme", "https://example.org/scheme");
         api.CreateConceptScheme("scheme");
@@ -437,7 +453,7 @@ public class LosslessTests
     [TestMethod]
     public void ClassExists_Should_ReturnTrue_WhenClassExists()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.CreateClass("c");
@@ -448,7 +464,7 @@ public class LosslessTests
     [TestMethod]
     public void ClassExists_Should_ReturnFalse_WhenMissing()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         Assert.IsFalse(api.ClassExists("missing"));
     }
@@ -456,7 +472,7 @@ public class LosslessTests
     [TestMethod]
     public void PropertyExists_Should_ReturnTrue_WhenPropertyExists()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("p", "https://example.org/p");
         api.CreateProperty("p");
@@ -467,7 +483,7 @@ public class LosslessTests
     [TestMethod]
     public void PropertyExists_Should_ReturnFalse_WhenMissing()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         Assert.IsFalse(api.PropertyExists("missing"));
     }
@@ -475,7 +491,7 @@ public class LosslessTests
     [TestMethod]
     public void ConceptExists_Should_ReturnTrue_WhenConceptExists()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("concept", "https://example.org/concept");
         api.CreateConcept("concept");
@@ -486,7 +502,7 @@ public class LosslessTests
     [TestMethod]
     public void ConceptExists_Should_ReturnFalse_WhenMissing()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         Assert.IsFalse(api.ConceptExists("missing"));
     }
@@ -494,7 +510,7 @@ public class LosslessTests
     [TestMethod]
     public void ConceptSchemeExists_Should_ReturnTrue_WhenSchemeExists()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("scheme", "https://example.org/scheme");
         api.CreateConceptScheme("scheme");
@@ -505,7 +521,7 @@ public class LosslessTests
     [TestMethod]
     public void ConceptSchemeExists_Should_ReturnFalse_WhenMissing()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         Assert.IsFalse(api.ConceptSchemeExists("missing"));
     }
@@ -513,7 +529,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteConcept_Should_Remove_FromDocs_And_Graph()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "concept",
@@ -540,7 +556,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteConceptScheme_Should_Remove_FromDocs_And_Graph()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "scheme",
@@ -567,7 +583,7 @@ public class LosslessTests
     [TestMethod]
     public void LoadFromFolder_Should_Normalize_UriIds_To_Terms()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.LoadFromFolder(Input);
 
@@ -579,7 +595,7 @@ public class LosslessTests
     [TestMethod]
     public void Loaded_Items_Should_Be_Resolvable_By_Term()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.LoadFromFolder(Input);
 
@@ -595,7 +611,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteClass_Should_Remove_FromDocs_And_Graph()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "c",
@@ -622,7 +638,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteProperty_Should_Remove_FromDocs_And_Graph()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "p",
@@ -649,7 +665,7 @@ public class LosslessTests
     [TestMethod]
     public void SaveFolder_Should_Use_Term_Based_File_Names()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "ceterms:TestClass",
@@ -673,7 +689,7 @@ public class LosslessTests
     [TestMethod]
     public void GetDoc_Should_Throw_For_Uri_When_Using_Term_Identity()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "c",
@@ -693,7 +709,7 @@ public class LosslessTests
     [TestMethod]
     public void CreateClass_Should_Create_Class()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
 
@@ -710,7 +726,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteClass_Should_Remove_Class()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
 
@@ -724,7 +740,7 @@ public class LosslessTests
     [TestMethod]
     public void CreateProperty_Should_Create_Property()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("p", "https://example.org/p");
 
@@ -741,7 +757,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteProperty_Should_Remove_Property()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("p", "https://example.org/p");
 
@@ -755,7 +771,7 @@ public class LosslessTests
     [TestMethod]
     public void CreateConcept_Should_Create_Concept()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("concept", "https://example.org/concept");
 
@@ -772,7 +788,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteConcept_Should_Remove_Concept()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("concept", "https://example.org/concept");
 
@@ -786,7 +802,7 @@ public class LosslessTests
     [TestMethod]
     public void CreateConceptScheme_Should_Create_Scheme()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("scheme", "https://example.org/scheme");
 
@@ -805,7 +821,7 @@ public class LosslessTests
     [TestMethod]
     public void DeleteConceptScheme_Should_Remove_Scheme()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("scheme", "https://example.org/scheme");
 
@@ -819,7 +835,7 @@ public class LosslessTests
     [TestMethod]
     public void SetProperty_Should_Update_Property()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
 
@@ -840,7 +856,7 @@ public class LosslessTests
     [TestMethod]
     public void RemoveProperty_Should_Remove_Property_Value()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
 
@@ -863,7 +879,7 @@ public class LosslessTests
     [TestMethod]
     public void AddPropertyValue_Should_Add_Array_Value()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.AddContextTerm("p", "https://example.org/p");
@@ -884,7 +900,7 @@ public class LosslessTests
     [TestMethod]
     public void RemovePropertyValue_Should_Remove_Array_Value()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
         api.AddContextTerm("p", "https://example.org/p");
@@ -911,7 +927,7 @@ public class LosslessTests
     [TestMethod]
     public void SetLanguageProperty_Should_Create_Language_Map()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
 
@@ -933,7 +949,7 @@ public class LosslessTests
     [TestMethod]
     public void UpdateContextTerm_Should_Update_Context()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "test",
@@ -953,7 +969,7 @@ public class LosslessTests
     [TestMethod]
     public void RemoveContextTerm_Should_Remove_Context()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm(
             "test",
@@ -967,7 +983,7 @@ public class LosslessTests
     [TestMethod]
     public void SetContextField_Should_Update_Field()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTermType("name", "xsd:string");
 
@@ -986,7 +1002,7 @@ public class LosslessTests
     [TestMethod]
     public void RemoveContextField_Should_Remove_Field()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTermTypeAndContainer(
             "name",
@@ -1005,7 +1021,7 @@ public class LosslessTests
     [TestMethod]
     public void SaveFolder_Then_LoadFolder_Should_Preserve_Data()
     {
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.AddContextTerm("c", "https://example.org/c");
 
@@ -1018,7 +1034,7 @@ public class LosslessTests
 
         api.SaveFolder(Output);
 
-        var api2 = new LosslessSchemaApi();
+        var api2 = new SchemaApi();
 
         api2.LoadFromFolder(Output);
 

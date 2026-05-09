@@ -10,21 +10,24 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="MSTest" Version="4.0.2"/>
+        <PackageReference Include="MSTest" Version="4.0.2" />
     </ItemGroup>
 
     <ItemGroup>
-        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="Schema\**">
+        <None Update="Schema/**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="TestScripts\test-script.txt">
+        <None Update="TestScripts/schema_shape.ttl">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="TestScripts/test-script.txt">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>

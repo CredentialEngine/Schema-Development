@@ -1,9 +1,14 @@
 ﻿using System.CommandLine;
+using System.Text.Encodings.Web;
 using System.Text.Json;
-using CTDL.SchemaAPI;
+using Schema.SDK;
 
 namespace Schema.CLI;
 
+/// <summary>
+/// Entry point for the Schema CLI tool. Builds and dispatches command-line
+/// verbs for manipulating the JSON-LD schema collection.
+/// </summary>
 internal class Program
 {
     protected Program()
@@ -543,13 +548,13 @@ internal class Program
 
             var folder = GetLatestSchemaFolder(GetOriginalSchemaPath());
 
-            var api = new LosslessSchemaApi();
+            var api = new SchemaApi();
 
             api.LoadFromFolder(Path.Combine(folder, "Split"));
 
             var (ok, report) = api.ValidateWithShacl(path);
 
-            Console.WriteLine(ok ? "✅ Valid" : "❌ Invalid");
+            Console.WriteLine(ok ? $"Schema '{folder}' is Valid" : "Invalid");
             Console.WriteLine(report);
         });
 
@@ -594,7 +599,7 @@ internal class Program
     }
 
     private static void RunSchemaCommand(
-        Action<LosslessSchemaApi> command,
+        Action<SchemaApi> command,
         string operation)
     {
         RunCommand(
@@ -615,7 +620,7 @@ internal class Program
     }
 
     private static void ValidateOptionalUri(
-        LosslessSchemaApi api,
+        SchemaApi api,
         string term,
         string? uri)
     {
@@ -673,16 +678,14 @@ internal class Program
 
     private static void RunCommand(
         string originalFolder,
-        Action<LosslessSchemaApi> command,
+        Action<SchemaApi> command,
         string operationName)
     {
-        var input = Path.Combine(
-            GetLatestSchemaFolder(originalFolder),
-            "Split");
+        var input = GetLatestSchemaFolder(originalFolder);
 
         var parent = Directory.GetParent(originalFolder)!.FullName;
 
-        var api = new LosslessSchemaApi();
+        var api = new SchemaApi();
 
         api.LoadFromFolder(input);
 
@@ -720,7 +723,10 @@ internal class Program
                 },
                 new JsonSerializerOptions
                 {
-                    WriteIndented = true
+                    WriteIndented = true,
+                    IndentSize = 4,
+                    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                    NewLine = "\n"
                 }));
     }
 

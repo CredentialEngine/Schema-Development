@@ -2,8 +2,19 @@
 
 namespace Schema.SDK;
 
+/// <summary>
+/// Rewrites JSON-LD nodes, resolving remote contexts via a UrlResolver and
+/// returning a transformed deep-cloned JsonNode.
+/// </summary>
 public static class JsonLdRewriter
 {
+    /// <summary>
+    /// Rewrite a JSON-LD node, resolving any remote @context references with the provided resolver.
+    /// Returns a deep-cloned, rewritten node suitable for further processing.
+    /// </summary>
+    /// <param name="node">The JSON node to rewrite.</param>
+    /// <param name="resolver">A UrlResolver instance used to fetch remote context documents.</param>
+    /// <returns>A rewritten JsonNode instance.</returns>
     public static JsonNode Rewrite(JsonNode node, UrlResolver resolver)
     {
         switch (node)

@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Schema.SDK\Schema.SDK.csproj"/>
+        <ProjectReference Include="../Schema.SDK/Schema.SDK.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -4,15 +4,30 @@ using System.Text.Json.Nodes;
 
 namespace CTDL.SchemaAPI;
 
+/// <summary>
+/// Splits a merged JSON-LD file (with @graph) into per-item files and
+/// can merge split files back into a single JSON-LD document.
+/// </summary>
 public class JsonLdGraphSplitter
 {
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         WriteIndented = true,
         IndentSize = 4,
-        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+        NewLine = "\n"
     };
 
+    private const string RDFS_CLASS_TERM = "rdfs:Class";
+    private const string RDF_PROPERTY_TERM = "rdf:Property";
+    private const string SKOS_CONCEPT_TERM = "skos:Concept";
+    private const string SKOS_CONCEPT_SCHEME_TERM = "skos:ConceptScheme";
+
+    /// <summary>
+    /// Split a merged JSON-LD file into multiple files under outputDir.
+    /// </summary>
+    /// <param name="inputPath">Path to the merged JSON-LD file.</param>
+    /// <param name="outputDir">Directory to write split files and metadata.</param>
     public void Split(string inputPath, string outputDir)
     {
         Directory.CreateDirectory(outputDir);
@@ -62,6 +77,11 @@ public class JsonLdGraphSplitter
         );
     }
 
+    /// <summary>
+    /// Merge split JSON-LD files (and metadata) back into a single JSON-LD document.
+    /// </summary>
+    /// <param name="inputDir">Directory containing split files and _meta.json.</param>
+    /// <param name="outputPath">Path to write the merged JSON-LD file.</param>
     public void Merge(string inputDir, string outputPath)
     {
         var metaPath = Path.Combine(inputDir, "_meta.json");
@@ -111,10 +131,10 @@ public class JsonLdGraphSplitter
 
         return type switch
         {
-            "rdfs:Class" => "classes",
-            "rdf:Property" => "properties",
-            "skos:Concept" => "concepts",
-            "skos:ConceptScheme" => "conceptschemes",
+            RDFS_CLASS_TERM => "classes",
+            RDF_PROPERTY_TERM => "properties",
+            SKOS_CONCEPT_TERM => "concepts",
+            SKOS_CONCEPT_SCHEME_TERM => "conceptschemes",
             _ => "other"
         };
     }

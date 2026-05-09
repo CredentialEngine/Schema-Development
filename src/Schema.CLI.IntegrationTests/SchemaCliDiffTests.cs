@@ -10,7 +10,7 @@ namespace CLI.IntegrationTests;
 public class SchemaCliDiffTests
 {
     private readonly string _actualOutput;
-    private readonly string _cliExe;
+    private readonly string _cliDll;
     private readonly string _expectedOutput;
     private readonly string _testRoot;
     private string _seedSchema;
@@ -25,8 +25,11 @@ public class SchemaCliDiffTests
         _expectedOutput = Path.Combine(_testRoot, "ExpectedOutput");
         _actualOutput = Path.Combine(_testRoot, "ActualOutput");
 
-        _cliExe = Path.GetFullPath(
-            Path.Combine(_testRoot, "..", "Schema.CLI", "bin", "x64", "Debug", "net10.0", "Schema.CLI.exe"));
+        var configuration =
+            Environment.GetEnvironmentVariable("BUILD_CONFIGURATION")
+            ?? "Debug";
+        _cliDll = Path.GetFullPath(
+            Path.Combine(_testRoot, "..", "Schema.CLI", "bin", "x64", configuration, "net10.0", "Schema.CLI.dll"));
 
         _workDir = string.Empty;
         _seedSchema = string.Empty;
@@ -61,9 +64,7 @@ public class SchemaCliDiffTests
 
         File.WriteAllText(
             Path.Combine(_actualOutput, "console-output.txt"),
-            NormalizeConsoleOutput(consoleOutput));
-
-        NormalizeJsonFiles(_actualOutput);
+            NormalizeConsoleOutput(consoleOutput, _workDir));
 
         AssertDirectoriesEqual(_expectedOutput, _actualOutput);
     }
@@ -72,13 +73,14 @@ public class SchemaCliDiffTests
     {
         var psi = new ProcessStartInfo
         {
-            FileName = _cliExe,
+            FileName = "dotnet",
             WorkingDirectory = _workDir,
             RedirectStandardOutput = true,
             RedirectStandardError = true,
             UseShellExecute = false
         };
 
+        psi.ArgumentList.Add(_cliDll);
         foreach (var arg in args)
             psi.ArgumentList.Add(arg);
 
@@ -140,13 +142,21 @@ public class SchemaCliDiffTests
 
             line = line.Replace("{SeedSchema}", _seedSchema);
 
-            log.AppendLine($"> schema {NormalizeConsoleOutput(line)}");
+            log.AppendLine($"> schema {NormalizeConsoleOutput(line, _workDir)}");
 
             var args = SplitCommandLine(line);
             var result = RunCli(args);
 
-            log.AppendLine(NormalizeConsoleOutput(result.StdOut).TrimEnd());
-            log.AppendLine(NormalizeConsoleOutput(result.StdErr).TrimEnd());
+            log.AppendLine(
+            NormalizeDynamicValues(result.StdOut, _workDir)
+                .ReplaceLineEndings("\n")
+                .TrimEnd());
+
+            log.AppendLine(
+                NormalizeDynamicValues(result.StdErr, _workDir)
+                    .ReplaceLineEndings("\n")
+                    .TrimEnd());
+
             log.AppendLine($"ExitCode: {result.ExitCode}");
             log.AppendLine();
 
@@ -186,19 +196,18 @@ public class SchemaCliDiffTests
         return GetLatestSchemaFolder();
     }
 
-    private static string NormalizeConsoleOutput(string text)
+    private static string NormalizeConsoleOutput(string text, string workDir)
     {
-        return NormalizeDynamicValues(text)
+        return NormalizeDynamicValues(text, workDir)
             .ReplaceLineEndings("\n");
     }
 
-    private static string NormalizeDynamicValues(string text)
+    private static string NormalizeDynamicValues(string text, string workDir)
     {
         text = text.Replace("\\", "/");
 
-        text = Regex.Replace(
-            text,
-            @"[A-Za-z]:/Users/[^/\r\n]+/AppData/Local/Temp/schema-cli-diff-tests/[a-f0-9]{32}",
+        text = text.Replace(
+            workDir.Replace("\\", "/"),
             "{WorkDir}");
 
         text = Regex.Replace(
@@ -264,6 +273,7 @@ public class SchemaCliDiffTests
                 var expected = File.ReadAllText(Path.Combine(expectedDir, relativePath)).ReplaceLineEndings("\n");
                 var actual = File.ReadAllText(Path.Combine(actualDir, relativePath)).ReplaceLineEndings("\n");
 
+                Assert.AreEqual(expected, actual);
                 return expected != actual;
             })
             .OrderBy(x => x)
@@ -311,20 +321,6 @@ public class SchemaCliDiffTests
             message.AppendLine($"  - {file}");
 
         message.AppendLine();
-    }
-
-    private static void NormalizeJsonFiles(string folder)
-    {
-        //foreach (var file in Directory.GetFiles(folder, "*.jsonld", SearchOption.AllDirectories)
-        //             .Concat(Directory.GetFiles(folder, "*.json", SearchOption.AllDirectories)))
-        //{
-        //    var node = JsonNode.Parse(File.ReadAllText(file));
-
-        //    File.WriteAllText(file, node!.ToJsonString(new JsonSerializerOptions
-        //    {
-        //        WriteIndented = true
-        //    }));
-        //}
     }
 
     private static void CopyDirectory(string sourceDir, string destDir)

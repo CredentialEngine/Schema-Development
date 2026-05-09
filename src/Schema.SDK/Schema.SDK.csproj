@@ -7,6 +7,28 @@
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <Platforms>x64</Platforms>
+
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+		<PackageId>CTDL.SchemaAPI</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Credential Engine</Authors>
+		<Company>Credential Engine</Company>
+
+		<Description>CTDL Schema API library</Description>
+
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+
+		<RepositoryUrl>https://github.com/CredentialEngine/Schema-Development</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/CredentialEngine/Schema-Development</PackageProjectUrl>
+
+		<Copyright>Copyright (c) Credential Engine</Copyright>
+
+		<PackageTags>ctdl rdf jsonld schema</PackageTags>
+
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>

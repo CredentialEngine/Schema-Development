@@ -2,6 +2,11 @@
 
 namespace CTDL.SchemaAPI;
 
+/// <summary>
+/// Scans a JSON document for URL strings and caches their HTTP responses
+/// under a local cache root directory. Useful for building an offline cache
+/// of remote JSON resources referenced by schema files.
+/// </summary>
 public class UrlCacheBuilder
 {
     private readonly string _cacheRoot;
@@ -12,15 +17,17 @@ public class UrlCacheBuilder
         _cacheRoot = cacheRoot;
     }
 
+    /// <summary>
+    /// Build the cache by scanning the JSON document at the provided path
+    /// and fetching any discovered URLs.
+    /// </summary>
+    /// <param name="jsonPath">Path to a JSON file to scan for URLs.</param>
     public void BuildFromFile(string jsonPath)
     {
         var root = JToken.Parse(File.ReadAllText(jsonPath));
         ScanToken(root);
     }
 
-    // =========================
-    // RECURSIVE SCAN
-    // =========================
     private void ScanToken(JToken token)
     {
         switch (token.Type)
@@ -43,9 +50,6 @@ public class UrlCacheBuilder
         }
     }
 
-    // =========================
-    // CACHE URL
-    // =========================
     private void CacheUrl(string url)
     {
         if (_visited.Contains(url))
@@ -133,9 +137,6 @@ public class UrlCacheBuilder
         return path;
     }
 
-    // =========================
-    // URL DETECTION
-    // =========================
     private bool IsUrl(string str)
     {
         return Uri.TryCreate(str, UriKind.Absolute, out var uri)

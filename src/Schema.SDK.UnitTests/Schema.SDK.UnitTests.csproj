@@ -18,35 +18,29 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="coverlet.collector" Version="6.0.2"/>
-        <PackageReference Include="dotNetRdf.Shacl" Version="3.5.1"/>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0"/>
-        <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.4.3"/>
-        <PackageReference Include="MSTest" Version="3.6.4"/>
+        <PackageReference Include="coverlet.collector" Version="6.0.2" />
+        <PackageReference Include="dotNetRdf.Shacl" Version="3.5.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+        <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.4.3" />
+        <PackageReference Include="MSTest" Version="3.6.4" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Schema.SDK\Schema.SDK.csproj"/>
+        <ProjectReference Include="../Schema.SDK/Schema.SDK.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="cache\credreg.net\ctdl\schema\context\json.json">
+        <None Update="cache/credreg.net/ctdl/schema/context/json.json">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
-        <None Update="merged\**">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="ctdl-context.json">
+        <None Update="Schema/**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
         <None Update="schema_shape.ttl">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="split\**">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>

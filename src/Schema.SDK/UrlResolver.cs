@@ -2,6 +2,10 @@
 
 namespace Schema.SDK;
 
+/// <summary>
+/// Resolves remote JSON URLs from a local cache directory. If a URL maps to
+/// a JSON document that has an outer @context, the inner @context node is returned.
+/// </summary>
 public class UrlResolver
 {
     private readonly string _cacheRoot;

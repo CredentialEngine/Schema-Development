@@ -6,9 +6,9 @@ namespace Schema.SDK.UnitTests;
 [TestClass]
 public class JsonLdSplitMergeTests
 {
-    private const string InputFile = "merged/ctdl-schema.jsonld";
-    private const string SplitDir = "split";
-    private const string MergedFile = "merged.jsonld";
+    private const string InputFile = "Schema/Merged/ctdl-schema.jsonld";
+    private const string SplitDir = "Out/Split";
+    private const string MergedFile = "Out/Merged/ctdl-schema.jsonld";
 
     [TestMethod]
     public void RoundTrip_ShouldBeSemanticallyIdentical()
@@ -36,7 +36,7 @@ public class JsonLdSplitMergeTests
     [TestMethod]
     public void NoDuplicateIdsAfterSplit()
     {
-        var files = Directory.GetFiles("split", "*.jsonld", SearchOption.AllDirectories);
+        var files = Directory.GetFiles(SplitDir, "*.jsonld", SearchOption.AllDirectories);
 
         var ids = new HashSet<string>();
 
