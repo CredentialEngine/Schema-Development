@@ -84,6 +84,10 @@ public class JsonLdGraphSplitter
     /// <param name="outputPath">Path to write the merged JSON-LD file.</param>
     public void Merge(string inputDir, string outputPath)
     {
+        var outputDir = Path.GetDirectoryName(outputPath);
+        if (outputDir != null)
+            Directory.CreateDirectory(outputDir);
+
         var metaPath = Path.Combine(inputDir, "_meta.json");
 
         var metadata = JsonSerializer.Deserialize<SplitMetadata>(

@@ -6,9 +6,11 @@ namespace Schema.SDK.UnitTests;
 [TestClass]
 public class JsonLdSplitMergeTests
 {
-    private const string InputFile = "Schema/Merged/ctdl-schema.jsonld";
-    private const string SplitDir = "Out/Split";
-    private const string MergedFile = "Out/Merged/ctdl-schema.jsonld";
+    private static readonly string TestRoot = AppContext.BaseDirectory;
+    private static readonly string InputFile = Path.Combine(TestRoot, "Schema/Merged/ctdl-schema.jsonld");
+    private static readonly string SplitDir = Path.Combine(TestRoot, "Out/Split");
+    private static readonly string MergedDir = Path.Combine(TestRoot, "Out/Merged");
+    private static readonly string MergedFile = Path.Combine(TestRoot, "Out/Merged/ctdl-schema.jsonld");
 
     [TestMethod]
     public void RoundTrip_ShouldBeSemanticallyIdentical()
@@ -16,8 +18,8 @@ public class JsonLdSplitMergeTests
         if (Directory.Exists(SplitDir))
             Directory.Delete(SplitDir, true);
 
-        if (File.Exists(MergedFile))
-            File.Delete(MergedFile);
+        if (Directory.Exists(MergedDir))
+            Directory.Delete(MergedDir, true);
 
         var splitter = new JsonLdGraphSplitter();
 

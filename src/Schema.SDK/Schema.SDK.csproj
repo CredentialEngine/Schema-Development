@@ -1,16 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <OutputType>Library</OutputType>
-        <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-        <Platforms>x64</Platforms>
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<Platforms>x64</Platforms>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
 
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 
-		<PackageId>CTDL.SchemaAPI</PackageId>
+		<PackageId>CTDL.Schema.SDK</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Credential Engine</Authors>
 		<Company>Credential Engine</Company>
@@ -29,11 +30,11 @@
 
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    </PropertyGroup>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="dotNetRdf" Version="3.5.1"/>
-        <PackageReference Include="JsonPath.Net" Version="3.0.2"/>
-    </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="dotNetRdf" Version="3.5.1"/>
+		<PackageReference Include="JsonPath.Net" Version="3.0.2"/>
+	</ItemGroup>
 
 </Project>

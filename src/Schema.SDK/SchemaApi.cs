@@ -609,7 +609,7 @@ public class SchemaApi
 
     public JsonObject? GetSchemaItem(string term)
     {
-        return _docs.GetValueOrDefault(term);
+        return _docs.TryGetValue(term, out var o) ? o : default;
     }
 
     public IEnumerable<string> GetPropertiesOfClass(string classIdOrTerm)
@@ -851,8 +851,8 @@ public class SchemaApi
         // CURIE lookup FIRST
         if (term.Contains(':'))
         {
-            var prefix = term.Split(':', 2)[0];
-            var suffix = term.Split(':', 2)[1];
+            var prefix = term.Split([ ':' ], 2)[0];
+            var suffix = term.Split([ ':' ], 2)[1];
 
             if (_context[prefix] != null)
                 return _context[prefix]! + suffix;
@@ -1144,7 +1144,7 @@ public class SchemaApi
 
     private static IEnumerable<KeyValuePair<string, JsonNode?>> GetReferenceProperties(JsonObject doc)
     {
-        return doc.Where(p => !p.Key.StartsWith('@'));
+        return doc.Where(p => !p.Key.StartsWith("@"));
     }
 
     private static bool PropertyContainsTerm(JsonNode? value, string term)

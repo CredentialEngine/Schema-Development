@@ -1,0 +1,242 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  BuildConfiguration: 'Debug'
+  BuildPlatform: 'x64'
+  DotNetVersion: '10.0.203'
+
+steps:
+- task: PowerShell@2
+  displayName: "Set Build Number to Year.Month.Day.BuildId"
+  inputs:
+    targetType: inline
+    script: |
+      $year = (Get-Date).ToString('yyyy')
+      $month = (Get-Date).ToString('MM')
+      $day = (Get-Date).ToString('dd')
+      $revision = "$env:BUILD_BUILDID"
+      $version = "$year.$month.$day.$revision"
+      Write-Host "##vso[build.updatebuildnumber]$version"
+      Write-Output "##vso[task.setvariable variable=VersionNumber]$version"
+
+- task: UseDotNet@2
+  displayName: 'Install .NET 10 SDK'
+  inputs:
+    packageType: 'sdk'
+    version: '$(DotNetVersion)'
+
+- script: |
+    dotnet --info
+  displayName: 'Display .NET Info'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Restore Packages'
+  inputs:
+    command: 'restore'
+    projects: 'src/**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build Solution'
+  env:
+    BUILD_CONFIGURATION: $(BuildConfiguration)
+  inputs:
+    command: 'build'
+    projects: 'src/**/*.csproj'
+    arguments: >
+      --configuration $(BuildConfiguration)
+      -p:Platform=$(BuildPlatform)
+      --no-restore
+      -p:ContinuousIntegrationBuild=true
+      -p:Version=$(VersionNumber)
+
+- task: DotNetCoreCLI@2
+  displayName: 'Run Tests'
+  env:
+    BUILD_CONFIGURATION: $(BuildConfiguration)
+  inputs:
+    command: 'test'
+    projects: 'src/**/*Tests/*.csproj'
+    arguments: >
+      --configuration $(BuildConfiguration)
+      -p:Platform=$(BuildPlatform)
+      --no-build
+      --verbosity normal
+
+- task: DotNetCoreCLI@2
+  displayName: 'Publish Artifacts'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'src/Schema.CLI/Schema.CLI.csproj'
+    arguments: >
+      --configuration $(BuildConfiguration)
+      -p:Platform=$(BuildPlatform)
+      --output $(Build.ArtifactStagingDirectory)/publish/Schema.CLI
+      --no-build
+      -p:Version=$(VersionNumber)
+
+# - powershell: |
+
+#     Write-Host "Locating signtool.exe..."
+
+#     $signtool = Get-ChildItem `
+#       "C:\Program Files (x86)\Windows Kits\10\bin" `
+#       -Recurse `
+#       -Filter signtool.exe |
+#       Sort-Object FullName -Descending |
+#       Select-Object -First 1
+
+#     if (-not $signtool) {
+#       throw "signtool.exe not found"
+#     }
+
+#     Write-Host "Using:"
+#     Write-Host $signtool.FullName
+
+#     echo "##vso[task.setvariable variable=SIGNTOOL_PATH]$($signtool.FullName)"
+
+#   displayName: 'Locate signtool'
+
+# #
+# # Install Azure Trusted Signing client
+# #
+# - powershell: |
+#     dotnet tool install --global Azure.CodeSigning.Dlib
+#   displayName: 'Install Trusted Signing Dlib'
+
+# #
+# # Sign EXE + DLL artifacts
+# #
+# - powershell: |
+
+#     $files = Get-ChildItem `
+#       "$(Build.ArtifactStagingDirectory)\publish" `
+#       -Recurse `
+#       -Include *.exe,*.dll
+
+#     foreach ($file in $files) {
+
+#       Write-Host "Signing binary:"
+#       Write-Host $file.FullName
+
+#       & "$(SIGNTOOL_PATH)" sign `
+#         /v `
+#         /debug `
+#         /fd SHA256 `
+#         /td SHA256 `
+#         /tr http://timestamp.acs.microsoft.com `
+#         /dlib Azure.CodeSigning.Dlib.dll `
+#         /dmdf `
+#         /du "https://credentialengine.org" `
+#         /d "Credential Engine SDK" `
+#         /dlibparams `
+#           "Endpoint=$(TrustedSigningEndpoint);CodeSigningAccountName=$(TrustedSigningAccount);CertificateProfileName=$(TrustedSigningProfile);TenantId=$(AZURE_TENANT_ID);ClientId=$(AZURE_CLIENT_ID);ClientSecret=$(AZURE_CLIENT_SECRET)" `
+#         $file.FullName
+#     }
+
+#   displayName: 'Sign binaries'
+
+# #
+# # Verify signed binaries
+# #
+# - powershell: |
+
+#     Get-ChildItem `
+#       "$(Build.ArtifactStagingDirectory)\publish" `
+#       -Recurse `
+#       -Include *.exe,*.dll |
+#     ForEach-Object {
+
+#       Write-Host "Verifying:"
+#       Write-Host $_.FullName
+
+#       & "$(SIGNTOOL_PATH)" verify /pa $_.FullName
+#     }
+
+#   displayName: 'Verify binary signatures'
+
+- task: NuGetAuthenticate@1
+  displayName: 'Authenticate to Azure Artifacts'
+
+#
+# Pack NuGet packages
+#
+- script: |
+    dotnet pack src/Schema.SDK/Schema.SDK.csproj \
+      --configuration $(BuildConfiguration) \
+      --output $(Build.ArtifactStagingDirectory)/nuget \
+      --no-build \
+      -p:Platform=$(BuildPlatform) \
+      -p:Version=$(VersionNumber) \
+      -p:AssemblyVersion=$(VersionNumber) \
+      -p:FileVersion=$(VersionNumber) \
+      -p:InformationalVersion=$(VersionNumber)
+  displayName: 'Pack NuGet Package'
+# - task: DotNetCoreCLI@2
+#   displayName: 'Pack NuGet Packages'
+#   inputs:
+#     command: 'pack'
+#     packagesToPack: 'src/Schema.SDK/Schema.SDK.csproj'
+#     versioningScheme: off
+#     arguments: >
+#       --configuration $(BuildConfiguration)
+#       --output $(Build.ArtifactStagingDirectory)/nuget
+#       --no-build
+#       -p:Platform=$(BuildPlatform)
+#       -p:Version=$(VersionNumber)
+
+- task: DotNetCoreCLI@2
+  displayName: 'Push NuGet Package'
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/nuget/*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'credential-engine'
+
+#
+# Sign NuGet packages
+#
+# NOTE:
+# NuGet package signing uses dotnet nuget sign.
+# This signs the .nupkg container itself.
+#
+# - powershell: |
+
+#     $packages = Get-ChildItem `
+#       "$(Build.ArtifactStagingDirectory)\nuget" `
+#       -Filter *.nupkg
+
+#     foreach ($pkg in $packages) {
+
+#       Write-Host "Signing NuGet package:"
+#       Write-Host $pkg.FullName
+
+#       dotnet nuget sign $pkg.FullName `
+#         --timestamp-hash-algorithm SHA256 `
+#         --overwrite `
+#         --verbosity detailed `
+#         --timestamper http://timestamp.acs.microsoft.com `
+#         --certificate-fingerprint "" `
+#         --output $pkg.FullName
+#     }
+
+#   displayName: 'Sign NuGet packages'
+#   continueOnError: true
+
+# - script: | 
+#     echo "===== FULL DIRECTORY TREE ====="
+#     pwd
+#     find "$(pwd)" -print | sort 
+#   displayName: "Dump full folder tree"
+#   condition: always()
