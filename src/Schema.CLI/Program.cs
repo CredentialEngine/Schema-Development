@@ -39,6 +39,7 @@ internal class Program
 
         root.Add(BuildInitCommand());
         root.Add(BuildCloneCommand());
+        root.Add(BuildApplyCommand());
         root.Add(BuildAddCommand());
         root.Add(BuildUpdateCommand());
         root.Add(BuildRemoveCommand());
@@ -56,8 +57,21 @@ internal class Program
         {
             Required = true
         };
-
         cmd.Add(path);
+
+        var checkpoints = new Option<int?>("--checkpoints")
+        {
+            Description = "Number of schema checkpoints to retain. 0 replaces immediately."
+        };
+        checkpoints.Validators.Add(result =>
+        {
+            var value = result.GetValue(checkpoints);
+            if (value.HasValue && value.Value < 1)
+            {
+                result.AddError("--checkpoints must be at least 1.");
+            }
+        });
+        cmd.Add(checkpoints);
 
         cmd.SetAction(context =>
         {
@@ -67,7 +81,9 @@ internal class Program
             if (!Directory.Exists(p))
                 throw new DirectoryNotFoundException(p);
 
-            WriteEnvFile(p);
+            var cp = context.GetValue(checkpoints);
+
+            WriteEnvFile(p, cp);
 
             Console.WriteLine($"Initialized schema at: {p}");
             Console.WriteLine(".env file created.");
@@ -81,6 +97,22 @@ internal class Program
         var cmd = new Command("clone", "Clone latest schema version");
 
         cmd.SetAction(_ => { RunClone(GetOriginalSchemaPath()); });
+
+        return cmd;
+    }
+
+    private static Command BuildApplyCommand()
+    {
+        var cmd = new Command(
+            "apply",
+            "Replace original schema with latest checkpoint");
+
+        cmd.SetAction(_ =>
+        {
+            var original = GetOriginalSchemaPath();
+
+            ApplyLatestCheckpoint(original);
+        });
 
         return cmd;
     }
@@ -605,7 +637,8 @@ internal class Program
         RunCommand(
             GetOriginalSchemaPath(),
             command,
-            operation);
+            operation,
+            GetCheckpointLimit());
     }
 
     private static string GetOriginalSchemaPath()
@@ -617,6 +650,28 @@ internal class Program
                 "Schema not initialized. Run: schema init --path <path>");
 
         return original;
+    }
+
+    private static void ApplyLatestCheckpoint(string originalFolder)
+    {
+        var latest = GetLatestSchemaFolder(originalFolder);
+
+        if (Path.GetFullPath(latest)
+            .Equals(
+                Path.GetFullPath(originalFolder),
+                StringComparison.OrdinalIgnoreCase))
+        {
+            Console.WriteLine("Original schema is already current.");
+            return;
+        }
+
+        if (Directory.Exists(originalFolder))
+            Directory.Delete(originalFolder, true);
+
+        Directory.Move(latest, originalFolder);
+
+        Console.WriteLine(
+            $"Applied checkpoint '{Path.GetFileName(latest)}' to original schema.");
     }
 
     private static void ValidateOptionalUri(
@@ -644,15 +699,31 @@ internal class Program
             : value;
     }
 
-    private static void WriteEnvFile(string schemaPath)
+    private static void WriteEnvFile(string schemaPath, int? checkpoints)
     {
         var envPath = Path.Combine(
             Directory.GetCurrentDirectory(),
             ".env");
 
-        File.WriteAllText(
-            envPath,
-            $"SCHEMA_ORIGINAL={schemaPath}");
+        var lines = new List<string>
+        {
+            $"SCHEMA_ORIGINAL={schemaPath}"
+        };
+
+        if (checkpoints.HasValue)
+            lines.Add($"SCHEMA_CHECKPOINTS={checkpoints.Value}");
+
+        File.WriteAllLines(envPath, lines);
+    }
+
+    private static int? GetCheckpointLimit()
+    {
+        var value = Environment.GetEnvironmentVariable("SCHEMA_CHECKPOINTS");
+
+        if (int.TryParse(value, out var result))
+            return result;
+
+        return null;
     }
 
     private static void RunClone(string originalFolder)
@@ -679,7 +750,8 @@ internal class Program
     private static void RunCommand(
         string originalFolder,
         Action<SchemaApi> command,
-        string operationName)
+        string operationName,
+        int? checkpointLimit)
     {
         var input = GetLatestSchemaFolder(originalFolder);
 
@@ -697,6 +769,8 @@ internal class Program
 
         api.SaveFolder(output);
 
+        TrimCheckpoints( parent, checkpointLimit);
+
         WriteVersionFile(
             output,
             timestamp,
@@ -704,6 +778,22 @@ internal class Program
             operationName);
 
         Console.WriteLine($"New version created: {output}");
+    }
+
+    private static void TrimCheckpoints(
+        string parent,
+        int? checkpointLimit)
+    {
+        if (!checkpointLimit.HasValue)
+            return;
+
+        var checkpoints = Directory
+            .GetDirectories(parent, "Schema-*")
+            .OrderByDescending(Directory.GetCreationTimeUtc)
+            .ToList();
+
+        foreach (var old in checkpoints.Skip(checkpointLimit.Value))
+            Directory.Delete(old, true);
     }
 
     private static void WriteVersionFile(
@@ -761,7 +851,7 @@ internal class Program
 
         var candidates = Directory
             .GetDirectories(parent, "Schema-*")
-            .OrderByDescending(d => d)
+            .OrderByDescending(Directory.GetCreationTimeUtc)
             .ToList();
 
         return candidates.FirstOrDefault() ?? original;

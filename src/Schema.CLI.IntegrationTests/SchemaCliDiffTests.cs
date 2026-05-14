@@ -9,6 +9,8 @@ namespace CLI.IntegrationTests;
 [TestClass]
 public class SchemaCliDiffTests
 {
+    public TestContext TestContext { get; set; } = null!;
+
     private readonly string _actualOutput;
     private readonly string _cliDll;
     private readonly string _expectedOutput;
@@ -23,7 +25,10 @@ public class SchemaCliDiffTests
             Path.Combine(AppContext.BaseDirectory, "..", "..", "..", ".."));
 
         _expectedOutput = Path.Combine(_testRoot, "ExpectedOutput");
-        _actualOutput = Path.Combine(_testRoot, "ActualOutput");
+        _actualOutput = Path.Combine(
+            _testRoot,
+            "ActualOutput",
+            DateTime.UtcNow.ToString("yyyyMMdd_HHmmss_fffffff") + Guid.NewGuid().ToString("N"));
 
         var configuration =
             Environment.GetEnvironmentVariable("BUILD_CONFIGURATION")
@@ -38,9 +43,6 @@ public class SchemaCliDiffTests
     [TestInitialize]
     public void Setup()
     {
-        if (Directory.Exists(_actualOutput))
-            Directory.Delete(_actualOutput, true);
-
         Directory.CreateDirectory(_actualOutput);
 
         _workDir = Path.Combine(
@@ -55,10 +57,20 @@ public class SchemaCliDiffTests
         CreateSeedSchema(_seedSchema);
     }
 
+    [TestCleanup]
+    public void Cleanup()
+    {
+        if (Directory.Exists(_workDir))
+            Directory.Delete(_workDir, true);
+    }
+
     [TestMethod]
     public void CliCommands_ProduceExpectedSchemaOutput()
     {
-        var scriptPath = Path.Combine("TestScripts", "test-script.txt");
+        var scriptPath = Path.Combine(
+            _testRoot,
+            "TestScripts",
+            "test-script.txt");
 
         var consoleOutput = RunScriptAndCaptureOutputs(scriptPath);
 
@@ -67,6 +79,55 @@ public class SchemaCliDiffTests
             NormalizeConsoleOutput(consoleOutput, _workDir));
 
         AssertDirectoriesEqual(_expectedOutput, _actualOutput);
+    }
+
+    [TestMethod]
+    public void CheckpointLimit_TrimsOldSnapshots()
+    {
+        var scriptPath = Path.Combine(
+            _testRoot,
+            "TestScripts",
+            "checkpoint-trim.txt");
+
+        RunScriptAndCaptureOutputs(scriptPath);
+
+        var checkpoints = Directory
+            .GetDirectories(_workDir, "Schema-*")
+            .OrderBy(x => x)
+            .ToList();
+        Assert.HasCount(2, checkpoints);
+    }
+
+    [TestMethod]
+    public void Apply_ReplacesOriginalWithLatestCheckpoint()
+    {
+        var scriptPath = Path.Combine(
+            _testRoot,
+            "TestScripts",
+            "checkpoint-apply.txt");
+
+        RunScriptAndCaptureOutputs(scriptPath);
+
+        // Latest checkpoint should no longer exist because it was moved
+        var checkpoints = Directory
+            .GetDirectories(_workDir, "Schema-*")
+            .OrderByDescending(Directory.GetCreationTimeUtc)
+            .ToList();
+
+        Assert.HasCount(1, checkpoints);
+
+        // Original schema should now contain the applied changes
+        var classFile = Path.Combine(
+            _seedSchema,
+            "Split",
+            "classes",
+            "ex_TestClass.jsonld");
+
+        Assert.IsTrue(File.Exists(classFile));
+
+        var json = File.ReadAllText(classFile);
+
+        StringAssert.Contains(json, "\"@id\": \"ex:TestClass\"");
     }
 
     private CliResult RunCli(params string[] args)
@@ -220,8 +281,9 @@ public class SchemaCliDiffTests
 
     private string GetLatestSchemaFolder()
     {
-        var candidates = Directory.GetDirectories(_workDir, "Schema-*")
-            .OrderByDescending(x => x)
+        var candidates = Directory
+            .GetDirectories(_workDir, "Schema-*")
+            .OrderByDescending(Directory.GetCreationTimeUtc)
             .ToList();
 
         Assert.IsNotEmpty(candidates, "No generated Schema-* folder found.");

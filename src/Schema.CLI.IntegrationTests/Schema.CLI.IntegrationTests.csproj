@@ -30,6 +30,9 @@
         <None Update="TestScripts/test-script.txt">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <None Update="TestScripts\checkpoint-trim.txt">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>
