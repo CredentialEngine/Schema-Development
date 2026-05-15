@@ -4,7 +4,7 @@ Initialized schema at: {WorkDir}/Schema
 
 ExitCode: 0
 
-> schema add context --term ceterms:TestClass --uri https://purl.org/ctdl/terms/TestClass
+> schema add namespace --prefix ceterms --uri https://purl.org/ctdl/terms/
 New version created: {WorkDir}/Schema-{Timestamp}
 
 ExitCode: 0
@@ -14,7 +14,7 @@ New version created: {WorkDir}/Schema-{Timestamp}
 
 ExitCode: 0
 
-> schema add context --term ceterms:TestProperty --uri https://purl.org/ctdl/terms/TestProperty
+> schema add context --term ceterms:TestProperty --field @@type --value xsd:string
 New version created: {WorkDir}/Schema-{Timestamp}
 
 ExitCode: 0
@@ -24,17 +24,7 @@ New version created: {WorkDir}/Schema-{Timestamp}
 
 ExitCode: 0
 
-> schema add context --term ceterms:TestConcept --uri https://purl.org/ctdl/terms/TestConcept
-New version created: {WorkDir}/Schema-{Timestamp}
-
-ExitCode: 0
-
 > schema add concept --term ceterms:TestConcept
-New version created: {WorkDir}/Schema-{Timestamp}
-
-ExitCode: 0
-
-> schema add context --term ceterms:TestConceptScheme --uri https://purl.org/ctdl/terms/TestConceptScheme
 New version created: {WorkDir}/Schema-{Timestamp}
 
 ExitCode: 0

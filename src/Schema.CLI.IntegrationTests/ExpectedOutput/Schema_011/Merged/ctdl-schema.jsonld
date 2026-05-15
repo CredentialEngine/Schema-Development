@@ -3,7 +3,8 @@
     "@graph": [
         {
             "@id": "ceterms:TestClass",
-            "@type": "rdfs:Class"
+            "@type": "rdfs:Class",
+            "vs:term_status": "stable"
         },
         {
             "@id": "ceterms:TestProperty",
@@ -21,7 +22,10 @@
         },
         {
             "@id": "ceterms:TestConcept",
-            "@type": "skos:Concept"
+            "@type": "skos:Concept",
+            "skos:inScheme": [
+                "ceterms:TestConceptScheme"
+            ]
         }
     ]
 }

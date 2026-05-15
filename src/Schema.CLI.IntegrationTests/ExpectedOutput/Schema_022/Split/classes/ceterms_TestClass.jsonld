@@ -1,8 +1,0 @@
-{
-    "@context": "https://credreg.net/ctdl/schema/context/json",
-    "@id": "ceterms:TestClass",
-    "@type": "rdfs:Class",
-    "rdfs:label": {
-        "en": "Test Class"
-    }
-}

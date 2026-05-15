@@ -1,5 +1,11 @@
 {
     "@context": "https://credreg.net/ctdl/schema/context/json",
     "@id": "ceterms:TestProperty",
-    "@type": "rdf:Property"
+    "@type": "rdf:Property",
+    "schema:domainIncludes": [
+        "ceterms:TestClass"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
 }

@@ -1,7 +1,5 @@
 init --path "{SeedSchema}" --checkpoints 2
-add context --term ex:Class1 --uri https://example.org/Class1
+add namespace --prefix ex --uri https://example.org/ex
 add class --term ex:Class1
-add context --term ex:Class2 --uri https://example.org/Class2
 add class --term ex:Class2
-add context --term ex:Class3 --uri https://example.org/Class3
 add class --term ex:Class3

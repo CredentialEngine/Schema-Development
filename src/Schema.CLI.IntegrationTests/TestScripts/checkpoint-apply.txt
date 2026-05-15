@@ -1,4 +1,4 @@
 init --path "{SeedSchema}" --checkpoints 2
-add context --term ex:TestClass --uri https://example.org/TestClass
+add namespace --prefix ex --uri https://example.org/ex
 add class --term ex:TestClass
 apply

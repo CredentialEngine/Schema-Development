@@ -4,7 +4,6 @@
         {
             "@id": "ceterms:TestClass",
             "@type": "rdfs:Class",
-            "vs:term_status": "stable",
             "rdfs:label": {
                 "en": "Test Class"
             }
@@ -15,9 +14,7 @@
             "schema:domainIncludes": [
                 "ceterms:TestClass"
             ],
-            "schema:rangeIncludes": [
-                "xsd:string"
-            ]
+            "schema:rangeIncludes": []
         },
         {
             "@id": "ceterms:TestConceptScheme",

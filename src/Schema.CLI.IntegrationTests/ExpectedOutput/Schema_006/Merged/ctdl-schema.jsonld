@@ -8,6 +8,10 @@
         {
             "@id": "ceterms:TestProperty",
             "@type": "rdf:Property"
+        },
+        {
+            "@id": "ceterms:TestConcept",
+            "@type": "skos:Concept"
         }
     ]
 }

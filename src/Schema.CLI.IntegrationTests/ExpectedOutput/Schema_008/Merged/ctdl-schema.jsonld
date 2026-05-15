@@ -7,7 +7,14 @@
         },
         {
             "@id": "ceterms:TestProperty",
-            "@type": "rdf:Property"
+            "@type": "rdf:Property",
+            "schema:domainIncludes": [
+                "ceterms:TestClass"
+            ]
+        },
+        {
+            "@id": "ceterms:TestConceptScheme",
+            "@type": "skos:ConceptScheme"
         },
         {
             "@id": "ceterms:TestConcept",

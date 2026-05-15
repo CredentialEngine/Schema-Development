@@ -5,7 +5,5 @@
     "schema:domainIncludes": [
         "ceterms:TestClass"
     ],
-    "schema:rangeIncludes": [
-        "xsd:string"
-    ]
+    "schema:rangeIncludes": []
 }

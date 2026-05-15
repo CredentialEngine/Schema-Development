@@ -19,13 +19,6 @@
         {
             "@id": "ceterms:TestConceptScheme",
             "@type": "skos:ConceptScheme"
-        },
-        {
-            "@id": "ceterms:TestConcept",
-            "@type": "skos:Concept",
-            "skos:inScheme": [
-                "ceterms:TestConceptScheme"
-            ]
         }
     ]
 }

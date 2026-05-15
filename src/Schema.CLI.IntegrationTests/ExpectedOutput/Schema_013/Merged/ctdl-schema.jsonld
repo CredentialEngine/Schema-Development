@@ -4,7 +4,10 @@
         {
             "@id": "ceterms:TestClass",
             "@type": "rdfs:Class",
-            "vs:term_status": "stable"
+            "vs:term_status": "stable",
+            "rdfs:label": {
+                "en": "Test Class"
+            }
         },
         {
             "@id": "ceterms:TestProperty",

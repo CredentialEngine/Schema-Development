@@ -121,12 +121,44 @@ internal class Program
     {
         var cmd = new Command("add", "Add schema items");
 
+        cmd.Add(BuildAddNamespaceCommand());
         cmd.Add(BuildAddClassCommand());
         cmd.Add(BuildAddPropertyCommand());
         cmd.Add(BuildAddConceptCommand());
         cmd.Add(BuildAddConceptSchemeCommand());
         cmd.Add(BuildAddContextCommand());
         cmd.Add(BuildAddValueCommand());
+
+        return cmd;
+    }
+
+    private static Command BuildAddNamespaceCommand()
+    {
+        var cmd = new Command("namespace", "Add namespace");
+
+        var prefix = new Option<string>("--prefix")
+        {
+            Required = true
+        };
+
+        var uri = new Option<string>("--uri")
+        {
+            Required = true
+        };
+
+        cmd.Add(prefix);
+        cmd.Add(uri);
+
+        cmd.SetAction((Action<ParseResult>)(context =>
+        {
+            var p = context.GetValue(prefix)!;
+            var u = context.GetValue(uri)!;
+
+            RunSchemaCommand((Action<SchemaApi>)(api =>
+            {
+                api.CreateNamespace(p, u);
+            }), "add namespace");
+        }));
 
         return cmd;
     }
@@ -246,7 +278,7 @@ internal class Program
         cmd.Add(field);
         cmd.Add(value);
 
-        cmd.SetAction(context =>
+        cmd.SetAction((Action<ParseResult>)(context =>
         {
             var t = context.GetValue(term)!;
             var u = context.GetValue(uri);
@@ -254,11 +286,11 @@ internal class Program
             var f = NormalizeAtValue(context.GetValue(field));
             var v = NormalizeAtValue(context.GetValue(value));
 
-            RunSchemaCommand(api =>
+            RunSchemaCommand((Action<SchemaApi>)(api =>
             {
                 if (!string.IsNullOrWhiteSpace(u))
                 {
-                    api.AddContextTerm(t, u);
+                    api.CreateNamespace(t, u);
                     return;
                 }
 
@@ -271,8 +303,8 @@ internal class Program
 
                 throw new InvalidOperationException(
                     "Use --uri OR both --field and --value.");
-            }, "add context");
-        });
+            }), "add context");
+        }));
 
         return cmd;
     }

@@ -65,16 +65,6 @@ public class SchemaApi
     }
 
     /// <summary>
-    /// Adds a context term mapping to a URI (simple string mapping).
-    /// </summary>
-    /// <param name="term">The context term (e.g. "schema").</param>
-    /// <param name="uri">The URI or prefix the term maps to.</param>
-    public void AddContextTerm(string term, string uri)
-    {
-        AddContextValue(term, uri);
-    }
-
-    /// <summary>
     /// Adds a context term whose value is an object with a single field.
     /// </summary>
     /// <param name="term">The context term to add.</param>
@@ -372,7 +362,7 @@ public class SchemaApi
     /// <param name="term">Context term for the new class (must exist in the current context).</param>
     public void CreateClass(string term)
     {
-        RequireContextTerm(term);
+        RequireNamespaceExists(term);
 
         var obj = new JsonObject
         {
@@ -428,7 +418,9 @@ public class SchemaApi
     /// <param name="term">Context term for the new property (must exist in the current context).</param>
     public void CreateProperty(string term)
     {
-        RequireContextTerm(term);
+        RequireNamespaceExists(term);
+
+        EnsurePropertyContextTerm(term);
 
         var obj = new JsonObject
         {
@@ -440,6 +432,17 @@ public class SchemaApi
         _docs[term] = obj;
 
         AddTriple(term, RDF_TYPE, RDF_PROPERTY);
+    }
+
+    private void EnsurePropertyContextTerm(string term)
+    {
+        if (_context[term] != null)
+            return;
+
+        _context[term] = new JsonObject
+        {
+            ["@type"] = "@id"
+        };
     }
 
     /// <summary>
@@ -478,7 +481,7 @@ public class SchemaApi
     /// <param name="term">Context term for the new concept (must exist in the current context).</param>
     public void CreateConcept(string term)
     {
-        RequireContextTerm(term);
+        RequireNamespaceExists(term);
 
         var obj = new JsonObject
         {
@@ -498,7 +501,7 @@ public class SchemaApi
     /// <param name="term">Context term for the new concept scheme (must exist in the current context).</param>
     public void CreateConceptScheme(string term)
     {
-        RequireContextTerm(term);
+        RequireNamespaceExists(term);
 
         var obj = new JsonObject
         {
@@ -868,12 +871,46 @@ public class SchemaApi
         return term;
     }
 
-    private void AddContextValue(string term, string value)
+    public void CreateNamespace(
+        string prefix,
+        string uri)
     {
-        if (_context[term] != null)
-            throw new InvalidOperationException($"Context term already exists: {term}");
+        if (string.IsNullOrWhiteSpace(prefix))
+            throw new InvalidOperationException(
+                "Namespace prefix is required.");
 
-        _context[term] = value;
+        if (prefix.Contains(':'))
+            throw new InvalidOperationException(
+                "Namespace prefix must not contain ':'.");
+
+        if (!Uri.TryCreate(uri, UriKind.Absolute, out _))
+            throw new InvalidOperationException(
+                $"Invalid namespace URI: {uri}");
+
+        if (_context[prefix] != null)
+            throw new InvalidOperationException(
+                $"Namespace already exists: {prefix}");
+
+        _context[prefix] = uri;
+    }
+
+    public bool NamespaceExists(string prefix)
+    {
+        return _context[prefix] is JsonValue;
+    }
+
+    private void RequireNamespaceExists(string term)
+    {
+        var parts = term.Split([':'], 2);
+
+        if (parts.Length != 2)
+            throw new InvalidOperationException("Term must be a CURIE with a prefix: " + term);
+
+        var prefix = parts[0];
+
+        if (_context[prefix] == null)
+            throw new InvalidOperationException(
+                $"Namespace '{prefix}' does not exist in context.");
     }
 
     private void AddContextObject(string term, string key, string value)
@@ -1095,10 +1132,10 @@ public class SchemaApi
     {
         return new JsonObject
         {
-            ["ceterms"] = "https://credreg.net/ctdl/terms/",
-            ["schema"] = "https://schema.org/",
-            ["rdf"] = "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            ["rdfs"] = "http://www.w3.org/2000/01/rdf-schema#"
+            //["ceterms"] = "https://credreg.net/ctdl/terms/",
+            //["schema"] = "https://schema.org/",
+            //["rdf"] = "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            //["rdfs"] = "http://www.w3.org/2000/01/rdf-schema#"
         };
     }
 

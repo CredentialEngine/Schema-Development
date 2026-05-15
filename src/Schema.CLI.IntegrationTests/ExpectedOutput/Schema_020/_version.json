@@ -1,5 +1,5 @@
 {
-  "timestamp": "20260508_014402_6870664",
-  "basedOn": "Split",
-  "operation": "remove value"
+    "timestamp": "20260515_003243_1878828",
+    "basedOn": "Schema-20260515_003242_3522094",
+    "operation": "remove conceptscheme"
 }

@@ -10,6 +10,9 @@
             "@type": "rdf:Property",
             "schema:domainIncludes": [
                 "ceterms:TestClass"
+            ],
+            "schema:rangeIncludes": [
+                "xsd:string"
             ]
         },
         {
@@ -18,7 +21,10 @@
         },
         {
             "@id": "ceterms:TestConcept",
-            "@type": "skos:Concept"
+            "@type": "skos:Concept",
+            "skos:inScheme": [
+                "ceterms:TestConceptScheme"
+            ]
         }
     ]
 }

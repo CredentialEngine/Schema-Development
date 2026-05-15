@@ -2,5 +2,8 @@
     "@context": "https://credreg.net/ctdl/schema/context/json",
     "@id": "ceterms:TestClass",
     "@type": "rdfs:Class",
-    "vs:term_status": "stable"
+    "vs:term_status": "stable",
+    "rdfs:label": {
+        "en": "Test Class"
+    }
 }

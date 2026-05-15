@@ -1,11 +1,9 @@
 init --path {SeedSchema}
-add context --term ceterms:TestClass --uri https://purl.org/ctdl/terms/TestClass
+add namespace --prefix ceterms --uri https://purl.org/ctdl/terms/
 add class --term ceterms:TestClass
-add context --term ceterms:TestProperty --uri https://purl.org/ctdl/terms/TestProperty
+add context --term ceterms:TestProperty --field @@type --value xsd:string
 add property --term ceterms:TestProperty
-add context --term ceterms:TestConcept --uri https://purl.org/ctdl/terms/TestConcept
 add concept --term ceterms:TestConcept
-add context --term ceterms:TestConceptScheme --uri https://purl.org/ctdl/terms/TestConceptScheme
 add conceptscheme --term ceterms:TestConceptScheme
 add value --subject ceterms:TestProperty --predicate schema:domainIncludes --value ceterms:TestClass
 add value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string

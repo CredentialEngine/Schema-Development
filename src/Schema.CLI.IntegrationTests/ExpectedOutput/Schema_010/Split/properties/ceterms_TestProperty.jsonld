@@ -4,5 +4,8 @@
     "@type": "rdf:Property",
     "schema:domainIncludes": [
         "ceterms:TestClass"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
     ]
 }

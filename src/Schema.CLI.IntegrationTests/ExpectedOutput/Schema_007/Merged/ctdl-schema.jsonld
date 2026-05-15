@@ -10,6 +10,10 @@
             "@type": "rdf:Property"
         },
         {
+            "@id": "ceterms:TestConceptScheme",
+            "@type": "skos:ConceptScheme"
+        },
+        {
             "@id": "ceterms:TestConcept",
             "@type": "skos:Concept"
         }

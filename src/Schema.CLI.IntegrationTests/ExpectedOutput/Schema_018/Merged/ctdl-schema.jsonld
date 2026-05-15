@@ -4,7 +4,6 @@
         {
             "@id": "ceterms:TestClass",
             "@type": "rdfs:Class",
-            "vs:term_status": "stable",
             "rdfs:label": {
                 "en": "Test Class"
             }
@@ -24,9 +23,7 @@
         {
             "@id": "ceterms:TestConcept",
             "@type": "skos:Concept",
-            "skos:inScheme": [
-                "ceterms:TestConceptScheme"
-            ]
+            "skos:inScheme": []
         }
     ]
 }

@@ -73,26 +73,26 @@ public class LosslessTests
         var api = new SchemaApi();
         api.LoadFromFolder(Input);
 
-        var prop = "https://example.org/p";
-        var cls = "https://example.org/c";
+        var nsCls = "https://example.org/ex";
+        var nsProp = "https://example.org/eg";
 
-        api.AddContextTerm("p", prop);
-        api.AddContextTerm("c", cls);
+        api.CreateNamespace("ex", nsCls);
+        api.CreateNamespace("eg", nsProp);
 
-        api.CreateProperty("p");
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
+        api.CreateProperty("eg:p");
 
         api.AddFieldValue(
-            "p",
+            "eg:p",
             "schema:domainIncludes",
-            "c"
+            "ex:c"
         );
 
         api.SaveFolder(Output);
 
         var file = Directory
             .GetFiles(Path.Combine(Output, "Split"), "*", SearchOption.AllDirectories)
-            .First(f => Path.GetFileName(f) == "p.jsonld");
+            .First(f => Path.GetFileName(f) == "eg_p.jsonld");
 
         var json = File.ReadAllText(file);
         var obj = JsonNode.Parse(json)!.AsObject();
@@ -106,18 +106,18 @@ public class LosslessTests
         var api = new SchemaApi();
         api.LoadFromFolder(Input);
 
-        var cls = "https://example.org/c";
+        var ns = "https://example.org/c";
 
-        api.AddContextTerm("c", cls);
-        api.CreateClass("c");
+        api.CreateNamespace("ex", ns);
+        api.CreateClass("ex:c");
 
-        api.SetField("c", "vs:term_status", "stable");
+        api.SetField("ex:c", "vs:term_status", "stable");
 
         api.SaveFolder(Output);
 
         var file = Directory
             .GetFiles(Path.Combine(Output, "Split"), "*", SearchOption.AllDirectories)
-            .First(f => Path.GetFileName(f) == "c.jsonld");
+            .First(f => Path.GetFileName(f) == "ex_c.jsonld");
 
         var json = File.ReadAllText(file);
 
@@ -132,17 +132,16 @@ public class LosslessTests
 
         var cls = "https://example.org/c";
 
-        api.AddContextTerm("c", cls);
-        api.CreateClass("c");
+        api.CreateNamespace("ex", cls);
+        api.CreateClass("ex:c");
 
-        api.SetField("c", "vs:term_status", "stable");
-        api.RemoveField("c", "vs:term_status");
-
+        api.SetField("ex:c", "vs:term_status", "stable");
+        api.RemoveField("ex:c", "vs:term_status");
         api.SaveFolder(Output);
 
         var file = Directory
             .GetFiles(Path.Combine(Output, "Split"), "*", SearchOption.AllDirectories)
-            .First(f => Path.GetFileName(f) == "c.jsonld");
+            .First(f => Path.GetFileName(f) == "ex_c.jsonld");
 
         var json = File.ReadAllText(file);
         var obj = JsonNode.Parse(json)!.AsObject();
@@ -163,17 +162,17 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c1", "https://example.org/c1");
-        api.AddContextTerm("c2", "https://example.org/c2");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateClass("c1");
-        api.CreateClass("c2");
+        api.CreateClass("ex1:c1");
+        api.CreateClass("ex2:c2");
 
         var result = api.GetAllClasses().ToList();
 
         Assert.AreEqual(2, result.Count);
-        CollectionAssert.Contains(result, "c1");
-        CollectionAssert.Contains(result, "c2");
+        CollectionAssert.Contains(result, "ex1:c1");
+        CollectionAssert.Contains(result, "ex2:c2");
     }
 
     [TestMethod]
@@ -191,17 +190,17 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("p1", "https://example.org/p1");
-        api.AddContextTerm("p2", "https://example.org/p2");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateProperty("p1");
-        api.CreateProperty("p2");
+        api.CreateProperty("ex1:p1");
+        api.CreateProperty("ex2:p2");
 
         var result = api.GetAllProperties().ToList();
 
         Assert.AreEqual(2, result.Count);
-        CollectionAssert.Contains(result, "p1");
-        CollectionAssert.Contains(result, "p2");
+        CollectionAssert.Contains(result, "ex1:p1");
+        CollectionAssert.Contains(result, "ex2:p2");
     }
 
     [TestMethod]
@@ -209,14 +208,13 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("concept1", "https://example.org/concept1");
-
-        api.CreateConcept("concept1");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateConcept("ex:concept1");
 
         var result = api.GetAllConcepts().ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("concept1", result[0]);
+        Assert.AreEqual("ex:concept1", result[0]);
     }
 
     [TestMethod]
@@ -224,14 +222,13 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("scheme1", "https://example.org/scheme1");
-
-        api.CreateConceptScheme("scheme1");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateConceptScheme("ex:scheme1");
 
         var result = api.GetAllConceptSchemes().ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("scheme1", result[0]);
+        Assert.AreEqual("ex:scheme1", result[0]);
     }
 
     [TestMethod]
@@ -239,10 +236,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.CreateClass("c");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateClass("ex:c");
 
-        var item = api.GetSchemaItem("c");
+        var item = api.GetSchemaItem("ex:c");
 
         Assert.IsNotNull(item);
         Assert.AreEqual("rdfs:Class", item["@type"]!.ToString());
@@ -263,18 +260,18 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateClass("c");
-        api.CreateProperty("p");
+        api.CreateClass("ex1:c");
+        api.CreateProperty("ex2:p");
 
-        api.AddFieldValue("p", "schema:domainIncludes", "c");
+        api.AddFieldValue("ex2:p", "schema:domainIncludes", "ex1:c");
 
-        var result = api.GetPropertiesOfClass("c").ToList();
+        var result = api.GetPropertiesOfClass("ex1:c").ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("p", result[0]);
+        Assert.AreEqual("ex2:p", result[0]);
     }
 
     [TestMethod]
@@ -282,10 +279,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.CreateClass("c");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateClass("ex1:c");
 
-        var result = api.GetPropertiesOfClass("c").ToList();
+        var result = api.GetPropertiesOfClass("ex1:c").ToList();
 
         Assert.AreEqual(0, result.Count);
     }
@@ -295,18 +292,17 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateClass("c");
-        api.CreateProperty("p");
+        api.CreateClass("ex1:c");
+        api.CreateProperty("ex2:p");
+        api.AddFieldValue("ex2:p", "schema:domainIncludes", "ex1:c");
 
-        api.AddFieldValue("p", "schema:domainIncludes", "c");
-
-        var result = api.GetClassesUsingProperty("p").ToList();
+        var result = api.GetClassesUsingProperty("ex2:p").ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("c", result[0]);
+        Assert.AreEqual("ex1:c", result[0]);
     }
 
     [TestMethod]
@@ -314,10 +310,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("p", "https://example.org/p");
-        api.CreateProperty("p");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
+        api.CreateProperty("ex2:p");
 
-        var result = api.GetClassesUsingProperty("p").ToList();
+        var result = api.GetClassesUsingProperty("ex2:p").ToList();
 
         Assert.AreEqual(0, result.Count);
     }
@@ -327,18 +323,18 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("range", "https://example.org/range");
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateClass("range");
-        api.CreateProperty("p");
+        api.CreateClass("ex1:range");
+        api.CreateProperty("ex2:p");
 
-        api.AddFieldValue("p", "schema:rangeIncludes", "range");
+        api.AddFieldValue("ex2:p", "schema:rangeIncludes", "ex1:range");
 
-        var result = api.GetRangeOfProperty("p").ToList();
+        var result = api.GetRangeOfProperty("ex2:p").ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("range", result[0]);
+        Assert.AreEqual("ex1:range", result[0]);
     }
 
     [TestMethod]
@@ -346,10 +342,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("p", "https://example.org/p");
-        api.CreateProperty("p");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
+        api.CreateProperty("ex2:p");
 
-        var result = api.GetRangeOfProperty("p").ToList();
+        var result = api.GetRangeOfProperty("ex2:p").ToList();
 
         Assert.AreEqual(0, result.Count);
     }
@@ -359,18 +355,18 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("range", "https://example.org/range");
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateClass("range");
-        api.CreateProperty("p");
+        api.CreateClass("ex1:range");
+        api.CreateProperty("ex2:p");
 
-        api.AddFieldValue("p", "schema:rangeIncludes", "range");
+        api.AddFieldValue("ex2:p", "schema:rangeIncludes", "ex1:range");
 
-        var result = api.GetPropertiesWithRange("range").ToList();
+        var result = api.GetPropertiesWithRange("ex1:range").ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("p", result[0]);
+        Assert.AreEqual("ex2:p", result[0]);
     }
 
     [TestMethod]
@@ -378,10 +374,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("range", "https://example.org/range");
-        api.CreateClass("range");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateClass("ex1:range");
 
-        var result = api.GetPropertiesWithRange("range").ToList();
+        var result = api.GetPropertiesWithRange("ex1:range").ToList();
 
         Assert.AreEqual(0, result.Count);
     }
@@ -391,18 +387,18 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("parent", "https://example.org/parent");
-        api.AddContextTerm("child", "https://example.org/child");
+        api.CreateNamespace("parent", "https://example.org/parent");
+        api.CreateNamespace("child", "https://example.org/child");
 
-        api.CreateClass("parent");
-        api.CreateClass("child");
+        api.CreateClass("parent:c1");
+        api.CreateClass("child:c2");
 
-        api.AddFieldValue("child", "rdfs:subClassOf", "parent");
+        api.AddFieldValue("child:c2", "rdfs:subClassOf", "parent:c1");
 
-        var result = api.GetSubClasses("parent").ToList();
+        var result = api.GetSubClasses("parent:c1").ToList();
 
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("child", result[0]);
+        Assert.AreEqual("child:c2", result[0]);
     }
 
     [TestMethod]
@@ -410,10 +406,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("parent", "https://example.org/parent");
-        api.CreateClass("parent");
+        api.CreateNamespace("parent", "https://example.org/parent");
+        api.CreateClass("parent:c");
 
-        var result = api.GetSubClasses("parent").ToList();
+        var result = api.GetSubClasses("parent:c").ToList();
 
         Assert.AreEqual(0, result.Count);
     }
@@ -423,18 +419,17 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("scheme", "https://example.org/scheme");
-        api.AddContextTerm("concept", "https://example.org/concept");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateNamespace("ex2", "https://example.org/ex2");
 
-        api.CreateConceptScheme("scheme");
-        api.CreateConcept("concept");
+        api.CreateConceptScheme("ex1:scheme");
+        api.CreateConcept("ex2:concept");
 
-        api.AddFieldValue("concept", "skos:inScheme", "scheme");
+        api.AddFieldValue("ex2:concept", "skos:inScheme", "ex1:scheme");
 
-        var result = api.GetConceptsInScheme("scheme").ToList();
-
+        var result = api.GetConceptsInScheme("ex1:scheme").ToList();
         Assert.AreEqual(1, result.Count);
-        Assert.AreEqual("concept", result[0]);
+        Assert.AreEqual("ex2:concept", result[0]);
     }
 
     [TestMethod]
@@ -442,10 +437,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("scheme", "https://example.org/scheme");
-        api.CreateConceptScheme("scheme");
+        api.CreateNamespace("ex1", "https://example.org/ex1");
+        api.CreateConceptScheme("ex1:scheme");
 
-        var result = api.GetConceptsInScheme("scheme").ToList();
+        var result = api.GetConceptsInScheme("ex1:scheme").ToList();
 
         Assert.AreEqual(0, result.Count);
     }
@@ -455,10 +450,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.CreateClass("c");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateClass("ex:c");
 
-        Assert.IsTrue(api.ClassExists("c"));
+        Assert.IsTrue(api.ClassExists("ex:c"));
     }
 
     [TestMethod]
@@ -474,10 +469,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("p", "https://example.org/p");
-        api.CreateProperty("p");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateProperty("ex:p");
 
-        Assert.IsTrue(api.PropertyExists("p"));
+        Assert.IsTrue(api.PropertyExists("ex:p"));
     }
 
     [TestMethod]
@@ -493,10 +488,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("concept", "https://example.org/concept");
-        api.CreateConcept("concept");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateConcept("ex:concept");
 
-        Assert.IsTrue(api.ConceptExists("concept"));
+        Assert.IsTrue(api.ConceptExists("ex:concept"));
     }
 
     [TestMethod]
@@ -512,10 +507,10 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("scheme", "https://example.org/scheme");
-        api.CreateConceptScheme("scheme");
+        api.CreateNamespace("scheme", "https://example.org/scheme");
+        api.CreateConceptScheme("scheme:TestScheme");
 
-        Assert.IsTrue(api.ConceptSchemeExists("scheme"));
+        Assert.IsTrue(api.ConceptSchemeExists("scheme:TestScheme"));
     }
 
     [TestMethod]
@@ -531,23 +526,23 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
-            "concept",
-            "https://example.org/concept");
+        api.CreateNamespace(
+            "ex",
+            "https://example.org/ex");
 
-        api.CreateConcept("concept");
+        api.CreateConcept("ex:concept");
 
-        Assert.IsTrue(api.ConceptExists("concept"));
+        Assert.IsTrue(api.ConceptExists("ex:concept"));
 
-        api.DeleteConcept("concept");
+        api.DeleteConcept("ex:concept");
 
-        Assert.IsFalse(api.ConceptExists("concept"));
+        Assert.IsFalse(api.ConceptExists("ex:concept"));
         Assert.AreEqual(0, api.GetAllConcepts().Count());
 
         var triples = api.GetGraph()
             .GetTriplesWithSubject(
                 api.GetGraph().CreateUriNode(
-                    UriFactory.Create("https://example.org/concept")))
+                    UriFactory.Create("https://example.org/ex")))
             .ToList();
 
         Assert.AreEqual(0, triples.Count);
@@ -558,17 +553,16 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
-            "scheme",
-            "https://example.org/scheme");
+        api.CreateNamespace(
+            "ex",
+            "https://example.org/ex");
 
-        api.CreateConceptScheme("scheme");
+        api.CreateConceptScheme("ex:TestScheme");
 
-        Assert.IsTrue(api.ConceptSchemeExists("scheme"));
+        Assert.IsTrue(api.ConceptSchemeExists("ex:TestScheme"));
+        api.DeleteConceptScheme("ex:TestScheme");
 
-        api.DeleteConceptScheme("scheme");
-
-        Assert.IsFalse(api.ConceptSchemeExists("scheme"));
+        Assert.IsFalse(api.ConceptSchemeExists("ex:TestScheme"));
         Assert.AreEqual(0, api.GetAllConceptSchemes().Count());
 
         var triples = api.GetGraph()
@@ -613,23 +607,23 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
-            "c",
-            "https://example.org/c");
+        api.CreateNamespace(
+            "ex",
+            "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
-        Assert.IsTrue(api.ClassExists("c"));
+        Assert.IsTrue(api.ClassExists("ex:c"));
 
-        api.DeleteClass("c");
+        api.DeleteClass("ex:c");
 
-        Assert.IsFalse(api.ClassExists("c"));
+        Assert.IsFalse(api.ClassExists("ex:c"));
         Assert.AreEqual(0, api.GetAllClasses().Count());
 
         var triples = api.GetGraph()
             .GetTriplesWithSubject(
                 api.GetGraph().CreateUriNode(
-                    UriFactory.Create("https://example.org/c")))
+                    UriFactory.Create("https://example.org/ex")))
             .ToList();
 
         Assert.AreEqual(0, triples.Count);
@@ -640,23 +634,23 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
-            "p",
-            "https://example.org/p");
+        api.CreateNamespace(
+            "ex",
+            "https://example.org/ex");
 
-        api.CreateProperty("p");
+        api.CreateProperty("ex:p");
 
-        Assert.IsTrue(api.PropertyExists("p"));
+        Assert.IsTrue(api.PropertyExists("ex:p"));
 
-        api.DeleteProperty("p");
+        api.DeleteProperty("ex:p");
 
-        Assert.IsFalse(api.PropertyExists("p"));
+        Assert.IsFalse(api.PropertyExists("ex:p"));
         Assert.AreEqual(0, api.GetAllProperties().Count());
 
         var triples = api.GetGraph()
             .GetTriplesWithSubject(
                 api.GetGraph().CreateUriNode(
-                    UriFactory.Create("https://example.org/p")))
+                    UriFactory.Create("https://example.org/ex")))
             .ToList();
 
         Assert.AreEqual(0, triples.Count);
@@ -667,9 +661,9 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
-            "ceterms:TestClass",
-            "https://example.org/TestClass");
+        api.CreateNamespace(
+            "ceterms",
+            "https://example.org/ceterms/");
 
         api.CreateClass("ceterms:TestClass");
 
@@ -691,16 +685,16 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
-            "c",
-            "https://example.org/c");
+        api.CreateNamespace(
+            "ex",
+            "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
         Assert.ThrowsException<InvalidOperationException>(() =>
         {
             api.SetField(
-                "https://example.org/c",
+                "https://example.org/ex/c",
                 "rdfs:label",
                 "Bad");
         });
@@ -711,14 +705,13 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
-        Assert.IsTrue(api.ClassExists("c"));
+        Assert.IsTrue(api.ClassExists("ex:c"));
 
-        var item = api.GetSchemaItem("c");
-
+        var item = api.GetSchemaItem("ex:c");
         Assert.IsNotNull(item);
         Assert.AreEqual("rdfs:Class", item["@type"]!.ToString());
     }
@@ -728,13 +721,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
-        api.DeleteClass("c");
-
-        Assert.IsFalse(api.ClassExists("c"));
+        api.DeleteClass("ex:c");
+        Assert.IsFalse(api.ClassExists("ex:c"));
     }
 
     [TestMethod]
@@ -742,13 +734,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateProperty("p");
+        api.CreateProperty("ex:p");
 
-        Assert.IsTrue(api.PropertyExists("p"));
-
-        var item = api.GetSchemaItem("p");
+        Assert.IsTrue(api.PropertyExists("ex:p"));
+        var item = api.GetSchemaItem("ex:p");
 
         Assert.IsNotNull(item);
         Assert.AreEqual("rdf:Property", item["@type"]!.ToString());
@@ -759,13 +750,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateProperty("ex:p");
 
-        api.CreateProperty("p");
+        api.DeleteProperty("ex:p");
 
-        api.DeleteProperty("p");
-
-        Assert.IsFalse(api.PropertyExists("p"));
+        Assert.IsFalse(api.PropertyExists("ex:p"));
     }
 
     [TestMethod]
@@ -773,13 +763,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("concept", "https://example.org/concept");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateConcept("ex:concept");
 
-        api.CreateConcept("concept");
+        Assert.IsTrue(api.ConceptExists("ex:concept"));
 
-        Assert.IsTrue(api.ConceptExists("concept"));
-
-        var item = api.GetSchemaItem("concept");
+        var item = api.GetSchemaItem("ex:concept");
 
         Assert.IsNotNull(item);
         Assert.AreEqual("skos:Concept", item["@type"]!.ToString());
@@ -790,13 +779,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("concept", "https://example.org/concept");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateConcept("concept");
+        api.CreateConcept("ex:concept");
 
-        api.DeleteConcept("concept");
-
-        Assert.IsFalse(api.ConceptExists("concept"));
+        api.DeleteConcept("ex:concept");
+        Assert.IsFalse(api.ConceptExists("ex:concept"));
     }
 
     [TestMethod]
@@ -804,13 +792,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("scheme", "https://example.org/scheme");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateConceptScheme("ex:scheme");
 
-        api.CreateConceptScheme("scheme");
+        Assert.IsTrue(api.ConceptSchemeExists("ex:scheme"));
 
-        Assert.IsTrue(api.ConceptSchemeExists("scheme"));
-
-        var item = api.GetSchemaItem("scheme");
+        var item = api.GetSchemaItem("ex:scheme");
 
         Assert.IsNotNull(item);
         Assert.AreEqual(
@@ -823,13 +810,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("scheme", "https://example.org/scheme");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateConceptScheme("scheme");
+        api.CreateConceptScheme("ex:scheme");
 
-        api.DeleteConceptScheme("scheme");
-
-        Assert.IsFalse(api.ConceptSchemeExists("scheme"));
+        api.DeleteConceptScheme("ex:scheme");
+        Assert.IsFalse(api.ConceptSchemeExists("ex:scheme"));
     }
 
     [TestMethod]
@@ -837,17 +823,16 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
         api.SetField(
-            "c",
+            "ex:c",
             "vs:term_status",
             "stable");
 
-        var item = api.GetSchemaItem("c");
-
+        var item = api.GetSchemaItem("ex:c");
         Assert.AreEqual(
             "stable",
             item!["vs:term_status"]!.ToString());
@@ -858,20 +843,19 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-
-        api.CreateClass("c");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateClass("ex:c");
 
         api.SetField(
-            "c",
+            "ex:c",
             "vs:term_status",
             "stable");
 
         api.RemoveField(
-            "c",
+            "ex:c",
             "vs:term_status");
 
-        var item = api.GetSchemaItem("c");
+        var item = api.GetSchemaItem("ex:c");
 
         Assert.IsNull(item!["vs:term_status"]);
     }
@@ -881,18 +865,18 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateNamespace("eg", "https://example.org/eg");
 
-        api.CreateClass("c");
-        api.CreateProperty("p");
+        api.CreateClass("ex:c");
+        api.CreateProperty("eg:p");
 
         api.AddFieldValue(
-            "p",
+            "eg:p",
             "schema:domainIncludes",
-            "c");
+            "ex:c");
 
-        var item = api.GetSchemaItem("p");
+        var item = api.GetSchemaItem("eg:p");
 
         Assert.IsNotNull(item!["schema:domainIncludes"]);
     }
@@ -902,24 +886,21 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
-        api.AddContextTerm("p", "https://example.org/p");
+        api.CreateNamespace("ex", "https://example.org/ex");
+        api.CreateNamespace("eg", "https://example.org/eg");
 
-        api.CreateClass("c");
-        api.CreateProperty("p");
-
+        api.CreateClass("ex:c");
+        api.CreateProperty("eg:p");
         api.AddFieldValue(
-            "p",
+            "eg:p",
             "schema:domainIncludes",
-            "c");
-
+            "ex:c");
         api.RemoveFieldValue(
-            "p",
+            "eg:p",
             "schema:domainIncludes",
-            "c");
+            "ex:c");
 
-        var item = api.GetSchemaItem("p");
-
+        var item = api.GetSchemaItem("eg:p");
         if (item!["schema:domainIncludes"] is JsonArray arr)
             Assert.AreEqual(0, arr.Count);
     }
@@ -929,17 +910,17 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
         api.SetLanguageProperty(
-            "c",
+            "ex:c",
             "rdfs:label",
             "en",
             "Test");
 
-        var item = api.GetSchemaItem("c");
+        var item = api.GetSchemaItem("ex:c");
 
         Assert.AreEqual(
             "Test",
@@ -951,7 +932,7 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
+        api.CreateNamespace(
             "test",
             "https://example.org/test");
 
@@ -971,7 +952,7 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm(
+        api.CreateNamespace(
             "test",
             "https://example.org/test");
 
@@ -1023,12 +1004,12 @@ public class LosslessTests
     {
         var api = new SchemaApi();
 
-        api.AddContextTerm("c", "https://example.org/c");
+        api.CreateNamespace("ex", "https://example.org/ex");
 
-        api.CreateClass("c");
+        api.CreateClass("ex:c");
 
         api.SetField(
-            "c",
+            "ex:c",
             "vs:term_status",
             "stable");
 
@@ -1038,9 +1019,9 @@ public class LosslessTests
 
         api2.LoadFromFolder(Output);
 
-        Assert.IsTrue(api2.ClassExists("c"));
+        Assert.IsTrue(api2.ClassExists("ex:c"));
 
-        var item = api2.GetSchemaItem("c");
+        var item = api2.GetSchemaItem("ex:c");
 
         Assert.AreEqual(
             "stable",
