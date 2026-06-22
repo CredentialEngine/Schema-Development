@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@type": "qdata:Observation",
+            "qdata:isObservationOf": "res:ce-32f3dcd6-d366-4efe-ad15-83dee5de33a3",
+            "qdata:observedCategory": "res:ce-d6a8f69a-d89c-4bf7-8ffa-582423b76f16"
+        },
+        {
+            "@id": "res:ce-32f3dcd6-d366-4efe-ad15-83dee5de33a3",
+            "@type": "qdata:Metric",
+            "ceterms:name": {
+                "en-US": "Most popular industry destination"
+            }
+        },
+        {
+            "@id": "res:ce-d6a8f69a-d89c-4bf7-8ffa-582423b76f16",
+            "@type": "ceterms:Industry",
+            "ceterms:name": {
+                "en-US": "Pharmaceutical Preparation Manufacturing"
+            },
+            "ceterms:industryType": [
+                {
+                    "@type": "ceterms:CredentialAlignmentObject",
+                    "ceterms:framework": "https://www.census.gov/naics/",
+                    "ceterms:codedNotation": "325412",
+                    "ceterms:frameworkName": {
+                        "en-US": "NAICS"
+                    },
+                    "ceterms:targetNodeName": {
+                        "en-US": "Pharmaceutical Preparation Manufacturing"
+                    }
+                }
+            ],
+            "ceterms:subjectWebpage": "https://www.census.gov/naics/?input=325412&year=2022&details=325412"
+        }
+    ]
+}
