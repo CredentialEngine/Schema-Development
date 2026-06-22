@@ -1,0 +1,64 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-1bd90a8e-b3b8-42e2-b2be-1ef89c8b699a",
+            "@type": "ceterms:RegulatoryInformation",
+            "ceterms:regulatoryInformationFor": "res:ce-318e57fe-ec1c-4e5d-8f80-99fbf74a4868",
+            "ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "ceterms:regulatedBy": "res:ce-383c4189-7609-4d0d-9114-de8fcee4bf2a",
+            "ceterms:regulationType": "res:Pell",
+            "ceterms:dateEffective": "2025-07-01",
+            "ceterms:hasStatement": [
+                {
+                    "@type": "ceterms:StructuredStatement",
+                    "ceterms:statementType": [
+                        "res:relatedInstructionForApprenticeship"
+                    ]
+                },
+                {
+                    "@type": "ceterms:StructuredStatement",
+                    "ceterms:statementType": [
+                        "res:programImplementationDate"
+                    ],
+                    "ceterms:associatedDate": "2025-08-30"
+                },
+                {
+                    "@type": "ceterms:StructuredStatement",
+                    "ceterms:statementType": [
+                        "res:programApprovalDate"
+                    ],
+                    "ceterms:associatedDate": "2024-07-30"
+                }
+            ]
+        },
+        {
+            "@id": "res:ce-318e57fe-ec1c-4e5d-8f80-99fbf74a4868",
+            "@type": "ceterms:LearningProgram",
+            "ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "ceterms:hasRegulatoryInformation": "res:ce-1bd90a8e-b3b8-42e2-b2be-1ef89c8b699a",
+            "ceterms:classification": [
+                "res:relatedInstructionForApprenticeship"
+            ]
+        },
+        {
+            "@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "@type": "ceterms:CredentialOrganization",
+            "ceterms:name": {
+                "en-US": "Erewhon University"
+            }
+        },
+        {
+            "@id": "res:ce-383c4189-7609-4d0d-9114-de8fcee4bf2a",
+            "@type": "ceterms:QACredentialOrganization",
+            "ceterms:name": {
+                "en-US": "Erewhon State Governor's Office"
+            }
+        }
+    ]
+}
