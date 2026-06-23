@@ -9,10 +9,18 @@
         {
             "@id": "res:ce-1bd90a8e-b3b8-42e2-b2be-1ef89c8b699a",
             "@type": "ceterms:RegulatoryInformation",
-            "ceterms:regulatoryInformationFor": "res:ce-318e57fe-ec1c-4e5d-8f80-99fbf74a4868",
-            "ceterms:ownedBy": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
-            "ceterms:regulatedBy": "res:ce-383c4189-7609-4d0d-9114-de8fcee4bf2a",
-            "ceterms:regulationType": "res:Pell",
+            "ceterms:regulatoryInformationFor": [
+                "res:ce-318e57fe-ec1c-4e5d-8f80-99fbf74a4868"
+            ],
+            "ceterms:ownedBy": [
+                "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6"
+            ],
+            "ceterms:regulatedBy": [
+                "res:ce-383c4189-7609-4d0d-9114-de8fcee4bf2a"
+            ],
+            "ceterms:regulationType": [
+                "res:Pell"
+            ],
             "ceterms:dateEffective": "2025-07-01",
             "ceterms:hasStatement": [
                 {
