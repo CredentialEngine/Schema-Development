@@ -1,0 +1,376 @@
+# SHACL file to define the schema for CTDL vocabulary definition files.
+# Does not handle the "with-meta properties" versions of the schemas 
+# -- they would best be handled with a derivative from this file.
+# Phil Barker, phil.barker@pjjk.co.uk  
+# Last edit 10 July 2026
+# Tested against current schema definition files.
+@base <https://purl.org/ctdl/constraints/> .
+@prefix : <https://purl.org/ctdl/constraints/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <https://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+##=================================================================##
+#| Terms                                                           |#
+#| Definitions for data that must be provided about CTDL terms     |#
+##=================================================================##
+
+:TermShape a sh:NodeShape ;
+    sh:targetClass rdfs:Class, rdfs:Property, skos:ConceptScheme ;
+    sh:closed false ;
+    rdfs:label "CTDL term definition shape"@en ;
+    rdfs:comment "Definition of any class, scheme or property in the CTDL vocabulary."@en ;
+    # mandatory properties
+    sh:property :commentShape,  :labelShape,  :statusShape ; 
+    # optional properties
+    sh:property :descriptionShape, :usageNoteShape ;
+.
+
+# mandatory properties
+:commentShape a sh:PropertyShape ;
+    rdfs:label "CTDL Term definition shape"@en ;
+    rdfs:comment "The definition of a CTDL term."@en ;
+    sh:path rdfs:comment ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ; 
+    sh:severity sh:Violation ;
+.
+
+:labelShape a sh:PropertyShape ;
+    rdfs:label "Term label shape"@en ;
+    rdfs:comment "The label to be used for a CTDL term."@en ;
+    sh:path rdfs:label ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ; 
+    sh:severity sh:Violation ;
+.
+
+:statusShape  a sh:PropertyShape ;
+    rdfs:label "Term status shape"@en ;
+    rdfs:comment "The status of a term in CTDL."@en ;
+    sh:path vs:term_status ;
+    sh:minCount 1 ;
+    sh:in (vs:stable vs:unstable) ;
+.
+# Optional Properties
+:descriptionShape a sh:PropertyShape ;
+    rdfs:label "Description shape"@en ;
+    sh:label "Further information about the term"@en ;
+    sh:path dct:description ;
+    sh:datatype rdf:langString ; 
+    sh:severity sh:Violation ;
+.
+:usageNoteShape a sh:PropertyShape ;
+    rdfs:label "Usage note shape"@en ;
+    sh:label "Information about applicability of the term"@en ;
+    sh:path vann:usageNote ;
+    sh:datatype rdf:langString ; 
+    sh:severity sh:Violation ;
+.
+##=================================================================##
+#| Class Shapes                                                    |#
+#| Constraints on Class defintions.                                |#
+##=================================================================##
+
+:ClassShape a sh:NodeShape ;
+    sh:targetClass rdfs:Class ;
+    sh:targetSubjectsOf rdfs:subClassOf ; 
+#    sh:targetObjectsOf sdo:domainIncludes ; # causes problems with cross-schema properties
+    sh:closed true ;
+    rdfs:label "CTDL Class definition shape"@en ;
+    rdfs:comment "Definition of any class in the CTDL vocabulary."@en ;
+    # ignore properties used for any term definition
+    sh:ignoredProperties (rdfs:comment rdfs:label vs:term_status 
+                          dct:description vann:usageNote ) ;
+    # mandatory properties 
+    sh:property :classTypeShape ;
+    # optional properties
+    sh:property :subClassOfShape, :equivalentClassShape ; 
+.
+
+# mandatory properties
+:classTypeShape a sh:PropertyShape ;
+    rdfs:label "Term type shape"@en ;
+    rdfs:comment "Classes in CTDL are rdfs:Class."@en ;
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:in (rdfs:Class) ; # could add owl:Class if ever needed.
+    sh:severity sh:Violation ;
+.
+
+# optional properties
+:equivalentClassShape a sh:PropertyShape ;
+    rdfs:label "Equivalent Class to shape"@en ;
+    rdfs:comment "Assertion that a class is equivalent to another."@en ;
+    sh:path owl:equivalentClass ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+:subClassOfShape a sh:PropertyShape ;
+    rdfs:label "Sub Class of shape"@en ;
+    rdfs:comment "Assertion that a class is subsumed by another."@en ;
+    sh:path rdfs:subClassOf ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+##=================================================================##
+#| Class-Related Shapes                                            |#
+#| Constraints things that may be similar to classes.              |#
+##=================================================================##
+:RelatedClassShape a sh:NodeShape ;
+    sh:targetSubjectsOf rdfs:subClassOf, owl:equivalentClass ;
+    rdfs:label "Related Class definition shape"@en ;
+    rdfs:comment "Classes, Concepts and Schemes related to a Class."@en ;
+    # mandatory properties 
+    sh:property :relatedClassTypeShape ;
+.
+
+# mandatory properties
+:relatedClassTypeShape a sh:PropertyShape ;
+    rdfs:label "Term type shape"@en ;
+    rdfs:comment "Type of a thing that can be equivalent to a Class."@en ;
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:in (rdfs:Class skos:Concept skos:ConceptScheme) ;
+    sh:severity sh:Violation ;
+.
+
+##=================================================================##
+#| Property Shapes                                                 |#
+#| Constraints on property defintions.                             |#
+##=================================================================##
+
+:PropertyShape a sh:NodeShape ;
+    sh:targetClass rdf:Property ;
+    sh:targetSubjectsOf rdfs:subPropertyOf, owl:equivalentProperty ;
+    sh:closed true ;
+    rdfs:label "CTDL Class definition shape"@en ;
+    rdfs:comment "Definition of any property in the CTDL vocabulary."@en ;
+    # ignore properties used for definition of any term, covered above
+    sh:ignoredProperties (rdfs:comment rdfs:label vs:term_status 
+                          dct:description vann:usageNote ) ;
+    # mandatory properties 
+    sh:property :propertyTypeShape, :rangeIncludesShape ; 
+    # optional properties
+    sh:property :subPropertyOfShape, :equivalentPropertyShape,
+                :domainIncludesShape, :inversePropertyShape ;
+.
+
+# mandatory properties
+:domainIncludesShape a sh:PropertyShape ;
+    rdfs:label "Domain includes shape"@en ;
+    rdfs:comment "Classes that may be subjects of this property."@en ;
+    sh:path sdo:domainIncludes ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+:propertyTypeShape a sh:PropertyShape ;
+    rdfs:label "Term type shape"@en ;
+    rdfs:comment "Classes in CTDL are rdfs:Class."@en ;
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:in (rdf:Property) ; # could add owl: property types if required.
+    sh:severity sh:Violation ;
+.
+
+:rangeIncludesShape a sh:PropertyShape ;
+    rdfs:label "Range includes shape"@en ;
+    rdfs:comment "Classes that may be objects of this property."@en ;
+    sh:path sdo:rangeIncludes ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+# optional properties
+:equivalentPropertyShape a sh:PropertyShape ;
+    rdfs:label "Equivalent Property to shape"@en ;
+    rdfs:comment "Assertion that a property is equivalent to another."@en ;
+    sh:path owl:equivalentProperty ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+:subPropertyOfShape a sh:PropertyShape ;
+    rdfs:label "Sub Property of shape"@en ;
+    rdfs:comment "Assertion that a Property is subsumed by another."@en ;
+    sh:path rdfs:subPropertyOf ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+:inversePropertyShape a sh:PropertyShape ;
+    rdfs:label "Inverse Property of shape"@en ;
+    rdfs:comment "Assertion that a Property is the inverse of another."@en ;
+    sh:path owl:inverseOf ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+##=================================================================##
+#| Concept Scheme Shapes                                           |#
+#| Constraints on concept scheme descriptions.                     |#
+##=================================================================##
+
+:ConceptSchemeShape a sh:NodeShape ;
+    sh:targetClass skos:ConceptScheme ;
+#    sh:targetSubjectsOf rdfs:subPropertyOf, owl:equivalentProperty ;
+    sh:targetObjectsOf skos:inScheme ;
+    sh:closed true ;
+    rdfs:label "CTDL Concept Scheme description shape"@en ;
+    rdfs:comment "Description of any Concept Scheme in CTDL."@en ;
+    # ignore properties used for definition of any term, covered above
+    sh:ignoredProperties (rdfs:comment rdfs:label vs:term_status 
+                          dct:description vann:usageNote ) ;
+    # mandatory properties 
+    sh:property :schemeTypeShape, :hasTopConceptShape ;
+    # optional properties
+    sh:property :equivalentClassShape ;
+.
+
+# Mandatory properties
+:schemeTypeShape a sh:PropertyShape ;
+    rdfs:label "Term type shape shape"@en ;
+    rdfs:comment "Concept Schemes in CTDL are skos:."@en ;
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:in (skos:ConceptScheme) ;
+    sh:severity sh:Violation ;
+.
+
+:hasTopConceptShape a sh:PropertyShape ;
+    rdfs:label "Top concept shape"@en ;
+    rdfs:comment "Top concepts in this scheme."@en ;
+    sh:path skos:hasTopConcept ;
+    sh:minCount 1 ;
+    sh:class skos:Concept ;
+    sh:severity sh:Violation ;
+.
+
+
+# Optional properties
+# <equivalentClassShape>  defined in Classes section.
+
+##=================================================================##
+#| Concept Shapes                                                  |#
+#| Constraints on concept definitions.                             |#
+##=================================================================##
+
+:ConceptShape a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:targetSubjectsOf skos:prefLabel, skos:inScheme, skos:broader,
+                        skos:narrower ;
+    sh:targetObjectsOf skos:broader, skos:narrower ;
+    sh:closed true ;
+    rdfs:label "CTDL Concept description shape shape"@en ;
+    rdfs:comment "Description of any Concept in CTDL."@en ;
+    # mandatory properties 
+    sh:property :conceptTypeShape, :prefLabelShape, :statusShape,
+                :definitionShape, :inSchemeShape ;
+    # NB. skos:inScheme not yet mandatory, b/c error in current CTDL export
+    # optional properties
+    sh:property :equivalentClassShape, :descriptionShape, :broaderShape,
+                :narrowerShape, :usageNoteShape, :topConceptOfShape,
+                :narrowMatchShape, :relatedMatchShape ;
+.
+
+# Mandatory properties
+:conceptTypeShape a sh:PropertyShape ;
+    rdfs:label "Term type shape"@en ;
+    rdfs:comment "Concept Schemes in CTDL are skos:Concept."@en ;
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:in (skos:Concept) ;
+    sh:severity sh:Violation ;
+.
+
+:definitionShape a sh:PropertyShape ;
+    rdfs:label "CTDL concept definition shape"@en ;
+    rdfs:comment "The definition of a CTDL concept."@en ;
+    sh:path skos:definition ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ; 
+    sh:severity sh:Violation ;
+.
+
+:inSchemeShape a sh:PropertyShape ;
+    rdfs:label "In scheme shape"@en ;
+    rdfs:comment "Concept Scheme that has this Concept."@en ;
+    sh:path skos:inScheme ;
+    sh:minCount 0 ; # make 1 when Nate fixes exxport error
+    sh:nodeKind sh:IRI ;
+    sh:class skos:ConceptScheme ;
+    sh:severity sh:Violation ;
+.
+
+:prefLabelShape a sh:PropertyShape ;
+    rdfs:label "Prefered concept label shape"@en ;
+    rdfs:comment "The label to be used for a CTDL concept."@en ;
+    sh:path skos:prefLabel ;
+    sh:minCount 1 ;
+    sh:datatype rdf:langString ; 
+    sh:severity sh:Violation ;
+.
+
+# <statusShape> is defined in all Terms section.
+
+# Optional properties
+:broaderShape a sh:PropertyShape ;
+    rdfs:label "Broader shape"@en ;
+    rdfs:comment "Concept in same scheme that is broader than this Concept."@en ;
+    sh:path skos:broader ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+# <descriptionShape> is defined in all terms section.
+
+# <equivalentClassShape> is defined in Classes section.
+
+:narrowerShape a sh:PropertyShape ;
+    rdfs:label "Narrower shape"@en ;
+    rdfs:comment "Concept in same scheme that is narrower than this Concept."@en ;
+    sh:path skos:narrower ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+:topConceptOfShape a sh:PropertyShape ;
+    rdfs:label "Top Concept of shape"@en ;
+    rdfs:comment "Concept Scheme that has this Concept at the top level."@en ;
+    sh:path skos:topConceptOf ;
+    sh:minCount 0 ; # make 1 when Nate fixes exxport error
+    sh:nodeKind sh:IRI ;
+    sh:class skos:ConceptScheme ;
+    sh:severity sh:Violation ;
+.
+
+:narrowMatchShape a sh:PropertyShape ;
+    rdfs:label "Narrow Match shape"@en ;
+    rdfs:comment "Concept in another scheme that is narrower than this Concept."@en ;
+    sh:path skos:narrowMatch ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+:relatedMatchShape  a sh:PropertyShape ;
+    rdfs:label "Related Match shape"@en ;
+    rdfs:comment "Concept in another scheme that is related to this Concept."@en ;
+    sh:path skos:relatedMatch ;
+    sh:nodeKind sh:IRI ;
+    sh:severity sh:Violation ;
+.
+
+# <usageNoteShape> is defined in Terms section.
+
