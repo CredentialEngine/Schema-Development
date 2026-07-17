@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:logicalOperator",
+    "rdfs:label": {
+        "en-US": "Logical Operator"
+    },
+    "rdfs:comment": {
+        "en-US": "Type that denotes a logical operation such as \"And\", \"Or\", \"OnlyOne\"; select from an existing enumeration of such types."
+    },
+    "dct:description": {
+        "en-US": "Only a single instance of logicalOperator is allowed defining operations on two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/logicalOperator/json",
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:LogicalOperatorCategory"
+    ]
+}

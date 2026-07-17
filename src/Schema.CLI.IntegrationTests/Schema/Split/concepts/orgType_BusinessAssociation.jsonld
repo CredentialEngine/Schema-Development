@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:BusinessAssociation",
+  "skos:prefLabel": {
+    "en-US": "Business or Industry Association"
+  },
+  "skos:definition": {
+    "en-US": "Membership organization primarily engaged in promoting the interests of their business members and providing them with services that may involve the provision of education and credentialing services."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/BusinessAssociation/json",
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:OrganizationType"
+  ]
+}

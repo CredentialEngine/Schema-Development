@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:WorkforceDemandAction",
+    "rdfs:label": {
+        "en-US": "Workforce Demand Action"
+    },
+    "rdfs:comment": {
+        "en-US": "Action taken by an agent asserting that the resource being described has a workforce demand level worthy of note."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/WorkforceDemandAction/json",
+    "rdfs:subClassOf": [
+        "ceterms:CredentialingAction"
+    ],
+    "meta:domainFor": [
+        "ceterms:actingAgent",
+        "ceterms:actionStatusType",
+        "ceterms:administrationProcess",
+        "ceterms:classification",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:endDate",
+        "ceterms:evidenceOfAction",
+        "ceterms:identifier",
+        "ceterms:instrument",
+        "ceterms:jurisdiction",
+        "ceterms:name",
+        "ceterms:object",
+        "ceterms:participant",
+        "ceterms:result",
+        "ceterms:startDate"
+    ]
+}

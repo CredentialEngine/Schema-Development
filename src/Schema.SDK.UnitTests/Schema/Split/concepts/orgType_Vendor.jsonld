@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:Vendor",
+    "skos:prefLabel": {
+        "en-US": "Vendor"
+    },
+    "skos:definition": {
+        "en-US": "Sells, maintains, and issues credentials for its own products and services for public access and use."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Vendor/json",
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

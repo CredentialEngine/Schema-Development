@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:recognizedOfferers",
+  "rdfs:label": {
+    "en-US": "Recognized Offerers"
+  },
+  "rdfs:comment": {
+    "en-US": "Organizations that have permission to offer credentials of a specific CredentialType."
+  },
+  "vann:usageNote": {
+    "en-US": "The value of this property should be a ceterms:Collection of ceterms:CredentialOrganizations (or similar)."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/recognizedOfferers/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialType"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Collection"
+  ]
+}

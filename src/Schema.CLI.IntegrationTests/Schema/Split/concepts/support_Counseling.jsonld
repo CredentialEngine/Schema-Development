@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:Counseling",
+  "skos:prefLabel": {
+    "en-US": "Counseling"
+  },
+  "skos:definition": {
+    "en-US": "Personalized process that helps individuals improve their mental health and well-being by exploring their emotions, behaviors, and relationships with the guidance of a trained professional."
+  },
+  "dct:description": {
+    "en-US": "Personalized service that provides guidance and support to individuals experiencing personal, work-related, or academic challenges."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Counseling/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

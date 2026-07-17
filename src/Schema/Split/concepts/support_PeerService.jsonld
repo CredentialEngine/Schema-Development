@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:PeerService",
+  "skos:prefLabel": {
+    "en-US": "Peer Service"
+  },
+  "skos:definition": {
+    "en-US": "Service that specializes in facilitating peer interaction."
+  },
+  "dct:description": {
+    "en-US": "Examples include peer interactions such as counseling, tutoring, and leadership activities."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/PeerService/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00312"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

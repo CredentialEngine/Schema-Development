@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "serviceType:AccreditService",
+    "skos:prefLabel": {
+        "en-US": "Accredit Service"
+    },
+    "skos:definition": {
+        "en-US": "Agent service provides official authorization to, or approval of, a credential, organization or program based on prescribed standards or criteria."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/AccreditService/json",
+    "skos:inScheme": [
+        "ceterms:AgentServiceType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgentServiceType"
+    ]
+}

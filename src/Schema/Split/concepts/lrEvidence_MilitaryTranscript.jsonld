@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:MilitaryTranscript",
+  "skos:prefLabel": {
+    "en-US": "Military Transcript"
+  },
+  "skos:definition": {
+    "en-US": "Official record of a person’s military education, training, occupations, and related evaluations."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/MilitaryTranscript/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "claimType:BadgeClaim",
+  "skos:prefLabel": {
+    "en-US": "Badge Claim"
+  },
+  "skos:definition": {
+    "en-US": "Verifiable visual representation that can be shared, embedded, linked, or otherwise used to publicly indicate that an individual has the represented credential."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/claimType/BadgeClaim/json",
+  "skos:inScheme": [
+    "ceterms:ClaimType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ClaimType"
+  ]
+}

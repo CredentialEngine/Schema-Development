@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:assessmentUseType",
+    "rdfs:label": {
+        "en-US": "Assessment Use Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of intended use of the assessment; select from an existing enumeration of such types."
+    },
+    "vann:usageNote": {
+        "en-US": "Best practice for developing credential descriptions for the Credential Engine Registry is to use the ceterms:AssessmentUse vocabulary."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assessmentUseType/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ],
+    "meta:targetScheme": [
+        "ceterms:AssessmentUse"
+    ]
+}

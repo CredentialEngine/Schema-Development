@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:SubstanceAbusePrevention",
+  "skos:prefLabel": {
+    "en-US": "Substance Abuse Prevention"
+  },
+  "skos:definition": {
+    "en-US": "Service related to preventing the misuse or abuse of drugs, alcohol, or other substances."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/SubstanceAbusePrevention/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00324"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

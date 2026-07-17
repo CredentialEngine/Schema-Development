@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:Applied",
+    "skos:prefLabel": {
+        "en-US": "Applied Instruction"
+    },
+    "skos:definition": {
+        "en-US": "Provides learning opportunities in the context of real world examples, cases, and applications."
+    },
+    "dct:description": {
+        "en-US": "Applies to methods such as contextual learning, applied academics, academic-technical integration, problem-based learning, project-based learning, and case methods."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Applied/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

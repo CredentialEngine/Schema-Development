@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "actionStat:FailedActionStatus",
+    "skos:prefLabel": {
+        "en-US": "Failed Action Status"
+    },
+    "skos:definition": {
+        "en-US": "Action that failed to complete."
+    },
+    "dct:description": {
+        "en-US": "The action's error property and the HTTP return code contain more information about the failure."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/actionStat/FailedActionStatus/json",
+    "skos:inScheme": [
+        "ceterms:ActionStatus"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ActionStatus"
+    ]
+}

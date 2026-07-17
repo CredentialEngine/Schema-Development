@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:EvaluationOutcome",
+    "rdfs:label": {
+        "en-US": "Evaluation Outcome"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes the results of a valuation or appraisal of a resource."
+    },
+    "vann:usageNote": {
+        "en-US": "Do not use for test results or other outcomes of assessments of people."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/EvaluationOutcome/json",
+    "meta:domainFor": [
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:hasStructuredStatement",
+        "ceterms:isEvaluationOf",
+        "ceterms:name",
+        "ceterms:subjectWebpage"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:isSpecializationOf",
+  "rdfs:label": {
+    "en-US": "Is Specialization Of"
+  },
+  "rdfs:comment": {
+    "en-US": "Less specialized profession, trade, or career field that encompasses the one being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isSpecializationOf/json",
+  "schema:domainIncludes": [
+    "ceterms:Occupation"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Occupation"
+  ]
+}

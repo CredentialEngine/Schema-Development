@@ -1,0 +1,52 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:SupportService",
+    "rdfs:label": {
+        "en-US": "Support Service"
+    },
+    "rdfs:comment": {
+        "en-US": "Resources and assistance that help people overcome barriers to succeed in their education and career goals."
+    },
+    "dct:description": {
+        "en-US": "Support services can be provided at any stage of an individual's education or career, and may be targeted towards people with or without direct affiliation with an organization. The goal of support services is to provide people with the assistance they need to achieve their full potential.  Examples of Support Services include career advice, job placement, childcare, transportation, tools, mentorship, counseling, and other forms of aid."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/SupportService/json",
+    "meta:domainFor": [
+        "ceterms:accommodationType",
+        "ceterms:administrationProcess",
+        "ceterms:alternateName",
+        "ceterms:availabilityListing",
+        "ceterms:availableAt",
+        "ceterms:availableOnlineAt",
+        "ceterms:commonConditions",
+        "ceterms:commonCosts",
+        "ceterms:complaintProcess",
+        "ceterms:ctid",
+        "ceterms:dateEffective",
+        "ceterms:deliveryType",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:estimatedCost",
+        "ceterms:expirationDate",
+        "ceterms:financialAssistance",
+        "ceterms:hasSpecificService",
+        "ceterms:identifier",
+        "ceterms:inLanguage",
+        "ceterms:isSpecificServiceOf",
+        "ceterms:keyword",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:occupationType",
+        "ceterms:offeredBy",
+        "ceterms:offeredIn",
+        "ceterms:ownedBy",
+        "ceterms:reviewProcess",
+        "ceterms:subjectWebpage",
+        "ceterms:supportServiceCondition",
+        "ceterms:supportServiceFor",
+        "ceterms:supportServiceType"
+    ]
+}

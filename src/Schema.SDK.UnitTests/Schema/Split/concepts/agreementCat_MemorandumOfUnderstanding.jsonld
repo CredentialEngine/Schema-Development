@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "agreementCat:MemorandumOfUnderstanding",
+    "skos:prefLabel": {
+        "en-US": "Memorandum of Understanding"
+    },
+    "skos:definition": {
+        "en-US": "A formal mechanism expressing parties’ intent to collaborate or recognize learning, which may precede or accompany specific agreements."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/agreementCat/MemorandumOfUnderstanding/json",
+    "skos:inScheme": [
+        "ceterms:AgreementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgreementCategory"
+    ]
+}

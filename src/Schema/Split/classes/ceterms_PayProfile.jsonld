@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:PayProfile",
+  "rdfs:label": {
+    "en-US": "Pay Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity that describes the monetary compensation for work."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/PayProfile/json",
+  "rdfs:subClassOf": [
+    "schema:MonetaryAmount"
+  ],
+  "meta:domainFor": [
+    "ceterms:basePeriod",
+    "ceterms:currency",
+    "ceterms:dateEffective",
+    "ceterms:description",
+    "ceterms:expirationDate",
+    "ceterms:payBandType",
+    "ceterms:paymentPatternType",
+    "ceterms:requires",
+    "schema:maxValue",
+    "schema:minValue",
+    "schema:value"
+  ]
+}

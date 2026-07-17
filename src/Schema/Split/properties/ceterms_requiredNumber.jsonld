@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:requiredNumber",
+  "rdfs:label": {
+    "en-US": "Required Number"
+  },
+  "rdfs:comment": {
+    "en-US": "Number of targetComponent or hasCondition objects that must be fulfilled in order to satisfy the ComponentCondition."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/requiredNumber/json",
+  "schema:domainIncludes": [
+    "ceterms:ComponentCondition"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:integer"
+  ]
+}

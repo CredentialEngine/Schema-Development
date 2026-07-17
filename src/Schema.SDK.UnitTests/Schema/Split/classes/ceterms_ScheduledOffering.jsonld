@@ -1,0 +1,40 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:ScheduledOffering",
+    "rdfs:label": {
+        "en-US": "Scheduled Offering"
+    },
+    "rdfs:comment": {
+        "en-US": "Offering of a Learning Opportunity or Assessment with a schedule associated with a specified location or modality."
+    },
+    "dct:description": {
+        "en-US": "Provides data specific to a given scheduled offering; the Learning Opportunity (including Course and Learning Program) or Assessment being offered provides all data that is shared between different offerings."
+    },
+    "vann:usageNote": {
+        "en-US": "Rather than repeating data, only use this class if the data differs from the data provided by the resource for which this is an offer."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ScheduledOffering/json",
+    "meta:domainFor": [
+        "ceterms:aggregateData",
+        "ceterms:alternateName",
+        "ceterms:availabilityListing",
+        "ceterms:availableAt",
+        "ceterms:availableOnlineAt",
+        "ceterms:commonCosts",
+        "ceterms:ctid",
+        "ceterms:deliveryType",
+        "ceterms:deliveryTypeDescription",
+        "ceterms:description",
+        "ceterms:estimatedCost",
+        "ceterms:estimatedDuration",
+        "ceterms:hasSupportService",
+        "ceterms:name",
+        "ceterms:offeredBy",
+        "ceterms:offerFrequencyType",
+        "ceterms:scheduleFrequencyType",
+        "ceterms:scheduleTimingType",
+        "ceterms:subjectWebpage"
+    ]
+}

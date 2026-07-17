@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:ResidentialLiving",
+  "skos:prefLabel": {
+    "en-US": "Residential Living"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides a therapeutic living environment in community-based residential facilities for individuals with special needs, including those with emotional and/or behavioral problems."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/ResidentialLiving/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00885"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:employee",
+  "rdfs:label": {
+    "en-US": "Employee"
+  },
+  "rdfs:comment": {
+    "en-US": "Person employed for wages or salary by the organization."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/employee/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialPerson"
+  ],
+  "owl:equivalentProperty": [
+    "schema:employee"
+  ]
+}

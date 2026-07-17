@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "init --path D:\\Schema-Development\\src\\Schema.CLI.IntegrationTests\\ActualOutput\\Schema"
+    }
+  }
+}

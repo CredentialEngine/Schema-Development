@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasCatalog",
+    "rdfs:label": {
+        "en-US": "Has Catalog"
+    },
+    "rdfs:comment": {
+        "en-US": "An inventory or listing of resources maintained by this Organization"
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasCatalog/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

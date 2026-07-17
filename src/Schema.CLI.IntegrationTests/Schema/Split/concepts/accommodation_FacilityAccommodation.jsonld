@@ -1,0 +1,36 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:FacilityAccommodation",
+  "skos:prefLabel": {
+    "en-US": "Facility Accommodation"
+  },
+  "skos:definition": {
+    "en-US": "Features, modifications or adjustments made to a physical space or facility to ensure that individuals with disabilities can access and use the space on an equal basis with others."
+  },
+  "dct:description": {
+    "en-US": "This can include existing features and modifications to the built environment, such as the installation of ramps, accessible restrooms, or wider doorways, as well as adjustments to lighting, signage, and other environmental factors."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/FacilityAccommodation/json",
+  "skos:narrower": [
+    "accommodation:AccessibleHousing",
+    "accommodation:AccessibleParking",
+    "accommodation:AccessibleRestroom",
+    "accommodation:AdjustableLighting",
+    "accommodation:AdjustableWorkstations",
+    "accommodation:AudioCaptioning",
+    "accommodation:ClearSignage",
+    "accommodation:HearingLoops",
+    "accommodation:PhysicalAccessibility",
+    "accommodation:Sensory",
+    "accommodation:ServiceAnimal",
+    "accommodation:TactileSignage"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Accommodation"
+  ]
+}

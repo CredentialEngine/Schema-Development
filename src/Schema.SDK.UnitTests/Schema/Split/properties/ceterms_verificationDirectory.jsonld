@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:verificationDirectory",
+    "rdfs:label": {
+        "en-US": "Verification Directory"
+    },
+    "rdfs:comment": {
+        "en-US": "Directory of credential holders and their current statuses."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/verificationDirectory/json",
+    "schema:domainIncludes": [
+        "ceterms:VerificationServiceProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

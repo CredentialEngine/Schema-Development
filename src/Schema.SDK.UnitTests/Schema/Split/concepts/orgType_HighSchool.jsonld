@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:HighSchool",
+    "skos:prefLabel": {
+        "en-US": "High School"
+    },
+    "skos:definition": {
+        "en-US": "Secondary school providing instruction and educational services that do not focus primarily on career and technical education or alternative education."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/HighSchool/json",
+    "skos:broader": [
+        "orgType:SecondarySchool"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ]
+}

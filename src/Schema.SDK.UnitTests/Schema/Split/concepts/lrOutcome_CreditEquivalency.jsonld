@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrOutcome:CreditEquivalency",
+    "skos:prefLabel": {
+        "en-US": "Credit Equivalency"
+    },
+    "skos:definition": {
+        "en-US": "An outcome in which learning fulfills a credit requirement."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrOutcome/CreditEquivalency/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ]
+}

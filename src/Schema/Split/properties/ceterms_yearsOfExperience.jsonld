@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:yearsOfExperience",
+  "rdfs:label": {
+    "en-US": "Years of Experience"
+  },
+  "rdfs:comment": {
+    "en-US": "Years of relevant experience."
+  },
+  "vann:usageNote": {
+    "en-US": "Non-integer year values may be expressed as point value, for example, 0.25, 1.5, etc."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/yearsOfExperience/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:float"
+  ]
+}

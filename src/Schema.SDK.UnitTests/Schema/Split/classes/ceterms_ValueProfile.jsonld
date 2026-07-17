@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:ValueProfile",
+    "rdfs:label": {
+        "en-US": "Value Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "A description of value awarded for, required by, or otherwise related to the resource."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ValueProfile/json",
+    "rdfs:subClassOf": [
+        "schema:QuantitativeValue"
+    ],
+    "meta:domainFor": [
+        "ceterms:creditLevelType",
+        "ceterms:creditUnitType",
+        "ceterms:subject",
+        "qdata:percentage",
+        "schema:description",
+        "schema:maxValue",
+        "schema:minValue",
+        "schema:value"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:LoanForgivenessProgram",
+  "skos:prefLabel": {
+    "en-US": "Loan Forgiveness Program"
+  },
+  "skos:definition": {
+    "en-US": "Program that forgives the remaining balance on a loan after meeting certain requirements."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/LoanForgivenessProgram/json",
+  "skos:broader": [
+    "financialAid:Grant"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:closingDate",
+  "rdfs:label": {
+    "en-US": "Closing Date"
+  },
+  "rdfs:comment": {
+    "en-US": "Date the organization ceased operations or ceased to exist."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/closingDate/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:date"
+  ]
+}

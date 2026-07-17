@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:entryCondition",
+  "rdfs:label": {
+    "en-US": "Entry Condition"
+  },
+  "rdfs:comment": {
+    "en-US": "Requirements for entry into a credentialing program, a learning opportunity, or an assessment, including credentials, transcripts, records of previous experience, or other forms of entry documentation."
+  },
+  "vann:usageNote": {
+    "en-US": "For Courses required to be taken before entry into another Course, use prerequisite."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/entryCondition/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:requires"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:ConditionManifest",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:ConditionProfile"
+  ]
+}

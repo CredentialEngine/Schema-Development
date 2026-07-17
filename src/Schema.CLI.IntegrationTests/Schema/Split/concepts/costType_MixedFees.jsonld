@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:MixedFees",
+  "skos:prefLabel": {
+    "en-US": "Mixed Fees"
+  },
+  "skos:definition": {
+    "en-US": "The sum of fees that are not identified individually."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/MixedFees/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

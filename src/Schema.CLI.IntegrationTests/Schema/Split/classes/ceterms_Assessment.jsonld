@@ -1,0 +1,13 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:Assessment",
+  "rdfs:label": {
+    "en-US": "Assessment"
+  },
+  "rdfs:comment": {
+    "en-US": "Direct, indirect, formative, and summative evaluation or estimation of the nature, ability, or quality of an entity, performance, or outcome of an action."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Assessment/json"
+}

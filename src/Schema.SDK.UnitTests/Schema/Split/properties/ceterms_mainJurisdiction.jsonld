@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:mainJurisdiction",
+    "rdfs:label": {
+        "en-US": "Main Jurisdiction"
+    },
+    "rdfs:comment": {
+        "en-US": "Primary geographic or political region in which the credential is recognized as applicable or in which an organization has recognized authority to act."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/mainJurisdiction/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:spatialCoverage"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:JurisdictionProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:Place"
+    ]
+}

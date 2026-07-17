@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:assessmentMethodDescription",
+  "rdfs:label": {
+    "en-US": "Assessment Method Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of the methods used to conduct assessment."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assessmentMethodDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

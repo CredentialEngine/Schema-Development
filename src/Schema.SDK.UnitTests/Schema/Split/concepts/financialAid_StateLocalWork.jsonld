@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:StateLocalWork",
+    "skos:prefLabel": {
+        "en-US": "State or Local Work"
+    },
+    "skos:definition": {
+        "en-US": "Program funded by a state, province, region, and/or local government designed to provide work for students to offset educational expenses."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/StateLocalWork/json",
+    "skos:broader": [
+        "financialAid:WorkBased"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#StateWork"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

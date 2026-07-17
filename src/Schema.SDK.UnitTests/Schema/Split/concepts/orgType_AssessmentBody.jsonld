@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:AssessmentBody",
+    "skos:prefLabel": {
+        "en-US": "Assessment Body"
+    },
+    "skos:definition": {
+        "en-US": "Primarily offers assessments for credentials as a service."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/AssessmentBody/json",
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

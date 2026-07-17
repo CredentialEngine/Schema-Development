@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:Consumables",
+  "skos:prefLabel": {
+    "en-US": "Consumables"
+  },
+  "skos:definition": {
+    "en-US": "Cost for supplies or materials that are depleted or replaced."
+  },
+  "vann:usageNote": {
+    "en-US": "For resources such as textbooks use costType:LearningResource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/Consumables/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

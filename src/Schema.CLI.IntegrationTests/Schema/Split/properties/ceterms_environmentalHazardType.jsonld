@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:environmentalHazardType",
+  "rdfs:label": {
+    "en-US": "Environmental Hazard Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of condition in the physical work performance environment that entails risk exposures requiring mitigating processes; select from an existing enumeration of such types."
+  },
+  "dct:description": {
+    "en-US": "Such types may include exposure to bloodborne pathogens, airborne communicable diseases and dangerous chemicals, battlefield conditions, fire fighting, law enforcement, and so on."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/environmentalHazardType/json",
+  "schema:domainIncludes": [
+    "ceasn:Competency",
+    "ceterms:Job",
+    "ceterms:Occupation",
+    "ceterms:Task",
+    "ceterms:WorkRole"
+  ],
+  "schema:rangeIncludes": [
+    "skos:Concept"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:LearningRecognitionMethodCategory",
+    "rdfs:label": {
+        "en-US": "Learning Recognition Method Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Concepts describing methods used to evaluate and recognize learning."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningRecognitionMethodCategory/json",
+    "meta:hasConcept": [
+        "lrMethod:CreditRecommendationReview",
+        "lrMethod:ExternalTrainingEvaluation",
+        "lrMethod:FacultyDevelopedExamination",
+        "lrMethod:FacultyTransferEvaluation",
+        "lrMethod:IndividualizedPriorLearningAssessment",
+        "lrMethod:InstitutionDevelopedAssessment",
+        "lrMethod:InternationalCreditEvaluation",
+        "lrMethod:PortfolioAssessment",
+        "lrMethod:PriorLearningAssessment",
+        "lrMethod:ProficiencyExamination",
+        "lrMethod:StandardizedExamination",
+        "lrMethod:TranscriptEvaluation",
+        "lrMethod:TransferCreditEvaluation"
+    ],
+    "skos:hasTopConcept": [
+        "lrMethod:CreditRecommendationReview",
+        "lrMethod:ExternalTrainingEvaluation",
+        "lrMethod:FacultyDevelopedExamination",
+        "lrMethod:FacultyTransferEvaluation",
+        "lrMethod:IndividualizedPriorLearningAssessment",
+        "lrMethod:InstitutionDevelopedAssessment",
+        "lrMethod:InternationalCreditEvaluation",
+        "lrMethod:PortfolioAssessment",
+        "lrMethod:PriorLearningAssessment",
+        "lrMethod:ProficiencyExamination",
+        "lrMethod:StandardizedExamination",
+        "lrMethod:TranscriptEvaluation",
+        "lrMethod:TransferCreditEvaluation"
+    ]
+}

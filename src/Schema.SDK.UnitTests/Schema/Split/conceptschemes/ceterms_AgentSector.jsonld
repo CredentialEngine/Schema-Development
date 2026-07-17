@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:AgentSector",
+    "rdfs:label": {
+        "en-US": "Agent Sector"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of sociological, economic, or political subdivision of society."
+    },
+    "dct:description": {
+        "en-US": "Sectors include public, private for profit, public for profit, and business industry association."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AgentSector/json",
+    "meta:hasConcept": [
+        "agentSector:PrivateForProfit",
+        "agentSector:PrivateNonProfit",
+        "agentSector:Public"
+    ],
+    "skos:hasTopConcept": [
+        "agentSector:PrivateForProfit",
+        "agentSector:PrivateNonProfit",
+        "agentSector:Public"
+    ]
+}

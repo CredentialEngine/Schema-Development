@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleFrequency:SemiAnnually",
+  "skos:prefLabel": {
+    "en-US": "Semi-Annually"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is on an semi-annual basis, typically occurring twice per year."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/SemiAnnually/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleFrequency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

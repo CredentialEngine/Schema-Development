@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:Overview",
+    "skos:prefLabel": {
+        "en-US": "Overview"
+    },
+    "skos:definition": {
+        "en-US": "Statement that summarizes the scope or general provisions of the agreement."
+    },
+    "dct:description": {
+        "en-US": "Provides a high-level description without detailed terms."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/Overview/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

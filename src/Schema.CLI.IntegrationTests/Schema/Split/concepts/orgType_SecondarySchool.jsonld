@@ -1,0 +1,30 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:SecondarySchool",
+  "skos:prefLabel": {
+    "en-US": "Secondary School"
+  },
+  "skos:definition": {
+    "en-US": "School offering programs at all levels of secondary education, building on primary education through to preparing for tertiary education or providing skills relevant to employment."
+  },
+  "vann:usageNote": {
+    "en-US": "Use for schools that cover both Lower and Upper Secondary levels."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/SecondarySchool/json",
+  "skos:narrower": [
+    "orgType:HighSchool",
+    "orgType:LowerSecondarySchool",
+    "orgType:Magnet",
+    "orgType:NonTraditional",
+    "orgType:Technical",
+    "orgType:UpperSecondarySchool"
+  ],
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:OrganizationType"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleFrequency:SingleInstance",
+    "skos:prefLabel": {
+        "en-US": "Single Instance"
+    },
+    "skos:definition": {
+        "en-US": "Schedule is a single instance of this event."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/SingleInstance/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleFrequency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

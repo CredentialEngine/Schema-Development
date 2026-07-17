@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasOccupation",
+  "rdfs:label": {
+    "en-US": "Has Occupation"
+  },
+  "rdfs:comment": {
+    "en-US": "Occupation related to this resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasOccupation/json",
+  "schema:domainIncludes": [
+    "ceterms:Industry",
+    "ceterms:Job",
+    "ceterms:Task",
+    "ceterms:WorkRole"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Occupation"
+  ]
+}

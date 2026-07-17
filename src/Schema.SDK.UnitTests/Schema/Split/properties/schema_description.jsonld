@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:description",
+    "rdfs:label": {
+        "en-US": "Description"
+    },
+    "rdfs:comment": {
+        "en-US": "A description of the item."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/schema/description/json",
+    "schema:domainIncludes": [
+        "ceterms:ValueProfile",
+        "schema:MonetaryAmount",
+        "schema:QuantitativeValue"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

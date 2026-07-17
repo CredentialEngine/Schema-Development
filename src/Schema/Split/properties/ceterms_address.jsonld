@@ -1,0 +1,24 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:address",
+  "rdfs:label": {
+    "en-US": "Address"
+  },
+  "rdfs:comment": {
+    "en-US": "Particulars describing the location of the place."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/address/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Place"
+  ],
+  "owl:equivalentProperty": [
+    "schema:address"
+  ]
+}

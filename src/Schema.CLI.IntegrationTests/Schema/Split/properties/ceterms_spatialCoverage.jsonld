@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:spatialCoverage",
+  "rdfs:label": {
+    "en-US": "Spatial Coverage"
+  },
+  "rdfs:comment": {
+    "en-US": "Spatial coverage of an entity indicates the place(s) to which its content applies or in which it occurs."
+  },
+  "dct:description": {
+    "en-US": "In the CTDL, the ceterms:spatialCoverage property serves as a super-property for an array of sub-properties defining location-dependent or area-dependent aspects of a resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/spatialCoverage/json",
+  "schema:rangeIncludes": [
+    "ceterms:GeoCoordinates",
+    "ceterms:JurisdictionProfile",
+    "ceterms:Place",
+    "ceterms:PostalAddress"
+  ],
+  "owl:equivalentProperty": [
+    "schema:spatialCoverage"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:NonTraditional",
+  "skos:prefLabel": {
+    "en-US": "Alternative/Non-Traditional School"
+  },
+  "skos:definition": {
+    "en-US": "Secondary (i.e., high school) that: 1) addresses needs of students which cannot typically be met in a regular school; 2) provides nontraditional education; 3) falls outside of the categories of regular, magnet/special program emphasis, or career and technical education."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/NonTraditional/json",
+  "skos:broader": [
+    "orgType:SecondarySchool"
+  ],
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ]
+}

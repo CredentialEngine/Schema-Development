@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:affiliation",
+    "rdfs:label": {
+        "en-US": "Affiliation"
+    },
+    "rdfs:comment": {
+        "en-US": "Organization to which a person is formally related through work, sudy, or social engagement."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/affiliation/json",
+    "rdfs:subPropertyOf": [
+        "schema:affiliation"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:ConditionProfile",
+        "ceterms:CredentialPerson"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:temporalCoverage",
+  "rdfs:label": {
+    "en-US": "Temporal Coverage"
+  },
+  "rdfs:comment": {
+    "en-US": "Indicates the time period to which the entity's content applies or during which it occurres."
+  },
+  "dct:description": {
+    "en-US": "In the CTDL, the ceterms:temporalCoverage property serves as a super-property for an array of sub-properties defining time-dependent aspects of a resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/temporalCoverage/json",
+  "schema:rangeIncludes": [
+    "xsd:date"
+  ],
+  "owl:equivalentProperty": [
+    "schema:temporalCoverage"
+  ]
+}

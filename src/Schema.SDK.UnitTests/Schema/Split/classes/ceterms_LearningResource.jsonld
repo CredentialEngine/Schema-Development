@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:LearningResource",
+    "rdfs:label": {
+        "en-US": "Learning Resource"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that is used as part of an learning activity (e.g. a textbook) or that describes (e.g. a lesson plan) or records the educational activity (e.g. an audio- or video-recording of a lesson)."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningResource/json",
+    "rdfs:subClassOf": [
+        "schema:CreativeWork"
+    ],
+    "owl:equivalentClass": [
+        "asn:LearningResource"
+    ]
+}

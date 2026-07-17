@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:TransferAdmission",
+  "skos:prefLabel": {
+    "en-US": "Transfer Admission"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides information and support about the criteria and process for students applying as transfer candidates rather than first-time freshmen."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TransferAdmission/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:Laboratory",
+  "skos:prefLabel": {
+    "en-US": "Laboratory"
+  },
+  "skos:definition": {
+    "en-US": "Hands-on individual or group experiences for applied learning concepts and methods, procedures and protocols with equipment and technologies."
+  },
+  "dct:description": {
+    "en-US": "Applies to clinical practice and methods such as physical and/or virtual simulation or participation, whether direct or indirect."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Laboratory/json",
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningMethod"
+  ]
+}

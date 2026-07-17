@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:RenewalFee",
+  "skos:prefLabel": {
+    "en-US": "Maintenance Fee"
+  },
+  "skos:definition": {
+    "en-US": "Cost for maintenance or renewal of the resource being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/RenewalFee/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

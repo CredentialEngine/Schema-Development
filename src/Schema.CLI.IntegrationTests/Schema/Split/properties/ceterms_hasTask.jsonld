@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasTask",
+  "rdfs:label": {
+    "en-US": "Has Task"
+  },
+  "rdfs:comment": {
+    "en-US": "Task related to this resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasTask/json",
+  "schema:domainIncludes": [
+    "ceasn:Competency",
+    "ceterms:Job",
+    "ceterms:Occupation",
+    "ceterms:WorkRole"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Task"
+  ]
+}

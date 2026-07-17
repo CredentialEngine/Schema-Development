@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:department",
+  "rdfs:label": {
+    "en-US": "Department"
+  },
+  "rdfs:comment": {
+    "en-US": "Department of the organization."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/department/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:subOrganization"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "owl:equivalentProperty": [
+    "schema:department"
+  ]
+}

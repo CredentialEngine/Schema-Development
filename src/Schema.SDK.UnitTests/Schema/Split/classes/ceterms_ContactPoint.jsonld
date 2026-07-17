@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:ContactPoint",
+    "rdfs:label": {
+        "en-US": "Contact Point"
+    },
+    "rdfs:comment": {
+        "en-US": "Means of contacting an organization or its representative."
+    },
+    "dct:description": {
+        "en-US": "For example, a public relations email address or phone number."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ContactPoint/json",
+    "owl:equivalentClass": [
+        "schema:ContactPoint"
+    ],
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:contactType",
+        "ceterms:email",
+        "ceterms:faxNumber",
+        "ceterms:name",
+        "ceterms:socialMedia",
+        "ceterms:telephone"
+    ]
+}

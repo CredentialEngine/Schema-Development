@@ -1,0 +1,30 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:agentSectorType",
+    "rdfs:label": {
+        "en-US": "Agent Sector Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of sociological, economic, or political subdivision served by an organization; select from an existing enumeration of such types."
+    },
+    "vann:usageNote": {
+        "en-US": "Recommended best practice for credentials in the Credential Engine Registry is to use concepts from the ceterms:AgentSector vocabulary."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/agentSectorType/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:credentialAlignment"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ],
+    "meta:targetScheme": [
+        "ceterms:AgentSector"
+    ]
+}

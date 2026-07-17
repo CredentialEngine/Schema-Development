@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "serviceType:ApproveService",
+  "skos:prefLabel": {
+    "en-US": "Approve Service"
+  },
+  "skos:definition": {
+    "en-US": "Agent service official accepts a credential or authorizes an organization to act or operate."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/ApproveService/json",
+  "skos:inScheme": [
+    "ceterms:AgentServiceType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AgentServiceType"
+  ]
+}

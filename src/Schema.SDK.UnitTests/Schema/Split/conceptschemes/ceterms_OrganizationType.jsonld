@@ -1,0 +1,61 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:OrganizationType",
+    "rdfs:label": {
+        "en-US": "Organization Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of organization."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/OrganizationType/json",
+    "meta:hasConcept": [
+        "orgType:AccreditationBody",
+        "orgType:AssessmentBody",
+        "orgType:Business",
+        "orgType:BusinessAssociation",
+        "orgType:CertificationBody",
+        "orgType:Collaborative",
+        "orgType:CoordinatingBody",
+        "orgType:FourYear",
+        "orgType:Government",
+        "orgType:HighSchool",
+        "orgType:LaborUnion",
+        "orgType:LowerSecondarySchool",
+        "orgType:Magnet",
+        "orgType:Military",
+        "orgType:NonTraditional",
+        "orgType:Postsecondary",
+        "orgType:PrimarilyOnline",
+        "orgType:PrimarySchool",
+        "orgType:ProfessionalAssociation",
+        "orgType:QualityAssurance",
+        "orgType:Regulator",
+        "orgType:SecondarySchool",
+        "orgType:Technical",
+        "orgType:TrainingProvider",
+        "orgType:TwoYear",
+        "orgType:UpperSecondarySchool",
+        "orgType:Vendor"
+    ],
+    "skos:hasTopConcept": [
+        "orgType:AssessmentBody",
+        "orgType:Business",
+        "orgType:BusinessAssociation",
+        "orgType:CertificationBody",
+        "orgType:Collaborative",
+        "orgType:CoordinatingBody",
+        "orgType:Government",
+        "orgType:LaborUnion",
+        "orgType:Military",
+        "orgType:Postsecondary",
+        "orgType:PrimarilyOnline",
+        "orgType:PrimarySchool",
+        "orgType:ProfessionalAssociation",
+        "orgType:QualityAssurance",
+        "orgType:SecondarySchool",
+        "orgType:TrainingProvider",
+        "orgType:Vendor"
+    ]
+}

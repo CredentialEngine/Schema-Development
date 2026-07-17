@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:highEarnings",
+  "rdfs:label": {
+    "en-US": "High Earnings"
+  },
+  "rdfs:comment": {
+    "en-US": "Upper interquartile earnings."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/highEarnings/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:EarningsProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:decimal",
+    "xsd:integer"
+  ]
+}

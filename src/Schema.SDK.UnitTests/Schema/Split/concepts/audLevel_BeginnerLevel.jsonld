@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:BeginnerLevel",
+    "skos:prefLabel": {
+        "en-US": "Beginner Level"
+    },
+    "skos:definition": {
+        "en-US": "Intended for novices or those with limited experience."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/BeginnerLevel/json",
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AudienceLevel"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:Apprenticeship",
+  "skos:prefLabel": {
+    "en-US": "Apprenticeship"
+  },
+  "skos:definition": {
+    "en-US": "Learning through work that leads to a credential that is recognized by a relevant authority and is deliberately structured and supported to provide a progression of learning experiences."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Apprenticeship/json",
+  "skos:broader": [
+    "learnMethod:WorkBased"
+  ],
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ]
+}

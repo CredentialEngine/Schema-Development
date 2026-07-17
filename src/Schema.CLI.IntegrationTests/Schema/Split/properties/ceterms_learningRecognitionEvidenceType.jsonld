@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:learningRecognitionEvidenceType",
+  "rdfs:label": {
+    "en-US": "Learning Recognition Evidence Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of prior learning evidence accepted for evaluation under the policy; select from an existing enumeration of such types."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/learningRecognitionEvidenceType/json",
+  "schema:domainIncludes": [
+    "ceterms:PriorLearningPolicy",
+    "ceterms:TransferAgreement"
+  ],
+  "schema:rangeIncludes": [
+    "skos:Concept"
+  ],
+  "meta:targetScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

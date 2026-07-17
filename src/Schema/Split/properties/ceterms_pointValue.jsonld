@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:pointValue",
+  "rdfs:label": {
+    "en-US": "Point Value"
+  },
+  "rdfs:comment": {
+    "en-US": "Points associated with this resource, or points possible."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/pointValue/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:WorkExperienceComponent"
+  ],
+  "schema:rangeIncludes": [
+    "schema:QuantitativeValue"
+  ]
+}

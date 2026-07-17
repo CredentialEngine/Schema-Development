@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:AudiologicalHealthCare",
+  "skos:prefLabel": {
+    "en-US": "Audiological Health Care"
+  },
+  "skos:definition": {
+    "en-US": "Health care and related services covering hearing loss or impairment."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/AudiologicalHealthCare/json",
+  "skos:relatedMatch": [
+    "ceds:000273/#00293"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

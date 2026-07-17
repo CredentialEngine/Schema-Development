@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:workPay",
+    "rdfs:label": {
+        "en-US": "Work Pay"
+    },
+    "rdfs:comment": {
+        "en-US": "Monetary compensation associated with work."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/workPay/json",
+    "schema:domainIncludes": [
+        "ceterms:Job",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:PayProfile"
+    ]
+}

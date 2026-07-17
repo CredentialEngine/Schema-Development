@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "agreementCat:ArticulationAgreement",
+    "skos:prefLabel": {
+        "en-US": "Articulation Agreement"
+    },
+    "skos:definition": {
+        "en-US": "A formal mechanism establishing course or program equivalencies for recognition and transfer of learning between organizations or programs."
+    },
+    "vann:usageNote": {
+        "en-US": "Applicable only to Transfer Agreements."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/agreementCat/ArticulationAgreement/json",
+    "skos:inScheme": [
+        "ceterms:AgreementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgreementCategory"
+    ]
+}

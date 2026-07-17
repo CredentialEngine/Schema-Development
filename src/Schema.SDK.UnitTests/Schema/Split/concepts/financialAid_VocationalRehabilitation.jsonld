@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:VocationalRehabilitation",
+    "skos:prefLabel": {
+        "en-US": "Vocational Rehabilitation"
+    },
+    "skos:definition": {
+        "en-US": "Financial for veterans with a qualifying service-connected disability rating for training or education related to pursuit of a career or career-related resource."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/VocationalRehabilitation/json",
+    "skos:broader": [
+        "financialAid:Military"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:learningRecognitionOutcomeType",
+    "rdfs:label": {
+        "en-US": "Learning Recognition Outcome Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of outcome governed or permitted by the policy; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/learningRecognitionOutcomeType/json",
+    "schema:domainIncludes": [
+        "ceterms:PriorLearningPolicy",
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ]
+}

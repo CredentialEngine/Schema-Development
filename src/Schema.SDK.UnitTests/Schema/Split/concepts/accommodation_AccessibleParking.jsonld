@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:AccessibleParking",
+    "skos:prefLabel": {
+        "en-US": "Accessible Parking"
+    },
+    "skos:definition": {
+        "en-US": "A designated parking spot close to a building entrance, with adequate space to allow for accessible van or car parking, and with appropriate signage and markings."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/AccessibleParking/json",
+    "skos:broader": [
+        "accommodation:FacilityAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

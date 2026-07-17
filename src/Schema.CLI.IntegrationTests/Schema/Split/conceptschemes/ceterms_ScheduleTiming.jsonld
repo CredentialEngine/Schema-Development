@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:ScheduleTiming",
+  "rdfs:label": {
+    "en-US": "Schedule Timing"
+  },
+  "rdfs:comment": {
+    "en-US": "Types for when (in time) events occur."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ScheduleTiming/json",
+  "meta:hasConcept": [
+    "scheduleTiming:Daytime",
+    "scheduleTiming:Evening",
+    "scheduleTiming:Weekdays",
+    "scheduleTiming:Weekends"
+  ],
+  "skos:hasTopConcept": [
+    "scheduleTiming:Daytime",
+    "scheduleTiming:Evening",
+    "scheduleTiming:Weekdays",
+    "scheduleTiming:Weekends"
+  ]
+}

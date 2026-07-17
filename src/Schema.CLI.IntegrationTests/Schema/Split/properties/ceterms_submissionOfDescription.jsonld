@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:submissionOfDescription",
+  "rdfs:label": {
+    "en-US": "Submission Of Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Name, label, or description of an artifact to be submitted such as a transcript, portfolio, or an affidavit."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/submissionOfDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

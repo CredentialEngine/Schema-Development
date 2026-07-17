@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:ReexaminationFee",
+  "skos:prefLabel": {
+    "en-US": "Reexamination Fee"
+  },
+  "skos:definition": {
+    "en-US": "Cost for retaking an instance of the resource being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/ReexaminationFee/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

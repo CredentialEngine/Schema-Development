@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:PellGrant",
+    "skos:prefLabel": {
+        "en-US": "Pell Grant"
+    },
+    "skos:definition": {
+        "en-US": "Financial subsidy, which doesn’t require repayment, that the Federal Government provides based on the financial needs of the student."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/PellGrant/json",
+    "skos:broader": [
+        "financialAid:Grant"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#PellGrants"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

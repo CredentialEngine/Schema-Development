@@ -1,0 +1,16 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:IndustryClassification",
+  "rdfs:label": {
+    "en-US": "Industry Classification"
+  },
+  "rdfs:comment": {
+    "en-US": "Class of of concept schemes defining industries such as NAICS in the U.S. and ESCO in the European Union."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/IndustryClassification/json",
+  "rdfs:subClassOf": [
+    "ceterms:CredentialFramework"
+  ]
+}

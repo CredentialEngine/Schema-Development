@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "claimType:QualityAssuranceClaim",
+  "skos:prefLabel": {
+    "en-US": "Quality Assurance Claim"
+  },
+  "skos:definition": {
+    "en-US": "Verifiable representation of quality assurance."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/claimType/QualityAssuranceClaim/json",
+  "skos:inScheme": [
+    "ceterms:ClaimType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ClaimType"
+  ]
+}

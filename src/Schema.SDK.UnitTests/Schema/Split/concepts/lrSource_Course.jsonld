@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrSource:Course",
+    "skos:prefLabel": {
+        "en-US": "Course"
+    },
+    "skos:definition": {
+        "en-US": "Learning completed in a course, a structured sequence of educational activities designed to develop prescribed competencies."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/Course/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ]
+}

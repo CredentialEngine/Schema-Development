@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:FlexibleSchedule",
+  "skos:prefLabel": {
+    "en-US": "Flexible Schedule"
+  },
+  "skos:definition": {
+    "en-US": "Accommodations made for the time frames to complete work or tasks."
+  },
+  "dct:description": {
+    "en-US": "Examples include adjustments to working hours, extended deadlines, assessment times, or other modifications to schedules."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/FlexibleSchedule/json",
+  "skos:broader": [
+    "accommodation:ResourceAndServiceAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

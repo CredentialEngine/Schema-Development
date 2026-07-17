@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:DurationProfile",
+  "rdfs:label": {
+    "en-US": "Duration Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing the temporal aspects of a resource."
+  },
+  "dct:description": {
+    "en-US": "Temporal aspects include exact, minimum, and maximum timeframes of an activity."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/DurationProfile/json",
+  "meta:domainFor": [
+    "ceterms:description",
+    "ceterms:exactDuration",
+    "ceterms:maximumDuration",
+    "ceterms:minimumDuration",
+    "ceterms:timeRequired"
+  ]
+}

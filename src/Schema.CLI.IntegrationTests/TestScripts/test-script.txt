@@ -1,0 +1,20 @@
+init --path {SeedSchema}
+add namespace --prefix ceterms --uri https://purl.org/ctdl/terms/
+add class --term ceterms:TestClass
+add context --term ceterms:TestProperty --field @@type --value xsd:string
+add property --term ceterms:TestProperty
+add concept --term ceterms:TestConcept
+add conceptscheme --term ceterms:TestConceptScheme
+add value --subject ceterms:TestProperty --predicate schema:domainIncludes --value ceterms:TestClass
+add value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
+add value --subject ceterms:TestConcept --predicate skos:inScheme --value ceterms:TestConceptScheme
+set field --subject ceterms:TestClass --predicate vs:term_status --value stable
+set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --value "Test Class"
+add context --term ceterms:name --field @@container --value @@language
+update context --term ceterms:name --field @@type --value xsd:string
+remove context --term ceterms:name --field @container
+remove value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
+remove field --subject ceterms:TestClass --predicate vs:term_status
+remove value --subject ceterms:TestConcept --predicate skos:inScheme --value ceterms:TestConceptScheme
+remove concept --term ceterms:TestConcept
+remove conceptscheme --term ceterms:TestConceptScheme

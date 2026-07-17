@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:offersFinancialAssistance",
+    "rdfs:label": {
+        "en-US": "Offers Financial Assistance"
+    },
+    "rdfs:comment": {
+        "en-US": "Description of financial assistance offered by this organization."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/offersFinancialAssistance/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:offers"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:FinancialAssistanceProfile"
+    ]
+}

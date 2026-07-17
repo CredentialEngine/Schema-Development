@@ -1,0 +1,145 @@
+{
+    "@context": {
+        "asn": "http://purl.org/ASN/schema/core/",
+        "case": "https://purl.imsglobal.org/spec/case/",
+        "ceasn": "https://purl.org/ctdlasn/terms/",
+        "ceds": "https://ceds.ed.gov/element/",
+        "ceterms": "https://purl.org/ctdl/terms/",
+        "cs": "http://vocab.org/changeset/schema#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dct": "http://purl.org/dc/terms/",
+        "lrmi": "http://purl.org/dcx/lrmi-terms/",
+        "meta": "http://credreg.net/meta/terms/",
+        "obi": "https://w3id.org/openbadges#",
+        "odrl2": "https://www.w3.org/ns/odrl/2/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "qdata": "https://credreg.net/qdata/terms/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "vann": "http://purl.org/vocab/vann/",
+        "vs": "https://www.w3.org/2003/06/sw-vocab-status/ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl:sameAs": {
+            "@type": "@id"
+        },
+        "adms:status": {
+            "@type": "@id"
+        },
+        "meta:domainFor": {
+            "@type": "@id"
+        },
+        "meta:hasChangeSet": {
+            "@type": "@id"
+        },
+        "meta:hasConcept": {
+            "@type": "@id"
+        },
+        "meta:objectText": {
+            "@container": "@language"
+        },
+        "meta:supersededBy": {
+            "@type": "@id"
+        },
+        "meta:targetScheme": {
+            "@type": "@id"
+        },
+        "skos:altLabel": {
+            "@container": "@language"
+        },
+        "skos:broader": {
+            "@type": "@id"
+        },
+        "skos:broadMatch": {
+            "@type": "@id"
+        },
+        "skos:changeNote": {
+            "@container": "@language"
+        },
+        "skos:closeMatch": {
+            "@type": "@id"
+        },
+        "skos:definition": {
+            "@container": "@language"
+        },
+        "skos:exactMatch": {
+            "@type": "@id"
+        },
+        "skos:hasTopConcept": {
+            "@type": "@id"
+        },
+        "skos:hiddenLabel": {
+            "@container": "@language"
+        },
+        "skos:inScheme": {
+            "@type": "@id"
+        },
+        "skos:narrower": {
+            "@type": "@id"
+        },
+        "skos:narrowMatch": {
+            "@type": "@id"
+        },
+        "skos:notation": {
+            "@type": "xsd:string"
+        },
+        "skos:note": {
+            "@container": "@language"
+        },
+        "skos:prefLabel": {
+            "@container": "@language"
+        },
+        "skos:related": {
+            "@type": "@id"
+        },
+        "skos:topConceptOf": {
+            "@type": "@id"
+        },
+        "rdfs:subClassOf": {
+            "@type": "@id"
+        },
+        "owl:equivalentProperty": {
+            "@type": "@id"
+        },
+        "owl:equivalentClass": {
+            "@type": "@id"
+        },
+        "schema:domainIncludes": {
+            "@type": "@id"
+        },
+        "schema:rangeIncludes": {
+            "@type": "@id"
+        },
+        "owl:inverseOf": {
+            "@type": "@id"
+        },
+        "skos:relatedMatch": {
+            "@type": "@id"
+        },
+        "vs:term_status": {
+            "@type": "@id"
+        },
+        "meta:changeHistory": {
+            "@type": "@id"
+        },
+        "rdfs:label": {
+            "@container": "@language"
+        },
+        "rdfs:comment": {
+            "@container": "@language"
+        },
+        "dct:description": {
+            "@container": "@language"
+        },
+        "vann:usageNote": {
+            "@container": "@language"
+        },
+        "skos:historyNote": {
+            "@container": "@language"
+        },
+        "rdfs:subPropertyOf": {
+            "@type": "@id"
+        }
+    }
+}

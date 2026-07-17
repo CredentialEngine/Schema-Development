@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:UndergraduateLevel",
+  "skos:prefLabel": {
+    "en-US": "Undergraduate Level"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those who are enrolled in a degree program or other formal program at or below the baccalaureate, such as an associate’s degree, vocational, or technical program."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/UndergraduateLevel/json",
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AudienceLevel"
+  ]
+}

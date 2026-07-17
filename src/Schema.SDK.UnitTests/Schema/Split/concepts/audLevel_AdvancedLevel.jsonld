@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:AdvancedLevel",
+    "skos:prefLabel": {
+        "en-US": "Advanced Level"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those with significant experience or expertise where developmental expectations are staged for assessing knowledge, skills, or competencies beyond the novice and intermediate levels."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/AdvancedLevel/json",
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AudienceLevel"
+    ]
+}

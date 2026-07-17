@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:verificationMethodDescription",
+  "rdfs:label": {
+    "en-US": "Verification Method Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Textual description of the methods used to evaluate an assessment, learning opportunity, process or verificaiton service for validity or reliability."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/verificationMethodDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:ProcessProfile",
+    "ceterms:VerificationServiceProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

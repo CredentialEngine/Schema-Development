@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:Transportation",
+    "skos:prefLabel": {
+        "en-US": "Transportation"
+    },
+    "skos:definition": {
+        "en-US": "Service that provides or arranges  transportation for people."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Transportation/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00888",
+        "ceds:000273/#00321"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

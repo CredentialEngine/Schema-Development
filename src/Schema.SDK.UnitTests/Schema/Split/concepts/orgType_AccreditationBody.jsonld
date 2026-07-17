@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:AccreditationBody",
+    "skos:prefLabel": {
+        "en-US": "Accreditation Body"
+    },
+    "skos:definition": {
+        "en-US": "Organization that evaluates other resources such as organizations, learning opportunities, credentials, and/or individuals to issue third-party validation that the resource meets certain standards of quality, competency, and integrity."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/AccreditationBody/json",
+    "skos:broader": [
+        "orgType:QualityAssurance"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ]
+}

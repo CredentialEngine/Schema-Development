@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:FederalSubsidizedLoan",
+    "skos:prefLabel": {
+        "en-US": "Federal Subsidized Loan"
+    },
+    "skos:definition": {
+        "en-US": "Loan from the Federal Government that is based on financial needs of the student and is intended to offset costs related to education, living, and resources."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/FederalSubsidizedLoan/json",
+    "skos:broader": [
+        "financialAid:Loan"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#FederalSubsidizedLoans"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

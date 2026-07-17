@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:revocationCriteriaDescription",
+  "rdfs:label": {
+    "en-US": "Revocation Criteria"
+  },
+  "rdfs:comment": {
+    "en-US": "Textual description providing information about the removal criteria for an awarded credential."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/revocationCriteriaDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:RevocationProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

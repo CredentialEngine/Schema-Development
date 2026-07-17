@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:Citizen",
+    "skos:prefLabel": {
+        "en-US": "Citizen"
+    },
+    "skos:definition": {
+        "en-US": "Person who is a legally recognized subject of a particular nation, state, province, or commonwealth."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/Citizen/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

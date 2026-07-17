@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleFrequency:Weekly",
+  "skos:prefLabel": {
+    "en-US": "Weekly"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is on a weekly basis, typically occurring once per week."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/Weekly/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleFrequency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

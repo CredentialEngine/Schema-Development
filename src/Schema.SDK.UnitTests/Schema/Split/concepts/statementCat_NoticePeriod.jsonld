@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:NoticePeriod",
+    "skos:prefLabel": {
+        "en-US": "Notice Period"
+    },
+    "skos:definition": {
+        "en-US": "Statement that defines the time required for advance notice of actions such as termination or renewal."
+    },
+    "dct:description": {
+        "en-US": "Often expressed in days, months, or academic terms."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/NoticePeriod/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

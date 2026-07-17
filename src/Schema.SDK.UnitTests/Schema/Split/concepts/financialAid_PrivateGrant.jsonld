@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:PrivateGrant",
+    "skos:prefLabel": {
+        "en-US": "Private Grant"
+    },
+    "skos:definition": {
+        "en-US": "Financial subsidy, which doesn’t require repayment, based on meeting requirements determined by a private entity, including employers."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/PrivateGrant/json",
+    "skos:broader": [
+        "financialAid:Grant"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#PrivateGrants"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

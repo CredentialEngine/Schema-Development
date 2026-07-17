@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:evaluationEvidence",
+  "rdfs:label": {
+    "en-US": "Evaluation Evidence"
+  },
+  "rdfs:comment": {
+    "en-US": "Summary of evidence about this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/evaluationEvidence/json",
+  "schema:domainIncludes": [
+    "ceterms:TransferValueProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:EvaluationOutcome"
+  ]
+}

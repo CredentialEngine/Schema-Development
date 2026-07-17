@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionCategory:Competency",
+    "skos:prefLabel": {
+        "en-US": "Competency"
+    },
+    "skos:definition": {
+        "en-US": "Aggregation of Competencies."
+    },
+    "vann:usageNote": {
+        "en-US": "Use ceasn:CompetencyFramework for aggregations of competencies that are logically related."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/Competency/json",
+    "skos:inScheme": [
+        "ceterms:CollectionCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CollectionCategory"
+    ]
+}

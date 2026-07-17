@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:evaluationProcess",
+  "rdfs:label": {
+    "en-US": "Evaluation Process"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of a process used to appraise this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/evaluationProcess/json",
+  "schema:domainIncludes": [
+    "ceterms:TransferValueProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:ProcessProfile"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:audienceLevelType",
+    "rdfs:label": {
+        "en-US": "Audience Level Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of level indicating a point in a progression through an educational or training context, for which the resource is intended; select from an existing enumeration of such types."
+    },
+    "vann:usageNote": {
+        "en-US": "Best practice is to use terms from the CTDL Audience Level vocabulary."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/audienceLevelType/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:credentialAlignment"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Rubric",
+        "ceterms:AcademicCertificate",
+        "ceterms:ApprenticeshipCertificate",
+        "ceterms:AssessmentProfile",
+        "ceterms:AssociateDegree",
+        "ceterms:AssociateOfAppliedArtsDegree",
+        "ceterms:AssociateOfAppliedScienceDegree",
+        "ceterms:AssociateOfArtsDegree",
+        "ceterms:AssociateOfScienceDegree",
+        "ceterms:BachelorDegree",
+        "ceterms:BachelorOfArtsDegree",
+        "ceterms:BachelorOfScienceDegree",
+        "ceterms:Badge",
+        "ceterms:BasicTechnicalCertificate",
+        "ceterms:Certificate",
+        "ceterms:CertificateOfCompletion",
+        "ceterms:CertificateOfParticipation",
+        "ceterms:Certification",
+        "ceterms:ConditionProfile",
+        "ceterms:Course",
+        "ceterms:Credential",
+        "ceterms:CredentialType",
+        "ceterms:Degree",
+        "ceterms:DigitalBadge",
+        "ceterms:Diploma",
+        "ceterms:DoctoralDegree",
+        "ceterms:GeneralEducationDevelopment",
+        "ceterms:GeneralEducationLevel1Certificate",
+        "ceterms:GeneralEducationLevel2Certificate",
+        "ceterms:HigherEducationLevel1Certificate",
+        "ceterms:HigherEducationLevel2Certificate",
+        "ceterms:JourneymanCertificate",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:License",
+        "ceterms:MasterCertificate",
+        "ceterms:MasterDegree",
+        "ceterms:MasterOfArtsDegree",
+        "ceterms:MasterOfScienceDegree",
+        "ceterms:MicroCredential",
+        "ceterms:OpenBadge",
+        "ceterms:PostBaccalaureateCertificate",
+        "ceterms:PostMasterCertificate",
+        "ceterms:PreApprenticeshipCertificate",
+        "ceterms:ProfessionalCertificate",
+        "ceterms:ProfessionalDoctorate",
+        "ceterms:ProficiencyCertificate",
+        "ceterms:QualityAssuranceCredential",
+        "ceterms:ResearchDoctorate",
+        "ceterms:SecondaryEducationCertificate",
+        "ceterms:SecondarySchoolDiploma",
+        "ceterms:SpecialistDegree",
+        "ceterms:TechnicalLevel1Certificate",
+        "ceterms:TechnicalLevel2Certificate",
+        "ceterms:TechnicalLevel3Certificate",
+        "ceterms:WorkBasedLearningCertificate"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ],
+    "meta:targetScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "owl:equivalentProperty": [
+        "dct:educationLevel"
+    ]
+}

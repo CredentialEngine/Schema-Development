@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:verificationService",
+  "rdfs:label": {
+    "en-US": "Verification Service URL"
+  },
+  "rdfs:comment": {
+    "en-US": "Direct access to the verification service."
+  },
+  "dct:description": {
+    "en-US": "This property identifies machine-accessible services, such as API endpoints, that provide direct access to the verification service being described."
+  },
+  "vann:usageNote": {
+    "en-US": "For general webpages describing the service, use the subjectWebpage property."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/verificationService/json",
+  "schema:domainIncludes": [
+    "ceterms:VerificationServiceProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

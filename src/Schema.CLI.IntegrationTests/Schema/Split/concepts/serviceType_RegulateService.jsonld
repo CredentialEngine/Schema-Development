@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "serviceType:RegulateService",
+  "skos:prefLabel": {
+    "en-US": "Regulate Service"
+  },
+  "skos:definition": {
+    "en-US": "Agent service monitors and enforces legal requirements or standards."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/RegulateService/json",
+  "skos:inScheme": [
+    "ceterms:AgentServiceType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AgentServiceType"
+  ]
+}

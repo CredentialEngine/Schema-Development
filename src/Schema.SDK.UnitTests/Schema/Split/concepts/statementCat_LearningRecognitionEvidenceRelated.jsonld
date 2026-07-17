@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:LearningRecognitionEvidenceRelated",
+    "skos:prefLabel": {
+        "en-US": "Learning Recognition Evidence Related"
+    },
+    "skos:definition": {
+        "en-US": "Statement that defines how evidence of prior learning evidence is accepted for evaluation."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/LearningRecognitionEvidenceRelated/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

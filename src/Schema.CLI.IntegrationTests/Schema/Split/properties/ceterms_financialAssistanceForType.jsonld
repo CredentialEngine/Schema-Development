@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:financialAssistanceForType",
+  "rdfs:label": {
+    "en-US": "Financial Assistance For Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of use for which financial assistance is applicable."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/financialAssistanceForType/json",
+  "schema:domainIncludes": [
+    "ceterms:FinancialAssistanceProfile"
+  ],
+  "schema:rangeIncludes": [
+    "skos:Concept"
+  ],
+  "meta:targetScheme": [
+    "ceterms:CostType"
+  ]
+}

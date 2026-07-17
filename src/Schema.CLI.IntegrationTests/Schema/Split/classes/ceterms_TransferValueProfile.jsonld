@@ -1,0 +1,54 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:TransferValueProfile",
+  "rdfs:label": {
+    "en-US": "Transfer Value Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of learning value from one context when transferred to another."
+  },
+  "dct:description": {
+    "en-US": "The learning value described in a Transfer Value Profile is commonly expressed as credit earned in one context and applied toward another, enabling a person to fulfill requirements without repeating equivalent learning. Other forms of recognition of prior learning, such as competencies or exemptions, may also be described."
+  },
+  "vann:usageNote": {
+    "en-US": "Transfer Value Profile is used to describe learning value in contexts such as recognition of prior learning or transfer. It does not describe the inherent credit value of a resource within the organization that owns or offers it; use ceterms:creditValue with a Value Profile for that purpose."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/TransferValueProfile/json",
+  "meta:domainFor": [
+    "ceterms:administrationProcess",
+    "ceterms:alternateName",
+    "ceterms:appealProcess",
+    "ceterms:applicability",
+    "ceterms:commonConditions",
+    "ceterms:complaintProcess",
+    "ceterms:ctid",
+    "ceterms:description",
+    "ceterms:developmentProcess",
+    "ceterms:endDate",
+    "ceterms:evaluationEvidence",
+    "ceterms:evaluationProcess",
+    "ceterms:identifier",
+    "ceterms:inCatalog",
+    "ceterms:isMemberOf",
+    "ceterms:latestVersion",
+    "ceterms:lifeCycleStatusType",
+    "ceterms:maintenanceProcess",
+    "ceterms:name",
+    "ceterms:nextVersion",
+    "ceterms:ownedBy",
+    "ceterms:previousVersion",
+    "ceterms:requires",
+    "ceterms:reviewProcess",
+    "ceterms:startDate",
+    "ceterms:subjectWebpage",
+    "ceterms:supersededBy",
+    "ceterms:supersedes",
+    "ceterms:transferValue",
+    "ceterms:transferValueFor",
+    "ceterms:transferValueFrom",
+    "ceterms:versionCode",
+    "ceterms:versionIdentifier"
+  ]
+}
