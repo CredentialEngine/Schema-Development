@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "assessUse:Formative",
+  "skos:prefLabel": {
+    "en-US": "Formative Assessment"
+  },
+  "skos:definition": {
+    "en-US": "Formal and informal assessment procedures conducted during the learning process to support intentional modification in teaching and learning activities in order to improve learner attainment."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/assessUse/Formative/json",
+  "skos:inScheme": [
+    "ceterms:AssessmentUse"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AssessmentUse"
+  ]
+}

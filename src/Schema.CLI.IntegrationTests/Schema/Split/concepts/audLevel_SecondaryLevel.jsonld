@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:SecondaryLevel",
+  "skos:prefLabel": {
+    "en-US": "Secondary School or Equivalent"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those attending secondary (high-school) level programs."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/SecondaryLevel/json",
+  "skos:narrower": [
+    "audLevel:LowerSecondary",
+    "audLevel:UpperSecondary"
+  ],
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AudienceLevel"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:externalResearch",
+    "rdfs:label": {
+        "en-US": "External Research"
+    },
+    "rdfs:comment": {
+        "en-US": "Research that supports or validates one or more aspects of the entity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/externalResearch/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

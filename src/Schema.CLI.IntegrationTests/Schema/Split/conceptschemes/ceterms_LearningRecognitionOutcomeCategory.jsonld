@@ -1,0 +1,33 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:LearningRecognitionOutcomeCategory",
+  "rdfs:label": {
+    "en-US": "Learning Recognition Outcome Category"
+  },
+  "rdfs:comment": {
+    "en-US": "Concepts describing outcomes of learning recognition."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningRecognitionOutcomeCategory/json",
+  "meta:hasConcept": [
+    "lrOutcome:AdvancedStanding",
+    "lrOutcome:CreditAwarded",
+    "lrOutcome:CreditEquivalency",
+    "lrOutcome:EligibilityMet",
+    "lrOutcome:ExemptionWaiver",
+    "lrOutcome:NotRecognized",
+    "lrOutcome:Placement",
+    "lrOutcome:RecognitionOnly"
+  ],
+  "skos:hasTopConcept": [
+    "lrOutcome:AdvancedStanding",
+    "lrOutcome:CreditAwarded",
+    "lrOutcome:CreditEquivalency",
+    "lrOutcome:EligibilityMet",
+    "lrOutcome:ExemptionWaiver",
+    "lrOutcome:NotRecognized",
+    "lrOutcome:Placement",
+    "lrOutcome:RecognitionOnly"
+  ]
+}

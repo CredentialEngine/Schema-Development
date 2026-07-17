@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:performanceLevelType",
+    "rdfs:label": {
+        "en-US": "Performance Level Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of required or expected human performance level; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/performanceLevelType/json",
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

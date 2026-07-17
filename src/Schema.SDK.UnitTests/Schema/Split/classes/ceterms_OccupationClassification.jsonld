@@ -1,0 +1,16 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:OccupationClassification",
+    "rdfs:label": {
+        "en-US": "Occupation Classification"
+    },
+    "rdfs:comment": {
+        "en-US": "Class of concept schemes identifying occupations such as the Standard Occupational Classification (SOC) system in the U.S. and the European Skills/Competences, Qualifications and Occupations (ESCO)."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/OccupationClassification/json",
+    "rdfs:subClassOf": [
+        "ceterms:CredentialFramework"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:LaborUnion",
+  "skos:prefLabel": {
+    "en-US": "Labor Union"
+  },
+  "skos:definition": {
+    "en-US": "Membership organization of workers formed for the purpose of advancing its members' interests in respect to wages, benefits, and working conditions."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/LaborUnion/json",
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:OrganizationType"
+  ]
+}

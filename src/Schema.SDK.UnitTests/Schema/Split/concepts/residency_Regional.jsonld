@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "residency:Regional",
+    "skos:prefLabel": {
+        "en-US": "Regional"
+    },
+    "skos:definition": {
+        "en-US": "Legal residency or domicile status of the agent is the same geographic or political region as that of the relevant activity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/residency/Regional/json",
+    "skos:inScheme": [
+        "ceterms:Residency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Residency"
+    ]
+}

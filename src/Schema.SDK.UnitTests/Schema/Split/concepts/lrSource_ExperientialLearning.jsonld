@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrSource:ExperientialLearning",
+    "skos:prefLabel": {
+        "en-US": "Experiential Learning"
+    },
+    "skos:definition": {
+        "en-US": "Learning acquired through direct, hands-on experience with guided reflection in real or simulated settings."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/ExperientialLearning/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ]
+}

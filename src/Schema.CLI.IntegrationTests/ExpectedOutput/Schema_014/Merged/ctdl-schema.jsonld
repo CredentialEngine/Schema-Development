@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "ceterms:TestClass",
+            "@type": "rdfs:Class",
+            "vs:term_status": "stable",
+            "rdfs:label": {
+                "en": "Test Class"
+            }
+        },
+        {
+            "@id": "ceterms:TestProperty",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": [
+                "ceterms:TestClass"
+            ],
+            "schema:rangeIncludes": [
+                "xsd:string"
+            ]
+        },
+        {
+            "@id": "ceterms:TestConceptScheme",
+            "@type": "skos:ConceptScheme"
+        },
+        {
+            "@id": "ceterms:TestConcept",
+            "@type": "skos:Concept",
+            "skos:inScheme": [
+                "ceterms:TestConceptScheme"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lifeCycle:Ceasing",
+  "skos:prefLabel": {
+    "en-US": "Ceasing"
+  },
+  "skos:definition": {
+    "en-US": "Resource is in the process of becoming no longer active, current, ongoing, offered, operational, or available."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lifeCycle/Ceasing/json",
+  "skos:narrower": [
+    "lifeCycle:TeachOut"
+  ],
+  "skos:inScheme": [
+    "ceterms:LifeCycleStatus"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LifeCycleStatus"
+  ]
+}

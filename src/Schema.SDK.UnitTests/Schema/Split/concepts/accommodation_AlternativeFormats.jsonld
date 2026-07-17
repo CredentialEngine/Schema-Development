@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:AlternativeFormats",
+    "skos:prefLabel": {
+        "en-US": "Alternative Formats"
+    },
+    "skos:definition": {
+        "en-US": "Alternative formats for print and display materials."
+    },
+    "dct:description": {
+        "en-US": "Examples include large print books or accessible PDFs."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/AlternativeFormats/json",
+    "skos:broader": [
+        "accommodation:ResourceAndServiceAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

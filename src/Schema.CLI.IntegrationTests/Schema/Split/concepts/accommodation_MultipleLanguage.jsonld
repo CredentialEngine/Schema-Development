@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:MultipleLanguage",
+  "skos:prefLabel": {
+    "en-US": "Multiple Language"
+  },
+  "skos:definition": {
+    "en-US": "Provision of materials or communication in languages other than the primary language used."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/MultipleLanguage/json",
+  "skos:broader": [
+    "accommodation:ResourceAndServiceAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

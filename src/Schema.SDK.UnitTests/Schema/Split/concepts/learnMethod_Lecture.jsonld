@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:Lecture",
+    "skos:prefLabel": {
+        "en-US": "Lecture"
+    },
+    "skos:definition": {
+        "en-US": "Primary method is presentation by an instructor of learning material and may include student discussion."
+    },
+    "dct:description": {
+        "en-US": "Lecture courses may involve student questions and answers, but the role of the instructor is clearly differentiated from that of the students."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Lecture/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

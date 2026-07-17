@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:Internship",
+  "skos:prefLabel": {
+    "en-US": "Internship"
+  },
+  "skos:definition": {
+    "en-US": "Time-limited work offered by an organization approved by a qualified institution to gain experience or satisfy requirements for another resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Internship/json",
+  "skos:broader": [
+    "financialAid:WorkBased"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

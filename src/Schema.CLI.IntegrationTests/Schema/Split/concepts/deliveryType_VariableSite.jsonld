@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "deliveryType:VariableSite",
+  "skos:prefLabel": {
+    "en-US": "Variable Site"
+  },
+  "skos:definition": {
+    "en-US": "Delivery is not tied to a specific site."
+  },
+  "dct:description": {
+    "en-US": "Includes physical/in-person delivery to a range of locations, whether predetermined or customized to a specific need. Examples include equipment for dispensing information to mobile devices in locations with limited/no connection."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/deliveryType/VariableSite/json",
+  "skos:inScheme": [
+    "ceterms:Delivery"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Delivery"
+  ]
+}

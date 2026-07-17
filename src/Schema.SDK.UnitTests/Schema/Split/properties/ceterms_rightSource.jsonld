@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:rightSource",
+    "rdfs:label": {
+        "en-US": "Right Source"
+    },
+    "rdfs:comment": {
+        "en-US": "Right hand parameter of a constraint."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/rightSource/json",
+    "schema:domainIncludes": [
+        "ceterms:Constraint"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:Property",
+        "rdfs:Class",
+        "rdfs:Literal",
+        "skos:Concept"
+    ]
+}

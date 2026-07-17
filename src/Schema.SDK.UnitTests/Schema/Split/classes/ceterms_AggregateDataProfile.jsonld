@@ -1,0 +1,33 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:AggregateDataProfile",
+    "rdfs:label": {
+        "en-US": "Aggregate Data Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Resource containing summary statistical data."
+    },
+    "vann:usageNote": {
+        "en-US": "To express more complex data, use qdata:DataSetProfile."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AggregateDataProfile/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:currency",
+        "ceterms:dateEffective",
+        "ceterms:demographicInformation",
+        "ceterms:description",
+        "ceterms:expirationDate",
+        "ceterms:highEarnings",
+        "ceterms:jobsObtained",
+        "ceterms:jurisdiction",
+        "ceterms:lowEarnings",
+        "ceterms:medianEarnings",
+        "ceterms:name",
+        "ceterms:numberAwarded",
+        "ceterms:postReceiptMonths",
+        "ceterms:source"
+    ]
+}

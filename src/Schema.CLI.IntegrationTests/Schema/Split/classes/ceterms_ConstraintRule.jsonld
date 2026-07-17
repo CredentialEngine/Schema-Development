@@ -1,0 +1,16 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:ConstraintRule",
+  "rdfs:label": {
+    "en-US": "Constraint Rule"
+  },
+  "rdfs:comment": {
+    "en-US": "Abstract class of executable constraints."
+  },
+  "dct:description": {
+    "en-US": "An instance of the Constraint Rule class is a deployable machine solution for executing pathway constraints using specifications such as XPath, JSONPath, JsonLogic, ShEx, SHACL, BPMN, XPDL and BPEL."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ConstraintRule/json"
+}

@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceasn:knowledgeEmbodied",
+    "rdfs:label": {
+        "en-US": "Knowledge Embodied"
+    },
+    "rdfs:comment": {
+        "en-US": "Body of information embodied either directly or indirectly in this resource."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceasn/knowledgeEmbodied/json",
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ]
+}

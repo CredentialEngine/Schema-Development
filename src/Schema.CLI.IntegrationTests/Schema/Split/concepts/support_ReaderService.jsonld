@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:ReaderService",
+  "skos:prefLabel": {
+    "en-US": "Reader Service"
+  },
+  "skos:definition": {
+    "en-US": "Service for reading text or describing visual content."
+  },
+  "vann:usageNote": {
+    "en-US": "For pre-recorded formats such as audio books use the accommodationType property with the value \"AlternativeFormats\"."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/ReaderService/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00314"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

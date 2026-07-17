@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:Primary",
+  "skos:prefLabel": {
+    "en-US": "Primary"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those who are acquiring fundamental skills in reading, writing and mathematics and establishing a solid foundation for learning."
+  },
+  "dct:description": {
+    "en-US": "Aligns to ISCED 2011 level 1 – Primary education."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/Primary/json",
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AudienceLevel"
+  ]
+}

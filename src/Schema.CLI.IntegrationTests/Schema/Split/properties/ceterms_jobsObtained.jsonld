@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:jobsObtained",
+  "rdfs:label": {
+    "en-US": "Jobs Obtained"
+  },
+  "rdfs:comment": {
+    "en-US": "Number of jobs obtained in the region during a given timeframe."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/jobsObtained/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:EmploymentOutcomeProfile"
+  ],
+  "schema:rangeIncludes": [
+    "schema:QuantitativeValue"
+  ]
+}

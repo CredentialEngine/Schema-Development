@@ -1,0 +1,229 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - main
+
+stages:
+- stage: Build
+  displayName: Build + Test
+  jobs:
+  - job: LinuxBuild
+    displayName: Linux Build
+    pool:
+      vmImage: ubuntu-latest
+
+    variables:
+      BuildConfiguration: 'Debug'
+      BuildPlatform: 'x64'
+      DotNetVersion: '10.0.203'
+
+    steps:
+
+    - task: PowerShell@2
+      displayName: "Set Build Number"
+      inputs:
+        targetType: inline
+        script: |
+          $year = (Get-Date).ToString('yyyy')
+          $month = (Get-Date).ToString('MM')
+          $day = (Get-Date).ToString('dd')
+          $revision = "$env:BUILD_BUILDID"
+
+          $version = "$year.$month.$day.$revision"
+
+          Write-Host "##vso[build.updatebuildnumber]$version"
+          Write-Host "##vso[task.setvariable variable=VersionNumber]$version"
+
+    - task: UseDotNet@2
+      displayName: 'Install .NET SDK'
+      inputs:
+        packageType: sdk
+        version: '$(DotNetVersion)'
+
+    - script: dotnet --info
+      displayName: '.NET Info'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore Packages'
+      inputs:
+        command: 'restore'
+        projects: 'src/**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Build Solution'
+      env:
+        BUILD_CONFIGURATION: $(BuildConfiguration)
+      inputs:
+        command: 'build'
+        projects: 'src/**/*.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          -p:Platform=$(BuildPlatform)
+          --no-restore
+          -p:ContinuousIntegrationBuild=true
+          -p:Version=$(VersionNumber)
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Run Tests'
+      env:
+        BUILD_CONFIGURATION: $(BuildConfiguration)
+      inputs:
+        command: 'test'
+        projects: 'src/**/*Tests/*.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          -p:Platform=$(BuildPlatform)
+          --no-build
+          --verbosity normal
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish CLI'
+      inputs:
+        command: 'publish'
+        publishWebProjects: false
+        projects: 'src/Schema.CLI/Schema.CLI.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          -p:Platform=$(BuildPlatform)
+          --output $(Build.ArtifactStagingDirectory)/publish/Schema.CLI
+          --no-build
+          -p:Version=$(VersionNumber)
+
+    - task: CopyFiles@2
+      displayName: 'Stage binaries for signing'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'
+        Contents: |
+          src/**/bin/$(BuildConfiguration)/**/*.dll
+          src/**/bin/$(BuildConfiguration)/**/*.exe
+        TargetFolder: '$(Build.ArtifactStagingDirectory)/signed-binaries'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifacts'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+- stage: Release
+  displayName: Release
+  dependsOn: Build
+
+  jobs:
+  - job: WindowsRelease
+    displayName: Build + Sign + Publish
+
+    pool:
+      vmImage: windows-latest
+
+    variables:
+      BuildConfiguration: 'Release'
+      DotNetVersion: '10.0.203'
+
+      TrustedSigningEndpoint: '$(ARTIFACT_SIGNING_ENDPOINT)'
+      TrustedSigningAccount: '$(ARTIFACT_SIGNING_RESOURCE_NAME)'
+      TrustedSigningProfile: '$(CERTIFICATE_PROFILE_NAME)'
+
+    steps:
+
+    - checkout: self
+      clean: true
+
+    - task: PowerShell@2
+      displayName: "Set Build Number"
+      inputs:
+        targetType: inline
+        script: |
+          $year = (Get-Date).ToString('yyyy')
+          $month = (Get-Date).ToString('MM')
+          $day = (Get-Date).ToString('dd')
+          $revision = "$env:BUILD_BUILDID"
+
+          $version = "$year.$month.$day.$revision"
+
+          Write-Host "##vso[build.updatebuildnumber]$version"
+          Write-Host "##vso[task.setvariable variable=VersionNumber]$version"
+
+    - task: UseDotNet@2
+      displayName: 'Install .NET SDK'
+      inputs:
+        packageType: sdk
+        version: '$(DotNetVersion)'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore'
+      inputs:
+        command: restore
+        projects: 'src/**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Build'
+      inputs:
+        command: build
+        projects: 'src/**/*.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          --no-restore
+          -p:ContinuousIntegrationBuild=true
+          -p:Version=$(VersionNumber)
+
+    - powershell: |
+
+        Write-Host "Looking for binaries..."
+
+        Get-ChildItem `
+          "$(Build.SourcesDirectory)\src" `
+          -Recurse `
+          -Include *.dll,*.exe |
+        Select-Object FullName
+
+      displayName: 'Debug binaries'
+
+    - task: ArtifactSigning@1
+      displayName: 'Sign binaries'
+      inputs:
+        AzureTenantID: '$(AZURE_TENANT_ID)'
+        AzureClientID: '$(AZURE_CLIENT_ID)'
+        AzureClientSecret: '$(AZURE_CLIENT_SECRET)'
+
+        Endpoint: '$(TrustedSigningEndpoint)'
+        ArtifactSigningAccountName: '$(TrustedSigningAccount)'
+        CertificateProfileName: '$(TrustedSigningProfile)'
+
+        FilesFolder: '$(Build.SourcesDirectory)'
+
+        FilesFolderFilter: 'Schema.SDK.dll,Schema.CLI.dll,Schema.CLI.exe'
+        FilesFolderRecurse: true
+        FilesFolderDepth: 20
+
+        FileDigest: 'SHA256'
+
+        TimestampRfc3161: 'http://timestamp.acs.microsoft.com'
+        TimestampDigest: 'SHA256'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Pack signed NuGet'
+      inputs:
+        command: pack
+        packagesToPack: 'src/Schema.SDK/Schema.SDK.csproj'
+        configuration: '$(BuildConfiguration)'
+        packDirectory: '$(Build.ArtifactStagingDirectory)/nuget'
+        nobuild: true
+        versioningScheme: 'byEnvVar'
+        versionEnvVar: 'VersionNumber'
+
+    - task: NuGetAuthenticate@1
+      displayName: 'Authenticate NuGet'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Push package'
+      inputs:
+        command: push
+        packagesToPush: '$(Build.ArtifactStagingDirectory)/nuget/*.nupkg'
+        nuGetFeedType: internal
+        publishVstsFeed: 'credential-engine'

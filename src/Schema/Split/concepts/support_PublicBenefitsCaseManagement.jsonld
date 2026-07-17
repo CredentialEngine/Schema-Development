@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:PublicBenefitsCaseManagement",
+  "skos:prefLabel": {
+    "en-US": "Public Benefits Case Management"
+  },
+  "skos:definition": {
+    "en-US": "Specialized, long-term, and client-centered service for delivering comprehensive public benefits services that involves ongoing assessment, planning, coordination, monitoring, and evaluation of a client's needs and services provided related to public assistance programs."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/PublicBenefitsCaseManagement/json",
+  "skos:relatedMatch": [
+    "ceds:000273/#00294"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

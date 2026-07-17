@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetTask",
+  "rdfs:label": {
+    "en-US": "Target Task"
+  },
+  "rdfs:comment": {
+    "en-US": "Task that is the focus or target of this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetTask/json",
+  "schema:domainIncludes": [
+    "ceasn:RubricCriterion",
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Task"
+  ]
+}

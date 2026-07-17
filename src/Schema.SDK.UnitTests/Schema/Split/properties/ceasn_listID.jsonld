@@ -1,0 +1,36 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceasn:listID",
+    "rdfs:label": {
+        "en-US": "List ID"
+    },
+    "rdfs:comment": {
+        "en-US": "An alphanumeric string indicating the relative position of a resource in an ordered list of resources."
+    },
+    "dct:description": {
+        "en-US": "Examples of such strings include: such as \"A\", \"B\", or \"a\", \"b\", or \"I\", \"II\", or \"1\", \"2\"."
+    },
+    "vann:usageNote": {
+        "en-US": "Punctuation accompanying alphanumeric strings should not be included."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceasn/listID/json",
+    "rdfs:subPropertyOf": [
+        "asn:listID"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CriterionLevel",
+        "ceasn:RubricCriterion",
+        "ceasn:RubricLevel",
+        "ceterms:StructuredStatement",
+        "ceterms:Task"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "owl:equivalentProperty": [
+        "case:v1p0/listEnumeration"
+    ]
+}

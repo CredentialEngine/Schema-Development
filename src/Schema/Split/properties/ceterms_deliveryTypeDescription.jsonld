@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:deliveryTypeDescription",
+  "rdfs:label": {
+    "en-US": "Delivery Type Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Detailed description of the delivery type of an assessment or learning opportunity."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/deliveryTypeDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram",
+    "ceterms:ScheduledOffering"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

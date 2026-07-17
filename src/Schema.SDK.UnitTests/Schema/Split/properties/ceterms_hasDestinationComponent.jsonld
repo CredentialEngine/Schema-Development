@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasDestinationComponent",
+    "rdfs:label": {
+        "en-US": "Has Destination Component"
+    },
+    "rdfs:comment": {
+        "en-US": "Goal or destination node of the pathway."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasDestinationComponent/json",
+    "schema:domainIncludes": [
+        "ceterms:Pathway"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:AssessmentComponent",
+        "ceterms:BasicComponent",
+        "ceterms:CocurricularComponent",
+        "ceterms:CollectionComponent",
+        "ceterms:CompetencyComponent",
+        "ceterms:CourseComponent",
+        "ceterms:CredentialComponent",
+        "ceterms:ExtracurricularComponent",
+        "ceterms:JobComponent",
+        "ceterms:MultiComponent",
+        "ceterms:WorkExperienceComponent"
+    ]
+}

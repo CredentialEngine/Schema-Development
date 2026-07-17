@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:supportServiceStatementDescription",
+  "rdfs:label": {
+    "en-US": "Support Service Statement Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of the nature of support services offered by the organization."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/supportServiceStatementDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

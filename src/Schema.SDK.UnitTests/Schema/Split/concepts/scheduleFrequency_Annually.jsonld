@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleFrequency:Annually",
+    "skos:prefLabel": {
+        "en-US": "Annually"
+    },
+    "skos:definition": {
+        "en-US": "Schedule is on an annual basis, typically occurring once per year."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/Annually/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleFrequency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

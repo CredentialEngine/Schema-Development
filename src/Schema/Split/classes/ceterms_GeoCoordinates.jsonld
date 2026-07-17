@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:GeoCoordinates",
+  "rdfs:label": {
+    "en-US": "Geographic Coordinates"
+  },
+  "rdfs:comment": {
+    "en-US": "Geographic coordinates of a place or event including latitude and longitude as well as other locational information."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/GeoCoordinates/json",
+  "rdfs:subClassOf": [
+    "schema:StructuredValue"
+  ],
+  "owl:equivalentClass": [
+    "schema:GeoCoordinates"
+  ],
+  "meta:domainFor": [
+    "ceterms:alternateName",
+    "ceterms:geoURI",
+    "ceterms:latitude",
+    "ceterms:longitude",
+    "ceterms:name"
+  ]
+}

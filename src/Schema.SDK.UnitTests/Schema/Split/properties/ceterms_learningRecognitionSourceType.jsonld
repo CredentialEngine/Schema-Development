@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:learningRecognitionSourceType",
+    "rdfs:label": {
+        "en-US": "Learning Recognition Source Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of context from which prior learning may be recognized; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/learningRecognitionSourceType/json",
+    "schema:domainIncludes": [
+        "ceterms:PriorLearningPolicy",
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ]
+}

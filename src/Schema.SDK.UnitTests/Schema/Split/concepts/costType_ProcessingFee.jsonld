@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:ProcessingFee",
+    "skos:prefLabel": {
+        "en-US": "Processing Fee"
+    },
+    "skos:definition": {
+        "en-US": "Cost for processing or expediting information related to the resource being described."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/ProcessingFee/json",
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CostType"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionCategory:ETPL",
+    "skos:prefLabel": {
+        "en-US": "Eligible Training Providers List"
+    },
+    "skos:definition": {
+        "en-US": "Training providers meeting the requirements stipulated in the U.S. Workforce Innovation and Opportunity Act per the promulgating body."
+    },
+    "dct:description": {
+        "en-US": "This list includes the Learning Opportunities and Credentials offered by training providers that have met requirements."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/ETPL/json",
+    "skos:inScheme": [
+        "ceterms:CollectionCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CollectionCategory"
+    ]
+}

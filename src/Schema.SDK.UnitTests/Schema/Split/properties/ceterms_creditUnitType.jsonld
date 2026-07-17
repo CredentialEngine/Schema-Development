@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:creditUnitType",
+    "rdfs:label": {
+        "en-US": "Credit Unit Type"
+    },
+    "rdfs:comment": {
+        "en-US": "The type of credit associated with the credit awarded or required."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/creditUnitType/json",
+    "schema:domainIncludes": [
+        "ceterms:ValueProfile"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:CreditUnit"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:weight",
+  "rdfs:label": {
+    "en-US": "Weight"
+  },
+  "rdfs:comment": {
+    "en-US": "Measurement of the weight, degree, percent, or strength of a recommendation, requirement, or comparison."
+  },
+  "vann:usageNote": {
+    "en-US": "Best practice is to assign a decimal value weight between 0 and 1 that indicates the strength of the assertion, with 0 being weakest and 1 being strongest."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/weight/json",
+  "schema:domainIncludes": [
+    "ceterms:AlignmentObject",
+    "ceterms:ConditionProfile",
+    "ceterms:CredentialAlignmentObject",
+    "ceterms:FinancialAlignmentObject"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:float"
+  ]
+}

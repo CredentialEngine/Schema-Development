@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:creditUnitTypeDescription",
+    "rdfs:label": {
+        "en-US": "Credit Unit Type Description"
+    },
+    "rdfs:comment": {
+        "en-US": "Detailed description of credit unit type."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/creditUnitTypeDescription/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile",
+        "ceterms:ConditionProfile",
+        "ceterms:Course",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

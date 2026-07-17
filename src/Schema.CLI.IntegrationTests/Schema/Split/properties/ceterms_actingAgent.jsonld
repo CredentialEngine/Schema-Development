@@ -1,0 +1,35 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:actingAgent",
+  "rdfs:label": {
+    "en-US": "Acting Agent"
+  },
+  "rdfs:comment": {
+    "en-US": "Organization or person performing an action."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/actingAgent/json",
+  "schema:domainIncludes": [
+    "ceterms:AccreditAction",
+    "ceterms:AdvancedStandingAction",
+    "ceterms:ApproveAction",
+    "ceterms:CredentialingAction",
+    "ceterms:OfferAction",
+    "ceterms:RecognizeAction",
+    "ceterms:RegistrationAction",
+    "ceterms:RegulateAction",
+    "ceterms:RenewAction",
+    "ceterms:RevokeAction",
+    "ceterms:RightsAction",
+    "ceterms:WorkforceDemandAction"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "owl:equivalentProperty": [
+    "schema:agent"
+  ]
+}

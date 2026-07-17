@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:minimumDuration",
+    "rdfs:label": {
+        "en-US": "Minimum Duration"
+    },
+    "rdfs:comment": {
+        "en-US": "Minimum overall span of time it will take to complete the activity, event, or resource."
+    },
+    "dct:description": {
+        "en-US": "This is intended to indicate overall time span, regardless of what portion of that time is spent actively pursuing the completion of the activity, event, or resource."
+    },
+    "vann:usageNote": {
+        "en-US": "If a resource takes 50 hours over a span of 3-9 months to complete, use this to record 3 months as P3M."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/minimumDuration/json",
+    "schema:domainIncludes": [
+        "ceterms:DurationProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:Duration"
+    ]
+}

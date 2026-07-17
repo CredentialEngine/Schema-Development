@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "residency:Local",
+  "skos:prefLabel": {
+    "en-US": "Local"
+  },
+  "skos:definition": {
+    "en-US": "Legal residency or domicile status of the agent is local."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/residency/Local/json",
+  "skos:inScheme": [
+    "ceterms:Residency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Residency"
+  ]
+}

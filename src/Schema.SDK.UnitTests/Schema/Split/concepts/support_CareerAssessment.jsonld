@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:CareerAssessment",
+    "skos:prefLabel": {
+        "en-US": "Career Assessment"
+    },
+    "skos:definition": {
+        "en-US": "Personalized process that helps individuals to identify their interests, skills, values, and personality traits, and to explore how they relate to different career paths and job opportunities."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/CareerAssessment/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

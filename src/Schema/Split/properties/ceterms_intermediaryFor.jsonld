@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:intermediaryFor",
+  "rdfs:label": {
+    "en-US": "Intermediary For"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource for which this resource is an intermediary."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/intermediaryFor/json",
+  "schema:domainIncludes": [
+    "ceterms:TransferIntermediary"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:TransferValueProfile"
+  ]
+}

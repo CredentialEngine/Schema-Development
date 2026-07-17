@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:degreeMinor",
+    "rdfs:label": {
+        "en-US": "Degree Minor"
+    },
+    "rdfs:comment": {
+        "en-US": "Optional, secondary field of study of a degree-seeking student."
+    },
+    "vann:usageNote": {
+        "en-US": "Where possible, values should be taken from published frameworks defining degree majors, minors, and concentrations such as the U.S. National Center for Education Statistics' (NCES) Classification of Instructional Programs (CIP)."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/degreeMinor/json",
+    "schema:domainIncludes": [
+        "ceterms:AssociateDegree",
+        "ceterms:AssociateOfAppliedArtsDegree",
+        "ceterms:AssociateOfAppliedScienceDegree",
+        "ceterms:AssociateOfArtsDegree",
+        "ceterms:AssociateOfScienceDegree",
+        "ceterms:BachelorDegree",
+        "ceterms:BachelorOfArtsDegree",
+        "ceterms:BachelorOfScienceDegree",
+        "ceterms:Degree",
+        "ceterms:DoctoralDegree",
+        "ceterms:MasterDegree",
+        "ceterms:MasterOfArtsDegree",
+        "ceterms:MasterOfScienceDegree"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

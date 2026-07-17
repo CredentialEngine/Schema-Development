@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "serviceType:OfferService",
+    "skos:prefLabel": {
+        "en-US": "Offer Service"
+    },
+    "skos:definition": {
+        "en-US": "Agent service offers resources such as credentials, assessments, or learning opportunities."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/OfferService/json",
+    "skos:inScheme": [
+        "ceterms:AgentServiceType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgentServiceType"
+    ]
+}

@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.idea
+.vs
+bin
+obj
+ActualOutput
+Schema-*
+*.user

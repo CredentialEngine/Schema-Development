@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:targetNodeName",
+    "rdfs:label": {
+        "en-US": "Target Node Name"
+    },
+    "rdfs:comment": {
+        "en-US": "Name of an individual entry in a formally defined framework that is the target of an alignment."
+    },
+    "vann:usageNote": {
+        "en-US": "\"Framework\" may be interpreted broadly to include any scheme or schema for organizing and referencing resources."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetNodeName/json",
+    "schema:domainIncludes": [
+        "ceterms:AlignmentObject",
+        "ceterms:CredentialAlignmentObject",
+        "ceterms:FinancialAlignmentObject"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "owl:equivalentProperty": [
+        "lrmi:targetName",
+        "schema:targetName"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:leftAction",
+    "rdfs:label": {
+        "en-US": "Left Action"
+    },
+    "rdfs:comment": {
+        "en-US": "Action performed on the left source; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/leftAction/json",
+    "schema:domainIncludes": [
+        "ceterms:Constraint"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:ArrayOperationCategory"
+    ]
+}

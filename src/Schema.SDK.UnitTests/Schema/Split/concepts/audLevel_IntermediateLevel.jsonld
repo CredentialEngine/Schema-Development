@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:IntermediateLevel",
+    "skos:prefLabel": {
+        "en-US": "Intermediate Level"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those with some experience, where knowledge, skills, and competency expectations are staged for development beyond novice-level and in preparation for a more advanced-level."
+    },
+    "dct:description": {
+        "en-US": "An individual at this level has foundational competencies to function independently with occasional supervision."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/IntermediateLevel/json",
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AudienceLevel"
+    ]
+}

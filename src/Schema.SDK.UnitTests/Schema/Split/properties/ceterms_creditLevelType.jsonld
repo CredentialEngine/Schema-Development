@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:creditLevelType",
+    "rdfs:label": {
+        "en-US": "Credit Level Type"
+    },
+    "rdfs:comment": {
+        "en-US": "The level of credit associated with the credit awarded or required."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/creditLevelType/json",
+    "schema:domainIncludes": [
+        "ceterms:ValueProfile"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:AudienceLevel"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:GraduateLevel",
+  "skos:prefLabel": {
+    "en-US": "Graduate Level"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those who enrolled in a degree program or other formal program above the baccalaureate level, such as a masters or doctoral degree program."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/GraduateLevel/json",
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AudienceLevel"
+  ]
+}

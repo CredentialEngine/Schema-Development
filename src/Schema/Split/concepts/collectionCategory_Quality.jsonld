@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "collectionCategory:Quality",
+  "skos:prefLabel": {
+    "en-US": "Quality"
+  },
+  "skos:definition": {
+    "en-US": "Learning Opportunities, Learning Programs, Courses, Assessments or Credentials that meet criteria for quality as determined by the promulgating body."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/Quality/json",
+  "skos:inScheme": [
+    "ceterms:CollectionCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CollectionCategory"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "agentSector:PrivateNonProfit",
+  "skos:prefLabel": {
+    "en-US": "Private Not-For-Profit"
+  },
+  "skos:definition": {
+    "en-US": "Sector that contains privately-owned organizations that operate on a non-profit basis."
+  },
+  "dct:description": {
+    "en-US": "These include both independent not-for-profit schools and those affiliated with a religious organization."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/agentSector/PrivateNonProfit/json",
+  "skos:inScheme": [
+    "ceterms:AgentSector"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AgentSector"
+  ]
+}

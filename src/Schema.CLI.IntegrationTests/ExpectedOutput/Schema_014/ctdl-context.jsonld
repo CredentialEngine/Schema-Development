@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "ceterms": "https://purl.org/ctdl/terms/",
+        "ceterms:TestProperty": {
+            "@type": "xsd:string"
+        },
+        "ceterms:name": {
+            "@container": "@language",
+            "@type": "xsd:string"
+        }
+    }
+}

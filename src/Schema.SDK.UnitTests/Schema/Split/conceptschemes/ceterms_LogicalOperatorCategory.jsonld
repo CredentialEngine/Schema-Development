@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:LogicalOperatorCategory",
+    "rdfs:label": {
+        "en-US": "Logical Operator Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Logical operators applicable to two or more items."
+    },
+    "vann:usageNote": {
+        "en-US": "Used in CTDL for types of logical operator for combining two or more nested ComponentCondition entities, Constraint entities, or a mix of ComponentCondition and Constraint entities."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LogicalOperatorCategory/json",
+    "meta:hasConcept": [
+        "logic:And",
+        "logic:OnlyOne",
+        "logic:Or"
+    ],
+    "skos:hasTopConcept": [
+        "logic:And",
+        "logic:OnlyOne",
+        "logic:Or"
+    ]
+}

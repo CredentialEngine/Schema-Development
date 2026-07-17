@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "collectionCategory:GIBill",
+  "skos:prefLabel": {
+    "en-US": "GI Bill"
+  },
+  "skos:definition": {
+    "en-US": "Education and training programs qualifying for the U.S. GI Bill per the promulgating body."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/GIBill/json",
+  "skos:inScheme": [
+    "ceterms:CollectionCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CollectionCategory"
+  ]
+}

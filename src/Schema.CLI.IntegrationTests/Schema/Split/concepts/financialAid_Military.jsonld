@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:Military",
+  "skos:prefLabel": {
+    "en-US": "Military"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid available to active duty service members, veterans, and/or their qualified family members."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Military/json",
+  "skos:narrower": [
+    "financialAid:DoDTuitionAssistance",
+    "financialAid:Post911GIBill",
+    "financialAid:StateLocalMilitaryAssistance",
+    "financialAid:VEAP",
+    "financialAid:VocationalRehabilitation"
+  ],
+  "owl:equivalentClass": [
+    "ceds:001610"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:FinancialAssistance"
+  ]
+}

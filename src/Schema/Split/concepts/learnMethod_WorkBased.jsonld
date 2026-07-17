@@ -1,0 +1,28 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:WorkBased",
+  "skos:prefLabel": {
+    "en-US": "Work Based"
+  },
+  "skos:definition": {
+    "en-US": "Provides real-world work experiences that may be paid or unpaid and provided in group or individual formats normally outside the classroom."
+  },
+  "dct:description": {
+    "en-US": "Applies to methods such as apprenticeships, internships, externships, work study, clinical rotations, residencies, practicums, field study, team projects, and cooperative education."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/WorkBased/json",
+  "skos:narrower": [
+    "learnMethod:Apprenticeship",
+    "learnMethod:ClinicalRotation",
+    "learnMethod:Internship",
+    "learnMethod:MedicalResidency"
+  ],
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningMethod"
+  ]
+}

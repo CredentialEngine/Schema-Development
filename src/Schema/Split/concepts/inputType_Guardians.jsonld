@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "inputType:Guardians",
+  "skos:prefLabel": {
+    "en-US": "Guardians"
+  },
+  "skos:definition": {
+    "en-US": "External stakeholder review, guidance or recommendations by parents or guardians."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Guardians/json",
+  "skos:inScheme": [
+    "ceterms:ExternalInput"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ExternalInput"
+  ]
+}

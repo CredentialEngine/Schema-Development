@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:Seminar",
+  "skos:prefLabel": {
+    "en-US": "Seminar"
+  },
+  "skos:definition": {
+    "en-US": "Primary method is active student discussion leading to advancement of the topic and facilitated by an instructor."
+  },
+  "dct:description": {
+    "en-US": "Seminars typically involve small groups to facilitate equal opportunity with the instructor and colleagues to be engaged and occasionally may include students leading discussions."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Seminar/json",
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningMethod"
+  ]
+}

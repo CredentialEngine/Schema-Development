@@ -1,0 +1,111 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - main
+
+stages:
+- stage: Build
+  displayName: Build + Test
+  jobs:
+  - job: LinuxBuild
+    displayName: Linux Build
+    pool:
+      vmImage: ubuntu-latest
+
+    variables:
+      BuildConfiguration: 'Debug'
+      BuildPlatform: 'x64'
+      DotNetVersion: '10.0.203'
+
+    steps:
+
+    - task: PowerShell@2
+      displayName: "Set Build Number"
+      inputs:
+        targetType: inline
+        script: |
+          $year = (Get-Date).ToString('yyyy')
+          $month = (Get-Date).ToString('MM')
+          $day = (Get-Date).ToString('dd')
+          $revision = "$env:BUILD_BUILDID"
+
+          $version = "$year.$month.$day.$revision"
+
+          Write-Host "##vso[build.updatebuildnumber]$version"
+          Write-Host "##vso[task.setvariable variable=VersionNumber]$version"
+
+    - task: UseDotNet@2
+      displayName: 'Install .NET SDK'
+      inputs:
+        packageType: sdk
+        version: '$(DotNetVersion)'
+
+    - script: dotnet --info
+      displayName: '.NET Info'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore Packages'
+      inputs:
+        command: 'restore'
+        projects: 'src/**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Build Solution'
+      env:
+        BUILD_CONFIGURATION: $(BuildConfiguration)
+      inputs:
+        command: 'build'
+        projects: 'src/**/*.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          -p:Platform=$(BuildPlatform)
+          --no-restore
+          -p:ContinuousIntegrationBuild=true
+          -p:Version=$(VersionNumber)
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Run Tests'
+      env:
+        BUILD_CONFIGURATION: $(BuildConfiguration)
+      inputs:
+        command: 'test'
+        projects: 'src/**/*Tests/*.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          -p:Platform=$(BuildPlatform)
+          --no-build
+          --verbosity normal
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish CLI'
+      inputs:
+        command: 'publish'
+        publishWebProjects: false
+        projects: 'src/Schema.CLI/Schema.CLI.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          -p:Platform=$(BuildPlatform)
+          --output $(Build.ArtifactStagingDirectory)/publish/Schema.CLI
+          --no-build
+          -p:Version=$(VersionNumber)
+
+    - task: CopyFiles@2
+      displayName: 'Stage binaries for signing'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'
+        Contents: |
+          src/**/bin/$(BuildConfiguration)/**/*.dll
+          src/**/bin/$(BuildConfiguration)/**/*.exe
+        TargetFolder: '$(Build.ArtifactStagingDirectory)/signed-binaries'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifacts'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'

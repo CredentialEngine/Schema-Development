@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:PrivateScholarship",
+  "skos:prefLabel": {
+    "en-US": "Private Scholarship"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid award, which doesn’t require repayment, from a private entity, including employers, based on student achievement and other criteria for education."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/PrivateScholarship/json",
+  "skos:broader": [
+    "financialAid:Scholarship"
+  ],
+  "owl:equivalentClass": [
+    "ceds:000113#PrivateScholarships"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:AssessmentMethod",
+  "rdfs:label": {
+    "en-US": "Assessment Method"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of assessment method."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AssessmentMethod/json",
+  "meta:hasConcept": [
+    "assessMethod:Artifact",
+    "assessMethod:Exam",
+    "assessMethod:Performance",
+    "assessMethod:PortfolioEvaluation"
+  ],
+  "skos:hasTopConcept": [
+    "assessMethod:Artifact",
+    "assessMethod:Exam",
+    "assessMethod:Performance"
+  ]
+}

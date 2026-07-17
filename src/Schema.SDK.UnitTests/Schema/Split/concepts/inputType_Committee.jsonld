@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "inputType:Committee",
+    "skos:prefLabel": {
+        "en-US": "Committee"
+    },
+    "skos:definition": {
+        "en-US": "External stakeholder review, guidance or recommendations by a group of individuals convened to represent a larger group or range of stakeholders."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Committee/json",
+    "skos:inScheme": [
+        "ceterms:ExternalInput"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ExternalInput"
+    ]
+}

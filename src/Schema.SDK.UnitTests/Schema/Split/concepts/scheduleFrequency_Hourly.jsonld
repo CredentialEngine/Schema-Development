@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleFrequency:Hourly",
+    "skos:prefLabel": {
+        "en-US": "Hourly"
+    },
+    "skos:definition": {
+        "en-US": "Schedule is on a hourly basis, typically occurring once per hour."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/Hourly/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleFrequency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

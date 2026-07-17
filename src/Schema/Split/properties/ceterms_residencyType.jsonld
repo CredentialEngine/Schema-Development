@@ -1,0 +1,31 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:residencyType",
+  "rdfs:label": {
+    "en-US": "Residency Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of legal residency status of a person; select from an existing enumeration of such types."
+  },
+  "dct:description": {
+    "en-US": "Residency defines the duration of stay required by national, state, provincial or local laws that entitles a person to the legal protection and benefits provided to the applicable type."
+  },
+  "vann:usageNote": {
+    "en-US": "Best practice for U.S. credentials and for submission to the Credential Engine Registry, is to use concepts from the ceterms:Residency vocabulary."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/residencyType/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:credentialAlignment"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:CostProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:Residency"
+  ]
+}

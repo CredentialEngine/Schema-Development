@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:HealthCare",
+    "skos:prefLabel": {
+        "en-US": "Health Care"
+    },
+    "skos:definition": {
+        "en-US": "Programs whose primary purpose is to help individuals achieve and maintain physical well-being through the study, prevention, screening, evaluation and treatment of individuals who have illnesses, injuries, or disabilities."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/HealthCare/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:membershipCondition",
+    "rdfs:label": {
+        "en-US": "Membership Condition"
+    },
+    "rdfs:comment": {
+        "en-US": "Conditions and requirements to be included as a member."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/membershipCondition/json",
+    "schema:domainIncludes": [
+        "ceterms:Collection"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:ConditionProfile"
+    ]
+}

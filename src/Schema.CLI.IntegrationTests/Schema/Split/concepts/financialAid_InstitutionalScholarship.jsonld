@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:InstitutionalScholarship",
+  "skos:prefLabel": {
+    "en-US": "Institutional Scholarship"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid award, which doesn’t require repayment, from an educational institution based on student achievement and other criteria for education."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/InstitutionalScholarship/json",
+  "skos:broader": [
+    "financialAid:Scholarship"
+  ],
+  "owl:equivalentClass": [
+    "ceds:000113#InstitutionalScholarships"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Job",
+    "rdfs:label": {
+        "en-US": "Job"
+    },
+    "rdfs:comment": {
+        "en-US": "Set of responsibilities based on work roles within an occupation as defined by an employer."
+    },
+    "dct:description": {
+        "en-US": "Job describes an abstraction or template that specific job postings or openings could be instances of."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Job/json",
+    "meta:domainFor": [
+        "ceasn:abilityEmbodied",
+        "ceasn:comment",
+        "ceasn:knowledgeEmbodied",
+        "ceasn:skillEmbodied",
+        "ceterms:alternateName",
+        "ceterms:atLevel",
+        "ceterms:classification",
+        "ceterms:codedNotation",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:environmentalHazardType",
+        "ceterms:hasOccupation",
+        "ceterms:hasRubric",
+        "ceterms:hasSupportService",
+        "ceterms:hasTask",
+        "ceterms:hasWorkRole",
+        "ceterms:identifier",
+        "ceterms:inCatalog",
+        "ceterms:industryType",
+        "ceterms:isMemberOf",
+        "ceterms:jobLevelType",
+        "ceterms:keyword",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:occupationType",
+        "ceterms:offeredBy",
+        "ceterms:performanceLevelType",
+        "ceterms:physicalCapabilityType",
+        "ceterms:providesTransferValueFor",
+        "ceterms:receivesTransferValueFrom",
+        "ceterms:requires",
+        "ceterms:reviewProcess",
+        "ceterms:sameAs",
+        "ceterms:sensoryCapabilityType",
+        "ceterms:subjectWebpage",
+        "ceterms:targetCompetency",
+        "ceterms:versionCode",
+        "ceterms:versionIdentifier",
+        "ceterms:workPay",
+        "qdata:relevantDataSet"
+    ]
+}

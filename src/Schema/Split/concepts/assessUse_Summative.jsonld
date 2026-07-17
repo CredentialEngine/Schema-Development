@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "assessUse:Summative",
+  "skos:prefLabel": {
+    "en-US": "Summative Assessment"
+  },
+  "skos:definition": {
+    "en-US": "Assessment of learning at the end of an instructional unit to determine whether some established standard or benchmark has been achieved."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/assessUse/Summative/json",
+  "skos:inScheme": [
+    "ceterms:AssessmentUse"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AssessmentUse"
+  ]
+}

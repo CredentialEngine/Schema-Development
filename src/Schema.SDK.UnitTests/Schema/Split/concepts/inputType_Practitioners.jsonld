@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "inputType:Practitioners",
+    "skos:prefLabel": {
+        "en-US": "Practitioners"
+    },
+    "skos:definition": {
+        "en-US": "External stakeholder review, guidance or recommendations by practitioners."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Practitioners/json",
+    "skos:inScheme": [
+        "ceterms:ExternalInput"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ExternalInput"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:MentalHealthCounseling",
+    "skos:prefLabel": {
+        "en-US": "Mental Health Counseling"
+    },
+    "skos:definition": {
+        "en-US": "Personalized service that provides therapeutic support to individuals experiencing mental health issues such as anxiety, depression, or trauma."
+    },
+    "dct:description": {
+        "en-US": "Examples of mental health issues include behavior problems, emotional disturbances, personality disorders, incipient illnesses, and/or other comparable conditions."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/MentalHealthCounseling/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00305"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

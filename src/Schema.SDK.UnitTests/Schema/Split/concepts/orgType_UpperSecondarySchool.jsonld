@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:UpperSecondarySchool",
+    "skos:prefLabel": {
+        "en-US": "Upper Secondary School"
+    },
+    "skos:definition": {
+        "en-US": "School primarily offering programs at the final stage of secondary education preparing for tertiary education or providing skills relevant to employment, usually with an increased range of subject options and streams."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/UpperSecondarySchool/json",
+    "skos:broader": [
+        "orgType:SecondarySchool"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ]
+}

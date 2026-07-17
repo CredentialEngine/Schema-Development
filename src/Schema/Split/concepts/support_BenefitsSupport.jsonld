@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:BenefitsSupport",
+  "skos:prefLabel": {
+    "en-US": "Benefits Support"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides guidance and assistance to people in accessing and maintaining the financial and other benefits that can support their academic and career goals."
+  },
+  "dct:description": {
+    "en-US": "This can include support in understanding and maintaining eligibility, completing related forms, and navigating application and verification processes."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/BenefitsSupport/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

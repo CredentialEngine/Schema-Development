@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:proxyForItems",
+    "rdfs:label": {
+        "en-US": "Proxy For Items"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates the multiple resources for which a MultiComponent proxy resource is a stand-in."
+    },
+    "dct:description": {
+        "en-US": "The subject for this property will be acting as proxy in a context such as a pathway for the resources that are its objects, so that assertions can be made about relationships between things in that context that are not universally true of the resources for which they are proxies."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/proxyForItems/json",
+    "schema:domainIncludes": [
+        "ceterms:MultiComponent"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:ProcessProfile",
+  "rdfs:label": {
+    "en-US": "Process Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing the type, nature, and other relevant information about a process."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ProcessProfile/json",
+  "rdfs:subClassOf": [
+    "schema:CreativeWork"
+  ],
+  "meta:domainFor": [
+    "ceterms:ctid",
+    "ceterms:dateEffective",
+    "ceterms:description",
+    "ceterms:externalInputType",
+    "ceterms:instrument",
+    "ceterms:jurisdiction",
+    "ceterms:name",
+    "ceterms:processFrequency",
+    "ceterms:processingAgent",
+    "ceterms:processMethod",
+    "ceterms:processMethodDescription",
+    "ceterms:processStandards",
+    "ceterms:processStandardsDescription",
+    "ceterms:region",
+    "ceterms:scoringMethodDescription",
+    "ceterms:scoringMethodExample",
+    "ceterms:scoringMethodExampleDescription",
+    "ceterms:subjectWebpage",
+    "ceterms:targetAssessment",
+    "ceterms:targetCompetencyFramework",
+    "ceterms:targetCredential",
+    "ceterms:targetLearningOpportunity",
+    "ceterms:verificationMethodDescription",
+    "qdata:dataCollectionMethodType"
+  ]
+}

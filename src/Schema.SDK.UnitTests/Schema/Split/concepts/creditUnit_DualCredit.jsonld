@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "creditUnit:DualCredit",
+    "skos:prefLabel": {
+        "en-US": "Dual Credit"
+    },
+    "skos:definition": {
+        "en-US": "Credit that is applicable to two different educational levels."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/DualCredit/json",
+    "skos:broader": [
+        "creditUnit:TypeBasedCredit"
+    ],
+    "skos:inScheme": [
+        "ceterms:CreditUnit"
+    ]
+}

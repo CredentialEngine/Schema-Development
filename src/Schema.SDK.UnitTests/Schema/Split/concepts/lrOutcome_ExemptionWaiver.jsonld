@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrOutcome:ExemptionWaiver",
+    "skos:prefLabel": {
+        "en-US": "Exemption Waiver"
+    },
+    "skos:definition": {
+        "en-US": "An outcome in which a requirement is waived."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrOutcome/ExemptionWaiver/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ]
+}

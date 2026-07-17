@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:ImmigrationAssistance",
+  "skos:prefLabel": {
+    "en-US": "Immigration Assistance"
+  },
+  "skos:definition": {
+    "en-US": "Assistance for people in navigating legal and administrative procedures involved in immigrating to a new country."
+  },
+  "dct:description": {
+    "en-US": "Examples include assistance with visa applications, documentation requirements, and settlement services."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/ImmigrationAssistance/json",
+  "skos:relatedMatch": [
+    "ceds:000273/#73052"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "actionStat:PotentialActionStatus",
+    "skos:prefLabel": {
+        "en-US": "Potential Action Status"
+    },
+    "skos:definition": {
+        "en-US": "Description of an action that is supported."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/actionStat/PotentialActionStatus/json",
+    "skos:inScheme": [
+        "ceterms:ActionStatus"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ActionStatus"
+    ]
+}

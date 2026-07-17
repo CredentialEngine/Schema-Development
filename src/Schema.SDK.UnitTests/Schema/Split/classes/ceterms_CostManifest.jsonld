@@ -1,0 +1,30 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:CostManifest",
+    "rdfs:label": {
+        "en-US": "Cost Manifest"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes a set of costs maintained at, and applicable across the organizational and/or sub-organizational level."
+    },
+    "dct:description": {
+        "en-US": "Instances of these ceterms:CostManifest entities are intended to be referenced by other entities to augment the process of describing their costs."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/CostManifest/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:costDetails",
+        "ceterms:costManifestOf",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:endDate",
+        "ceterms:estimatedCost",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:reviewProcess",
+        "ceterms:startDate"
+    ]
+}

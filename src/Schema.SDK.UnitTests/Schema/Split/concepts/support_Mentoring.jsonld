@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:Mentoring",
+    "skos:prefLabel": {
+        "en-US": "Mentoring"
+    },
+    "skos:definition": {
+        "en-US": "Service that pairs individuals with people experienced in professions who can offer guidance and support as they pursue their academic or career goals."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Mentoring/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "inputType:Experts",
+  "skos:prefLabel": {
+    "en-US": "Subject Matter Experts"
+  },
+  "skos:definition": {
+    "en-US": "External stakeholder review, guidance or recommendations by subject matter experts."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Experts/json",
+  "skos:inScheme": [
+    "ceterms:ExternalInput"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ExternalInput"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:WorkBased",
+  "skos:prefLabel": {
+    "en-US": "Work-Based"
+  },
+  "skos:definition": {
+    "en-US": "Financial compensation for participating in work-based learning opportunities."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/WorkBased/json",
+  "skos:broader": [
+    "financialAid:General"
+  ],
+  "skos:narrower": [
+    "financialAid:AcademicAssistantship",
+    "financialAid:Apprenticeship",
+    "financialAid:CoOperative",
+    "financialAid:FederalWorkStudy",
+    "financialAid:Internship",
+    "financialAid:OtherOnCampusWork",
+    "financialAid:StateLocalWork"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

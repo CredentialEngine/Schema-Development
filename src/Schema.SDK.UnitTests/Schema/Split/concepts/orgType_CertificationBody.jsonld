@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:CertificationBody",
+    "skos:prefLabel": {
+        "en-US": "Certification Body"
+    },
+    "skos:definition": {
+        "en-US": "Independent, third-party organization that operates a certification program. A certification body may or may not be governmental, and may or may not have regulatory authority."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/CertificationBody/json",
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

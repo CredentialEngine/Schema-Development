@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:LearningRecognitionRequestRelated",
+  "skos:prefLabel": {
+    "en-US": "Learning Recognition Request Related"
+  },
+  "skos:definition": {
+    "en-US": "Statement that defines how a person submits a request for recognition of prior learning."
+  },
+  "dct:description": {
+    "en-US": "Covers submission steps, forms or portals, timelines, fees, and evidence requirements."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/LearningRecognitionRequestRelated/json",
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:StatementCategory"
+  ]
+}

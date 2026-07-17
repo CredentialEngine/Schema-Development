@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:Meals",
+    "skos:prefLabel": {
+        "en-US": "Meals"
+    },
+    "skos:definition": {
+        "en-US": "Cost for meals while participating in the learning opportunity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/Meals/json",
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CostType"
+    ]
+}

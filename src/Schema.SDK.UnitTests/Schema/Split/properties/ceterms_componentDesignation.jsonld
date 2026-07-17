@@ -1,0 +1,32 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:componentDesignation",
+    "rdfs:label": {
+        "en-US": "Component Designation"
+    },
+    "rdfs:comment": {
+        "en-US": "Label identifying the category to further distinguish one component from another as designated by the promulgating body."
+    },
+    "dct:description": {
+        "en-US": "Examples may include \"Required\", \"Core\", \"General Education\", \"Elective\", etc."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/componentDesignation/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentComponent",
+        "ceterms:BasicComponent",
+        "ceterms:CocurricularComponent",
+        "ceterms:CollectionComponent",
+        "ceterms:CompetencyComponent",
+        "ceterms:CourseComponent",
+        "ceterms:CredentialComponent",
+        "ceterms:ExtracurricularComponent",
+        "ceterms:JobComponent",
+        "ceterms:MultiComponent",
+        "ceterms:WorkExperienceComponent"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

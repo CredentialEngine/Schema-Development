@@ -1,0 +1,33 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:evidenceOfAction",
+    "rdfs:label": {
+        "en-US": "Evidence of Action"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that proves that the action occurred or that the action continues to be valid."
+    },
+    "dct:description": {
+        "en-US": "The evidence verifies the information in the action and is particular to it. It is not a collection relating to several unrelated actions or a description of how such verifications might generically be characterized. It may comprise more than one evidentiary entity relating to the same action."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/evidenceOfAction/json",
+    "schema:domainIncludes": [
+        "ceterms:AccreditAction",
+        "ceterms:AdvancedStandingAction",
+        "ceterms:ApproveAction",
+        "ceterms:CredentialingAction",
+        "ceterms:OfferAction",
+        "ceterms:RecognizeAction",
+        "ceterms:RegistrationAction",
+        "ceterms:RegulateAction",
+        "ceterms:RenewAction",
+        "ceterms:RevokeAction",
+        "ceterms:RightsAction",
+        "ceterms:WorkforceDemandAction"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

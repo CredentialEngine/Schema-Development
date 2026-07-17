@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:ncesID",
+  "rdfs:label": {
+    "en-US": "NCES ID"
+  },
+  "rdfs:comment": {
+    "en-US": "Identifier comprised of a 12 digit code issued by the National Center for Education Statistics (NCES) for educational institutions where the first 7 digits are the NCES District ID."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ncesID/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:string"
+  ]
+}

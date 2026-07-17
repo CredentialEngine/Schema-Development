@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:framework",
+  "rdfs:label": {
+    "en-US": "Framework URL"
+  },
+  "rdfs:comment": {
+    "en-US": "Credential framework to which the entity is aligned."
+  },
+  "dct:description": {
+    "en-US": "Frameworks may include, but are not limited to, competency frameworks and concept schemes such as industry, occupation, and instructional program codes."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/framework/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialAlignmentObject",
+    "ceterms:FinancialAlignmentObject"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

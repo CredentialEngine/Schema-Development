@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:alignmentDate",
+    "rdfs:label": {
+        "en-US": "Alignment Date"
+    },
+    "rdfs:comment": {
+        "en-US": "The date  the alignment was made."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/alignmentDate/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:temporalCoverage"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:AlignmentObject",
+        "ceterms:CredentialAlignmentObject",
+        "ceterms:FinancialAlignmentObject"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:date"
+    ]
+}

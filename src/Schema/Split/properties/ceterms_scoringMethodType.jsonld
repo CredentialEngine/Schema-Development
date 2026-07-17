@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:scoringMethodType",
+  "rdfs:label": {
+    "en-US": "Scoring Method Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of method used to score the assessment; select from an existing enumeration of such types."
+  },
+  "vann:usageNote": {
+    "en-US": "Best practice for U.S. credentials and for submission to the Credential Engine Registry, is to use concepts from the ceterms:ScoringMethod vocabulary."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/scoringMethodType/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:ScoringMethod"
+  ]
+}

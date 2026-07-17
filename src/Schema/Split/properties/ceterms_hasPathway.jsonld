@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasPathway",
+  "rdfs:label": {
+    "en-US": "Has Pathway"
+  },
+  "rdfs:comment": {
+    "en-US": "A pathway related to this resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasPathway/json",
+  "schema:domainIncludes": [
+    "ceterms:PathwaySet"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Pathway"
+  ]
+}

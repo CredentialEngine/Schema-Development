@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:AgreementCategory",
+    "rdfs:label": {
+        "en-US": "Agreement Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Concepts classifying formal mechanisms used to recognize or transfer learning across organizations or programs."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AgreementCategory/json",
+    "meta:hasConcept": [
+        "agreementCat:ArticulationAgreement",
+        "agreementCat:MemorandumOfUnderstanding",
+        "agreementCat:MultipartyAgreement",
+        "agreementCat:StandingTransferArrangement"
+    ],
+    "skos:hasTopConcept": [
+        "agreementCat:ArticulationAgreement",
+        "agreementCat:MemorandumOfUnderstanding",
+        "agreementCat:MultipartyAgreement",
+        "agreementCat:StandingTransferArrangement"
+    ]
+}

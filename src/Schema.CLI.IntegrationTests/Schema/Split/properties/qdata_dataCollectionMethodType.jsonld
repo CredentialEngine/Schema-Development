@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "qdata:dataCollectionMethodType",
+  "rdfs:label": {
+    "en-US": "Data Collection Method Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of method by which the data was collected."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/qdata/dataCollectionMethodType/json",
+  "schema:domainIncludes": [
+    "ceterms:ProcessProfile"
+  ],
+  "schema:rangeIncludes": [
+    "skos:Concept"
+  ],
+  "meta:targetScheme": [
+    "qdata:CollectionMethod"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "compare:LT",
+  "skos:prefLabel": {
+    "en-US": "Less Than"
+  },
+  "skos:definition": {
+    "en-US": "The value of the left is less than the value of the right."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/compare/LT/json",
+  "owl:equivalentClass": [
+    "odrl2:lt"
+  ],
+  "skos:inScheme": [
+    "ceterms:ComparatorCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ComparatorCategory"
+  ]
+}

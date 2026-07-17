@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:PostalAddress",
+  "skos:prefLabel": {
+    "en-US": "Postal Address"
+  },
+  "skos:definition": {
+    "en-US": "Service to provide people who do not have a suitable mailing address with a means to receive their mail."
+  },
+  "dct:description": {
+    "en-US": "This service is intended to help individuals receive documents and correspondence."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/PostalAddress/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:FormerMilitary",
+    "skos:prefLabel": {
+        "en-US": "Former Military / Veteran"
+    },
+    "skos:definition": {
+        "en-US": "Veteran of military service."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/FormerMilitary/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

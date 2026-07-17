@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:parentOrganization",
+  "rdfs:label": {
+    "en-US": "Parent Organization"
+  },
+  "rdfs:comment": {
+    "en-US": "Larger organization exercising authority over the organization being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/parentOrganization/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "owl:equivalentProperty": [
+    "schema:parentOrganization"
+  ]
+}

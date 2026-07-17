@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:foundingDate",
+    "rdfs:label": {
+        "en-US": "Founding Date"
+    },
+    "rdfs:comment": {
+        "en-US": "Date the organization was founded."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/foundingDate/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:temporalCoverage"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "owl:equivalentProperty": [
+        "schema:foundingDate"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:StateLocalScholarship",
+  "skos:prefLabel": {
+    "en-US": "State or Local Scholarship"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid award, which doesn’t require repayment, from a state, province, region, and/or local government based on student achievement and other criteria for education."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/StateLocalScholarship/json",
+  "skos:broader": [
+    "financialAid:Scholarship"
+  ],
+  "owl:equivalentClass": [
+    "ceds:000113#StateAndLocalScholarships"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

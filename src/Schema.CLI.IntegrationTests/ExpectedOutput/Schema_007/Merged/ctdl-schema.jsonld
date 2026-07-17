@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "ceterms:TestClass",
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "ceterms:TestProperty",
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "ceterms:TestConceptScheme",
+            "@type": "skos:ConceptScheme"
+        },
+        {
+            "@id": "ceterms:TestConcept",
+            "@type": "skos:Concept"
+        }
+    ]
+}

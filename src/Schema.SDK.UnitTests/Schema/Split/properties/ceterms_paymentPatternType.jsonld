@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:paymentPatternType",
+    "rdfs:label": {
+        "en-US": "Payment Pattern Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of pattern for payments, indicating how often a payment is made; select from an existing enumeration of such types."
+    },
+    "dct:description": {
+        "en-US": "Common examples indicate that a worker is paid weekly, monthly, on demand."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/paymentPatternType/json",
+    "schema:domainIncludes": [
+        "ceterms:PayProfile"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

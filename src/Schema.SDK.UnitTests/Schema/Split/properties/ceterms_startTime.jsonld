@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:startTime",
+    "rdfs:label": {
+        "en-US": "Start Time"
+    },
+    "rdfs:comment": {
+        "en-US": "Start time of an event or activity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/startTime/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:temporalCoverage"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:dateTime"
+    ],
+    "owl:equivalentProperty": [
+        "schema:startTime"
+    ]
+}

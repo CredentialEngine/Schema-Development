@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:LowerDivisionLevel",
+    "skos:prefLabel": {
+        "en-US": "Lower Division Level"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those in the first half of an undergraduate level program."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/LowerDivisionLevel/json",
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AudienceLevel"
+    ]
+}

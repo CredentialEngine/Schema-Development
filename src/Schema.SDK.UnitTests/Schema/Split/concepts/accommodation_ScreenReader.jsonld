@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:ScreenReader",
+    "skos:prefLabel": {
+        "en-US": "Screen Reader"
+    },
+    "skos:definition": {
+        "en-US": "Screen reader compatibility for digital materials."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/ScreenReader/json",
+    "skos:broader": [
+        "accommodation:ResourceAndServiceAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

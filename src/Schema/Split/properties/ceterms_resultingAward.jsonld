@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:resultingAward",
+  "rdfs:label": {
+    "en-US": "Resulting Award"
+  },
+  "rdfs:comment": {
+    "en-US": "Awarded credential resulting from an action."
+  },
+  "dct:description": {
+    "en-US": "An awarded credential is of the type ceterms:CredentialAssertion."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/resultingAward/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:result"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:AccreditAction",
+    "ceterms:RenewAction"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAssertion"
+  ]
+}

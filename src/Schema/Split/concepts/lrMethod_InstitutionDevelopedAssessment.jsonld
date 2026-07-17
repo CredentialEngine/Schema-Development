@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrMethod:InstitutionDevelopedAssessment",
+  "skos:prefLabel": {
+    "en-US": "Institution-Developed Assessment"
+  },
+  "skos:definition": {
+    "en-US": "A method in which institution-created assessments are used to determine credit for prior learning."
+  },
+  "dct:description": {
+    "en-US": "Examples include challenge exams, projects, and labs."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/InstitutionDevelopedAssessment/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ]
+}

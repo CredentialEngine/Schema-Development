@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:TransferAdvising",
+  "skos:prefLabel": {
+    "en-US": "Transfer Advising"
+  },
+  "skos:definition": {
+    "en-US": "A service that helps learners understand transfer options and applicability and plan efficient pathways to their goals."
+  },
+  "dct:description": {
+    "en-US": "Covers guidance on policies, prerequisites, timelines, and required documentation."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TransferAdvising/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

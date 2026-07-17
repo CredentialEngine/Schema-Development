@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:NonResident",
+    "skos:prefLabel": {
+        "en-US": "Non-Resident"
+    },
+    "skos:definition": {
+        "en-US": "Person whose primary residence is not in nation, state, province, or commonwealth of concern."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/NonResident/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

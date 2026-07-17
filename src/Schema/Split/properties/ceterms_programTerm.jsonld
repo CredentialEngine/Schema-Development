@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:programTerm",
+  "rdfs:label": {
+    "en-US": "Program Term"
+  },
+  "rdfs:comment": {
+    "en-US": "Categorization of a term sequence based on the normative time between entry into a program of study and its completion such as \"1st quarter\", \"2nd quarter\"...\"5th quarter\"."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/programTerm/json",
+  "schema:domainIncludes": [
+    "ceterms:CourseComponent"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ]
+}

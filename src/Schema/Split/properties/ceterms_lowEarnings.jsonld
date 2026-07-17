@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:lowEarnings",
+  "rdfs:label": {
+    "en-US": "Low Earnings"
+  },
+  "rdfs:comment": {
+    "en-US": "Lower interquartile earnings."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/lowEarnings/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:EarningsProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:decimal",
+    "xsd:integer"
+  ]
+}

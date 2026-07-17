@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "actionStat:ActiveActionStatus",
+    "skos:prefLabel": {
+        "en-US": "Active Action Status"
+    },
+    "skos:definition": {
+        "en-US": "Action that is ongoing."
+    },
+    "dct:description": {
+        "en-US": "Examples include: while watching the movie, or driving to a location"
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/actionStat/ActiveActionStatus/json",
+    "skos:inScheme": [
+        "ceterms:ActionStatus"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ActionStatus"
+    ]
+}

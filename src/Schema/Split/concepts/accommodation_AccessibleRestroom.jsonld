@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:AccessibleRestroom",
+  "skos:prefLabel": {
+    "en-US": "Accessible Restroom"
+  },
+  "skos:definition": {
+    "en-US": "Accessible restrooms with grab bars, accessible toilets, and sinks at different heights."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/AccessibleRestroom/json",
+  "skos:broader": [
+    "accommodation:FacilityAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

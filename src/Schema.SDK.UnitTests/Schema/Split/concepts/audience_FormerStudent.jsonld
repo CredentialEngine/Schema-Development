@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:FormerStudent",
+    "skos:prefLabel": {
+        "en-US": "Former Student / Alumni"
+    },
+    "skos:definition": {
+        "en-US": "Student who previously participated in a learning opportunity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/FormerStudent/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

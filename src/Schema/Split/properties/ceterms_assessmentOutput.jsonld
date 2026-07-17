@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:assessmentOutput",
+  "rdfs:label": {
+    "en-US": "Assessment Output"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of the assessment artifact, performance or examination."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assessmentOutput/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

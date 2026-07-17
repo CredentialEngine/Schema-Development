@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Constraint",
+    "rdfs:label": {
+        "en-US": "Constraint"
+    },
+    "rdfs:comment": {
+        "en-US": "Resource that identifies the parameters defining a limitation or restriction applicable to candidate pathway components."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Constraint/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:comparator",
+        "ceterms:description",
+        "ceterms:leftAction",
+        "ceterms:leftSource",
+        "ceterms:name",
+        "ceterms:rightAction",
+        "ceterms:rightSource"
+    ]
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:WorkRole",
+  "rdfs:label": {
+    "en-US": "Work Role"
+  },
+  "rdfs:comment": {
+    "en-US": "Collection of tasks and competencies that embody a particular function in one or more jobs."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/WorkRole/json",
+  "meta:domainFor": [
+    "ceasn:abilityEmbodied",
+    "ceasn:comment",
+    "ceasn:knowledgeEmbodied",
+    "ceasn:skillEmbodied",
+    "ceterms:alternateName",
+    "ceterms:assertedBy",
+    "ceterms:atLevel",
+    "ceterms:classification",
+    "ceterms:codedNotation",
+    "ceterms:ctid",
+    "ceterms:description",
+    "ceterms:developmentProcess",
+    "ceterms:environmentalHazardType",
+    "ceterms:hasJob",
+    "ceterms:hasOccupation",
+    "ceterms:hasSupportService",
+    "ceterms:hasTask",
+    "ceterms:identifier",
+    "ceterms:inCatalog",
+    "ceterms:isMemberOf",
+    "ceterms:lifeCycleStatusType",
+    "ceterms:maintenanceProcess",
+    "ceterms:name",
+    "ceterms:performanceLevelType",
+    "ceterms:physicalCapabilityType",
+    "ceterms:reviewProcess",
+    "ceterms:sensoryCapabilityType",
+    "ceterms:subjectWebpage",
+    "ceterms:targetCompetency",
+    "ceterms:versionCode",
+    "ceterms:versionIdentifier"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:BachelorsDegreeLevel",
+  "skos:prefLabel": {
+    "en-US": "Bachelors Degree Level"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those completing college/university-level programs within approximately three to four years where course work and activities advance skills from a lower-division or generalist level to an upper-division level."
+  },
+  "dct:description": {
+    "en-US": "Aligns to ISCED 2011 level 6 – Bachelor’s or equivalent level."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/BachelorsDegreeLevel/json",
+  "skos:broader": [
+    "audLevel:PostSecondaryLevel"
+  ],
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ]
+}

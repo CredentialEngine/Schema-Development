@@ -1,0 +1,35 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:TransferIntermediary",
+    "rdfs:label": {
+        "en-US": "Transfer Intermediary"
+    },
+    "rdfs:comment": {
+        "en-US": "Surrogate resource to which other resources are mapped in order to indicate their common transferability."
+    },
+    "vann:usageNote": {
+        "en-US": "Used when multiple resources such as courses are grouped together to indicate they have mutually agreed upon transfer value."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/TransferIntermediary/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:appealProcess",
+        "ceterms:codedNotation",
+        "ceterms:complaintProcess",
+        "ceterms:creditValue",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:inCatalog",
+        "ceterms:intermediaryFor",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:ownedBy",
+        "ceterms:requires",
+        "ceterms:reviewProcess",
+        "ceterms:subject",
+        "ceterms:subjectWebpage"
+    ]
+}

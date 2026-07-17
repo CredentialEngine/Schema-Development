@@ -1,0 +1,36 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:MultiComponent",
+  "rdfs:label": {
+    "en-US": "Multi Component"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource that is a proxy for multiple entities."
+  },
+  "vann:usageNote": {
+    "en-US": "Completion or satisfaction of this Component entails completion or satisfaction of all entities for which this Component is a proxy, unless otherwise indicated by Constraints or other relevant information."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/MultiComponent/json",
+  "meta:domainFor": [
+    "ceasn:hasChild",
+    "ceasn:isChildOf",
+    "ceterms:alternateName",
+    "ceterms:componentDesignation",
+    "ceterms:ctid",
+    "ceterms:description",
+    "ceterms:hasCondition",
+    "ceterms:identifier",
+    "ceterms:isDestinationComponentOf",
+    "ceterms:isPartOf",
+    "ceterms:name",
+    "ceterms:pointValue",
+    "ceterms:precededBy",
+    "ceterms:precedes",
+    "ceterms:proxyFor",
+    "ceterms:proxyForItems",
+    "ceterms:sourceData",
+    "ceterms:subjectWebpage"
+  ]
+}

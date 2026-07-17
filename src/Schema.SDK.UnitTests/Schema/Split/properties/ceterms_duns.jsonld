@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:duns",
+    "rdfs:label": {
+        "en-US": "DUNS"
+    },
+    "rdfs:comment": {
+        "en-US": "Dun & Bradstreet DUNS number for identifying an organization or business person."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/duns/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "owl:equivalentProperty": [
+        "schema:duns"
+    ]
+}

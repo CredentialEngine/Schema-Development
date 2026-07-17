@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:TransferTimeline",
+  "skos:prefLabel": {
+    "en-US": "Transfer Timeline"
+  },
+  "skos:definition": {
+    "en-US": "A support resource that outlines recommended steps and deadlines for completing transfer and recognition processes."
+  },
+  "dct:description": {
+    "en-US": "Can be generalized or program-specific."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TransferTimeline/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

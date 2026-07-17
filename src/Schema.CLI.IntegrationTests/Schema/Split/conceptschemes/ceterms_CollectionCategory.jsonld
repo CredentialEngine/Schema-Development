@@ -1,0 +1,33 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:CollectionCategory",
+  "rdfs:label": {
+    "en-US": "Collection Category"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of collection, list, or array that groups together other resources."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/CollectionCategory/json",
+  "meta:hasConcept": [
+    "collectionCategory:Competency",
+    "collectionCategory:ETPL",
+    "collectionCategory:GIBill",
+    "collectionCategory:IndustryRecognized",
+    "collectionCategory:Perkins",
+    "collectionCategory:PromiseScholarship",
+    "collectionCategory:Quality",
+    "collectionCategory:StateApprovedPostsecondary"
+  ],
+  "skos:hasTopConcept": [
+    "collectionCategory:Competency",
+    "collectionCategory:ETPL",
+    "collectionCategory:GIBill",
+    "collectionCategory:IndustryRecognized",
+    "collectionCategory:Perkins",
+    "collectionCategory:PromiseScholarship",
+    "collectionCategory:Quality",
+    "collectionCategory:StateApprovedPostsecondary"
+  ]
+}
