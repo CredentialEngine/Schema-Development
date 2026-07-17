@@ -73,7 +73,7 @@ public class UrlCacheBuilder
             // Detect if redirect limit was hit
             if ((int)response.StatusCode >= 300 && (int)response.StatusCode < 400)
             {
-                Console.WriteLine($"❌ Redirect limit exceeded for {url} (still {response.StatusCode})");
+                Console.WriteLine($"Redirect limit exceeded for {url} (still {response.StatusCode})");
                 return;
             }
 
@@ -81,7 +81,7 @@ public class UrlCacheBuilder
 
             var finalUrl = response.RequestMessage!.RequestUri!.ToString();
 
-            if (finalUrl != url) Console.WriteLine($"✔ Redirected: {url} → {finalUrl}");
+            if (finalUrl != url) Console.WriteLine($"Redirected: {url} → {finalUrl}");
 
             var content = response.Content.ReadAsStringAsync().Result;
 
@@ -96,7 +96,7 @@ public class UrlCacheBuilder
             Directory.CreateDirectory(Path.GetDirectoryName(localPath)!);
             File.WriteAllText(localPath, content);
 
-            // 🔥 Also map original URL to same file (optional but useful)
+            // Also map original URL to same file (optional but useful)
             var originalPath = MapUrlToPath(url);
             if (originalPath != localPath)
             {
@@ -106,7 +106,7 @@ public class UrlCacheBuilder
         }
         catch (HttpRequestException ex)
         {
-            Console.WriteLine($"❌ Failed (network) {url}: {ex.Message}");
+            Console.WriteLine($"Failed (network) {url}: {ex.Message}");
         }
         catch (Exception ex)
         {
