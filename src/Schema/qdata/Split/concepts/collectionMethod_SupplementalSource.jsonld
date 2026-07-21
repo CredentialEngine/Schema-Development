@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionMethod:SupplementalSource",
+    "skos:prefLabel": {
+        "en-US": "Supplemental Source"
+    },
+    "skos:definition": {
+        "en-US": "Agent providing data augmenting administrative, self-reported or survey data."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:CollectionMethod"
+    ],
+    "skos:topConceptOf": [
+        "qdata:CollectionMethod"
+    ]
+}

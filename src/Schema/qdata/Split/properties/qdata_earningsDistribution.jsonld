@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:earningsDistribution",
+    "rdfs:label": {
+        "en-US": "Earnings Distribution"
+    },
+    "rdfs:comment": {
+        "en-US": "Reference to an entity describing median earnings as well as earnings at various percentiles."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:MonetaryAmountDistribution"
+    ]
+}

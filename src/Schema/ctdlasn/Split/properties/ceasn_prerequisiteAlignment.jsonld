@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:prerequisiteAlignment",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:prerequisiteAlignment"
+    ],
+    "rdfs:comment": {
+        "en-US": "The referenced resource is a prerequisite to this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Prerequisite Alignment"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

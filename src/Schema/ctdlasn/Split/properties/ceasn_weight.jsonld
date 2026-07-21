@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:weight",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "Best practice is to assign a decimal value weight between 0 and 1 that indicates the strength of the assertion, with 0 being weakest and 1 being strongest."
+    },
+    "owl:equivalentProperty": [
+        "asn:weight"
+    ],
+    "rdfs:comment": {
+        "en-US": "An asserted measurement of the weight, degree, percent, or strength of a recommendation, requirement, or comparison."
+    },
+    "rdfs:label": {
+        "en-US": "Weight"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:RubricCriterion"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ],
+    "vs:term_status": "vs:stable"
+}

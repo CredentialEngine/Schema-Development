@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:source",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:source"
+    ],
+    "rdfs:comment": {
+        "en-US": "The original competency framework which this resource is based on or derived from."
+    },
+    "rdfs:label": {
+        "en-US": "Source"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:relation"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ],
+    "vs:term_status": "vs:stable"
+}

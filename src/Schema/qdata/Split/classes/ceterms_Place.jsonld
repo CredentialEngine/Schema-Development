@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Place",
+    "rdfs:label": {
+        "en-US": "Place"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity describing a physical location or geospatial area."
+    },
+    "vs:term_status": "vs:stable",
+    "owl:equivalentClass": [
+        "schema:Place"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:HighWageOccupation",
+    "skos:prefLabel": {
+        "en-US": "High Wage Occupation"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the number of subjects employed in a high-wage occupation."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:JobIndustryOccupation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

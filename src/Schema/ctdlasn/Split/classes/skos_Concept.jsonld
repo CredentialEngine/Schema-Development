@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:Concept",
+    "@type": "rdfs:Class",
+    "rdfs:comment": {
+        "en-US": "Term in a controlled vocabulary."
+    },
+    "rdfs:label": {
+        "en-US": "Concept"
+    },
+    "vs:term_status": "vs:stable"
+}

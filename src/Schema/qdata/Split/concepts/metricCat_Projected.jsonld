@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Projected",
+    "skos:prefLabel": {
+        "en-US": "Projected"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of data that is predicted to be true in the future."
+    },
+    "vann:usageNote": {
+        "en-US": "Intended for use with other metric category types to indicate that the values for this metric are predictions or extrapolations, rather than current measured data."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:DataWithholdingCategory",
+    "rdfs:label": {
+        "en-US": "Data Withholding Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Categories of processes for withholding data in a data set."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:hasTopConcept": [
+        "dataWithholding:DataMasked",
+        "dataWithholding:DataSuppressed"
+    ]
+}

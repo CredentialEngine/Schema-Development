@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:processMethodDescription",
+    "rdfs:label": {
+        "en-US": "Process Method Description"
+    },
+    "rdfs:comment": {
+        "en-US": "Textual description of the process methods."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceterms:ProcessProfile"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

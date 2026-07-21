@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:inProgressionModel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Progression Model to which this Progression Level belongs."
+    },
+    "rdfs:label": {
+        "en-US": "In Progression Model"
+    },
+    "rdfs:subPropertyOf": [
+        "skos:inScheme"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel"
+    ],
+    "schema:rangeIncludes": [
+        "asn:ProgressionModel"
+    ],
+    "vs:term_status": "vs:unstable"
+}

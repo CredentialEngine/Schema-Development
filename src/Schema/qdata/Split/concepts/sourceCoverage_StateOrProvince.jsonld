@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "sourceCoverage:StateOrProvince",
+    "skos:prefLabel": {
+        "en-US": "State Or Province"
+    },
+    "skos:definition": {
+        "en-US": "Principal administrative and occasionally sovereign subdivision of a country such as California, Bavaria, and Yucatan."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:DataSourceCoverage"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DataSourceCoverage"
+    ]
+}

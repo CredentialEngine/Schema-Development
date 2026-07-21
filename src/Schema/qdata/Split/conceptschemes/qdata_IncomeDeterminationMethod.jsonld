@@ -1,0 +1,16 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:IncomeDeterminationMethod",
+    "rdfs:label": {
+        "en-US": "Income Determination Method"
+    },
+    "rdfs:comment": {
+        "en-US": "Methods for determining the actual or anticipated annual earnings of the subjects in the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:hasTopConcept": [
+        "incomeDetermination:ActualEarnings",
+        "incomeDetermination:AnnualizedEarnings"
+    ]
+}

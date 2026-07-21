@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:WIOACompleter",
+    "skos:prefLabel": {
+        "en-US": "WIOA Completer"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects who completed a WIOA-sponsored education or workforce preparation activity or resource, regardless of whether they were successful or unsuccessful."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:WIOA"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

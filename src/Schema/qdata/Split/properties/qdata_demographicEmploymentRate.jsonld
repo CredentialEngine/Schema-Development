@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:demographicEmploymentRate",
+    "rdfs:label": {
+        "en-US": "demographicEmploymentRate"
+    },
+    "rdfs:comment": {
+        "en-US": "Employment rate for a demographic category."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

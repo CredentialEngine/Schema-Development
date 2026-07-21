@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:rightsHolder",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:rightsHolder"
+    ],
+    "rdfs:comment": {
+        "en-US": "An agent owning or managing rights over this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Rights Holder"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:TransferAgreement",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "vs:term_status": "vs:stable"
+}

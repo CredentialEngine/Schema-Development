@@ -1,0 +1,38 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:dateCreated",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "The dateCreated property is used for non-canonical statements created by a third party."
+    },
+    "owl:equivalentProperty": [
+        "dct:created"
+    ],
+    "rdfs:comment": {
+        "en-US": "Date of creation of this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Date Created"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:date"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:date"
+    ],
+    "vann:usageNote": {
+        "en-US": "Values should be a full date, i.e. year, month and day; if the day or month are not known use ceasn:approximateDateCreated instead."
+    },
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:unrelatedEmployment",
+    "rdfs:label": {
+        "en-US": "Unrelated Employment"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of people employed outside the area of work (e.g., industry, occupation) in which the credential provided preparation."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

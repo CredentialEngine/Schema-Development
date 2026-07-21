@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:CareerAdvancement",
+    "skos:prefLabel": {
+        "en-US": "Career Advancement"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the impact of educational or work preparation activities or resources on subjects' career advancement opportunities."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ActivityEarnings"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

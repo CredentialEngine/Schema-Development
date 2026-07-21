@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:dateCopyrighted",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:dateCopyrighted"
+    ],
+    "rdfs:comment": {
+        "en-US": "Date of a statement of copyright for this resource, such as ©2017."
+    },
+    "rdfs:label": {
+        "en-US": "Date Copyrighted"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:date"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "vs:term_status": "vs:stable"
+}

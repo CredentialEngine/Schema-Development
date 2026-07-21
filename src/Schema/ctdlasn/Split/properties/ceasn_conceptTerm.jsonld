@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:conceptTerm",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:conceptTerm",
+        "ceterms:subject"
+    ],
+    "rdfs:comment": {
+        "en-US": "A term drawn from a controlled vocabulary used by the promulgating agency to refine and differentiate individual resources contextually."
+    },
+    "rdfs:label": {
+        "en-US": "Concept Term"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:subject"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vann:usageNote": {
+        "en-US": "Note: Topic terms can include relevant people, places, things, and events."
+    },
+    "vs:term_status": "vs:stable"
+}

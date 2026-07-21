@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:WIOATrainingExiter",
+    "skos:prefLabel": {
+        "en-US": "WIOA Training Exiter"
+    },
+    "skos:definition": {
+        "en-US": "Measures of subjects who either completed or withdrew from a WIOA-sponsored training program, or transferred to a different program."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:WIOA"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

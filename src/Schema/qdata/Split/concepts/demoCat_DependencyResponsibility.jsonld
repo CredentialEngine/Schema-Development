@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "demoCat:DependencyResponsibility",
+    "skos:prefLabel": {
+        "en-US": "Dependency Responsibility"
+    },
+    "skos:definition": {
+        "en-US": "Means of indicating the caring responsibilities of subjects, such as for dependents or other family members."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:inScheme": [
+        "qdata:DemographicCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DemographicCategory"
+    ]
+}

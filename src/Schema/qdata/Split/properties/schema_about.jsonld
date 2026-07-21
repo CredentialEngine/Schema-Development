@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:about",
+    "rdfs:label": {
+        "en-US": "About"
+    },
+    "rdfs:comment": {
+        "en-US": "Subject matter of the resource."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceterms:AlignmentMap",
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "rdfs:Resource"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:publicationStatusType",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:publicationStatus"
+    ],
+    "rdfs:comment": {
+        "en-US": "The publication status of the resource."
+    },
+    "rdfs:label": {
+        "en-US": "Publication Status Type"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:RegulatoryInformation",
+        "ceterms:TransferAgreement",
+        "qdata:DataSetProfile",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vann:usageNote": {
+        "en-US": "With competencies that originate as part of a competency framework that includes an applicable publication status, it is not necessary to include that status on every competency in the framework."
+    },
+    "vs:term_status": "vs:stable"
+}

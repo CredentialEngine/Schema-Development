@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:hasCriterionLevel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Criterion Level for this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Has Criterion Level"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CriterionLevel",
+        "ceasn:RubricCriterion",
+        "ceasn:RubricLevel"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:CriterionLevel"
+    ],
+    "vs:term_status": "vs:unstable"
+}

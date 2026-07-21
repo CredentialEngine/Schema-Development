@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:observedCategory",
+    "rdfs:label": {
+        "en-US": "Observed Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates the entity identified through an observation as meeting the metric criteria."
+    },
+    "dct:description": {
+        "en-US": "Used when the metric involves observation of categoric data, for example indicating an observation of which Industry or Occupation is the most common destination after completing study."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "rdfs:Resource"
+    ]
+}

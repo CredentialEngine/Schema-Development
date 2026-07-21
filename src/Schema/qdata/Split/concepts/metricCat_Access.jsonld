@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Access",
+    "skos:prefLabel": {
+        "en-US": "Access"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects who access educational or work activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ParticipationEngagement"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

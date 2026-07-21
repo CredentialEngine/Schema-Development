@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:hasScope",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:hasScope"
+    ],
+    "rdfs:comment": {
+        "en-US": "Description of what the rubric's creator intended to assess or evaluate."
+    },
+    "rdfs:label": {
+        "en-US": "Has Scope"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Rubric"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:unstable"
+}

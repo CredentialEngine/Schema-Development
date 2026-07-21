@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:regionalEmploymentRate",
+    "rdfs:label": {
+        "en-US": "Regional Employment Rate"
+    },
+    "rdfs:comment": {
+        "en-US": "Rate computed by dividing the number of holders or subjects in the region meeting the data set's criteria of employment (meetEmploymentCriteria) by the number of holders or subjects in the region for which data was available (dataAvailable)."
+    },
+    "vs:term_status": "vs:stable",
+    "rdfs:subPropertyOf": [
+        "qdata:employmentRate"
+    ],
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

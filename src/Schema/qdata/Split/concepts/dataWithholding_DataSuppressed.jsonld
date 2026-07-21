@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "dataWithholding:DataSuppressed",
+    "skos:prefLabel": {
+        "en-US": "Data Suppressed"
+    },
+    "skos:definition": {
+        "en-US": "Select information withheld or removed to protect the identities of subjects."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:DataWithholdingCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DataWithholdingCategory"
+    ]
+}

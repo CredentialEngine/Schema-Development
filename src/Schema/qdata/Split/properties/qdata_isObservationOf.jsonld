@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:isObservationOf",
+    "rdfs:label": {
+        "en-US": "Is Observation Of"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates the metric used for this Observation."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:Metric"
+    ]
+}

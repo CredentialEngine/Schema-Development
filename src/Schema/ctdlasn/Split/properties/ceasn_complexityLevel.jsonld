@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:complexityLevel",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:complexityLevel"
+    ],
+    "rdfs:comment": {
+        "en-US": "The expected performance level of a learner or professional as defined by a competency."
+    },
+    "rdfs:label": {
+        "en-US": "Complexity Level"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:stable"
+}

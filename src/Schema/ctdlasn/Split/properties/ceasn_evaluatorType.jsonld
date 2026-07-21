@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:evaluatorType",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Type of evaluator; select from an existing enumeration of such types."
+    },
+    "rdfs:label": {
+        "en-US": "Evaluator Type"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Rubric"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:unstable"
+}

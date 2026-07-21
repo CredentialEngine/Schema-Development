@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dimensionType",
+    "rdfs:label": {
+        "en-US": "Dimension Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of resource that may be a point in the dimension; select from existing classes and concept schemes."
+    },
+    "dct:description": {
+        "en-US": "Items in a dimension will typically be instances of CTDL classes or concepts drawn from a CTDL concept scheme."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Dimension"
+    ],
+    "schema:rangeIncludes": [
+        "rdfs:Class",
+        "skos:Concept",
+        "skos:ConceptScheme"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:substantiatingOrganization",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Aspects of the referenced Organization provide some justification that the resource being described is useful."
+    },
+    "rdfs:label": {
+        "en-US": "Substantiating Organization"
+    },
+    "rdfs:subPropertyOf": [
+        "ceasn:substantiatingResource"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "vs:term_status": "vs:unstable"
+}

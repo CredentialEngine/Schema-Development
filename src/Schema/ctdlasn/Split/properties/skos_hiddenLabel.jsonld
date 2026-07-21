@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:hiddenLabel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Label not intended for public presentation but to assist applications in disambiguating searcher intent - e.g., hidden labels can be used for common misspelling or a colloquial expression."
+    },
+    "rdfs:label": {
+        "en-US": "Hidden Label"
+    },
+    "schema:domainIncludes": [
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "evalCat:Self",
+    "@type": "skos:Concept",
+    "skos:definition": {
+        "en-US": "Evaluator is the person or group being evaluated."
+    },
+    "skos:inScheme": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Self"
+    },
+    "skos:topConceptOf": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "vs:term_status": "vs:unstable"
+}

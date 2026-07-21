@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:metricType",
+    "rdfs:label": {
+        "en-US": "Metric Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of phenomenon being measured; select from an existing enumeration of such types."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Earnings",
+    "skos:prefLabel": {
+        "en-US": "Earnings"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the income subjects receive from all forms of work."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ActivityEarnings"
+    ],
+    "skos:relatedMatch": [
+        "demoCat:Income"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

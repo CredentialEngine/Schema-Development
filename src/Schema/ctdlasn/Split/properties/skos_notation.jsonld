@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:notation",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Alphanumeric notation or ID code as defined by the promulgating body to identify this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Notation"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "vs:term_status": "vs:stable"
+}

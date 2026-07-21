@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:Rubric",
+    "@type": "rdfs:Class",
+    "owl:equivalentClass": [
+        "asn:Rubric"
+    ],
+    "rdfs:comment": {
+        "en-US": "A structured and systematic evaluation tool used to assess performance, quality, and/or criteria."
+    },
+    "rdfs:label": {
+        "en-US": "Rubric"
+    },
+    "vs:term_status": "vs:unstable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "evalCat:Automated",
+    "@type": "skos:Concept",
+    "skos:definition": {
+        "en-US": "Evaluator is an automated agent or process."
+    },
+    "skos:inScheme": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Automated"
+    },
+    "skos:topConceptOf": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "vs:term_status": "vs:unstable"
+}

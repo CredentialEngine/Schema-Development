@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:subjectValue",
+    "rdfs:label": {
+        "en-US": "Subject Value"
+    },
+    "rdfs:comment": {
+        "en-US": "Quantitative values and percentages for a subject category in the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

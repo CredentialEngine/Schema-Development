@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:IndustryEmployment",
+    "skos:prefLabel": {
+        "en-US": "Industry Employment"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the number of subjects employed within an industry."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:JobIndustryOccupation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

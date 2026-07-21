@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "evalCat:Peer",
+    "@type": "skos:Concept",
+    "dct:description": {
+        "en-US": "Peers may be people taking the same course or in similar job roles."
+    },
+    "skos:definition": {
+        "en-US": "Evaluator is one or more peers of the person, group, or thing being evaluated."
+    },
+    "skos:inScheme": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Peer"
+    },
+    "skos:topConceptOf": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "vs:term_status": "vs:unstable"
+}

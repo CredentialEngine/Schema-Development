@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "demoCat:EducationLevel",
+    "skos:prefLabel": {
+        "en-US": "Education Level"
+    },
+    "skos:definition": {
+        "en-US": "Means of indicating the highest level of education completed by subjects."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:relatedMatch": [
+        "metricCat:EducationLevel"
+    ],
+    "skos:inScheme": [
+        "qdata:DemographicCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DemographicCategory"
+    ]
+}

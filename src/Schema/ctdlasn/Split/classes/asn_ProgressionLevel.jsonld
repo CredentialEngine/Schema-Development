@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "asn:ProgressionLevel",
+    "@type": "rdfs:Class",
+    "rdfs:comment": {
+        "en-US": "Identifiable point along a developmental progression of competence, achievement or temporal position."
+    },
+    "rdfs:label": {
+        "en-US": "Progression Level"
+    },
+    "rdfs:subClassOf": [
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:stable"
+}

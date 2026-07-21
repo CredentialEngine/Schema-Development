@@ -1,0 +1,36 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:creator",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "The creator property is used with non-canonical statements created by a third party."
+    },
+    "owl:equivalentProperty": [
+        "dct:creator"
+    ],
+    "rdfs:comment": {
+        "en-US": "An entity primarily responsible for making this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Creator"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:contributor"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "vs:term_status": "vs:stable"
+}

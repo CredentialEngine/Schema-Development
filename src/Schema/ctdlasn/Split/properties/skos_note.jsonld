@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:note",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Annotations to the concept for purposes of general documentation."
+    },
+    "rdfs:label": {
+        "en-US": "Note"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

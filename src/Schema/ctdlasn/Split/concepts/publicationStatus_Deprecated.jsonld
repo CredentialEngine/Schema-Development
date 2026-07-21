@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "publicationStatus:Deprecated",
+    "@type": "skos:Concept",
+    "owl:equivalentClass": [
+        "asnPublicationStatus:Deprecated"
+    ],
+    "skos:definition": {
+        "en-US": "Status assigned to a document/statement by the promulgating agency asserting that the document/statement has been superseded or its use otherwise disfavored."
+    },
+    "skos:inScheme": [
+        "ceasn:PublicationStatus"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Deprecated"
+    },
+    "skos:topConceptOf": [
+        "ceasn:PublicationStatus"
+    ],
+    "vs:term_status": "vs:stable"
+}

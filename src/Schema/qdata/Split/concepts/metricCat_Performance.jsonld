@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Performance",
+    "skos:prefLabel": {
+        "en-US": "Performance"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects' achievement, including completion requirements, proficiency, placement in work or further education, and measurable skills gains in educational or work preparation activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:Concentrator",
+        "metricCat:EmployerSatisfaction",
+        "metricCat:Placement",
+        "metricCat:SkillsProficiency",
+        "metricCat:StudentSatisfaction"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

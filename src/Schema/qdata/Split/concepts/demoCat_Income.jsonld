@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "demoCat:Income",
+    "skos:prefLabel": {
+        "en-US": "Income"
+    },
+    "skos:definition": {
+        "en-US": "Means of indicating the financial stability of subjects."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:relatedMatch": [
+        "metricCat:Earnings"
+    ],
+    "skos:inScheme": [
+        "qdata:DemographicCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DemographicCategory"
+    ]
+}

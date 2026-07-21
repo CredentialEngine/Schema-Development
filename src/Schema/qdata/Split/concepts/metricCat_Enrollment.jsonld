@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Enrollment",
+    "skos:prefLabel": {
+        "en-US": "Enrollment"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects who enroll in an organization or its specified education or work preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ParticipationEngagement"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

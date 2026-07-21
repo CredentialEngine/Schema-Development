@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "demoCat:MaritalStatus",
+    "skos:prefLabel": {
+        "en-US": "Marital Status"
+    },
+    "skos:definition": {
+        "en-US": "Means of indicating the marital status of subjects."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:inScheme": [
+        "qdata:DemographicCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DemographicCategory"
+    ]
+}

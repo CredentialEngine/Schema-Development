@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:ParticipationEngagement",
+    "skos:prefLabel": {
+        "en-US": "Participation and Engagement"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects' active involvement, admission, enrollment, and re-enrollment in specified education or work preparation activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:Acceptance",
+        "metricCat:Access",
+        "metricCat:CreditTransfer",
+        "metricCat:Enrollment",
+        "metricCat:PriorLearning",
+        "metricCat:ReEnrollment"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

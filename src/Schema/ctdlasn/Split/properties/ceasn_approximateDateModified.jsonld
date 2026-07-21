@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:approximateDateModified",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "The value should be in ISO 8601 date format; specifically YYYY or YYYY-MM."
+    },
+    "rdfs:comment": {
+        "en-US": "Approximate date on which this resource was most recently modified in some way."
+    },
+    "rdfs:label": {
+        "en-US": "Approximate Date Modified"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:Occupation",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:Task",
+        "ceterms:TransferAgreement",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "schema:Date"
+    ],
+    "vann:usageNote": {
+        "en-US": "Values may be just a year (e.g. 2026) or a year and a month (e.g. (2026-05).  If the full date, i.e. year, month and day, are known use ceasn:dateModified."
+    },
+    "vs:term_status": "vs:unstable"
+}

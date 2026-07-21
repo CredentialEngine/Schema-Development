@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:rights",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:rights"
+    ],
+    "rdfs:comment": {
+        "en-US": "Information about rights held in and over this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Rights"
+    },
+    "rdfs:subPropertyOf": [
+        "dc:rights"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "qdata:DataSetDistribution",
+        "qdata:DataSetProfile",
+        "qdata:DataSetService",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

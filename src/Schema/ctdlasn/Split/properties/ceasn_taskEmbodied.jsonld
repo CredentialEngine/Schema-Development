@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:taskEmbodied",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Specifically defined piece of work embodied either directly or indirectly in this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Task Embodied"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceasn:Task"
+    ],
+    "vs:term_status": "vs:stable"
+}

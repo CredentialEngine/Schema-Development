@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "incomeDetermination:ActualEarnings",
+    "skos:prefLabel": {
+        "en-US": "Actual Earnings"
+    },
+    "skos:definition": {
+        "en-US": "Earnings garnered over the entire reported time period of the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:IncomeDeterminationMethod"
+    ],
+    "skos:topConceptOf": [
+        "qdata:IncomeDeterminationMethod"
+    ]
+}

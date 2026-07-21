@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:subjectsInSet",
+    "rdfs:label": {
+        "en-US": "Subjects In Set"
+    },
+    "rdfs:comment": {
+        "en-US": "Total credential holders and non-holders in the final data collection and reporting."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

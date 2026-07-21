@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:substantiatingResource",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Aspects of the referenced resource provide some justification that the resource being described is useful."
+    },
+    "rdfs:label": {
+        "en-US": "Substantiating Resource"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ],
+    "vs:term_status": "vs:unstable"
+}

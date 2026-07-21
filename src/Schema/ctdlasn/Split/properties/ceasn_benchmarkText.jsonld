@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:benchmarkText",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Description of the level achieved as defined by the Rubric Criterion."
+    },
+    "rdfs:label": {
+        "en-US": "Benchmark Text"
+    },
+    "schema:domainIncludes": [
+        "ceasn:CriterionLevel"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:unstable"
+}

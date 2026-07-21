@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:sourceDocumentation",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "The intended use case for this is when documentation is analyzed in order to find and describe entities such as competencies and concepts."
+    },
+    "rdfs:comment": {
+        "en-US": "Human-readable information resource other than a competency framework from which this resource was generated or identified by humans or machines."
+    },
+    "rdfs:label": {
+        "en-US": "Source Documentation"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceterms:AlignmentMap",
+        "ceterms:QualificationsFramework",
+        "skos:Concept",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ],
+    "vs:term_status": "vs:unstable"
+}

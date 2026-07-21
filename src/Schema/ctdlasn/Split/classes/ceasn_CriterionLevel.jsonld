@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:CriterionLevel",
+    "@type": "rdfs:Class",
+    "rdfs:comment": {
+        "en-US": "An individual component or specific element within a criterion that defines a particular aspect or standard for evaluation."
+    },
+    "rdfs:label": {
+        "en-US": "Criterion Level"
+    },
+    "vs:term_status": "vs:unstable"
+}

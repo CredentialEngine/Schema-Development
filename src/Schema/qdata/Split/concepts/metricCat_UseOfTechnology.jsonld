@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:UseOfTechnology",
+    "skos:prefLabel": {
+        "en-US": "Use of Technology"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the extent to which educational or work preparation activities or resources integrate technology in their delivery."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:TechnologyInnovation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

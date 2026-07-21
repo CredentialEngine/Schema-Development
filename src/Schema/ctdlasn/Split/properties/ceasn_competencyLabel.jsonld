@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:competencyLabel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Short identifying phrase or name applied to a competency by the creator of the competency framework."
+    },
+    "rdfs:label": {
+        "en-US": "Competency Label"
+    },
+    "rdfs:subPropertyOf": [
+        "ceasn:name",
+        "schema:name"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vann:usageNote": {
+        "en-US": "Where such a label is the sole expression of the competency, enter the text as competencyText as opposed to competencyLabel."
+    },
+    "vs:term_status": "vs:stable"
+}

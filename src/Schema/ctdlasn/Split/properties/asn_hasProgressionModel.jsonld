@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "asn:hasProgressionModel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Reference to a progression model used."
+    },
+    "rdfs:label": {
+        "en-US": "Has Progression Model"
+    },
+    "schema:domainIncludes": [
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:Pathway",
+        "ceterms:QualificationsFramework"
+    ],
+    "schema:rangeIncludes": [
+        "asn:ProgressionModel"
+    ],
+    "vs:term_status": "vs:stable"
+}

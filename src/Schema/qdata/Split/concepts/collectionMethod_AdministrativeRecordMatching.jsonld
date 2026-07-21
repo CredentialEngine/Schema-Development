@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionMethod:AdministrativeRecordMatching",
+    "skos:prefLabel": {
+        "en-US": "Administrative Record Matching"
+    },
+    "skos:definition": {
+        "en-US": "Data derived from cross-mapping unambiguous identifiers from more than one government administrative data sets."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:CollectionMethod"
+    ],
+    "skos:topConceptOf": [
+        "qdata:CollectionMethod"
+    ]
+}

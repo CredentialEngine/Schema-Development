@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:Competency",
+    "@type": "rdfs:Class",
+    "dct:description": {
+        "en-US": "Competency is broadly defined to include assertions of academic, professional, occupational, vocational and life goals, outcomes, and standards, however labeled."
+    },
+    "owl:equivalentClass": [
+        "asn:Statement"
+    ],
+    "rdfs:comment": {
+        "en-US": "Measurable or observable knowledge, skill, or ability necessary to successful performance of a person."
+    },
+    "rdfs:label": {
+        "en-US": "Competency"
+    },
+    "vs:term_status": "vs:stable"
+}

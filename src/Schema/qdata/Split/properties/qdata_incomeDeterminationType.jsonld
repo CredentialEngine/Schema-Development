@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:incomeDeterminationType",
+    "rdfs:label": {
+        "en-US": "Income Determination Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Mechanism by which income is determined; i.e., actual or annualized earnings; select from an enumeration of such types."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile",
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

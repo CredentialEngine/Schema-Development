@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:facultyToStudentRatio",
+    "rdfs:label": {
+        "en-US": "Faculty-to-Student Ratio"
+    },
+    "rdfs:comment": {
+        "en-US": "Ratio of the number of teaching faculty to the number of students."
+    },
+    "dct:description": {
+        "en-US": "What constitutes \"teaching faculty\" is determined by the Organization and may include anyone with a significant, direct instructional role in interactions with students in learning activities."
+    },
+    "vann:usageNote": {
+        "en-US": "The expression of the ratio should feature the number of faculty first, followed by the number of students, e.g., \"1:10\" to mean \"one faculty per ten students\"."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "ceterms:AggregateDataProfile",
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
+}

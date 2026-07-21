@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:MetricCategory",
+    "rdfs:label": {
+        "en-US": "Metric Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of metrics applicable to an Observation."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:hasTopConcept": [
+        "metricCat:ActivityEarnings",
+        "metricCat:CostDuration",
+        "metricCat:JobIndustryOccupation",
+        "metricCat:Organization",
+        "metricCat:ParticipationEngagement",
+        "metricCat:Performance",
+        "metricCat:PostCompletion",
+        "metricCat:PostEnrollment",
+        "metricCat:PreEnrollment",
+        "metricCat:Projected",
+        "metricCat:RetentionCompletion",
+        "metricCat:StudentFinancial",
+        "metricCat:TechnologyInnovation",
+        "metricCat:WIOA"
+    ]
+}

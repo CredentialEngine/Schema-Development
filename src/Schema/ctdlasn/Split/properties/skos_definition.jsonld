@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:definition",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Supplies a complete explanation of the intended meaning of a concept."
+    },
+    "rdfs:label": {
+        "en-US": "Definition"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

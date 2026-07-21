@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:PassRate",
+    "skos:prefLabel": {
+        "en-US": "Pass Rate"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the proportion of subjects who have passed the relevant program, education, or workforce preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:RetentionCompletion"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

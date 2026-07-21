@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:tableOfContents",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "The table of contents is a \"manifest\", or a hierarchic, ordered, syntactic representation of the sections of this resource; for example, the competencies that are part of a competency framework."
+    },
+    "owl:equivalentProperty": [
+        "dct:tableOfContents"
+    ],
+    "rdfs:comment": {
+        "en-US": "A list of sub-units of this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Table of Contents"
+    },
+    "schema:domainIncludes": [
+        "ceasn:CompetencyFramework",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

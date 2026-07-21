@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:CreditTransfer",
+    "skos:prefLabel": {
+        "en-US": "Credit Transfer"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of credits earned prior to enrollment transferred to another educational program."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ParticipationEngagement"
+    ],
+    "skos:relatedMatch": [
+        "metricCat:PriorLearning"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

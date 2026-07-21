@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "sourceCoverage:Global",
+    "skos:prefLabel": {
+        "en-US": "Global"
+    },
+    "skos:definition": {
+        "en-US": "Encompassing the entire world."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:DataSourceCoverage"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DataSourceCoverage"
+    ]
+}

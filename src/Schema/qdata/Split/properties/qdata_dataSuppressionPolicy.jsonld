@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dataSuppressionPolicy",
+    "rdfs:label": {
+        "en-US": "Data Suppression Policy"
+    },
+    "rdfs:comment": {
+        "en-US": "Description of a data suppression policy for earnings and employment data when cell size is below a certain threshold to ensure an individual's privacy and security."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:employmentDefinition",
+    "rdfs:label": {
+        "en-US": "Employment Definition"
+    },
+    "rdfs:comment": {
+        "en-US": "Definition of employment used by the data source."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile",
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

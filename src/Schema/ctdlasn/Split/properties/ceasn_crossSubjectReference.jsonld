@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:crossSubjectReference",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "An interdisciplinary statement reference."
+    },
+    "owl:equivalentProperty": [
+        "asn:crossSubjectReference"
+    ],
+    "rdfs:comment": {
+        "en-US": "A relationship between this competency and a competency in a separate competency framework."
+    },
+    "rdfs:label": {
+        "en-US": "Cross-Subject Reference"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:relation"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

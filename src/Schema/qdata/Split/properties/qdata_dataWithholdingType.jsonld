@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dataWithholdingType",
+    "rdfs:label": {
+        "en-US": "Data Withholding Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of suppression, masking, or other modification made to the data to protect the identities of its subjects."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:Observation",
+        "schema:MonetaryAmount",
+        "schema:MonetaryAmountDistribution",
+        "schema:QuantitativeValue"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "publicationStatus:Draft",
+    "@type": "skos:Concept",
+    "owl:equivalentClass": [
+        "asnPublicationStatus:Draft"
+    ],
+    "skos:definition": {
+        "en-US": "A status assigned to all documents/statements during development."
+    },
+    "skos:inScheme": [
+        "ceasn:PublicationStatus"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Draft"
+    },
+    "skos:topConceptOf": [
+        "ceasn:PublicationStatus"
+    ],
+    "vann:usageNote": {
+        "en-US": "Draft documents and statements should not be displayed to anyone other than their owners and relevant administrators."
+    },
+    "vs:term_status": "vs:stable"
+}

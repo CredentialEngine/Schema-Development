@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:RetentionCompletion",
+    "skos:prefLabel": {
+        "en-US": "Retention and Completion"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects' persistence, discontinuation, completion, credential attainment, and highest level of education achieved in educational or work activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:Completion",
+        "metricCat:CredentialAttainment",
+        "metricCat:EducationLevel",
+        "metricCat:PassRate",
+        "metricCat:Progression",
+        "metricCat:Retention"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

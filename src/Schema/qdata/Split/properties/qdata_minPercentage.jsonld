@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:minPercentage",
+    "rdfs:label": {
+        "en-US": "Min Percentage"
+    },
+    "rdfs:comment": {
+        "en-US": "The lower percentage of some characteristic or property."
+    },
+    "vann:usageNote": {
+        "en-US": "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "ceasn:CriterionLevel",
+        "ceterms:ValueProfile",
+        "qdata:Observation",
+        "schema:QuantitativeValue"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ]
+}

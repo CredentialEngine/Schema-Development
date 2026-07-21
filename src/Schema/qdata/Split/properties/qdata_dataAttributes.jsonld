@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dataAttributes",
+    "rdfs:label": {
+        "en-US": "Data Attributes"
+    },
+    "rdfs:comment": {
+        "en-US": "Attributes of the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataSetTimeFrame"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:DataProfile"
+    ]
+}

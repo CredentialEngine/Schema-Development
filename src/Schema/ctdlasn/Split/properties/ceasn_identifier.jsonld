@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:identifier",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:identifier"
+    ],
+    "rdfs:comment": {
+        "en-US": "An alternative URI by which this competency framework or competency is identified."
+    },
+    "rdfs:label": {
+        "en-US": "Identifier"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ],
+    "vs:term_status": "vs:stable"
+}

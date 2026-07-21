@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:EvaluatorCategory",
+    "@type": "skos:ConceptScheme",
+    "rdfs:comment": {
+        "en-US": "Category of agents that perform evaluation."
+    },
+    "rdfs:label": {
+        "en-US": "Evaluator Category"
+    },
+    "skos:hasTopConcept": [
+        "evalCat:Authority",
+        "evalCat:Automated",
+        "evalCat:External",
+        "evalCat:Peer",
+        "evalCat:Self"
+    ],
+    "vs:term_status": "vs:unstable"
+}

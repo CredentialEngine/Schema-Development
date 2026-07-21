@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:comprisedOf",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:comprisedOf"
+    ],
+    "rdfs:comment": {
+        "en-US": "This competency includes, comprehends or encompasses, in whole or in part, the meaning, nature or importance of the referenced competency."
+    },
+    "rdfs:label": {
+        "en-US": "Comprised Of"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

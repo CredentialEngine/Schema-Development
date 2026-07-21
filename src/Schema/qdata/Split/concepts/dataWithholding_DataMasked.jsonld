@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "dataWithholding:DataMasked",
+    "skos:prefLabel": {
+        "en-US": "Data Masked"
+    },
+    "skos:definition": {
+        "en-US": "Select information concealed or encrypted to protect the identities of subjects."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:DataWithholdingCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DataWithholdingCategory"
+    ]
+}

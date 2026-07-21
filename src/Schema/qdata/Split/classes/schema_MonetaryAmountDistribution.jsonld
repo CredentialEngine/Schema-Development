@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "schema:MonetaryAmountDistribution",
+    "rdfs:label": {
+        "en-US": "Monetary Amount Distribution"
+    },
+    "rdfs:comment": {
+        "en-US": "Statistical distribution of monetary amounts."
+    },
+    "vs:term_status": "vs:stable"
+}

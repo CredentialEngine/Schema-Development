@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:localSubject",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:localSubject"
+    ],
+    "rdfs:comment": {
+        "en-US": "The text string denoting the subject of the competency framework or competency as designated by the promulgating agency."
+    },
+    "rdfs:label": {
+        "en-US": "Local Subject"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:subject"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vann:usageNote": {
+        "en-US": "The localSubject property and subject property may or may not point to the same subject. If so, enter the text string for the subject as the value of this property and the  URI for that subject in the subject property."
+    },
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:nonCompleters",
+    "rdfs:label": {
+        "en-US": "Non-Completers"
+    },
+    "rdfs:comment": {
+        "en-US": "Non-holders who departed or are likely to depart higher education prematurely."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

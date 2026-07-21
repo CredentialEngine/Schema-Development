@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:PublicationStatus",
+    "@type": "skos:ConceptScheme",
+    "owl:equivalentClass": [
+        "asnscheme:ASNPublicationStatus"
+    ],
+    "rdfs:comment": {
+        "en-US": "Describes the various publication statuses of competency frameworks and statements."
+    },
+    "rdfs:label": {
+        "en-US": "Publication Status Concept Scheme"
+    },
+    "skos:hasTopConcept": [
+        "publicationStatus:Deprecated",
+        "publicationStatus:Draft",
+        "publicationStatus:Published"
+    ],
+    "vs:term_status": "vs:stable"
+}

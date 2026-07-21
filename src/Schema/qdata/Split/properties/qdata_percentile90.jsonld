@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:percentile90",
+    "rdfs:label": {
+        "en-US": "Percentile 90"
+    },
+    "rdfs:comment": {
+        "en-US": "90th percentile value."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:Observation",
+        "schema:MonetaryAmountDistribution"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ]
+}

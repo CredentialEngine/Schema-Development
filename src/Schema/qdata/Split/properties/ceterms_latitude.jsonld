@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:latitude",
+    "rdfs:label": {
+        "en-US": "Latitude"
+    },
+    "rdfs:comment": {
+        "en-US": "Latitude of a location."
+    },
+    "dct:description": {
+        "en-US": "For example 37.42242 (WGS 84)"
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceterms:GeoCoordinates",
+        "ceterms:Place"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ],
+    "owl:equivalentProperty": [
+        "schema:latitude"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:administrationProcess",
+    "rdfs:label": {
+        "en-US": "Administration Process"
+    },
+    "rdfs:comment": {
+        "en-US": "Description of a process by which a resource is administered."
+    },
+    "dct:description": {
+        "en-US": "Processes described include the execution of events and the development of resources in the lifecycle of a credential or organization, such as the process for the proctoring of assessments."
+    },
+    "vann:usageNote": {
+        "en-US": "For assessments and rubrics, this can be used to indicate the scoring algorithm."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:ProcessProfile"
+    ]
+}

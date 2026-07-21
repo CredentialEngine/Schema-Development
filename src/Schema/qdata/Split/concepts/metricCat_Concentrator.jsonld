@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Concentrator",
+    "skos:prefLabel": {
+        "en-US": "Concentrator"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of  subjects within a single educational program who meet completion requirements related to a specific  workforce preparation program of study."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Performance"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

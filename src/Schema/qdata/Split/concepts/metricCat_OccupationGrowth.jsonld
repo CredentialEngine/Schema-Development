@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:OccupationGrowth",
+    "skos:prefLabel": {
+        "en-US": "Occupation Growth"
+    },
+    "skos:definition": {
+        "en-US": "Measure the growth rate of an occupational area."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:JobIndustryOccupation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

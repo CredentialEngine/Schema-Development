@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:standardDeviation",
+    "rdfs:label": {
+        "en-US": "Standard Deviation"
+    },
+    "rdfs:comment": {
+        "en-US": "Standard deviation about the mean."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:JobIndustryOccupation",
+    "skos:prefLabel": {
+        "en-US": "Job, Industry and Occupation"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of employment and earnings in industries or occupational areas."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:HighSkillOccupation",
+        "metricCat:HighWageOccupation",
+        "metricCat:InDemandOccupation",
+        "metricCat:IndustryEmployment",
+        "metricCat:IndustryGrowth",
+        "metricCat:JobOpenings",
+        "metricCat:OccupationEmployment",
+        "metricCat:OccupationGrowth"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

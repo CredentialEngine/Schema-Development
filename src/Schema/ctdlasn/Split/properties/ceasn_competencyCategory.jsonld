@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:competencyCategory",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "This property points to a class, not to instances of that class. For example, where two competencies in a competency framework have been identified respectively by the promulgating agency as \"Strand: Renaissance\" and \"Strand: Social history\", the statementLabel for both these competencies is \"Strand\"."
+    },
+    "owl:equivalentProperty": [
+        "asn:statementLabel",
+        "case:v1p0/CFItemType"
+    ],
+    "rdfs:comment": {
+        "en-US": "The textual label identifying the category of the competency as designated by the promulgating body."
+    },
+    "rdfs:label": {
+        "en-US": "Competency Category"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

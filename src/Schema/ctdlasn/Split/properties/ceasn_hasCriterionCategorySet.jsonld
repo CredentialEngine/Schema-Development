@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:hasCriterionCategorySet",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Indicates the Concept Scheme for clustering logical sets of Rubric Criteria."
+    },
+    "rdfs:label": {
+        "en-US": "Has Criterion Category Set"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Rubric"
+    ],
+    "schema:rangeIncludes": [
+        "skos:ConceptScheme"
+    ],
+    "vs:term_status": "vs:unstable"
+}

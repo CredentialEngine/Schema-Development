@@ -1,0 +1,5194 @@
+{
+	"@context": "https://credreg.net/qdata/schema/context/json",
+	"@graph": [
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:Credential",
+			"rdfs:label": {
+				"en-US": "Credential"
+			},
+			"rdfs:comment": {
+				"en-US": "Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability."
+			},
+			"dct:description": {
+				"en-US": "The ceterms:Credential class is broadly defined to encompass credentials used across domains and communities of practice. The class should be used only when speaking of credentials in general. Subclasses of ceterms:Credential as defined by Credential Engine (or other communities) should be used when referencing specific types of credentials."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subClassOf": [
+				"schema:CreativeWork"
+			],
+			"owl:equivalentClass": [
+				"obi:BadgeClass"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:EarningsProfile",
+			"rdfs:label": {
+				"en-US": "Earnings Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity that describes earning and related statistical information for a given credential."
+			},
+			"vann:usageNote": {
+				"en-US": "The use of ceterms:AggregateDataProfile instead of this class is strongly recommended."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subClassOf": [
+				"ceterms:AggregateDataProfile",
+				"schema:CreativeWork"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:EmploymentOutcomeProfile",
+			"rdfs:label": {
+				"en-US": "Employment Outcome Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity that describes employment outcomes and related statistical information for a given credential."
+			},
+			"vann:usageNote": {
+				"en-US": "The use of ceterms:AggregateDataProfile instead of this class is strongly recommended."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subClassOf": [
+				"ceterms:AggregateDataProfile",
+				"schema:CreativeWork"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:HoldersProfile",
+			"rdfs:label": {
+				"en-US": "Holders Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity describing the count and related statistical information of holders of a given credential."
+			},
+			"vann:usageNote": {
+				"en-US": "The use of ceterms:AggregateDataProfile instead of this class is strongly recommended."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subClassOf": [
+				"ceterms:AggregateDataProfile",
+				"schema:CreativeWork"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:JurisdictionProfile",
+			"rdfs:label": {
+				"en-US": "Jurisdiction Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Geo-political information about applicable geographic areas and their exceptions."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subClassOf": [
+				"schema:CreativeWork"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:Place",
+			"rdfs:label": {
+				"en-US": "Place"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity describing a physical location or geospatial area."
+			},
+			"vs:term_status": "vs:stable",
+			"owl:equivalentClass": [
+				"schema:Place"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "ceterms:ProcessProfile",
+			"rdfs:label": {
+				"en-US": "Process Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity describing the type, nature, and other relevant information about a process."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subClassOf": [
+				"schema:CreativeWork"
+			]
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:DataProfile",
+			"rdfs:label": {
+				"en-US": "Data Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity describing the attributes of the data set, its subjects and their values."
+			},
+			"vs:term_status": "vs:stable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:DataSetDistribution",
+			"rdfs:label": {
+				"en-US": "Data Set Distribution"
+			},
+			"rdfs:comment": {
+				"en-US": "A specific representation of a dataset."
+			},
+			"vs:term_status": "vs:unstable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:DataSetProfile",
+			"rdfs:label": {
+				"en-US": "Data Set Profile"
+			},
+			"rdfs:comment": {
+				"en-US": "Particular characteristics or properties of a data set and its records."
+			},
+			"vs:term_status": "vs:stable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:DataSetService",
+			"rdfs:label": {
+				"en-US": "Data Set Service"
+			},
+			"rdfs:comment": {
+				"en-US": "A service that provides access to one or more datasets or data processing functions."
+			},
+			"vs:term_status": "vs:unstable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:DataSetTimeFrame",
+			"rdfs:label": {
+				"en-US": "Data Set Time Frame"
+			},
+			"rdfs:comment": {
+				"en-US": "Time frame including earnings and employment start and end dates of the data set."
+			},
+			"vs:term_status": "vs:stable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:Dimension",
+			"rdfs:label": {
+				"en-US": "Dimension"
+			},
+			"rdfs:comment": {
+				"en-US": "Aspect or characteristic along which observations in a dataset can be organized and identified."
+			},
+			"vs:term_status": "vs:unstable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:Metric",
+			"rdfs:label": {
+				"en-US": "Metric"
+			},
+			"rdfs:comment": {
+				"en-US": "What is being measured and the method of measurement used for observations within a data set."
+			},
+			"vs:term_status": "vs:unstable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "qdata:Observation",
+			"rdfs:label": {
+				"en-US": "Observation"
+			},
+			"rdfs:comment": {
+				"en-US": "Numeric value or category observed for a metric."
+			},
+			"dct:description": {
+				"en-US": "Fixed values for relevant independent variables may be indicated as points in a qdata:Dimension using the qdata:atPoint property. The value(s) observed for the dependent variable may be provided using several properties depending on the nature of the observation."
+			},
+			"vs:term_status": "vs:unstable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "schema:MonetaryAmount",
+			"rdfs:label": {
+				"en-US": "Monetary Amount"
+			},
+			"rdfs:comment": {
+				"en-US": "Monetary value or range."
+			},
+			"vs:term_status": "vs:stable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "schema:MonetaryAmountDistribution",
+			"rdfs:label": {
+				"en-US": "Monetary Amount Distribution"
+			},
+			"rdfs:comment": {
+				"en-US": "Statistical distribution of monetary amounts."
+			},
+			"vs:term_status": "vs:stable"
+		},
+		{
+			"@type": "rdfs:Class",
+			"@id": "schema:QuantitativeValue",
+			"rdfs:label": {
+				"en-US": "Quantitative Value"
+			},
+			"rdfs:comment": {
+				"en-US": "A point value or interval for product characteristics and other purposes."
+			},
+			"vann:usageNote": {
+				"en-US": "Use in CTDL to describe quantitative values such as minimum and maximum credits or credit hours, etc."
+			},
+			"vs:term_status": "vs:stable"
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:administrationProcess",
+			"rdfs:label": {
+				"en-US": "Administration Process"
+			},
+			"rdfs:comment": {
+				"en-US": "Description of a process by which a resource is administered."
+			},
+			"dct:description": {
+				"en-US": "Processes described include the execution of events and the development of resources in the lifecycle of a credential or organization, such as the process for the proctoring of assessments."
+			},
+			"vann:usageNote": {
+				"en-US": "For assessments and rubrics, this can be used to indicate the scoring algorithm."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:ProcessProfile"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:alternateName",
+			"rdfs:label": {
+				"en-US": "Alternate Name"
+			},
+			"rdfs:comment": {
+				"en-US": "Alias for the entity including acronyms, alpha-numeric notations, and other forms of name abbreviations in common use."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:AggregateDataProfile",
+				"ceterms:AlignmentMap",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssessmentComponent",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicComponent",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:CocurricularComponent",
+				"ceterms:Collection",
+				"ceterms:CollectionComponent",
+				"ceterms:CollectionMember",
+				"ceterms:CompetencyComponent",
+				"ceterms:ComponentCondition",
+				"ceterms:ConditionManifest",
+				"ceterms:ConditionProfile",
+				"ceterms:Constraint",
+				"ceterms:ContactPoint",
+				"ceterms:CostManifest",
+				"ceterms:CostProfile",
+				"ceterms:Course",
+				"ceterms:CourseComponent",
+				"ceterms:Credential",
+				"ceterms:CredentialComponent",
+				"ceterms:CredentialOrganization",
+				"ceterms:CredentialType",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:EarningsProfile",
+				"ceterms:EmploymentOutcomeProfile",
+				"ceterms:ExtracurricularComponent",
+				"ceterms:FinancialAssistanceProfile",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:GeoCoordinates",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:HoldersProfile",
+				"ceterms:Industry",
+				"ceterms:Job",
+				"ceterms:JobComponent",
+				"ceterms:JourneymanCertificate",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:MultiComponent",
+				"ceterms:Occupation",
+				"ceterms:OpenBadge",
+				"ceterms:Organization",
+				"ceterms:Pathway",
+				"ceterms:PathwaySet",
+				"ceterms:Place",
+				"ceterms:PostalAddress",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:PriorLearningPolicy",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QACredentialOrganization",
+				"ceterms:QualificationsFramework",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:RegulatoryInformation",
+				"ceterms:ResearchDoctorate",
+				"ceterms:ScheduledOffering",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:SupportService",
+				"ceterms:Task",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:TransferAgreement",
+				"ceterms:TransferIntermediary",
+				"ceterms:TransferValueProfile",
+				"ceterms:WorkBasedLearningCertificate",
+				"ceterms:WorkExperienceComponent",
+				"ceterms:WorkRole",
+				"qdata:DataSetDistribution",
+				"qdata:DataSetProfile",
+				"qdata:DataSetService",
+				"qdata:DataSetTimeFrame"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:ctid",
+			"rdfs:label": {
+				"en-US": "CTID"
+			},
+			"rdfs:comment": {
+				"en-US": "Globally unique Credential Transparency Identifier (CTID) by which the creator, owner or provider of a resource recognizes it in transactions with the external environment (e.g., in verifiable claims involving the resource)."
+			},
+			"dct:description": {
+				"en-US": "The CTID is the equivalent of a version identifier for the resource. Different versions of a resource are considered distinct expressions and each must be assigned its own CTID. Each version of a resource can have only one CTID assigned. However, a single version of a resource may have distinct identifier values for both the ctid property and the credentialId property. In such a case both identifiers will be recognized by the resource creator/owner/provider in transactions with the external environment."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:credentialId"
+			],
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"xsd:string"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:description",
+			"rdfs:label": {
+				"en-US": "Description"
+			},
+			"rdfs:comment": {
+				"en-US": "Statement, characterization or account of the entity."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:AccreditAction",
+				"ceterms:AdvancedStandingAction",
+				"ceterms:AggregateDataProfile",
+				"ceterms:AlignmentMap",
+				"ceterms:AlignmentObject",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:ApproveAction",
+				"ceterms:AssessmentComponent",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicComponent",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:CocurricularComponent",
+				"ceterms:Collection",
+				"ceterms:CollectionComponent",
+				"ceterms:CollectionMember",
+				"ceterms:CompetencyComponent",
+				"ceterms:ComponentCondition",
+				"ceterms:ConditionManifest",
+				"ceterms:ConditionProfile",
+				"ceterms:Constraint",
+				"ceterms:CostManifest",
+				"ceterms:CostProfile",
+				"ceterms:Course",
+				"ceterms:CourseComponent",
+				"ceterms:Credential",
+				"ceterms:CredentialComponent",
+				"ceterms:CredentialingAction",
+				"ceterms:CredentialOrganization",
+				"ceterms:CredentialType",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:DurationProfile",
+				"ceterms:EarningsProfile",
+				"ceterms:EmploymentOutcomeProfile",
+				"ceterms:EmploymentOutcomeProfile",
+				"ceterms:EvaluationOutcome",
+				"ceterms:ExtracurricularComponent",
+				"ceterms:FinancialAssistanceProfile",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:HoldersProfile",
+				"ceterms:Industry",
+				"ceterms:Job",
+				"ceterms:JobComponent",
+				"ceterms:JourneymanCertificate",
+				"ceterms:JurisdictionProfile",
+				"ceterms:JurisdictionProfile",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:MultiComponent",
+				"ceterms:Occupation",
+				"ceterms:OfferAction",
+				"ceterms:OpenBadge",
+				"ceterms:Organization",
+				"ceterms:Pathway",
+				"ceterms:PathwaySet",
+				"ceterms:PayProfile",
+				"ceterms:Place",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:PriorLearningPolicy",
+				"ceterms:ProcessProfile",
+				"ceterms:ProcessProfile",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QACredentialOrganization",
+				"ceterms:QualificationsFramework",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:RecognizeAction",
+				"ceterms:RegistrationAction",
+				"ceterms:RegulateAction",
+				"ceterms:RegulatoryInformation",
+				"ceterms:RenewAction",
+				"ceterms:ResearchDoctorate",
+				"ceterms:RevocationProfile",
+				"ceterms:RevokeAction",
+				"ceterms:RightsAction",
+				"ceterms:ScheduledOffering",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:StructuredStatement",
+				"ceterms:SupportService",
+				"ceterms:Task",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:TransferAgreement",
+				"ceterms:TransferIntermediary",
+				"ceterms:TransferValueProfile",
+				"ceterms:VerificationServiceProfile",
+				"ceterms:WorkBasedLearningCertificate",
+				"ceterms:WorkExperienceComponent",
+				"ceterms:WorkforceDemandAction",
+				"ceterms:WorkRole",
+				"qdata:DataProfile",
+				"qdata:DataSetDistribution",
+				"qdata:DataSetProfile",
+				"qdata:DataSetService",
+				"qdata:DataSetTimeFrame",
+				"qdata:Dimension",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			],
+			"owl:equivalentProperty": [
+				"dct:description",
+				"schema:description"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:earnings",
+			"rdfs:label": {
+				"en-US": "Earnings"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity describing aggregate credential holder earnings data."
+			},
+			"vann:usageNote": {
+				"en-US": "The use of ceterms:aggregateData instead of this property is strongly recommended."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:aggregateData"
+			],
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:Credential",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:JourneymanCertificate",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:OpenBadge",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:ResearchDoctorate",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:WorkBasedLearningCertificate"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:EarningsProfile"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:employmentOutcome",
+			"rdfs:label": {
+				"en-US": "Employment Outcome"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity describing aggregate data on jobs obtained with the credential by occupation and industry for a given period of time in a specific region."
+			},
+			"vann:usageNote": {
+				"en-US": "The use of ceterms:aggregateData instead of this property is strongly recommended."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:aggregateData"
+			],
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:Credential",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:JourneymanCertificate",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:OpenBadge",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:ResearchDoctorate",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:WorkBasedLearningCertificate"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:EmploymentOutcomeProfile"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:endDate",
+			"rdfs:label": {
+				"en-US": "End Date"
+			},
+			"rdfs:comment": {
+				"en-US": "Date some event or activity ends."
+			},
+			"vann:usageNote": {
+				"en-US": "Values should be a full date, i.e. year, month and day; if the day or month are not known use ceterms:approximateEndDate instead."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:temporalCoverage"
+			],
+			"schema:domainIncludes": [
+				"ceterms:AccreditAction",
+				"ceterms:AdvancedStandingAction",
+				"ceterms:ApproveAction",
+				"ceterms:CollectionMember",
+				"ceterms:CostManifest",
+				"ceterms:CostProfile",
+				"ceterms:CredentialingAction",
+				"ceterms:OfferAction",
+				"ceterms:RecognizeAction",
+				"ceterms:RegistrationAction",
+				"ceterms:RegulateAction",
+				"ceterms:RenewAction",
+				"ceterms:RevokeAction",
+				"ceterms:RightsAction",
+				"ceterms:TransferValueProfile",
+				"ceterms:WorkforceDemandAction",
+				"qdata:DataSetTimeFrame"
+			],
+			"schema:rangeIncludes": [
+				"xsd:date"
+			],
+			"owl:equivalentProperty": [
+				"schema:endDate"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:externalInputType",
+			"rdfs:label": {
+				"en-US": "External Input Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Types of external stakeholders that provide input to an entity's processes or resources; select from an existing enumeration of such types."
+			},
+			"vann:usageNote": {
+				"en-US": "Best practice for developing credential descriptions for the Credential Engine Registry is to use the ceterms:ExternalInput vocabulary."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:credentialAlignment"
+			],
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:CredentialAlignmentObject"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:geoURI",
+			"rdfs:label": {
+				"en-US": "Geographic URI"
+			},
+			"rdfs:comment": {
+				"en-US": "Entity that describes the longitude, latitude and other location details of a place."
+			},
+			"dct:description": {
+				"en-US": "This may define a place at any scale. Examples include a city, state, province, country, or continent."
+			},
+			"vann:usageNote": {
+				"en-US": "It is recommended to use services such as http://www.geonames.org to provide values for this property."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:GeoCoordinates",
+				"ceterms:Place"
+			],
+			"schema:rangeIncludes": [
+				"xsd:anyURI"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:hasSubFrameworkScheme",
+			"rdfs:label": {
+				"en-US": "Has Sub-framework scheme"
+			},
+			"rdfs:comment": {
+				"en-US": "Indicates a Concept Scheme used to differentiate parts of a framework or related resources that are considered to be somewhat independent."
+			},
+			"dct:description": {
+				"en-US": "Examples include differentiating those progression levels or credential types that are relevant to different sectors, such as General Education, Higher Education and Technical / Vocational Education and Training."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"ceterms:QualificationsFramework"
+			],
+			"schema:rangeIncludes": [
+				"skos:ConceptScheme"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:instructionalProgramType",
+			"rdfs:label": {
+				"en-US": "Instructional Program Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of instructional program; select from an existing enumeration of such types."
+			},
+			"vann:usageNote": {
+				"en-US": "For U.S. credentials, best practice is to use a framework such as the CIP (Classification of Instructional Programs). Other credentials may use any framework of the class CTDL InstructionalProgramClassification."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:credentialAlignment"
+			],
+			"schema:domainIncludes": [
+				"ceasn:Competency",
+				"ceasn:CompetencyFramework",
+				"ceasn:Rubric",
+				"ceterms:AcademicCertificate",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:Collection",
+				"ceterms:Course",
+				"ceterms:Credential",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:JourneymanCertificate",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:OpenBadge",
+				"ceterms:Pathway",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:ResearchDoctorate",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:WorkBasedLearningCertificate",
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:CredentialAlignmentObject",
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:jurisdiction",
+			"rdfs:label": {
+				"en-US": "Jurisdiction"
+			},
+			"rdfs:comment": {
+				"en-US": "Geographic or political region in which the resource is formally applicable or an organization has authority to act."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:AggregateDataProfile",
+				"ceterms:AlignmentMap",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:Collection",
+				"ceterms:ConditionProfile",
+				"ceterms:CostProfile",
+				"ceterms:Course",
+				"ceterms:Credential",
+				"ceterms:CredentialOrganization",
+				"ceterms:CredentialType",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:EarningsProfile",
+				"ceterms:EmploymentOutcomeProfile",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:HoldersProfile",
+				"ceterms:JourneymanCertificate",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:OpenBadge",
+				"ceterms:Organization",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:PriorLearningPolicy",
+				"ceterms:ProcessProfile",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QACredentialOrganization",
+				"ceterms:QualificationsFramework",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:RegulatoryInformation",
+				"ceterms:ResearchDoctorate",
+				"ceterms:RevocationProfile",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:TransferAgreement",
+				"ceterms:VerificationServiceProfile",
+				"ceterms:WorkBasedLearningCertificate",
+				"ceterms:WorkforceDemandAction",
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:JurisdictionProfile"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:jurisdictionException",
+			"rdfs:label": {
+				"en-US": "Jurisdiction Exception"
+			},
+			"rdfs:comment": {
+				"en-US": "Geographic or political region in which the credential is not formally recognized or an organization has no authority to act ."
+			},
+			"dct:description": {
+				"en-US": "The ceterms:jurisdictionalException property is used in conjunction with the ceterms:jurisdiction property and expresses any exceptions to a more general statement; e.g., the United states except for Colorado."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:spatialCoverage"
+			],
+			"schema:domainIncludes": [
+				"ceterms:JurisdictionProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:Place"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:latitude",
+			"rdfs:label": {
+				"en-US": "Latitude"
+			},
+			"rdfs:comment": {
+				"en-US": "Latitude of a location."
+			},
+			"dct:description": {
+				"en-US": "For example 37.42242 (WGS 84)"
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:GeoCoordinates",
+				"ceterms:Place"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			],
+			"owl:equivalentProperty": [
+				"schema:latitude"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:longitude",
+			"rdfs:label": {
+				"en-US": "Longitude"
+			},
+			"rdfs:comment": {
+				"en-US": "The longitude of a location."
+			},
+			"dct:description": {
+				"en-US": "For example -122.08585 (WGS 84)."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:GeoCoordinates",
+				"ceterms:Place"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			],
+			"owl:equivalentProperty": [
+				"schema:longitude"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:mainJurisdiction",
+			"rdfs:label": {
+				"en-US": "Main Jurisdiction"
+			},
+			"rdfs:comment": {
+				"en-US": "Primary geographic or political region in which the credential is recognized as applicable or in which an organization has recognized authority to act."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:spatialCoverage"
+			],
+			"schema:domainIncludes": [
+				"ceterms:JurisdictionProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:Place"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:name",
+			"rdfs:label": {
+				"en-US": "Name"
+			},
+			"rdfs:comment": {
+				"en-US": "Name or title of the resource."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:AccreditAction",
+				"ceterms:AdvancedStandingAction",
+				"ceterms:AggregateDataProfile",
+				"ceterms:AlignmentMap",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:ApproveAction",
+				"ceterms:AssessmentComponent",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicComponent",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:CocurricularComponent",
+				"ceterms:Collection",
+				"ceterms:CollectionComponent",
+				"ceterms:CollectionMember",
+				"ceterms:CompetencyComponent",
+				"ceterms:ComponentCondition",
+				"ceterms:ConditionManifest",
+				"ceterms:ConditionProfile",
+				"ceterms:Constraint",
+				"ceterms:ContactPoint",
+				"ceterms:CostManifest",
+				"ceterms:CostProfile",
+				"ceterms:Course",
+				"ceterms:CourseComponent",
+				"ceterms:Credential",
+				"ceterms:CredentialComponent",
+				"ceterms:CredentialingAction",
+				"ceterms:CredentialOrganization",
+				"ceterms:CredentialType",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:EarningsProfile",
+				"ceterms:EmploymentOutcomeProfile",
+				"ceterms:EvaluationOutcome",
+				"ceterms:ExtracurricularComponent",
+				"ceterms:FinancialAssistanceProfile",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:GeoCoordinates",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:HoldersProfile",
+				"ceterms:Industry",
+				"ceterms:Job",
+				"ceterms:JobComponent",
+				"ceterms:JourneymanCertificate",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:MultiComponent",
+				"ceterms:Occupation",
+				"ceterms:OfferAction",
+				"ceterms:OpenBadge",
+				"ceterms:Organization",
+				"ceterms:Pathway",
+				"ceterms:PathwaySet",
+				"ceterms:Place",
+				"ceterms:PostalAddress",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:PriorLearningPolicy",
+				"ceterms:ProcessProfile",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QACredentialOrganization",
+				"ceterms:QualificationsFramework",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:RecognizeAction",
+				"ceterms:RegistrationAction",
+				"ceterms:RegulateAction",
+				"ceterms:RegulatoryInformation",
+				"ceterms:RenewAction",
+				"ceterms:ResearchDoctorate",
+				"ceterms:RevokeAction",
+				"ceterms:RightsAction",
+				"ceterms:ScheduledOffering",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:StructuredStatement",
+				"ceterms:SupportService",
+				"ceterms:Task",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:TransferAgreement",
+				"ceterms:TransferIntermediary",
+				"ceterms:TransferValueProfile",
+				"ceterms:WorkBasedLearningCertificate",
+				"ceterms:WorkExperienceComponent",
+				"ceterms:WorkforceDemandAction",
+				"ceterms:WorkRole",
+				"qdata:DataSetDistribution",
+				"qdata:DataSetProfile",
+				"qdata:DataSetService",
+				"qdata:DataSetTimeFrame",
+				"qdata:Dimension",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			],
+			"owl:equivalentProperty": [
+				"schema:name"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:processFrequency",
+			"rdfs:label": {
+				"en-US": "Process Frequency"
+			},
+			"rdfs:comment": {
+				"en-US": "Interval of process occurence."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:processingAgent",
+			"rdfs:label": {
+				"en-US": "Processing Agent"
+			},
+			"rdfs:comment": {
+				"en-US": "Organization or person performing the process."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:CredentialOrganization",
+				"ceterms:Organization",
+				"ceterms:QACredentialOrganization"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:processMethod",
+			"rdfs:label": {
+				"en-US": "Process Method"
+			},
+			"rdfs:comment": {
+				"en-US": "Webpage or online document that describes the process methods."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile"
+			],
+			"schema:rangeIncludes": [
+				"xsd:anyURI"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:processMethodDescription",
+			"rdfs:label": {
+				"en-US": "Process Method Description"
+			},
+			"rdfs:comment": {
+				"en-US": "Textual description of the process methods."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:source",
+			"rdfs:label": {
+				"en-US": "Source URL"
+			},
+			"rdfs:comment": {
+				"en-US": "Authoritative source of an entity's information."
+			},
+			"dct:description": {
+				"en-US": "Citation or description of an authoritative source from which information or description has been derived."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"xsd:anyURI"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:startDate",
+			"rdfs:label": {
+				"en-US": "Start Date"
+			},
+			"rdfs:comment": {
+				"en-US": "Date the validity or usefulness of the information in this resource begins."
+			},
+			"vann:usageNote": {
+				"en-US": "Values should be a full date, i.e. year, month and day; if the day or month are not known use ceterms:approximateStartDate instead."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"ceterms:temporalCoverage"
+			],
+			"schema:domainIncludes": [
+				"ceterms:AccreditAction",
+				"ceterms:AdvancedStandingAction",
+				"ceterms:ApproveAction",
+				"ceterms:CollectionMember",
+				"ceterms:CostManifest",
+				"ceterms:CostProfile",
+				"ceterms:CredentialingAction",
+				"ceterms:OfferAction",
+				"ceterms:RecognizeAction",
+				"ceterms:RegistrationAction",
+				"ceterms:RegulateAction",
+				"ceterms:RenewAction",
+				"ceterms:RevokeAction",
+				"ceterms:RightsAction",
+				"ceterms:TransferValueProfile",
+				"ceterms:WorkforceDemandAction",
+				"qdata:DataSetTimeFrame"
+			],
+			"schema:rangeIncludes": [
+				"xsd:date"
+			],
+			"owl:equivalentProperty": [
+				"schema:startDate"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "ceterms:verificationMethodDescription",
+			"rdfs:label": {
+				"en-US": "Verification Method Description"
+			},
+			"rdfs:comment": {
+				"en-US": "Textual description of the methods used to evaluate an assessment, learning opportunity, process or verificaiton service for validity or reliability."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile",
+				"ceterms:VerificationServiceProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:adjustment",
+			"rdfs:label": {
+				"en-US": "Adjustment"
+			},
+			"rdfs:comment": {
+				"en-US": "Describes whether and how the Observations have been adjusted for relevant factors."
+			},
+			"dct:description": {
+				"en-US": "Examples of factors include inflation, participant demographics, economic conditions, etc."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:atPoint",
+			"rdfs:label": {
+				"en-US": "At Point"
+			},
+			"rdfs:comment": {
+				"en-US": "A point in a Dimension that represents a resource or factor relevant to this Observation."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"rdfs:Resource"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:conformsTo",
+			"rdfs:label": {
+				"en-US": "Conforms To"
+			},
+			"rdfs:comment": {
+				"en-US": "An established standard to which the described resource conforms."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetDistribution"
+			],
+			"schema:rangeIncludes": [
+				"dct:Standard"
+			],
+			"owl:equivalentProperty": [
+				"dct:conformsTo"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataAttributes",
+			"rdfs:label": {
+				"en-US": "Data Attributes"
+			},
+			"rdfs:comment": {
+				"en-US": "Attributes of the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetTimeFrame"
+			],
+			"schema:rangeIncludes": [
+				"qdata:DataProfile"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataAvailable",
+			"rdfs:label": {
+				"en-US": "Data Available"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of credential holders in the reporting group for which employment and earnings data is included in the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataCollectionMethodType",
+			"rdfs:label": {
+				"en-US": "Data Collection Method Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of method by which the data was collected."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ProcessProfile"
+			],
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataNotAvailable",
+			"rdfs:label": {
+				"en-US": "Data Not Available"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of credential holders in the reporting group for which employment and earnings data has not been included in the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataProvider",
+			"rdfs:label": {
+				"en-US": "Data Provider"
+			},
+			"rdfs:comment": {
+				"en-US": "Credentialing organization or a third party providing the data."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:CredentialOrganization",
+				"ceterms:Organization",
+				"ceterms:QACredentialOrganization"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataSetSpatialCoverage",
+			"rdfs:label": {
+				"en-US": "Data Set Spatial Coverage"
+			},
+			"rdfs:comment": {
+				"en-US": "Location or geographic area for a data set."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:Place"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataSetTemporalCoverage",
+			"rdfs:label": {
+				"en-US": "Data Set Temporal Coverage"
+			},
+			"rdfs:comment": {
+				"en-US": "Time period covered by the data."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:DataSetTimeFrame"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataSetTimePeriod",
+			"rdfs:label": {
+				"en-US": "Data Set Time Period"
+			},
+			"rdfs:comment": {
+				"en-US": "Short- and long-term post-award reporting intervals including start and end dates."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:DataSetTimeFrame"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataSourceCoverageType",
+			"rdfs:label": {
+				"en-US": "Data Source Coverage Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of geographic coverage of the subjects."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataSuppressionPolicy",
+			"rdfs:label": {
+				"en-US": "Data Suppression Policy"
+			},
+			"rdfs:comment": {
+				"en-US": "Description of a data suppression policy for earnings and employment data when cell size is below a certain threshold to ensure an individual's privacy and security."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dataWithholdingType",
+			"rdfs:label": {
+				"en-US": "Data Withholding Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of suppression, masking, or other modification made to the data to protect the identities of its subjects."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmount",
+				"schema:MonetaryAmountDistribution",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:demographicEarningsRate",
+			"rdfs:label": {
+				"en-US": "Demographic Earnings Rate"
+			},
+			"rdfs:comment": {
+				"en-US": "Earnings rate for a demographic category."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:demographicEmploymentRate",
+			"rdfs:label": {
+				"en-US": "demographicEmploymentRate"
+			},
+			"rdfs:comment": {
+				"en-US": "Employment rate for a demographic category."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:dimensionType",
+			"rdfs:label": {
+				"en-US": "Dimension Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of resource that may be a point in the dimension; select from existing classes and concept schemes."
+			},
+			"dct:description": {
+				"en-US": "Items in a dimension will typically be instances of CTDL classes or concepts drawn from a CTDL concept scheme."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Dimension"
+			],
+			"schema:rangeIncludes": [
+				"rdfs:Class",
+				"skos:Concept",
+				"skos:ConceptScheme"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:earningsAmount",
+			"rdfs:label": {
+				"en-US": "Earnings Amount"
+			},
+			"rdfs:comment": {
+				"en-US": "Reference to an entity describing aggregate earnings."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:MonetaryAmount"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:earningsDefinition",
+			"rdfs:label": {
+				"en-US": "Earnings Definition"
+			},
+			"rdfs:comment": {
+				"en-US": "Definition of \"earnings\" used by the data source."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:earningsDistribution",
+			"rdfs:label": {
+				"en-US": "Earnings Distribution"
+			},
+			"rdfs:comment": {
+				"en-US": "Reference to an entity describing median earnings as well as earnings at various percentiles."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:MonetaryAmountDistribution"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:earningsThreshold",
+			"rdfs:label": {
+				"en-US": "Earnings Threshold"
+			},
+			"rdfs:comment": {
+				"en-US": "Statement of any work time or earnings threshold used in determining whether a sufficient level of workforce attachment has been achieved to qualify as employed during the time period of the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:employmentDefinition",
+			"rdfs:label": {
+				"en-US": "Employment Definition"
+			},
+			"rdfs:comment": {
+				"en-US": "Definition of employment used by the data source."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:employmentOutlook",
+			"rdfs:label": {
+				"en-US": "Employment Outlook"
+			},
+			"rdfs:comment": {
+				"en-US": "Projected employment estimate."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:employmentRate",
+			"rdfs:label": {
+				"en-US": "Employment Rate"
+			},
+			"rdfs:comment": {
+				"en-US": "Rate computed by dividing the number of holders or subjects meeting the data set's criteria of employment (meetEmploymentCriteria) by the number of holders or subjects for which data was available (dataAvailable)."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:facultyToStudentRatio",
+			"rdfs:label": {
+				"en-US": "Faculty-to-Student Ratio"
+			},
+			"rdfs:comment": {
+				"en-US": "Ratio of the number of teaching faculty to the number of students."
+			},
+			"dct:description": {
+				"en-US": "What constitutes \"teaching faculty\" is determined by the Organization and may include anyone with a significant, direct instructional role in interactions with students in learning activities."
+			},
+			"vann:usageNote": {
+				"en-US": "The expression of the ratio should feature the number of faculty first, followed by the number of students, e.g., \"1:10\" to mean \"one faculty per ten students\"."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"ceterms:AggregateDataProfile",
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"xsd:string"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:hasDataSetDistribution",
+			"rdfs:label": {
+				"en-US": "Has Data Set Distribution"
+			},
+			"rdfs:comment": {
+				"en-US": "A representation of the data set."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:DataSetDistribution"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:hasDataSetService",
+			"rdfs:label": {
+				"en-US": "Has Data Set Service"
+			},
+			"rdfs:comment": {
+				"en-US": "A means of accessing one or more data sets or data processing functions."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:DataSetService"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:hasDimension",
+			"rdfs:label": {
+				"en-US": "Has Dimension"
+			},
+			"rdfs:comment": {
+				"en-US": "A set of resources or concepts to which the metric is applied or which affect the observation of the metric."
+			},
+			"dct:description": {
+				"en-US": "The metric may be applied to or affected by resources such as credential earned, industry of employment, year of graduation, location etc."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:Dimension"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:hasMetric",
+			"rdfs:label": {
+				"en-US": "Has Metric"
+			},
+			"rdfs:comment": {
+				"en-US": "What the observations measure and details of the method used."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:Metric"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:hasObservation",
+			"rdfs:label": {
+				"en-US": "Has Observation"
+			},
+			"rdfs:comment": {
+				"en-US": "The recorded data."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"qdata:Observation"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:hasPoint",
+			"rdfs:label": {
+				"en-US": "Has Point"
+			},
+			"rdfs:comment": {
+				"en-US": "Identifies a specific entity in a Dimension."
+			},
+			"vann:usageNote": {
+				"en-US": "The value of this property will be a resource with any type, e.g. skos:Concept, ceterms:Credential (or any subclass thereof), ceterms:Industry, ceterms:Place, etc."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Dimension"
+			],
+			"schema:rangeIncludes": [
+				"rdfs:Resource"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:holdersInSet",
+			"rdfs:label": {
+				"en-US": "Holders In Set"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of credential holders in the final data collection and reporting."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:incomeDeterminationType",
+			"rdfs:label": {
+				"en-US": "Income Determination Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Mechanism by which income is determined; i.e., actual or annualized earnings; select from an enumeration of such types."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile",
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:industryRate",
+			"rdfs:label": {
+				"en-US": "Industry Rate"
+			},
+			"rdfs:comment": {
+				"en-US": "Employment rate for an industry category."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:insufficientEmploymentCriteria",
+			"rdfs:label": {
+				"en-US": "Insufficient Employment Criteria"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of holders that do not meet the prescribed employment threshold in terms of earnings or time engaged in work as defined for the data set (employmentDefinition)."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:isObservationOf",
+			"rdfs:label": {
+				"en-US": "Is Observation Of"
+			},
+			"rdfs:comment": {
+				"en-US": "Indicates the metric used for this Observation."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"qdata:Metric"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:maxPercentage",
+			"rdfs:label": {
+				"en-US": "Max Percentage"
+			},
+			"rdfs:comment": {
+				"en-US": "The upper percentage of some characteristic or property."
+			},
+			"vann:usageNote": {
+				"en-US": "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"ceasn:CriterionLevel",
+				"ceterms:ValueProfile",
+				"qdata:Observation",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:mean",
+			"rdfs:label": {
+				"en-US": "Mean"
+			},
+			"rdfs:comment": {
+				"en-US": "Mean value."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:median",
+			"rdfs:label": {
+				"en-US": "Median"
+			},
+			"rdfs:comment": {
+				"en-US": "Median value."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmountDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:mediaType",
+			"rdfs:label": {
+				"en-US": "Media Type"
+			},
+			"rdfs:comment": {
+				"en-US": "A file format or physical medium."
+			},
+			"vs:term_status": "vs:unstable",
+			"rdfs:subPropertyOf": [
+				"dct:format"
+			],
+			"schema:domainIncludes": [
+				"qdata:DataSetDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:string"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:meetEmploymentCriteria",
+			"rdfs:label": {
+				"en-US": "Meet Employment Criteria"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of holders that meet the prescribed employment threshold in terms of earnings or time engaged in work as defined for the data set (employmentDefinition)."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:metricType",
+			"rdfs:label": {
+				"en-US": "Metric Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of phenomenon being measured; select from an existing enumeration of such types."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:minPercentage",
+			"rdfs:label": {
+				"en-US": "Min Percentage"
+			},
+			"rdfs:comment": {
+				"en-US": "The lower percentage of some characteristic or property."
+			},
+			"vann:usageNote": {
+				"en-US": "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"ceasn:CriterionLevel",
+				"ceterms:ValueProfile",
+				"qdata:Observation",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:nonCompleters",
+			"rdfs:label": {
+				"en-US": "Non-Completers"
+			},
+			"rdfs:comment": {
+				"en-US": "Non-holders who departed or are likely to depart higher education prematurely."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:nonHoldersInSet",
+			"rdfs:label": {
+				"en-US": "Non-Holders In Set"
+			},
+			"rdfs:comment": {
+				"en-US": "Non-holder subject actively pursuing the credential through a program or assessment."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:observedCategory",
+			"rdfs:label": {
+				"en-US": "Observed Category"
+			},
+			"rdfs:comment": {
+				"en-US": "Indicates the entity identified through an observation as meeting the metric criteria."
+			},
+			"dct:description": {
+				"en-US": "Used when the metric involves observation of categoric data, for example indicating an observation of which Industry or Occupation is the most common destination after completing study."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"rdfs:Resource"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:occupationRate",
+			"rdfs:label": {
+				"en-US": "Occupation Rate"
+			},
+			"rdfs:comment": {
+				"en-US": "Employment rate for an occupation category."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:passRate",
+			"rdfs:label": {
+				"en-US": "Pass Rate"
+			},
+			"rdfs:comment": {
+				"en-US": "Rate computed by dividing the number of subjects passing an assessment by the total number taking the assessment."
+			},
+			"vann:usageNote": {
+				"en-US": "When data is available, record both the percentage and the number of subjects who passed the assessment."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:percentage",
+			"rdfs:label": {
+				"en-US": "Percentage"
+			},
+			"rdfs:comment": {
+				"en-US": "Quotient of two values of the data set, expressed as a percentage."
+			},
+			"vann:usageNote": {
+				"en-US": "Best practice is to treat the value of this property as a verbatim percentage; for example, a value of 1.5 should be interpreted as 1.5%"
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceasn:CriterionLevel",
+				"ceterms:ValueProfile",
+				"qdata:Observation",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:percentile10",
+			"rdfs:label": {
+				"en-US": "Percentile 10"
+			},
+			"rdfs:comment": {
+				"en-US": "10th percentile value."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmountDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:percentile25",
+			"rdfs:label": {
+				"en-US": "Percentile 25"
+			},
+			"rdfs:comment": {
+				"en-US": "25th percentile value."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmountDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:percentile75",
+			"rdfs:label": {
+				"en-US": "Percentile 75"
+			},
+			"rdfs:comment": {
+				"en-US": "75th percentile value."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmountDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:percentile90",
+			"rdfs:label": {
+				"en-US": "Percentile 90"
+			},
+			"rdfs:comment": {
+				"en-US": "90th percentile value."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmountDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:recordType",
+			"rdfs:label": {
+				"en-US": "Record Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of record used to source the data."
+			},
+			"dct:description": {
+				"en-US": "Examples include various official records and self-reporting via a survey."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Metric"
+			],
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:regionalEarningsDistribution",
+			"rdfs:label": {
+				"en-US": "Regional Earnings Distribution"
+			},
+			"rdfs:comment": {
+				"en-US": "Reference to an entity describing median earnings as well as earnings at various percentiles for holders or subjects in the region."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"qdata:earningsDistribution"
+			],
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:regionalEmploymentRate",
+			"rdfs:label": {
+				"en-US": "Regional Employment Rate"
+			},
+			"rdfs:comment": {
+				"en-US": "Rate computed by dividing the number of holders or subjects in the region meeting the data set's criteria of employment (meetEmploymentCriteria) by the number of holders or subjects in the region for which data was available (dataAvailable)."
+			},
+			"vs:term_status": "vs:stable",
+			"rdfs:subPropertyOf": [
+				"qdata:employmentRate"
+			],
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:relatedEmployment",
+			"rdfs:label": {
+				"en-US": "Related Employment"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of people employed in the area of work (e.g., industry, occupation) in which the credential provided preparation."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:relevantDataSet",
+			"rdfs:label": {
+				"en-US": "Relevant Data Set"
+			},
+			"rdfs:comment": {
+				"en-US": "Data Set on which earnings or employment data is based."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:Course",
+				"ceterms:Credential",
+				"ceterms:CredentialOrganization",
+				"ceterms:CredentialType",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:Industry",
+				"ceterms:Job",
+				"ceterms:JourneymanCertificate",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:Occupation",
+				"ceterms:OpenBadge",
+				"ceterms:Organization",
+				"ceterms:Pathway",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QACredentialOrganization",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:ResearchDoctorate",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:WorkBasedLearningCertificate"
+			],
+			"schema:rangeIncludes": [
+				"qdata:DataSetProfile"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:relevantDataSetFor",
+			"rdfs:label": {
+				"en-US": "Relevant Data Set For"
+			},
+			"rdfs:comment": {
+				"en-US": "Data set for the entity being referenced."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:AcademicCertificate",
+				"ceterms:ApprenticeshipCertificate",
+				"ceterms:AssessmentProfile",
+				"ceterms:AssociateDegree",
+				"ceterms:AssociateOfAppliedArtsDegree",
+				"ceterms:AssociateOfAppliedScienceDegree",
+				"ceterms:AssociateOfArtsDegree",
+				"ceterms:AssociateOfScienceDegree",
+				"ceterms:BachelorDegree",
+				"ceterms:BachelorOfArtsDegree",
+				"ceterms:BachelorOfScienceDegree",
+				"ceterms:Badge",
+				"ceterms:BasicTechnicalCertificate",
+				"ceterms:Certificate",
+				"ceterms:CertificateOfCompletion",
+				"ceterms:CertificateOfParticipation",
+				"ceterms:Certification",
+				"ceterms:Course",
+				"ceterms:Credential",
+				"ceterms:CredentialOrganization",
+				"ceterms:Degree",
+				"ceterms:DigitalBadge",
+				"ceterms:Diploma",
+				"ceterms:DoctoralDegree",
+				"ceterms:GeneralEducationDevelopment",
+				"ceterms:GeneralEducationLevel1Certificate",
+				"ceterms:GeneralEducationLevel2Certificate",
+				"ceterms:HigherEducationLevel1Certificate",
+				"ceterms:HigherEducationLevel2Certificate",
+				"ceterms:Industry",
+				"ceterms:Job",
+				"ceterms:JourneymanCertificate",
+				"ceterms:LearningOpportunityProfile",
+				"ceterms:LearningProgram",
+				"ceterms:License",
+				"ceterms:MasterCertificate",
+				"ceterms:MasterDegree",
+				"ceterms:MasterOfArtsDegree",
+				"ceterms:MasterOfScienceDegree",
+				"ceterms:MicroCredential",
+				"ceterms:Occupation",
+				"ceterms:OpenBadge",
+				"ceterms:Organization",
+				"ceterms:Pathway",
+				"ceterms:PostBaccalaureateCertificate",
+				"ceterms:PostMasterCertificate",
+				"ceterms:PreApprenticeshipCertificate",
+				"ceterms:ProfessionalCertificate",
+				"ceterms:ProfessionalDoctorate",
+				"ceterms:ProficiencyCertificate",
+				"ceterms:QACredentialOrganization",
+				"ceterms:QualityAssuranceCredential",
+				"ceterms:ResearchDoctorate",
+				"ceterms:SecondaryEducationCertificate",
+				"ceterms:SecondarySchoolDiploma",
+				"ceterms:SpecialistDegree",
+				"ceterms:TechnicalLevel1Certificate",
+				"ceterms:TechnicalLevel2Certificate",
+				"ceterms:TechnicalLevel3Certificate",
+				"ceterms:WorkBasedLearningCertificate"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:sizeOfData",
+			"rdfs:label": {
+				"en-US": "Size of Data"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of subjects from the population for which data was obtained to calculate the observed value."
+			},
+			"vann:usageNote": {
+				"en-US": "For the number of subjects in the sample for which no data was available use sizeOfNoData, and for the total number of subjects available use sizeOfPopulation."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"qdata:integer"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:sizeOfNoData",
+			"rdfs:label": {
+				"en-US": "Size of No Data"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of subjects in the sample for which no data was obtained."
+			},
+			"dct:description": {
+				"en-US": "This is relevant for surveys or other forms of data gathering where a bias may be introduced by non-response or similar omissions."
+			},
+			"vann:usageNote": {
+				"en-US": "For the number of subjects for which data was available, use sizeOfData, and for the total number of subjects available use sizeOfPopulation."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"qdata:integer"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:sizeOfPopulation",
+			"rdfs:label": {
+				"en-US": "Size of Population"
+			},
+			"rdfs:comment": {
+				"en-US": "The total number of subjects in the relevant population."
+			},
+			"vann:usageNote": {
+				"en-US": "For the number of subjects for which data was available, use sizeOfData, and for the number of subjects for which no data was available, use sizeOfNoData."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"qdata:integer"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:standardDeviation",
+			"rdfs:label": {
+				"en-US": "Standard Deviation"
+			},
+			"rdfs:comment": {
+				"en-US": "Standard deviation about the mean."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:Observation"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:subjectExcluded",
+			"rdfs:label": {
+				"en-US": "Subject Excluded"
+			},
+			"rdfs:comment": {
+				"en-US": "Category of subject excluded from the data."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:subjectIdentification",
+			"rdfs:label": {
+				"en-US": "Subject Identification"
+			},
+			"rdfs:comment": {
+				"en-US": "Identification of data point(s) in the data set that describe personal subject attribute(s) used to uniquely identify a subject for the purpose of matching records and an indication of level of confidence in the accuracy of the match."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:subjectsInSet",
+			"rdfs:label": {
+				"en-US": "Subjects In Set"
+			},
+			"rdfs:comment": {
+				"en-US": "Total credential holders and non-holders in the final data collection and reporting."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:subjectType",
+			"rdfs:label": {
+				"en-US": "Subject Type"
+			},
+			"rdfs:comment": {
+				"en-US": "Type of subject included or excluded from the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:rangeIncludes": [
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:subjectValue",
+			"rdfs:label": {
+				"en-US": "Subject Value"
+			},
+			"rdfs:comment": {
+				"en-US": "Quantitative values and percentages for a subject category in the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:sufficientEmploymentCriteria",
+			"rdfs:label": {
+				"en-US": "Sufficient Employment Criteria"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of holders that meet the prescribed employment threshold in terms of earnings or time engaged in work as defined for the data set (employmentDefinition)."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:timeInterval",
+			"rdfs:label": {
+				"en-US": "Time Interval"
+			},
+			"rdfs:comment": {
+				"en-US": "Length of the interval between two events."
+			},
+			"vs:term_status": "vs:unstable",
+			"schema:domainIncludes": [
+				"qdata:DataSetTimeFrame"
+			],
+			"schema:rangeIncludes": [
+				"schema:Duration"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:totalWIOACompleters",
+			"rdfs:label": {
+				"en-US": "Total WIOA Completers"
+			},
+			"rdfs:comment": {
+				"en-US": "Total participants who completed the WIOA program, successfully or unsuccessfully."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:totalWIOAExiters",
+			"rdfs:label": {
+				"en-US": "Total WIOA Exiters"
+			},
+			"rdfs:comment": {
+				"en-US": "Total participants who successfully completed the WIOA program and exited WIOA."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:totalWIOAParticipants",
+			"rdfs:label": {
+				"en-US": "Total WIOA Participants"
+			},
+			"rdfs:comment": {
+				"en-US": "Total participants in the WIOA program."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:unrelatedEmployment",
+			"rdfs:label": {
+				"en-US": "Unrelated Employment"
+			},
+			"rdfs:comment": {
+				"en-US": "Number of people employed outside the area of work (e.g., industry, occupation) in which the credential provided preparation."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"schema:QuantitativeValue"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "qdata:workTimeThreshold",
+			"rdfs:label": {
+				"en-US": "Work Time Threshold"
+			},
+			"rdfs:comment": {
+				"en-US": "Statement of earnings thresholds used in determining whether a sufficient level of workforce attachment has been achieved to qualify as employed during the chosen employment and earnings time period."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:DataProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:about",
+			"rdfs:label": {
+				"en-US": "About"
+			},
+			"rdfs:comment": {
+				"en-US": "Subject matter of the resource."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:AlignmentMap",
+				"qdata:DataSetProfile"
+			],
+			"schema:rangeIncludes": [
+				"rdfs:Resource"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:currency",
+			"rdfs:label": {
+				"en-US": "Currency"
+			},
+			"rdfs:comment": {
+				"en-US": "Currency abbreviation (e.g., USD)."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"qdata:Observation",
+				"schema:MonetaryAmount",
+				"schema:MonetaryAmountDistribution"
+			],
+			"schema:rangeIncludes": [
+				"xsd:string"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:description",
+			"rdfs:label": {
+				"en-US": "Description"
+			},
+			"rdfs:comment": {
+				"en-US": "A description of the item."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceterms:ValueProfile",
+				"schema:MonetaryAmount",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"rdf:langString"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:maxValue",
+			"rdfs:label": {
+				"en-US": "Maximum Value"
+			},
+			"rdfs:comment": {
+				"en-US": "The upper value of some characteristic or property."
+			},
+			"vann:usageNote": {
+				"en-US": "In CTDL: for single values, use schema:value; for ranges, use schema:minValue and schema:maxValue."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceasn:CriterionLevel",
+				"ceterms:PayProfile",
+				"ceterms:ValueProfile",
+				"qdata:Observation",
+				"schema:MonetaryAmount",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:minValue",
+			"rdfs:label": {
+				"en-US": "Minimum Value"
+			},
+			"rdfs:comment": {
+				"en-US": "The lower value of some characteristic or property."
+			},
+			"vann:usageNote": {
+				"en-US": "In CTDL: for single values, use schema:value; for ranges, use schema:minValue and schema:maxValue."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceasn:CriterionLevel",
+				"ceterms:PayProfile",
+				"ceterms:ValueProfile",
+				"qdata:Observation",
+				"schema:MonetaryAmount",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:unitText",
+			"rdfs:label": {
+				"en-US": "Unit Text"
+			},
+			"rdfs:comment": {
+				"en-US": "A string or text indicating the unit of measurement."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"schema:MonetaryAmount",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"ceterms:CredentialAlignmentObject",
+				"skos:Concept"
+			]
+		},
+		{
+			"@type": "rdf:Property",
+			"@id": "schema:value",
+			"rdfs:label": {
+				"en-US": "Value"
+			},
+			"rdfs:comment": {
+				"en-US": "The value of the property value node."
+			},
+			"vann:usageNote": {
+				"en-US": "In CTDL: for single values, use schema:value; for ranges, use schema:minValue and schema:maxValue."
+			},
+			"vs:term_status": "vs:stable",
+			"schema:domainIncludes": [
+				"ceasn:CriterionLevel",
+				"ceterms:PayProfile",
+				"ceterms:ValueProfile",
+				"qdata:Observation",
+				"schema:MonetaryAmount",
+				"schema:QuantitativeValue"
+			],
+			"schema:rangeIncludes": [
+				"xsd:float"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:AdministrativeRecordCategory",
+			"rdfs:label": {
+				"en-US": "Administrative Record Category"
+			},
+			"rdfs:comment": {
+				"en-US": "Categories of administrative records."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:hasTopConcept": [
+				"adminRecord:Tax1099",
+				"adminRecord:TaxW2",
+				"adminRecord:UnemploymentInsurance"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:CollectionMethod",
+			"rdfs:label": {
+				"en-US": "Collection Method"
+			},
+			"rdfs:comment": {
+				"en-US": "Categories of methods for collecting data."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:hasTopConcept": [
+				"collectionMethod:AdministrativeRecordMatching",
+				"collectionMethod:CredentialHolderReporting",
+				"collectionMethod:CredentialHolderSurvey",
+				"collectionMethod:SupplementalMethod",
+				"collectionMethod:SupplementalSource"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:DataSourceCoverage",
+			"rdfs:label": {
+				"en-US": "Data Source Coverage"
+			},
+			"rdfs:comment": {
+				"en-US": "Categories of geographic coverage."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:hasTopConcept": [
+				"sourceCoverage:Country",
+				"sourceCoverage:Global",
+				"sourceCoverage:Region",
+				"sourceCoverage:StateOrProvince",
+				"sourceCoverage:UrbanArea"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:DataWithholdingCategory",
+			"rdfs:label": {
+				"en-US": "Data Withholding Category"
+			},
+			"rdfs:comment": {
+				"en-US": "Categories of processes for withholding data in a data set."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:hasTopConcept": [
+				"dataWithholding:DataMasked",
+				"dataWithholding:DataSuppressed"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:DemographicCategory",
+			"rdfs:label": {
+				"en-US": "Demographic Category"
+			},
+			"rdfs:comment": {
+				"en-US": "Classification of various means (such as classification schemes) used to describe and categorize subjects in a population."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:hasTopConcept": [
+				"demoCat:Accommodation",
+				"demoCat:Age",
+				"demoCat:Benefits",
+				"demoCat:DependencyResponsibility",
+				"demoCat:Disability",
+				"demoCat:EducationLevel",
+				"demoCat:Employment",
+				"demoCat:Ethnicity",
+				"demoCat:FamilyEducationalBackground",
+				"demoCat:Gender",
+				"demoCat:Housing",
+				"demoCat:Income",
+				"demoCat:Language",
+				"demoCat:Literacy",
+				"demoCat:MaritalStatus",
+				"demoCat:MilitaryStatus",
+				"demoCat:Race",
+				"demoCat:Residency",
+				"demoCat:Skills"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:IncomeDeterminationMethod",
+			"rdfs:label": {
+				"en-US": "Income Determination Method"
+			},
+			"rdfs:comment": {
+				"en-US": "Methods for determining the actual or anticipated annual earnings of the subjects in the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:hasTopConcept": [
+				"incomeDetermination:ActualEarnings",
+				"incomeDetermination:AnnualizedEarnings"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:MetricCategory",
+			"rdfs:label": {
+				"en-US": "Metric Category"
+			},
+			"rdfs:comment": {
+				"en-US": "Types of metrics applicable to an Observation."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:hasTopConcept": [
+				"metricCat:ActivityEarnings",
+				"metricCat:CostDuration",
+				"metricCat:JobIndustryOccupation",
+				"metricCat:Organization",
+				"metricCat:ParticipationEngagement",
+				"metricCat:Performance",
+				"metricCat:PostCompletion",
+				"metricCat:PostEnrollment",
+				"metricCat:PreEnrollment",
+				"metricCat:Projected",
+				"metricCat:RetentionCompletion",
+				"metricCat:StudentFinancial",
+				"metricCat:TechnologyInnovation",
+				"metricCat:WIOA"
+			]
+		},
+		{
+			"@type": "skos:ConceptScheme",
+			"@id": "qdata:SubjectCategory",
+			"rdfs:label": {
+				"en-US": "Subject Category"
+			},
+			"rdfs:comment": {
+				"en-US": "Categories of subjects for employment and earnings data."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:hasTopConcept": [
+				"subjectCategory:AssessmentCompleter",
+				"subjectCategory:CredentialHolder",
+				"subjectCategory:CredentialSeeker",
+				"subjectCategory:Enrollee",
+				"subjectCategory:FinancialAidRecipient",
+				"subjectCategory:Graduate",
+				"subjectCategory:HigherLevelCredential",
+				"subjectCategory:InFurtherEducation",
+				"subjectCategory:InsufficientDataAvailable",
+				"subjectCategory:PostCredentialEarnings",
+				"subjectCategory:PreCredentialEarnings"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "adminRecord:Tax1099",
+			"skos:prefLabel": {
+				"en-US": "United States 1099 Tax Document"
+			},
+			"skos:definition": {
+				"en-US": "United States Federal tax form that an entity or person other than an employer provides stating earnings paid an individual."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:AdministrativeRecordCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:AdministrativeRecordCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "adminRecord:TaxW2",
+			"skos:prefLabel": {
+				"en-US": "United States W-2 Tax Document"
+			},
+			"skos:definition": {
+				"en-US": "United States Official Wage and Tax Statement that reports an employee's annual wages and the amount of taxes withheld from their paycheck by an employer."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:AdministrativeRecordCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:AdministrativeRecordCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "adminRecord:UnemploymentInsurance",
+			"skos:prefLabel": {
+				"en-US": "Unemployment Insurance"
+			},
+			"skos:definition": {
+				"en-US": "Contain the earnings reported by employers (typically on a quarterly basis) to state unemployment insurance agencies for each employee."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:AdministrativeRecordCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:AdministrativeRecordCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "collectionMethod:AdministrativeRecordMatching",
+			"skos:prefLabel": {
+				"en-US": "Administrative Record Matching"
+			},
+			"skos:definition": {
+				"en-US": "Data derived from cross-mapping unambiguous identifiers from more than one government administrative data sets."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:CollectionMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:CollectionMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "collectionMethod:CredentialHolderReporting",
+			"skos:prefLabel": {
+				"en-US": "Credential Holder Reporting"
+			},
+			"skos:definition": {
+				"en-US": "Data derived through credential holder self-reporting."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:CollectionMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:CollectionMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "collectionMethod:CredentialHolderSurvey",
+			"skos:prefLabel": {
+				"en-US": "Credential Holder Survey"
+			},
+			"skos:definition": {
+				"en-US": "Data derived through surveying holders."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:CollectionMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:CollectionMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "collectionMethod:SupplementalMethod",
+			"skos:prefLabel": {
+				"en-US": "Supplemental Method"
+			},
+			"skos:definition": {
+				"en-US": "Additional method used to augment administrative, self-reported or survey data."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:CollectionMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:CollectionMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "collectionMethod:SupplementalSource",
+			"skos:prefLabel": {
+				"en-US": "Supplemental Source"
+			},
+			"skos:definition": {
+				"en-US": "Agent providing data augmenting administrative, self-reported or survey data."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:CollectionMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:CollectionMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "dataWithholding:DataMasked",
+			"skos:prefLabel": {
+				"en-US": "Data Masked"
+			},
+			"skos:definition": {
+				"en-US": "Select information concealed or encrypted to protect the identities of subjects."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataWithholdingCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataWithholdingCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "dataWithholding:DataSuppressed",
+			"skos:prefLabel": {
+				"en-US": "Data Suppressed"
+			},
+			"skos:definition": {
+				"en-US": "Select information withheld or removed to protect the identities of subjects."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataWithholdingCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataWithholdingCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Accommodation",
+			"skos:prefLabel": {
+				"en-US": "Accommodation"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the subjects' use of services or resources for equal access."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Age",
+			"skos:prefLabel": {
+				"en-US": "Age"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the age of subjects, typically categorized into age groups."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Benefits",
+			"skos:prefLabel": {
+				"en-US": "Benefits"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating whether subjects receive public or other benefits."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:DependencyResponsibility",
+			"skos:prefLabel": {
+				"en-US": "Dependency Responsibility"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the caring responsibilities of subjects, such as for dependents or other family members."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Disability",
+			"skos:prefLabel": {
+				"en-US": "Disability"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating whether subjects have a disability, including physical, sensory, cognitive, mental health, or learning disabilities, recognizing both visible and invisible disabilities."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:EducationLevel",
+			"skos:prefLabel": {
+				"en-US": "Education Level"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the highest level of education completed by subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:relatedMatch": [
+				"metricCat:EducationLevel"
+			],
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Employment",
+			"skos:prefLabel": {
+				"en-US": "Employment"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the employment status of subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:relatedMatch": [
+				"metricCat:Employment"
+			],
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Ethnicity",
+			"skos:prefLabel": {
+				"en-US": "Ethnicity"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the ethnicity of subjects, reflecting their cultural identity."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:FamilyEducationalBackground",
+			"skos:prefLabel": {
+				"en-US": "Family Educational Background"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the educational background of a subject's family, for example whether subjects are the first in their family to attend higher education institutions."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Gender",
+			"skos:prefLabel": {
+				"en-US": "Gender"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the gender identity of subjects, which can include male, female, and other gender identities."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Housing",
+			"skos:prefLabel": {
+				"en-US": "Housing"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating whether subjects are housed or experiencing housing instability."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Income",
+			"skos:prefLabel": {
+				"en-US": "Income"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the financial stability of subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:relatedMatch": [
+				"metricCat:Earnings"
+			],
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Language",
+			"skos:prefLabel": {
+				"en-US": "Language"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the primary language spoken by subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Literacy",
+			"skos:prefLabel": {
+				"en-US": "Literacy"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the literacy level of subjects, including reading and writing skills."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:MaritalStatus",
+			"skos:prefLabel": {
+				"en-US": "Marital Status"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the marital status of subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:MilitaryStatus",
+			"skos:prefLabel": {
+				"en-US": "Military Status"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the status of being associated with military service, either personally or through family."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Race",
+			"skos:prefLabel": {
+				"en-US": "Race"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the race / ethnicity of subjects, categorized according to widely recognized standards."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Residency",
+			"skos:prefLabel": {
+				"en-US": "Residency"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating where subjects live."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "demoCat:Skills",
+			"skos:prefLabel": {
+				"en-US": "Skills"
+			},
+			"skos:definition": {
+				"en-US": "Means of indicating the type or nature of skills acquired by subjects, including both hard and soft skills."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:relatedMatch": [
+				"metricCat:SkillsProficiency"
+			],
+			"skos:inScheme": [
+				"qdata:DemographicCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:DemographicCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "incomeDetermination:ActualEarnings",
+			"skos:prefLabel": {
+				"en-US": "Actual Earnings"
+			},
+			"skos:definition": {
+				"en-US": "Earnings garnered over the entire reported time period of the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:IncomeDeterminationMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:IncomeDeterminationMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "incomeDetermination:AnnualizedEarnings",
+			"skos:prefLabel": {
+				"en-US": "Annualized Earnings"
+			},
+			"skos:definition": {
+				"en-US": "Calculated annual earnings based on reported earnings for a stated period shorter than the reported time period of the data set."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:IncomeDeterminationMethod"
+			],
+			"skos:topConceptOf": [
+				"qdata:IncomeDeterminationMethod"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Acceptance",
+			"skos:prefLabel": {
+				"en-US": "Acceptance"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who are admitted to an organization or its educational or work preparation activity or resource after completing the application process."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ParticipationEngagement"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Access",
+			"skos:prefLabel": {
+				"en-US": "Access"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who access educational or work activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ParticipationEngagement"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:ActivityEarnings",
+			"skos:prefLabel": {
+				"en-US": "Activity and Earnings"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects' activity and employment status, income, wages, salaries, time to secure employment, and related rates."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:CareerAdvancement",
+				"metricCat:Earnings",
+				"metricCat:Employment",
+				"metricCat:TimeToEmployment"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:BenefitsReceived",
+			"skos:prefLabel": {
+				"en-US": "Benefits Received"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the benefits received by subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Organization"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CareerAdvancement",
+			"skos:prefLabel": {
+				"en-US": "Career Advancement"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the impact of educational or work preparation activities or resources on subjects' career advancement opportunities."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ActivityEarnings"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Completion",
+			"skos:prefLabel": {
+				"en-US": "Completion"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who do or don't meet completion requirements for a specified education or work activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:RetentionCompletion"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Concentrator",
+			"skos:prefLabel": {
+				"en-US": "Concentrator"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of  subjects within a single educational program who meet completion requirements related to a specific  workforce preparation program of study."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Performance"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CostDuration",
+			"skos:prefLabel": {
+				"en-US": "Cost and Duration"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the financial costs and time required for subjects to participate in and complete educational or work preparation activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:DirectCost",
+				"metricCat:ParticipationCost",
+				"metricCat:PreparationCost",
+				"metricCat:PreparationDuration"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Credential",
+			"skos:prefLabel": {
+				"en-US": "Credential"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the awarding, offering, and value of credentials obtained by subjects in educational or work preparation programs."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Organization"
+			],
+			"skos:narrower": [
+				"metricCat:CredentialAwarded",
+				"metricCat:CredentialTypesOffered",
+				"metricCat:CredentialValue"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CredentialAttainment",
+			"skos:prefLabel": {
+				"en-US": "Credential Attainment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who do or don't attain a credential."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:RetentionCompletion"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CredentialAwarded",
+			"skos:prefLabel": {
+				"en-US": "Credential Awarded"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of individual credentials awarded to subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Credential"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CredentialTypesOffered",
+			"skos:prefLabel": {
+				"en-US": "Credential Types Offered"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the types of credential available for award."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Credential"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CredentialValue",
+			"skos:prefLabel": {
+				"en-US": "Credential Value"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the value of credentials available or awarded to subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Credential"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:CreditTransfer",
+			"skos:prefLabel": {
+				"en-US": "Credit Transfer"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of credits earned prior to enrollment transferred to another educational program."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ParticipationEngagement"
+			],
+			"skos:relatedMatch": [
+				"metricCat:PriorLearning"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:DirectCost",
+			"skos:prefLabel": {
+				"en-US": "Direct Cost"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of costs charged for subjects to participate in an organization or an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:CostDuration"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Earnings",
+			"skos:prefLabel": {
+				"en-US": "Earnings"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the income subjects receive from all forms of work."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ActivityEarnings"
+			],
+			"skos:relatedMatch": [
+				"demoCat:Income"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:EducationLevel",
+			"skos:prefLabel": {
+				"en-US": "Education Level"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects' highest level of education achieved."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:RetentionCompletion"
+			],
+			"skos:relatedMatch": [
+				"demoCat:EducationLevel"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:EmployerSatisfaction",
+			"skos:prefLabel": {
+				"en-US": "Employer Satisfaction"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the satisfaction of employers with the performance of subjects from educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Performance"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Employment",
+			"skos:prefLabel": {
+				"en-US": "Employment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the status of subjects being engaged with paid work."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ActivityEarnings"
+			],
+			"skos:relatedMatch": [
+				"demoCat:Employment"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Enrollment",
+			"skos:prefLabel": {
+				"en-US": "Enrollment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who enroll in an organization or its specified education or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ParticipationEngagement"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:HighSkillOccupation",
+			"skos:prefLabel": {
+				"en-US": "High-Skill Occupation"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of subjects employed in a high-skill occupation."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:HighWageOccupation",
+			"skos:prefLabel": {
+				"en-US": "High Wage Occupation"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of subjects employed in a high-wage occupation."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:InDemandOccupation",
+			"skos:prefLabel": {
+				"en-US": "In-demand Occupation"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of subjects employed in a high-demand occupation."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:IndustryEmployment",
+			"skos:prefLabel": {
+				"en-US": "Industry Employment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of subjects employed within an industry."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:IndustryGrowth",
+			"skos:prefLabel": {
+				"en-US": "Industry Growth"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the growth rate of an industry."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:InnovationAdoption",
+			"skos:prefLabel": {
+				"en-US": "Innovation Adoption"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the rate at which new and innovative practices are adopted in educational or work activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:TechnologyInnovation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:JobIndustryOccupation",
+			"skos:prefLabel": {
+				"en-US": "Job, Industry and Occupation"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of employment and earnings in industries or occupational areas."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:HighSkillOccupation",
+				"metricCat:HighWageOccupation",
+				"metricCat:InDemandOccupation",
+				"metricCat:IndustryEmployment",
+				"metricCat:IndustryGrowth",
+				"metricCat:JobOpenings",
+				"metricCat:OccupationEmployment",
+				"metricCat:OccupationGrowth"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:JobOpenings",
+			"skos:prefLabel": {
+				"en-US": "Job Openings"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of job openings."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:LearnerToAdvisor",
+			"skos:prefLabel": {
+				"en-US": "Learner to Advisor"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of learners per available advisor."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Organization"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:LearnerToFaculty",
+			"skos:prefLabel": {
+				"en-US": "Learner to Faculty"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of learners per available faculty."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Organization"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:OccupationEmployment",
+			"skos:prefLabel": {
+				"en-US": "Occupation Employment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the number of subjects employed in an occupational area."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:OccupationGrowth",
+			"skos:prefLabel": {
+				"en-US": "Occupation Growth"
+			},
+			"skos:definition": {
+				"en-US": "Measure the growth rate of an occupational area."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:JobIndustryOccupation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Organization",
+			"skos:prefLabel": {
+				"en-US": "Organization"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of organizational support, advisor and faculty availability, benefits received by subjects, and the acceptance of prior learning."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:BenefitsReceived",
+				"metricCat:Credential",
+				"metricCat:LearnerToAdvisor",
+				"metricCat:LearnerToFaculty",
+				"metricCat:Support",
+				"metricCat:TransferValue"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:ParticipationCost",
+			"skos:prefLabel": {
+				"en-US": "Total Cost of Participation"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of all costs incurred directly or indirectly by a subject as a result of participation in an organization or an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:CostDuration"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:ParticipationEngagement",
+			"skos:prefLabel": {
+				"en-US": "Participation and Engagement"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects' active involvement, admission, enrollment, and re-enrollment in specified education or work preparation activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:Acceptance",
+				"metricCat:Access",
+				"metricCat:CreditTransfer",
+				"metricCat:Enrollment",
+				"metricCat:PriorLearning",
+				"metricCat:ReEnrollment"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PassRate",
+			"skos:prefLabel": {
+				"en-US": "Pass Rate"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the proportion of subjects who have passed the relevant program, education, or workforce preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:RetentionCompletion"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Performance",
+			"skos:prefLabel": {
+				"en-US": "Performance"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects' achievement, including completion requirements, proficiency, placement in work or further education, and measurable skills gains in educational or work preparation activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:Concentrator",
+				"metricCat:EmployerSatisfaction",
+				"metricCat:Placement",
+				"metricCat:SkillsProficiency",
+				"metricCat:StudentSatisfaction"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Placement",
+			"skos:prefLabel": {
+				"en-US": "Placement"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of  subjects who advance from an education or work preparation activity to work, military, or a higher-level program."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Performance"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PostCompletion",
+			"skos:prefLabel": {
+				"en-US": "Post-Completion"
+			},
+			"skos:definition": {
+				"en-US": "Measurement made after subjects have completed an activity or resource."
+			},
+			"vann:usageNote": {
+				"en-US": "Use with another metric category that classifies what is being measured."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PostEnrollment",
+			"skos:prefLabel": {
+				"en-US": "Post-Enrollment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement made after subjects have enrolled for an activity or resource."
+			},
+			"vann:usageNote": {
+				"en-US": "Use with another metric category that classifies what is being measured. Use metriCat:PostCompletion for measurements made after completions."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PreEnrollment",
+			"skos:prefLabel": {
+				"en-US": "Pre-Enrollment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement made before subjects have enrolled for an activity or resource."
+			},
+			"vann:usageNote": {
+				"en-US": "Use with another metric category that classifies what is being measured."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PreparationCost",
+			"skos:prefLabel": {
+				"en-US": "Education and Work Preparation Cost"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the cost for a subject to participate in an organization or an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:CostDuration"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PreparationDuration",
+			"skos:prefLabel": {
+				"en-US": "Education and Work Preparation Duration"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the period of time to complete an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:CostDuration"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:PriorLearning",
+			"skos:prefLabel": {
+				"en-US": "Prior Learning"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the recognition and assessment of subjects' existing knowledge and skills to potentially fulfill certain requirements for a work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ParticipationEngagement"
+			],
+			"skos:relatedMatch": [
+				"metricCat:CreditTransfer"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Progression",
+			"skos:prefLabel": {
+				"en-US": "Progression"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who progress in a particular organization or its educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:RetentionCompletion"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Projected",
+			"skos:prefLabel": {
+				"en-US": "Projected"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of data that is predicted to be true in the future."
+			},
+			"vann:usageNote": {
+				"en-US": "Intended for use with other metric category types to indicate that the values for this metric are predictions or extrapolations, rather than current measured data."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:ReEnrollment",
+			"skos:prefLabel": {
+				"en-US": "Re-Enrollment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of eligible subjects who re-enroll in an organization or its specified education or work activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ParticipationEngagement"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Retention",
+			"skos:prefLabel": {
+				"en-US": "Retention"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who continue or persist in a particular organization or its educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:RetentionCompletion"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:RetentionCompletion",
+			"skos:prefLabel": {
+				"en-US": "Retention and Completion"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects' persistence, discontinuation, completion, credential attainment, and highest level of education achieved in educational or work activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:Completion",
+				"metricCat:CredentialAttainment",
+				"metricCat:EducationLevel",
+				"metricCat:PassRate",
+				"metricCat:Progression",
+				"metricCat:Retention"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:SkillsProficiency",
+			"skos:prefLabel": {
+				"en-US": "Skills Proficiency"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects' proficiency within an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Performance"
+			],
+			"skos:relatedMatch": [
+				"demoCat:Skills"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:StudenLoanSubject",
+			"skos:prefLabel": {
+				"en-US": "Student Loan Subject"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the percentage of subjects with loans."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:StudentFinancial"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:StudentFinancial",
+			"skos:prefLabel": {
+				"en-US": "Student Financial"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of financial assistance, student funding sources, and various aspects of student loans and debt related to educational or work preparation activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:StudenLoanSubject",
+				"metricCat:StudentFinancialAssistance",
+				"metricCat:StudentLoanAmount",
+				"metricCat:StudentLoanDebt"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:StudentFinancialAssistance",
+			"skos:prefLabel": {
+				"en-US": "Student Financial Assistance"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the financial aid provided to subjects, including grants, scholarships, loans, and other financial support."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:StudentFinancial"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:StudentLoanAmount",
+			"skos:prefLabel": {
+				"en-US": "Student Loan Amount"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the loan amount accumulated by subjects after completing a learning or workforce preparation program."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:StudentFinancial"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:StudentLoanDebt",
+			"skos:prefLabel": {
+				"en-US": "Student Loan Debt"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the loan debt incurred by subjects for the purpose of enrolling in and participating in an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:StudentFinancial"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:StudentSatisfaction",
+			"skos:prefLabel": {
+				"en-US": "Student Satisfaction"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the level of satisfaction subjects have with their educational or work preparation programs."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Performance"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:Support",
+			"skos:prefLabel": {
+				"en-US": "Support"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the support offered by the resource available for subjects."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Organization"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:TechnologyInnovation",
+			"skos:prefLabel": {
+				"en-US": "Technology and Innovation"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the integration and adoption of technology and innovative practices in educational or work preparation activities or resources."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:InnovationAdoption",
+				"metricCat:UseOfTechnology"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:TimeToEmployment",
+			"skos:prefLabel": {
+				"en-US": "Time To Employment"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the duration between subjects completing an educational or training program to secure paid work."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:ActivityEarnings"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:TransferValue",
+			"skos:prefLabel": {
+				"en-US": "Transfer Value"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the acceptance rate of subjects' prior learning towards an educational or work preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:Organization"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:UseOfTechnology",
+			"skos:prefLabel": {
+				"en-US": "Use of Technology"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of the extent to which educational or work preparation activities or resources integrate technology in their delivery."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:TechnologyInnovation"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:WIOA",
+			"skos:prefLabel": {
+				"en-US": "WIOA"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects related to Workforce Innovation Opportunity Act services and sponsored education or workforce preparation activity or resource."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:narrower": [
+				"metricCat:WIOACompleter",
+				"metricCat:WIOAParticipant",
+				"metricCat:WIOAProgramExiter",
+				"metricCat:WIOATrainingExiter"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:WIOACompleter",
+			"skos:prefLabel": {
+				"en-US": "WIOA Completer"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who completed a WIOA-sponsored education or workforce preparation activity or resource, regardless of whether they were successful or unsuccessful."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:WIOA"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:WIOAParticipant",
+			"skos:prefLabel": {
+				"en-US": "WIOA Participant"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who have received staff-assisted Workforce Innovation Opportunity Act services."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:WIOA"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:WIOAProgramExiter",
+			"skos:prefLabel": {
+				"en-US": "WIOA Program Exiter"
+			},
+			"skos:definition": {
+				"en-US": "Measurement of subjects who have received WIOA services and have an exit date or have not received any reportable services in the last 90 days."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:WIOA"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "metricCat:WIOATrainingExiter",
+			"skos:prefLabel": {
+				"en-US": "WIOA Training Exiter"
+			},
+			"skos:definition": {
+				"en-US": "Measures of subjects who either completed or withdrew from a WIOA-sponsored training program, or transferred to a different program."
+			},
+			"vs:term_status": "vs:unstable",
+			"skos:broader": [
+				"metricCat:WIOA"
+			],
+			"skos:inScheme": [
+				"qdata:MetricCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "sourceCoverage:Country",
+			"skos:prefLabel": {
+				"en-US": "Country"
+			},
+			"skos:definition": {
+				"en-US": "Nation with its own government, occupying a particular territory such as the United States of America, Germany and France."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataSourceCoverage"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataSourceCoverage"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "sourceCoverage:Global",
+			"skos:prefLabel": {
+				"en-US": "Global"
+			},
+			"skos:definition": {
+				"en-US": "Encompassing the entire world."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataSourceCoverage"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataSourceCoverage"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "sourceCoverage:Region",
+			"skos:prefLabel": {
+				"en-US": "Region"
+			},
+			"skos:definition": {
+				"en-US": "Non-governmental, named geographic area, such as Silicon Valley, that is not necessarily coincident with the boundaries of a country or administrative subdivision thereof."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataSourceCoverage"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataSourceCoverage"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "sourceCoverage:StateOrProvince",
+			"skos:prefLabel": {
+				"en-US": "State Or Province"
+			},
+			"skos:definition": {
+				"en-US": "Principal administrative and occasionally sovereign subdivision of a country such as California, Bavaria, and Yucatan."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataSourceCoverage"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataSourceCoverage"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "sourceCoverage:UrbanArea",
+			"skos:prefLabel": {
+				"en-US": "Urban Area"
+			},
+			"skos:definition": {
+				"en-US": "Urban area that has a name, defined boundaries, and local government such as a city, town, or village."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:DataSourceCoverage"
+			],
+			"skos:topConceptOf": [
+				"qdata:DataSourceCoverage"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:AssessmentCompleter",
+			"skos:prefLabel": {
+				"en-US": "Assessment Completer"
+			},
+			"skos:definition": {
+				"en-US": "Subject that has successfully completed an assessment."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:CredentialHolder",
+			"skos:prefLabel": {
+				"en-US": "Credential Holder"
+			},
+			"skos:definition": {
+				"en-US": "Subject that has earned the credential during the chosen employment and earnings time period."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:CredentialSeeker",
+			"skos:prefLabel": {
+				"en-US": "Credential Seeker"
+			},
+			"skos:definition": {
+				"en-US": "Subject actively seeking the credential through enrollment in a program or taking an assessment."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:Enrollee",
+			"skos:prefLabel": {
+				"en-US": "Enrollee"
+			},
+			"skos:definition": {
+				"en-US": "Subject currently enrolled in a program."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:FinancialAidRecipient",
+			"skos:prefLabel": {
+				"en-US": "Financial Aid Recipient"
+			},
+			"skos:definition": {
+				"en-US": "Subject currently receiving financial aid while pursuing the credential."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:Graduate",
+			"skos:prefLabel": {
+				"en-US": "Graduate"
+			},
+			"skos:definition": {
+				"en-US": "Subject that has graduated from a program."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:HigherLevelCredential",
+			"skos:prefLabel": {
+				"en-US": "Higher Level Credential"
+			},
+			"skos:definition": {
+				"en-US": "Subject who has earned a higher level credential."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:InFurtherEducation",
+			"skos:prefLabel": {
+				"en-US": "In Further Education"
+			},
+			"skos:definition": {
+				"en-US": "Credential holder actively seeking a higher-level credential."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:InsufficientDataAvailable",
+			"skos:prefLabel": {
+				"en-US": "Insufficient Data Available"
+			},
+			"skos:definition": {
+				"en-US": "Subject without sufficiently useful earnings or employment data."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:PostCredentialEarnings",
+			"skos:prefLabel": {
+				"en-US": "Post-Credential Earnings"
+			},
+			"skos:definition": {
+				"en-US": "Subject with earnings garnered after earning the credential."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		},
+		{
+			"@type": "skos:Concept",
+			"@id": "subjectCategory:PreCredentialEarnings",
+			"skos:prefLabel": {
+				"en-US": "Pre-Credential Earnings"
+			},
+			"skos:definition": {
+				"en-US": "Subject with earnings garnered prior to earning the credential."
+			},
+			"vs:term_status": "vs:stable",
+			"skos:inScheme": [
+				"qdata:SubjectCategory"
+			],
+			"skos:topConceptOf": [
+				"qdata:SubjectCategory"
+			]
+		}
+	]
+}

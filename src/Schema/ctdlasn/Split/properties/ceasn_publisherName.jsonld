@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:publisherName",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "Also referred to as the promulgating agency of the entity."
+    },
+    "owl:equivalentProperty": [
+        "dc:publisher"
+    ],
+    "rdfs:comment": {
+        "en-US": "Name of an agent responsible for making this resource available."
+    },
+    "rdfs:label": {
+        "en-US": "Publisher Name"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:QualificationsFramework",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:StudentLoanAmount",
+    "skos:prefLabel": {
+        "en-US": "Student Loan Amount"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the loan amount accumulated by subjects after completing a learning or workforce preparation program."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:StudentFinancial"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:shouldIndex",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:indexingStatus"
+    ],
+    "rdfs:comment": {
+        "en-US": "Indicates whether correlators should or should not assign the competency during correlation."
+    },
+    "rdfs:label": {
+        "en-US": "Should Index"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:boolean"
+    ],
+    "vs:term_status": "vs:unstable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:StudentSatisfaction",
+    "skos:prefLabel": {
+        "en-US": "Student Satisfaction"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the level of satisfaction subjects have with their educational or work preparation programs."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Performance"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

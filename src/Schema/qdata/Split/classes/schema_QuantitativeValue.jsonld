@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "schema:QuantitativeValue",
+    "rdfs:label": {
+        "en-US": "Quantitative Value"
+    },
+    "rdfs:comment": {
+        "en-US": "A point value or interval for product characteristics and other purposes."
+    },
+    "vann:usageNote": {
+        "en-US": "Use in CTDL to describe quantitative values such as minimum and maximum credits or credit hours, etc."
+    },
+    "vs:term_status": "vs:stable"
+}

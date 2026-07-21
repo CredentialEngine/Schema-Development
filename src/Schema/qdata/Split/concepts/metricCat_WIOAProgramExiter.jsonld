@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:WIOAProgramExiter",
+    "skos:prefLabel": {
+        "en-US": "WIOA Program Exiter"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects who have received WIOA services and have an exit date or have not received any reportable services in the last 90 days."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:WIOA"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

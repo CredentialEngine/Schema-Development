@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:altCodedNotation",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "Unlike the codedNotation property, the value for the altCodedNotation property need not be an official identifier created by the promulgating agency. It must be an identifier in common use among end-users of the competency. This property should be seldom used and only with a clear demonstration of need (i.e., in common use). For example, in the Common Core State Standards (Math) in the U.S., the official codedNotation of \"CCSS.Math.Content.1.NBT.C.4\" is abbreviated in common use by end-users to the unofficial altCodedNotation of \"1.NBT.4\"."
+    },
+    "owl:equivalentProperty": [
+        "asn:altStatementNotation"
+    ],
+    "rdfs:comment": {
+        "en-US": "An alphanumeric notation or ID code identifying this competency in common use among end-users."
+    },
+    "rdfs:label": {
+        "en-US": "Alternative Coded Notation"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:identifier"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:Rubric"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "vs:term_status": "vs:stable"
+}

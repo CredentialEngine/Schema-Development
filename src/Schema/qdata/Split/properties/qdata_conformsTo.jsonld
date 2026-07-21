@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:conformsTo",
+    "rdfs:label": {
+        "en-US": "Conforms To"
+    },
+    "rdfs:comment": {
+        "en-US": "An established standard to which the described resource conforms."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:DataSetDistribution"
+    ],
+    "schema:rangeIncludes": [
+        "dct:Standard"
+    ],
+    "owl:equivalentProperty": [
+        "dct:conformsTo"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:value",
+    "rdfs:label": {
+        "en-US": "Value"
+    },
+    "rdfs:comment": {
+        "en-US": "The value of the property value node."
+    },
+    "vann:usageNote": {
+        "en-US": "In CTDL: for single values, use schema:value; for ranges, use schema:minValue and schema:maxValue."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceasn:CriterionLevel",
+        "ceterms:PayProfile",
+        "ceterms:ValueProfile",
+        "qdata:Observation",
+        "schema:MonetaryAmount",
+        "schema:QuantitativeValue"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ]
+}

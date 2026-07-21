@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:related",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Assertion indicating an associative, non-hierarchical relationship between the two concepts where neither is broader nor narrower than the other."
+    },
+    "rdfs:label": {
+        "en-US": "Related"
+    },
+    "schema:domainIncludes": [
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:stable"
+}

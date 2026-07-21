@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:isPartOf",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:isPartOf"
+    ],
+    "rdfs:comment": {
+        "en-US": "Competency framework that this competency is a part of."
+    },
+    "rdfs:label": {
+        "en-US": "Is Part Of"
+    },
+    "rdfs:subPropertyOf": [
+        "dc:relation"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:CompetencyFramework"
+    ],
+    "vann:usageNote": {
+        "en-US": "This property does not indicate whether or not this statement is a top-level statement in the referenced competency framework; only that it is in some way a part of that framework. To indicate that this statement is a top-level statement, use both this property and the isChildOf property."
+    },
+    "vs:term_status": "vs:stable"
+}

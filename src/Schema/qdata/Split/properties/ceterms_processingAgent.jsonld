@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:processingAgent",
+    "rdfs:label": {
+        "en-US": "Processing Agent"
+    },
+    "rdfs:comment": {
+        "en-US": "Organization or person performing the process."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceterms:ProcessProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ]
+}

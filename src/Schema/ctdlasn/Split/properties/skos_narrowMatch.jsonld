@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:narrowMatch",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Assertion indicates that the referenced concept is narrower in some way than this concept."
+    },
+    "rdfs:label": {
+        "en-US": "Narrow Match"
+    },
+    "schema:domainIncludes": [
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:stable"
+}

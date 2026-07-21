@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:subjectType",
+    "rdfs:label": {
+        "en-US": "Subject Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of subject included or excluded from the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

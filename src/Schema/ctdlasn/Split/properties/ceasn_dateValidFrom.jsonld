@@ -1,0 +1,30 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:dateValidFrom",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "schema:startDate"
+    ],
+    "rdfs:comment": {
+        "en-US": "Beginning date of validity of this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Date Valid From"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:valid"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:QualificationsFramework"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:dateTime"
+    ],
+    "vann:usageNote": {
+        "en-US": "Where the resource is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."
+    },
+    "vs:term_status": "vs:stable"
+}

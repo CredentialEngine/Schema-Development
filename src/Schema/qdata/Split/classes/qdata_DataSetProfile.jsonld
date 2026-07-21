@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:DataSetProfile",
+    "rdfs:label": {
+        "en-US": "Data Set Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Particular characteristics or properties of a data set and its records."
+    },
+    "vs:term_status": "vs:stable"
+}

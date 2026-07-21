@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:percentile25",
+    "rdfs:label": {
+        "en-US": "Percentile 25"
+    },
+    "rdfs:comment": {
+        "en-US": "25th percentile value."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:Observation",
+        "schema:MonetaryAmountDistribution"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ]
+}

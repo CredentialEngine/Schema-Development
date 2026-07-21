@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:mediaType",
+    "rdfs:label": {
+        "en-US": "Media Type"
+    },
+    "rdfs:comment": {
+        "en-US": "A file format or physical medium."
+    },
+    "vs:term_status": "vs:unstable",
+    "rdfs:subPropertyOf": [
+        "dct:format"
+    ],
+    "schema:domainIncludes": [
+        "qdata:DataSetDistribution"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
+}

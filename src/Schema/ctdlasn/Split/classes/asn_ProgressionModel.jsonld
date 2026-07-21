@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "asn:ProgressionModel",
+    "@type": "rdfs:Class",
+    "rdfs:comment": {
+        "en-US": "Model of identifiable points along a developmental progression including increasing levels of competence, achievement or temporal position (e.g., \"Second Quarter\")."
+    },
+    "rdfs:label": {
+        "en-US": "Progression Model"
+    },
+    "rdfs:subClassOf": [
+        "skos:ConceptScheme"
+    ],
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:nonHoldersInSet",
+    "rdfs:label": {
+        "en-US": "Non-Holders In Set"
+    },
+    "rdfs:comment": {
+        "en-US": "Non-holder subject actively pursuing the credential through a program or assessment."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}
