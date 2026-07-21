@@ -23,7 +23,8 @@ public class UrlResolver
         if (!File.Exists(localPath))
             throw new FileNotFoundException($"No cached copy for {url}");
 
-        var json = JsonNode.Parse(File.ReadAllText(localPath))!;
+        var json = JsonNode.Parse(File.ReadAllText(localPath))
+                   ?? throw new InvalidOperationException($"The cached JSON file '{localPath}' is empty or invalid.");
 
         // If it's a context file, return inner @context
         if (json is JsonObject obj && obj["@context"] != null)

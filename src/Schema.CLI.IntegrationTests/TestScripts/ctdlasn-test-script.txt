@@ -1,0 +1,4 @@
+init --path {SeedSchema} --schema ctdlasn
+add namespace --prefix ceasn --uri https://purl.org/ctdlasn/terms/
+add class --term ceasn:TestClass
+set language-property --subject ceasn:TestClass --predicate rdfs:label --language en --object "Test CTDL-ASN Class"

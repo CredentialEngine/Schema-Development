@@ -82,7 +82,7 @@ public class LosslessTests
         api.CreateClass("ex:c");
         api.CreateProperty("eg:p");
 
-        api.AddFieldValue(
+        api.AddTriple(
             "eg:p",
             "schema:domainIncludes",
             "ex:c"
@@ -111,7 +111,7 @@ public class LosslessTests
         api.CreateNamespace("ex", ns);
         api.CreateClass("ex:c");
 
-        api.SetField("ex:c", "vs:term_status", "stable");
+        api.SetTriple("ex:c", "vs:term_status", "stable");
 
         api.SaveFolder(Output);
 
@@ -135,7 +135,7 @@ public class LosslessTests
         api.CreateNamespace("ex", cls);
         api.CreateClass("ex:c");
 
-        api.SetField("ex:c", "vs:term_status", "stable");
+        api.SetTriple("ex:c", "vs:term_status", "stable");
         api.RemoveField("ex:c", "vs:term_status");
         api.SaveFolder(Output);
 
@@ -266,7 +266,7 @@ public class LosslessTests
         api.CreateClass("ex1:c");
         api.CreateProperty("ex2:p");
 
-        api.AddFieldValue("ex2:p", "schema:domainIncludes", "ex1:c");
+        api.AddTriple("ex2:p", "schema:domainIncludes", "ex1:c");
 
         var result = api.GetPropertiesOfClass("ex1:c").ToList();
 
@@ -297,7 +297,7 @@ public class LosslessTests
 
         api.CreateClass("ex1:c");
         api.CreateProperty("ex2:p");
-        api.AddFieldValue("ex2:p", "schema:domainIncludes", "ex1:c");
+        api.AddTriple("ex2:p", "schema:domainIncludes", "ex1:c");
 
         var result = api.GetClassesUsingProperty("ex2:p").ToList();
 
@@ -329,7 +329,7 @@ public class LosslessTests
         api.CreateClass("ex1:range");
         api.CreateProperty("ex2:p");
 
-        api.AddFieldValue("ex2:p", "schema:rangeIncludes", "ex1:range");
+        api.AddTriple("ex2:p", "schema:rangeIncludes", "ex1:range");
 
         var result = api.GetRangeOfProperty("ex2:p").ToList();
 
@@ -361,7 +361,7 @@ public class LosslessTests
         api.CreateClass("ex1:range");
         api.CreateProperty("ex2:p");
 
-        api.AddFieldValue("ex2:p", "schema:rangeIncludes", "ex1:range");
+        api.AddTriple("ex2:p", "schema:rangeIncludes", "ex1:range");
 
         var result = api.GetPropertiesWithRange("ex1:range").ToList();
 
@@ -393,7 +393,7 @@ public class LosslessTests
         api.CreateClass("parent:c1");
         api.CreateClass("child:c2");
 
-        api.AddFieldValue("child:c2", "rdfs:subClassOf", "parent:c1");
+        api.AddTriple("child:c2", "rdfs:subClassOf", "parent:c1");
 
         var result = api.GetSubClasses("parent:c1").ToList();
 
@@ -425,7 +425,7 @@ public class LosslessTests
         api.CreateConceptScheme("ex1:scheme");
         api.CreateConcept("ex2:concept");
 
-        api.AddFieldValue("ex2:concept", "skos:inScheme", "ex1:scheme");
+        api.AddTriple("ex2:concept", "skos:inScheme", "ex1:scheme");
 
         var result = api.GetConceptsInScheme("ex1:scheme").ToList();
         Assert.AreEqual(1, result.Count);
@@ -691,9 +691,9 @@ public class LosslessTests
 
         api.CreateClass("ex:c");
 
-        Assert.ThrowsException<InvalidOperationException>(() =>
+        Assert.ThrowsExactly<InvalidOperationException>(() =>
         {
-            api.SetField(
+            api.SetTriple(
                 "https://example.org/ex/c",
                 "rdfs:label",
                 "Bad");
@@ -827,7 +827,7 @@ public class LosslessTests
 
         api.CreateClass("ex:c");
 
-        api.SetField(
+        api.SetTriple(
             "ex:c",
             "vs:term_status",
             "stable");
@@ -846,7 +846,7 @@ public class LosslessTests
         api.CreateNamespace("ex", "https://example.org/ex");
         api.CreateClass("ex:c");
 
-        api.SetField(
+        api.SetTriple(
             "ex:c",
             "vs:term_status",
             "stable");
@@ -871,7 +871,7 @@ public class LosslessTests
         api.CreateClass("ex:c");
         api.CreateProperty("eg:p");
 
-        api.AddFieldValue(
+        api.AddTriple(
             "eg:p",
             "schema:domainIncludes",
             "ex:c");
@@ -891,11 +891,11 @@ public class LosslessTests
 
         api.CreateClass("ex:c");
         api.CreateProperty("eg:p");
-        api.AddFieldValue(
+        api.AddTriple(
             "eg:p",
             "schema:domainIncludes",
             "ex:c");
-        api.RemoveFieldValue(
+        api.RemoveTriple(
             "eg:p",
             "schema:domainIncludes",
             "ex:c");
@@ -1008,7 +1008,7 @@ public class LosslessTests
 
         api.CreateClass("ex:c");
 
-        api.SetField(
+        api.SetTriple(
             "ex:c",
             "vs:term_status",
             "stable");

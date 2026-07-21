@@ -1,0 +1,4 @@
+init --path {SeedSchema} --schema qdata
+add namespace --prefix qdata --uri https://credreg.net/qdata/terms/
+add class --term qdata:TestClass
+set language-property --subject qdata:TestClass --predicate rdfs:label --language en --object "Test QData Class"
