@@ -91,6 +91,61 @@ public class SparqlAndRdfConversionTests
     }
 
     [TestMethod]
+    public void SaveFolder_UsesOnlyContextDeclaredPrefixes_AndFallsBackToAbsoluteUris()
+    {
+        var root = CreateSchema();
+        var output = Path.Combine(root, "output");
+
+        try
+        {
+            var api = new SchemaApi();
+            api.LoadFromFolder(root);
+            api.ApplySparqlUpdate("""
+                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                PREFIX unknown: <https://example.net/undeclared/>
+                INSERT DATA {
+                    unknown:Thing a rdfs:Class ;
+                        unknown:predicate unknown:Object .
+                }
+                """);
+            api.SaveFolder(output);
+
+            var generated = Directory
+                .EnumerateFiles(Path.Combine(output, "Split"), "*.jsonld", SearchOption.AllDirectories)
+                .Select(path => JsonNode.Parse(File.ReadAllText(path))!.AsObject())
+                .Single(node => node["@id"]?.ToString() == "https://example.net/undeclared/Thing");
+
+            Assert.AreEqual("rdfs:Class", generated["@type"]?.ToString(),
+                "A prefix declared by the active context should be used.");
+            Assert.IsNotNull(generated["https://example.net/undeclared/predicate"],
+                "An undeclared predicate namespace must remain an absolute URI.");
+			var undeclaredPredicate =
+	            generated[ "https://example.net/undeclared/predicate" ] as JsonArray;
+
+			Assert.IsNotNull(
+				undeclaredPredicate,
+				"The undeclared predicate should be serialized as an array." );
+
+			Assert.AreEqual(
+				1,
+				undeclaredPredicate.Count,
+				"The undeclared predicate should contain one object." );
+
+			Assert.AreEqual(
+				"https://example.net/undeclared/Object",
+				undeclaredPredicate[ 0 ]?.ToString(),
+				"An undeclared object namespace must remain an absolute URI." );
+
+			Assert.IsNull(generated["unknown:predicate"],
+                "The serializer must not invent prefixes absent from the active context.");
+        }
+        finally
+        {
+            Directory.Delete(root, true);
+        }
+    }
+
+    [TestMethod]
     public void ApplySparqlUpdate_UpdatesJsonLdAndGraph()
     {
         var root = CreateSchema();

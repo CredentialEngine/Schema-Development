@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -316,6 +317,9 @@ public class SchemaApi
         if (string.IsNullOrWhiteSpace(sparqlUpdate))
             throw new ArgumentException("SPARQL Update text is required.", nameof(sparqlUpdate));
 
+        var originalGraph = new Graph();
+        originalGraph.Merge(_graph);
+
         var store = CreateStoreFromCurrentGraph();
         var parser = new SparqlUpdateParser();
         var commands = parser.ParseFromString(sparqlUpdate);
@@ -323,7 +327,8 @@ public class SchemaApi
         processor.ProcessCommandSet(commands);
 
         ReplaceGraphFromStore(store);
-        RebuildDocumentsFromGraph();
+        var changedSubjects = GetChangedUriSubjects(originalGraph, _graph);
+        RebuildDocumentsFromGraph(changedSubjects);
     }
 
     /// <summary>
@@ -1138,7 +1143,39 @@ public class SchemaApi
             _graph.Merge(graph);
     }
 
-    private void RebuildDocumentsFromGraph()
+	private static HashSet<string> GetChangedUriSubjects( IGraph before, IGraph after )
+	{
+		static Dictionary<string, HashSet<string>> IndexBySubject( IGraph graph )
+		{
+			return graph.Triples
+				.Where( triple => triple.Subject is IUriNode )
+				.GroupBy(
+					triple => ( (IUriNode)triple.Subject ).Uri.AbsoluteUri,
+					StringComparer.Ordinal )
+				.ToDictionary(
+					group => group.Key,
+					group => new HashSet<string>(
+						group.Select( triple => triple.ToString() ),
+						StringComparer.Ordinal ),
+					StringComparer.Ordinal );
+		}
+
+		var beforeIndex = IndexBySubject( before );
+		var afterIndex = IndexBySubject( after );
+
+		var subjects = new HashSet<string>(
+			beforeIndex.Keys.Concat( afterIndex.Keys ),
+			StringComparer.Ordinal );
+
+		subjects.RemoveWhere( subject =>
+			beforeIndex.TryGetValue( subject, out var beforeTriples ) &&
+			afterIndex.TryGetValue( subject, out var afterTriples ) &&
+			beforeTriples.SetEquals( afterTriples ) );
+
+		return subjects;
+	}
+
+	private void RebuildDocumentsFromGraph(ISet<string>? subjectsToRebuild = null)
     {
         var store = CreateStoreFromCurrentGraph();
         var writer = new JsonLdWriter();
@@ -1149,7 +1186,14 @@ public class SchemaApi
         var expanded = JsonNode.Parse(textWriter.ToString()) as JsonArray
             ?? throw new InvalidOperationException("The RDF graph could not be serialized as expanded JSON-LD.");
 
-        _docs.Clear();
+        if (subjectsToRebuild != null)
+        {
+            foreach (var subject in subjectsToRebuild)
+                _docs.Remove(CompactUri(subject));
+        }
+
+        if (subjectsToRebuild == null)
+            _docs.Clear();
 
         foreach (var node in expanded.OfType<JsonObject>())
         {
@@ -1159,6 +1203,8 @@ public class SchemaApi
 
             var id = idNode.ToString();
             if (string.IsNullOrWhiteSpace(id))
+                continue;
+            if (subjectsToRebuild != null && !subjectsToRebuild.Contains(id))
                 continue;
 
             var term = CompactUri(id);
@@ -1335,16 +1381,46 @@ public class SchemaApi
 
         return _preferredLanguageTags.TryGetValue(language.ToLowerInvariant(), out var preferred)
             ? preferred
-            : language;
+            : NormalizeLanguageTagCasing(language);
+    }
+
+    private static string NormalizeLanguageTagCasing(string language)
+    {
+        var parts = language.Split('-');
+        if (parts.Length == 0)
+            return language;
+
+        parts[0] = parts[0].ToLowerInvariant();
+        for (var index = 1; index < parts.Length; index++)
+        {
+            var part = parts[index];
+            if (part.Length == 2 || (part.Length == 3 && part.All(char.IsDigit)))
+                parts[index] = part.ToUpperInvariant();
+            else if (part.Length == 4)
+                parts[index] = char.ToUpperInvariant(part[0]) + part.Substring(1).ToLowerInvariant();
+            else
+                parts[index] = part.ToLowerInvariant();
+        }
+
+        return string.Join("-", parts);
     }
 
     private bool IsLanguageContainer(string compactPropertyName)
     {
-        return _context[compactPropertyName] is JsonObject definition &&
+        if (_context[compactPropertyName] is JsonObject definition &&
             string.Equals(
                 definition["@container"]?.ToString(),
                 "@language",
-                StringComparison.Ordinal);
+                StringComparison.Ordinal))
+        {
+            return true;
+        }
+
+        // These are standard language-tagged annotation properties. This
+        // fallback is used when a schema references a remote context but its
+        // sparse local context does not repeat the standard definitions.
+        return string.Equals(compactPropertyName, "rdfs:label", StringComparison.Ordinal) ||
+            string.Equals(compactPropertyName, "rdfs:comment", StringComparison.Ordinal);
     }
 
     private JsonNode? CompactExpandedValue(string propertyName, JsonNode? value)
@@ -1789,13 +1865,7 @@ public class SchemaApi
 
     private static JsonObject BuildContext()
     {
-        return new JsonObject
-        {
-            //["ceterms"] = "https://credreg.net/ctdl/terms/",
-            //["schema"] = "https://schema.org/",
-            //["rdf"] = "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            //["rdfs"] = "http://www.w3.org/2000/01/rdf-schema#"
-        };
+        return new JsonObject();
     }
 
     private void EnsureNoReferences(string term)

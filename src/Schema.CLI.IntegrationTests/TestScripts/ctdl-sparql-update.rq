@@ -1,0 +1,12 @@
+PREFIX ex: <https://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+DELETE {
+  ex:SparqlScriptClass rdfs:label ?oldLabel .
+}
+INSERT {
+  ex:SparqlScriptClass rdfs:label "Updated SPARQL Script Class"@en-US .
+}
+WHERE {
+  ex:SparqlScriptClass rdfs:label ?oldLabel .
+}

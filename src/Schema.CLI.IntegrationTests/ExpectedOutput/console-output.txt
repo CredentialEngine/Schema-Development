@@ -99,3 +99,23 @@ New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
+> schema add namespace --prefix ex --uri https://example.org/
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema sparql --file "D:/Schema-Development/src/Schema.CLI.IntegrationTests/TestScripts/ctdl-sparql-insert.rq"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema sparql --file "D:/Schema-Development/src/Schema.CLI.IntegrationTests/TestScripts/ctdl-sparql-update.rq"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema sparql --file "D:/Schema-Development/src/Schema.CLI.IntegrationTests/TestScripts/ctdl-sparql-delete.rq"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+

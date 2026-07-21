@@ -18,3 +18,7 @@ remove field --subject ceterms:TestClass --predicate vs:term_status
 remove triple --subject ceterms:TestConcept --predicate skos:inScheme --object ceterms:TestConceptScheme
 remove concept --term ceterms:TestConcept
 remove conceptscheme --term ceterms:TestConceptScheme
+add namespace --prefix ex --uri https://example.org/
+sparql --file "{TestScripts}/ctdl-sparql-insert.rq"
+sparql --file "{TestScripts}/ctdl-sparql-update.rq"
+sparql --file "{TestScripts}/ctdl-sparql-delete.rq"

@@ -67,12 +67,12 @@ public class SchemaCliDiffTests
     }
 
     [TestMethod]
-    public void CliCommands_ProduceExpectedSchemaOutput()
+    public void CtdlCommands_ProduceExpectedSchemaOutput()
     {
         var scriptPath = Path.Combine(
             _testRoot,
             "TestScripts",
-            "test-script.txt");
+            "ctdl-test-script.txt");
 
         var consoleOutput = RunScriptAndCaptureOutputs(scriptPath);
 
@@ -314,7 +314,9 @@ public class SchemaCliDiffTests
             if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
                 continue;
 
-            line = line.Replace("{SeedSchema}", _seedSchema);
+            line = line
+                .Replace("{SeedSchema}", _seedSchema)
+                .Replace("{TestScripts}", Path.Combine(_testRoot, "TestScripts"));
 
             log.AppendLine($"> schema {NormalizeConsoleOutput(line, _workDir)}");
 
@@ -333,6 +335,12 @@ public class SchemaCliDiffTests
 
             log.AppendLine($"ExitCode: {result.ExitCode}");
             log.AppendLine();
+
+            // Persist the transcript after every command so a failing command still
+            // leaves complete diagnostics in ActualOutput/console-output.txt.
+            File.WriteAllText(
+                Path.Combine(_actualOutput, "console-output.txt"),
+                NormalizeConsoleOutput(log.ToString(), _workDir));
 
             Assert.AreEqual(
                 0,

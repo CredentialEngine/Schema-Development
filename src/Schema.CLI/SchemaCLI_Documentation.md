@@ -253,3 +253,13 @@ schema.cli.exe rdf import-turtle --input "D:\exports\ctdlasn.ttl"
 ```
 
 JSON-LD and Turtle are different RDF serializations. Conversion preserves RDF meaning (including datatypes, language tags, IRIs, and blank-node graph structure), but it cannot preserve JSON-specific formatting, object ordering, array ordering, or the exact original JSON-LD compaction.
+
+## CTDL script-based SPARQL integration coverage
+
+`Schema.CLI.IntegrationTests/TestScripts/ctdl-test-script.txt` exercises SPARQL Update through the same script runner used by the CLI integration suite. It runs separate `.rq` files that:
+
+1. insert a CTDL test class and its label/comment;
+2. replace the label with `DELETE`/`INSERT`/`WHERE`; and
+3. remove the temporary comment with `DELETE DATA`.
+
+`CtdlCommands_ProduceExpectedSchemaOutput` executes `ctdl-test-script.txt` and compares every generated schema snapshot and console output against the existing `ExpectedOutput` baseline.
