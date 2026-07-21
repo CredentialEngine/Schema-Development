@@ -78,7 +78,7 @@ public class SchemaCliDiffTests
 
         File.WriteAllText(
             Path.Combine(_actualOutput, "console-output.txt"),
-            NormalizeConsoleOutput(consoleOutput, _workDir));
+            NormalizeConsoleOutput(consoleOutput, _workDir, Path.Combine(_testRoot, "TestScripts")));
 
         AssertDirectoriesEqual(_expectedOutput, _actualOutput);
     }
@@ -319,7 +319,7 @@ public class SchemaCliDiffTests
                 .Replace("{SeedSchema}", _seedSchema)
                 .Replace("{TestScripts}", Path.Combine(_testRoot, "TestScripts"));
 
-            log.AppendLine($"> schema {NormalizeConsoleOutput(line, _workDir)}");
+            log.AppendLine($"> schema {NormalizeConsoleOutput(line, _workDir, Path.Combine(_testRoot, "TestScripts"))}");
 
             var args = SplitCommandLine(line);
             var result = RunCli(args);
@@ -341,7 +341,7 @@ public class SchemaCliDiffTests
             // leaves complete diagnostics in ActualOutput/console-output.txt.
             File.WriteAllText(
                 Path.Combine(_actualOutput, "console-output.txt"),
-                NormalizeConsoleOutput(log.ToString(), _workDir));
+                NormalizeConsoleOutput(log.ToString(), _workDir, Path.Combine(_testRoot, "TestScripts")));
 
             Assert.AreEqual(
                 0,
@@ -397,19 +397,26 @@ public class SchemaCliDiffTests
         return Path.GetFileName(Path.TrimEndingDirectorySeparator(originalPath));
     }
 
-    private static string NormalizeConsoleOutput(string text, string workDir)
+    private static string NormalizeConsoleOutput(string text, string workDir, string? testScriptsDir = null)
     {
-        return NormalizeDynamicValues(text, workDir)
+        return NormalizeDynamicValues(text, workDir, testScriptsDir)
             .ReplaceLineEndings("\n");
     }
 
-    private static string NormalizeDynamicValues(string text, string workDir)
+    private static string NormalizeDynamicValues(string text, string workDir, string? testScriptsDir = null)
     {
         text = text.Replace("\\", "/");
 
         text = text.Replace(
             workDir.Replace("\\", "/"),
             "{WorkDir}");
+
+        if (!string.IsNullOrWhiteSpace(testScriptsDir))
+        {
+            text = text.Replace(
+                testScriptsDir.Replace("\\", "/"),
+                "{TestScripts}");
+        }
 
         text = Regex.Replace(
             text,
