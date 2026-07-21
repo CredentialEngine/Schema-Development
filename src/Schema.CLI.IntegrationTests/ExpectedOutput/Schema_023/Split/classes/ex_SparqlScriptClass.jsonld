@@ -1,0 +1,17 @@
+{
+    "@id": "ex:SparqlScriptClass",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+            "@language": "en-us",
+            "@value": "Updated SPARQL Script Class"
+        }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+            "@language": "en-us",
+            "@value": "Temporary comment"
+        }
+    ],
+    "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+    "@context": "https://credreg.net/ctdl/schema/context/json"
+}

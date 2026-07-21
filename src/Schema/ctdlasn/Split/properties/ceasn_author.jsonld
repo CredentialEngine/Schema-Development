@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:author",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "locr:aut"
+    ],
+    "rdfs:comment": {
+        "en-US": "A person or organization chiefly responsible for the intellectual or artistic content of this competency framework or competency."
+    },
+    "rdfs:label": {
+        "en-US": "Author"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:contributor"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceterms:AlignmentMap",
+        "ceterms:QualificationsFramework"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "vs:term_status": "vs:stable"
+}

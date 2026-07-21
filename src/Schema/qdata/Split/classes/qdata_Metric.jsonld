@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:Metric",
+    "rdfs:label": {
+        "en-US": "Metric"
+    },
+    "rdfs:comment": {
+        "en-US": "What is being measured and the method of measurement used for observations within a data set."
+    },
+    "vs:term_status": "vs:unstable"
+}

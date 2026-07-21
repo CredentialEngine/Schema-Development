@@ -1,0 +1,36 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "ceterms:TestClass",
+            "@type": "rdfs:Class",
+            "rdfs:label": {
+                "en": "Test Class"
+            }
+        },
+        {
+            "@id": "ex:SparqlScriptClass",
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en-us",
+                    "@value": "Initial SPARQL Script Class"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en-us",
+                    "@value": "Temporary comment"
+                }
+            ]
+        },
+        {
+            "@id": "ceterms:TestProperty",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": [
+                "ceterms:TestClass"
+            ],
+            "schema:rangeIncludes": []
+        }
+    ]
+}

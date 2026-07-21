@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:topConceptOf",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Concept scheme for which this concept is a top node in a hierarchy of concepts."
+    },
+    "rdfs:label": {
+        "en-US": "Top Concept Of"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "asn:ProgressionModel",
+        "skos:ConceptScheme"
+    ],
+    "vs:term_status": "vs:stable"
+}

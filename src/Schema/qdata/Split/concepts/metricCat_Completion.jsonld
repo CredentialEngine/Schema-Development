@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Completion",
+    "skos:prefLabel": {
+        "en-US": "Completion"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects who do or don't meet completion requirements for a specified education or work activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:RetentionCompletion"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

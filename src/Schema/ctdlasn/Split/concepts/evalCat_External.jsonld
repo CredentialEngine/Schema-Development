@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "evalCat:External",
+    "@type": "skos:Concept",
+    "dct:description": {
+        "en-US": "Evaluator is typically independent of the person, group, or thing being evaluated."
+    },
+    "skos:definition": {
+        "en-US": "Evaluator is an agent who is outside the context of the person, group, or thing being evaluated."
+    },
+    "skos:inScheme": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "skos:prefLabel": {
+        "en-US": "External"
+    },
+    "skos:topConceptOf": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "vs:term_status": "vs:unstable"
+}

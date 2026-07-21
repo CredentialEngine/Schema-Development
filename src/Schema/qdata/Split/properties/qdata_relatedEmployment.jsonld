@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:relatedEmployment",
+    "rdfs:label": {
+        "en-US": "Related Employment"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of people employed in the area of work (e.g., industry, occupation) in which the credential provided preparation."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

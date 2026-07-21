@@ -79,7 +79,11 @@ public class UrlCacheBuilder
 
             response.EnsureSuccessStatusCode();
 
-            var finalUrl = response.RequestMessage!.RequestUri!.ToString();
+            var requestMessage = response.RequestMessage
+                ?? throw new InvalidOperationException("The HTTP response did not include its request message.");
+            var requestUri = requestMessage.RequestUri
+                ?? throw new InvalidOperationException("The HTTP response request did not include a URI.");
+            var finalUrl = requestUri.ToString();
 
             if (finalUrl != url) Console.WriteLine($"Redirected: {url} → {finalUrl}");
 
@@ -93,14 +97,18 @@ public class UrlCacheBuilder
 
             var localPath = MapUrlToPath(finalUrl);
 
-            Directory.CreateDirectory(Path.GetDirectoryName(localPath)!);
+            var localDirectory = Path.GetDirectoryName(localPath)
+                ?? throw new InvalidOperationException($"Could not determine the directory for '{localPath}'.");
+            Directory.CreateDirectory(localDirectory);
             File.WriteAllText(localPath, content);
 
             // Also map original URL to same file (optional but useful)
             var originalPath = MapUrlToPath(url);
             if (originalPath != localPath)
             {
-                Directory.CreateDirectory(Path.GetDirectoryName(originalPath)!);
+                var originalDirectory = Path.GetDirectoryName(originalPath)
+                    ?? throw new InvalidOperationException($"Could not determine the directory for '{originalPath}'.");
+                Directory.CreateDirectory(originalDirectory);
                 File.WriteAllText(originalPath, content);
             }
         }

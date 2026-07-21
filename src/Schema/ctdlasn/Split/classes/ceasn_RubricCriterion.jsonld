@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:RubricCriterion",
+    "@type": "rdfs:Class",
+    "owl:equivalentClass": [
+        "asn:RubricCriterion"
+    ],
+    "rdfs:comment": {
+        "en-US": "Resource providing explicit criteria for ensuring specific and measurable evaluation."
+    },
+    "rdfs:label": {
+        "en-US": "Rubric Criterion"
+    },
+    "vs:term_status": "vs:unstable"
+}

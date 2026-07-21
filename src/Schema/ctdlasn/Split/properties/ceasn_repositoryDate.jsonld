@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:repositoryDate",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:repositoryDate"
+    ],
+    "rdfs:comment": {
+        "en-US": "The date this competency framework was added to the repository."
+    },
+    "rdfs:label": {
+        "en-US": "Repository Date"
+    },
+    "schema:domainIncludes": [
+        "ceasn:CompetencyFramework"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:date"
+    ],
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:broadAlignment",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:broadAlignment"
+    ],
+    "rdfs:comment": {
+        "en-US": "The referenced competency covers all of the relevant concepts in this competency as well as relevant concepts not found in this competency."
+    },
+    "rdfs:label": {
+        "en-US": "Broad Alignment"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

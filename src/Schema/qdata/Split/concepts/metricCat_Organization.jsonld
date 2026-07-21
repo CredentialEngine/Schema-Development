@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Organization",
+    "skos:prefLabel": {
+        "en-US": "Organization"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of organizational support, advisor and faculty availability, benefits received by subjects, and the acceptance of prior learning."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:BenefitsReceived",
+        "metricCat:Credential",
+        "metricCat:LearnerToAdvisor",
+        "metricCat:LearnerToFaculty",
+        "metricCat:Support",
+        "metricCat:TransferValue"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

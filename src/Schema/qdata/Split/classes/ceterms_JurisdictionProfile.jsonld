@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:JurisdictionProfile",
+    "rdfs:label": {
+        "en-US": "Jurisdiction Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Geo-political information about applicable geographic areas and their exceptions."
+    },
+    "vs:term_status": "vs:stable",
+    "rdfs:subClassOf": [
+        "schema:CreativeWork"
+    ]
+}

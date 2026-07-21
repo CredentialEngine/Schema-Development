@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:alignFrom",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "An alignment is an assertion of some degree of equivalency between the subject and the object of the assertion."
+    },
+    "owl:equivalentProperty": [
+        "asn:alignFrom"
+    ],
+    "rdfs:comment": {
+        "en-US": "A competency framework or competency from which this competency framework or competency is aligned."
+    },
+    "rdfs:label": {
+        "en-US": "Align From"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework"
+    ],
+    "vs:term_status": "vs:stable"
+}

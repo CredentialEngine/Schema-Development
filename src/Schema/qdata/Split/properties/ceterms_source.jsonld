@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:source",
+    "rdfs:label": {
+        "en-US": "Source URL"
+    },
+    "rdfs:comment": {
+        "en-US": "Authoritative source of an entity's information."
+    },
+    "dct:description": {
+        "en-US": "Citation or description of an authoritative source from which information or description has been derived."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

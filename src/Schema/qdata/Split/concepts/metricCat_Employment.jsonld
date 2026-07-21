@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Employment",
+    "skos:prefLabel": {
+        "en-US": "Employment"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the status of subjects being engaged with paid work."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ActivityEarnings"
+    ],
+    "skos:relatedMatch": [
+        "demoCat:Employment"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

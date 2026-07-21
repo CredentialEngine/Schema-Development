@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:SkillsProficiency",
+    "skos:prefLabel": {
+        "en-US": "Skills Proficiency"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects' proficiency within an educational or work preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Performance"
+    ],
+    "skos:relatedMatch": [
+        "demoCat:Skills"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

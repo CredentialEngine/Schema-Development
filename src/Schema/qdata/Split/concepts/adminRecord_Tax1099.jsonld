@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "adminRecord:Tax1099",
+    "skos:prefLabel": {
+        "en-US": "United States 1099 Tax Document"
+    },
+    "skos:definition": {
+        "en-US": "United States Federal tax form that an entity or person other than an employer provides stating earnings paid an individual."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:AdministrativeRecordCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:AdministrativeRecordCategory"
+    ]
+}

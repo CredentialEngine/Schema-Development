@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:minorAlignment",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:minorAlignment"
+    ],
+    "rdfs:comment": {
+        "en-US": "Minor overlap of relevant concepts between this competency and the referenced competency."
+    },
+    "rdfs:label": {
+        "en-US": "Minor Alignment"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "evalCat:Authority",
+    "@type": "skos:Concept",
+    "dct:description": {
+        "en-US": "Examples include teachers, supervisors, managers, or others with positions over the person or group being evaluated."
+    },
+    "skos:definition": {
+        "en-US": "Evaluator is an agent with authority over the person,  group, or thing being evaluated in the relevant context."
+    },
+    "skos:inScheme": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Authority"
+    },
+    "skos:topConceptOf": [
+        "ceasn:EvaluatorCategory"
+    ],
+    "vs:term_status": "vs:unstable"
+}

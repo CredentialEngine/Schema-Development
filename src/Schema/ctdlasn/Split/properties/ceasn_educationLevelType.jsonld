@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:educationLevelType",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "Best practice is to use terms from the http://purl.org/ctdl/terms/AudienceLevel concept scheme."
+    },
+    "owl:equivalentProperty": [
+        "case:v1p0/vocab#educationLevel",
+        "ceterms:audienceLevelType",
+        "dct:educationLevel"
+    ],
+    "rdfs:comment": {
+        "en-US": "A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context."
+    },
+    "rdfs:label": {
+        "en-US": "Education Level Type"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:audience"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:stable"
+}

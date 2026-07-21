@@ -44,6 +44,10 @@ internal class Program
         root.Add(BuildUpdateCommand());
         root.Add(BuildRemoveCommand());
         root.Add(BuildSetCommand());
+        root.Add(BuildSplitCommand());
+        root.Add(BuildMergeCommand());
+        root.Add(BuildSparqlCommand());
+        root.Add(BuildRdfCommand());
         root.Add(BuildValidateCommand());
 
         return root;
@@ -59,14 +63,29 @@ internal class Program
         };
         cmd.Add(path);
 
+        var schema = new Option<string?>("--schema")
+        {
+            Description = "Schema folder under the root path: ctdl, ctdlasn, or qdata."
+        };
+        schema.Validators.Add(result =>
+        {
+            var schemaValue = result.GetValue(schema);
+            if (!string.IsNullOrWhiteSpace(schemaValue) &&
+                !SupportedSchemaNames.Contains(schemaValue, StringComparer.OrdinalIgnoreCase))
+            {
+                result.AddError("--schema must be ctdl, ctdlasn, or qdata.");
+            }
+        });
+        cmd.Add(schema);
+
         var checkpoints = new Option<int?>("--checkpoints")
         {
             Description = "Number of schema checkpoints to retain. 0 replaces immediately."
         };
         checkpoints.Validators.Add(result =>
         {
-            var value = result.GetValue(checkpoints);
-            if (value.HasValue && value.Value < 1)
+            var checkpointValue = result.GetValue(checkpoints);
+            if (checkpointValue.HasValue && checkpointValue.Value < 1)
             {
                 result.AddError("--checkpoints must be at least 1.");
             }
@@ -81,11 +100,13 @@ internal class Program
             if (!Directory.Exists(p))
                 throw new DirectoryNotFoundException(p);
 
+            var schemaName = context.GetValue(schema);
+            var schemaPath = ResolveSchemaPath(p, schemaName);
             var cp = context.GetValue(checkpoints);
 
-            WriteEnvFile(p, cp);
+            WriteEnvFile(schemaPath, cp);
 
-            Console.WriteLine($"Initialized schema at: {p}");
+            Console.WriteLine($"Initialized schema at: {schemaPath}");
             Console.WriteLine(".env file created.");
         });
 
@@ -127,7 +148,7 @@ internal class Program
         cmd.Add(BuildAddConceptCommand());
         cmd.Add(BuildAddConceptSchemeCommand());
         cmd.Add(BuildAddContextCommand());
-        cmd.Add(BuildAddValueCommand());
+        cmd.Add(BuildAddTripleCommand());
 
         return cmd;
     }
@@ -151,8 +172,8 @@ internal class Program
 
         cmd.SetAction((Action<ParseResult>)(context =>
         {
-            var p = context.GetValue(prefix)!;
-            var u = context.GetValue(uri)!;
+            var p = context.GetValue(prefix) ?? throw new InvalidOperationException("--prefix is required.");
+            var u = context.GetValue(uri) ?? throw new InvalidOperationException("--uri is required.");
 
             RunSchemaCommand((Action<SchemaApi>)(api =>
             {
@@ -175,7 +196,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var u = context.GetValue(uri);
 
             RunSchemaCommand(api =>
@@ -200,7 +221,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var u = context.GetValue(uri);
 
             RunSchemaCommand(api =>
@@ -225,7 +246,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var u = context.GetValue(uri);
 
             RunSchemaCommand(api =>
@@ -250,7 +271,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var u = context.GetValue(uri);
 
             RunSchemaCommand(api =>
@@ -271,20 +292,20 @@ internal class Program
         var uri = OptionalUriOption();
 
         var field = new Option<string?>("--field");
-        var value = new Option<string?>("--value");
+        var objectOption = new Option<string?>("--object");
 
         cmd.Add(term);
         cmd.Add(uri);
         cmd.Add(field);
-        cmd.Add(value);
+        cmd.Add(objectOption);
 
         cmd.SetAction((Action<ParseResult>)(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var u = context.GetValue(uri);
 
-            var f = NormalizeAtValue(context.GetValue(field));
-            var v = NormalizeAtValue(context.GetValue(value));
+            var f = NormalizeAtObject(context.GetValue(field));
+            var v = NormalizeAtObject(context.GetValue(objectOption));
 
             RunSchemaCommand((Action<SchemaApi>)(api =>
             {
@@ -302,32 +323,32 @@ internal class Program
                 }
 
                 throw new InvalidOperationException(
-                    "Use --uri OR both --field and --value.");
+                    "Use --uri OR both --field and --object.");
             }), "add context");
         }));
 
         return cmd;
     }
 
-    private static Command BuildAddValueCommand()
+    private static Command BuildAddTripleCommand()
     {
-        var cmd = new Command("value", "Add value to field");
+        var cmd = new Command("triple", "Add an RDF triple");
 
         var subject = RequiredSubjectOption();
         var predicate = RequiredPredicateOption();
-        var value = RequiredValueOption();
+        var objectOption = RequiredObjectOption();
 
         cmd.Add(subject);
         cmd.Add(predicate);
-        cmd.Add(value);
+        cmd.Add(objectOption);
 
         cmd.SetAction(context =>
         {
-            var s = context.GetValue(subject)!;
-            var p = context.GetValue(predicate)!;
-            var v = context.GetValue(value)!;
+            var s = context.GetValue(subject) ?? throw new InvalidOperationException("--subject is required.");
+            var p = context.GetValue(predicate) ?? throw new InvalidOperationException("--predicate is required.");
+            var v = context.GetValue(objectOption) ?? throw new InvalidOperationException("--object is required.");
 
-            RunSchemaCommand(api => { api.AddFieldValue(s, p, v); }, "add value");
+            RunSchemaCommand(api => { api.AddTriple(s, p, v); }, "add triple");
         });
 
         return cmd;
@@ -350,20 +371,20 @@ internal class Program
 
         var uri = OptionalUriOption();
         var field = new Option<string?>("--field");
-        var value = new Option<string?>("--value");
+        var objectOption = new Option<string?>("--object");
 
         cmd.Add(term);
         cmd.Add(uri);
         cmd.Add(field);
-        cmd.Add(value);
+        cmd.Add(objectOption);
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var u = context.GetValue(uri);
 
-            var f = NormalizeAtValue(context.GetValue(field));
-            var v = NormalizeAtValue(context.GetValue(value));
+            var f = NormalizeAtObject(context.GetValue(field));
+            var v = NormalizeAtObject(context.GetValue(objectOption));
 
             RunSchemaCommand(api =>
             {
@@ -381,7 +402,7 @@ internal class Program
                 }
 
                 throw new InvalidOperationException(
-                    "Use --uri OR both --field and --value.");
+                    "Use --uri OR both --field and --object.");
             }, "update context");
         });
 
@@ -397,7 +418,7 @@ internal class Program
         cmd.Add(BuildRemoveConceptCommand());
         cmd.Add(BuildRemoveConceptSchemeCommand());
         cmd.Add(BuildRemoveContextCommand());
-        cmd.Add(BuildRemoveValueCommand());
+        cmd.Add(BuildRemoveTripleCommand());
 
         return cmd;
     }
@@ -412,7 +433,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
 
             RunSchemaCommand(api => { api.DeleteClass(t); }, "remove class");
         });
@@ -432,8 +453,8 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var s = context.GetValue(subject)!;
-            var p = context.GetValue(predicate)!;
+            var s = context.GetValue(subject) ?? throw new InvalidOperationException("--subject is required.");
+            var p = context.GetValue(predicate) ?? throw new InvalidOperationException("--predicate is required.");
 
             RunSchemaCommand(api => { api.RemoveField(s, p); }, "remove field");
         });
@@ -451,7 +472,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
 
             RunSchemaCommand(api => { api.DeleteConcept(t); }, "remove concept");
         });
@@ -469,7 +490,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
 
             RunSchemaCommand(api => { api.DeleteConceptScheme(t); }, "remove conceptscheme");
         });
@@ -490,7 +511,7 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var t = context.GetValue(term)!;
+            var t = context.GetValue(term) ?? throw new InvalidOperationException("--term is required.");
             var f = context.GetValue(field);
 
             RunSchemaCommand(api =>
@@ -505,25 +526,25 @@ internal class Program
         return cmd;
     }
 
-    private static Command BuildRemoveValueCommand()
+    private static Command BuildRemoveTripleCommand()
     {
-        var cmd = new Command("value", "Remove value from field");
+        var cmd = new Command("triple", "Remove an RDF triple");
 
         var subject = RequiredSubjectOption();
         var predicate = RequiredPredicateOption();
-        var value = RequiredValueOption();
+        var objectOption = RequiredObjectOption();
 
         cmd.Add(subject);
         cmd.Add(predicate);
-        cmd.Add(value);
+        cmd.Add(objectOption);
 
         cmd.SetAction(context =>
         {
-            var s = context.GetValue(subject)!;
-            var p = context.GetValue(predicate)!;
-            var v = context.GetValue(value)!;
+            var s = context.GetValue(subject) ?? throw new InvalidOperationException("--subject is required.");
+            var p = context.GetValue(predicate) ?? throw new InvalidOperationException("--predicate is required.");
+            var v = context.GetValue(objectOption) ?? throw new InvalidOperationException("--object is required.");
 
-            RunSchemaCommand(api => { api.RemoveFieldValue(s, p, v); }, "remove value");
+            RunSchemaCommand(api => { api.RemoveTriple(s, p, v); }, "remove triple");
         });
 
         return cmd;
@@ -531,33 +552,33 @@ internal class Program
 
     private static Command BuildSetCommand()
     {
-        var cmd = new Command("set", "Set values");
+        var cmd = new Command("set", "Set schema triples and properties");
 
-        cmd.Add(BuildSetFieldCommand());
+        cmd.Add(BuildSetTripleCommand());
         cmd.Add(BuildSetLanguagePropertyCommand());
 
         return cmd;
     }
 
-    private static Command BuildSetFieldCommand()
+    private static Command BuildSetTripleCommand()
     {
-        var cmd = new Command("field", "Set field");
+        var cmd = new Command("triple", "Set an RDF triple");
 
         var subject = RequiredSubjectOption();
         var predicate = RequiredPredicateOption();
-        var value = RequiredValueOption();
+        var objectOption = RequiredObjectOption();
 
         cmd.Add(subject);
         cmd.Add(predicate);
-        cmd.Add(value);
+        cmd.Add(objectOption);
 
         cmd.SetAction(context =>
         {
-            var s = context.GetValue(subject)!;
-            var p = context.GetValue(predicate)!;
-            var v = context.GetValue(value)!;
+            var s = context.GetValue(subject) ?? throw new InvalidOperationException("--subject is required.");
+            var p = context.GetValue(predicate) ?? throw new InvalidOperationException("--predicate is required.");
+            var v = context.GetValue(objectOption) ?? throw new InvalidOperationException("--object is required.");
 
-            RunSchemaCommand(api => { api.SetField(s, p, v); }, "set field");
+            RunSchemaCommand(api => { api.SetTriple(s, p, v); }, "set triple");
         });
 
         return cmd;
@@ -575,21 +596,135 @@ internal class Program
             Required = true
         };
 
-        var value = RequiredValueOption();
+        var objectOption = RequiredObjectOption();
 
         cmd.Add(subject);
         cmd.Add(predicate);
         cmd.Add(language);
-        cmd.Add(value);
+        cmd.Add(objectOption);
 
         cmd.SetAction(context =>
         {
-            var s = context.GetValue(subject)!;
-            var p = context.GetValue(predicate)!;
-            var l = context.GetValue(language)!;
-            var v = context.GetValue(value)!;
+            var s = context.GetValue(subject) ?? throw new InvalidOperationException("--subject is required.");
+            var p = context.GetValue(predicate) ?? throw new InvalidOperationException("--predicate is required.");
+            var l = context.GetValue(language) ?? throw new InvalidOperationException("--language is required.");
+            var v = context.GetValue(objectOption) ?? throw new InvalidOperationException("--object is required.");
 
             RunSchemaCommand(api => { api.SetLanguageProperty(s, p, l, v); }, "set language property");
+        });
+
+        return cmd;
+    }
+
+    private static Command BuildSplitCommand()
+    {
+        var cmd = new Command(
+            "split",
+            "Split the selected schema's merged JSON-LD file into Split folders");
+
+        cmd.SetAction(_ =>
+        {
+            var folder = GetOriginalSchemaPath();
+            var api = new SchemaApi();
+            api.SplitMergedSchema(folder);
+            Console.WriteLine($"Split merged schema into: {Path.Combine(folder, "Split")}");
+        });
+
+        return cmd;
+    }
+
+    private static Command BuildMergeCommand()
+    {
+        var cmd = new Command(
+            "merge",
+            "Merge the selected schema's Split folders into one JSON-LD file");
+
+        cmd.SetAction(_ =>
+        {
+            var folder = GetOriginalSchemaPath();
+            var api = new SchemaApi();
+            api.MergeSplitSchema(folder);
+            Console.WriteLine($"Merged split schema under: {Path.Combine(folder, "Merged")}");
+        });
+
+        return cmd;
+    }
+
+    private static Command BuildSparqlCommand()
+    {
+        var cmd = new Command("sparql", "Apply a SPARQL 1.1 Update to the selected schema");
+        var file = new Option<string?>("--file")
+        {
+            Description = "Path to a file containing SPARQL Update commands."
+        };
+        var update = new Option<string?>("--update")
+        {
+            Description = "Inline SPARQL Update text."
+        };
+
+        cmd.Add(file);
+        cmd.Add(update);
+        cmd.SetAction(context =>
+        {
+            var filePath = context.GetValue(file);
+            var inlineUpdate = context.GetValue(update);
+
+            if (string.IsNullOrWhiteSpace(filePath) == string.IsNullOrWhiteSpace(inlineUpdate))
+                throw new InvalidOperationException("Specify exactly one of --file or --update.");
+
+            var sparql = !string.IsNullOrWhiteSpace(filePath)
+                ? File.ReadAllText(filePath)
+                : inlineUpdate ?? throw new InvalidOperationException("A SPARQL update or --file is required.");
+
+            RunSchemaCommand(api => api.ApplySparqlUpdate(sparql), "apply SPARQL update");
+        });
+
+        return cmd;
+    }
+
+    private static Command BuildRdfCommand()
+    {
+        var cmd = new Command("rdf", "Convert the selected schema between JSON-LD and Turtle");
+        cmd.Add(BuildExportTurtleCommand());
+        cmd.Add(BuildImportTurtleCommand());
+        return cmd;
+    }
+
+    private static Command BuildExportTurtleCommand()
+    {
+        var cmd = new Command("export-turtle", "Export the selected JSON-LD schema as Turtle");
+        var output = new Option<string>("--output")
+        {
+            Required = true
+        };
+        cmd.Add(output);
+
+        cmd.SetAction(context =>
+        {
+            var outputPath = context.GetValue(output) ?? throw new InvalidOperationException("--output is required.");
+            var folder = GetLatestSchemaFolder(GetOriginalSchemaPath());
+            var api = new SchemaApi();
+            api.LoadFromFolder(folder);
+            api.ExportTurtle(outputPath);
+            Console.WriteLine($"Turtle written to: {Path.GetFullPath(outputPath)}");
+        });
+
+        return cmd;
+    }
+
+    private static Command BuildImportTurtleCommand()
+    {
+        var cmd = new Command("import-turtle", "Replace the selected schema graph with RDF from Turtle");
+        var input = new Option<string>("--input")
+        {
+            Required = true
+        };
+        cmd.Add(input);
+
+        cmd.SetAction(context =>
+        {
+            var inputPath = context.GetValue(input) ?? throw new InvalidOperationException("--input is required.");
+            RunSchemaCommand(api => api.ImportTurtle(inputPath), "import Turtle");
         });
 
         return cmd;
@@ -608,13 +743,13 @@ internal class Program
 
         cmd.SetAction(context =>
         {
-            var path = context.GetValue(shapes)!;
+            var path = context.GetValue(shapes) ?? throw new InvalidOperationException("--shapes is required.");
 
             var folder = GetLatestSchemaFolder(GetOriginalSchemaPath());
 
             var api = new SchemaApi();
 
-            api.LoadFromFolder(Path.Combine(folder, "Split"));
+            api.LoadFromFolder(folder);
 
             var (ok, report) = api.ValidateWithShacl(path);
 
@@ -623,6 +758,61 @@ internal class Program
         });
 
         return cmd;
+    }
+
+    private static readonly string[] SupportedSchemaNames = ["ctdl", "ctdlasn", "qdata"];
+
+    private static string ResolveSchemaPath(string path, string? schemaName)
+    {
+        var fullPath = Path.GetFullPath(path);
+
+        if (string.IsNullOrWhiteSpace(schemaName))
+        {
+            if (Directory.Exists(Path.Combine(fullPath, "Split")))
+                return fullPath;
+
+            var defaultSchemaPath = Path.Combine(fullPath, "ctdl");
+            if (Directory.Exists(defaultSchemaPath))
+                return defaultSchemaPath;
+
+            return fullPath;
+        }
+
+        var normalizedSchemaName = schemaName.ToLowerInvariant();
+        var selectedPath = Path.Combine(fullPath, normalizedSchemaName);
+        if (!Directory.Exists(selectedPath))
+            throw new DirectoryNotFoundException(selectedPath);
+
+        EnsureSchemaStructure(selectedPath, normalizedSchemaName);
+        return selectedPath;
+    }
+
+    private static void EnsureSchemaStructure(string schemaPath, string schemaName)
+    {
+        var (contextFileName, mergedFileName, contextReference) = schemaName switch
+        {
+            "ctdlasn" => ("ctdlasn-context.jsonld", "ctdlasn-schema.jsonld", "https://credreg.net/ctdlasn/schema/context/json"),
+            "qdata" => ("qdata-context.jsonld", "qdata-schema.jsonld", "https://credreg.net/qdata/schema/context/json"),
+            _ => ("ctdl-context.jsonld", "ctdl-schema.jsonld", "https://credreg.net/ctdl/schema/context/json")
+        };
+
+        Directory.CreateDirectory(Path.Combine(schemaPath, "Split", "classes"));
+        Directory.CreateDirectory(Path.Combine(schemaPath, "Split", "properties"));
+        Directory.CreateDirectory(Path.Combine(schemaPath, "Split", "concepts"));
+        Directory.CreateDirectory(Path.Combine(schemaPath, "Split", "conceptschemes"));
+        Directory.CreateDirectory(Path.Combine(schemaPath, "Merged"));
+
+        var contextPath = Path.Combine(schemaPath, contextFileName);
+        if (!File.Exists(contextPath))
+            File.WriteAllText(contextPath, "{\n    \"@context\": {}\n}\n");
+
+        var mergedPath = Path.Combine(schemaPath, "Merged", mergedFileName);
+        if (!File.Exists(mergedPath))
+        {
+            File.WriteAllText(
+                mergedPath,
+                $"{{\n    \"@context\": \"{contextReference}\",\n    \"@graph\": []\n}}\n");
+        }
     }
 
     private static Option<string> RequiredTermOption()
@@ -654,9 +844,9 @@ internal class Program
         };
     }
 
-    private static Option<string> RequiredValueOption()
+    private static Option<string> RequiredObjectOption()
     {
-        return new Option<string>("--value")
+        return new Option<string>("--object")
         {
             Required = true
         };
@@ -721,14 +911,14 @@ internal class Program
                 $"URI does not match context mapping for term '{term}'.");
     }
 
-    private static string? NormalizeAtValue(string? value)
+    private static string? NormalizeAtObject(string? objectValue)
     {
-        if (string.IsNullOrWhiteSpace(value))
-            return value;
+        if (string.IsNullOrWhiteSpace(objectValue))
+            return objectValue;
 
-        return value.StartsWith("@@")
-            ? "@" + value[2..]
-            : value;
+        return objectValue.StartsWith("@@")
+            ? "@" + objectValue[2..]
+            : objectValue;
     }
 
     private static void WriteEnvFile(string schemaPath, int? checkpoints)
@@ -750,9 +940,9 @@ internal class Program
 
     private static int? GetCheckpointLimit()
     {
-        var value = Environment.GetEnvironmentVariable("SCHEMA_CHECKPOINTS");
+        var checkpointValue = Environment.GetEnvironmentVariable("SCHEMA_CHECKPOINTS");
 
-        if (int.TryParse(value, out var result))
+        if (int.TryParse(checkpointValue, out var result))
             return result;
 
         return null;
@@ -762,11 +952,12 @@ internal class Program
     {
         var input = GetLatestSchemaFolder(originalFolder);
 
-        var parent = Directory.GetParent(originalFolder)!.FullName;
+        var parent = (Directory.GetParent(originalFolder) ?? throw new InvalidOperationException($"Could not determine the parent directory of '{originalFolder}'.")).FullName;
 
         var timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss_fffffff");
 
-        var output = Path.Combine(parent, $"Schema-{timestamp}");
+        var checkpointPrefix = GetCheckpointPrefix(originalFolder);
+        var output = Path.Combine(parent, $"{checkpointPrefix}-{timestamp}");
 
         CopyDirectory(input, output);
 
@@ -787,7 +978,7 @@ internal class Program
     {
         var input = GetLatestSchemaFolder(originalFolder);
 
-        var parent = Directory.GetParent(originalFolder)!.FullName;
+        var parent = (Directory.GetParent(originalFolder) ?? throw new InvalidOperationException($"Could not determine the parent directory of '{originalFolder}'.")).FullName;
 
         var api = new SchemaApi();
 
@@ -797,7 +988,8 @@ internal class Program
 
         var timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss_fffffff");
 
-        var output = Path.Combine(parent, $"Schema-{timestamp}");
+        var checkpointPrefix = GetCheckpointPrefix(originalFolder);
+        var output = Path.Combine(parent, $"{checkpointPrefix}-{timestamp}");
 
         api.SaveFolder(output);
 
@@ -819,8 +1011,9 @@ internal class Program
         if (!checkpointLimit.HasValue)
             return;
 
+        var checkpointPrefix = GetCheckpointPrefix(GetOriginalSchemaPath());
         var checkpoints = Directory
-            .GetDirectories(parent, "Schema-*")
+            .GetDirectories(parent, $"{checkpointPrefix}-*")
             .OrderByDescending(Directory.GetCreationTimeUtc)
             .ToList();
 
@@ -877,13 +1070,19 @@ internal class Program
         }
     }
 
+    private static string GetCheckpointPrefix(string original)
+    {
+        return Path.GetFileName(Path.TrimEndingDirectorySeparator(original));
+    }
+
     private static string GetLatestSchemaFolder(string original)
     {
-        var parent = Directory.GetParent(original)!.FullName;
+        var parent = (Directory.GetParent(original) ?? throw new InvalidOperationException($"Could not determine the parent directory of '{original}'.")).FullName;
 
+        var checkpointPrefix = GetCheckpointPrefix(original);
         var candidates = Directory
-            .GetDirectories(parent, "Schema-*")
-            .OrderByDescending(Directory.GetCreationTimeUtc)
+            .GetDirectories(parent, $"{checkpointPrefix}-*")
+            .OrderByDescending(path => Path.GetFileName(path), StringComparer.OrdinalIgnoreCase)
             .ToList();
 
         return candidates.FirstOrDefault() ?? original;

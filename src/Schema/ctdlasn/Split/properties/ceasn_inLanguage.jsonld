@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:inLanguage",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "case:v1p0/language",
+        "dct:language"
+    ],
+    "rdfs:comment": {
+        "en-US": "The primary language used in or by this resource."
+    },
+    "rdfs:label": {
+        "en-US": "In Language"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:language"
+    ],
+    "vann:usageNote": {
+        "en-US": "This is the language the text is primarily written in, even if it makes use of other languages. For example, a competency for teaching spanish to english-speaking students would primarily be in english, because that is the language used to convey the material."
+    },
+    "vs:term_status": "vs:stable"
+}

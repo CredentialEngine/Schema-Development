@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:ReEnrollment",
+    "skos:prefLabel": {
+        "en-US": "Re-Enrollment"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of eligible subjects who re-enroll in an organization or its specified education or work activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ParticipationEngagement"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

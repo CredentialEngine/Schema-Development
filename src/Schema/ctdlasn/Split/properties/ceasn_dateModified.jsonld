@@ -1,0 +1,38 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:dateModified",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:modified",
+        "schema:dateModified"
+    ],
+    "rdfs:comment": {
+        "en-US": "The date on which this resource was most recently modified in some way."
+    },
+    "rdfs:label": {
+        "en-US": "Date Modified"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:date"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:Occupation",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:Task",
+        "ceterms:TransferAgreement",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:dateTime"
+    ],
+    "vann:usageNote": {
+        "en-US": "Values should be a full date, i.e. year, month and day; if the day or month are not known use ceasn:approximateDateModified instead."
+    },
+    "vs:term_status": "vs:stable"
+}

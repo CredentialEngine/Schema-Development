@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:LearnerToAdvisor",
+    "skos:prefLabel": {
+        "en-US": "Learner to Advisor"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the number of learners per available advisor."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Organization"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

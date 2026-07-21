@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:hasPoint",
+    "rdfs:label": {
+        "en-US": "Has Point"
+    },
+    "rdfs:comment": {
+        "en-US": "Identifies a specific entity in a Dimension."
+    },
+    "vann:usageNote": {
+        "en-US": "The value of this property will be a resource with any type, e.g. skos:Concept, ceterms:Credential (or any subclass thereof), ceterms:Industry, ceterms:Place, etc."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Dimension"
+    ],
+    "schema:rangeIncludes": [
+        "rdfs:Resource"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:InnovationAdoption",
+    "skos:prefLabel": {
+        "en-US": "Innovation Adoption"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the rate at which new and innovative practices are adopted in educational or work activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:TechnologyInnovation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

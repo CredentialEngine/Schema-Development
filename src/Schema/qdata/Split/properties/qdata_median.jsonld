@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:median",
+    "rdfs:label": {
+        "en-US": "Median"
+    },
+    "rdfs:comment": {
+        "en-US": "Median value."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:Observation",
+        "schema:MonetaryAmountDistribution"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ]
+}

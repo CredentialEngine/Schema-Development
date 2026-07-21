@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "demoCat:Skills",
+    "skos:prefLabel": {
+        "en-US": "Skills"
+    },
+    "skos:definition": {
+        "en-US": "Means of indicating the type or nature of skills acquired by subjects, including both hard and soft skills."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:relatedMatch": [
+        "metricCat:SkillsProficiency"
+    ],
+    "skos:inScheme": [
+        "qdata:DemographicCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DemographicCategory"
+    ]
+}

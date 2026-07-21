@@ -1,0 +1,33 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "asn:hasProgressionLevel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Reference to a specific point in a progression model."
+    },
+    "rdfs:label": {
+        "en-US": "Has Progression Level"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CriterionLevel",
+        "ceasn:Rubric",
+        "ceasn:RubricCriterion",
+        "ceasn:RubricLevel",
+        "ceterms:AssessmentComponent",
+        "ceterms:BasicComponent",
+        "ceterms:CocurricularComponent",
+        "ceterms:CollectionComponent",
+        "ceterms:CompetencyComponent",
+        "ceterms:CourseComponent",
+        "ceterms:CredentialComponent",
+        "ceterms:ExtracurricularComponent",
+        "ceterms:JobComponent",
+        "ceterms:MultiComponent",
+        "ceterms:WorkExperienceComponent"
+    ],
+    "schema:rangeIncludes": [
+        "asn:ProgressionLevel"
+    ],
+    "vs:term_status": "vs:stable"
+}

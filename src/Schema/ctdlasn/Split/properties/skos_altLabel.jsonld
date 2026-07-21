@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:altLabel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Non-preferred label for the concept used to relate a concept synonym to the preferred label."
+    },
+    "rdfs:label": {
+        "en-US": "Alternative Label"
+    },
+    "schema:domainIncludes": [
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

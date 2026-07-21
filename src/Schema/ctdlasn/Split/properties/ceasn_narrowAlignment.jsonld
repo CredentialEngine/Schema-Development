@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:narrowAlignment",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:narrowAlignment"
+    ],
+    "rdfs:comment": {
+        "en-US": "This competency covers all of the relevant concepts in the referenced competency as well as relevant concepts not found in the referenced competency."
+    },
+    "rdfs:label": {
+        "en-US": "Narrow Alignment"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

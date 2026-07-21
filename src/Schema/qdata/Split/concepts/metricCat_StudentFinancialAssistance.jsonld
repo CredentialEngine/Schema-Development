@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:StudentFinancialAssistance",
+    "skos:prefLabel": {
+        "en-US": "Student Financial Assistance"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the financial aid provided to subjects, including grants, scholarships, loans, and other financial support."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:StudentFinancial"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

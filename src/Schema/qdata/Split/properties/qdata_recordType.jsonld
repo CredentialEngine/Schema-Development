@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:recordType",
+    "rdfs:label": {
+        "en-US": "Record Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of record used to source the data."
+    },
+    "dct:description": {
+        "en-US": "Examples include various official records and self-reporting via a survey."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

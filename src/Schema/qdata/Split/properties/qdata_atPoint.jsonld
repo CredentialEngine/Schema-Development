@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:atPoint",
+    "rdfs:label": {
+        "en-US": "At Point"
+    },
+    "rdfs:comment": {
+        "en-US": "A point in a Dimension that represents a resource or factor relevant to this Observation."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "rdfs:Resource"
+    ]
+}

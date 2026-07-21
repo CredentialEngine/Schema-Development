@@ -1,0 +1,33 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:DemographicCategory",
+    "rdfs:label": {
+        "en-US": "Demographic Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Classification of various means (such as classification schemes) used to describe and categorize subjects in a population."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:hasTopConcept": [
+        "demoCat:Accommodation",
+        "demoCat:Age",
+        "demoCat:Benefits",
+        "demoCat:DependencyResponsibility",
+        "demoCat:Disability",
+        "demoCat:EducationLevel",
+        "demoCat:Employment",
+        "demoCat:Ethnicity",
+        "demoCat:FamilyEducationalBackground",
+        "demoCat:Gender",
+        "demoCat:Housing",
+        "demoCat:Income",
+        "demoCat:Language",
+        "demoCat:Literacy",
+        "demoCat:MaritalStatus",
+        "demoCat:MilitaryStatus",
+        "demoCat:Race",
+        "demoCat:Residency",
+        "demoCat:Skills"
+    ]
+}

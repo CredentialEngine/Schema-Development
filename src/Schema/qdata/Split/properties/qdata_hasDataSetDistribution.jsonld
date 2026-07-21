@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:hasDataSetDistribution",
+    "rdfs:label": {
+        "en-US": "Has Data Set Distribution"
+    },
+    "rdfs:comment": {
+        "en-US": "A representation of the data set."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:DataSetDistribution"
+    ]
+}

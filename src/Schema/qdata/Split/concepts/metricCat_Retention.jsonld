@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:Retention",
+    "skos:prefLabel": {
+        "en-US": "Retention"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects who continue or persist in a particular organization or its educational or work preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:RetentionCompletion"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

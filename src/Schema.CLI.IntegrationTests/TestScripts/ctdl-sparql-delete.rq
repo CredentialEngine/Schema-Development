@@ -1,0 +1,6 @@
+PREFIX ex: <https://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+DELETE WHERE {
+  ex:SparqlScriptClass rdfs:comment ?comment .
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dataSourceCoverageType",
+    "rdfs:label": {
+        "en-US": "Data Source Coverage Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of geographic coverage of the subjects."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dataSetTimePeriod",
+    "rdfs:label": {
+        "en-US": "Data Set Time Period"
+    },
+    "rdfs:comment": {
+        "en-US": "Short- and long-term post-award reporting intervals including start and end dates."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:DataSetTimeFrame"
+    ]
+}

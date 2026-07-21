@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:SubjectCategory",
+    "rdfs:label": {
+        "en-US": "Subject Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Categories of subjects for employment and earnings data."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:hasTopConcept": [
+        "subjectCategory:AssessmentCompleter",
+        "subjectCategory:CredentialHolder",
+        "subjectCategory:CredentialSeeker",
+        "subjectCategory:Enrollee",
+        "subjectCategory:FinancialAidRecipient",
+        "subjectCategory:Graduate",
+        "subjectCategory:HigherLevelCredential",
+        "subjectCategory:InFurtherEducation",
+        "subjectCategory:InsufficientDataAvailable",
+        "subjectCategory:PostCredentialEarnings",
+        "subjectCategory:PreCredentialEarnings"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "subjectCategory:InFurtherEducation",
+    "skos:prefLabel": {
+        "en-US": "In Further Education"
+    },
+    "skos:definition": {
+        "en-US": "Credential holder actively seeking a higher-level credential."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:SubjectCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:SubjectCategory"
+    ]
+}

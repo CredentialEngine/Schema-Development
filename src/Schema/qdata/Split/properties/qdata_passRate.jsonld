@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:passRate",
+    "rdfs:label": {
+        "en-US": "Pass Rate"
+    },
+    "rdfs:comment": {
+        "en-US": "Rate computed by dividing the number of subjects passing an assessment by the total number taking the assessment."
+    },
+    "vann:usageNote": {
+        "en-US": "When data is available, record both the percentage and the number of subjects who passed the assessment."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

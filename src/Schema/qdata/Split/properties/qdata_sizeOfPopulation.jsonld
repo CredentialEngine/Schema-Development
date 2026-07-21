@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:sizeOfPopulation",
+    "rdfs:label": {
+        "en-US": "Size of Population"
+    },
+    "rdfs:comment": {
+        "en-US": "The total number of subjects in the relevant population."
+    },
+    "vann:usageNote": {
+        "en-US": "For the number of subjects for which data was available, use sizeOfData, and for the number of subjects for which no data was available, use sizeOfNoData."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:integer"
+    ]
+}

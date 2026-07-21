@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:majorAlignment",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:majorAlignment"
+    ],
+    "rdfs:comment": {
+        "en-US": "Major overlap of relevant concepts between this competency and the referenced competency."
+    },
+    "rdfs:label": {
+        "en-US": "Major Alignment"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

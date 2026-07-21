@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:CostDuration",
+    "skos:prefLabel": {
+        "en-US": "Cost and Duration"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the financial costs and time required for subjects to participate in and complete educational or work preparation activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:DirectCost",
+        "metricCat:ParticipationCost",
+        "metricCat:PreparationCost",
+        "metricCat:PreparationDuration"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

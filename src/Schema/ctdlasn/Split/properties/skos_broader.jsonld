@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:broader",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Concept that is broader in some way than this concept."
+    },
+    "rdfs:label": {
+        "en-US": "Broader"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "vs:term_status": "vs:stable"
+}

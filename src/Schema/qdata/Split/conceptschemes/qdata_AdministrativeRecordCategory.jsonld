@@ -1,0 +1,17 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:AdministrativeRecordCategory",
+    "rdfs:label": {
+        "en-US": "Administrative Record Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Categories of administrative records."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:hasTopConcept": [
+        "adminRecord:Tax1099",
+        "adminRecord:TaxW2",
+        "adminRecord:UnemploymentInsurance"
+    ]
+}

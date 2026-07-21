@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:DataSetService",
+    "rdfs:label": {
+        "en-US": "Data Set Service"
+    },
+    "rdfs:comment": {
+        "en-US": "A service that provides access to one or more datasets or data processing functions."
+    },
+    "vs:term_status": "vs:unstable"
+}

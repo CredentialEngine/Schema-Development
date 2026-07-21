@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:EducationLevel",
+    "skos:prefLabel": {
+        "en-US": "Education Level"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of subjects' highest level of education achieved."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:RetentionCompletion"
+    ],
+    "skos:relatedMatch": [
+        "demoCat:EducationLevel"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

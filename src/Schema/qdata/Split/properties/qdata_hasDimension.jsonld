@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:hasDimension",
+    "rdfs:label": {
+        "en-US": "Has Dimension"
+    },
+    "rdfs:comment": {
+        "en-US": "A set of resources or concepts to which the metric is applied or which affect the observation of the metric."
+    },
+    "dct:description": {
+        "en-US": "The metric may be applied to or affected by resources such as credential earned, industry of employment, year of graduation, location etc."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:DataSetProfile"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:Dimension"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:derivedFrom",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:derivedFrom"
+    ],
+    "rdfs:comment": {
+        "en-US": "The entity being described has been modified, extended or refined from the referenced resource."
+    },
+    "rdfs:label": {
+        "en-US": "Derived From"
+    },
+    "rdfs:subPropertyOf": [
+        "dc:relation"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:FinancialAssistanceProfile",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "ceterms:TransferValueProfile",
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:FinancialAssistanceProfile",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "ceterms:TransferValueProfile",
+        "qdata:Metric"
+    ],
+    "vs:term_status": "vs:stable"
+}

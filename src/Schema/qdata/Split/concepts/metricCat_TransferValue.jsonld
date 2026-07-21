@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:TransferValue",
+    "skos:prefLabel": {
+        "en-US": "Transfer Value"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the acceptance rate of subjects' prior learning towards an educational or work preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Organization"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

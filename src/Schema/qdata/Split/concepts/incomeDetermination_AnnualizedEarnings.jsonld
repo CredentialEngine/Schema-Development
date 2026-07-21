@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "incomeDetermination:AnnualizedEarnings",
+    "skos:prefLabel": {
+        "en-US": "Annualized Earnings"
+    },
+    "skos:definition": {
+        "en-US": "Calculated annual earnings based on reported earnings for a stated period shorter than the reported time period of the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:IncomeDeterminationMethod"
+    ],
+    "skos:topConceptOf": [
+        "qdata:IncomeDeterminationMethod"
+    ]
+}

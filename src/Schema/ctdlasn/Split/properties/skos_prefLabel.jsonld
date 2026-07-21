@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:prefLabel",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Preferred language-tagged label representing this concept."
+    },
+    "rdfs:label": {
+        "en-US": "Preferred Label"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionLevel",
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

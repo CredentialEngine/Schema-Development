@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@graph": [
+        {
+            "@id": "ceterms:TestClass",
+            "@type": "rdfs:Class",
+            "rdfs:label": {
+                "en": "Test Class"
+            }
+        },
+        {
+            "@id": "ceterms:TestProperty",
+            "@type": "rdf:Property",
+            "schema:domainIncludes": [
+                "ceterms:TestClass"
+            ],
+            "schema:rangeIncludes": []
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:isVersionOf",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "Changes in version imply substantive changes in content rather than differences in format."
+    },
+    "owl:equivalentProperty": [
+        "dct:isVersionOf"
+    ],
+    "rdfs:comment": {
+        "en-US": "A related competency of which this competency is a version, edition, or adaptation."
+    },
+    "rdfs:label": {
+        "en-US": "Is Version Of"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

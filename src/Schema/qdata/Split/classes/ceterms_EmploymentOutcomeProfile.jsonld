@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:EmploymentOutcomeProfile",
+    "rdfs:label": {
+        "en-US": "Employment Outcome Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes employment outcomes and related statistical information for a given credential."
+    },
+    "vann:usageNote": {
+        "en-US": "The use of ceterms:AggregateDataProfile instead of this class is strongly recommended."
+    },
+    "vs:term_status": "vs:stable",
+    "rdfs:subClassOf": [
+        "ceterms:AggregateDataProfile",
+        "schema:CreativeWork"
+    ]
+}

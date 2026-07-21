@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:Dimension",
+    "rdfs:label": {
+        "en-US": "Dimension"
+    },
+    "rdfs:comment": {
+        "en-US": "Aspect or characteristic along which observations in a dataset can be organized and identified."
+    },
+    "vs:term_status": "vs:unstable"
+}

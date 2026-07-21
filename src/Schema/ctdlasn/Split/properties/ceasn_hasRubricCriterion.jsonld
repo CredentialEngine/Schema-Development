@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:hasRubricCriterion",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Explicit criterion for ensuring specific and measurable evaluation."
+    },
+    "rdfs:label": {
+        "en-US": "Has Rubric Criterion"
+    },
+    "rdfs:subPropertyOf": [
+        "asn:hasCriterion"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceasn:Rubric"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:RubricCriterion"
+    ],
+    "vs:term_status": "vs:unstable"
+}

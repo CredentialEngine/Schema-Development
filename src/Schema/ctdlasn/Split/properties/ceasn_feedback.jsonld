@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:feedback",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "This may include guidance and suggestions for improvement or development."
+    },
+    "rdfs:comment": {
+        "en-US": "Predefined feedback text for the benefit of the subject being evaluated."
+    },
+    "rdfs:label": {
+        "en-US": "Feedback"
+    },
+    "schema:domainIncludes": [
+        "ceasn:CriterionLevel"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

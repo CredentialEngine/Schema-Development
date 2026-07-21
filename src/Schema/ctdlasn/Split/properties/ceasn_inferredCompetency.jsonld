@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:inferredCompetency",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Competency deduced or arrive at by reasoning on the competency being described."
+    },
+    "rdfs:label": {
+        "en-US": "Inferred Competency"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:unstable"
+}

@@ -128,7 +128,8 @@ public class JsonLdJsonPathProcessor
             throw new FileNotFoundException(file);
 
         var json = File.ReadAllText(file);
-        return JsonNode.Parse(json)!;
+        return JsonNode.Parse(json)
+               ?? throw new InvalidOperationException($"The JSON file '{file}' is empty or invalid.");
     }
 
     private void Save(string file, JsonNode node)

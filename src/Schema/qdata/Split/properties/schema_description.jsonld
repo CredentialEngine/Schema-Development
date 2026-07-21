@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:description",
+    "rdfs:label": {
+        "en-US": "Description"
+    },
+    "rdfs:comment": {
+        "en-US": "A description of the item."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceterms:ValueProfile",
+        "schema:MonetaryAmount",
+        "schema:QuantitativeValue"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

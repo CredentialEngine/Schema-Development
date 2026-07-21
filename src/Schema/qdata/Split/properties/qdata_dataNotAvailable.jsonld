@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:dataNotAvailable",
+    "rdfs:label": {
+        "en-US": "Data Not Available"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of credential holders in the reporting group for which employment and earnings data has not been included in the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

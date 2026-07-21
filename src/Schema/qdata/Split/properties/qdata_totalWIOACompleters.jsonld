@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:totalWIOACompleters",
+    "rdfs:label": {
+        "en-US": "Total WIOA Completers"
+    },
+    "rdfs:comment": {
+        "en-US": "Total participants who completed the WIOA program, successfully or unsuccessfully."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:exactAlignment",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:exactAlignment"
+    ],
+    "rdfs:comment": {
+        "en-US": "The relevant concepts in this competency and the referenced competency are coextensive."
+    },
+    "rdfs:label": {
+        "en-US": "Exact Alignment"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vs:term_status": "vs:stable"
+}

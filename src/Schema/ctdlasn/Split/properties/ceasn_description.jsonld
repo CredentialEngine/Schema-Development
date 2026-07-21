@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:description",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "dct:description",
+        "schema:description"
+    ],
+    "rdfs:comment": {
+        "en-US": "A short description of this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Description"
+    },
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceasn:RubricCriterion",
+        "ceasn:RubricLevel",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vs:term_status": "vs:stable"
+}

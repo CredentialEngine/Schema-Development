@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "adminRecord:UnemploymentInsurance",
+    "skos:prefLabel": {
+        "en-US": "Unemployment Insurance"
+    },
+    "skos:definition": {
+        "en-US": "Contain the earnings reported by employers (typically on a quarterly basis) to state unemployment insurance agencies for each employee."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:AdministrativeRecordCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:AdministrativeRecordCategory"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:adjustment",
+    "rdfs:label": {
+        "en-US": "Adjustment"
+    },
+    "rdfs:comment": {
+        "en-US": "Describes whether and how the Observations have been adjusted for relevant factors."
+    },
+    "dct:description": {
+        "en-US": "Examples of factors include inflation, participant demographics, economic conditions, etc."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile",
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

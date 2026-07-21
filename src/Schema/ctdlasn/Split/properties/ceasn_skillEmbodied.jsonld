@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:skillEmbodied",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:skillEmbodied"
+    ],
+    "rdfs:comment": {
+        "en-US": "Ability to apply knowledge and use know-how to complete tasks and solve problems including types or categories of developed proficiency or dexterity in mental operations and physical processes is embodied either directly or indirectly in this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Skill Embodied"
+    },
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ],
+    "vann:usageNote": {
+        "en-US": "The skillEmbodied property may reference a defined skill in an ontology such as O*NET or an existing competency defined in a competency framework."
+    },
+    "vs:term_status": "vs:stable"
+}

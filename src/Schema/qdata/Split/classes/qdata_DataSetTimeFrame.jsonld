@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:DataSetTimeFrame",
+    "rdfs:label": {
+        "en-US": "Data Set Time Frame"
+    },
+    "rdfs:comment": {
+        "en-US": "Time frame including earnings and employment start and end dates of the data set."
+    },
+    "vs:term_status": "vs:stable"
+}

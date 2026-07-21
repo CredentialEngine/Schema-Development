@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:Observation",
+    "rdfs:label": {
+        "en-US": "Observation"
+    },
+    "rdfs:comment": {
+        "en-US": "Numeric value or category observed for a metric."
+    },
+    "dct:description": {
+        "en-US": "Fixed values for relevant independent variables may be indicated as points in a qdata:Dimension using the qdata:atPoint property. The value(s) observed for the dependent variable may be provided using several properties depending on the nature of the observation."
+    },
+    "vs:term_status": "vs:unstable"
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:isTopChildOf",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Indicates that this competency is at the top of some arbitrary hierarchy."
+    },
+    "rdfs:label": {
+        "en-US": "Is Top Child Of"
+    },
+    "rdfs:subPropertyOf": [
+        "ceasn:isChildOf"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:CompetencyFramework"
+    ],
+    "vs:term_status": "vs:stable"
+}

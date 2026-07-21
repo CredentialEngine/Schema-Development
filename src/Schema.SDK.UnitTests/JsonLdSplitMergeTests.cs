@@ -1,4 +1,4 @@
-﻿using CTDL.SchemaAPI;
+﻿using Schema.SDK;
 using System.Text.Json.Nodes;
 
 namespace Schema.SDK.UnitTests;
@@ -38,13 +38,18 @@ public class JsonLdSplitMergeTests
     [TestMethod]
     public void NoDuplicateIdsAfterSplit()
     {
+        if (Directory.Exists(SplitDir))
+            Directory.Delete(SplitDir, true);
+
+        new JsonLdGraphSplitter().Split(InputFile, SplitDir);
+
         var files = Directory.GetFiles(SplitDir, "*.jsonld", SearchOption.AllDirectories);
 
         var ids = new HashSet<string>();
 
         foreach (var file in files)
         {
-            var obj = JsonNode.Parse(File.ReadAllText(file))!.AsObject();
+            var obj = (JsonNode.Parse(File.ReadAllText(file)) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject();
             var id = obj["@id"]?.ToString();
 
             Assert.IsNotNull(id);

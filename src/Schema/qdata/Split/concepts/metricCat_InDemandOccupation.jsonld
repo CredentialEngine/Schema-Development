@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:InDemandOccupation",
+    "skos:prefLabel": {
+        "en-US": "In-demand Occupation"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the number of subjects employed in a high-demand occupation."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:JobIndustryOccupation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

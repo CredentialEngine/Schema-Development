@@ -1,0 +1,54 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:hasChild",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "This property identifies a child node in the downward path in the chain of resources in a taxon path."
+    },
+    "owl:equivalentProperty": [
+        "gemq:hasChild"
+    ],
+    "owl:inverseOf": [
+        "ceasn:isChildOf"
+    ],
+    "rdfs:comment": {
+        "en-US": "The referenced resource is lower in some arbitrary hierarchy than this resource."
+    },
+    "rdfs:label": {
+        "en-US": "Has Child"
+    },
+    "rdfs:subPropertyOf": [
+        "dc:relation"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:AssessmentComponent",
+        "ceterms:BasicComponent",
+        "ceterms:CocurricularComponent",
+        "ceterms:CollectionComponent",
+        "ceterms:CompetencyComponent",
+        "ceterms:CourseComponent",
+        "ceterms:CredentialComponent",
+        "ceterms:ExtracurricularComponent",
+        "ceterms:JobComponent",
+        "ceterms:MultiComponent",
+        "ceterms:Task",
+        "ceterms:WorkExperienceComponent"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceterms:AssessmentComponent",
+        "ceterms:BasicComponent",
+        "ceterms:CocurricularComponent",
+        "ceterms:CollectionComponent",
+        "ceterms:CompetencyComponent",
+        "ceterms:CourseComponent",
+        "ceterms:CredentialComponent",
+        "ceterms:ExtracurricularComponent",
+        "ceterms:JobComponent",
+        "ceterms:MultiComponent",
+        "ceterms:Task",
+        "ceterms:WorkExperienceComponent"
+    ],
+    "vs:term_status": "vs:stable"
+}

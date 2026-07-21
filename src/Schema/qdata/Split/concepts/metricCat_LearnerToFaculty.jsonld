@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:LearnerToFaculty",
+    "skos:prefLabel": {
+        "en-US": "Learner to Faculty"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the number of learners per available faculty."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Organization"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

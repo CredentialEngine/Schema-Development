@@ -48,10 +48,10 @@ public static class JsonLdRewriter
         return newObj;
     }
 
-    private static JsonNode RewriteContext(JsonNode? ctx, UrlResolver resolver)
+    private static JsonNode? RewriteContext(JsonNode? ctx, UrlResolver resolver)
     {
         if (ctx == null)
-            return ctx!;
+            return null;
 
         // Case: string URL
         if (ctx is JsonValue val && val.TryGetValue<string>(out var url) && url.StartsWith("http"))

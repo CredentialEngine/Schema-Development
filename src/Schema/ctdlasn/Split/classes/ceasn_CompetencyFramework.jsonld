@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:CompetencyFramework",
+    "@type": "rdfs:Class",
+    "dct:description": {
+        "en-US": "A competency framework serves a container object for a set of competencies."
+    },
+    "owl:equivalentClass": [
+        "asn:StandardDocument"
+    ],
+    "rdfs:comment": {
+        "en-US": "Entity comprised of a logically related set of competencies."
+    },
+    "rdfs:label": {
+        "en-US": "Competency Framework"
+    },
+    "rdfs:subClassOf": [
+        "ceterms:Collection"
+    ],
+    "vs:term_status": "vs:stable"
+}

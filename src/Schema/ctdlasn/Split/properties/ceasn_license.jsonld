@@ -1,0 +1,39 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:license",
+    "@type": "rdf:Property",
+    "dct:description": {
+        "en-US": "Value must be the URI to a license document (e.g., Creative Commons license or bespoke license)."
+    },
+    "owl:equivalentProperty": [
+        "dct:license"
+    ],
+    "rdfs:comment": {
+        "en-US": "A legal document giving official permission to do something with this resource."
+    },
+    "rdfs:label": {
+        "en-US": "License"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:rights"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "ceterms:AlignmentMap",
+        "ceterms:Collection",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement",
+        "qdata:DataSetDistribution",
+        "qdata:DataSetProfile",
+        "qdata:DataSetService",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ],
+    "vs:term_status": "vs:stable"
+}

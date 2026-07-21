@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "skos:inScheme",
+    "@type": "rdf:Property",
+    "rdfs:comment": {
+        "en-US": "Concept scheme to which this concept belongs."
+    },
+    "rdfs:label": {
+        "en-US": "In Scheme"
+    },
+    "schema:domainIncludes": [
+        "skos:Concept"
+    ],
+    "schema:rangeIncludes": [
+        "skos:ConceptScheme"
+    ],
+    "vs:term_status": "vs:stable"
+}

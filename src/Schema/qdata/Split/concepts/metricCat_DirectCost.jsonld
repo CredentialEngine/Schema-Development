@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:DirectCost",
+    "skos:prefLabel": {
+        "en-US": "Direct Cost"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of costs charged for subjects to participate in an organization or an educational or work preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:CostDuration"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

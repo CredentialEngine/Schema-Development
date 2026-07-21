@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:CollectionMethod",
+    "rdfs:label": {
+        "en-US": "Collection Method"
+    },
+    "rdfs:comment": {
+        "en-US": "Categories of methods for collecting data."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:hasTopConcept": [
+        "collectionMethod:AdministrativeRecordMatching",
+        "collectionMethod:CredentialHolderReporting",
+        "collectionMethod:CredentialHolderSurvey",
+        "collectionMethod:SupplementalMethod",
+        "collectionMethod:SupplementalSource"
+    ]
+}

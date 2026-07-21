@@ -1,0 +1,24 @@
+init --path {SeedSchema} --schema ctdl
+add namespace --prefix ceterms --uri https://purl.org/ctdl/terms/
+add class --term ceterms:TestClass
+add context --term ceterms:TestProperty --field @@type --object xsd:string
+add property --term ceterms:TestProperty
+add concept --term ceterms:TestConcept
+add conceptscheme --term ceterms:TestConceptScheme
+add triple --subject ceterms:TestProperty --predicate schema:domainIncludes --object ceterms:TestClass
+add triple --subject ceterms:TestProperty --predicate schema:rangeIncludes --object xsd:string
+add triple --subject ceterms:TestConcept --predicate skos:inScheme --object ceterms:TestConceptScheme
+set triple --subject ceterms:TestClass --predicate vs:term_status --object stable
+set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --object "Test Class"
+add context --term ceterms:name --field @@container --object @@language
+update context --term ceterms:name --field @@type --object xsd:string
+remove context --term ceterms:name --field @container
+remove triple --subject ceterms:TestProperty --predicate schema:rangeIncludes --object xsd:string
+remove field --subject ceterms:TestClass --predicate vs:term_status
+remove triple --subject ceterms:TestConcept --predicate skos:inScheme --object ceterms:TestConceptScheme
+remove concept --term ceterms:TestConcept
+remove conceptscheme --term ceterms:TestConceptScheme
+add namespace --prefix ex --uri https://example.org/
+sparql --file "{TestScripts}/ctdl-sparql-insert.rq"
+sparql --file "{TestScripts}/ctdl-sparql-update.rq"
+sparql --file "{TestScripts}/ctdl-sparql-delete.rq"

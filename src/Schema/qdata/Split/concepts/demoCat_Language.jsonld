@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "demoCat:Language",
+    "skos:prefLabel": {
+        "en-US": "Language"
+    },
+    "skos:definition": {
+        "en-US": "Means of indicating the primary language spoken by subjects."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:inScheme": [
+        "qdata:DemographicCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DemographicCategory"
+    ]
+}

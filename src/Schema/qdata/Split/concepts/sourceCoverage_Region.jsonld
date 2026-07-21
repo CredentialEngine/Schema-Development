@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "sourceCoverage:Region",
+    "skos:prefLabel": {
+        "en-US": "Region"
+    },
+    "skos:definition": {
+        "en-US": "Non-governmental, named geographic area, such as Silicon Valley, that is not necessarily coincident with the boundaries of a country or administrative subdivision thereof."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:DataSourceCoverage"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DataSourceCoverage"
+    ]
+}

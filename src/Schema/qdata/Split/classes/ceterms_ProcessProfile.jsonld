@@ -1,0 +1,15 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:ProcessProfile",
+    "rdfs:label": {
+        "en-US": "Process Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity describing the type, nature, and other relevant information about a process."
+    },
+    "vs:term_status": "vs:stable",
+    "rdfs:subClassOf": [
+        "schema:CreativeWork"
+    ]
+}

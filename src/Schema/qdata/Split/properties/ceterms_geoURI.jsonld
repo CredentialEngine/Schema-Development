@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:geoURI",
+    "rdfs:label": {
+        "en-US": "Geographic URI"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes the longitude, latitude and other location details of a place."
+    },
+    "dct:description": {
+        "en-US": "This may define a place at any scale. Examples include a city, state, province, country, or continent."
+    },
+    "vann:usageNote": {
+        "en-US": "It is recommended to use services such as http://www.geonames.org to provide values for this property."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "ceterms:GeoCoordinates",
+        "ceterms:Place"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

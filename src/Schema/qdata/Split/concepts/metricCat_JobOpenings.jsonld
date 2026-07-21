@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:JobOpenings",
+    "skos:prefLabel": {
+        "en-US": "Job Openings"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the number of job openings."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:JobIndustryOccupation"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:RubricLevel",
+    "@type": "rdfs:Class",
+    "rdfs:comment": {
+        "en-US": "Level or quality indicator used with Rubric Criteria."
+    },
+    "rdfs:label": {
+        "en-US": "Rubric Level"
+    },
+    "vs:term_status": "vs:unstable"
+}

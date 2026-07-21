@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:earningsThreshold",
+    "rdfs:label": {
+        "en-US": "Earnings Threshold"
+    },
+    "rdfs:comment": {
+        "en-US": "Statement of any work time or earnings threshold used in determining whether a sufficient level of workforce attachment has been achieved to qualify as employed during the time period of the data set."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile",
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

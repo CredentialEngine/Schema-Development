@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "publicationStatus:Published",
+    "@type": "skos:Concept",
+    "owl:equivalentClass": [
+        "asnPublicationStatus:Published"
+    ],
+    "skos:definition": {
+        "en-US": "Status assigned to all documents that have been published."
+    },
+    "skos:inScheme": [
+        "ceasn:PublicationStatus"
+    ],
+    "skos:prefLabel": {
+        "en-US": "Published"
+    },
+    "skos:topConceptOf": [
+        "ceasn:PublicationStatus"
+    ],
+    "vs:term_status": "vs:stable"
+}

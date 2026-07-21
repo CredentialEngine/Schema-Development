@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:PostEnrollment",
+    "skos:prefLabel": {
+        "en-US": "Post-Enrollment"
+    },
+    "skos:definition": {
+        "en-US": "Measurement made after subjects have enrolled for an activity or resource."
+    },
+    "vann:usageNote": {
+        "en-US": "Use with another metric category that classifies what is being measured. Use metriCat:PostCompletion for measurements made after completions."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

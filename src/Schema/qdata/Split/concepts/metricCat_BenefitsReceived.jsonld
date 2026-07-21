@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:BenefitsReceived",
+    "skos:prefLabel": {
+        "en-US": "Benefits Received"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the benefits received by subjects."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:Organization"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

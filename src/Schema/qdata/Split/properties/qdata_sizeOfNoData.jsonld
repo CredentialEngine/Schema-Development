@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:sizeOfNoData",
+    "rdfs:label": {
+        "en-US": "Size of No Data"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of subjects in the sample for which no data was obtained."
+    },
+    "dct:description": {
+        "en-US": "This is relevant for surveys or other forms of data gathering where a bias may be introduced by non-response or similar omissions."
+    },
+    "vann:usageNote": {
+        "en-US": "For the number of subjects for which data was available, use sizeOfData, and for the total number of subjects available use sizeOfPopulation."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:integer"
+    ]
+}

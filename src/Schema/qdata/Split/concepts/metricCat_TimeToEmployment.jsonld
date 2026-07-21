@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:TimeToEmployment",
+    "skos:prefLabel": {
+        "en-US": "Time To Employment"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the duration between subjects completing an educational or training program to secure paid work."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ActivityEarnings"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

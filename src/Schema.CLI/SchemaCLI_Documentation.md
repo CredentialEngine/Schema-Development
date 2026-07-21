@@ -73,21 +73,21 @@ schema clone
   - `--term` (required): The term for the context.
   - `--uri` (optional): The URI for the context.
   - `--field` (optional): The field to add.
-  - `--value` (optional): The value to add.
+  - `--object` (optional): The object to add.
 
   **Example**:
   ```bash
-  schema add context --term ceterms:name --field @@container --value @@language
+  schema add context --term ceterms:name --field @@container --object @@language
   ```
 
-- **`value`**: Adds a value to a field.
-  - `--subject` (required): The subject of the value.
-  - `--predicate` (required): The predicate of the value.
-  - `--value` (required): The value to add.
+- **`triple`**: Adds a subject-predicate-object triple.
+  - `--subject` (required): The triple subject.
+  - `--predicate` (required): The triple predicate.
+  - `--object` (required): The object to add.
 
   **Example**:
   ```bash
-  schema add value --subject ceterms:TestProperty --predicate schema:domainIncludes --value ceterms:TestClass
+  schema add triple --subject ceterms:TestProperty --predicate schema:domainIncludes --object ceterms:TestClass
   ```
 
 ---
@@ -100,11 +100,11 @@ schema clone
   - `--term` (required): The term for the context.
   - `--uri` (optional): The URI for the context.
   - `--field` (optional): The field to update.
-  - `--value` (optional): The value to update.
+  - `--object` (optional): The object to update.
 
   **Example**:
   ```bash
-  schema update context --term ceterms:name --field @@type --value xsd:string
+  schema update context --term ceterms:name --field @@type --object xsd:string
   ```
 
 ---
@@ -155,14 +155,14 @@ schema clone
   schema remove context --term ceterms:name --field @container
   ```
 
-- **`value`**: Removes a value from a field.
-  - `--subject` (required): The subject of the value.
-  - `--predicate` (required): The predicate of the value.
-  - `--value` (required): The value to remove.
+- **`triple`**: Removes a subject-predicate-object triple.
+  - `--subject` (required): The triple subject.
+  - `--predicate` (required): The triple predicate.
+  - `--object` (required): The object to remove.
 
   **Example**:
   ```bash
-  schema remove value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
+  schema remove triple --subject ceterms:TestProperty --predicate schema:rangeIncludes --object xsd:string
   ```
 
 ---
@@ -174,22 +174,22 @@ schema clone
 - **`field`**: Sets a field.
   - `--subject` (required): The subject of the field.
   - `--predicate` (required): The predicate of the field.
-  - `--value` (required): The value to set.
+  - `--object` (required): The object to set.
 
   **Example**:
   ```bash
-  schema set field --subject ceterms:TestClass --predicate vs:term_status --value stable
+  schema set triple --subject ceterms:TestClass --predicate vs:term_status --object stable
   ```
 
 - **`language-property`**: Sets a language property.
   - `--subject` (required): The subject of the property.
   - `--predicate` (required): The predicate of the property.
   - `--language` (required): The language of the property.
-  - `--value` (required): The value to set.
+  - `--object` (required): The object to set.
 
   **Example**:
   ```bash
-  schema set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --value "Test Class"
+  schema set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --object "Test Class"
   ```
 
 ---
@@ -210,3 +210,56 @@ schema validate --shapes ./shapes.ttl
 ## Notes
 - Ensure the `.env` file is properly configured with the `SCHEMA_ORIGINAL` environment variable after running `init`.
 - Use the `test-script.txt` as a reference for additional examples and workflows.
+
+
+## Split and merge schema files
+
+After `schema init` selects `ctdl`, `ctdlasn`, or `qdata`, use these commands to synchronize the two schema representations:
+
+```text
+schema split
+schema merge
+```
+
+`split` replaces the selected schema's `Split` directory from `Merged/<schema>-schema.jsonld` and writes `_meta.json` to preserve graph ordering and root context. `merge` rebuilds `Merged/<schema>-schema.jsonld` from the selected schema's `Split` directory. The commands use the schema-specific filenames for CTDL, CTDL-ASN, and QData.
+
+## SPARQL Update
+
+SPARQL Update operates directly on the RDF graph parsed from the selected JSON-LD schema. Turtle conversion is not required.
+
+```powershell
+schema.cli.exe init --path "D:\Schema-Development\src\Schema" --schema ctdlasn
+schema.cli.exe sparql --file "D:\updates\ctdlasn-update.rq"
+```
+
+An inline update may also be supplied:
+
+```powershell
+schema.cli.exe sparql --update "INSERT DATA { <https://example.org/Thing> <http://www.w3.org/2000/01/rdf-schema#label> \"Thing\"@en . }"
+```
+
+## Turtle conversion
+
+Export the selected JSON-LD schema to Turtle:
+
+```powershell
+schema.cli.exe rdf export-turtle --output "D:\exports\ctdlasn.ttl"
+```
+
+Import Turtle as the selected schema's new RDF graph:
+
+```powershell
+schema.cli.exe rdf import-turtle --input "D:\exports\ctdlasn.ttl"
+```
+
+JSON-LD and Turtle are different RDF serializations. Conversion preserves RDF meaning (including datatypes, language tags, IRIs, and blank-node graph structure), but it cannot preserve JSON-specific formatting, object ordering, array ordering, or the exact original JSON-LD compaction.
+
+## CTDL script-based SPARQL integration coverage
+
+`Schema.CLI.IntegrationTests/TestScripts/ctdl-test-script.txt` exercises SPARQL Update through the same script runner used by the CLI integration suite. It runs separate `.rq` files that:
+
+1. insert a CTDL test class and its label/comment;
+2. replace the label with `DELETE`/`INSERT`/`WHERE`; and
+3. remove the temporary comment with `DELETE DATA`.
+
+`CtdlCommands_ProduceExpectedSchemaOutput` executes `ctdl-test-script.txt` and compares every generated schema snapshot and console output against the existing `ExpectedOutput` baseline.

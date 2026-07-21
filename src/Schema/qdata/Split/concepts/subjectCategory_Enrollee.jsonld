@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "subjectCategory:Enrollee",
+    "skos:prefLabel": {
+        "en-US": "Enrollee"
+    },
+    "skos:definition": {
+        "en-US": "Subject currently enrolled in a program."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:SubjectCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:SubjectCategory"
+    ]
+}

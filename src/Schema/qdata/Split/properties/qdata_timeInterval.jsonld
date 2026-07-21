@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:timeInterval",
+    "rdfs:label": {
+        "en-US": "Time Interval"
+    },
+    "rdfs:comment": {
+        "en-US": "Length of the interval between two events."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:DataSetTimeFrame"
+    ],
+    "schema:rangeIncludes": [
+        "schema:Duration"
+    ]
+}

@@ -1,9 +1,12 @@
-﻿using System.Text.Encodings.Web;
+﻿using System.Linq;
+using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using VDS.RDF;
 using VDS.RDF.Parsing;
 using VDS.RDF.Shacl;
+using VDS.RDF.Update;
+using VDS.RDF.Writing;
 using Path = System.IO.Path;
 
 namespace Schema.SDK;
@@ -31,6 +34,8 @@ public class SchemaApi
     private const string SKOS_CONCEPT_SCHEME_TERM = "skos:ConceptScheme";
 
     private readonly Dictionary<string, JsonObject> _docs = new();
+    private readonly Dictionary<string, string> _preferredLanguageTags = new(StringComparer.OrdinalIgnoreCase);
+    private readonly Dictionary<string, JsonLdPropertyShape> _preferredPropertyShapes = new(StringComparer.Ordinal);
     private readonly IGraph _graph = new Graph();
 
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
@@ -41,9 +46,12 @@ public class SchemaApi
         NewLine = "\n"
     };
 
-    private readonly TripleStore _store = new();
+    private TripleStore _store = new();
 
     private JsonObject _context = BuildContext();
+    private string? _contextFileName;
+    private string? _mergedFileName;
+    private JsonNode? _schemaContext;
 
     /// <summary>
     /// Gets the internal RDF graph representation maintained by the API.
@@ -135,8 +143,7 @@ public class SchemaApi
     /// <param name="type">The new @type value.</param>
     public void SetContextTermType(string term, string type)
     {
-        RequireContextObject(term);
-        _context[term]!.AsObject()["@type"] = type;
+        GetRequiredContextObject(term)["@type"] = type;
     }
 
     /// <summary>
@@ -146,8 +153,7 @@ public class SchemaApi
     /// <param name="container">The new @container value.</param>
     public void SetContextTermContainer(string term, string container)
     {
-        RequireContextObject(term);
-        _context[term]!.AsObject()["@container"] = container;
+        GetRequiredContextObject(term)["@container"] = container;
     }
 
     /// <summary>
@@ -182,9 +188,7 @@ public class SchemaApi
     /// <param name="property">The property name to remove (e.g. "@type").</param>
     public void RemoveContextTermProperty(string term, string property)
     {
-        RequireContextObject(term);
-
-        var obj = _context[term]!.AsObject();
+        var obj = GetRequiredContextObject(term);
         obj.Remove(property);
     }
 
@@ -196,9 +200,7 @@ public class SchemaApi
     /// <param name="value">The value to set.</param>
     public void SetContextField(string term, string field, string value)
     {
-        RequireContextObject(term);
-
-        var obj = _context[term]!.AsObject();
+        var obj = GetRequiredContextObject(term);
         obj[field] = value;
     }
 
@@ -209,9 +211,7 @@ public class SchemaApi
     /// <param name="field">The field name to remove.</param>
     public void RemoveContextField(string term, string field)
     {
-        RequireContextObject(term);
-
-        var obj = _context[term]!.AsObject();
+        var obj = GetRequiredContextObject(term);
         obj.Remove(field);
     }
 
@@ -222,6 +222,13 @@ public class SchemaApi
     /// <param name="folder">Path to the folder containing split JSON-LD files.</param>
     public void LoadFromFolder(string folder)
     {
+        _docs.Clear();
+        _graph.Clear();
+        _store = new TripleStore();
+        _preferredLanguageTags.Clear();
+        _preferredPropertyShapes.Clear();
+
+        ConfigureSchemaFiles(folder);
         LoadContextFile(folder);
 
         var parser = new JsonLdParser();
@@ -232,28 +239,36 @@ public class SchemaApi
 
         var splitFolder = Path.Combine(folder, "Split");
 
-        foreach (var file in Directory.GetFiles(splitFolder, "*.jsonld", SearchOption.AllDirectories))
+        foreach (var file in Directory
+                     .GetFiles(splitFolder, "*", SearchOption.AllDirectories)
+                     .Where(IsJsonFile)
+                     .OrderBy(path => path, StringComparer.OrdinalIgnoreCase))
         {
             // Skip files that are not schema items.
             var name = Path.GetFileName(file);
             if (name == "_meta.json" ||
-                name == "ctdl-context.jsonld" ||
-                name == "ctdl-schema.jsonld")
+                (_contextFileName != null && name.Equals(_contextFileName, StringComparison.OrdinalIgnoreCase)) ||
+                (_mergedFileName != null && name.Equals(_mergedFileName, StringComparison.OrdinalIgnoreCase)))
                 continue;
 
             var text = File.ReadAllText(file);
-            var original = JsonNode.Parse(text)!.AsObject();
+            var original = (JsonNode.Parse(text)
+                ?? throw new InvalidOperationException($"Schema file '{file}' is empty or invalid JSON.")).AsObject();
 
-            var id = original["@id"]!.ToString();
+            var id = (original["@id"]
+                ?? throw new InvalidOperationException($"Schema file '{file}' does not contain @id.")).ToString();
 
             var term = GetTermOrId(id);
 
-            // Store orignal unchanged (for round-trip)
+            // Store original unchanged and remember the schema's preferred language-tag casing.
             _docs[term] = original;
+            CapturePreferredLanguageTags(original);
+            CapturePreferredPropertyShapes(term, original);
 
             // Capture context once
             if (sharedContext == null && original["@context"] != null)
-                sharedContext = original["@context"]!.DeepClone();
+                sharedContext = (original["@context"]
+                    ?? throw new InvalidOperationException($"Schema file '{file}' contains a null @context.")).DeepClone();
 
             // Work on a clone for RDF processing
             var working = original.DeepClone().AsObject();
@@ -267,9 +282,14 @@ public class SchemaApi
             graphArray.Add(rewritten);
         }
 
+        // Always parse the split documents with the locally loaded context object.
+        // Individual documents may reference a remote context URL that does not yet
+        // contain newly added namespaces. Using that URL here can cause a CURIE such
+        // as ex:FromTurtle to be interpreted as the absolute URI scheme "ex" instead
+        // of being expanded to https://example.org/FromTurtle.
         var root = new JsonObject
         {
-            ["@context"] = sharedContext,
+            ["@context"] = _context.DeepClone(),
             ["@graph"] = graphArray
         };
 
@@ -280,9 +300,106 @@ public class SchemaApi
             _graph.Merge(g);
     }
 
+
+    /// <summary>
+    /// Applies a SPARQL 1.1 Update command set to the RDF graph represented by this instance.
+    /// The JSON-LD document map is rebuilt from the updated RDF graph so subsequent SDK reads
+    /// and saves reflect the update. JSON formatting and compaction may change, but RDF meaning is preserved.
+    /// </summary>
+    /// <param name="sparqlUpdate">A SPARQL Update command set such as INSERT DATA, DELETE DATA, or DELETE/INSERT WHERE.</param>
+    public void ApplySparqlUpdate(string sparqlUpdate)
+    {
+        if (string.IsNullOrWhiteSpace(sparqlUpdate))
+            throw new ArgumentException("SPARQL Update text is required.", nameof(sparqlUpdate));
+
+        var originalGraph = new Graph();
+        originalGraph.Merge(_graph);
+
+        var store = CreateStoreFromCurrentGraph();
+        var parser = new SparqlUpdateParser();
+        var commands = parser.ParseFromString(sparqlUpdate);
+        var processor = new LeviathanUpdateProcessor(store);
+        processor.ProcessCommandSet(commands);
+
+        ReplaceGraphFromStore(store);
+        var changedSubjects = GetChangedUriSubjects(originalGraph, _graph);
+        RebuildDocumentsFromGraph(changedSubjects);
+    }
+
+    /// <summary>
+    /// Writes the current RDF graph as Turtle.
+    /// </summary>
+    /// <param name="path">Destination Turtle file.</param>
+    public void ExportTurtle(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path))
+            throw new ArgumentException("Turtle output path is required.", nameof(path));
+
+        var directory = Path.GetDirectoryName(Path.GetFullPath(path));
+        if (!string.IsNullOrEmpty(directory))
+            Directory.CreateDirectory(directory);
+
+        var writer = new CompressingTurtleWriter();
+        writer.Save(_graph, path);
+    }
+
+    /// <summary>
+    /// Replaces the current RDF graph with RDF parsed from a Turtle file.
+    /// Load a schema folder first when schema-specific context and output filenames must be retained.
+    /// </summary>
+    /// <param name="path">Source Turtle file.</param>
+    public void ImportTurtle(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path))
+            throw new ArgumentException("Turtle input path is required.", nameof(path));
+        if (!File.Exists(path))
+            throw new FileNotFoundException("Turtle input file was not found.", path);
+
+        var imported = new Graph();
+        var parser = new TurtleParser();
+        parser.Load(imported, path);
+
+        _graph.Clear();
+        _graph.Merge(imported);
+        RebuildDocumentsFromGraph();
+    }
+
+    /// <summary>
+    /// Splits the schema-specific merged JSON-LD file into the schema folder's Split directory.
+    /// Existing split output is replaced so it exactly reflects the merged file.
+    /// </summary>
+    /// <param name="folder">Schema folder containing Merged and Split directories.</param>
+    public void SplitMergedSchema(string folder)
+    {
+        ConfigureSchemaFiles(folder);
+
+        var mergedPath = Path.Combine(folder, "Merged", RequireMergedFileName());
+        var splitPath = Path.Combine(folder, "Split");
+
+        new JsonLdGraphSplitter().Split(mergedPath, splitPath);
+    }
+
+    /// <summary>
+    /// Merges the schema folder's Split directory into its schema-specific merged JSON-LD file.
+    /// The split metadata is used when present to preserve graph order and root context.
+    /// </summary>
+    /// <param name="folder">Schema folder containing Merged and Split directories.</param>
+    public void MergeSplitSchema(string folder)
+    {
+        ConfigureSchemaFiles(folder);
+
+        var splitPath = Path.Combine(folder, "Split");
+        var mergedPath = Path.Combine(folder, "Merged", RequireMergedFileName());
+
+        new JsonLdGraphSplitter().Merge(
+            splitPath,
+            mergedPath,
+            _schemaContext?.DeepClone());
+    }
+
     /// <summary>
     /// Persist the current in-memory schema to disk. Produces a Split/ and Merged/ layout.
-    /// Also writes a ctdl-context.jsonld at the root of the folder.
+    /// The schema-specific context and merged file names discovered during load are preserved.
     /// </summary>
     /// <param name="folder">Output directory to write the split and merged representations.</param>
     public void SaveFolder(string folder)
@@ -296,7 +413,7 @@ public class SchemaApi
         Directory.CreateDirectory(mergedFolder);
 
         // Write Context.
-        var contextPath = Path.Combine(folder, "ctdl-context.jsonld");
+        var contextPath = Path.Combine(folder, GetContextFileNameForSave());
 
         var contextDoc = new JsonObject
         {
@@ -310,7 +427,7 @@ public class SchemaApi
         {
             var obj = kv.Value;
 
-            obj["@context"] = "https://credreg.net/ctdl/schema/context/json";
+            obj["@context"] = GetSchemaContextForSave();
 
             // Determine subfolder from @type.
             var subFolder = GetTypeFolder(obj);
@@ -320,14 +437,15 @@ public class SchemaApi
 
             // Use context term instead of URI.
             var term = kv.Key;
-            var fileName = term.Replace(":", "_") + ".jsonld";
+            var fileName = GetSplitFileName(term);
             var path = Path.Combine(subFolderPath, fileName);
 
             var jsonText = obj.ToJsonString(_jsonSerializerOptions);
 
             File.WriteAllText(path, jsonText);
 
-            _docs[kv.Key] = JsonNode.Parse(jsonText)!.AsObject();
+            _docs[kv.Key] = (JsonNode.Parse(jsonText)
+                ?? throw new InvalidOperationException($"Generated JSON-LD for '{kv.Key}' is empty or invalid.")).AsObject();
         }
 
         // Write Merged file.
@@ -347,13 +465,14 @@ public class SchemaApi
 
         var merged = new JsonObject
         {
-            ["@context"] = "https://credreg.net/ctdl/schema/context/json",
+            ["@context"] = GetSchemaContextForSave(),
             ["@graph"] = graphArray
         };
 
-        var mergedPath = Path.Combine(mergedFolder, "ctdl-schema.jsonld");
+        var mergedPath = Path.Combine(mergedFolder, GetMergedFileNameForSave());
 
         File.WriteAllText(mergedPath, merged.ToJsonString(_jsonSerializerOptions));
+
     }
 
     /// <summary>
@@ -373,7 +492,7 @@ public class SchemaApi
 
         _docs[term] = obj;
 
-        AddTriple(term, RDF_TYPE, RDFS_CLASS);
+        AssertObjectTriple(term, RDF_TYPE, RDFS_CLASS);
     }
 
     /// <summary>
@@ -431,7 +550,7 @@ public class SchemaApi
 
         _docs[term] = obj;
 
-        AddTriple(term, RDF_TYPE, RDF_PROPERTY);
+        AssertObjectTriple(term, RDF_TYPE, RDF_PROPERTY);
     }
 
     private void EnsurePropertyContextTerm(string term)
@@ -446,19 +565,19 @@ public class SchemaApi
     }
 
     /// <summary>
-    /// Set a simple literal field on a schema item and update the RDF graph.
+    /// Set the object for a subject-predicate triple and update the RDF graph.
     /// </summary>
     /// <param name="subject">The subject term or id of the schema item to modify.</param>
     /// <param name="predicate">The predicate (context term or CURIE) to set.</param>
-    /// <param name="value">The literal value to assign.</param>
-    public void SetField(string subject, string predicate, string value)
+    /// <param name="objectValue">The object value to assign.</param>
+    public void SetTriple(string subject, string predicate, string objectValue)
     {
         var obj = GetDoc(subject);
 
-        obj[predicate] = value;
+        obj[predicate] = objectValue;
 
         RemoveTriples(subject, predicate);
-        AddLiteralTriple(subject, predicate, value);
+        AddLiteralTriple(subject, predicate, objectValue);
     }
 
     /// <summary>
@@ -492,7 +611,7 @@ public class SchemaApi
 
         _docs[term] = obj;
 
-        AddTriple(term, RDF_TYPE, SKOS_CONCEPT);
+        AssertObjectTriple(term, RDF_TYPE, SKOS_CONCEPT);
     }
 
     /// <summary>
@@ -512,7 +631,7 @@ public class SchemaApi
 
         _docs[term] = obj;
 
-        AddTriple(term, RDF_TYPE, SKOS_CONCEPT_SCHEME);
+        AssertObjectTriple(term, RDF_TYPE, SKOS_CONCEPT_SCHEME);
     }
 
     /// <summary>
@@ -530,50 +649,52 @@ public class SchemaApi
         if (obj[predicate] == null || obj[predicate] is not JsonObject)
             obj[predicate] = new JsonObject();
 
-        obj[predicate]!.AsObject()[language] = value;
+        var languageMap = obj[predicate] as JsonObject
+            ?? throw new InvalidOperationException($"Property '{predicate}' is not a language map.");
+        languageMap[language] = value;
 
         RemoveTriples(subject, predicate);
         AddLiteralTriple(subject, predicate, value);
     }
 
     /// <summary>
-    /// Add a value to a property array for a schema item and assert an object triple in the RDF graph.
+    /// Add a subject-predicate-object triple to the schema item and RDF graph.
     /// </summary>
     /// <param name="subject">The subject term or id.</param>
     /// <param name="predicate">The predicate (context term or CURIE) to which the value will be added.</param>
-    /// <param name="value">The value (term or id) to add.</param>
-    public void AddFieldValue(string subject, string predicate, string value)
+    /// <param name="objectValue">The object term or id to add.</param>
+    public void AddTriple(string subject, string predicate, string objectValue)
     {
-        AddJsonArrayValue(subject, predicate, value);
+        AddJsonArrayValue(subject, predicate, objectValue);
 
-        AddTriple(
+        AssertObjectTriple(
             GetUriOrId(subject),
             GetUriOrId(predicate),
-            GetUriOrId(value)
+            GetUriOrId(objectValue)
         );
     }
 
     /// <summary>
-    /// Remove a value from a property's array and retract the corresponding object triple.
+    /// Remove a subject-predicate-object triple from the schema item and RDF graph.
     /// </summary>
     /// <param name="subject">The subject term or id.</param>
     /// <param name="predicate">The predicate (context term or CURIE) to modify.</param>
-    /// <param name="value">The value (term or id) to remove.</param>
-    public void RemoveFieldValue(string subject, string predicate, string value)
+    /// <param name="objectValue">The object term or id to remove.</param>
+    public void RemoveTriple(string subject, string predicate, string objectValue)
     {
-        RemoveJsonArrayValue(subject, predicate, value);
+        RemoveJsonArrayValue(subject, predicate, objectValue);
 
-        RemoveTriple(
+        RetractObjectTriple(
             GetUriOrId(subject),
             GetUriOrId(predicate),
-            GetUriOrId(value)
+            GetUriOrId(objectValue)
         );
     }
 
     public IEnumerable<string> GetAllClasses()
     {
         return GetByType(RDFS_CLASS_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -584,7 +705,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllProperties()
     {
         return GetByType(RDF_PROPERTY_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -595,7 +716,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllConcepts()
     {
         return GetByType(SKOS_CONCEPT_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -606,7 +727,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllConceptSchemes()
     {
         return GetByType(SKOS_CONCEPT_SCHEME_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -631,11 +752,11 @@ public class SchemaApi
                 if (domain is JsonValue) return domain.ToString() == classTerm;
 
                 // Array
-                if (domain is JsonArray arr) return arr.Any(x => x!.ToString() == classTerm);
+                if (domain is JsonArray arr) return arr.Any(x => x?.ToString() == classTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -652,7 +773,7 @@ public class SchemaApi
             return [domain.ToString()];
 
         if (domain is JsonArray arr)
-            return arr.Select(x => x!.ToString());
+            return arr.Select(x => x?.ToString()).OfType<string>();
 
         return [];
     }
@@ -675,7 +796,7 @@ public class SchemaApi
             return [range.ToString()];
 
         if (range is JsonArray arr)
-            return arr.Select(x => x!.ToString());
+            return arr.Select(x => x?.ToString()).OfType<string>();
 
         return [];
     }
@@ -704,11 +825,11 @@ public class SchemaApi
                 // Array
                 if (range is JsonArray arr)
                     return arr.Any(x =>
-                        x!.ToString() == classTerm);
+                        x?.ToString() == classTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -734,11 +855,11 @@ public class SchemaApi
                     return sub.ToString() == classTerm;
 
                 if (sub is JsonArray arr)
-                    return arr.Any(x => x!.ToString() == classTerm);
+                    return arr.Any(x => x?.ToString() == classTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -764,11 +885,11 @@ public class SchemaApi
                     return scheme.ToString() == schemeTerm;
 
                 if (scheme is JsonArray arr)
-                    return arr.Any(x => x!.ToString() == schemeTerm);
+                    return arr.Any(x => x?.ToString() == schemeTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -854,11 +975,13 @@ public class SchemaApi
         // CURIE lookup FIRST
         if (term.Contains(':'))
         {
-            var prefix = term.Split([ ':' ], 2)[0];
-            var suffix = term.Split([ ':' ], 2)[1];
+            var parts = term.Split(new[] { ':' }, 2);
+            var prefix = parts[0];
+            var suffix = parts[1];
 
-            if (_context[prefix] != null)
-                return _context[prefix]! + suffix;
+            if (_context[prefix] != null &&
+                TryGetContextIri(_context[prefix], out var namespaceUri))
+                return namespaceUri + suffix;
         }
 
         // Direct term lookup SECOND
@@ -866,7 +989,7 @@ public class SchemaApi
             return value.ToString();
 
         if (_context[term] is JsonObject obj && obj["@id"] != null)
-            return obj["@id"]!.ToString();
+            return (obj["@id"] ?? throw new InvalidOperationException("JSON-LD object is missing @id.")).ToString();
 
         return term;
     }
@@ -924,19 +1047,27 @@ public class SchemaApi
         };
     }
 
-    private void RequireContextObject(string term)
+    private JsonObject GetRequiredContextObject(string term)
     {
-        if (_context[term] == null)
-            throw new InvalidOperationException($"Context term does not exist: {term}");
+        var node = _context[term]
+            ?? throw new InvalidOperationException($"Context term does not exist: {term}");
 
-        if (_context[term] is not JsonObject)
-            throw new InvalidOperationException($"Context term is not an object: {term}");
+        return node as JsonObject
+            ?? throw new InvalidOperationException($"Context term is not an object: {term}");
     }
 
     private IEnumerable<JsonObject> GetByType(string type)
     {
-        return _docs.Values
-            .Where(d => d["@type"]?.ToString() == type);
+        var expanded = type switch
+        {
+            RDFS_CLASS_TERM => RDFS_CLASS,
+            RDF_PROPERTY_TERM => RDF_PROPERTY,
+            SKOS_CONCEPT_TERM => SKOS_CONCEPT,
+            SKOS_CONCEPT_SCHEME_TERM => SKOS_CONCEPT_SCHEME,
+            _ => type
+        };
+
+        return _docs.Values.Where(d => HasType(d, type, expanded));
     }
 
     private JsonObject GetDoc(string term)
@@ -950,57 +1081,659 @@ public class SchemaApi
 
     private static int GetTypeSortOrder(JsonObject obj)
     {
-        return obj["@type"]?.ToString() switch
-        {
-            RDFS_CLASS_TERM => 0,
-            RDF_PROPERTY_TERM => 1,
-            SKOS_CONCEPT_SCHEME_TERM => 2,
-            SKOS_CONCEPT_TERM => 3,
-            _ => 999
-        };
+        if (HasType(obj, RDFS_CLASS_TERM, RDFS_CLASS)) return 0;
+        if (HasType(obj, RDF_PROPERTY_TERM, RDF_PROPERTY)) return 1;
+        if (HasType(obj, SKOS_CONCEPT_SCHEME_TERM, SKOS_CONCEPT_SCHEME)) return 2;
+        if (HasType(obj, SKOS_CONCEPT_TERM, SKOS_CONCEPT)) return 3;
+        return 999;
     }
 
     private string GetTypeFolder(JsonObject obj)
     {
-        var type = obj["@type"]?.ToString();
-
-        return type switch
-        {
-            RDFS_CLASS_TERM => "classes",
-            RDF_PROPERTY_TERM => "properties",
-            SKOS_CONCEPT_TERM => "concepts",
-            SKOS_CONCEPT_SCHEME_TERM => "conceptschemes",
-            _ => "other"
-        };
+        if (HasType(obj, RDFS_CLASS_TERM, RDFS_CLASS)) return "classes";
+        if (HasType(obj, RDF_PROPERTY_TERM, RDF_PROPERTY)) return "properties";
+        if (HasType(obj, SKOS_CONCEPT_TERM, SKOS_CONCEPT)) return "concepts";
+        if (HasType(obj, SKOS_CONCEPT_SCHEME_TERM, SKOS_CONCEPT_SCHEME)) return "conceptschemes";
+        return "other";
     }
 
     private string GetTermOrId(string id)
     {
-        // Already a plain term
+        // Already a plain term defined directly in the context.
         if (_context[id] != null)
             return id;
 
-        // CURIE
-        if (id.Contains(':') && !id.StartsWith("http"))
+        // Already a CURIE.
+        if (id.Contains(':') && !id.StartsWith("http", StringComparison.OrdinalIgnoreCase))
             return id;
 
-        // URI lookup
-        foreach (var kv in _context)
-            if (kv.Value?.ToString() == id)
-                return kv.Key;
+        // A context term may map exactly to this URI.
+        foreach (var entry in _context)
+        {
+            if (TryGetContextIri(entry.Value, out var contextIri) &&
+                string.Equals(contextIri, id, StringComparison.Ordinal))
+                return entry.Key;
+        }
+
+        // Otherwise compact the URI through the longest matching prefix namespace.
+        var compacted = CompactUri(id);
+        if (!string.Equals(compacted, id, StringComparison.Ordinal))
+            return compacted;
 
         throw new InvalidOperationException(
-            $"No term or CURIE available for URI: {id}");
+            $"No term or CURIE available for URI: {id}. Add a matching namespace prefix to the schema context before importing RDF or applying SPARQL updates.");
+    }
+
+
+    private TripleStore CreateStoreFromCurrentGraph()
+    {
+        var store = new TripleStore();
+        var graph = new Graph();
+        graph.Merge(_graph);
+        store.Add(graph);
+        return store;
+    }
+
+    private void ReplaceGraphFromStore(ITripleStore store)
+    {
+        _graph.Clear();
+        foreach (var graph in store.Graphs)
+            _graph.Merge(graph);
+    }
+
+	private static HashSet<string> GetChangedUriSubjects( IGraph before, IGraph after )
+	{
+		static Dictionary<string, HashSet<string>> IndexBySubject( IGraph graph )
+		{
+			return graph.Triples
+				.Where( triple => triple.Subject is IUriNode )
+				.GroupBy(
+					triple => ( (IUriNode)triple.Subject ).Uri.AbsoluteUri,
+					StringComparer.Ordinal )
+				.ToDictionary(
+					group => group.Key,
+					group => new HashSet<string>(
+						group.Select( triple => triple.ToString() ),
+						StringComparer.Ordinal ),
+					StringComparer.Ordinal );
+		}
+
+		var beforeIndex = IndexBySubject( before );
+		var afterIndex = IndexBySubject( after );
+
+		var subjects = new HashSet<string>(
+			beforeIndex.Keys.Concat( afterIndex.Keys ),
+			StringComparer.Ordinal );
+
+		subjects.RemoveWhere( subject =>
+			beforeIndex.TryGetValue( subject, out var beforeTriples ) &&
+			afterIndex.TryGetValue( subject, out var afterTriples ) &&
+			beforeTriples.SetEquals( afterTriples ) );
+
+		return subjects;
+	}
+
+	private void RebuildDocumentsFromGraph(ISet<string>? subjectsToRebuild = null)
+    {
+        var store = CreateStoreFromCurrentGraph();
+        var writer = new JsonLdWriter();
+
+        using var textWriter = new System.IO.StringWriter();
+        writer.Save(store, textWriter, true);
+
+        var expanded = JsonNode.Parse(textWriter.ToString()) as JsonArray
+            ?? throw new InvalidOperationException("The RDF graph could not be serialized as expanded JSON-LD.");
+
+        if (subjectsToRebuild != null)
+        {
+            foreach (var subject in subjectsToRebuild)
+                _docs.Remove(CompactUri(subject));
+        }
+
+        if (subjectsToRebuild == null)
+            _docs.Clear();
+
+        foreach (var node in expanded.OfType<JsonObject>())
+        {
+            var idNode = node["@id"];
+            if (idNode == null)
+                continue;
+
+            var id = idNode.ToString();
+            if (string.IsNullOrWhiteSpace(id))
+                continue;
+            if (subjectsToRebuild != null && !subjectsToRebuild.Contains(id))
+                continue;
+
+            var term = CompactUri(id);
+            var compacted = CompactExpandedJsonLd(node, term);
+            compacted["@context"] = GetSchemaContextForSave();
+            _docs[term] = compacted;
+        }
+    }
+
+    private JsonObject CompactExpandedJsonLd(JsonObject source, string documentId)
+    {
+        var result = new JsonObject();
+
+        foreach (var property in source)
+        {
+            var key = property.Key.StartsWith("@", StringComparison.Ordinal)
+                ? property.Key
+                : CompactUri(property.Key);
+
+            if (TryCompactLanguageMap(key, property.Value, out var languageMap))
+            {
+                result[key] = languageMap;
+                continue;
+            }
+
+            var compactedValue = CompactExpandedValue(property.Key, property.Value);
+            result[key] = ApplyPreferredPropertyShape(documentId, key, compactedValue);
+        }
+
+        return result;
+    }
+
+    private bool TryCompactLanguageMap(
+        string compactPropertyName,
+        JsonNode? expandedValue,
+        out JsonObject languageMap)
+    {
+        languageMap = new JsonObject();
+
+        if (!IsLanguageContainer(compactPropertyName) || expandedValue is not JsonArray values)
+            return false;
+
+        foreach (var valueNode in values)
+        {
+            if (valueNode is not JsonObject valueObject || valueObject["@value"] == null)
+                return false;
+
+            var language = valueObject["@language"]?.ToString() ?? "@none";
+            language = GetPreferredLanguageTag(language);
+            var compactedValue = (valueObject["@value"] ?? throw new InvalidOperationException("JSON-LD value object is missing @value.")).DeepClone();
+
+            if (languageMap[language] == null)
+            {
+                languageMap[language] = compactedValue;
+                continue;
+            }
+
+            if (languageMap[language] is JsonArray existingValues)
+            {
+                existingValues.Add(compactedValue);
+                continue;
+            }
+
+            var firstValue = (languageMap[language] ?? throw new InvalidOperationException($"Language map is missing '{language}'.")).DeepClone();
+            languageMap[language] = new JsonArray(firstValue, compactedValue);
+        }
+
+        return true;
+    }
+
+
+
+    private void CapturePreferredPropertyShapes(string documentId, JsonObject document)
+    {
+        foreach (var property in document)
+        {
+            if (property.Key == "@context" || property.Value == null)
+                continue;
+
+            var value = property.Value;
+            var isArray = value is JsonArray;
+            var values = value is JsonArray array
+                ? array.Where(item => item != null).ToArray()
+                : new[] { value };
+
+            var unwrapValueObjects = values.Length > 0 &&
+                values.All(item => item is JsonValue);
+
+            _preferredPropertyShapes[GetPropertyShapeKey(documentId, property.Key)] =
+                new JsonLdPropertyShape(isArray, unwrapValueObjects);
+        }
+    }
+
+    private JsonNode? ApplyPreferredPropertyShape(
+        string documentId,
+        string propertyName,
+        JsonNode? value)
+    {
+        if (value == null)
+            return null;
+
+        if (!_preferredPropertyShapes.TryGetValue(
+                GetPropertyShapeKey(documentId, propertyName),
+                out var shape))
+        {
+            return value;
+        }
+
+        var shapedValue = shape.UnwrapValueObjects
+            ? UnwrapValueObjects(value)
+            : value;
+
+        if (shapedValue == null)
+            return shape.IsArray ? new JsonArray() : null;
+
+        if (shape.IsArray)
+        {
+            if (shapedValue is JsonArray)
+                return shapedValue;
+
+            return new JsonArray(shapedValue.DeepClone());
+        }
+
+        if (shapedValue is JsonArray array && array.Count == 1)
+            return array[0]?.DeepClone();
+
+        return shapedValue;
+    }
+
+    private static JsonNode? UnwrapValueObjects(JsonNode? value)
+    {
+        if (value is JsonArray array)
+        {
+            var result = new JsonArray();
+            foreach (var item in array)
+                result.Add(UnwrapValueObjects(item));
+            return result;
+        }
+
+        if (value is JsonObject obj && obj.Count == 1 && obj["@value"] != null)
+            return (obj["@value"] ?? throw new InvalidOperationException("JSON-LD value object is missing @value.")).DeepClone();
+
+        return value?.DeepClone();
+    }
+
+    private static string GetPropertyShapeKey(string documentId, string propertyName)
+    {
+        return documentId + "\u001F" + propertyName;
+    }
+
+    private void CapturePreferredLanguageTags(JsonObject document)
+    {
+        foreach (var property in document)
+        {
+            if (!IsLanguageContainer(property.Key) || property.Value is not JsonObject languageMap)
+                continue;
+
+            foreach (var languageEntry in languageMap)
+            {
+                if (string.Equals(languageEntry.Key, "@none", StringComparison.Ordinal))
+                    continue;
+
+                var normalized = languageEntry.Key.ToLowerInvariant();
+                if (!_preferredLanguageTags.ContainsKey(normalized))
+                    _preferredLanguageTags[normalized] = languageEntry.Key;
+            }
+        }
+    }
+
+    private string GetPreferredLanguageTag(string language)
+    {
+        if (string.Equals(language, "@none", StringComparison.Ordinal))
+            return language;
+
+        return _preferredLanguageTags.TryGetValue(language.ToLowerInvariant(), out var preferred)
+            ? preferred
+            : NormalizeLanguageTagCasing(language);
+    }
+
+    private static string NormalizeLanguageTagCasing(string language)
+    {
+        var parts = language.Split('-');
+        if (parts.Length == 0)
+            return language;
+
+        parts[0] = parts[0].ToLowerInvariant();
+        for (var index = 1; index < parts.Length; index++)
+        {
+            var part = parts[index];
+            if (part.Length == 2 || (part.Length == 3 && part.All(char.IsDigit)))
+                parts[index] = part.ToUpperInvariant();
+            else if (part.Length == 4)
+                parts[index] = char.ToUpperInvariant(part[0]) + part.Substring(1).ToLowerInvariant();
+            else
+                parts[index] = part.ToLowerInvariant();
+        }
+
+        return string.Join("-", parts);
+    }
+
+    private bool IsLanguageContainer(string compactPropertyName)
+    {
+        if (_context[compactPropertyName] is JsonObject definition &&
+            string.Equals(
+                definition["@container"]?.ToString(),
+                "@language",
+                StringComparison.Ordinal))
+        {
+            return true;
+        }
+
+        // These are standard language-tagged annotation properties. This
+        // fallback is used when a schema references a remote context but its
+        // sparse local context does not repeat the standard definitions.
+        return string.Equals(compactPropertyName, "rdfs:label", StringComparison.Ordinal) ||
+            string.Equals(compactPropertyName, "rdfs:comment", StringComparison.Ordinal);
+    }
+
+    private JsonNode? CompactExpandedValue(string propertyName, JsonNode? value)
+    {
+        if (value == null)
+            return null;
+
+        if (value is JsonArray array)
+        {
+            var compacted = new JsonArray();
+            foreach (var item in array)
+                compacted.Add(CompactExpandedValue(propertyName, item));
+
+            if ((propertyName == "@type" || propertyName == RDF_TYPE) && compacted.Count == 1)
+                return compacted[0]?.DeepClone();
+
+            return compacted;
+        }
+
+        if (value is JsonObject obj)
+        {
+            if (obj.Count == 1 && obj["@id"] != null)
+                return JsonValue.Create(CompactUri((obj["@id"] ?? throw new InvalidOperationException("JSON-LD object is missing @id.")).ToString()));
+
+            var compacted = new JsonObject();
+            foreach (var property in obj)
+            {
+                var key = property.Key.StartsWith("@", StringComparison.Ordinal)
+                    ? property.Key
+                    : CompactUri(property.Key);
+                compacted[key] = CompactExpandedValue(property.Key, property.Value);
+            }
+            return compacted;
+        }
+
+        var text = value.ToString();
+        if (propertyName == "@id" || propertyName == "@type" || propertyName == RDF_TYPE)
+            return JsonValue.Create(CompactUri(text));
+
+        return value.DeepClone();
+    }
+
+    private string CompactUri(string value)
+    {
+        if (string.IsNullOrWhiteSpace(value) || value.StartsWith("_:", StringComparison.Ordinal))
+            return value;
+        if (!Uri.TryCreate(value, UriKind.Absolute, out _))
+            return value;
+
+        string? bestPrefix = null;
+        string? bestNamespace = null;
+
+        foreach (var entry in _context)
+        {
+            if (!TryGetContextIri(entry.Value, out var namespaceUri) ||
+                string.IsNullOrWhiteSpace(namespaceUri) ||
+                !value.StartsWith(namespaceUri, StringComparison.Ordinal))
+                continue;
+
+            if (bestNamespace == null || namespaceUri.Length > bestNamespace.Length)
+            {
+                bestPrefix = entry.Key;
+                bestNamespace = namespaceUri;
+            }
+        }
+
+        return bestPrefix == null || bestNamespace == null
+            ? value
+            : bestPrefix + ":" + value.Substring(bestNamespace.Length);
+    }
+
+    private static bool TryGetContextIri(JsonNode? value, out string iri)
+    {
+        iri = string.Empty;
+
+        if (value is JsonValue jsonValue &&
+            jsonValue.TryGetValue<string>(out var stringValue) &&
+            !string.IsNullOrWhiteSpace(stringValue))
+        {
+            iri = stringValue;
+            return true;
+        }
+
+        if (value is JsonObject definition &&
+            definition["@id"] is JsonValue idValue &&
+            idValue.TryGetValue<string>(out var id) &&
+            !string.IsNullOrWhiteSpace(id))
+        {
+            iri = id;
+            return true;
+        }
+
+        return false;
+    }
+
+    private static bool HasType(JsonObject obj, string compactType, string expandedType)
+    {
+        var type = obj["@type"];
+        if (type is JsonArray array)
+            return array.Any(item => item?.ToString() == compactType || item?.ToString() == expandedType);
+
+        var value = type?.ToString();
+        return value == compactType || value == expandedType;
+    }
+
+    private void ConfigureSchemaFiles(string folder)
+    {
+        if (string.IsNullOrWhiteSpace(folder))
+            throw new ArgumentException("Schema folder is required.", nameof(folder));
+
+        if (!Directory.Exists(folder))
+            throw new DirectoryNotFoundException($"Schema folder was not found: {folder}");
+
+        var splitFolder = Path.Combine(folder, "Split");
+        if (!Directory.Exists(splitFolder))
+            throw new DirectoryNotFoundException($"Split schema folder was not found: {splitFolder}");
+
+        _contextFileName = FindContextFileName(folder);
+        _mergedFileName = FindMergedFileName(folder);
+        _schemaContext = ReadSchemaContext(folder);
+    }
+
+    private static string FindContextFileName(string folder)
+    {
+        var candidates = Directory
+            .GetFiles(folder, "*", SearchOption.TopDirectoryOnly)
+            .Where(IsJsonFile)
+            .Where(path => Path.GetFileNameWithoutExtension(path)
+                .IndexOf("context", StringComparison.OrdinalIgnoreCase) >= 0)
+            .ToList();
+
+        if (candidates.Count == 0)
+            throw new FileNotFoundException(
+                "No JSON or JSON-LD context file was found in the schema folder.",
+                folder);
+
+        var groups = candidates
+            .GroupBy(
+                path => Path.GetFileNameWithoutExtension(path),
+                StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        if (groups.Count > 1)
+            throw new InvalidOperationException(
+                $"Multiple distinct context files were found in '{folder}': {string.Join(", ", candidates.Select(Path.GetFileName).OrderBy(name => name, StringComparer.OrdinalIgnoreCase))}");
+
+        // Some schema folders contain both <name>.json and <name>.jsonld copies.
+        // Treat those as alternate serializations of the same context and prefer JSON-LD.
+        var selected = groups[0]
+            .OrderByDescending(path => Path.GetExtension(path)
+                .Equals(".jsonld", StringComparison.OrdinalIgnoreCase))
+            .ThenBy(path => Path.GetFileName(path), StringComparer.OrdinalIgnoreCase)
+            .First();
+
+        return Path.GetFileName(selected)
+               ?? throw new InvalidOperationException("The context filename could not be determined.");
+    }
+
+    private static string FindMergedFileName(string folder)
+    {
+        var mergedFolder = Path.Combine(folder, "Merged");
+        if (!Directory.Exists(mergedFolder))
+            throw new DirectoryNotFoundException($"Merged schema folder was not found: {mergedFolder}");
+
+        var candidates = Directory
+            .GetFiles(mergedFolder, "*", SearchOption.TopDirectoryOnly)
+            .Where(IsJsonFile)
+            .OrderBy(path => Path.GetFileName(path), StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        if (candidates.Count == 0)
+        {
+            var metadataPath = Path.Combine(folder, "Split", "_meta.json");
+            if (File.Exists(metadataPath))
+            {
+                var metadata = ParseObjectFile(metadataPath);
+                var recordedName = metadata["MergedFileName"]?.ToString()
+                                   ?? metadata["mergedFileName"]?.ToString()
+                                   ?? throw new InvalidOperationException(
+                                    "The merged schema filename could not be determined.");
+                if (!string.IsNullOrWhiteSpace(recordedName))
+                    return recordedName;
+            }
+
+            throw new FileNotFoundException(
+                "No merged schema file was found and split metadata does not record its filename.",
+                mergedFolder);
+        }
+
+        if (candidates.Count > 1)
+            throw new InvalidOperationException(
+                $"Multiple merged schema files were found in '{mergedFolder}': {string.Join(", ", candidates.Select(Path.GetFileName))}");
+
+        return Path.GetFileName(candidates[0])
+               ?? throw new InvalidOperationException("The merged schema filename could not be determined.");
+    }
+
+    private JsonNode ReadSchemaContext(string folder)
+    {
+        var mergedPath = Path.Combine(folder, "Merged", RequireMergedFileName());
+        if (File.Exists(mergedPath))
+        {
+            var mergedRoot = ParseObjectFile(mergedPath);
+            var mergedContext = mergedRoot["@context"];
+            if (mergedContext != null)
+                return mergedContext.DeepClone();
+        }
+
+        var metaPath = Path.Combine(folder, "Split", "_meta.json");
+        if (File.Exists(metaPath))
+        {
+            var metadata = ParseObjectFile(metaPath);
+            var metadataContext = metadata["Context"] ?? metadata["context"];
+            if (metadataContext != null)
+                return metadataContext.DeepClone();
+        }
+
+        var firstSplitFile = Directory
+            .GetFiles(Path.Combine(folder, "Split"), "*", SearchOption.AllDirectories)
+            .Where(IsJsonFile)
+            .Where(path => !Path.GetFileName(path).Equals("_meta.json", StringComparison.OrdinalIgnoreCase))
+            .OrderBy(path => path, StringComparer.OrdinalIgnoreCase)
+            .FirstOrDefault();
+
+        if (firstSplitFile != null)
+        {
+            var splitContext = ParseObjectFile(firstSplitFile)["@context"];
+            if (splitContext != null)
+                return splitContext.DeepClone();
+        }
+
+        throw new InvalidOperationException(
+            $"The schema context could not be determined from '{folder}'. Add @context to the merged schema file.");
+    }
+
+    private static bool IsJsonFile(string path)
+    {
+        var extension = Path.GetExtension(path);
+        return extension.Equals(".json", StringComparison.OrdinalIgnoreCase) ||
+               extension.Equals(".jsonld", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static JsonObject ParseObjectFile(string path)
+    {
+        var node = JsonNode.Parse(File.ReadAllText(path));
+        if (node is not JsonObject result)
+            throw new InvalidOperationException($"Expected a JSON object in '{path}'.");
+
+        return result;
+    }
+
+
+
+    private static string GetSplitFileName(string term)
+    {
+        if (string.IsNullOrWhiteSpace(term))
+            throw new ArgumentException("A schema term is required.", nameof(term));
+
+        // Preserve the established CURIE filename convention, such as
+        // ceterms:Credential -> ceterms_Credential.jsonld.
+        var colonIndex = term.IndexOf(':');
+        var isCurie = colonIndex > 0
+                      && term.IndexOf("//", StringComparison.Ordinal) < 0
+                      && term.IndexOf("/", StringComparison.Ordinal) < 0
+                      && term.IndexOf('\\') < 0;
+
+        if (isCurie)
+            return term.Replace(':', '_') + ".jsonld";
+
+        // Full IRIs and other external identifiers must never be interpreted as
+        // paths. Escape the complete identifier into one deterministic filename.
+        return Uri.EscapeDataString(term) + ".jsonld";
+    }
+
+    private string GetContextFileNameForSave()
+    {
+        return _contextFileName ?? "context.jsonld";
+    }
+
+    private string GetMergedFileNameForSave()
+    {
+        return _mergedFileName ?? "schema.jsonld";
+    }
+
+    private JsonNode GetSchemaContextForSave()
+    {
+        return (_schemaContext ?? _context).DeepClone();
+    }
+
+    private string RequireContextFileName()
+    {
+        return _contextFileName ?? throw new InvalidOperationException(
+            "Schema files have not been configured. Load a schema folder first.");
+    }
+
+    private string RequireMergedFileName()
+    {
+        return _mergedFileName ?? throw new InvalidOperationException(
+            "Schema files have not been configured. Load a schema folder first.");
+    }
+
+    private JsonNode RequireSchemaContext()
+    {
+        return _schemaContext ?? throw new InvalidOperationException(
+            "Schema context has not been configured. Load a schema folder first.");
     }
 
     private void LoadContextFile(string folder)
     {
-        var contextPath = Path.Combine(folder, "ctdl-context.jsonld");
+        var contextPath = Path.Combine(folder, RequireContextFileName());
 
         if (!File.Exists(contextPath))
             return;
 
-        var contextDoc = JsonNode.Parse(File.ReadAllText(contextPath))!.AsObject();
+        var contextDoc = ParseObjectFile(contextPath);
 
         if (contextDoc["@context"] is JsonObject context)
             _context = context.DeepClone().AsObject();
@@ -1008,13 +1741,11 @@ public class SchemaApi
 
     private void RequireContextTerm(string term)
     {
-        if (_context[term] == null)
-            throw new InvalidOperationException(
+        var contextNode = _context[term]
+            ?? throw new InvalidOperationException(
                 $"Context term must be added before creating schema item: {term}");
 
-        var existingUri = _context[term]!.ToString()
-                          ?? throw new InvalidOperationException(
-                              $"Context term '{term}' does not have a URI.");
+        var existingUri = contextNode.ToString();
 
         if (!Uri.TryCreate(existingUri, UriKind.Absolute, out _))
             throw new InvalidOperationException(
@@ -1025,12 +1756,19 @@ public class SchemaApi
     {
         var obj = GetDoc(id);
 
-        if (obj[key] == null)
+        var existingValue = obj[key];
+        if (existingValue == null)
+        {
             obj[key] = new JsonArray { value };
-        else if (obj[key] is JsonArray arr)
+        }
+        else if (existingValue is JsonArray arr)
+        {
             arr.Add(value);
+        }
         else
-            obj[key] = new JsonArray { obj[key]!, value };
+        {
+            obj[key] = new JsonArray { existingValue.DeepClone(), value };
+        }
     }
 
     private void RemoveJsonArrayValue(string id, string key, string value)
@@ -1039,7 +1777,7 @@ public class SchemaApi
 
         if (obj[key] is JsonArray arr)
         {
-            var match = arr.FirstOrDefault(x => x!.ToString() == value);
+            var match = arr.FirstOrDefault(x => x?.ToString() == value);
             if (match != null) arr.Remove(match);
         }
     }
@@ -1067,12 +1805,12 @@ public class SchemaApi
         RemoveAllTriples(key);
     }
 
-    private void AddTriple(string s, string p, string o)
+    private void AssertObjectTriple(string subject, string predicate, string objectValue)
     {
         _graph.Assert(
-            Node(GetUriOrId(s)),
-            Node(GetUriOrId(p)),
-            Node(GetUriOrId(o))
+            Node(GetUriOrId(subject)),
+            Node(GetUriOrId(predicate)),
+            Node(GetUriOrId(objectValue))
         );
     }
 
@@ -1084,13 +1822,13 @@ public class SchemaApi
             _graph.CreateLiteralNode(v));
     }
 
-    private void RemoveTriple(string s, string p, string o)
+    private void RetractObjectTriple(string subject, string predicate, string objectValue)
     {
         _graph.Retract(
             new Triple(
-                Node(GetUriOrId(s)),
-                Node(GetUriOrId(p)),
-                Node(GetUriOrId(o))
+                Node(GetUriOrId(subject)),
+                Node(GetUriOrId(predicate)),
+                Node(GetUriOrId(objectValue))
             )
         );
     }
@@ -1130,13 +1868,7 @@ public class SchemaApi
 
     private static JsonObject BuildContext()
     {
-        return new JsonObject
-        {
-            //["ceterms"] = "https://credreg.net/ctdl/terms/",
-            //["schema"] = "https://schema.org/",
-            //["rdf"] = "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            //["rdfs"] = "http://www.w3.org/2000/01/rdf-schema#"
-        };
+        return new JsonObject();
     }
 
     private void EnsureNoReferences(string term)
@@ -1229,4 +1961,16 @@ public class SchemaApi
         throw new InvalidOperationException(
             $"Schema item not found: {term}");
     }
+    private sealed class JsonLdPropertyShape
+    {
+        public JsonLdPropertyShape(bool isArray, bool unwrapValueObjects)
+        {
+            IsArray = isArray;
+            UnwrapValueObjects = unwrapValueObjects;
+        }
+
+        public bool IsArray { get; }
+        public bool UnwrapValueObjects { get; }
+    }
+
 }

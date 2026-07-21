@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:earningsDefinition",
+    "rdfs:label": {
+        "en-US": "Earnings Definition"
+    },
+    "rdfs:comment": {
+        "en-US": "Definition of \"earnings\" used by the data source."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile",
+        "qdata:Metric"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:competencyText",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "case:v1p0/fullStatement"
+    ],
+    "rdfs:comment": {
+        "en-US": "The text of the competency."
+    },
+    "rdfs:label": {
+        "en-US": "Competency Text"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:description"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vann:usageNote": {
+        "en-US": "This property should be used to provide the actual text of the competency statement. To provide information about the competency other than the text itself, use the comment property."
+    },
+    "vs:term_status": "vs:stable"
+}

@@ -1,0 +1,32 @@
+{
+    "@context": "https://credreg.net/ctdlasn/schema/context/json",
+    "@id": "ceasn:conceptKeyword",
+    "@type": "rdf:Property",
+    "owl:equivalentProperty": [
+        "asn:conceptKeyword",
+        "ceterms:keyword"
+    ],
+    "rdfs:comment": {
+        "en-US": "A word or phrase used by the promulgating agency to refine and differentiate individual resources contextually."
+    },
+    "rdfs:label": {
+        "en-US": "Concept Keyword"
+    },
+    "rdfs:subPropertyOf": [
+        "dct:subject"
+    ],
+    "schema:domainIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:Competency",
+        "ceasn:CompetencyFramework",
+        "ceasn:Rubric",
+        "skos:ConceptScheme"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "vann:usageNote": {
+        "en-US": "This property should be used judiciously and in moderation. This property should be used only if an appropriate term does not exist in a controlled vocabulary."
+    },
+    "vs:term_status": "vs:stable"
+}

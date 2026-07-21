@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:PriorLearning",
+    "skos:prefLabel": {
+        "en-US": "Prior Learning"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the recognition and assessment of subjects' existing knowledge and skills to potentially fulfill certain requirements for a work preparation activity or resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:broader": [
+        "metricCat:ParticipationEngagement"
+    ],
+    "skos:relatedMatch": [
+        "metricCat:CreditTransfer"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ]
+}

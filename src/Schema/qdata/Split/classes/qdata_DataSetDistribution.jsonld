@@ -1,0 +1,12 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "qdata:DataSetDistribution",
+    "rdfs:label": {
+        "en-US": "Data Set Distribution"
+    },
+    "rdfs:comment": {
+        "en-US": "A specific representation of a dataset."
+    },
+    "vs:term_status": "vs:unstable"
+}

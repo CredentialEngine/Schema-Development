@@ -1,101 +1,121 @@
-> schema init --path {WorkDir}/Schema
-Initialized schema at: {WorkDir}/Schema
+> schema init --path {WorkDir}/Schema --schema ctdl
+Initialized schema at: {WorkDir}/Schema/ctdl
 .env file created.
 
 ExitCode: 0
 
 > schema add namespace --prefix ceterms --uri https://purl.org/ctdl/terms/
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema add class --term ceterms:TestClass
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema add context --term ceterms:TestProperty --field @@type --value xsd:string
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema add context --term ceterms:TestProperty --field @@type --object xsd:string
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema add property --term ceterms:TestProperty
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema add concept --term ceterms:TestConcept
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema add conceptscheme --term ceterms:TestConceptScheme
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema add value --subject ceterms:TestProperty --predicate schema:domainIncludes --value ceterms:TestClass
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema add triple --subject ceterms:TestProperty --predicate schema:domainIncludes --object ceterms:TestClass
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema add value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema add triple --subject ceterms:TestProperty --predicate schema:rangeIncludes --object xsd:string
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema add value --subject ceterms:TestConcept --predicate skos:inScheme --value ceterms:TestConceptScheme
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema add triple --subject ceterms:TestConcept --predicate skos:inScheme --object ceterms:TestConceptScheme
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema set field --subject ceterms:TestClass --predicate vs:term_status --value stable
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema set triple --subject ceterms:TestClass --predicate vs:term_status --object stable
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --value "Test Class"
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema set language-property --subject ceterms:TestClass --predicate rdfs:label --language en --object "Test Class"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema add context --term ceterms:name --field @@container --value @@language
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema add context --term ceterms:name --field @@container --object @@language
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema update context --term ceterms:name --field @@type --value xsd:string
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema update context --term ceterms:name --field @@type --object xsd:string
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema remove context --term ceterms:name --field @container
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema remove value --subject ceterms:TestProperty --predicate schema:rangeIncludes --value xsd:string
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema remove triple --subject ceterms:TestProperty --predicate schema:rangeIncludes --object xsd:string
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema remove field --subject ceterms:TestClass --predicate vs:term_status
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
-> schema remove value --subject ceterms:TestConcept --predicate skos:inScheme --value ceterms:TestConceptScheme
-New version created: {WorkDir}/Schema-{Timestamp}
+> schema remove triple --subject ceterms:TestConcept --predicate skos:inScheme --object ceterms:TestConceptScheme
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema remove concept --term ceterms:TestConcept
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 
 > schema remove conceptscheme --term ceterms:TestConceptScheme
-New version created: {WorkDir}/Schema-{Timestamp}
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema add namespace --prefix ex --uri https://example.org/
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema sparql --file "{TestScripts}/ctdl-sparql-insert.rq"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema sparql --file "{TestScripts}/ctdl-sparql-update.rq"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
+
+ExitCode: 0
+
+> schema sparql --file "{TestScripts}/ctdl-sparql-delete.rq"
+New version created: {WorkDir}/Schema/ctdl-{Timestamp}
 
 ExitCode: 0
 

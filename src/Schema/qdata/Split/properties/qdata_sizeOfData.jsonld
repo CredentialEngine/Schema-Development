@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:sizeOfData",
+    "rdfs:label": {
+        "en-US": "Size of Data"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of subjects from the population for which data was obtained to calculate the observed value."
+    },
+    "vann:usageNote": {
+        "en-US": "For the number of subjects in the sample for which no data was available use sizeOfNoData, and for the total number of subjects available use sizeOfPopulation."
+    },
+    "vs:term_status": "vs:unstable",
+    "schema:domainIncludes": [
+        "qdata:Observation"
+    ],
+    "schema:rangeIncludes": [
+        "qdata:integer"
+    ]
+}

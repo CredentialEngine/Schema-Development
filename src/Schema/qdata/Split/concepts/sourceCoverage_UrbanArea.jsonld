@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "sourceCoverage:UrbanArea",
+    "skos:prefLabel": {
+        "en-US": "Urban Area"
+    },
+    "skos:definition": {
+        "en-US": "Urban area that has a name, defined boundaries, and local government such as a city, town, or village."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:DataSourceCoverage"
+    ],
+    "skos:topConceptOf": [
+        "qdata:DataSourceCoverage"
+    ]
+}

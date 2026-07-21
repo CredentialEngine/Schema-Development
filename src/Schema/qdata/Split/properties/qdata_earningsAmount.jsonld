@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "qdata:earningsAmount",
+    "rdfs:label": {
+        "en-US": "Earnings Amount"
+    },
+    "rdfs:comment": {
+        "en-US": "Reference to an entity describing aggregate earnings."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:DataProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:MonetaryAmount"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:currency",
+    "rdfs:label": {
+        "en-US": "Currency"
+    },
+    "rdfs:comment": {
+        "en-US": "Currency abbreviation (e.g., USD)."
+    },
+    "vs:term_status": "vs:stable",
+    "schema:domainIncludes": [
+        "qdata:Observation",
+        "schema:MonetaryAmount",
+        "schema:MonetaryAmountDistribution"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
+}

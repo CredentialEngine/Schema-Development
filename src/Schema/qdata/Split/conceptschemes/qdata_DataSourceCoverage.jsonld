@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "qdata:DataSourceCoverage",
+    "rdfs:label": {
+        "en-US": "Data Source Coverage"
+    },
+    "rdfs:comment": {
+        "en-US": "Categories of geographic coverage."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:hasTopConcept": [
+        "sourceCoverage:Country",
+        "sourceCoverage:Global",
+        "sourceCoverage:Region",
+        "sourceCoverage:StateOrProvince",
+        "sourceCoverage:UrbanArea"
+    ]
+}

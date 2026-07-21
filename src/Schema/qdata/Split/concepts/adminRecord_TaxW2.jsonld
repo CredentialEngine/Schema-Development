@@ -1,0 +1,18 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "adminRecord:TaxW2",
+    "skos:prefLabel": {
+        "en-US": "United States W-2 Tax Document"
+    },
+    "skos:definition": {
+        "en-US": "United States Official Wage and Tax Statement that reports an employee's annual wages and the amount of taxes withheld from their paycheck by an employer."
+    },
+    "vs:term_status": "vs:stable",
+    "skos:inScheme": [
+        "qdata:AdministrativeRecordCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:AdministrativeRecordCategory"
+    ]
+}

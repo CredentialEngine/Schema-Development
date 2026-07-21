@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/qdata/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "metricCat:TechnologyInnovation",
+    "skos:prefLabel": {
+        "en-US": "Technology and Innovation"
+    },
+    "skos:definition": {
+        "en-US": "Measurement of the integration and adoption of technology and innovative practices in educational or work preparation activities or resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "skos:narrower": [
+        "metricCat:InnovationAdoption",
+        "metricCat:UseOfTechnology"
+    ],
+    "skos:inScheme": [
+        "qdata:MetricCategory"
+    ],
+    "skos:topConceptOf": [
+        "qdata:MetricCategory"
+    ]
+}

@@ -3,13 +3,15 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
+using Schema.SDK;
+using VDS.RDF;
 
 namespace CLI.IntegrationTests;
 
 [TestClass]
 public class SchemaCliDiffTests
 {
-    public TestContext TestContext { get; set; } = null!;
+    public TestContext? TestContext { get; set; }
 
     private readonly string _actualOutput;
     private readonly string _cliDll;
@@ -65,18 +67,18 @@ public class SchemaCliDiffTests
     }
 
     [TestMethod]
-    public void CliCommands_ProduceExpectedSchemaOutput()
+    public void CtdlCommands_ProduceExpectedSchemaOutput()
     {
         var scriptPath = Path.Combine(
             _testRoot,
             "TestScripts",
-            "test-script.txt");
+            "ctdl-test-script.txt");
 
         var consoleOutput = RunScriptAndCaptureOutputs(scriptPath);
 
         File.WriteAllText(
             Path.Combine(_actualOutput, "console-output.txt"),
-            NormalizeConsoleOutput(consoleOutput, _workDir));
+            NormalizeConsoleOutput(consoleOutput, _workDir, Path.Combine(_testRoot, "TestScripts")));
 
         AssertDirectoriesEqual(_expectedOutput, _actualOutput);
     }
@@ -92,7 +94,7 @@ public class SchemaCliDiffTests
         RunScriptAndCaptureOutputs(scriptPath);
 
         var checkpoints = Directory
-            .GetDirectories(_workDir, "Schema-*")
+            .GetDirectories(_seedSchema, "ctdl-*")
             .OrderBy(x => x)
             .ToList();
         Assert.HasCount(2, checkpoints);
@@ -110,8 +112,8 @@ public class SchemaCliDiffTests
 
         // Latest checkpoint should no longer exist because it was moved
         var checkpoints = Directory
-            .GetDirectories(_workDir, "Schema-*")
-            .OrderByDescending(Directory.GetCreationTimeUtc)
+            .GetDirectories(_seedSchema, "ctdl-*")
+            .OrderByDescending(path => Path.GetFileName(path), StringComparer.OrdinalIgnoreCase)
             .ToList();
 
         Assert.HasCount(1, checkpoints);
@@ -119,6 +121,7 @@ public class SchemaCliDiffTests
         // Original schema should now contain the applied changes
         var classFile = Path.Combine(
             _seedSchema,
+            "ctdl",
             "Split",
             "classes",
             "ex_TestClass.jsonld");
@@ -128,6 +131,116 @@ public class SchemaCliDiffTests
         var json = File.ReadAllText(classFile);
 
         StringAssert.Contains(json, "\"@id\": \"ex:TestClass\"");
+    }
+
+    [TestMethod]
+    [DataRow("ctdlasn", "ceasn", "https://purl.org/ctdlasn/terms/", "ceasn_TestClass.jsonld")]
+    [DataRow("qdata", "qdata", "https://credreg.net/qdata/terms/", "qdata_TestClass.jsonld")]
+    public void AdditionalSchemaScripts_ManipulateSelectedSchema(
+        string schemaName,
+        string prefix,
+        string namespaceUri,
+        string expectedClassFile)
+    {
+        var scriptPath = Path.Combine(
+            _testRoot,
+            "TestScripts",
+            $"{schemaName}-test-script.txt");
+
+        RunScriptAndCaptureOutputs(scriptPath);
+
+        var latest = GetLatestSchemaFolder(schemaName);
+        var classFile = Path.Combine(latest, "Split", "classes", expectedClassFile);
+
+        Assert.IsTrue(File.Exists(classFile));
+        Assert.IsTrue(File.Exists(Path.Combine(latest, $"{schemaName}-context.jsonld")));
+        Assert.IsTrue(File.Exists(Path.Combine(latest, "Merged", $"{schemaName}-schema.jsonld")));
+
+        var context = File.ReadAllText(Path.Combine(latest, $"{schemaName}-context.jsonld"));
+        StringAssert.Contains(context, namespaceUri);
+        StringAssert.Contains(File.ReadAllText(classFile), $"\"@id\": \"{prefix}:TestClass\"");
+    }
+
+    [TestMethod]
+    [DataRow("ctdl", "ctdl", "https://credreg.net/ctdl/schema/context/json", "ceterms:CliExample")]
+    [DataRow("ctdlasn", "ctdlasn", "https://credreg.net/ctdlasn/schema/context/json", "ceasn:CliExample")]
+    [DataRow("qdata", "qdata", "https://credreg.net/qdata/schema/context/json", "qdata:CliExample")]
+    public void SplitAndMergeCommands_WorkForSelectedSchema(
+        string schemaName,
+        string filePrefix,
+        string contextReference,
+        string term)
+    {
+        var init = RunCli("init", "--path", _seedSchema, "--schema", schemaName);
+        Assert.AreEqual(0, init.ExitCode, init.StdErr);
+
+        var schemaFolder = Path.Combine(_seedSchema, schemaName);
+        var mergedPath = Path.Combine(schemaFolder, "Merged", $"{filePrefix}-schema.jsonld");
+        File.WriteAllText(mergedPath, $$"""
+            {
+                "@context": "{{contextReference}}",
+                "@graph": [
+                    {
+                        "@id": "{{term}}",
+                        "@type": "rdfs:Class"
+                    }
+                ]
+            }
+            """);
+
+        var original = JsonNode.Parse(File.ReadAllText(mergedPath));
+
+        var split = RunCli("split");
+        Assert.AreEqual(0, split.ExitCode, split.StdErr);
+        Assert.IsTrue(File.Exists(Path.Combine(
+            schemaFolder,
+            "Split",
+            "classes",
+            term.Replace(":", "_") + ".jsonld")));
+
+        File.Delete(mergedPath);
+
+        var merge = RunCli("merge");
+        Assert.AreEqual(0, merge.ExitCode, merge.StdErr);
+
+        var merged = JsonNode.Parse(File.ReadAllText(mergedPath));
+        Assert.IsTrue(JsonNode.DeepEquals(original, merged));
+    }
+
+    [TestMethod]
+    public void RdfAndSparqlCommands_RoundTripAndUpdateSelectedSchema()
+    {
+        var init = RunCli("init", "--path", _seedSchema, "--schema", "ctdl");
+        Assert.AreEqual(0, init.ExitCode, init.StdErr);
+
+        var addNamespace = RunCli("add", "namespace", "--prefix", "ex", "--uri", "https://example.org/");
+        Assert.AreEqual(0, addNamespace.ExitCode, addNamespace.StdErr);
+
+        var turtlePath = Path.Combine(_workDir, "ctdl.ttl");
+        var export = RunCli("rdf", "export-turtle", "--output", turtlePath);
+        Assert.AreEqual(0, export.ExitCode, export.StdErr);
+        Assert.IsTrue(File.Exists(turtlePath));
+
+        File.AppendAllText(turtlePath, "\n<https://example.org/FromTurtle> <http://www.w3.org/2000/01/rdf-schema#label> \"From Turtle\"@en .\n");
+        var import = RunCli("rdf", "import-turtle", "--input", turtlePath);
+        Assert.AreEqual(0, import.ExitCode, import.StdErr);
+
+        var updatePath = Path.Combine(_workDir, "update.rq");
+        File.WriteAllText(updatePath, "INSERT DATA { <https://example.org/FromSparql> <http://www.w3.org/2000/01/rdf-schema#label> \"From SPARQL\"@en . }");
+        var update = RunCli("sparql", "--file", updatePath);
+        Assert.AreEqual(0, update.ExitCode, update.StdErr);
+
+        var latest = GetLatestSchemaFolder("ctdl");
+        var api = new SchemaApi();
+        api.LoadFromFolder(latest);
+        Assert.IsTrue(api.GetGraph().Triples.Any(t =>
+            t.Subject is IUriNode uriNode &&
+            uriNode.Uri.AbsoluteUri == "https://example.org/FromTurtle"));
+        Assert.IsTrue(api.GetGraph().Triples.Any(t =>
+            t.Subject is IUriNode uriNode &&
+            uriNode.Uri.AbsoluteUri == "https://example.org/FromSparql"));
+        Assert.IsTrue(File.Exists(Path.Combine(latest, "Split", "other", "ex_FromTurtle.jsonld")));
+        Assert.IsTrue(File.Exists(Path.Combine(latest, "Split", "other", "ex_FromSparql.jsonld")));
     }
 
     private CliResult RunCli(params string[] args)
@@ -145,7 +258,8 @@ public class SchemaCliDiffTests
         foreach (var arg in args)
             psi.ArgumentList.Add(arg);
 
-        using var process = Process.Start(psi)!;
+        using var process = Process.Start(psi)
+            ?? throw new InvalidOperationException("Failed to start the Schema CLI process.");
 
         var stdout = process.StandardOutput.ReadToEnd();
         var stderr = process.StandardError.ReadToEnd();
@@ -201,9 +315,11 @@ public class SchemaCliDiffTests
             if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
                 continue;
 
-            line = line.Replace("{SeedSchema}", _seedSchema);
+            line = line
+                .Replace("{SeedSchema}", _seedSchema)
+                .Replace("{TestScripts}", Path.Combine(_testRoot, "TestScripts"));
 
-            log.AppendLine($"> schema {NormalizeConsoleOutput(line, _workDir)}");
+            log.AppendLine($"> schema {NormalizeConsoleOutput(line, _workDir, Path.Combine(_testRoot, "TestScripts"))}");
 
             var args = SplitCommandLine(line);
             var result = RunCli(args);
@@ -220,6 +336,12 @@ public class SchemaCliDiffTests
 
             log.AppendLine($"ExitCode: {result.ExitCode}");
             log.AppendLine();
+
+            // Persist the transcript after every command so a failing command still
+            // leaves complete diagnostics in ActualOutput/console-output.txt.
+            File.WriteAllText(
+                Path.Combine(_actualOutput, "console-output.txt"),
+                NormalizeConsoleOutput(log.ToString(), _workDir, Path.Combine(_testRoot, "TestScripts")));
 
             Assert.AreEqual(
                 0,
@@ -248,22 +370,40 @@ public class SchemaCliDiffTests
         if (args.Length == 0)
             return null;
 
-        // init does not create a Schema-* output folder.
+        // init does not create a checkpoint output folder.
         // Snapshot the initialized seed schema.
         if (args[0].Equals("init", StringComparison.OrdinalIgnoreCase))
-            return _seedSchema;
+        {
+            var schemaIndex = Array.FindIndex(
+                args,
+                arg => arg.Equals("--schema", StringComparison.OrdinalIgnoreCase));
+            var schemaName = schemaIndex >= 0 && schemaIndex + 1 < args.Length
+                ? args[schemaIndex + 1]
+                : "ctdl";
 
-        // clone/add/update/remove/set commands create a new Schema-* folder.
-        return GetLatestSchemaFolder();
+            return Path.Combine(_seedSchema, schemaName);
+        }
+
+        // clone/add/update/remove/set commands create a schema-specific checkpoint folder.
+        return GetLatestSchemaFolder(GetInitializedSchemaName());
     }
 
-    private static string NormalizeConsoleOutput(string text, string workDir)
+    private string GetInitializedSchemaName()
     {
-        return NormalizeDynamicValues(text, workDir)
+        var envPath = Path.Combine(_workDir, ".env");
+        var originalLine = File.ReadLines(envPath)
+            .First(line => line.StartsWith("SCHEMA_ORIGINAL=", StringComparison.Ordinal));
+        var originalPath = originalLine.Substring("SCHEMA_ORIGINAL=".Length);
+        return Path.GetFileName(Path.TrimEndingDirectorySeparator(originalPath));
+    }
+
+    private static string NormalizeConsoleOutput(string text, string workDir, string? testScriptsDir = null)
+    {
+        return NormalizeDynamicValues(text, workDir, testScriptsDir)
             .ReplaceLineEndings("\n");
     }
 
-    private static string NormalizeDynamicValues(string text, string workDir)
+    private static string NormalizeDynamicValues(string text, string workDir, string? testScriptsDir = null)
     {
         text = text.Replace("\\", "/");
 
@@ -271,42 +411,73 @@ public class SchemaCliDiffTests
             workDir.Replace("\\", "/"),
             "{WorkDir}");
 
+        if (!string.IsNullOrWhiteSpace(testScriptsDir))
+        {
+            text = text.Replace(
+                testScriptsDir.Replace("\\", "/"),
+                "{TestScripts}");
+        }
+
         text = Regex.Replace(
             text,
-            @"Schema-\d{8}_\d{6}_\d{7}",
-            "Schema-{Timestamp}");
+            @"(ctdl|ctdlasn|qdata)-\d{8}_\d{6}_\d{7}",
+            "$1-{Timestamp}");
 
         return text;
     }
 
     private string GetLatestSchemaFolder()
     {
+        return GetLatestSchemaFolder("ctdl");
+    }
+
+    private string GetLatestSchemaFolder(string schemaName)
+    {
         var candidates = Directory
-            .GetDirectories(_workDir, "Schema-*")
-            .OrderByDescending(Directory.GetCreationTimeUtc)
+            .GetDirectories(_seedSchema, $"{schemaName}-*")
+            .OrderByDescending(path => Path.GetFileName(path), StringComparer.OrdinalIgnoreCase)
             .ToList();
 
-        Assert.IsNotEmpty(candidates, "No generated Schema-* folder found.");
+        Assert.IsNotEmpty(candidates, $"No generated {schemaName}-* folder found.");
 
         return candidates[0];
     }
 
     private static void CreateSeedSchema(string schemaRoot)
     {
-        Directory.CreateDirectory(Path.Combine(schemaRoot, "Split", "classes"));
-        Directory.CreateDirectory(Path.Combine(schemaRoot, "Split", "properties"));
-        Directory.CreateDirectory(Path.Combine(schemaRoot, "Merged"));
+        CreateSeedSchemaFolder(
+            Path.Combine(schemaRoot, "ctdl"),
+            "ctdl",
+            "https://credreg.net/ctdl/schema/context/json");
+        CreateSeedSchemaFolder(
+            Path.Combine(schemaRoot, "ctdlasn"),
+            "ctdlasn",
+            "https://credreg.net/ctdlasn/schema/context/json");
+        CreateSeedSchemaFolder(
+            Path.Combine(schemaRoot, "qdata"),
+            "qdata",
+            "https://credreg.net/qdata/schema/context/json");
+    }
 
-        File.WriteAllText(Path.Combine(schemaRoot, "ctdl-context.jsonld"), """
-                                                                           {
-                                                                             "@context": {
-                                                                             }
-                                                                           }
-                                                                           """);
+    private static void CreateSeedSchemaFolder(
+        string schemaFolder,
+        string filePrefix,
+        string contextReference)
+    {
+        Directory.CreateDirectory(Path.Combine(schemaFolder, "Split", "classes"));
+        Directory.CreateDirectory(Path.Combine(schemaFolder, "Split", "properties"));
+        Directory.CreateDirectory(Path.Combine(schemaFolder, "Merged"));
 
-        File.WriteAllText(Path.Combine(schemaRoot, "Merged", "ctdl-schema.jsonld"), """
+        File.WriteAllText(Path.Combine(schemaFolder, $"{filePrefix}-context.jsonld"), """
             {
-                "@context": "https://credreg.net/ctdl/schema/context/json",
+              "@context": {
+              }
+            }
+            """);
+
+        File.WriteAllText(Path.Combine(schemaFolder, "Merged", $"{filePrefix}-schema.jsonld"), $$"""
+            {
+                "@context": "{{contextReference}}",
                 "@graph": []
             }
             """);
