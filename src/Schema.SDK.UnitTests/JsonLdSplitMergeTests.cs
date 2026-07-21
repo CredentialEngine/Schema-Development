@@ -49,7 +49,7 @@ public class JsonLdSplitMergeTests
 
         foreach (var file in files)
         {
-            var obj = JsonNode.Parse(File.ReadAllText(file))!.AsObject();
+            var obj = (JsonNode.Parse(File.ReadAllText(file)) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject();
             var id = obj["@id"]?.ToString();
 
             Assert.IsNotNull(id);

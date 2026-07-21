@@ -28,7 +28,7 @@ public class UrlResolver
 
         // If it's a context file, return inner @context
         if (json is JsonObject obj && obj["@context"] != null)
-            return obj["@context"]!.DeepClone();
+            return (obj["@context"] ?? throw new InvalidOperationException("The cached context document has a null @context value.")).DeepClone();
 
         return json;
     }

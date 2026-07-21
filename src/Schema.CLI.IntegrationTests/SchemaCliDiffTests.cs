@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -11,7 +11,7 @@ namespace CLI.IntegrationTests;
 [TestClass]
 public class SchemaCliDiffTests
 {
-    public TestContext TestContext { get; set; } = null!;
+    public TestContext? TestContext { get; set; }
 
     private readonly string _actualOutput;
     private readonly string _cliDll;
@@ -258,7 +258,8 @@ public class SchemaCliDiffTests
         foreach (var arg in args)
             psi.ArgumentList.Add(arg);
 
-        using var process = Process.Start(psi)!;
+        using var process = Process.Start(psi)
+            ?? throw new InvalidOperationException("Failed to start the Schema CLI process.");
 
         var stdout = process.StandardOutput.ReadToEnd();
         var stderr = process.StandardError.ReadToEnd();

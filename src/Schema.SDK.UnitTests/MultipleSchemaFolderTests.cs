@@ -1,4 +1,4 @@
-using System.Text.Json.Nodes;
+﻿using System.Text.Json.Nodes;
 using Schema.SDK;
 
 namespace Schema.SDK.UnitTests;
@@ -33,8 +33,9 @@ public class MultipleSchemaFolderTests
             Assert.IsTrue(File.Exists(Path.Combine(output, "Merged", $"{filePrefix}-schema.jsonld")));
             Assert.IsTrue(File.Exists(Path.Combine(output, "Split", "classes", "ex_TestClass.jsonld")));
 
-            var merged = JsonNode.Parse(
-                File.ReadAllText(Path.Combine(output, "Merged", $"{filePrefix}-schema.jsonld")))!
+            var merged = (JsonNode.Parse(
+                File.ReadAllText(Path.Combine(output, "Merged", $"{filePrefix}-schema.jsonld")))
+                ?? throw new InvalidOperationException("Expected generated merged JSON-LD."))
                 .AsObject();
 
             Assert.AreEqual(contextReference, merged["@context"]?.ToString());

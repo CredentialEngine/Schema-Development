@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -143,8 +143,7 @@ public class SchemaApi
     /// <param name="type">The new @type value.</param>
     public void SetContextTermType(string term, string type)
     {
-        RequireContextObject(term);
-        _context[term]!.AsObject()["@type"] = type;
+        GetRequiredContextObject(term)["@type"] = type;
     }
 
     /// <summary>
@@ -154,8 +153,7 @@ public class SchemaApi
     /// <param name="container">The new @container value.</param>
     public void SetContextTermContainer(string term, string container)
     {
-        RequireContextObject(term);
-        _context[term]!.AsObject()["@container"] = container;
+        GetRequiredContextObject(term)["@container"] = container;
     }
 
     /// <summary>
@@ -190,9 +188,7 @@ public class SchemaApi
     /// <param name="property">The property name to remove (e.g. "@type").</param>
     public void RemoveContextTermProperty(string term, string property)
     {
-        RequireContextObject(term);
-
-        var obj = _context[term]!.AsObject();
+        var obj = GetRequiredContextObject(term);
         obj.Remove(property);
     }
 
@@ -204,9 +200,7 @@ public class SchemaApi
     /// <param name="value">The value to set.</param>
     public void SetContextField(string term, string field, string value)
     {
-        RequireContextObject(term);
-
-        var obj = _context[term]!.AsObject();
+        var obj = GetRequiredContextObject(term);
         obj[field] = value;
     }
 
@@ -217,9 +211,7 @@ public class SchemaApi
     /// <param name="field">The field name to remove.</param>
     public void RemoveContextField(string term, string field)
     {
-        RequireContextObject(term);
-
-        var obj = _context[term]!.AsObject();
+        var obj = GetRequiredContextObject(term);
         obj.Remove(field);
     }
 
@@ -260,9 +252,11 @@ public class SchemaApi
                 continue;
 
             var text = File.ReadAllText(file);
-            var original = JsonNode.Parse(text)!.AsObject();
+            var original = (JsonNode.Parse(text)
+                ?? throw new InvalidOperationException($"Schema file '{file}' is empty or invalid JSON.")).AsObject();
 
-            var id = original["@id"]!.ToString();
+            var id = (original["@id"]
+                ?? throw new InvalidOperationException($"Schema file '{file}' does not contain @id.")).ToString();
 
             var term = GetTermOrId(id);
 
@@ -273,7 +267,8 @@ public class SchemaApi
 
             // Capture context once
             if (sharedContext == null && original["@context"] != null)
-                sharedContext = original["@context"]!.DeepClone();
+                sharedContext = (original["@context"]
+                    ?? throw new InvalidOperationException($"Schema file '{file}' contains a null @context.")).DeepClone();
 
             // Work on a clone for RDF processing
             var working = original.DeepClone().AsObject();
@@ -449,7 +444,8 @@ public class SchemaApi
 
             File.WriteAllText(path, jsonText);
 
-            _docs[kv.Key] = JsonNode.Parse(jsonText)!.AsObject();
+            _docs[kv.Key] = (JsonNode.Parse(jsonText)
+                ?? throw new InvalidOperationException($"Generated JSON-LD for '{kv.Key}' is empty or invalid.")).AsObject();
         }
 
         // Write Merged file.
@@ -653,7 +649,9 @@ public class SchemaApi
         if (obj[predicate] == null || obj[predicate] is not JsonObject)
             obj[predicate] = new JsonObject();
 
-        obj[predicate]!.AsObject()[language] = value;
+        var languageMap = obj[predicate] as JsonObject
+            ?? throw new InvalidOperationException($"Property '{predicate}' is not a language map.");
+        languageMap[language] = value;
 
         RemoveTriples(subject, predicate);
         AddLiteralTriple(subject, predicate, value);
@@ -696,7 +694,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllClasses()
     {
         return GetByType(RDFS_CLASS_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -707,7 +705,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllProperties()
     {
         return GetByType(RDF_PROPERTY_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -718,7 +716,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllConcepts()
     {
         return GetByType(SKOS_CONCEPT_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -729,7 +727,7 @@ public class SchemaApi
     public IEnumerable<string> GetAllConceptSchemes()
     {
         return GetByType(SKOS_CONCEPT_SCHEME_TERM)
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -754,11 +752,11 @@ public class SchemaApi
                 if (domain is JsonValue) return domain.ToString() == classTerm;
 
                 // Array
-                if (domain is JsonArray arr) return arr.Any(x => x!.ToString() == classTerm);
+                if (domain is JsonArray arr) return arr.Any(x => x?.ToString() == classTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -775,7 +773,7 @@ public class SchemaApi
             return [domain.ToString()];
 
         if (domain is JsonArray arr)
-            return arr.Select(x => x!.ToString());
+            return arr.Select(x => x?.ToString()).OfType<string>();
 
         return [];
     }
@@ -798,7 +796,7 @@ public class SchemaApi
             return [range.ToString()];
 
         if (range is JsonArray arr)
-            return arr.Select(x => x!.ToString());
+            return arr.Select(x => x?.ToString()).OfType<string>();
 
         return [];
     }
@@ -827,11 +825,11 @@ public class SchemaApi
                 // Array
                 if (range is JsonArray arr)
                     return arr.Any(x =>
-                        x!.ToString() == classTerm);
+                        x?.ToString() == classTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -857,11 +855,11 @@ public class SchemaApi
                     return sub.ToString() == classTerm;
 
                 if (sub is JsonArray arr)
-                    return arr.Any(x => x!.ToString() == classTerm);
+                    return arr.Any(x => x?.ToString() == classTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -887,11 +885,11 @@ public class SchemaApi
                     return scheme.ToString() == schemeTerm;
 
                 if (scheme is JsonArray arr)
-                    return arr.Any(x => x!.ToString() == schemeTerm);
+                    return arr.Any(x => x?.ToString() == schemeTerm);
 
                 return false;
             })
-            .Select(d => d["@id"]!.ToString())
+            .Select(d => (d["@id"] ?? throw new InvalidOperationException("Schema document is missing @id.")).ToString())
             .OrderBy(x => x);
     }
 
@@ -991,7 +989,7 @@ public class SchemaApi
             return value.ToString();
 
         if (_context[term] is JsonObject obj && obj["@id"] != null)
-            return obj["@id"]!.ToString();
+            return (obj["@id"] ?? throw new InvalidOperationException("JSON-LD object is missing @id.")).ToString();
 
         return term;
     }
@@ -1049,13 +1047,13 @@ public class SchemaApi
         };
     }
 
-    private void RequireContextObject(string term)
+    private JsonObject GetRequiredContextObject(string term)
     {
-        if (_context[term] == null)
-            throw new InvalidOperationException($"Context term does not exist: {term}");
+        var node = _context[term]
+            ?? throw new InvalidOperationException($"Context term does not exist: {term}");
 
-        if (_context[term] is not JsonObject)
-            throw new InvalidOperationException($"Context term is not an object: {term}");
+        return node as JsonObject
+            ?? throw new InvalidOperationException($"Context term is not an object: {term}");
     }
 
     private IEnumerable<JsonObject> GetByType(string type)
@@ -1254,7 +1252,7 @@ public class SchemaApi
 
             var language = valueObject["@language"]?.ToString() ?? "@none";
             language = GetPreferredLanguageTag(language);
-            var compactedValue = valueObject["@value"]!.DeepClone();
+            var compactedValue = (valueObject["@value"] ?? throw new InvalidOperationException("JSON-LD value object is missing @value.")).DeepClone();
 
             if (languageMap[language] == null)
             {
@@ -1268,7 +1266,7 @@ public class SchemaApi
                 continue;
             }
 
-            var firstValue = languageMap[language]!.DeepClone();
+            var firstValue = (languageMap[language] ?? throw new InvalidOperationException($"Language map is missing '{language}'.")).DeepClone();
             languageMap[language] = new JsonArray(firstValue, compactedValue);
         }
 
@@ -1345,7 +1343,7 @@ public class SchemaApi
         }
 
         if (value is JsonObject obj && obj.Count == 1 && obj["@value"] != null)
-            return obj["@value"]!.DeepClone();
+            return (obj["@value"] ?? throw new InvalidOperationException("JSON-LD value object is missing @value.")).DeepClone();
 
         return value?.DeepClone();
     }
@@ -1443,7 +1441,7 @@ public class SchemaApi
         if (value is JsonObject obj)
         {
             if (obj.Count == 1 && obj["@id"] != null)
-                return JsonValue.Create(CompactUri(obj["@id"]!.ToString()));
+                return JsonValue.Create(CompactUri((obj["@id"] ?? throw new InvalidOperationException("JSON-LD object is missing @id.")).ToString()));
 
             var compacted = new JsonObject();
             foreach (var property in obj)
@@ -1743,13 +1741,11 @@ public class SchemaApi
 
     private void RequireContextTerm(string term)
     {
-        if (_context[term] == null)
-            throw new InvalidOperationException(
+        var contextNode = _context[term]
+            ?? throw new InvalidOperationException(
                 $"Context term must be added before creating schema item: {term}");
 
-        var existingUri = _context[term]!.ToString()
-                          ?? throw new InvalidOperationException(
-                              $"Context term '{term}' does not have a URI.");
+        var existingUri = contextNode.ToString();
 
         if (!Uri.TryCreate(existingUri, UriKind.Absolute, out _))
             throw new InvalidOperationException(
@@ -1760,12 +1756,19 @@ public class SchemaApi
     {
         var obj = GetDoc(id);
 
-        if (obj[key] == null)
+        var existingValue = obj[key];
+        if (existingValue == null)
+        {
             obj[key] = new JsonArray { value };
-        else if (obj[key] is JsonArray arr)
+        }
+        else if (existingValue is JsonArray arr)
+        {
             arr.Add(value);
+        }
         else
-            obj[key] = new JsonArray { obj[key]!, value };
+        {
+            obj[key] = new JsonArray { existingValue.DeepClone(), value };
+        }
     }
 
     private void RemoveJsonArrayValue(string id, string key, string value)
@@ -1774,7 +1777,7 @@ public class SchemaApi
 
         if (obj[key] is JsonArray arr)
         {
-            var match = arr.FirstOrDefault(x => x!.ToString() == value);
+            var match = arr.FirstOrDefault(x => x?.ToString() == value);
             if (match != null) arr.Remove(match);
         }
     }

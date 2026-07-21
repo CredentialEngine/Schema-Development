@@ -1,4 +1,4 @@
-using System.Text.Json.Nodes;
+﻿using System.Text.Json.Nodes;
 using Schema.SDK;
 using VDS.RDF;
 
@@ -33,8 +33,9 @@ public class SparqlAndRdfConversionTests
             Assert.IsTrue(expected.Equals(reloadedApi.GetGraph()),
                 "JSON-LD -> Turtle -> JSON-LD must preserve the RDF graph.");
 
-            var savedClass = JsonNode.Parse(File.ReadAllText(
-                Path.Combine(output, "Split", "classes", "example_Thing.jsonld")))!.AsObject();
+            var savedClass = (JsonNode.Parse(File.ReadAllText(
+                Path.Combine(output, "Split", "classes", "example_Thing.jsonld")))
+                ?? throw new InvalidOperationException("Expected generated class JSON-LD.")).AsObject();
             var label = savedClass["rdfs:label"] as JsonObject;
             Assert.IsNotNull(label, "Language-container properties must be written as language maps.");
             Assert.AreEqual("Thing", label["en-US"]?.ToString());
@@ -75,7 +76,7 @@ public class SparqlAndRdfConversionTests
             var expectedFile = Path.Combine(output, "Split", "other", "example_FromTurtle.jsonld");
             Assert.IsTrue(File.Exists(expectedFile), expectedFile);
 
-            var document = JsonNode.Parse(File.ReadAllText(expectedFile))!.AsObject();
+            var document = (JsonNode.Parse(File.ReadAllText(expectedFile)) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject();
             Assert.AreEqual("example:FromTurtle", document["@id"]?.ToString());
 
             var reloaded = new SchemaApi();
@@ -112,7 +113,7 @@ public class SparqlAndRdfConversionTests
 
             var generated = Directory
                 .EnumerateFiles(Path.Combine(output, "Split"), "*.jsonld", SearchOption.AllDirectories)
-                .Select(path => JsonNode.Parse(File.ReadAllText(path))!.AsObject())
+                .Select(path => (JsonNode.Parse(File.ReadAllText(path)) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject())
                 .Single(node => node["@id"]?.ToString() == "https://example.net/undeclared/Thing");
 
             Assert.AreEqual("rdfs:Class", generated["@type"]?.ToString(),
@@ -225,8 +226,8 @@ public class SparqlAndRdfConversionTests
         var contextPath = Directory.EnumerateFiles(source, "*context*.json*", SearchOption.TopDirectoryOnly)
             .OrderBy(path => path, StringComparer.OrdinalIgnoreCase)
             .First();
-        var contextRoot = JsonNode.Parse(File.ReadAllText(contextPath))!.AsObject();
-        var context = contextRoot["@context"]!.AsObject();
+        var contextRoot = (JsonNode.Parse(File.ReadAllText(contextPath)) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject();
+        var context = (contextRoot["@context"] ?? throw new InvalidOperationException("Expected @context.")).AsObject();
         var languageProperties = context
             .Where(entry => entry.Value is JsonObject definition &&
                 string.Equals(definition["@container"]?.ToString(), "@language", StringComparison.Ordinal))
@@ -235,9 +236,9 @@ public class SparqlAndRdfConversionTests
 
         var sourceMerged = Directory.EnumerateFiles(Path.Combine(source, "Merged"), "*.json*", SearchOption.TopDirectoryOnly).Single();
         var outputMerged = Directory.EnumerateFiles(Path.Combine(output, "Merged"), "*.json*", SearchOption.TopDirectoryOnly).Single();
-        var sourceGraph = JsonNode.Parse(File.ReadAllText(sourceMerged))!["@graph"]!.AsArray();
-        var outputGraph = JsonNode.Parse(File.ReadAllText(outputMerged))!["@graph"]!.AsArray();
-        var outputById = outputGraph.OfType<JsonObject>().ToDictionary(node => node["@id"]!.ToString(), StringComparer.Ordinal);
+        var sourceGraph = ((JsonNode.Parse(File.ReadAllText(sourceMerged)) ?? throw new InvalidOperationException("Expected valid JSON."))["@graph"] ?? throw new InvalidOperationException("Expected @graph.")).AsArray();
+        var outputGraph = ((JsonNode.Parse(File.ReadAllText(outputMerged)) ?? throw new InvalidOperationException("Expected valid JSON."))["@graph"] ?? throw new InvalidOperationException("Expected @graph.")).AsArray();
+        var outputById = outputGraph.OfType<JsonObject>().ToDictionary(node => (node["@id"] ?? throw new InvalidOperationException("Expected @id.")).ToString(), StringComparer.Ordinal);
 
         foreach (var sourceNode in sourceGraph.OfType<JsonObject>())
         {
@@ -262,9 +263,9 @@ public class SparqlAndRdfConversionTests
     {
         var sourceMerged = Directory.EnumerateFiles(Path.Combine(source, "Merged"), "*.json*", SearchOption.TopDirectoryOnly).Single();
         var outputMerged = Directory.EnumerateFiles(Path.Combine(output, "Merged"), "*.json*", SearchOption.TopDirectoryOnly).Single();
-        var sourceGraph = JsonNode.Parse(File.ReadAllText(sourceMerged))!["@graph"]!.AsArray();
-        var outputGraph = JsonNode.Parse(File.ReadAllText(outputMerged))!["@graph"]!.AsArray();
-        var outputById = outputGraph.OfType<JsonObject>().ToDictionary(node => node["@id"]!.ToString(), StringComparer.Ordinal);
+        var sourceGraph = ((JsonNode.Parse(File.ReadAllText(sourceMerged)) ?? throw new InvalidOperationException("Expected valid JSON."))["@graph"] ?? throw new InvalidOperationException("Expected @graph.")).AsArray();
+        var outputGraph = ((JsonNode.Parse(File.ReadAllText(outputMerged)) ?? throw new InvalidOperationException("Expected valid JSON."))["@graph"] ?? throw new InvalidOperationException("Expected @graph.")).AsArray();
+        var outputById = outputGraph.OfType<JsonObject>().ToDictionary(node => (node["@id"] ?? throw new InvalidOperationException("Expected @id.")).ToString(), StringComparer.Ordinal);
 
         foreach (var sourceNode in sourceGraph.OfType<JsonObject>())
         {
@@ -287,7 +288,7 @@ public class SparqlAndRdfConversionTests
 
                     if (sourceArray.Where(item => item != null).All(item => item is JsonValue))
                     {
-                        var outputArray = outputValue!.AsArray();
+                        var outputArray = (outputValue ?? throw new InvalidOperationException("Expected output value.")).AsArray();
                         Assert.IsTrue(outputArray.Where(item => item != null).All(item => item is JsonValue),
                             $"{id} property {property.Key} changed primitive values into JSON-LD value objects.");
                     }

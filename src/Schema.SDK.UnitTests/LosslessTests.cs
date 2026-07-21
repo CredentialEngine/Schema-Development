@@ -21,7 +21,8 @@ public class LosslessTests
         if (Directory.Exists(Output))
             Directory.Delete(Output, true);
     }
-    public TestContext TestContext { get; set; } = null!;
+
+    public TestContext TestContext { get; set; }
 
     [TestMethod]
     public void RoundTrip_Should_Be_ByteIdentical()
@@ -95,7 +96,7 @@ public class LosslessTests
             .First(f => Path.GetFileName(f) == "eg_p.jsonld");
 
         var json = File.ReadAllText(file);
-        var obj = JsonNode.Parse(json)!.AsObject();
+        var obj = (JsonNode.Parse(json) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject();
 
         Assert.IsTrue(obj["schema:domainIncludes"] != null);
     }
@@ -144,7 +145,7 @@ public class LosslessTests
             .First(f => Path.GetFileName(f) == "ex_c.jsonld");
 
         var json = File.ReadAllText(file);
-        var obj = JsonNode.Parse(json)!.AsObject();
+        var obj = (JsonNode.Parse(json) ?? throw new InvalidOperationException("Expected valid JSON object.")).AsObject();
 
         Assert.IsTrue(obj["vs:term_status"] == null);
 
@@ -242,7 +243,7 @@ public class LosslessTests
         var item = api.GetSchemaItem("ex:c");
 
         Assert.IsNotNull(item);
-        Assert.AreEqual("rdfs:Class", item["@type"]!.ToString());
+        Assert.AreEqual("rdfs:Class", (item["@type"] ?? throw new InvalidOperationException("Expected @type.")).ToString());
     }
 
     [TestMethod]
@@ -713,7 +714,7 @@ public class LosslessTests
 
         var item = api.GetSchemaItem("ex:c");
         Assert.IsNotNull(item);
-        Assert.AreEqual("rdfs:Class", item["@type"]!.ToString());
+        Assert.AreEqual("rdfs:Class", (item["@type"] ?? throw new InvalidOperationException("Expected @type.")).ToString());
     }
 
     [TestMethod]
@@ -742,7 +743,7 @@ public class LosslessTests
         var item = api.GetSchemaItem("ex:p");
 
         Assert.IsNotNull(item);
-        Assert.AreEqual("rdf:Property", item["@type"]!.ToString());
+        Assert.AreEqual("rdf:Property", (item["@type"] ?? throw new InvalidOperationException("Expected @type.")).ToString());
     }
 
     [TestMethod]
@@ -771,7 +772,7 @@ public class LosslessTests
         var item = api.GetSchemaItem("ex:concept");
 
         Assert.IsNotNull(item);
-        Assert.AreEqual("skos:Concept", item["@type"]!.ToString());
+        Assert.AreEqual("skos:Concept", (item["@type"] ?? throw new InvalidOperationException("Expected @type.")).ToString());
     }
 
     [TestMethod]
@@ -802,7 +803,7 @@ public class LosslessTests
         Assert.IsNotNull(item);
         Assert.AreEqual(
             "skos:ConceptScheme",
-            item["@type"]!.ToString());
+            (item["@type"] ?? throw new InvalidOperationException("Expected @type.")).ToString());
     }
 
     [TestMethod]
@@ -835,7 +836,7 @@ public class LosslessTests
         var item = api.GetSchemaItem("ex:c");
         Assert.AreEqual(
             "stable",
-            item!["vs:term_status"]!.ToString());
+            ((item ?? throw new InvalidOperationException("Expected schema item."))["vs:term_status"] ?? throw new InvalidOperationException("Expected vs:term_status.")).ToString());
     }
 
     [TestMethod]
@@ -857,7 +858,8 @@ public class LosslessTests
 
         var item = api.GetSchemaItem("ex:c");
 
-        Assert.IsNull(item!["vs:term_status"]);
+        var schemaItem = item ?? throw new InvalidOperationException("Expected schema item ex:c.");
+        Assert.IsNull(schemaItem["vs:term_status"]);
     }
 
     [TestMethod]
@@ -878,7 +880,8 @@ public class LosslessTests
 
         var item = api.GetSchemaItem("eg:p");
 
-        Assert.IsNotNull(item!["schema:domainIncludes"]);
+        var schemaItem = item ?? throw new InvalidOperationException("Expected schema item eg:p.");
+        Assert.IsNotNull(schemaItem["schema:domainIncludes"]);
     }
 
     [TestMethod]
@@ -901,7 +904,8 @@ public class LosslessTests
             "ex:c");
 
         var item = api.GetSchemaItem("eg:p");
-        if (item!["schema:domainIncludes"] is JsonArray arr)
+        var schemaItem = item ?? throw new InvalidOperationException("Expected schema item eg:p.");
+        if (schemaItem["schema:domainIncludes"] is JsonArray arr)
             Assert.AreEqual(0, arr.Count);
     }
 
@@ -924,7 +928,7 @@ public class LosslessTests
 
         Assert.AreEqual(
             "Test",
-            item!["rdfs:label"]!["en"]!.ToString());
+            (((item ?? throw new InvalidOperationException("Expected schema item."))["rdfs:label"] ?? throw new InvalidOperationException("Expected rdfs:label."))["en"] ?? throw new InvalidOperationException("Expected English label.")).ToString());
     }
 
     [TestMethod]
@@ -944,7 +948,7 @@ public class LosslessTests
 
         Assert.AreEqual(
             "https://example.org/updated",
-            result!.ToString());
+            (result ?? throw new InvalidOperationException("Expected a result.")).ToString());
     }
 
     [TestMethod]
@@ -973,11 +977,11 @@ public class LosslessTests
             "@container",
             "@language");
 
-        var obj = api.GetContextTerm("name")!.AsObject();
+        var obj = (api.GetContextTerm("name") ?? throw new InvalidOperationException("Expected context term name.")).AsObject();
 
         Assert.AreEqual(
             "@language",
-            obj["@container"]!.ToString());
+            (obj["@container"] ?? throw new InvalidOperationException("Expected @container.")).ToString());
     }
 
     [TestMethod]
@@ -994,7 +998,7 @@ public class LosslessTests
             "name",
             "@container");
 
-        var obj = api.GetContextTerm("name")!.AsObject();
+        var obj = (api.GetContextTerm("name") ?? throw new InvalidOperationException("Expected context term name.")).AsObject();
 
         Assert.IsNull(obj["@container"]);
     }
@@ -1025,6 +1029,6 @@ public class LosslessTests
 
         Assert.AreEqual(
             "stable",
-            item!["vs:term_status"]!.ToString());
+            ((item ?? throw new InvalidOperationException("Expected schema item."))["vs:term_status"] ?? throw new InvalidOperationException("Expected vs:term_status.")).ToString());
     }
 }
