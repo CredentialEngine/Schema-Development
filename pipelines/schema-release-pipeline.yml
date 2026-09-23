@@ -154,8 +154,6 @@ stages:
       TrustedSigningAccount: '$(ARTIFACT_SIGNING_RESOURCE_NAME)'
       TrustedSigningProfile: '$(CERTIFICATE_PROFILE_NAME)'
 
-      GITHUB_SERVICE_CONNECTION: 'github.com_CredentialEngine'
-
     steps:
 
     - checkout: self
@@ -328,7 +326,7 @@ stages:
     - task: GitHubRelease@1
       displayName: 'Create GitHub release'
       inputs:
-        gitHubConnection: '$(GITHUB_SERVICE_CONNECTION)'
+        gitHubConnection: 'github.com_CredentialEngine'
         repositoryName: 'CredentialEngine/Schema-Development'
         action: create
         target: '$(Build.SourceVersion)'
