@@ -21,7 +21,6 @@ stages:
       BuildConfiguration: 'Debug'
       BuildPlatform: 'x64'
       DotNetVersion: '10.0.203'
-      GITHUB_SERVICE_CONNECTION: 'github.com_CredentialEngine'
 
     steps:
 
@@ -154,6 +153,8 @@ stages:
       TrustedSigningEndpoint: '$(ARTIFACT_SIGNING_ENDPOINT)'
       TrustedSigningAccount: '$(ARTIFACT_SIGNING_RESOURCE_NAME)'
       TrustedSigningProfile: '$(CERTIFICATE_PROFILE_NAME)'
+
+      GITHUB_SERVICE_CONNECTION: 'github.com_CredentialEngine'
 
     steps:
 
