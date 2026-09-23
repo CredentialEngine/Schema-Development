@@ -94,6 +94,31 @@ stages:
           --no-build
           -p:Version=$(VersionNumber)
 
+    - task: ArchiveFiles@2
+      displayName: 'Package Schema.zip'
+      inputs:
+        rootFolderOrFile: '$(Build.SourcesDirectory)/src/Schema'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: '$(Build.ArtifactStagingDirectory)/schema/Schema.$(VersionNumber).zip'
+        replaceExistingArchive: true
+
+    - task: PowerShell@2
+      displayName: 'Write schema package metadata'
+      inputs:
+        targetType: inline
+        script: |
+          $schemaDirectory = "$(Build.ArtifactStagingDirectory)/schema"
+          $schemaZip = Join-Path $schemaDirectory "Schema.$(VersionNumber).zip"
+          $hash = (Get-FileHash -Path $schemaZip -Algorithm SHA256).Hash.ToLowerInvariant()
+
+          Set-Content -Path (Join-Path $schemaDirectory "Schema.version.txt") -Value "$(VersionNumber)"
+          Set-Content -Path (Join-Path $schemaDirectory "Schema.$(VersionNumber).zip.sha256") -Value "$hash  Schema.$(VersionNumber).zip"
+
+          Write-Host "Schema package: $schemaZip"
+          Write-Host "Schema version: $(VersionNumber)"
+          Write-Host "Schema SHA256: $hash"
+
     - task: CopyFiles@2
       displayName: 'Stage binaries for signing'
       inputs:
@@ -217,13 +242,109 @@ stages:
         versioningScheme: 'byEnvVar'
         versionEnvVar: 'VersionNumber'
 
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish signed Schema.CLI'
+      inputs:
+        command: publish
+        publishWebProjects: false
+        projects: 'src/Schema.CLI/Schema.CLI.csproj'
+        arguments: >
+          --configuration $(BuildConfiguration)
+          --output $(Build.ArtifactStagingDirectory)/publish/Schema.CLI
+          --no-build
+          -p:Version=$(VersionNumber)
+
+    - task: ArchiveFiles@2
+      displayName: 'Package Schema.CLI.zip'
+      inputs:
+        rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/publish/Schema.CLI'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: '$(Build.ArtifactStagingDirectory)/release-assets/Schema.CLI.$(VersionNumber).zip'
+        replaceExistingArchive: true
+
+    - task: ArchiveFiles@2
+      displayName: 'Package Schema.zip'
+      inputs:
+        rootFolderOrFile: '$(Build.SourcesDirectory)/src/Schema'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: '$(Build.ArtifactStagingDirectory)/release-assets/Schema.$(VersionNumber).zip'
+        replaceExistingArchive: true
+
+    - task: PowerShell@2
+      displayName: 'Stage release assets'
+      inputs:
+        targetType: inline
+        script: |
+          $releaseDirectory = "$(Build.ArtifactStagingDirectory)/release-assets"
+          New-Item -ItemType Directory -Force -Path $releaseDirectory | Out-Null
+
+          $sdkPackage = Get-ChildItem "$(Build.ArtifactStagingDirectory)/nuget/*.nupkg" |
+            Where-Object { $_.Name -notlike "*.symbols.nupkg" } |
+            Select-Object -First 1
+
+          if (-not $sdkPackage) {
+            throw "Schema.SDK NuGet package was not found."
+          }
+
+          Copy-Item $sdkPackage.FullName (Join-Path $releaseDirectory $sdkPackage.Name) -Force
+
+          $schemaZip = Join-Path $releaseDirectory "Schema.$(VersionNumber).zip"
+          $cliZip = Join-Path $releaseDirectory "Schema.CLI.$(VersionNumber).zip"
+          $sdkReleasePackage = Join-Path $releaseDirectory $sdkPackage.Name
+
+          foreach ($asset in @($schemaZip, $cliZip, $sdkReleasePackage)) {
+            if (-not (Test-Path $asset)) {
+              throw "Release asset was not found: $asset"
+            }
+            $hash = (Get-FileHash -Path $asset -Algorithm SHA256).Hash.ToLowerInvariant()
+            Write-Host "Release asset: $asset"
+            Write-Host "SHA256: $hash"
+          }
+
+          Set-Content -Path (Join-Path $releaseDirectory "release.version.txt") -Value "$(VersionNumber)"
+
+    - task: PublishPipelineArtifact@1
+      displayName: 'Publish release assets'
+      inputs:
+        targetPath: '$(Build.ArtifactStagingDirectory)/release-assets'
+        artifact: 'release-assets'
+        publishLocation: pipeline
+
     - task: NuGetAuthenticate@1
       displayName: 'Authenticate NuGet'
 
     - task: DotNetCoreCLI@2
-      displayName: 'Push package'
+      displayName: 'Push Schema.SDK NuGet package'
       inputs:
         command: push
         packagesToPush: '$(Build.ArtifactStagingDirectory)/nuget/*.nupkg'
         nuGetFeedType: internal
         publishVstsFeed: 'credential-engine'
+
+    - task: GitHubRelease@1
+      displayName: 'Create GitHub release'
+      inputs:
+        gitHubConnection: 'github.com_CredentialEngine'
+        repositoryName: 'CredentialEngine/Schema-Development'
+        action: create
+        target: '$(Build.SourceVersion)'
+        tagSource: userSpecifiedTag
+        tag: 'v$(VersionNumber)'
+        title: 'Schema Development v$(VersionNumber)'
+        releaseNotesSource: inline
+        releaseNotesInline: |
+          Schema Development release $(VersionNumber).
+
+          Assets:
+          - Schema.$(VersionNumber).zip - complete src/Schema tree
+          - Schema.CLI.$(VersionNumber).zip - signed Schema CLI publish output
+          - CTDL.Schema.SDK $(VersionNumber) - Schema SDK NuGet package
+        assets: |
+          $(Build.ArtifactStagingDirectory)/release-assets/Schema.$(VersionNumber).zip
+          $(Build.ArtifactStagingDirectory)/release-assets/Schema.CLI.$(VersionNumber).zip
+          $(Build.ArtifactStagingDirectory)/release-assets/CTDL.Schema.SDK.$(VersionNumber).nupkg
+        isDraft: false
+        isPreRelease: false
+        addChangeLog: true

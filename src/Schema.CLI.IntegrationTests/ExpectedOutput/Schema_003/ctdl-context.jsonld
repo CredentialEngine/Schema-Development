@@ -1,5 +1,5 @@
 {
-    "@context": {
-        "ceterms": "https://purl.org/ctdl/terms/"
-    }
+  "@context": {
+    "ceterms": "https://purl.org/ctdl/terms/"
+  }
 }

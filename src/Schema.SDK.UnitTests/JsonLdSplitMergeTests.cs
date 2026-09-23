@@ -7,7 +7,7 @@ namespace Schema.SDK.UnitTests;
 public class JsonLdSplitMergeTests
 {
     private static readonly string TestRoot = AppContext.BaseDirectory;
-    private static readonly string InputFile = Path.Combine(TestRoot, "Schema/Merged/ctdl-schema.jsonld");
+    private static readonly string InputFile = Path.Combine(TestRoot, "Schema", "ctdl", "Merged", "ctdl-schema.jsonld");
     private static readonly string SplitDir = Path.Combine(TestRoot, "Out/Split");
     private static readonly string MergedDir = Path.Combine(TestRoot, "Out/Merged");
     private static readonly string MergedFile = Path.Combine(TestRoot, "Out/Merged/ctdl-schema.jsonld");
