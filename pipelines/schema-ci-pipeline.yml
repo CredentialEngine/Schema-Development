@@ -20,7 +20,7 @@ stages:
     variables:
       BuildConfiguration: 'Debug'
       BuildPlatform: 'x64'
-      DotNetVersion: '10.0.203'
+      DotNetVersion: '10.x'
 
     steps:
 
@@ -100,7 +100,7 @@ stages:
         rootFolderOrFile: '$(Build.SourcesDirectory)/src/Schema'
         includeRootFolder: false
         archiveType: zip
-        archiveFile: '$(Build.ArtifactStagingDirectory)/schema/Schema.zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/schema/Schema.$(VersionNumber).zip'
         replaceExistingArchive: true
 
     - task: PowerShell@2
@@ -109,11 +109,11 @@ stages:
         targetType: inline
         script: |
           $schemaDirectory = "$(Build.ArtifactStagingDirectory)/schema"
-          $schemaZip = Join-Path $schemaDirectory "Schema.zip"
+          $schemaZip = Join-Path $schemaDirectory "Schema.$(VersionNumber).zip"
           $hash = (Get-FileHash -Path $schemaZip -Algorithm SHA256).Hash.ToLowerInvariant()
 
           Set-Content -Path (Join-Path $schemaDirectory "Schema.version.txt") -Value "$(VersionNumber)"
-          Set-Content -Path (Join-Path $schemaDirectory "Schema.zip.sha256") -Value "$hash  Schema.zip"
+          Set-Content -Path (Join-Path $schemaDirectory "Schema.$(VersionNumber).zip.sha256") -Value "$hash  Schema.$(VersionNumber).zip"
 
           Write-Host "Schema package: $schemaZip"
           Write-Host "Schema version: $(VersionNumber)"

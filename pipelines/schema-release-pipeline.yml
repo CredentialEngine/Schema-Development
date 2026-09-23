@@ -20,7 +20,7 @@ stages:
     variables:
       BuildConfiguration: 'Debug'
       BuildPlatform: 'x64'
-      DotNetVersion: '10.0.203'
+      DotNetVersion: '10.x'
 
     steps:
 
@@ -148,7 +148,7 @@ stages:
 
     variables:
       BuildConfiguration: 'Release'
-      DotNetVersion: '10.0.203'
+      DotNetVersion: '10.x'
 
       TrustedSigningEndpoint: '$(ARTIFACT_SIGNING_ENDPOINT)'
       TrustedSigningAccount: '$(ARTIFACT_SIGNING_RESOURCE_NAME)'
@@ -288,22 +288,57 @@ stages:
             throw "Schema.SDK NuGet package was not found."
           }
 
-          Copy-Item $sdkPackage.FullName (Join-Path $releaseDirectory $sdkPackage.Name) -Force
+          $sdkReleasePackage = Join-Path $releaseDirectory $sdkPackage.Name
+          Copy-Item $sdkPackage.FullName $sdkReleasePackage -Force
 
           $schemaZip = Join-Path $releaseDirectory "Schema.$(VersionNumber).zip"
           $cliZip = Join-Path $releaseDirectory "Schema.CLI.$(VersionNumber).zip"
-          $sdkReleasePackage = Join-Path $releaseDirectory $sdkPackage.Name
 
           foreach ($asset in @($schemaZip, $cliZip, $sdkReleasePackage)) {
             if (-not (Test-Path $asset)) {
               throw "Release asset was not found: $asset"
             }
+
             $hash = (Get-FileHash -Path $asset -Algorithm SHA256).Hash.ToLowerInvariant()
             Write-Host "Release asset: $asset"
             Write-Host "SHA256: $hash"
           }
 
+          Write-Host "Release assets staged for GitHub:"
+          Get-ChildItem $releaseDirectory |
+            Select-Object Name, Length |
+            Format-Table -AutoSize
+
           Set-Content -Path (Join-Path $releaseDirectory "release.version.txt") -Value "$(VersionNumber)"
+
+    - task: PowerShell@2
+      displayName: 'Verify GitHub release assets'
+      inputs:
+        targetType: inline
+        script: |
+          $releaseDirectory = "$(Build.ArtifactStagingDirectory)/release-assets"
+
+          $schemaZip = Join-Path $releaseDirectory "Schema.$(VersionNumber).zip"
+          $cliZip = Join-Path $releaseDirectory "Schema.CLI.$(VersionNumber).zip"
+          $sdkPackage = Get-ChildItem "$releaseDirectory/*.nupkg" |
+            Where-Object { $_.Name -notlike "*.symbols.nupkg" } |
+            Select-Object -First 1
+
+          if (-not (Test-Path $schemaZip)) {
+            throw "Missing GitHub release asset: $schemaZip"
+          }
+
+          if (-not (Test-Path $cliZip)) {
+            throw "Missing GitHub release asset: $cliZip"
+          }
+
+          if (-not $sdkPackage) {
+            throw "Missing GitHub release NuGet asset in $releaseDirectory"
+          }
+
+          Write-Host "Schema asset: $schemaZip"
+          Write-Host "CLI asset: $cliZip"
+          Write-Host "SDK asset: $($sdkPackage.FullName)"
 
     - task: PublishPipelineArtifact@1
       displayName: 'Publish release assets'
@@ -340,11 +375,11 @@ stages:
           Assets:
           - Schema.$(VersionNumber).zip - complete src/Schema tree
           - Schema.CLI.$(VersionNumber).zip - signed Schema CLI publish output
-          - CTDL.Schema.SDK $(VersionNumber) - Schema SDK NuGet package
+          - Schema.SDK - Schema SDK NuGet package
         assets: |
           $(Build.ArtifactStagingDirectory)/release-assets/Schema.$(VersionNumber).zip
           $(Build.ArtifactStagingDirectory)/release-assets/Schema.CLI.$(VersionNumber).zip
-          $(Build.ArtifactStagingDirectory)/release-assets/CTDL.Schema.SDK.$(VersionNumber).nupkg
+          $(Build.ArtifactStagingDirectory)/release-assets/*.nupkg
         isDraft: false
         isPreRelease: false
         addChangeLog: true
