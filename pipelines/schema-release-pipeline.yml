@@ -21,6 +21,7 @@ stages:
       BuildConfiguration: 'Debug'
       BuildPlatform: 'x64'
       DotNetVersion: '10.0.203'
+      GITHUB_SERVICE_CONNECTION: 'github.com_CredentialEngine'
 
     steps:
 
