@@ -834,10 +834,10 @@ public class SchemaApi
     }
 
     /// <summary>
-    /// Get properties that have the provided class in their rangeIncludes.
+    /// Get direct subclasses of the provided class term.
     /// </summary>
     /// <param name="classIdOrTerm">Class term or id to search for.</param>
-    /// <returns>Enumeration of property terms whose range includes the class.</returns>
+    /// <returns>Enumeration of subclass terms.</returns>
     public IEnumerable<string> GetSubClasses(string classIdOrTerm)
     {
         var classTerm = classIdOrTerm;
