@@ -1,4 +1,4 @@
 {
-    "@context": "https://credreg.net/ctdl/schema/context/json",
-    "@graph": []
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@graph": []
 }

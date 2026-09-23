@@ -27,12 +27,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="cache/credreg.net/ctdl/schema/context/json.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="Schema/**">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
+		<None Include="../Schema/**/*">
+			<TargetPath>Schema/%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
         <None Update="schema_shape.ttl">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
