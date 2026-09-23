@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using System.Text.Json;
 using Schema.SDK;
 
@@ -64,16 +63,13 @@ public class SchemaClassHierarchyTests
         return SchemaClassHierarchy.LoadFromFolder(GetRepositorySchemaRoot());
     }
 
-    private static string GetRepositorySchemaRoot([CallerFilePath] string sourceFile = "")
+    private static string GetRepositorySchemaRoot()
     {
-        var testProjectFolder = Path.GetDirectoryName(sourceFile)
-            ?? throw new InvalidOperationException("Unable to determine the unit test project folder.");
-        var repositoryRoot = Directory.GetParent(testProjectFolder)?.FullName
-            ?? throw new InvalidOperationException("Unable to determine the repository root folder.");
-        var schemaRoot = Path.Combine(repositoryRoot, "Schema");
+        var schemaRoot = Path.Combine(AppContext.BaseDirectory, "Schema");
 
         if (!Directory.Exists(schemaRoot))
-            throw new DirectoryNotFoundException($"Repository Schema folder was not found: {schemaRoot}");
+            throw new DirectoryNotFoundException(
+                $"Test Schema folder was not found: {schemaRoot}");
 
         return schemaRoot;
     }
