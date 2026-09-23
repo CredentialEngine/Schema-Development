@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -41,7 +41,7 @@ public class SchemaApi
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
         WriteIndented = true,
-        IndentSize = 4,
+        IndentSize = 2,
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
         NewLine = "\n"
     };
@@ -834,10 +834,10 @@ public class SchemaApi
     }
 
     /// <summary>
-    /// Get direct subclasses of the provided class term.
+    /// Get properties that have the provided class in their rangeIncludes.
     /// </summary>
     /// <param name="classIdOrTerm">Class term or id to search for.</param>
-    /// <returns>Enumeration of subclass terms.</returns>
+    /// <returns>Enumeration of property terms whose range includes the class.</returns>
     public IEnumerable<string> GetSubClasses(string classIdOrTerm)
     {
         var classTerm = classIdOrTerm;
@@ -1550,12 +1550,12 @@ public class SchemaApi
                 .IndexOf("context", StringComparison.OrdinalIgnoreCase) >= 0)
             .ToList();
 
-        if (candidates.Count == 0)
-            throw new FileNotFoundException(
-                "No JSON or JSON-LD context file was found in the schema folder.",
-                folder);
+		if (candidates.Count == 0)
+			throw new FileNotFoundException(
+				"No JSON or JSON-LD context file was found in the schema folder.",
+				folder);
 
-        var groups = candidates
+		var groups = candidates
             .GroupBy(
                 path => Path.GetFileNameWithoutExtension(path),
                 StringComparer.OrdinalIgnoreCase)
@@ -1720,17 +1720,11 @@ public class SchemaApi
             "Schema files have not been configured. Load a schema folder first.");
     }
 
-    private JsonNode RequireSchemaContext()
-    {
-        return _schemaContext ?? throw new InvalidOperationException(
-            "Schema context has not been configured. Load a schema folder first.");
-    }
-
     private void LoadContextFile(string folder)
     {
-        var contextPath = Path.Combine(folder, RequireContextFileName());
+		var contextPath = Path.Combine(folder, RequireContextFileName());
 
-        if (!File.Exists(contextPath))
+		if (!File.Exists(contextPath))
             return;
 
         var contextDoc = ParseObjectFile(contextPath);

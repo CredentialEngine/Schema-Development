@@ -1,8 +1,8 @@
 {
-    "@context": {
-        "ceterms": "https://purl.org/ctdl/terms/",
-        "ceterms:TestProperty": {
-            "@type": "xsd:string"
-        }
+  "@context": {
+    "ceterms": "https://purl.org/ctdl/terms/",
+    "ceterms:TestProperty": {
+      "@type": "xsd:string"
     }
+  }
 }

@@ -94,6 +94,31 @@ stages:
           --no-build
           -p:Version=$(VersionNumber)
 
+    - task: ArchiveFiles@2
+      displayName: 'Package Schema.zip'
+      inputs:
+        rootFolderOrFile: '$(Build.SourcesDirectory)/src/Schema'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: '$(Build.ArtifactStagingDirectory)/schema/Schema.zip'
+        replaceExistingArchive: true
+
+    - task: PowerShell@2
+      displayName: 'Write schema package metadata'
+      inputs:
+        targetType: inline
+        script: |
+          $schemaDirectory = "$(Build.ArtifactStagingDirectory)/schema"
+          $schemaZip = Join-Path $schemaDirectory "Schema.zip"
+          $hash = (Get-FileHash -Path $schemaZip -Algorithm SHA256).Hash.ToLowerInvariant()
+
+          Set-Content -Path (Join-Path $schemaDirectory "Schema.version.txt") -Value "$(VersionNumber)"
+          Set-Content -Path (Join-Path $schemaDirectory "Schema.zip.sha256") -Value "$hash  Schema.zip"
+
+          Write-Host "Schema package: $schemaZip"
+          Write-Host "Schema version: $(VersionNumber)"
+          Write-Host "Schema SHA256: $hash"
+
     - task: CopyFiles@2
       displayName: 'Stage binaries for signing'
       inputs:

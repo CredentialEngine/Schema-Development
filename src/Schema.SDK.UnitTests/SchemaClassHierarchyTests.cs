@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 using Schema.SDK;
 
@@ -6,8 +7,6 @@ namespace Schema.SDK.UnitTests;
 [TestClass]
 public class SchemaClassHierarchyTests
 {
-    private static readonly string Input = Path.Combine(AppContext.BaseDirectory, "Schema");
-
     [TestMethod]
     public void GetTopLevelClass_AssociateDegree_ReturnsCredential()
     {
@@ -19,13 +18,13 @@ public class SchemaClassHierarchyTests
     }
 
     [TestMethod]
-    public void GetTopLevelClass_Credential_ReturnsCredential()
+    public void GetTopLevelClass_UsesAllSchemasUnderSchemaRoot()
     {
         var hierarchy = CreateHierarchy();
 
-        var result = hierarchy.GetTopLevelClass("ceterms:Credential");
-
-        Assert.AreEqual("ceterms:Credential", result);
+        Assert.AreEqual("ceterms:Credential", hierarchy.GetTopLevelClass("ceterms:AssociateDegree"));
+        Assert.AreEqual("ceasn:Competency", hierarchy.GetTopLevelClass("ceasn:Competency"));
+        Assert.AreEqual("qdata:DataSetProfile", hierarchy.GetTopLevelClass("qdata:DataSetProfile"));
     }
 
     [TestMethod]
@@ -41,17 +40,17 @@ public class SchemaClassHierarchyTests
     }
 
     [TestMethod]
-    public void GetTopLevelClassMap_ReturnsAllLoadedClasses()
+    public void GetTopLevelClassMap_ReturnsClassesFromAllSchemas()
     {
-        var api = CreateApi();
-        var hierarchy = new SchemaClassHierarchy(api);
+        var hierarchy = CreateHierarchy();
 
         var result = hierarchy.GetTopLevelClassMap();
 
-        Assert.AreEqual(api.GetAllClasses().Count(), result.Count);
         Assert.AreEqual("ceterms:Credential", result["ceterms:AssociateDegree"]);
         Assert.AreEqual("ceterms:Credential", result["ceterms:BachelorDegree"]);
         Assert.AreEqual("ceterms:Credential", result["ceterms:MasterDegree"]);
+        Assert.AreEqual("ceasn:Competency", result["ceasn:Competency"]);
+        Assert.AreEqual("qdata:DataSetProfile", result["qdata:DataSetProfile"]);
 
         TestContext.WriteLine(JsonSerializer.Serialize(
             result,
@@ -62,13 +61,20 @@ public class SchemaClassHierarchyTests
 
     private static SchemaClassHierarchy CreateHierarchy()
     {
-        return new SchemaClassHierarchy(CreateApi());
+        return SchemaClassHierarchy.LoadFromFolder(GetRepositorySchemaRoot());
     }
 
-    private static SchemaApi CreateApi()
+    private static string GetRepositorySchemaRoot([CallerFilePath] string sourceFile = "")
     {
-        var api = new SchemaApi();
-        api.LoadFromFolder(Input);
-        return api;
+        var testProjectFolder = Path.GetDirectoryName(sourceFile)
+            ?? throw new InvalidOperationException("Unable to determine the unit test project folder.");
+        var repositoryRoot = Directory.GetParent(testProjectFolder)?.FullName
+            ?? throw new InvalidOperationException("Unable to determine the repository root folder.");
+        var schemaRoot = Path.Combine(repositoryRoot, "Schema");
+
+        if (!Directory.Exists(schemaRoot))
+            throw new DirectoryNotFoundException($"Repository Schema folder was not found: {schemaRoot}");
+
+        return schemaRoot;
     }
 }
