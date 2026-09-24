@@ -1,5 +1,5 @@
 {
-    "@context": "https://credreg.net/ctdl/schema/context/json",
-    "@id": "ceterms:TestConceptScheme",
-    "@type": "skos:ConceptScheme"
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@id": "ceterms:TestConceptScheme",
+  "@type": "skos:ConceptScheme"
 }

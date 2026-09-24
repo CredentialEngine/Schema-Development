@@ -13,7 +13,7 @@ public class JsonLdGraphSplitter
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         WriteIndented = true,
-        IndentSize = 4,
+        IndentSize = 2,
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
         NewLine = "\n"
     };

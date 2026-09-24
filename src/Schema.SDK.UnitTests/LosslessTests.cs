@@ -10,7 +10,7 @@ public class LosslessTests
     private static readonly string TestRoot =
     AppContext.BaseDirectory;
 
-    private static readonly string Input = Path.Combine(TestRoot, "Schema");
+    private static readonly string Input = Path.Combine(TestRoot, "Schema", "ctdl");
 
     private static readonly string Output =
         Path.Combine(TestRoot, "Out");

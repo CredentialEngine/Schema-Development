@@ -11,7 +11,7 @@
 
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 
-		<PackageId>CTDL.Schema.SDK</PackageId>
+		<PackageId>Schema.SDK</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Credential Engine</Authors>
 		<Company>Credential Engine</Company>
