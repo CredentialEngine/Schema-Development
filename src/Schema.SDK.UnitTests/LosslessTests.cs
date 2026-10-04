@@ -1045,114 +1045,146 @@ public class LosslessTests
         "qdata",
         "qdata:DataSetProfile",
         "Particular characteristics or properties of a data set and its records.")]
-    public void GetClassDescription_ReturnsSchemaComment(
+    public void GetRdfsComment_ReturnsClassComment(
         string schemaName,
         string classTerm,
-        string expectedDescription)
+        string expectedComment)
     {
         var api = LoadSchema(schemaName);
 
-        var description = api.GetClassDescription(classTerm);
+        var comment = api.GetRdfsComment(classTerm);
 
-        Assert.AreEqual(expectedDescription, description);
+        Assert.AreEqual(expectedComment, comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_MatchesLanguageTagCaseInsensitively()
+    public void GetRdfsComment_ReturnsPropertyComment()
     {
         var api = LoadSchema("ctdl");
 
-        var description = api.GetClassDescription("ceterms:Credential", "EN-us");
+        var comment = api.GetRdfsComment("ceterms:evidenceOfAction");
+
+        Assert.AreEqual(
+            "Entity that proves that the action occurred or that the action continues to be valid.",
+            comment);
+    }
+
+    [TestMethod]
+    public void GetRdfsComment_ReturnsConceptSchemeComment()
+    {
+        var api = LoadSchema("ctdl");
+
+        var comment = api.GetRdfsComment("ceterms:Audience");
+
+        Assert.AreEqual(
+            "Types of audiences for which the resource being described is applicable or available.",
+            comment);
+    }
+
+    [TestMethod]
+    public void GetRdfsComment_ReturnsConceptComment()
+    {
+        var api = new SchemaApi();
+        api.CreateNamespace("ex", "https://example.org/");
+        api.CreateConcept("ex:Concept");
+        var item = api.GetSchemaItem("ex:Concept")
+            ?? throw new InvalidOperationException("Expected the created concept.");
+        item["rdfs:comment"] = new JsonObject
+        {
+            ["en-US"] = "A concept comment."
+        };
+
+        var comment = api.GetRdfsComment("ex:Concept");
+
+        Assert.AreEqual("A concept comment.", comment);
+    }
+
+    [TestMethod]
+    public void GetRdfsComment_MatchesLanguageTagCaseInsensitively()
+    {
+        var api = LoadSchema("ctdl");
+
+        var comment = api.GetRdfsComment("ceterms:Credential", "EN-us");
 
         Assert.AreEqual(
             "Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.",
-            description);
+            comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_ReturnsEmpty_WhenRequestedLanguageIsMissing()
+    public void GetRdfsComment_ReturnsEmpty_WhenRequestedLanguageIsMissing()
     {
         var api = LoadSchema("ctdl");
 
-        var description = api.GetClassDescription("ceterms:Credential", "fr");
+        var comment = api.GetRdfsComment("ceterms:Credential", "fr");
 
-        Assert.AreEqual(string.Empty, description);
+        Assert.AreEqual(string.Empty, comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_ReturnsEmpty_WhenClassHasNoDescription()
+    public void GetRdfsComment_ReturnsEmpty_WhenSchemaItemHasNoComment()
     {
         var api = new SchemaApi();
         api.CreateNamespace("ex", "https://example.org/");
         api.CreateClass("ex:Thing");
 
-        var description = api.GetClassDescription("ex:Thing");
+        var comment = api.GetRdfsComment("ex:Thing");
 
-        Assert.AreEqual(string.Empty, description);
+        Assert.AreEqual(string.Empty, comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_ReturnsEmpty_WhenClassDoesNotExist()
+    public void GetRdfsComment_ReturnsEmpty_WhenSchemaItemDoesNotExist()
     {
         var api = LoadSchema("ctdl");
 
-        var description = api.GetClassDescription("ceterms:NotARealClass");
+        var comment = api.GetRdfsComment("ceterms:NotARealTerm");
 
-        Assert.AreEqual(string.Empty, description);
+        Assert.AreEqual(string.Empty, comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_ReturnsEmpty_WhenSchemaItemIsNotAClass()
+    public void GetRdfsComment_AcceptsAbsoluteUri()
     {
         var api = LoadSchema("ctdl");
 
-        var description = api.GetClassDescription("ceterms:description");
-
-        Assert.AreEqual(string.Empty, description);
-    }
-
-    [TestMethod]
-    public void GetClassDescription_AcceptsAbsoluteClassUri()
-    {
-        var api = LoadSchema("ctdl");
-
-        var description = api.GetClassDescription(
+        var comment = api.GetRdfsComment(
             "https://purl.org/ctdl/terms/Credential");
 
         Assert.AreEqual(
             "Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.",
-            description);
+            comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_ReadsPlainStringComment()
+    public void GetRdfsComment_ReadsPlainStringComment()
     {
         var api = new SchemaApi();
         api.CreateNamespace("ex", "https://example.org/");
         api.CreateClass("ex:Thing");
         var item = api.GetSchemaItem("ex:Thing")
             ?? throw new InvalidOperationException("Expected the created class.");
-        item["rdfs:comment"] = "A plain description.";
+        item["rdfs:comment"] = "A plain comment.";
 
-        var description = api.GetClassDescription("ex:Thing");
+        var comment = api.GetRdfsComment("ex:Thing");
 
-        Assert.AreEqual("A plain description.", description);
+        Assert.AreEqual("A plain comment.", comment);
     }
 
     [TestMethod]
-    public void GetClassDescription_Throws_WhenClassNameIsBlank()
+    public void GetRdfsComment_Throws_WhenSchemaItemNameIsBlank()
     {
         var api = new SchemaApi();
 
-        Assert.ThrowsExactly<ArgumentException>(() => api.GetClassDescription(" "));
+        Assert.ThrowsExactly<ArgumentException>(() => api.GetRdfsComment(" "));
     }
 
     [TestMethod]
-    public void GetClassDescription_Throws_WhenLanguageIsBlank()
+    public void GetRdfsComment_Throws_WhenLanguageIsBlank()
     {
         var api = new SchemaApi();
 
-        Assert.ThrowsExactly<ArgumentException>(() => api.GetClassDescription("ceterms:Credential", " "));
+        Assert.ThrowsExactly<ArgumentException>(() => api.GetRdfsComment("ceterms:Credential", " "));
     }
 
     private static SchemaApi LoadSchema(string schemaName)

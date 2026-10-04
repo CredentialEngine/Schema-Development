@@ -737,24 +737,24 @@ public class SchemaApi
     }
 
     /// <summary>
-    /// Gets the localized <c>rdfs:comment</c> for a schema class.
+    /// Gets the localized <c>rdfs:comment</c> for a schema item.
     /// </summary>
-    /// <param name="classIdOrTerm">The class term, CURIE, or absolute URI.</param>
+    /// <param name="idOrTerm">The schema item term, CURIE, or absolute URI.</param>
     /// <param name="language">The requested language tag. Defaults to <c>en-US</c>.</param>
     /// <returns>
-    /// The class description when the class exists and has a value for the requested language;
+    /// The <c>rdfs:comment</c> value for the requested language when available;
     /// otherwise <see cref="string.Empty"/>.
     /// </returns>
-    public string GetClassDescription(string classIdOrTerm, string language = "en-US")
+    public string GetRdfsComment(string idOrTerm, string language = "en-US")
     {
-        if (string.IsNullOrWhiteSpace(classIdOrTerm))
-            throw new ArgumentException("A class term or id is required.", nameof(classIdOrTerm));
+        if (string.IsNullOrWhiteSpace(idOrTerm))
+            throw new ArgumentException("A schema item term or id is required.", nameof(idOrTerm));
 
         if (string.IsNullOrWhiteSpace(language))
             throw new ArgumentException("A language tag is required.", nameof(language));
 
-        var item = FindSchemaItem(classIdOrTerm);
-        if (item == null || !HasType(item, RDFS_CLASS_TERM, RDFS_CLASS))
+        var item = FindSchemaItem(idOrTerm);
+        if (item == null)
             return string.Empty;
 
         var comment = item["rdfs:comment"];
