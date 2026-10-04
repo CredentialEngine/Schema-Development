@@ -736,6 +736,59 @@ public class SchemaApi
         return _docs.TryGetValue(term, out var o) ? o : default;
     }
 
+    /// <summary>
+    /// Gets the localized <c>rdfs:comment</c> for a schema class.
+    /// </summary>
+    /// <param name="classIdOrTerm">The class term, CURIE, or absolute URI.</param>
+    /// <param name="language">The requested language tag. Defaults to <c>en-US</c>.</param>
+    /// <returns>
+    /// The class description when the class exists and has a value for the requested language;
+    /// otherwise <see cref="string.Empty"/>.
+    /// </returns>
+    public string GetClassDescription(string classIdOrTerm, string language = "en-US")
+    {
+        if (string.IsNullOrWhiteSpace(classIdOrTerm))
+            throw new ArgumentException("A class term or id is required.", nameof(classIdOrTerm));
+
+        if (string.IsNullOrWhiteSpace(language))
+            throw new ArgumentException("A language tag is required.", nameof(language));
+
+        var item = FindSchemaItem(classIdOrTerm);
+        if (item == null || !HasType(item, RDFS_CLASS_TERM, RDFS_CLASS))
+            return string.Empty;
+
+        var comment = item["rdfs:comment"];
+        if (comment == null)
+            return string.Empty;
+
+        if (comment is JsonValue value &&
+            value.TryGetValue<string>(out var text) &&
+            !string.IsNullOrWhiteSpace(text))
+        {
+            return text;
+        }
+
+        if (comment is not JsonObject languageMap)
+            return string.Empty;
+
+        foreach (var entry in languageMap)
+        {
+            if (!string.Equals(entry.Key, language, StringComparison.OrdinalIgnoreCase))
+                continue;
+
+            if (entry.Value is not JsonValue localizedValue ||
+                !localizedValue.TryGetValue<string>(out var localizedText) ||
+                string.IsNullOrWhiteSpace(localizedText))
+            {
+                return string.Empty;
+            }
+
+            return localizedText;
+        }
+
+        return string.Empty;
+    }
+
     public IEnumerable<string> GetPropertiesOfClass(string classIdOrTerm)
     {
         var classTerm = classIdOrTerm;
@@ -1068,6 +1121,27 @@ public class SchemaApi
         };
 
         return _docs.Values.Where(d => HasType(d, type, expanded));
+    }
+
+    private JsonObject? FindSchemaItem(string idOrTerm)
+    {
+        if (_docs.TryGetValue(idOrTerm, out var directMatch))
+            return directMatch;
+
+        if (Uri.TryCreate(idOrTerm, UriKind.Absolute, out _))
+        {
+            var compacted = CompactUri(idOrTerm);
+            if (_docs.TryGetValue(compacted, out var compactedMatch))
+                return compactedMatch;
+        }
+
+        foreach (var document in _docs.Values)
+        {
+            if (string.Equals(document["@id"]?.ToString(), idOrTerm, StringComparison.Ordinal))
+                return document;
+        }
+
+        return null;
     }
 
     private JsonObject GetDoc(string term)

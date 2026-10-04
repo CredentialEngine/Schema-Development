@@ -1031,4 +1031,134 @@ public class LosslessTests
             "stable",
             ((item ?? throw new InvalidOperationException("Expected schema item."))["vs:term_status"] ?? throw new InvalidOperationException("Expected vs:term_status.")).ToString());
     }
+
+    [TestMethod]
+    [DataRow(
+        "ctdl",
+        "ceterms:Credential",
+        "Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.")]
+    [DataRow(
+        "ctdlasn",
+        "ceasn:Competency",
+        "Measurable or observable knowledge, skill, or ability necessary to successful performance of a person.")]
+    [DataRow(
+        "qdata",
+        "qdata:DataSetProfile",
+        "Particular characteristics or properties of a data set and its records.")]
+    public void GetClassDescription_ReturnsSchemaComment(
+        string schemaName,
+        string classTerm,
+        string expectedDescription)
+    {
+        var api = LoadSchema(schemaName);
+
+        var description = api.GetClassDescription(classTerm);
+
+        Assert.AreEqual(expectedDescription, description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_MatchesLanguageTagCaseInsensitively()
+    {
+        var api = LoadSchema("ctdl");
+
+        var description = api.GetClassDescription("ceterms:Credential", "EN-us");
+
+        Assert.AreEqual(
+            "Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.",
+            description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_ReturnsEmpty_WhenRequestedLanguageIsMissing()
+    {
+        var api = LoadSchema("ctdl");
+
+        var description = api.GetClassDescription("ceterms:Credential", "fr");
+
+        Assert.AreEqual(string.Empty, description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_ReturnsEmpty_WhenClassHasNoDescription()
+    {
+        var api = new SchemaApi();
+        api.CreateNamespace("ex", "https://example.org/");
+        api.CreateClass("ex:Thing");
+
+        var description = api.GetClassDescription("ex:Thing");
+
+        Assert.AreEqual(string.Empty, description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_ReturnsEmpty_WhenClassDoesNotExist()
+    {
+        var api = LoadSchema("ctdl");
+
+        var description = api.GetClassDescription("ceterms:NotARealClass");
+
+        Assert.AreEqual(string.Empty, description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_ReturnsEmpty_WhenSchemaItemIsNotAClass()
+    {
+        var api = LoadSchema("ctdl");
+
+        var description = api.GetClassDescription("ceterms:description");
+
+        Assert.AreEqual(string.Empty, description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_AcceptsAbsoluteClassUri()
+    {
+        var api = LoadSchema("ctdl");
+
+        var description = api.GetClassDescription(
+            "https://purl.org/ctdl/terms/Credential");
+
+        Assert.AreEqual(
+            "Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.",
+            description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_ReadsPlainStringComment()
+    {
+        var api = new SchemaApi();
+        api.CreateNamespace("ex", "https://example.org/");
+        api.CreateClass("ex:Thing");
+        var item = api.GetSchemaItem("ex:Thing")
+            ?? throw new InvalidOperationException("Expected the created class.");
+        item["rdfs:comment"] = "A plain description.";
+
+        var description = api.GetClassDescription("ex:Thing");
+
+        Assert.AreEqual("A plain description.", description);
+    }
+
+    [TestMethod]
+    public void GetClassDescription_Throws_WhenClassNameIsBlank()
+    {
+        var api = new SchemaApi();
+
+        Assert.ThrowsExactly<ArgumentException>(() => api.GetClassDescription(" "));
+    }
+
+    [TestMethod]
+    public void GetClassDescription_Throws_WhenLanguageIsBlank()
+    {
+        var api = new SchemaApi();
+
+        Assert.ThrowsExactly<ArgumentException>(() => api.GetClassDescription("ceterms:Credential", " "));
+    }
+
+    private static SchemaApi LoadSchema(string schemaName)
+    {
+        var api = new SchemaApi();
+        api.LoadFromFolder(Path.Combine(TestRoot, "Schema", schemaName));
+        return api;
+    }
 }
