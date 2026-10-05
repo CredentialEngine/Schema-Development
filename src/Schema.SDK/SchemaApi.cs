@@ -736,6 +736,59 @@ public class SchemaApi
         return _docs.TryGetValue(term, out var o) ? o : default;
     }
 
+    /// <summary>
+    /// Gets the localized <c>rdfs:comment</c> for a schema item.
+    /// </summary>
+    /// <param name="idOrTerm">The schema item term, CURIE, or absolute URI.</param>
+    /// <param name="language">The requested language tag. Defaults to <c>en-US</c>.</param>
+    /// <returns>
+    /// The <c>rdfs:comment</c> value for the requested language when available;
+    /// otherwise <see cref="string.Empty"/>.
+    /// </returns>
+    public string GetRdfsComment(string idOrTerm, string language = "en-US")
+    {
+        if (string.IsNullOrWhiteSpace(idOrTerm))
+            throw new ArgumentException("A schema item term or id is required.", nameof(idOrTerm));
+
+        if (string.IsNullOrWhiteSpace(language))
+            throw new ArgumentException("A language tag is required.", nameof(language));
+
+        var item = FindSchemaItem(idOrTerm);
+        if (item == null)
+            return string.Empty;
+
+        var comment = item["rdfs:comment"];
+        if (comment == null)
+            return string.Empty;
+
+        if (comment is JsonValue value &&
+            value.TryGetValue<string>(out var text) &&
+            !string.IsNullOrWhiteSpace(text))
+        {
+            return text;
+        }
+
+        if (comment is not JsonObject languageMap)
+            return string.Empty;
+
+        foreach (var entry in languageMap)
+        {
+            if (!string.Equals(entry.Key, language, StringComparison.OrdinalIgnoreCase))
+                continue;
+
+            if (entry.Value is not JsonValue localizedValue ||
+                !localizedValue.TryGetValue<string>(out var localizedText) ||
+                string.IsNullOrWhiteSpace(localizedText))
+            {
+                return string.Empty;
+            }
+
+            return localizedText;
+        }
+
+        return string.Empty;
+    }
+
     public IEnumerable<string> GetPropertiesOfClass(string classIdOrTerm)
     {
         var classTerm = classIdOrTerm;
@@ -1068,6 +1121,27 @@ public class SchemaApi
         };
 
         return _docs.Values.Where(d => HasType(d, type, expanded));
+    }
+
+    private JsonObject? FindSchemaItem(string idOrTerm)
+    {
+        if (_docs.TryGetValue(idOrTerm, out var directMatch))
+            return directMatch;
+
+        if (Uri.TryCreate(idOrTerm, UriKind.Absolute, out _))
+        {
+            var compacted = CompactUri(idOrTerm);
+            if (_docs.TryGetValue(compacted, out var compactedMatch))
+                return compactedMatch;
+        }
+
+        foreach (var document in _docs.Values)
+        {
+            if (string.Equals(document["@id"]?.ToString(), idOrTerm, StringComparison.Ordinal))
+                return document;
+        }
+
+        return null;
     }
 
     private JsonObject GetDoc(string term)
