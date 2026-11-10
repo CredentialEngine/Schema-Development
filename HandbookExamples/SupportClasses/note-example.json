@@ -1,0 +1,27 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-6b30cd78-1b37-4d11-9df6-fda3f9a357bb",
+            "@type": "ceterms:Certificate",
+            "ceterms:name": {
+                "en-US": "Example Certificate"
+            },
+            "ceterms:description": {
+                "en-US": "This is an example certificate."
+            },
+            "elm:additionalNote": {
+                "@type": "elm:Note",
+                "elm:noteLiteral": {
+                    "en-US": "The following further information should be noted:..."
+                },
+                "elm:noteFormat": "format:plainText"
+            }
+        }
+    ]
+}
