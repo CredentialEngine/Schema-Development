@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:numberAwarded",
+    "rdfs:label": {
+        "en-US": "Number Awarded"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of credentials awarded."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/numberAwarded/json",
+    "schema:domainIncludes": [
+        "ceterms:AggregateDataProfile",
+        "ceterms:HoldersProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:integer"
+    ]
+}

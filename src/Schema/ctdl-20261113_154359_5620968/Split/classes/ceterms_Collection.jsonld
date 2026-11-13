@@ -1,0 +1,47 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Collection",
+    "rdfs:label": {
+        "en-US": "Collection"
+    },
+    "rdfs:comment": {
+        "en-US": "Aggregation of related resources."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Collection/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:classification",
+        "ceterms:codedNotation",
+        "ceterms:collectionType",
+        "ceterms:complaintProcess",
+        "ceterms:ctid",
+        "ceterms:dateEffective",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:expirationDate",
+        "ceterms:hasMember",
+        "ceterms:hasSupportService",
+        "ceterms:image",
+        "ceterms:inCatalog",
+        "ceterms:industryType",
+        "ceterms:inLanguage",
+        "ceterms:instructionalProgramType",
+        "ceterms:keyword",
+        "ceterms:latestVersion",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:maintenanceProcess",
+        "ceterms:membershipCondition",
+        "ceterms:name",
+        "ceterms:nextVersion",
+        "ceterms:occupationType",
+        "ceterms:ownedBy",
+        "ceterms:previousVersion",
+        "ceterms:reviewProcess",
+        "ceterms:subject",
+        "ceterms:subjectWebpage",
+        "ceterms:versionCode",
+        "ceterms:versionIdentifier"
+    ]
+}

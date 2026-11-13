@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:TrainingProvider",
+    "skos:prefLabel": {
+        "en-US": "Education and Training Provider"
+    },
+    "skos:definition": {
+        "en-US": "Organization whose major purpose is to provide education and training services but is not a postsecondary education institution with the authority to award degrees."
+    },
+    "dct:description": {
+        "en-US": "Includes community-based organizations, non-degree granting proprietary schools which are education and training providers that are recognized by states as schools."
+    },
+    "vann:usageNote": {
+        "en-US": "In the U.S., use for Title IV eligible organizations that do not award degrees."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/TrainingProvider/json",
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

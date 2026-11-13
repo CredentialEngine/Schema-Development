@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrMethod:TransferCreditEvaluation",
+    "skos:prefLabel": {
+        "en-US": "Transfer Credit Evaluation"
+    },
+    "skos:definition": {
+        "en-US": "An evaluation method that provides a preliminary determination of transferability using supplied records before matriculation."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/TransferCreditEvaluation/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ]
+}

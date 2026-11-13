@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceasn:abilityEmbodied",
+    "rdfs:label": {
+        "en-US": "Ability Embodied"
+    },
+    "rdfs:comment": {
+        "en-US": "Enduring attributes of the individual that influence performance are embodied either directly or indirectly in this resource."
+    },
+    "vann:usageNote": {
+        "en-US": "The abilityEmbodied property may referenced a defined ability in an ontology such as O*NET or an existing competency defined in a competency framework."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceasn/abilityEmbodied/json",
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:CurrentStudent",
+    "skos:prefLabel": {
+        "en-US": "Current Student"
+    },
+    "skos:definition": {
+        "en-US": "Student currently participating in a learning opportunity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/CurrentStudent/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

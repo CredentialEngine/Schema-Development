@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasWorkforceDemand",
+    "rdfs:label": {
+        "en-US": "Has Workforce Demand"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates the level of demand for a resource via a demand level action."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasWorkforceDemand/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:relatedAction"
+    ],
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Occupation"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:WorkforceDemandAction"
+    ]
+}

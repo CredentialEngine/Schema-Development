@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:Loan",
+    "skos:prefLabel": {
+        "en-US": "Loan"
+    },
+    "skos:definition": {
+        "en-US": "Financial aid that requires repayment with terms determined by the entity providing the loan."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Loan/json",
+    "skos:broader": [
+        "financialAid:General"
+    ],
+    "skos:narrower": [
+        "financialAid:FederalSubsidizedLoan",
+        "financialAid:FederalUnsubsidizedLoan",
+        "financialAid:InstitutionalLoan",
+        "financialAid:OtherLoan",
+        "financialAid:ParentPLUSLoan",
+        "financialAid:PrivateLoan",
+        "financialAid:StateLocalLoan"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

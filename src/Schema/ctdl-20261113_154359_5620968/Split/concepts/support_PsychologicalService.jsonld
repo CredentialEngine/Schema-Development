@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:PsychologicalService",
+    "skos:prefLabel": {
+        "en-US": "Psychological Service"
+    },
+    "skos:definition": {
+        "en-US": "Personalized service that provides assessment, diagnosis, and treatment for mental health disorders."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/PsychologicalService/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00331"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

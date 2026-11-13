@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrEvidence:CreditRecommendation",
+    "skos:prefLabel": {
+        "en-US": "Credit Recommendation"
+    },
+    "skos:definition": {
+        "en-US": "Recommendation for credit or competency value issued by an authoritative evaluating body, including amount, level, and conditions for specified learning."
+    },
+    "dct:description": {
+        "en-US": "In the U.S., common sources include ACE credit recommendations."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/CreditRecommendation/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ]
+}

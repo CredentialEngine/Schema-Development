@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:AudioCaptioning",
+    "skos:prefLabel": {
+        "en-US": "Audio Captioning"
+    },
+    "skos:definition": {
+        "en-US": "Displays for text corresponding to spoken words and audio cues."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/AudioCaptioning/json",
+    "skos:broader": [
+        "accommodation:FacilityAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

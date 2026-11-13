@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:SupportedWork",
+    "skos:prefLabel": {
+        "en-US": "Supported Work"
+    },
+    "skos:definition": {
+        "en-US": "Service that helps people with special needs find and retain paid work."
+    },
+    "dct:description": {
+        "en-US": "This can include advocacy and support services to address behaviors and basic skills required to stay employed."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/SupportedWork/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00886"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

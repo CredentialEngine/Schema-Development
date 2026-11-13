@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrEvidence:WorkProduct",
+    "skos:prefLabel": {
+        "en-US": "Work Product"
+    },
+    "skos:definition": {
+        "en-US": "Substantive work product demonstrating applied knowledge aligned to defined outcomes."
+    },
+    "dct:description": {
+        "en-US": "May include reports, designs, code, media, or presentations."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/WorkProduct/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ]
+}

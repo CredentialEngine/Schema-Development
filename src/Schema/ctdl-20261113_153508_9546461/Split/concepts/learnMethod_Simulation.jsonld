@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:Simulation",
+    "skos:prefLabel": {
+        "en-US": "Simulation"
+    },
+    "skos:definition": {
+        "en-US": "Provides interactive learning experience through imitation of a situation or process."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Simulation/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

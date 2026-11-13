@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:StateLocalGrant",
+    "skos:prefLabel": {
+        "en-US": "State or Local Grant"
+    },
+    "skos:definition": {
+        "en-US": "Financial subsidy, which doesn’t require repayment, based on meeting requirements determined by a state, province, region, and/or local government."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/StateLocalGrant/json",
+    "skos:broader": [
+        "financialAid:Grant"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#StateAndLocalGrants"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:inDemandAction",
+    "rdfs:label": {
+        "en-US": "In Demand Action"
+    },
+    "rdfs:comment": {
+        "en-US": "Assertion by an agent that this resource has a specific workforce demand level."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/inDemandAction/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:relatedAction"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:WorkforceDemandAction"
+    ]
+}

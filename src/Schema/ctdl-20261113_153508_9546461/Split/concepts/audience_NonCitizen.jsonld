@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:NonCitizen",
+    "skos:prefLabel": {
+        "en-US": "Non-Citizen"
+    },
+    "skos:definition": {
+        "en-US": "Person who is not a legally recognized subject of a particular nation, state, province, or commonwealth."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/NonCitizen/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

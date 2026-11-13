@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:CaptioningAndTranscripts",
+    "skos:prefLabel": {
+        "en-US": "Captioning and Transcripts"
+    },
+    "skos:definition": {
+        "en-US": "Captioning and/or transcripts for audio and video content."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/CaptioningAndTranscripts/json",
+    "skos:broader": [
+        "accommodation:ResourceAndServiceAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

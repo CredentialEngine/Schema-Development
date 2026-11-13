@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "score:CriterionReferenced",
+    "skos:prefLabel": {
+        "en-US": "Criterion-Referenced"
+    },
+    "skos:definition": {
+        "en-US": "Scored based on a comparison to defined criteria and levels of performance."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/score/CriterionReferenced/json",
+    "skos:inScheme": [
+        "ceterms:ScoringMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScoringMethod"
+    ]
+}

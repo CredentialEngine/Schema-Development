@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:basePeriod",
+    "rdfs:label": {
+        "en-US": "Base Period"
+    },
+    "rdfs:comment": {
+        "en-US": "Duration to which a monetary amount applies."
+    },
+    "dct:description": {
+        "en-US": "The duration will be specified using ISO8601 duration format. Common examples indicate that a salary is given on a per annum basis, in which case the value would be P1Y; for an hourly rate of pay the value would be PT1H."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/basePeriod/json",
+    "schema:domainIncludes": [
+        "ceterms:PayProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:duration"
+    ]
+}

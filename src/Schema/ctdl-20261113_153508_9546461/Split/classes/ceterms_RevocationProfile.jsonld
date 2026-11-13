@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:RevocationProfile",
+    "rdfs:label": {
+        "en-US": "Revocation Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity describing conditions and methods by which a credential can be removed from a holder."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/RevocationProfile/json",
+    "rdfs:subClassOf": [
+        "schema:CreativeWork"
+    ],
+    "meta:domainFor": [
+        "ceterms:dateEffective",
+        "ceterms:description",
+        "ceterms:jurisdiction",
+        "ceterms:region",
+        "ceterms:revocationCriteria",
+        "ceterms:revocationCriteriaDescription"
+    ]
+}

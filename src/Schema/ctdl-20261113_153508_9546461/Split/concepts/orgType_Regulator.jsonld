@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:Regulator",
+    "skos:prefLabel": {
+        "en-US": "Regulator"
+    },
+    "skos:definition": {
+        "en-US": "Organization that regulates other resources such as organizations, learning opportunities, credentials, and/or individuals against established standards and criteria."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Regulator/json",
+    "skos:broader": [
+        "orgType:QualityAssurance"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ]
+}

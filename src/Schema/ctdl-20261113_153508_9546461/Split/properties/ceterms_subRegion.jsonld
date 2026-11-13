@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:subRegion",
+    "rdfs:label": {
+        "en-US": "Sub-region"
+    },
+    "rdfs:comment": {
+        "en-US": "An administrative subdivision within a country that is intermediate between a region and a locality."
+    },
+    "dct:description": {
+        "en-US": "This may be referred to as a county in the United States, a département in France, a district in India, a raion in Russia, a municipio in Mexico, or equivalent terms in other jurisdictions."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/subRegion/json",
+    "schema:domainIncludes": [
+        "ceterms:Place"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

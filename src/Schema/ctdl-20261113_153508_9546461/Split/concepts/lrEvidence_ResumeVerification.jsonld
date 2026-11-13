@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrEvidence:ResumeVerification",
+    "skos:prefLabel": {
+        "en-US": "Résumé Verification"
+    },
+    "skos:definition": {
+        "en-US": "Structured record of experience and education accompanied by sufficient validation for evaluation."
+    },
+    "dct:description": {
+        "en-US": "Validation may include references, verification letters, or linked evidence."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/ResumeVerification/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ]
+}

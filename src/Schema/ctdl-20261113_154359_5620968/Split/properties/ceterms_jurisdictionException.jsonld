@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:jurisdictionException",
+    "rdfs:label": {
+        "en-US": "Jurisdiction Exception"
+    },
+    "rdfs:comment": {
+        "en-US": "Geographic or political region in which the credential is not formally recognized or an organization has no authority to act ."
+    },
+    "dct:description": {
+        "en-US": "The ceterms:jurisdictionalException property is used in conjunction with the ceterms:jurisdiction property and expresses any exceptions to a more general statement; e.g., the United states except for Colorado."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/jurisdictionException/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:spatialCoverage"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:JurisdictionProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:Place"
+    ]
+}

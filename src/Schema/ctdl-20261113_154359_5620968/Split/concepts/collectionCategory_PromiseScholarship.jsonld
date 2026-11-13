@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionCategory:PromiseScholarship",
+    "skos:prefLabel": {
+        "en-US": "Promise Scholarship"
+    },
+    "skos:definition": {
+        "en-US": "Specified programs in eligible postsecondary educational institutions for which qualified students may receive a Promise Scholarship."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/PromiseScholarship/json",
+    "skos:inScheme": [
+        "ceterms:CollectionCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CollectionCategory"
+    ]
+}

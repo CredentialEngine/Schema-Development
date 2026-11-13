@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "residency:InState",
+    "skos:prefLabel": {
+        "en-US": "In-State"
+    },
+    "skos:definition": {
+        "en-US": "Legal residency or domicile status of the agent is the state or province of the relevant activity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/residency/InState/json",
+    "skos:inScheme": [
+        "ceterms:Residency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Residency"
+    ]
+}

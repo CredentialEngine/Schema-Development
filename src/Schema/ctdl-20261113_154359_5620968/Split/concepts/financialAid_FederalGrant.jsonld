@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:FederalGrant",
+    "skos:prefLabel": {
+        "en-US": "Federal Grant"
+    },
+    "skos:definition": {
+        "en-US": "Financial subsidy, which doesn’t require repayment, based on meeting requirements determined by the Federal Government."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/FederalGrant/json",
+    "skos:broader": [
+        "financialAid:Grant"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#OtherFederalGrants"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleFrequency:Irregular",
+    "skos:prefLabel": {
+        "en-US": "Irregular"
+    },
+    "skos:definition": {
+        "en-US": "Schedule has no significant pattern."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/Irregular/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleFrequency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

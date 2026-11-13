@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:addressRegion",
+    "rdfs:label": {
+        "en-US": "Address Region"
+    },
+    "rdfs:comment": {
+        "en-US": "State or province in which a particular location is situated."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/addressRegion/json",
+    "schema:domainIncludes": [
+        "ceterms:Place",
+        "ceterms:PostalAddress"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ],
+    "owl:equivalentProperty": [
+        "schema:addressRegion"
+    ]
+}

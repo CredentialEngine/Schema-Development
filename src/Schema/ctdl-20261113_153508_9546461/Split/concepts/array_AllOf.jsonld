@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "array:AllOf",
+    "skos:prefLabel": {
+        "en-US": "All Of"
+    },
+    "skos:definition": {
+        "en-US": "All of the values."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/array/AllOf/json",
+    "skos:inScheme": [
+        "ceterms:ArrayOperationCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ArrayOperationCategory"
+    ]
+}

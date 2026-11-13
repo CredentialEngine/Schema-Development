@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrOutcome:AdvancedStanding",
+    "skos:prefLabel": {
+        "en-US": "Advanced Standing"
+    },
+    "skos:definition": {
+        "en-US": "An outcome in which standing toward a program or qualification is granted, which may or may not carry transcripted credit."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrOutcome/AdvancedStanding/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionOutcomeCategory"
+    ]
+}

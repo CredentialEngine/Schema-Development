@@ -1,0 +1,39 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:ExtracurricularComponent",
+    "rdfs:label": {
+        "en-US": "Extracurricular Component"
+    },
+    "rdfs:comment": {
+        "en-US": "Resource that identifies an activity, program, or informal learning experience that may be offered or provided by a school, college, or other organization that is not connected to a curriculum."
+    },
+    "dct:description": {
+        "en-US": "Instances act as proxies or stand-ins for other resources in the context of a particular pathway so that relationships between them as components of that pathway can be stated without implying that the those relationships are true of the resources in other contexts."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ExtracurricularComponent/json",
+    "rdfs:subClassOf": [
+        "ceterms:PathwayComponent"
+    ],
+    "meta:domainFor": [
+        "ceasn:hasChild",
+        "ceasn:isChildOf",
+        "ceterms:alternateName",
+        "ceterms:componentCategory",
+        "ceterms:componentDesignation",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:hasCondition",
+        "ceterms:identifier",
+        "ceterms:isDestinationComponentOf",
+        "ceterms:isPartOf",
+        "ceterms:name",
+        "ceterms:pointValue",
+        "ceterms:precededBy",
+        "ceterms:precedes",
+        "ceterms:proxyFor",
+        "ceterms:sourceData",
+        "ceterms:subjectWebpage"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrMethod:FacultyDevelopedExamination",
+    "skos:prefLabel": {
+        "en-US": "Faculty-Developed Examination"
+    },
+    "skos:definition": {
+        "en-US": "A method in which learning is assessed by a course-specific exam created and administered by faculty."
+    },
+    "dct:description": {
+        "en-US": "In the United States, examples include challenge exams."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/FacultyDevelopedExamination/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ]
+}

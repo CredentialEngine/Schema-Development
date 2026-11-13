@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleTiming:Weekends",
+    "skos:prefLabel": {
+        "en-US": "Weekends"
+    },
+    "skos:definition": {
+        "en-US": "Schedule is on a weekly basis, Saturday and/or Sunday."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleTiming/Weekends/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleTiming"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleTiming"
+    ]
+}

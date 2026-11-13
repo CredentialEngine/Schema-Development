@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:faxNumber",
+    "rdfs:label": {
+        "en-US": "Fax Number"
+    },
+    "rdfs:comment": {
+        "en-US": "Fax number."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/faxNumber/json",
+    "schema:domainIncludes": [
+        "ceterms:ContactPoint"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ],
+    "owl:equivalentProperty": [
+        "schema:faxNumber"
+    ]
+}

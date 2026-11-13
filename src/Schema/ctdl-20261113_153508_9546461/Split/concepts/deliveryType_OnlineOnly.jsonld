@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "deliveryType:OnlineOnly",
+    "skos:prefLabel": {
+        "en-US": "Online Only"
+    },
+    "skos:definition": {
+        "en-US": "Delivery is only via the Internet."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/deliveryType/OnlineOnly/json",
+    "skos:inScheme": [
+        "ceterms:Delivery"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Delivery"
+    ]
+}

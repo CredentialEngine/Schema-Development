@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:SpecialNeeds",
+    "skos:prefLabel": {
+        "en-US": "Special Needs"
+    },
+    "skos:definition": {
+        "en-US": "Financial aid towards paying for extra costs associated with accommodating a special need."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/SpecialNeeds/json",
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CostType"
+    ]
+}

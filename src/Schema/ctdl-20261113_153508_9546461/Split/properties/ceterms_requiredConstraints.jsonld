@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:requiredConstraints",
+    "rdfs:label": {
+        "en-US": "Required Constraints"
+    },
+    "rdfs:comment": {
+        "en-US": "Number of hasConstraint objects that must be fulfilled in order to satisfy the ComponentCondition."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/requiredConstraints/json",
+    "schema:domainIncludes": [
+        "ceterms:ComponentCondition"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:integer"
+    ]
+}

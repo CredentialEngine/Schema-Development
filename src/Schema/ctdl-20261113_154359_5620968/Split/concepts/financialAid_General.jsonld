@@ -1,0 +1,28 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:General",
+    "skos:prefLabel": {
+        "en-US": "General Financial Assistance"
+    },
+    "skos:definition": {
+        "en-US": "Types of financial assistance for students towards education, training, or related costs of pursuing a credential, program, or other resource."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/General/json",
+    "skos:narrower": [
+        "financialAid:Grant",
+        "financialAid:Loan",
+        "financialAid:Scholarship",
+        "financialAid:WorkBased"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:FinancialAssistance"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:FederalUnsubsidizedLoan",
+    "skos:prefLabel": {
+        "en-US": "Federal Unsubsidized Loan"
+    },
+    "skos:definition": {
+        "en-US": "Loan from the Federal Government that does not require evidence of the financial needs of the student, and is intended to offset costs related to education, living, and resources."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/FederalUnsubsidizedLoan/json",
+    "skos:broader": [
+        "financialAid:Loan"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#FederalUnsubsidizedLoans"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

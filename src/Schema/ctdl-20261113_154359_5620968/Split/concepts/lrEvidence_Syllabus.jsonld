@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrEvidence:Syllabus",
+    "skos:prefLabel": {
+        "en-US": "Syllabus"
+    },
+    "skos:definition": {
+        "en-US": "Document outlining objectives, content, requirements, schedule, and assessment for a specific course."
+    },
+    "dct:description": {
+        "en-US": "Supports content and outcome alignment."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/Syllabus/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ]
+}

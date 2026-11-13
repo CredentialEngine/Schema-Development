@@ -1,0 +1,26 @@
+# Issue: https://github.com/CredentialEngine/Schema-Development/issues/1086
+# Use case: Allow Conditions on course prerequisites.
+PREFIX ceterms: <https://purl.org/ctdl/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX qdata: <https://credreg.net/qdata/terms/>
+PREFIX ceasn: <https://purl.org/ctdlasn/terms/>
+PREFIX asn: <http://purl.org/ASN/schema/core/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+
+DELETE {
+    ceterms:prerequisite 
+        rdfs:comment "Course that is required as a prior condition to this course."@en-US ;
+        vann:usageNote "Conditions of entry into Programs can be specified with entryCondition; requirements for Courses other than prerequisite Courses (e.g., Competencies) can be specified with requires."@en-US ;
+    .
+}
+INSERT {
+    ceterms:prerequisite 
+        schema:rangeIncludes ceterms:ConditionProfile ;
+        rdfs:comment "Course requirements that are prior conditions to this course."@en-US ;
+        vann:usageNote "Conditions of entry into Programs can be specified with entryCondition."@en-US ;
+    .
+}
+WHERE {}

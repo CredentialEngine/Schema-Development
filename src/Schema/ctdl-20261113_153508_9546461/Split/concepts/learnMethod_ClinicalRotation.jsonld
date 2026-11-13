@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:ClinicalRotation",
+    "skos:prefLabel": {
+        "en-US": "Clinical Rotation"
+    },
+    "skos:definition": {
+        "en-US": "Learning through real-world work experience in a medical context under the direct supervision of a qualified practitioner."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/ClinicalRotation/json",
+    "skos:broader": [
+        "learnMethod:WorkBased"
+    ],
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ]
+}

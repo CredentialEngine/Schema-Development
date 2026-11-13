@@ -1,0 +1,41 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:endDate",
+    "rdfs:label": {
+        "en-US": "End Date"
+    },
+    "rdfs:comment": {
+        "en-US": "Date some event or activity ends."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/endDate/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:temporalCoverage"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:AccreditAction",
+        "ceterms:AdvancedStandingAction",
+        "ceterms:ApproveAction",
+        "ceterms:CollectionMember",
+        "ceterms:CostManifest",
+        "ceterms:CostProfile",
+        "ceterms:CredentialingAction",
+        "ceterms:OfferAction",
+        "ceterms:RecognizeAction",
+        "ceterms:RegistrationAction",
+        "ceterms:RegulateAction",
+        "ceterms:RenewAction",
+        "ceterms:RevokeAction",
+        "ceterms:RightsAction",
+        "ceterms:TransferValueProfile",
+        "ceterms:WorkforceDemandAction",
+        "qdata:DataSetTimeFrame"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:date"
+    ],
+    "owl:equivalentProperty": [
+        "schema:endDate"
+    ]
+}

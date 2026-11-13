@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "compare:LTEQ",
+    "skos:prefLabel": {
+        "en-US": "Less Than or Equal To"
+    },
+    "skos:definition": {
+        "en-US": "The value of the left is less than or equal to the value of the right."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/compare/LTEQ/json",
+    "owl:equivalentClass": [
+        "odrl2:lteq"
+    ],
+    "skos:inScheme": [
+        "ceterms:ComparatorCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ComparatorCategory"
+    ]
+}

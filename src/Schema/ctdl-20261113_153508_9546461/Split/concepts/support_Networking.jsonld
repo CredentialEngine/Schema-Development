@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:Networking",
+    "skos:prefLabel": {
+        "en-US": "Networking"
+    },
+    "skos:definition": {
+        "en-US": "Service that connects people with employers and professional communities to expand their professional networks and gain access to new job opportunities and career pathways."
+    },
+    "dct:description": {
+        "en-US": "Examples include providing opportunities to attend networking events and connect with professionals."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Networking/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

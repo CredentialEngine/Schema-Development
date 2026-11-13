@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:JobPlacement",
+    "skos:prefLabel": {
+        "en-US": "Job Placement"
+    },
+    "skos:definition": {
+        "en-US": "Assistance for individuals in finding suitable work."
+    },
+    "dct:description": {
+        "en-US": "Examples include providing job searching and matching resources, and facilitating the application, interview, and background check processes."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/JobPlacement/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

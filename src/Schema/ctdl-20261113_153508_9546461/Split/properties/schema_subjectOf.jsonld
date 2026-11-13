@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:subjectOf",
+    "rdfs:label": {
+        "en-US": "Subject Of"
+    },
+    "rdfs:comment": {
+        "en-US": "A CreativeWork or Event about this Thing."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/schema/subjectOf/json",
+    "schema:domainIncludes": [
+        "ceterms:QualificationsFramework"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

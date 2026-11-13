@@ -1,0 +1,34 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Place",
+    "rdfs:label": {
+        "en-US": "Place"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity describing a physical location or geospatial area."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Place/json",
+    "owl:equivalentClass": [
+        "schema:Place"
+    ],
+    "meta:domainFor": [
+        "ceterms:addressCountry",
+        "ceterms:addressLocality",
+        "ceterms:addressRegion",
+        "ceterms:alternateName",
+        "ceterms:description",
+        "ceterms:geoURI",
+        "ceterms:identifier",
+        "ceterms:latitude",
+        "ceterms:longitude",
+        "ceterms:name",
+        "ceterms:postalCode",
+        "ceterms:postOfficeBoxNumber",
+        "ceterms:streetAddress",
+        "ceterms:subjectWebpage",
+        "ceterms:subRegion",
+        "ceterms:targetContactPoint"
+    ]
+}

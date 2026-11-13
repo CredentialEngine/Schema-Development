@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:EquipmentProvision",
+    "skos:prefLabel": {
+        "en-US": "Equipment Provision"
+    },
+    "skos:definition": {
+        "en-US": "Service that provides people with access to the equipment, tools, or other physical resources necessary for education, training, or work."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/EquipmentProvision/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

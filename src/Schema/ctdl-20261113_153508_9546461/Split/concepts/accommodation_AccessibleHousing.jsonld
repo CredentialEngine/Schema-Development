@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:AccessibleHousing",
+    "skos:prefLabel": {
+        "en-US": "Accessible Housing"
+    },
+    "skos:definition": {
+        "en-US": "Housing with features, modifications, or adjustments to ensure that individuals with disabilities can access and use the space on an equal basis with others."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/AccessibleHousing/json",
+    "skos:broader": [
+        "accommodation:FacilityAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:assesses",
+    "rdfs:label": {
+        "en-US": "Assesses"
+    },
+    "rdfs:comment": {
+        "en-US": "Competency evaluated through the assessment."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assesses/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:targetCompetency"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile",
+        "ceterms:Course",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

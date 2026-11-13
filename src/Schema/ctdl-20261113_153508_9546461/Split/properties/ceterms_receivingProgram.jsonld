@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:receivingProgram",
+    "rdfs:label": {
+        "en-US": "Receiving Program"
+    },
+    "rdfs:comment": {
+        "en-US": "Program to which students transfer under the provisions of an agreement."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/receivingProgram/json",
+    "schema:domainIncludes": [
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:LearningProgram"
+    ]
+}

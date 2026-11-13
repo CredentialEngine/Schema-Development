@@ -1,0 +1,33 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:CostProfile",
+    "rdfs:label": {
+        "en-US": "Cost Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes direct costs one would incur if one were to pursue a credential, assessment, learning opportunity, or aspects thereof."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/CostProfile/json",
+    "rdfs:subClassOf": [
+        "schema:CreativeWork"
+    ],
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:audienceType",
+        "ceterms:condition",
+        "ceterms:costDetails",
+        "ceterms:currency",
+        "ceterms:description",
+        "ceterms:directCostType",
+        "ceterms:endDate",
+        "ceterms:jurisdiction",
+        "ceterms:name",
+        "ceterms:paymentPattern",
+        "ceterms:price",
+        "ceterms:region",
+        "ceterms:residencyType",
+        "ceterms:startDate"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:FinancialAssistanceProfile",
+    "rdfs:label": {
+        "en-US": "Financial Assistance Profile"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes financial assistance that is offered or available."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/FinancialAssistanceProfile/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:financialAssistanceForType",
+        "ceterms:financialAssistanceType",
+        "ceterms:financialAssistanceValue",
+        "ceterms:name",
+        "ceterms:offeredBy",
+        "ceterms:requires",
+        "ceterms:subjectWebpage"
+    ]
+}

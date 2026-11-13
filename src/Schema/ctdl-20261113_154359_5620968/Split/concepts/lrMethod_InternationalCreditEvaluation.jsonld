@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrMethod:InternationalCreditEvaluation",
+    "skos:prefLabel": {
+        "en-US": "International Credit Evaluation"
+    },
+    "skos:definition": {
+        "en-US": "An evaluation method in which learning or credit earned from organizations in other countries is reviewed for recognition."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/InternationalCreditEvaluation/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ]
+}

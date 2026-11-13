@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:ComponentCondition",
+    "rdfs:label": {
+        "en-US": "Component Condition"
+    },
+    "rdfs:comment": {
+        "en-US": "Resource that describes what must be done to complete a PathwayComponent, or part thereof, as determined by the issuer of the Pathway."
+    },
+    "dct:description": {
+        "en-US": "A ComponentCondition references a single RuleSet defining appropriate values fulfilling the condition."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ComponentCondition/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:description",
+        "ceterms:hasCondition",
+        "ceterms:hasConstraint",
+        "ceterms:name",
+        "ceterms:requiredConstraints",
+        "ceterms:requiredNumber",
+        "ceterms:targetComponent"
+    ]
+}

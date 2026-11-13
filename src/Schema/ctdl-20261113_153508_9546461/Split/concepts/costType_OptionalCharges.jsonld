@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "costType:OptionalCharges",
+    "skos:prefLabel": {
+        "en-US": "Optional Charges"
+    },
+    "skos:definition": {
+        "en-US": "Cost for additional fees, other services, equipment, or facilities that are not required."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/OptionalCharges/json",
+    "skos:inScheme": [
+        "ceterms:CostType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CostType"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrEvidence:SkillProfile",
+    "skos:prefLabel": {
+        "en-US": "Skill Profile"
+    },
+    "skos:definition": {
+        "en-US": "Document that maps a person’s work artifacts or experiences to specified competencies, learning outcomes, or course requirements."
+    },
+    "dct:description": {
+        "en-US": "Improves defensibility and transparency."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/SkillProfile/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ]
+}

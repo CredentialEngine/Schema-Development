@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:DiversityEquityInclusion",
+    "skos:prefLabel": {
+        "en-US": "Diversity Equity Inclusion"
+    },
+    "skos:definition": {
+        "en-US": "Services, programs, and initiatives that promote a welcoming and inclusive environment for individuals of all backgrounds."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/DiversityEquityInclusion/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

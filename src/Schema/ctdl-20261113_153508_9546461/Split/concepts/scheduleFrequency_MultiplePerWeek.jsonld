@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "scheduleFrequency:MultiplePerWeek",
+    "skos:prefLabel": {
+        "en-US": "Multiple Per Week"
+    },
+    "skos:definition": {
+        "en-US": "Schedule is more frequent than a weekly basis."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/MultiplePerWeek/json",
+    "skos:inScheme": [
+        "ceterms:ScheduleFrequency"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScheduleFrequency"
+    ]
+}

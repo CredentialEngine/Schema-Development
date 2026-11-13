@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:OtherGrant",
+    "skos:prefLabel": {
+        "en-US": "Other Grant"
+    },
+    "skos:definition": {
+        "en-US": "Financial subsidy based on meeting requirements from one or more other sources."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/OtherGrant/json",
+    "skos:broader": [
+        "financialAid:Grant"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#OtherGrants"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

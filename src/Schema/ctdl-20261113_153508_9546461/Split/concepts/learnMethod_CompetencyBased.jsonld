@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:CompetencyBased",
+    "skos:prefLabel": {
+        "en-US": "Competency Based"
+    },
+    "skos:definition": {
+        "en-US": "Method that focuses on learners demonstrating the knowledge, skills and/or attitudes in highly specific units regardless of time, place, or pace of learning, usually in authentic contexts."
+    },
+    "dct:description": {
+        "en-US": "This definition is based on Commonwealth of Learning (COL) \"Open and Distance Learning: Key Terms and Definitions\" (May 2023) http://hdl.handle.net/11599/3558"
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/CompetencyBased/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

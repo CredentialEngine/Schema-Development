@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:supportServiceCondition",
+    "rdfs:label": {
+        "en-US": "Support Service Condition"
+    },
+    "rdfs:comment": {
+        "en-US": "Requirements to qualify for  a support service."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/supportServiceCondition/json",
+    "schema:domainIncludes": [
+        "ceterms:SupportService"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:ConditionProfile"
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:AlignmentMap",
+    "rdfs:label": {
+        "en-US": "Alignment Map"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity comprised of a set of alignment or mapping assertions between two existing entities."
+    },
+    "dct:description": {
+        "en-US": "Alignment maps provide the means for parties to assert sets of alignments between already existing entities created by themselves or other parties."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AlignmentMap/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:approvedBy",
+        "ceterms:approvedIn",
+        "ceterms:classification",
+        "ceterms:codedNotation",
+        "ceterms:compares",
+        "ceterms:copyrightHolder",
+        "ceterms:ctid",
+        "ceterms:dateEffective",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:expirationDate",
+        "ceterms:hasPart",
+        "ceterms:hasStatement",
+        "ceterms:identifier",
+        "ceterms:image",
+        "ceterms:inLanguage",
+        "ceterms:jurisdiction",
+        "ceterms:keyword",
+        "ceterms:latestVersion",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:nextVersion",
+        "ceterms:objectOfAction",
+        "ceterms:ownedBy",
+        "ceterms:previousVersion",
+        "ceterms:processStandards",
+        "ceterms:processStandardsDescription",
+        "ceterms:recognizedBy",
+        "ceterms:recognizedIn",
+        "ceterms:relatedAction",
+        "ceterms:reviewProcess",
+        "ceterms:revocationProcess",
+        "ceterms:sameAs",
+        "ceterms:source",
+        "ceterms:subject",
+        "ceterms:subjectWebpage",
+        "ceterms:supersededBy",
+        "ceterms:supersedes",
+        "ceterms:versionCode",
+        "ceterms:versionIdentifier"
+    ]
+}

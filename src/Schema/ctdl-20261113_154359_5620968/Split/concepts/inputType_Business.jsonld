@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "inputType:Business",
+    "skos:prefLabel": {
+        "en-US": "Business"
+    },
+    "skos:definition": {
+        "en-US": "External stakeholder review, guidance or recommendations by business."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Business/json",
+    "skos:inScheme": [
+        "ceterms:ExternalInput"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ExternalInput"
+    ]
+}

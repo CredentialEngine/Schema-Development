@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:Obligation",
+    "skos:prefLabel": {
+        "en-US": "Obligation"
+    },
+    "skos:definition": {
+        "en-US": "Statement that specifies a duty or responsibility under the agreement."
+    },
+    "dct:description": {
+        "en-US": "Parent concept for mutual, sender, and receiver obligations."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/Obligation/json",
+    "skos:narrower": [
+        "statementCat:MutualObligation",
+        "statementCat:ReceiverObligation",
+        "statementCat:SenderObligation"
+    ],
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

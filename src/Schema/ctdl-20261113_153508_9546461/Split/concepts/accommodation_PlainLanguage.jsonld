@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:PlainLanguage",
+    "skos:prefLabel": {
+        "en-US": "Plain Language"
+    },
+    "skos:definition": {
+        "en-US": "Communication that is clear, concise, and easy to understand for all participants."
+    },
+    "dct:description": {
+        "en-US": "Examples include using everyday language, avoiding technical jargon, and providing relevant context to aid comprehension."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/PlainLanguage/json",
+    "skos:broader": [
+        "accommodation:ResourceAndServiceAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

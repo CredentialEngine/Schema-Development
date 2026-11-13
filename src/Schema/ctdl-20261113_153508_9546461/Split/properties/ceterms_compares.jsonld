@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:compares",
+    "rdfs:label": {
+        "en-US": "Compares"
+    },
+    "rdfs:comment": {
+        "en-US": "Framework that contains terms that are compared in this AlignmentMap."
+    },
+    "dct:description": {
+        "en-US": "Frameworks may be Concept Schemes, Progression Models, and other educational frameworks."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/compares/json",
+    "schema:domainIncludes": [
+        "ceterms:AlignmentMap"
+    ],
+    "schema:rangeIncludes": [
+        "asn:ProgressionModel",
+        "ceasn:CompetencyFramework",
+        "skos:ConceptScheme"
+    ]
+}

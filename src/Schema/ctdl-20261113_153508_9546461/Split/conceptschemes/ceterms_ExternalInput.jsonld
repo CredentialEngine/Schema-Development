@@ -1,0 +1,47 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:ExternalInput",
+    "rdfs:label": {
+        "en-US": "External Input"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of external stakeholders that provide input to the process."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ExternalInput/json",
+    "meta:hasConcept": [
+        "inputType:ArtificialIntelligence",
+        "inputType:Associations",
+        "inputType:Business",
+        "inputType:BusinessAssociation",
+        "inputType:Committee",
+        "inputType:Consumers",
+        "inputType:EducationAdministrators",
+        "inputType:Educators",
+        "inputType:Experts",
+        "inputType:Governments",
+        "inputType:Guardians",
+        "inputType:InternationalBodies",
+        "inputType:Practitioners",
+        "inputType:Public",
+        "inputType:Students"
+    ],
+    "skos:hasTopConcept": [
+        "inputType:ArtificialIntelligence",
+        "inputType:Associations",
+        "inputType:Business",
+        "inputType:BusinessAssociation",
+        "inputType:Committee",
+        "inputType:Consumers",
+        "inputType:EducationAdministrators",
+        "inputType:Educators",
+        "inputType:Experts",
+        "inputType:Governments",
+        "inputType:Guardians",
+        "inputType:InternationalBodies",
+        "inputType:Practitioners",
+        "inputType:Public",
+        "inputType:Students"
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Pathway",
+    "rdfs:label": {
+        "en-US": "Pathway"
+    },
+    "rdfs:comment": {
+        "en-US": "Resource composed of a structured set of PathwayComponents defining points along a route to fulfillment of a goal or objective."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Pathway/json",
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:hasDestinationComponent",
+        "ceterms:hasPart",
+        "ceterms:hasSupportService",
+        "ceterms:industryType",
+        "ceterms:instructionalProgramType",
+        "ceterms:keyword",
+        "ceterms:latestVersion",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:nextVersion",
+        "ceterms:occupationType",
+        "ceterms:offeredBy",
+        "ceterms:ownedBy",
+        "ceterms:previousVersion",
+        "ceterms:reviewProcess",
+        "ceterms:subject",
+        "ceterms:subjectWebpage",
+        "ceterms:versionCode",
+        "ceterms:versionIdentifier",
+        "qdata:relevantDataSet"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:targetJob",
+    "rdfs:label": {
+        "en-US": "Target Job"
+    },
+    "rdfs:comment": {
+        "en-US": "Job that is the focus or target of this resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetJob/json",
+    "schema:domainIncludes": [
+        "ceterms:ConditionProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:Job"
+    ]
+}

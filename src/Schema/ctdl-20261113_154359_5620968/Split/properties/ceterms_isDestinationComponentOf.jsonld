@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:isDestinationComponentOf",
+    "rdfs:label": {
+        "en-US": "Is Destination Component Of"
+    },
+    "rdfs:comment": {
+        "en-US": "Pathway for which this resource is the goal or destination."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isDestinationComponentOf/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentComponent",
+        "ceterms:BasicComponent",
+        "ceterms:CocurricularComponent",
+        "ceterms:CollectionComponent",
+        "ceterms:CompetencyComponent",
+        "ceterms:CourseComponent",
+        "ceterms:CredentialComponent",
+        "ceterms:ExtracurricularComponent",
+        "ceterms:JobComponent",
+        "ceterms:MultiComponent",
+        "ceterms:WorkExperienceComponent"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:Pathway"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:Industry",
+    "rdfs:label": {
+        "en-US": "Industry"
+    },
+    "rdfs:comment": {
+        "en-US": "Broad category of economic activities encompassing various sectors."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Industry/json",
+    "meta:domainFor": [
+        "ceasn:comment",
+        "ceterms:alternateName",
+        "ceterms:assertedBy",
+        "ceterms:classification",
+        "ceterms:codedNotation",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:hasJob",
+        "ceterms:hasOccupation",
+        "ceterms:identifier",
+        "ceterms:inCatalog",
+        "ceterms:industryType",
+        "ceterms:isMemberOf",
+        "ceterms:keyword",
+        "ceterms:lifeCycleStatusType",
+        "ceterms:name",
+        "ceterms:sameAs",
+        "ceterms:subjectWebpage",
+        "ceterms:targetCompetency",
+        "ceterms:versionCode",
+        "ceterms:versionIdentifier",
+        "qdata:relevantDataSet"
+    ]
+}

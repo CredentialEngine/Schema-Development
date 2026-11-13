@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionCategory:Perkins",
+    "skos:prefLabel": {
+        "en-US": "Perkins"
+    },
+    "skos:definition": {
+        "en-US": "Credentials approved for funding under the U.S. Strengthening Career and Technical Education for the 21st Century Act (Perkins V) per the promulgating body."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/Perkins/json",
+    "skos:inScheme": [
+        "ceterms:CollectionCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CollectionCategory"
+    ]
+}

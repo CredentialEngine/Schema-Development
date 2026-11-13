@@ -1,0 +1,26 @@
+{
+    "@id": "ceterms:prerequisite",
+    "vs:term_status": "vs:stable",
+    "schema:rangeIncludes": [
+        "ceterms:Course",
+        "ceterms:ConditionProfile"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:Course"
+    ],
+    "rdfs:subPropertyOf": [
+        "ceterms:requires"
+    ],
+    "rdfs:label": {
+        "en-US": "Prerequisite"
+    },
+    "rdfs:comment": {
+        "en-US": "Course requirements that are prior conditions to this course."
+    },
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/prerequisite/json",
+    "@type": "rdf:Property",
+    "vann:usageNote": {
+        "en-US": "Conditions of entry into Programs can be specified with entryCondition."
+    },
+    "@context": "https://credreg.net/ctdl/schema/context/json"
+}

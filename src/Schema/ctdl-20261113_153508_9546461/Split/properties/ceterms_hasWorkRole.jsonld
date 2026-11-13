@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasWorkRole",
+    "rdfs:label": {
+        "en-US": "Has Work Role"
+    },
+    "rdfs:comment": {
+        "en-US": "Work Role related to this resource."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasWorkRole/json",
+    "schema:domainIncludes": [
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:WorkRole"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:TransferOutreachEvent",
+    "skos:prefLabel": {
+        "en-US": "Transfer Outreach Event"
+    },
+    "skos:definition": {
+        "en-US": "An event-based support service that informs and engages prospective transfer learners about pathways, policies, and resources."
+    },
+    "dct:description": {
+        "en-US": "Includes fairs, info sessions, and campus visit programming."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TransferOutreachEvent/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

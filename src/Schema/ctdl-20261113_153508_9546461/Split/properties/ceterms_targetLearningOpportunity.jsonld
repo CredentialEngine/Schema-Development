@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:targetLearningOpportunity",
+    "rdfs:label": {
+        "en-US": "Target Learning Opportunity"
+    },
+    "rdfs:comment": {
+        "en-US": "Learning opportunity that is the focus of a condition, process or another learning opportunity."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetLearningOpportunity/json",
+    "schema:domainIncludes": [
+        "ceterms:ConditionProfile",
+        "ceterms:Course",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:ProcessProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:Course",
+        "ceterms:LearningOpportunity",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram"
+    ]
+}

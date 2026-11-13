@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:applicability",
+    "rdfs:label": {
+        "en-US": "Applicability"
+    },
+    "rdfs:comment": {
+        "en-US": "Receiving curriculum or requirement context to which the transfer value is applied."
+    },
+    "vann:usageNote": {
+        "en-US": "If the types of applicability are formally defined as an enumeration published with URIs, > then the relevant URI can be entered as the targetNode of the Credential Alignment Object; if they are informally defined or not published then use the targetNodeName and targetNodeDescription of the Credential Alignment Object to define the relevant type."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/applicability/json",
+    "schema:domainIncludes": [
+        "ceterms:TransferValueProfile"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

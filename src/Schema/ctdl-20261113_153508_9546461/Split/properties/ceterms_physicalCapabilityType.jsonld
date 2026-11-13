@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:physicalCapabilityType",
+    "rdfs:label": {
+        "en-US": "Physical Capability Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of physical activity required or expected in performance; select from an existing enumeration of such types."
+    },
+    "dct:description": {
+        "en-US": "Such types may include fine motor activity, repetitive actions, climbing, kneeling, crawling, lifting heavy objects, and so on."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/physicalCapabilityType/json",
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

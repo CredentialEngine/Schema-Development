@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "alignment:NoMatch",
+    "skos:prefLabel": {
+        "en-US": "No Match"
+    },
+    "skos:definition": {
+        "en-US": "Assertion indicating that there is no related concept in the target framework."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/alignment/NoMatch/json",
+    "skos:inScheme": [
+        "ceterms:Alignment"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Alignment"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:conditionManifestOf",
+    "rdfs:label": {
+        "en-US": "Condition Manifest Of"
+    },
+    "rdfs:comment": {
+        "en-US": "Organization maintaining the condition manifest."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/conditionManifestOf/json",
+    "schema:domainIncludes": [
+        "ceterms:ConditionManifest"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "owl:inverseOf": [
+        "ceterms:hasConditionManifest"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrSource:Apprenticeship",
+    "skos:prefLabel": {
+        "en-US": "Apprenticeship"
+    },
+    "skos:definition": {
+        "en-US": "Learning completed in a registered apprenticeship program."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/Apprenticeship/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ]
+}

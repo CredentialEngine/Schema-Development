@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:IdentifierValue",
+    "rdfs:label": {
+        "en-US": "Identifier Value"
+    },
+    "rdfs:comment": {
+        "en-US": "Means of identifying a resource, typically consisting of an alphanumeric token and a context or scheme from which that token originates."
+    },
+    "vann:usageNote": {
+        "en-US": "Where a formal identification system exists for the identifier, recommended best practice is to use a string conforming to that system."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/IdentifierValue/json",
+    "meta:domainFor": [
+        "ceterms:identifierType",
+        "ceterms:identifierTypeName",
+        "ceterms:identifierValueCode"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:agreementType",
+    "rdfs:label": {
+        "en-US": "Agreement Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type or nature of the document that is being described."
+    },
+    "vann:usageNote": {
+        "en-US": "Best practice is to draw from an existing concept scheme such as ceterms:DocumentCategory, which may be supplemented by more precise terms from a locally defined concept scheme if required."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/agreementType/json",
+    "schema:domainIncludes": [
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:AgreementCategory"
+    ]
+}

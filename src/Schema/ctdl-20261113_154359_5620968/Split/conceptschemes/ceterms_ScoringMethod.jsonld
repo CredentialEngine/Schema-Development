@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:ScoringMethod",
+    "rdfs:label": {
+        "en-US": "Scoring Method"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of applicable scoring."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ScoringMethod/json",
+    "meta:hasConcept": [
+        "score:CriterionReferenced",
+        "score:NormReferenced"
+    ],
+    "skos:hasTopConcept": [
+        "score:CriterionReferenced",
+        "score:NormReferenced"
+    ]
+}

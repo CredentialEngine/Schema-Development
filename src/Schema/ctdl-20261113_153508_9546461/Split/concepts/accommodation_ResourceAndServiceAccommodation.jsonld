@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:ResourceAndServiceAccommodation",
+    "skos:prefLabel": {
+        "en-US": "Resource and Service Accommodation"
+    },
+    "skos:definition": {
+        "en-US": "Accommodations that are designed to provide equal access to resources and services and are not related to physical facilities."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/ResourceAndServiceAccommodation/json",
+    "skos:narrower": [
+        "accommodation:AlternativeFormats",
+        "accommodation:AssistiveTechnology",
+        "accommodation:CaptioningAndTranscripts",
+        "accommodation:ColorBlindness",
+        "accommodation:Communication",
+        "accommodation:DietaryAccommodation",
+        "accommodation:FlexibleSchedule",
+        "accommodation:MultipleLanguage",
+        "accommodation:PlainLanguage",
+        "accommodation:ScreenReader"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Accommodation"
+    ]
+}

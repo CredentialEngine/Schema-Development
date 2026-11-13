@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:PostSecondaryLevel",
+    "skos:prefLabel": {
+        "en-US": "Post-Secondary Level"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those who have completed secondary level school programs or equivalent."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/PostSecondaryLevel/json",
+    "skos:narrower": [
+        "audLevel:AssociatesDegreeLevel",
+        "audLevel:BachelorsDegreeLevel",
+        "audLevel:DoctoralDegreeLevel",
+        "audLevel:MastersDegreeLevel"
+    ],
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AudienceLevel"
+    ]
+}

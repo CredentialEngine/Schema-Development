@@ -1,0 +1,24 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:opeID",
+    "rdfs:label": {
+        "en-US": "OPE ID"
+    },
+    "rdfs:comment": {
+        "en-US": "OPE ID number (U.S. Office of Postsecondary Education Identification), sometimes referred to as the Federal School Code."
+    },
+    "dct:description": {
+        "en-US": "Identification number used by the U.S. Department of Education's Office of Postsecondary Education (OPE) to identify schools that have Program Participation Agreements (PPA) so that its students are eligible to participate in Federal Student Financial Assistance (FAFSA) programs under Title IV regulations. This is a 6-digit number followed by a 2-digit suffix used to identify branches, additional locations, and other entities that are part of the eligible institution."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/opeID/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
+}

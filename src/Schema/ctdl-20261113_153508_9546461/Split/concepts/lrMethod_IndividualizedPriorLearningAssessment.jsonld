@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrMethod:IndividualizedPriorLearningAssessment",
+    "skos:prefLabel": {
+        "en-US": "Individualized Prior Learning Assessment"
+    },
+    "skos:definition": {
+        "en-US": "An evaluation method that uses personalized approaches to assess learning."
+    },
+    "dct:description": {
+        "en-US": "Examples include portfolio review, simulation, and interview."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/IndividualizedPriorLearningAssessment/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ]
+}

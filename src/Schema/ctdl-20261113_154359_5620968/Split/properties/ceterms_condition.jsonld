@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:condition",
+    "rdfs:label": {
+        "en-US": "Condition"
+    },
+    "rdfs:comment": {
+        "en-US": "Single constraint, prerequisite, entry condition, requirement, or cost."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/condition/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:description"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:ConditionProfile",
+        "ceterms:CostProfile"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}
