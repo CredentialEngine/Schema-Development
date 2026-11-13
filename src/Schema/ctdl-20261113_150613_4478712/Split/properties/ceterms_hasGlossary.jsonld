@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:hasGlossary",
+    "rdfs:label": {
+        "en-US": "Has Glossary"
+    },
+    "rdfs:comment": {
+        "en-US": "Terms and definitions applicable to the resource."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasGlossary/json",
+    "schema:domainIncludes": [
+        "ceasn:CompetencyFramework",
+        "ceterms:PriorLearningPolicy",
+        "ceterms:QualificationsFramework",
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "skos:ConceptScheme"
+    ]
+}

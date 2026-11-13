@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:socialMedia",
+    "rdfs:label": {
+        "en-US": "Social Media"
+    },
+    "rdfs:comment": {
+        "en-US": "Social media access point for an agent or an agent's contact point."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/socialMedia/json",
+    "schema:domainIncludes": [
+        "ceterms:ContactPoint",
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

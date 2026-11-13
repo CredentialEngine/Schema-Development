@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:NoteTakingAssistance",
+    "skos:prefLabel": {
+        "en-US": "Note Taking Assistance"
+    },
+    "skos:definition": {
+        "en-US": "Service that assists individuals to make their own record of classes or lectures."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/NoteTakingAssistance/json",
+    "skos:narrowMatch": [
+        "ceds:000273/#00308"
+    ],
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

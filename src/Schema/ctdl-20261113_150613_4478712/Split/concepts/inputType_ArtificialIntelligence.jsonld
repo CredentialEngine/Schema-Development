@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "inputType:ArtificialIntelligence",
+    "skos:prefLabel": {
+        "en-US": "Artificial Intelligence"
+    },
+    "skos:definition": {
+        "en-US": "External stakeholder review, guidance or recommendations based on, or provided by any form of AI."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/ArtificialIntelligence/json",
+    "skos:inScheme": [
+        "ceterms:ExternalInput"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ExternalInput"
+    ]
+}

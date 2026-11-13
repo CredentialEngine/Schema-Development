@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:statementText",
+    "rdfs:label": {
+        "en-US": "Statement Text"
+    },
+    "rdfs:comment": {
+        "en-US": "Verbatim unformatted text of a statement, typically one made in a larger document."
+    },
+    "vann:usageNote": {
+        "en-US": "Use ceterms:description if the data provided is a summary of the content, e.g. when linking to the statement."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/statementText/json",
+    "schema:domainIncludes": [
+        "ceterms:StructuredStatement"
+    ],
+    "schema:rangeIncludes": [
+        "rdf:langString"
+    ]
+}

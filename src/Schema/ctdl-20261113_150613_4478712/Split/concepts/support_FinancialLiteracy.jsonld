@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:FinancialLiteracy",
+    "skos:prefLabel": {
+        "en-US": "Financial Literacy"
+    },
+    "skos:definition": {
+        "en-US": "Provides people with the knowledge, skills, and resources necessary to make informed decisions about managing their personal finances."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/FinancialLiteracy/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

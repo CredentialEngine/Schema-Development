@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:Technical",
+    "skos:prefLabel": {
+        "en-US": "Career and Technical School"
+    },
+    "skos:definition": {
+        "en-US": "Secondary school that focuses primarily on providing formal preparation for skilled, technical or professional occupations or careers."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Technical/json",
+    "skos:broader": [
+        "orgType:SecondarySchool"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ]
+}

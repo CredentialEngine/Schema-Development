@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:LowerSecondary",
+    "skos:prefLabel": {
+        "en-US": "Lower Secondary"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those at the earlier stages of secondary education, building on primary education, typically with a more subject-oriented curriculum."
+    },
+    "dct:description": {
+        "en-US": "Aligns to ISCED 2011 level 2 – Lower secondary education."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/LowerSecondary/json",
+    "skos:broader": [
+        "audLevel:SecondaryLevel"
+    ],
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ]
+}

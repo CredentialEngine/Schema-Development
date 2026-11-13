@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "collectionCategory:IndustryRecognized",
+    "skos:prefLabel": {
+        "en-US": "Industry Recognized"
+    },
+    "skos:definition": {
+        "en-US": "Learning Opportunities, Learning Programs, Courses, Assessments or Credentials recognized in one or more industries based on factors such as job market demand per the promulgating body."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/collectionCategory/IndustryRecognized/json",
+    "skos:inScheme": [
+        "ceterms:CollectionCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:CollectionCategory"
+    ]
+}

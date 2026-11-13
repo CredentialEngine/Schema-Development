@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lifeCycle:Developing",
+    "skos:prefLabel": {
+        "en-US": "Developing"
+    },
+    "skos:definition": {
+        "en-US": "Resource is under development and may or may not become active, current, ongoing, offered, operational, or available."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lifeCycle/Developing/json",
+    "skos:inScheme": [
+        "ceterms:LifeCycleStatus"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LifeCycleStatus"
+    ]
+}

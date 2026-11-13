@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:assessmentExample",
+    "rdfs:label": {
+        "en-US": "Assessment Example"
+    },
+    "rdfs:comment": {
+        "en-US": "Example assessment or assessment item."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assessmentExample/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

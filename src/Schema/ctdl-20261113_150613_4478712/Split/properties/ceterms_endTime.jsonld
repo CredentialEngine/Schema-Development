@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:endTime",
+    "rdfs:label": {
+        "en-US": "End Time"
+    },
+    "rdfs:comment": {
+        "en-US": "Time some event or activity ends."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/endTime/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:temporalCoverage"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:dateTime"
+    ],
+    "owl:equivalentProperty": [
+        "schema:endTime"
+    ]
+}

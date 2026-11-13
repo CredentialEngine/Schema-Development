@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audLevel:RemedialLevel",
+    "skos:prefLabel": {
+        "en-US": "Remedial Level"
+    },
+    "skos:definition": {
+        "en-US": "Intended for those who are under-prepared for learning at a particular level."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/RemedialLevel/json",
+    "skos:inScheme": [
+        "ceterms:AudienceLevel"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AudienceLevel"
+    ]
+}

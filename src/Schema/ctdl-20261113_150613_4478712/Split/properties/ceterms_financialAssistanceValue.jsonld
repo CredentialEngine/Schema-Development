@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:financialAssistanceValue",
+    "rdfs:label": {
+        "en-US": "Financial Assistance Value"
+    },
+    "rdfs:comment": {
+        "en-US": "Description of the amount of financial assistance available."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/financialAssistanceValue/json",
+    "schema:domainIncludes": [
+        "ceterms:FinancialAssistanceProfile"
+    ],
+    "schema:rangeIncludes": [
+        "schema:QuantitativeValue"
+    ]
+}

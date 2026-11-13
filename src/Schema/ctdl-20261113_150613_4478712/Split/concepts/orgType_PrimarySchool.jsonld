@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:PrimarySchool",
+    "skos:prefLabel": {
+        "en-US": "Primary School"
+    },
+    "skos:definition": {
+        "en-US": "School primarily offering programs designed to provide students with fundamental skills in reading, writing and mathematics and to establish a solid foundation for learning."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/PrimarySchool/json",
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

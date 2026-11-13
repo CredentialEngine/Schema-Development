@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:Grant",
+    "skos:prefLabel": {
+        "en-US": "Grant"
+    },
+    "skos:definition": {
+        "en-US": "Financial subsidy, which doesn’t require repayment, based on meeting requirements determined by the grantor."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Grant/json",
+    "skos:broader": [
+        "financialAid:General"
+    ],
+    "skos:narrower": [
+        "financialAid:FederalGrant",
+        "financialAid:InstitutionalGrant",
+        "financialAid:LoanForgivenessProgram",
+        "financialAid:OtherGrant",
+        "financialAid:PellGrant",
+        "financialAid:PrivateGrant",
+        "financialAid:PromiseProgram",
+        "financialAid:StateLocalGrant",
+        "financialAid:Stipend",
+        "financialAid:WIOA"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

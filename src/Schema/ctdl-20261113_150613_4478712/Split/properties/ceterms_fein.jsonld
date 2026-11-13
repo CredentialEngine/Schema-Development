@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:fein",
+    "rdfs:label": {
+        "en-US": "FEIN"
+    },
+    "rdfs:comment": {
+        "en-US": "Federal Employer Identification Number (FEIN) identifying organizations, persons, states, government agencies, corporations, and companies."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/fein/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:string"
+    ]
+}

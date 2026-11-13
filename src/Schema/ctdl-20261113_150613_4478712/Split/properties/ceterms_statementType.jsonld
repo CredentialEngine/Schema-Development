@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:statementType",
+    "rdfs:label": {
+        "en-US": "Statement Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates the topic or nature of the statement within the context of the document being represented."
+    },
+    "vann:usageNote": {
+        "en-US": "Best practice is to draw from an existing concept scheme such as ceterms:StatementCategory, which may be supplemented by more precise terms from a locally defined concept scheme if required."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/statementType/json",
+    "schema:domainIncludes": [
+        "ceterms:StructuredStatement"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:StatementCategory"
+    ]
+}

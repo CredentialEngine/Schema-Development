@@ -1,0 +1,29 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:PathwaySet",
+    "rdfs:label": {
+        "en-US": "Pathway Set"
+    },
+    "rdfs:comment": {
+        "en-US": "A roadmap of multiple related pathways that lead to one or more destinations."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/PathwaySet/json",
+    "rdfs:subClassOf": [
+        "ceterms:Collection"
+    ],
+    "meta:domainFor": [
+        "ceterms:alternateName",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:developmentProcess",
+        "ceterms:hasPathway",
+        "ceterms:maintenanceProcess",
+        "ceterms:name",
+        "ceterms:offeredBy",
+        "ceterms:ownedBy",
+        "ceterms:reviewProcess",
+        "ceterms:subjectWebpage"
+    ]
+}

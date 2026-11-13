@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "serviceType:RecognizeService",
+    "skos:prefLabel": {
+        "en-US": "Recognize Service"
+    },
+    "skos:definition": {
+        "en-US": "Agent service recommends, endorses, indicates preference for, or otherwise provides a positive judgment."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/RecognizeService/json",
+    "skos:inScheme": [
+        "ceterms:AgentServiceType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgentServiceType"
+    ]
+}

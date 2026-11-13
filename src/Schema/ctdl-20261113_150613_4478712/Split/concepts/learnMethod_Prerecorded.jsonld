@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "learnMethod:Prerecorded",
+    "skos:prefLabel": {
+        "en-US": "Prerecorded"
+    },
+    "skos:definition": {
+        "en-US": "Learning by using video, audio, or other prerecorded content."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Prerecorded/json",
+    "skos:inScheme": [
+        "ceterms:LearningMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningMethod"
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:revocation",
+    "rdfs:label": {
+        "en-US": "Revocation"
+    },
+    "rdfs:comment": {
+        "en-US": "Entity that describes the processes and criteria for ending (revoking) the validity or operation of an awarded credential."
+    },
+    "dct:description": {
+        "en-US": "Generally, revocation applies to certifications and licenses; however, it may also apply to other types of credential under extraordinary circumstances."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/revocation/json",
+    "schema:domainIncludes": [
+        "ceterms:AcademicCertificate",
+        "ceterms:ApprenticeshipCertificate",
+        "ceterms:AssociateDegree",
+        "ceterms:AssociateOfAppliedArtsDegree",
+        "ceterms:AssociateOfAppliedScienceDegree",
+        "ceterms:AssociateOfArtsDegree",
+        "ceterms:AssociateOfScienceDegree",
+        "ceterms:BachelorDegree",
+        "ceterms:BachelorOfArtsDegree",
+        "ceterms:BachelorOfScienceDegree",
+        "ceterms:Badge",
+        "ceterms:BasicTechnicalCertificate",
+        "ceterms:Certificate",
+        "ceterms:CertificateOfCompletion",
+        "ceterms:CertificateOfParticipation",
+        "ceterms:Certification",
+        "ceterms:Credential",
+        "ceterms:Degree",
+        "ceterms:DigitalBadge",
+        "ceterms:Diploma",
+        "ceterms:DoctoralDegree",
+        "ceterms:GeneralEducationDevelopment",
+        "ceterms:GeneralEducationLevel1Certificate",
+        "ceterms:GeneralEducationLevel2Certificate",
+        "ceterms:HigherEducationLevel1Certificate",
+        "ceterms:HigherEducationLevel2Certificate",
+        "ceterms:JourneymanCertificate",
+        "ceterms:License",
+        "ceterms:MasterCertificate",
+        "ceterms:MasterDegree",
+        "ceterms:MasterOfArtsDegree",
+        "ceterms:MasterOfScienceDegree",
+        "ceterms:MicroCredential",
+        "ceterms:OpenBadge",
+        "ceterms:PostBaccalaureateCertificate",
+        "ceterms:PostMasterCertificate",
+        "ceterms:PreApprenticeshipCertificate",
+        "ceterms:ProfessionalCertificate",
+        "ceterms:ProfessionalDoctorate",
+        "ceterms:ProficiencyCertificate",
+        "ceterms:QualityAssuranceCredential",
+        "ceterms:ResearchDoctorate",
+        "ceterms:SecondaryEducationCertificate",
+        "ceterms:SecondarySchoolDiploma",
+        "ceterms:SpecialistDegree",
+        "ceterms:TechnicalLevel1Certificate",
+        "ceterms:TechnicalLevel2Certificate",
+        "ceterms:TechnicalLevel3Certificate",
+        "ceterms:WorkBasedLearningCertificate"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:RevocationProfile"
+    ]
+}

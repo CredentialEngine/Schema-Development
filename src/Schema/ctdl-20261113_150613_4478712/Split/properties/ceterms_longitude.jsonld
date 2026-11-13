@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:longitude",
+    "rdfs:label": {
+        "en-US": "Longitude"
+    },
+    "rdfs:comment": {
+        "en-US": "The longitude of a location."
+    },
+    "dct:description": {
+        "en-US": "For example -122.08585 (WGS 84)."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/longitude/json",
+    "schema:domainIncludes": [
+        "ceterms:GeoCoordinates",
+        "ceterms:Place"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:float"
+    ],
+    "owl:equivalentProperty": [
+        "schema:longitude"
+    ]
+}

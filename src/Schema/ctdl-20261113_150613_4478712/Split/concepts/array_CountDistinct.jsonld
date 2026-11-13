@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "array:CountDistinct",
+    "skos:prefLabel": {
+        "en-US": "Count Distinct"
+    },
+    "skos:definition": {
+        "en-US": "The number of unique values; yields a number."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/array/CountDistinct/json",
+    "skos:inScheme": [
+        "ceterms:ArrayOperationCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ArrayOperationCategory"
+    ]
+}

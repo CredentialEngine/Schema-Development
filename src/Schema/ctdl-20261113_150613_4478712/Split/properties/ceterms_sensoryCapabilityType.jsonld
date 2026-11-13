@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:sensoryCapabilityType",
+    "rdfs:label": {
+        "en-US": "Sensory Capability Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of required or expected sensory capability; select from an existing enumeration of such types."
+    },
+    "dct:description": {
+        "en-US": "Such types may include smell, color discrimination, depth perception, and so on."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/sensoryCapabilityType/json",
+    "schema:domainIncludes": [
+        "ceasn:Competency",
+        "ceterms:Job",
+        "ceterms:Occupation",
+        "ceterms:Task",
+        "ceterms:WorkRole"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ]
+}

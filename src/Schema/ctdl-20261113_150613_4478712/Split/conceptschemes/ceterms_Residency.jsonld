@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:Residency",
+    "rdfs:label": {
+        "en-US": "Residency"
+    },
+    "rdfs:comment": {
+        "en-US": "Types of residency."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Residency/json",
+    "meta:hasConcept": [
+        "residency:InState",
+        "residency:International",
+        "residency:Local",
+        "residency:OutOfState",
+        "residency:Regional"
+    ],
+    "skos:hasTopConcept": [
+        "residency:InState",
+        "residency:International",
+        "residency:Local",
+        "residency:OutOfState",
+        "residency:Regional"
+    ]
+}
