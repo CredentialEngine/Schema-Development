@@ -1,5 +1,5 @@
-# Issue: https://github.com/CredentialEngine/Schema-Development/issues/1092
-# Use case: add expirationDate to classes that have a dateEffective.
+# Issue: https://github.com/CredentialEngine/Schema-Development/issues/1091
+# Use case: add identifier to various classes.
 
 PREFIX ceterms: <https://purl.org/ctdl/terms/>
 PREFIX schema:  <https://schema.org/>
