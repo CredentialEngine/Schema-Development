@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:teaches",
+    "rdfs:label": {
+        "en-US": "Teaches"
+    },
+    "rdfs:comment": {
+        "en-US": "Competency that the learning opportunity is intended to teach."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/teaches/json",
+    "rdfs:subPropertyOf": [
+        "ceterms:targetCompetency"
+    ],
+    "schema:domainIncludes": [
+        "ceterms:Course",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram"
+    ],
+    "schema:rangeIncludes": [
+        "ceasn:Competency",
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

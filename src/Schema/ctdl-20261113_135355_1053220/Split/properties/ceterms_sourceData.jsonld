@@ -1,0 +1,32 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:sourceData",
+  "rdfs:label": {
+    "en-US": "Source Data"
+  },
+  "rdfs:comment": {
+    "en-US": "Structured data representing the resource."
+  },
+  "dct:description": {
+    "en-US": "The preferred data serialization is JSON-LD or some other serialization of RDF."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/sourceData/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:WorkExperienceComponent"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

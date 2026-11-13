@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:InstitutionalGrant",
+  "skos:prefLabel": {
+    "en-US": "Institutional Grant"
+  },
+  "skos:definition": {
+    "en-US": "Financial subsidy, including free or discounted tuition or other fees, which doesn’t require repayment, based on meeting requirements determined by an educational institution."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/InstitutionalGrant/json",
+  "skos:broader": [
+    "financialAid:Grant"
+  ],
+  "owl:equivalentClass": [
+    "ceds:000113#InstitutionalGrants"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

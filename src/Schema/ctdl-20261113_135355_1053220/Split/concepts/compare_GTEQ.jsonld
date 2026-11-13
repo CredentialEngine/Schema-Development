@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "compare:GTEQ",
+  "skos:prefLabel": {
+    "en-US": "Greater Than or Equal To"
+  },
+  "skos:definition": {
+    "en-US": "The value of the left is greater than or equal to the value of the right."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/compare/GTEQ/json",
+  "owl:equivalentClass": [
+    "odrl2:gteq"
+  ],
+  "skos:inScheme": [
+    "ceterms:ComparatorCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ComparatorCategory"
+  ]
+}

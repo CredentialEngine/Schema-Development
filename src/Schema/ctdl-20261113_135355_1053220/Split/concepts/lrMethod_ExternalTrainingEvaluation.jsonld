@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrMethod:ExternalTrainingEvaluation",
+  "skos:prefLabel": {
+    "en-US": "External Training Evaluation"
+  },
+  "skos:definition": {
+    "en-US": "An evaluation method in which structured, external non-academic training is reviewed to award credit or standing."
+  },
+  "dct:description": {
+    "en-US": "May be conducted by employer, third-party, vendor, or external credentialing organization."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/ExternalTrainingEvaluation/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ]
+}

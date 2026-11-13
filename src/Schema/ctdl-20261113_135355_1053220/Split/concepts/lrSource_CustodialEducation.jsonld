@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrSource:CustodialEducation",
+  "skos:prefLabel": {
+    "en-US": "Custodial Education"
+  },
+  "skos:definition": {
+    "en-US": "Learning completed in educational programs while an individual is incarcerated or in custody."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/CustodialEducation/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ]
+}

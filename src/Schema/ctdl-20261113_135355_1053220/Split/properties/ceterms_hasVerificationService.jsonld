@@ -1,0 +1,24 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasVerificationService",
+  "rdfs:label": {
+    "en-US": "Has Verification Service"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing available systems provided by the agent to verify credential holders."
+  },
+  "dct:description": {
+    "en-US": "Systems in place to verify credential holders and communicate the current credentialing status of all credential holders to employers and other labor market participants, as well as to education and workforce development funders and regulators."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasVerificationService/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:VerificationServiceProfile"
+  ]
+}

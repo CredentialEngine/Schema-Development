@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:payBandType",
+  "rdfs:label": {
+    "en-US": "Pay Band Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of pay band indicating a range or classification of monetary compensation associated with work; select from an existing enumeration of such types."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/payBandType/json",
+  "schema:domainIncludes": [
+    "ceterms:PayProfile"
+  ],
+  "schema:rangeIncludes": [
+    "skos:Concept"
+  ]
+}

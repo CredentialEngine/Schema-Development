@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:transferValueStatement",
+    "rdfs:label": {
+        "en-US": "Transfer Value Statement"
+    },
+    "rdfs:comment": {
+        "en-US": "Webpage or online document that defines or explains the nature of transfer value handled by the organization."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/transferValueStatement/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

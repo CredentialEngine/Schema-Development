@@ -1,0 +1,34 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:CreditUnit",
+  "rdfs:label": {
+    "en-US": "Credit Unit"
+  },
+  "rdfs:comment": {
+    "en-US": "Broad descriptions of units used to measure credit associated with a resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/CreditUnit/json",
+  "meta:hasConcept": [
+    "creditUnit:AcademicYear",
+    "creditUnit:CarnegieUnit",
+    "creditUnit:CertificateCredit",
+    "creditUnit:ClockHour",
+    "creditUnit:CompetencyCredit",
+    "creditUnit:ContactHour",
+    "creditUnit:ContinuingEducationUnit",
+    "creditUnit:DegreeCredit",
+    "creditUnit:DualCredit",
+    "creditUnit:QuarterHour",
+    "creditUnit:RequirementCredit",
+    "creditUnit:SecondaryDiplomaCredit",
+    "creditUnit:SemesterHour",
+    "creditUnit:TimeBasedCredit",
+    "creditUnit:TypeBasedCredit"
+  ],
+  "skos:hasTopConcept": [
+    "creditUnit:TimeBasedCredit",
+    "creditUnit:TypeBasedCredit"
+  ]
+}

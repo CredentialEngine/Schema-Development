@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:CompletionRecord",
+  "skos:prefLabel": {
+    "en-US": "Completion Record"
+  },
+  "skos:definition": {
+    "en-US": "Document verifying successful completion of structured training with an identifiable provider."
+  },
+  "dct:description": {
+    "en-US": "Applies to employer, community-based, military, or continuing education training."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/CompletionRecord/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:Tutoring",
+  "skos:prefLabel": {
+    "en-US": "Tutoring"
+  },
+  "skos:definition": {
+    "en-US": "Individualized or small group teaching."
+  },
+  "vann:usageNote": {
+    "en-US": "Tutoring as a support service is normally provided as a supplement to a regular teaching program."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Tutoring/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00329"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

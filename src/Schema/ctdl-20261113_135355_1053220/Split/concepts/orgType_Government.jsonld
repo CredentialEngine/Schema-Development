@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:Government",
+  "skos:prefLabel": {
+    "en-US": "Government Agency"
+  },
+  "skos:definition": {
+    "en-US": "Organization in the public sector at the federal, state or local levels."
+  },
+  "dct:description": {
+    "en-US": "Includes quasi-governmental organizations, special districts (e.g., libraries), corrections organizations, etc., except college and school districts. Is also responsible for the oversight and administration of specific functions other than the military services."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Government/json",
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:OrganizationType"
+  ]
+}

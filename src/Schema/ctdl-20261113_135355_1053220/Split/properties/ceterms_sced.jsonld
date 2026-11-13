@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:sced",
+  "rdfs:label": {
+    "en-US": "SCED"
+  },
+  "rdfs:comment": {
+    "en-US": "School Courses for the Exchange of Data code for a course."
+  },
+  "vann:usageNote": {
+    "en-US": "It is preferable to record the whole 12 character alphanumeric code, however it is also valid to record just the five digit subject code + course number."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/sced/json",
+  "schema:domainIncludes": [
+    "ceterms:Course"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:string"
+  ]
+}

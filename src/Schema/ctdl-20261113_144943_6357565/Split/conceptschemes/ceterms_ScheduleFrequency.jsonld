@@ -1,0 +1,51 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:ScheduleFrequency",
+    "rdfs:label": {
+        "en-US": "Schedule Frequency"
+    },
+    "rdfs:comment": {
+        "en-US": "Types for how often events occur."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ScheduleFrequency/json",
+    "meta:hasConcept": [
+        "scheduleFrequency:Annually",
+        "scheduleFrequency:BiMonthly",
+        "scheduleFrequency:BiWeekly",
+        "scheduleFrequency:Daily",
+        "scheduleFrequency:EventBased",
+        "scheduleFrequency:Hourly",
+        "scheduleFrequency:Irregular",
+        "scheduleFrequency:Monthly",
+        "scheduleFrequency:MultiplePerWeek",
+        "scheduleFrequency:OnDemand",
+        "scheduleFrequency:OpenEntryExit",
+        "scheduleFrequency:Quarterly",
+        "scheduleFrequency:SelfPaced",
+        "scheduleFrequency:SemiAnnually",
+        "scheduleFrequency:SemiMonthly",
+        "scheduleFrequency:SingleInstance",
+        "scheduleFrequency:Weekly"
+    ],
+    "skos:hasTopConcept": [
+        "scheduleFrequency:Annually",
+        "scheduleFrequency:BiMonthly",
+        "scheduleFrequency:BiWeekly",
+        "scheduleFrequency:Daily",
+        "scheduleFrequency:EventBased",
+        "scheduleFrequency:Hourly",
+        "scheduleFrequency:Irregular",
+        "scheduleFrequency:Monthly",
+        "scheduleFrequency:MultiplePerWeek",
+        "scheduleFrequency:OnDemand",
+        "scheduleFrequency:OpenEntryExit",
+        "scheduleFrequency:Quarterly",
+        "scheduleFrequency:SelfPaced",
+        "scheduleFrequency:SemiAnnually",
+        "scheduleFrequency:SemiMonthly",
+        "scheduleFrequency:SingleInstance",
+        "scheduleFrequency:Weekly"
+    ]
+}

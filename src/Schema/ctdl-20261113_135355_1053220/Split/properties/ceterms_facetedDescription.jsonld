@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:facetedDescription",
+  "rdfs:label": {
+    "en-US": "Faceted Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of a specific aspect or characteristic of this resource."
+  },
+  "vann:usageNote": {
+    "en-US": "Use for the level descriptors of a Qualifications Framework when these are defined in terms of several different types of competency."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/facetedDescription/json",
+  "schema:domainIncludes": [
+    "asn:ProgressionLevel"
+  ],
+  "schema:rangeIncludes": [
+    "ceasn:Competency"
+  ]
+}

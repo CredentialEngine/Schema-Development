@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "owl:sameAs",
+    "rdfs:label": {
+        "en-US": "Same As"
+    },
+    "rdfs:comment": {
+        "en-US": "Links an individual to an individual; such an owl:sameAs statement indicates that two URI references actually refer to the same thing: the individuals have the same \"identity\"."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/owl/sameAs/json",
+    "schema:domainIncludes": [
+        "rdfs:Resource"
+    ],
+    "schema:rangeIncludes": [
+        "rdfs:Resource"
+    ]
+}

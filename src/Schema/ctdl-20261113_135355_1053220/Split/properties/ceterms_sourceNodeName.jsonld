@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:sourceNodeName",
+  "rdfs:label": {
+    "en-US": "Source Node Name"
+  },
+  "rdfs:comment": {
+    "en-US": "Name of an individual entry in a formally defined framework that is the source of an alignment."
+  },
+  "dct:description": {
+    "en-US": "This relates to the node to which the target node is being compared, that is the subject of the property used as the alignment type."
+  },
+  "vann:usageNote": {
+    "en-US": "\"Framework\" may be interpreted broadly to include any scheme or schema for organizing and referencing resources."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/sourceNodeName/json",
+  "schema:domainIncludes": [
+    "ceterms:AlignmentObject"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

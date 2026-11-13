@@ -1,0 +1,26 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:assertedBy",
+  "rdfs:label": {
+    "en-US": "Asserted By"
+  },
+  "rdfs:comment": {
+    "en-US": "Agent making a statement based on fact or belief."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assertedBy/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionProfile",
+    "ceterms:Industry",
+    "ceterms:JurisdictionProfile",
+    "ceterms:Occupation",
+    "ceterms:Task",
+    "ceterms:WorkRole"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ]
+}

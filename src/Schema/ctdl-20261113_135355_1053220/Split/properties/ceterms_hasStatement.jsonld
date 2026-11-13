@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasStatement",
+  "rdfs:label": {
+    "en-US": "Has Statement"
+  },
+  "rdfs:comment": {
+    "en-US": "Alignment assertion belonging to the alignment map."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasStatement/json",
+  "schema:domainIncludes": [
+    "ceterms:AlignmentMap"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:Statement"
+  ]
+}

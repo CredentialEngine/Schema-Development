@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetOccupation",
+  "rdfs:label": {
+    "en-US": "Target Occupation"
+  },
+  "rdfs:comment": {
+    "en-US": "Occupation that is the focus or target of this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetOccupation/json",
+  "schema:domainIncludes": [
+    "ceasn:Rubric",
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Occupation"
+  ]
+}

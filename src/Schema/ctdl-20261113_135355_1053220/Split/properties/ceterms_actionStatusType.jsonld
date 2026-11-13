@@ -1,0 +1,39 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:actionStatusType",
+  "rdfs:label": {
+    "en-US": "Action Status Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing the current disposition or standing of an action; select from an existing enumeration of such types."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/actionStatusType/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:credentialAlignment"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:AccreditAction",
+    "ceterms:AdvancedStandingAction",
+    "ceterms:ApproveAction",
+    "ceterms:CredentialingAction",
+    "ceterms:OfferAction",
+    "ceterms:RecognizeAction",
+    "ceterms:RegistrationAction",
+    "ceterms:RegulateAction",
+    "ceterms:RenewAction",
+    "ceterms:RevokeAction",
+    "ceterms:RightsAction",
+    "ceterms:WorkforceDemandAction"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:ActionStatus"
+  ],
+  "owl:equivalentProperty": [
+    "schema:actionStatusType"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:SupportCoordination",
+  "skos:prefLabel": {
+    "en-US": "Support Coordination"
+  },
+  "skos:definition": {
+    "en-US": "Service that involves coordinating and integrating various other services to provide comprehensive support to individuals."
+  },
+  "dct:description": {
+    "en-US": "Support coordination emphasizes a holistic and personalized approach where services are delivered in a comprehensive manner, rather than in isolation."
+  },
+  "vann:usageNote": {
+    "en-US": "Use for services known as \"wraparound services\" in the U.S."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/SupportCoordination/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

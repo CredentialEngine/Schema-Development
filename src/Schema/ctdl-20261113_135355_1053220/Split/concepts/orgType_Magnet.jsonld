@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:Magnet",
+  "skos:prefLabel": {
+    "en-US": "Magnet/Competitive Admissions School"
+  },
+  "skos:definition": {
+    "en-US": "Public school offering special instruction and programs not available elsewhere, designed to attract a more diverse student body from throughout a school district."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Magnet/json",
+  "skos:broader": [
+    "orgType:SecondarySchool"
+  ],
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ]
+}

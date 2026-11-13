@@ -1,0 +1,35 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:participant",
+    "rdfs:label": {
+        "en-US": "Participant"
+    },
+    "rdfs:comment": {
+        "en-US": "Co-agents that participated in the action indirectly."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/participant/json",
+    "schema:domainIncludes": [
+        "ceterms:AccreditAction",
+        "ceterms:AdvancedStandingAction",
+        "ceterms:ApproveAction",
+        "ceterms:CredentialingAction",
+        "ceterms:OfferAction",
+        "ceterms:RecognizeAction",
+        "ceterms:RegistrationAction",
+        "ceterms:RegulateAction",
+        "ceterms:RenewAction",
+        "ceterms:RevokeAction",
+        "ceterms:RightsAction",
+        "ceterms:WorkforceDemandAction"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "owl:equivalentProperty": [
+        "schema:participant"
+    ]
+}

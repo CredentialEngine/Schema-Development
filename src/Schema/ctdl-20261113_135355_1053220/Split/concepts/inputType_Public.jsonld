@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "inputType:Public",
+  "skos:prefLabel": {
+    "en-US": "Public"
+  },
+  "skos:definition": {
+    "en-US": "External stakeholder review, guidance or recommendations by community members and the general public."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Public/json",
+  "skos:inScheme": [
+    "ceterms:ExternalInput"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ExternalInput"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrSource:CommunityService",
+  "skos:prefLabel": {
+    "en-US": "Community Service"
+  },
+  "skos:definition": {
+    "en-US": "Learning acquired through unpaid service activities performed for the benefit of a community or organization outside a formal curriculum or assessed program."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/CommunityService/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ]
+}

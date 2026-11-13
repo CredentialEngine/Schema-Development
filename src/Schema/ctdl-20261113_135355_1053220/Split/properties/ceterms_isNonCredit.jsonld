@@ -1,0 +1,44 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:isNonCredit",
+  "rdfs:label": {
+    "en-US": "Is Non-Credit"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource carries or confers no official academic credit according to the provider of the resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isNonCredit/json",
+  "schema:domainIncludes": [
+    "ceterms:AcademicCertificate",
+    "ceterms:ApprenticeshipCertificate",
+    "ceterms:AssessmentProfile",
+    "ceterms:Badge",
+    "ceterms:BasicTechnicalCertificate",
+    "ceterms:Certificate",
+    "ceterms:CertificateOfCompletion",
+    "ceterms:CertificateOfParticipation",
+    "ceterms:Certification",
+    "ceterms:Course",
+    "ceterms:DigitalBadge",
+    "ceterms:Diploma",
+    "ceterms:JourneymanCertificate",
+    "ceterms:JourneymanCertificate",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram",
+    "ceterms:License",
+    "ceterms:MasterCertificate",
+    "ceterms:MasterCertificate",
+    "ceterms:MicroCredential",
+    "ceterms:OpenBadge",
+    "ceterms:PreApprenticeshipCertificate",
+    "ceterms:ProfessionalCertificate",
+    "ceterms:ProficiencyCertificate",
+    "ceterms:SecondaryEducationCertificate",
+    "ceterms:WorkBasedLearningCertificate"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:boolean"
+  ]
+}

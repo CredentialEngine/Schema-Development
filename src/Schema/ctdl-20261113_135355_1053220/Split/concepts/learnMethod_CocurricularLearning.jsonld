@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:CocurricularLearning",
+  "skos:prefLabel": {
+    "en-US": "Cocurricular Learning"
+  },
+  "skos:definition": {
+    "en-US": "Learning opportunity that supplements or complements the curriculum."
+  },
+  "vann:usageNote": {
+    "en-US": "Use for activities that are not part of a formal curriculum."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/CocurricularLearning/json",
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningMethod"
+  ]
+}

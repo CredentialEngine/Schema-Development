@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:honorificSuffix",
+  "rdfs:label": {
+    "en-US": "Honorific Suffix"
+  },
+  "rdfs:comment": {
+    "en-US": "Honorific suffix preceding a person's name such as M.D. , PhD, or MSCSW."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/honorificSuffix/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialPerson"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ],
+  "owl:equivalentProperty": [
+    "ceterms:ContactPoint"
+  ]
+}

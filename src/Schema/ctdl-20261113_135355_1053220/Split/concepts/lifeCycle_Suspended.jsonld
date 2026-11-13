@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lifeCycle:Suspended",
+  "skos:prefLabel": {
+    "en-US": "Suspended"
+  },
+  "skos:definition": {
+    "en-US": "Resource is temporarily not active, current, ongoing, offered, operational, or available."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lifeCycle/Suspended/json",
+  "skos:inScheme": [
+    "ceterms:LifeCycleStatus"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LifeCycleStatus"
+  ]
+}

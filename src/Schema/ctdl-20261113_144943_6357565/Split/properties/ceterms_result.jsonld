@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:result",
+    "rdfs:label": {
+        "en-US": "Result"
+    },
+    "rdfs:comment": {
+        "en-US": "Outcome produced in the action."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/result/json",
+    "schema:domainIncludes": [
+        "ceterms:WorkforceDemandAction"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ]
+}

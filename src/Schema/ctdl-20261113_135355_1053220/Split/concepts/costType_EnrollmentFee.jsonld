@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:EnrollmentFee",
+  "skos:prefLabel": {
+    "en-US": "Enrollment Fee"
+  },
+  "skos:definition": {
+    "en-US": "Cost to enroll in the learning opportunity being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/EnrollmentFee/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

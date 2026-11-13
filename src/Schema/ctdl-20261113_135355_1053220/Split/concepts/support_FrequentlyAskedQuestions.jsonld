@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:FrequentlyAskedQuestions",
+  "skos:prefLabel": {
+    "en-US": "Frequently Asked Questions"
+  },
+  "skos:definition": {
+    "en-US": "A curated support resource that provides answers to common questions."
+  },
+  "dct:description": {
+    "en-US": "Format-neutral; may be web, print, or knowledge-base."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/FrequentlyAskedQuestions/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

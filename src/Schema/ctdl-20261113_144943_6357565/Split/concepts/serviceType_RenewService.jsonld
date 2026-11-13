@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "serviceType:RenewService",
+    "skos:prefLabel": {
+        "en-US": "Renew Service"
+    },
+    "skos:definition": {
+        "en-US": "Agent provides service to extend (renew) the validity of a credential."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/RenewService/json",
+    "skos:inScheme": [
+        "ceterms:AgentServiceType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:AgentServiceType"
+    ]
+}

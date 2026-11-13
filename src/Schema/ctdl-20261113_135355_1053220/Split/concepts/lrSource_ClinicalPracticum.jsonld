@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrSource:ClinicalPracticum",
+  "skos:prefLabel": {
+    "en-US": "Clinical Practicum"
+  },
+  "skos:definition": {
+    "en-US": "Learning acquired through supervised clinical or practicum experiences in applied professional settings aligned to program or licensure standards."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/ClinicalPracticum/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasConstraint",
+  "rdfs:label": {
+    "en-US": "Has Constraint"
+  },
+  "rdfs:comment": {
+    "en-US": "Referenced resource defines a single constraint."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasConstraint/json",
+  "schema:domainIncludes": [
+    "ceterms:ComponentCondition"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Constraint"
+  ]
+}

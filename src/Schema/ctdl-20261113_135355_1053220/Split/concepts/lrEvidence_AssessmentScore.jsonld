@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:AssessmentScore",
+  "skos:prefLabel": {
+    "en-US": "Assessment Score"
+  },
+  "skos:definition": {
+    "en-US": "Official documentation of a person’s assessment results."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/AssessmentScore/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

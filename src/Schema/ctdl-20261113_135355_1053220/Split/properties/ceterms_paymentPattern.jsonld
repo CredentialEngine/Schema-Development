@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:paymentPattern",
+  "rdfs:label": {
+    "en-US": "Payment Pattern"
+  },
+  "rdfs:comment": {
+    "en-US": "Applicable pattern for payments such as \"per semester\" and \"every three months\"."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/paymentPattern/json",
+  "schema:domainIncludes": [
+    "ceterms:CostProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

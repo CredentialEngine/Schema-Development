@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:LowerSecondarySchool",
+  "skos:prefLabel": {
+    "en-US": "Lower Secondary School"
+  },
+  "skos:definition": {
+    "en-US": "School primarily offering programs at the first stage of secondary education building on primary education, typically with a more subject-oriented curriculum."
+  },
+  "vann:usageNote": {
+    "en-US": "Use for Middle School."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/LowerSecondarySchool/json",
+  "skos:broader": [
+    "orgType:SecondarySchool"
+  ],
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ]
+}

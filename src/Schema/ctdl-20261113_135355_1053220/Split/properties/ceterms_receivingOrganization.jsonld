@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:receivingOrganization",
+  "rdfs:label": {
+    "en-US": "Receiving Organization"
+  },
+  "rdfs:comment": {
+    "en-US": "Organization to which students transfer under the provisions of an agreement."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/receivingOrganization/json",
+  "schema:domainIncludes": [
+    "ceterms:TransferAgreement"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization"
+  ]
+}

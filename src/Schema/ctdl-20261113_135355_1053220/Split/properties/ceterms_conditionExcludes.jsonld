@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:conditionExcludes",
+  "rdfs:label": {
+    "en-US": "Condition Excludes"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource that does not count toward fulfilling a constraint, prerequisite, entry condition, or requirement."
+  },
+  "dct:description": {
+    "en-US": "Intended for cases where it is simplest to express exceptions to a general requirement, for example when a requirement is met by any Math course except \"Access Math\"."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/conditionExcludes/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionManifest",
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

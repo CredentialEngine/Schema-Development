@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:WorkplaceLearningRecord",
+  "skos:prefLabel": {
+    "en-US": "Workplace Learning Record"
+  },
+  "skos:definition": {
+    "en-US": "Documentation of a person's on the job learning."
+  },
+  "dct:description": {
+    "en-US": "Includes Apprentice Logbooks and similar."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/WorkplaceLearningRecord/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

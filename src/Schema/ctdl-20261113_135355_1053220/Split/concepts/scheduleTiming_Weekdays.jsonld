@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleTiming:Weekdays",
+  "skos:prefLabel": {
+    "en-US": "Weekdays"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is Monday through Friday, consecutively or non-consecutively."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleTiming/Weekdays/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleTiming"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleTiming"
+  ]
+}

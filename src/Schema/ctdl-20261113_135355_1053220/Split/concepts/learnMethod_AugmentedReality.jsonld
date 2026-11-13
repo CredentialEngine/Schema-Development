@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:AugmentedReality",
+  "skos:prefLabel": {
+    "en-US": "Augmented Reality"
+  },
+  "skos:definition": {
+    "en-US": "Provides interactive learning experience through technology that superimposes a computer-generated image on a user's view of the real world, thus providing a composite view."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/AugmentedReality/json",
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningMethod"
+  ]
+}

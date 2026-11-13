@@ -1,0 +1,27 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:CollectionMember",
+  "rdfs:label": {
+    "en-US": "Collection Member"
+  },
+  "rdfs:comment": {
+    "en-US": "Provides information about the membership of a resource in a Collection."
+  },
+  "dct:description": {
+    "en-US": "Instances act as proxies or stand-ins for other resources in the context of a particular collection so that the relationships between them and the collection can be stated without implying that those relationships are true in other contexts."
+  },
+  "vann:usageNote": {
+    "en-US": "The data recorded for a Collection Member should refer to the membership of the resource in a Collection."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/CollectionMember/json",
+  "meta:domainFor": [
+    "ceterms:alternateName",
+    "ceterms:description",
+    "ceterms:endDate",
+    "ceterms:name",
+    "ceterms:proxyFor",
+    "ceterms:startDate"
+  ]
+}

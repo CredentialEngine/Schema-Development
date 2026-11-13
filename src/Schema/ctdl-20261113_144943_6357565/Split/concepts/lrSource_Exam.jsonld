@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrSource:Exam",
+    "skos:prefLabel": {
+        "en-US": "Exam"
+    },
+    "skos:definition": {
+        "en-US": "Learning demonstrated via a recognized examination administered by a national, international, or military body."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/Exam/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionSourceCategory"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:TestAssistance",
+  "skos:prefLabel": {
+    "en-US": "Test Assistance"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides assistance for people who need help in reading or writing responses to test items."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TestAssistance/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00326"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

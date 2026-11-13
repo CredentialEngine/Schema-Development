@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:SenderObligation",
+  "skos:prefLabel": {
+    "en-US": "Sender Obligation"
+  },
+  "skos:definition": {
+    "en-US": "Obligation that applies to the sending party in the agreement."
+  },
+  "dct:description": {
+    "en-US": "May include providing transcripts, data, or verifying learning."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/SenderObligation/json",
+  "skos:broader": [
+    "statementCat:Obligation"
+  ],
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ]
+}

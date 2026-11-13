@@ -1,0 +1,55 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:StatementCategory",
+  "rdfs:label": {
+    "en-US": "Statement Category"
+  },
+  "rdfs:comment": {
+    "en-US": "Concepts used to classify the nature or purpose of structured statements."
+  },
+  "vann:usageNote": {
+    "en-US": "If a more granular or precise classification is required for local purposes than is available in this concept scheme, best practice is to publish a description of it as a skos:Concept and to use it alongside the best match broader category in this scheme."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/StatementCategory/json",
+  "meta:hasConcept": [
+    "statementCat:DevelopmentRelated",
+    "statementCat:EquivalencyRequestRelated",
+    "statementCat:Guarantee",
+    "statementCat:LearningRecognitionEvidenceRelated",
+    "statementCat:LearningRecognitionMethodRelated",
+    "statementCat:LearningRecognitionOutcomeRelated",
+    "statementCat:LearningRecognitionRequestRelated",
+    "statementCat:LearningRecognitionSourceRelated",
+    "statementCat:Limitation",
+    "statementCat:MarketingRelated",
+    "statementCat:MetricRelated",
+    "statementCat:MutualObligation",
+    "statementCat:NoticePeriod",
+    "statementCat:Obligation",
+    "statementCat:Overview",
+    "statementCat:Purpose",
+    "statementCat:ReceiverObligation",
+    "statementCat:SenderObligation",
+    "statementCat:TerminationTerms"
+  ],
+  "skos:hasTopConcept": [
+    "statementCat:DevelopmentRelated",
+    "statementCat:EquivalencyRequestRelated",
+    "statementCat:Guarantee",
+    "statementCat:LearningRecognitionEvidenceRelated",
+    "statementCat:LearningRecognitionMethodRelated",
+    "statementCat:LearningRecognitionOutcomeRelated",
+    "statementCat:LearningRecognitionRequestRelated",
+    "statementCat:LearningRecognitionSourceRelated",
+    "statementCat:Limitation",
+    "statementCat:MarketingRelated",
+    "statementCat:MetricRelated",
+    "statementCat:NoticePeriod",
+    "statementCat:Obligation",
+    "statementCat:Overview",
+    "statementCat:Purpose",
+    "statementCat:TerminationTerms"
+  ]
+}

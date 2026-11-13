@@ -1,0 +1,29 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetComponent",
+  "rdfs:label": {
+    "en-US": "Target Component"
+  },
+  "rdfs:comment": {
+    "en-US": "Candidate PathwayComponent for the ComponentCondition."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetComponent/json",
+  "schema:domainIncludes": [
+    "ceterms:ComponentCondition"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:WorkExperienceComponent"
+  ]
+}

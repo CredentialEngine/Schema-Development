@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:minimumAge",
+  "rdfs:label": {
+    "en-US": "Minimum Age"
+  },
+  "rdfs:comment": {
+    "en-US": "Minimum allowed age at which a person is eligible."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/minimumAge/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:integer"
+  ]
+}

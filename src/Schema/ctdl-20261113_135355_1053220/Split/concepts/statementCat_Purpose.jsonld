@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:Purpose",
+  "skos:prefLabel": {
+    "en-US": "Purpose"
+  },
+  "skos:definition": {
+    "en-US": "Statement that explains the intent or rationale of the agreement."
+  },
+  "dct:description": {
+    "en-US": "Clarifies why the agreement exists and what it seeks to achieve."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/Purpose/json",
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:StatementCategory"
+  ]
+}

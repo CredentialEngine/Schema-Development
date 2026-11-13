@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "claimType:VerifiedClaim",
+  "skos:prefLabel": {
+    "en-US": "Verified Claim"
+  },
+  "skos:definition": {
+    "en-US": "Verifiable representation of the credential holder's achievement."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/claimType/VerifiedClaim/json",
+  "skos:inScheme": [
+    "ceterms:ClaimType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ClaimType"
+  ]
+}

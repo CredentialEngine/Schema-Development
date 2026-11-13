@@ -1,0 +1,16 @@
+# Issue: https://github.com/CredentialEngine/Schema-Development/issues/1092
+# Use case: add expirationDate to classes that have a dateEffective.
+
+PREFIX ceterms: <https://purl.org/ctdl/terms/>
+PREFIX schema:  <https://schema.org/>
+PREFIX qdata:   <https://credreg.net/qdata/terms/>
+
+INSERT DATA {
+    ceterms:expirationDate schema:domainIncludes ceterms:ConditionProfile, 
+        ceterms:ProcessProfile, 
+        ceterms:RevocationProfile, 
+        ceterms:VerificationServiceProfile, 
+        qdata:DataSetDistribution, 
+        qdata:DataSetProfile 
+    .
+}

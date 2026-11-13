@@ -1,0 +1,27 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:registeredBy",
+    "rdfs:label": {
+        "en-US": "Registered By"
+    },
+    "rdfs:comment": {
+        "en-US": "Agent with which the resource is registered because it has been vetted, approved and validated to meet specific criteria."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/registeredBy/json",
+    "schema:domainIncludes": [
+        "ceterms:ApprenticeshipCertificate",
+        "ceterms:Course",
+        "ceterms:JourneymanCertificate",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:MasterCertificate",
+        "ceterms:PreApprenticeshipCertificate"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ]
+}

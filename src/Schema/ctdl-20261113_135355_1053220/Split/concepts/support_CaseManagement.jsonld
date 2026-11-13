@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:CaseManagement",
+  "skos:prefLabel": {
+    "en-US": "Case Management"
+  },
+  "skos:definition": {
+    "en-US": "Long-term, client-centered service for delivering comprehensive health and human services that involves ongoing assessment, planning, coordination, monitoring, and evaluation of a client's needs and services provided."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/CaseManagement/json",
+  "skos:relatedMatch": [
+    "ceds:000273/#00878"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

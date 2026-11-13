@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:CompetencyCredit",
+  "skos:prefLabel": {
+    "en-US": "Competency Credit"
+  },
+  "skos:definition": {
+    "en-US": "Credit that is issued or accepted for a particular competency or set of competencies."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/CompetencyCredit/json",
+  "skos:broader": [
+    "creditUnit:TypeBasedCredit"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ]
+}

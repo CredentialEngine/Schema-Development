@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "assessMethod:Performance",
+  "skos:prefLabel": {
+    "en-US": "Performance"
+  },
+  "skos:definition": {
+    "en-US": "Set of behaviors or actions assessed as demonstration of competencies where the assessment occurs either as the actions take place (i.e., live) or through review of recordings of those actions in a persistent media (e.g., video, audio, keystroke records, etc.)"
+  },
+  "dct:description": {
+    "en-US": "Performance includes, but is not limited to, dance, music, teaching, acting, medical procedures, truck driving, manufacturing production, etc. Criteria include the categories and benchmarks on which the performance is assessed. Methods of evaluation can include multiple evaluators either individually or as an expert panel using general criteria or more structured rubrics whose scores are combined (e.g., assessing a dance performance, evaluating the performance of a medical procedure, truck driving procedure, manufacturing process such as machining)."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/assessMethod/Performance/json",
+  "skos:inScheme": [
+    "ceterms:AssessmentMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AssessmentMethod"
+  ]
+}

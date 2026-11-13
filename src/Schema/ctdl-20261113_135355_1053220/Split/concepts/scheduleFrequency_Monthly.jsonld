@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleFrequency:Monthly",
+  "skos:prefLabel": {
+    "en-US": "Monthly"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is on a monthly basis, typically occurring once per month."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/Monthly/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleFrequency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:ProgramSpecificFee",
+  "skos:prefLabel": {
+    "en-US": "Program Specific Fee"
+  },
+  "skos:definition": {
+    "en-US": "Additional cost for participation with a specific program or course of study such as engineering, business, and nursing."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/ProgramSpecificFee/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

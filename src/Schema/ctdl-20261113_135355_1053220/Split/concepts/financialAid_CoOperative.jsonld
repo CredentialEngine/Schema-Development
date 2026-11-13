@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:CoOperative",
+  "skos:prefLabel": {
+    "en-US": "Co-Operative"
+  },
+  "skos:definition": {
+    "en-US": "Paid work experience utilized by approved career and technical education programs to combine classroom and on-the-job training and education which provides academic credit for structured job experience."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/CoOperative/json",
+  "skos:broader": [
+    "financialAid:WorkBased"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

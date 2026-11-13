@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:deliveryType",
+    "rdfs:label": {
+        "en-US": "Delivery Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of means by which a learning opportunity or assessment is delivered to credential seekers and by which they interact; select from an existing enumeration of such types."
+    },
+    "vann:usageNote": {
+        "en-US": "Best practice is to use concepts from a controlled vocabulary such as the ceterms:DeliveryType vocabulary."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/deliveryType/json",
+    "schema:domainIncludes": [
+        "ceasn:Rubric",
+        "ceterms:AssessmentProfile",
+        "ceterms:Course",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:ScheduledOffering",
+        "ceterms:SupportService"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject"
+    ],
+    "meta:targetScheme": [
+        "ceterms:Delivery"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:processFrequency",
+  "rdfs:label": {
+    "en-US": "Process Frequency"
+  },
+  "rdfs:comment": {
+    "en-US": "Interval of process occurence."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/processFrequency/json",
+  "schema:domainIncludes": [
+    "ceterms:ProcessProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

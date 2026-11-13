@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:ClaimType",
+  "rdfs:label": {
+    "en-US": "Claim Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of the claims supported by a verification service."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ClaimType/json",
+  "meta:hasConcept": [
+    "claimType:BadgeClaim",
+    "claimType:QualityAssuranceClaim",
+    "claimType:TranscriptClaim",
+    "claimType:VerifiedClaim"
+  ],
+  "skos:hasTopConcept": [
+    "claimType:BadgeClaim",
+    "claimType:QualityAssuranceClaim",
+    "claimType:TranscriptClaim",
+    "claimType:VerifiedClaim"
+  ]
+}

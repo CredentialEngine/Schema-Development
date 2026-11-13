@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:LearningOpportunity",
+  "rdfs:label": {
+    "en-US": "Learning Opportunity"
+  },
+  "rdfs:comment": {
+    "en-US": "Structured and unstructured learning and development opportunities based in direct experience, formal and informal study, observation, and involvement in discourse and practice."
+  },
+  "dct:description": {
+    "en-US": "Examples of learning opportunities include education and training programs and classes, courses of study, apprenticeship or work experience programs, or other structured experiences intended to serve as educational or training events."
+  },
+  "vann:usageNote": {
+    "en-US": "Classes of learning opportunities defined in other namespaces such as schema.org/Course may be declared as equivaleny or subclasses of ceterms:LearningOpportunity to support their discovery through applications processing CTDL data."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningOpportunity/json"
+}

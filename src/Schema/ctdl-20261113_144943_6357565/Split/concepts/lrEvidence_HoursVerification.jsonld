@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrEvidence:HoursVerification",
+    "skos:prefLabel": {
+        "en-US": "Hours Verification"
+    },
+    "skos:definition": {
+        "en-US": "Record confirming supervised practice, clinical hours, or comparable time-based experience."
+    },
+    "dct:description": {
+        "en-US": "Common in clinical, practicum, apprenticeship, or licensure contexts."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/HoursVerification/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionEvidenceCategory"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:residentOf",
+  "rdfs:label": {
+    "en-US": "Resident Of"
+  },
+  "rdfs:comment": {
+    "en-US": "Geographic or political region of which a person must be a legal resident or citizen in order to be eligible for the credential."
+  },
+  "dct:description": {
+    "en-US": "Residency defines the duration of stay required by national, state, provincial or local laws that entitles a person to the legal protection and benefits provided to the applicable type."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/residentOf/json",
+  "schema:domainIncludes": [
+    "ceterms:ConditionProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:JurisdictionProfile"
+  ]
+}

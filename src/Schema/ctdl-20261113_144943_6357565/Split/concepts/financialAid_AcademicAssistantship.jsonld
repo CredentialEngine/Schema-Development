@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:AcademicAssistantship",
+    "skos:prefLabel": {
+        "en-US": "Academic Assistantship"
+    },
+    "skos:definition": {
+        "en-US": "Paid employment in which students receive tuition or other reimbursement for the tasks they perform for faculty members, departments, and/or educational institutions."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/AcademicAssistantship/json",
+    "skos:broader": [
+        "financialAid:WorkBased"
+    ],
+    "owl:equivalentClass": [
+        "ceds:000113#Assistantships"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

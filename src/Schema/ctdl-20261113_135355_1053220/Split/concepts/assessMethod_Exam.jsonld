@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "assessMethod:Exam",
+  "skos:prefLabel": {
+    "en-US": "Exam"
+  },
+  "skos:definition": {
+    "en-US": "Mix of scored items presented in fixed or open response formats including qualifying and comprehensive exams."
+  },
+  "dct:description": {
+    "en-US": "Exam includes, but is not limited to, multiple choice, true-false, written essay, short-answer, fill-in or oral response formats that could include measurements of reasoning, problem-solving, critical thinking."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/assessMethod/Exam/json",
+  "skos:inScheme": [
+    "ceterms:AssessmentMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AssessmentMethod"
+  ]
+}

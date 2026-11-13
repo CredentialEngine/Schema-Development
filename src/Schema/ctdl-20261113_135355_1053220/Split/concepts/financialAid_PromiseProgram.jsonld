@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:PromiseProgram",
+  "skos:prefLabel": {
+    "en-US": "Promise Program"
+  },
+  "skos:definition": {
+    "en-US": "Program for students in a given area, with minimal requirements, that pays for tuition without requiring repayment."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/PromiseProgram/json",
+  "skos:broader": [
+    "financialAid:Grant"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

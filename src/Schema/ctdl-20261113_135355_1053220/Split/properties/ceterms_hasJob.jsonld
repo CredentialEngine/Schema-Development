@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasJob",
+  "rdfs:label": {
+    "en-US": "Has Job"
+  },
+  "rdfs:comment": {
+    "en-US": "Job related to this resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasJob/json",
+  "schema:domainIncludes": [
+    "ceterms:Industry",
+    "ceterms:Occupation",
+    "ceterms:Task",
+    "ceterms:WorkRole"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Job"
+  ]
+}

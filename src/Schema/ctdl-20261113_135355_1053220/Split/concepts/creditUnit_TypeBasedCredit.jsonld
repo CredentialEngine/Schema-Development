@@ -1,0 +1,28 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:TypeBasedCredit",
+  "skos:prefLabel": {
+    "en-US": "Type-Based Credit"
+  },
+  "skos:definition": {
+    "en-US": "Credit with a unit of measurement based on the type of credit."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/TypeBasedCredit/json",
+  "skos:narrower": [
+    "creditUnit:CertificateCredit",
+    "creditUnit:CompetencyCredit",
+    "creditUnit:ContinuingEducationUnit",
+    "creditUnit:DegreeCredit",
+    "creditUnit:DualCredit",
+    "creditUnit:RequirementCredit",
+    "creditUnit:SecondaryDiplomaCredit"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CreditUnit"
+  ]
+}

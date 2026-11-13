@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "inputType:Governments",
+  "skos:prefLabel": {
+    "en-US": "Governments"
+  },
+  "skos:definition": {
+    "en-US": "External stakeholder review, guidance or recommendations by government."
+  },
+  "dct:description": {
+    "en-US": "May include local, state or provincial, and federal or national government."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Governments/json",
+  "skos:inScheme": [
+    "ceterms:ExternalInput"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ExternalInput"
+  ]
+}

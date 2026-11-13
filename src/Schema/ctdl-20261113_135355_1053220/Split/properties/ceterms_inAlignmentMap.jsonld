@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:inAlignmentMap",
+  "rdfs:label": {
+    "en-US": "In Alignment Map"
+  },
+  "rdfs:comment": {
+    "en-US": "Alignment map to which the statement belongs."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/inAlignmentMap/json",
+  "schema:domainIncludes": [
+    "rdf:Statement"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:AlignmentMap"
+  ]
+}

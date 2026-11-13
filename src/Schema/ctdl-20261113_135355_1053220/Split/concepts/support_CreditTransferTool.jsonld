@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:CreditTransferTool",
+  "skos:prefLabel": {
+    "en-US": "Credit Transfer Tool"
+  },
+  "skos:definition": {
+    "en-US": "Online tool that estimates how previously earned credits or other types of prior learning transfers."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/CreditTransferTool/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

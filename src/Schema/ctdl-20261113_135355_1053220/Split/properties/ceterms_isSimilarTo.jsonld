@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:isSimilarTo",
+  "rdfs:label": {
+    "en-US": "Is Similar To"
+  },
+  "rdfs:comment": {
+    "en-US": "Another functionally similar entity."
+  },
+  "dct:description": {
+    "en-US": "The property is generally applicable in describing the similarity between any two entities."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isSimilarTo/json",
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ],
+  "owl:equivalentProperty": [
+    "schema:isSimilarTo",
+    "skos:related"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "financialAid:Post911GIBill",
+    "skos:prefLabel": {
+        "en-US": "Post 9-11 GI Bill"
+    },
+    "skos:definition": {
+        "en-US": "Financial assistance provided to qualified active duty service members, veterans, and qualified family members that is based on military service and intended to offset costs related to education, living, and resources."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Post911GIBill/json",
+    "skos:broader": [
+        "financialAid:Military"
+    ],
+    "owl:equivalentClass": [
+        "ceds:001610#Post911GIBill"
+    ],
+    "skos:inScheme": [
+        "ceterms:FinancialAssistance"
+    ]
+}

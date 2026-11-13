@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:TechnologyFee",
+  "skos:prefLabel": {
+    "en-US": "Technology Fee"
+  },
+  "skos:definition": {
+    "en-US": "Cost for accessing technologies related to the learning opportunity or activity."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/TechnologyFee/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

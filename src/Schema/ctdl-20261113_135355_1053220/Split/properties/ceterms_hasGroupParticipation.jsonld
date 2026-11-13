@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasGroupParticipation",
+  "rdfs:label": {
+    "en-US": "Has Group Participation"
+  },
+  "rdfs:comment": {
+    "en-US": "Whether or not two or more participants are required to complete the assessment activity."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasGroupParticipation/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:boolean"
+  ]
+}

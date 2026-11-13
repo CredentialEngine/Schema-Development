@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasTransferValueProfile",
+  "rdfs:label": {
+    "en-US": "Has Transfer Value Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Description of transfer value that is part of this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasTransferValueProfile/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:hasPart"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:TransferAgreement"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:TransferValueProfile"
+  ]
+}

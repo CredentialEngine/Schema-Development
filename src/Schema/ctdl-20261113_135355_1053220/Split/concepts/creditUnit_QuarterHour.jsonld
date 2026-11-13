@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:QuarterHour",
+  "skos:prefLabel": {
+    "en-US": "Quarter Hour"
+  },
+  "skos:definition": {
+    "en-US": "Credit that is issued or accepted at an academic quarter level."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/QuarterHour/json",
+  "skos:broader": [
+    "creditUnit:TimeBasedCredit"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ]
+}

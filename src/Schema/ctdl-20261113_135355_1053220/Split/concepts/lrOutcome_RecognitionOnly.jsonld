@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrOutcome:RecognitionOnly",
+  "skos:prefLabel": {
+    "en-US": "Recognition Only"
+  },
+  "skos:definition": {
+    "en-US": "An outcome in which learning is acknowledged for placement, exemption, or eligibility without awarding credit."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrOutcome/RecognitionOnly/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionOutcomeCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionOutcomeCategory"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrSource:Degree",
+  "skos:prefLabel": {
+    "en-US": "Degree"
+  },
+  "skos:definition": {
+    "en-US": "Learning recognized on the basis of a previously awarded academic degree."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/Degree/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ]
+}

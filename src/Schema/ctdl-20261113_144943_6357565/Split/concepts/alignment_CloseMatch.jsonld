@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "alignment:CloseMatch",
+    "skos:prefLabel": {
+        "en-US": "Close Match"
+    },
+    "skos:definition": {
+        "en-US": "Assertion indicates that two concepts are sufficiently similar that they can be used interchangeably."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/alignment/CloseMatch/json",
+    "skos:relatedMatch": [
+        "skos:closeMatch"
+    ],
+    "skos:inScheme": [
+        "ceterms:Alignment"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Alignment"
+    ]
+}

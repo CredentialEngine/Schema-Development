@@ -1,0 +1,28 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:assessmentMethodType",
+  "rdfs:label": {
+    "en-US": "Assessment Method Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of method used to conduct an assessment; select from an existing enumeration of such types."
+  },
+  "vann:usageNote": {
+    "en-US": "Best practice for developing credential descriptions for the Credential Engine Registry is to use the ceterms:AssessmentMethod vocabulary."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/assessmentMethodType/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:AssessmentMethod"
+  ]
+}

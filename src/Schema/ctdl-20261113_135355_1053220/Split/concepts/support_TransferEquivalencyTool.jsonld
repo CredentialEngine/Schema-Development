@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:TransferEquivalencyTool",
+  "skos:prefLabel": {
+    "en-US": "Transfer Equivalency Tool"
+  },
+  "skos:definition": {
+    "en-US": "Searchable system showing how courses from other institutions equate to local offerings."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TransferEquivalencyTool/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

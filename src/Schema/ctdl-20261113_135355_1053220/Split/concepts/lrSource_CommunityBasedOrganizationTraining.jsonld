@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrSource:CommunityBasedOrganizationTraining",
+  "skos:prefLabel": {
+    "en-US": "Community-Based Organization Training"
+  },
+  "skos:definition": {
+    "en-US": "Learning completed through structured training delivered by a community-based organization."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrSource/CommunityBasedOrganizationTraining/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionSourceCategory"
+  ]
+}

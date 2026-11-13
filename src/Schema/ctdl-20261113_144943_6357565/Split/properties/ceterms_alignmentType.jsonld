@@ -1,0 +1,31 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:alignmentType",
+    "rdfs:label": {
+        "en-US": "Alignment Type"
+    },
+    "rdfs:comment": {
+        "en-US": "Type of relationship between two entities."
+    },
+    "vann:usageNote": {
+        "en-US": "This property is necessary only for AlignmentObjects as part of an AlignmentMap where it is the property that expresses the alignment from the source node (as subject) and target node (as object). When the CredentialAlignmentObject is used, the type value is definitively identified by the property that points to it and so in this case the alignmentType property is redundant."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/alignmentType/json",
+    "schema:domainIncludes": [
+        "ceterms:AlignmentObject",
+        "ceterms:CredentialAlignmentObject",
+        "ceterms:FinancialAlignmentObject"
+    ],
+    "schema:rangeIncludes": [
+        "skos:Concept"
+    ],
+    "meta:targetScheme": [
+        "ceterms:Alignment"
+    ],
+    "owl:equivalentProperty": [
+        "lrmi:alignmentType",
+        "schema:alignmentType"
+    ]
+}

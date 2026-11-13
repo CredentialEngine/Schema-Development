@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:SecondaryDiplomaCredit",
+  "skos:prefLabel": {
+    "en-US": "Secondary Diploma Credit"
+  },
+  "skos:definition": {
+    "en-US": "Credit that is issued or accepted for a secondary diploma."
+  },
+  "dct:description": {
+    "en-US": "Includes credits earned while enrolled in a secondary diploma program that meet graduation requirements."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/SecondaryDiplomaCredit/json",
+  "skos:broader": [
+    "creditUnit:TypeBasedCredit"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:costDetails",
+  "rdfs:label": {
+    "en-US": "Cost Details"
+  },
+  "rdfs:comment": {
+    "en-US": "Webpage or online document containing human-readable, in-depth information about costs."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/costDetails/json",
+  "schema:domainIncludes": [
+    "ceterms:CostManifest",
+    "ceterms:CostProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ]
+}

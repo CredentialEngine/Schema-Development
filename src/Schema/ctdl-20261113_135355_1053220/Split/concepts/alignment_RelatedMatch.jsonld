@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "alignment:RelatedMatch",
+  "skos:prefLabel": {
+    "en-US": "Related Match"
+  },
+  "skos:definition": {
+    "en-US": "Assertion indicating an associative, non-hierarchical relationship between the two concepts where neither is broader nor narrower than the other."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/alignment/RelatedMatch/json",
+  "skos:relatedMatch": [
+    "skos:relatedMatch"
+  ],
+  "skos:inScheme": [
+    "ceterms:Alignment"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Alignment"
+  ]
+}

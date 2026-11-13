@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetCompetencyFramework",
+  "rdfs:label": {
+    "en-US": "Target Competency Framework"
+  },
+  "rdfs:comment": {
+    "en-US": "Competency framework relevant to the process being described."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetCompetencyFramework/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:credentialAlignment"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:ProcessProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceasn:CompetencyFramework",
+    "ceterms:CredentialAlignmentObject"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:Guarantee",
+  "skos:prefLabel": {
+    "en-US": "Guarantee"
+  },
+  "skos:definition": {
+    "en-US": "Statement that assures a condition, right, or outcome within the agreement."
+  },
+  "dct:description": {
+    "en-US": "May include guarantees of credit acceptance, recognition, or services."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/Guarantee/json",
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:StatementCategory"
+  ]
+}

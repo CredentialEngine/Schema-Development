@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:MarketingRelated",
+  "skos:prefLabel": {
+    "en-US": "Marketing Related"
+  },
+  "skos:definition": {
+    "en-US": "Statement that defines provisions for promoting the agreement."
+  },
+  "dct:description": {
+    "en-US": "Covers branding, logos, co-marketing, and public announcements."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/MarketingRelated/json",
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:StatementCategory"
+  ]
+}

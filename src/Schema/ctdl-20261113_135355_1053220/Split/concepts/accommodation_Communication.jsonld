@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:Communication",
+  "skos:prefLabel": {
+    "en-US": "Communication"
+  },
+  "skos:definition": {
+    "en-US": "Verbal or non-verbal communication assistance."
+  },
+  "dct:description": {
+    "en-US": "Examples include written communication, picture communication, or communication boards, telephone relay, assistive listening devices, Braille print, audio communication, or other accommodations."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/Communication/json",
+  "skos:broader": [
+    "accommodation:ResourceAndServiceAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

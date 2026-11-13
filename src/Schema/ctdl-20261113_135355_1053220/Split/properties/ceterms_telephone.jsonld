@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:telephone",
+  "rdfs:label": {
+    "en-US": "Telephone"
+  },
+  "rdfs:comment": {
+    "en-US": "Telephone number."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/telephone/json",
+  "schema:domainIncludes": [
+    "ceterms:ContactPoint"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:string"
+  ],
+  "owl:equivalentProperty": [
+    "schema:telephone"
+  ]
+}

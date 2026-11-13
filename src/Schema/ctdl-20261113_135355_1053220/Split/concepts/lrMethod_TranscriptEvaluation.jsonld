@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrMethod:TranscriptEvaluation",
+  "skos:prefLabel": {
+    "en-US": "Transcript Evaluation"
+  },
+  "skos:definition": {
+    "en-US": "An evaluation method in which prior records are reviewed to determine applicability."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/TranscriptEvaluation/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ]
+}

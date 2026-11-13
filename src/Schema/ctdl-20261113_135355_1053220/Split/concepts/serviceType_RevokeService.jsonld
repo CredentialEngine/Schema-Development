@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "serviceType:RevokeService",
+  "skos:prefLabel": {
+    "en-US": "Revoke Service"
+  },
+  "skos:definition": {
+    "en-US": "Agent provides service to end (revoke) the validity or operation of an awarded credential."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/serviceType/RevokeService/json",
+  "skos:inScheme": [
+    "ceterms:AgentServiceType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AgentServiceType"
+  ]
+}

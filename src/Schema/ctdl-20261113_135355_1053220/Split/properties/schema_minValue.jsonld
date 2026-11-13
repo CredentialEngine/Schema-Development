@@ -1,0 +1,27 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "schema:minValue",
+  "rdfs:label": {
+    "en-US": "Minimum Value"
+  },
+  "rdfs:comment": {
+    "en-US": "The lower value of some characteristic or property."
+  },
+  "vann:usageNote": {
+    "en-US": "In CTDL: for single values, use schema:value; for ranges, use schema:minValue and schema:maxValue."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/schema/minValue/json",
+  "schema:domainIncludes": [
+    "ceasn:CriterionLevel",
+    "ceterms:PayProfile",
+    "ceterms:ValueProfile",
+    "qdata:Observation",
+    "schema:MonetaryAmount",
+    "schema:QuantitativeValue"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:float"
+  ]
+}

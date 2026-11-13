@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:Translation",
+  "skos:prefLabel": {
+    "en-US": "Translation"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides spoken or written language translation."
+  },
+  "vann:usageNote": {
+    "en-US": "For sign language, use Sign Language Service"
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Translation/json",
+  "skos:relatedMatch": [
+    "ceds:000273/#00327"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

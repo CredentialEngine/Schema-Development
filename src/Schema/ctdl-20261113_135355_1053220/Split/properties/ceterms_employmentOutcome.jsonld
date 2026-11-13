@@ -1,0 +1,73 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:employmentOutcome",
+  "rdfs:label": {
+    "en-US": "Employment Outcome"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing aggregate data on jobs obtained with the credential by occupation and industry for a given period of time in a specific region."
+  },
+  "vann:usageNote": {
+    "en-US": "The use of ceterms:aggregateData instead of this property is strongly recommended."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/employmentOutcome/json",
+  "rdfs:subPropertyOf": [
+    "ceterms:aggregateData"
+  ],
+  "schema:domainIncludes": [
+    "ceterms:AcademicCertificate",
+    "ceterms:ApprenticeshipCertificate",
+    "ceterms:AssociateDegree",
+    "ceterms:AssociateOfAppliedArtsDegree",
+    "ceterms:AssociateOfAppliedScienceDegree",
+    "ceterms:AssociateOfArtsDegree",
+    "ceterms:AssociateOfScienceDegree",
+    "ceterms:BachelorDegree",
+    "ceterms:BachelorOfArtsDegree",
+    "ceterms:BachelorOfScienceDegree",
+    "ceterms:Badge",
+    "ceterms:BasicTechnicalCertificate",
+    "ceterms:Certificate",
+    "ceterms:CertificateOfCompletion",
+    "ceterms:CertificateOfParticipation",
+    "ceterms:Certification",
+    "ceterms:Credential",
+    "ceterms:Degree",
+    "ceterms:DigitalBadge",
+    "ceterms:Diploma",
+    "ceterms:DoctoralDegree",
+    "ceterms:GeneralEducationDevelopment",
+    "ceterms:GeneralEducationLevel1Certificate",
+    "ceterms:GeneralEducationLevel2Certificate",
+    "ceterms:HigherEducationLevel1Certificate",
+    "ceterms:HigherEducationLevel2Certificate",
+    "ceterms:JourneymanCertificate",
+    "ceterms:License",
+    "ceterms:MasterCertificate",
+    "ceterms:MasterDegree",
+    "ceterms:MasterOfArtsDegree",
+    "ceterms:MasterOfScienceDegree",
+    "ceterms:MicroCredential",
+    "ceterms:OpenBadge",
+    "ceterms:PostBaccalaureateCertificate",
+    "ceterms:PostMasterCertificate",
+    "ceterms:PreApprenticeshipCertificate",
+    "ceterms:ProfessionalCertificate",
+    "ceterms:ProfessionalDoctorate",
+    "ceterms:ProficiencyCertificate",
+    "ceterms:QualityAssuranceCredential",
+    "ceterms:ResearchDoctorate",
+    "ceterms:SecondaryEducationCertificate",
+    "ceterms:SecondarySchoolDiploma",
+    "ceterms:SpecialistDegree",
+    "ceterms:TechnicalLevel1Certificate",
+    "ceterms:TechnicalLevel2Certificate",
+    "ceterms:TechnicalLevel3Certificate",
+    "ceterms:WorkBasedLearningCertificate"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:EmploymentOutcomeProfile"
+  ]
+}

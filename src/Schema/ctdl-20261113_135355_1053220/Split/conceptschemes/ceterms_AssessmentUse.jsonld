@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:AssessmentUse",
+  "rdfs:label": {
+    "en-US": "Assessment Use"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of Intended uses of an assessment."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/AssessmentUse/json",
+  "meta:hasConcept": [
+    "assessUse:Formative",
+    "assessUse:Summative"
+  ],
+  "skos:hasTopConcept": [
+    "assessUse:Formative",
+    "assessUse:Summative"
+  ]
+}

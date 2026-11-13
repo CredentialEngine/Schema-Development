@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "creditUnit:CarnegieUnit",
+    "skos:prefLabel": {
+        "en-US": "Carnegie Unit"
+    },
+    "skos:definition": {
+        "en-US": "Credit that is based on 120 hours of contact time or class time with an instructor."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/CarnegieUnit/json",
+    "skos:broader": [
+        "creditUnit:TimeBasedCredit"
+    ],
+    "skos:inScheme": [
+        "ceterms:CreditUnit"
+    ]
+}

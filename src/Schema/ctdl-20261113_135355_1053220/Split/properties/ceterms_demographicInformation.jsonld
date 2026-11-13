@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:demographicInformation",
+  "rdfs:label": {
+    "en-US": "Demographic Information"
+  },
+  "rdfs:comment": {
+    "en-US": "Aggregate data or summaries of statistical data relating to the population of credential holders including data about gender, geopolitical regions, age, education levels, and other categories of interest."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/demographicInformation/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:HoldersProfile"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

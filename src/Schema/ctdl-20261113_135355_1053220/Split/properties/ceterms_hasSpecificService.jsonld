@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasSpecificService",
+  "rdfs:label": {
+    "en-US": "Has Specific Service"
+  },
+  "rdfs:comment": {
+    "en-US": "Support Service that is part of this Support Service."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasSpecificService/json",
+  "schema:domainIncludes": [
+    "ceterms:SupportService"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:SupportService"
+  ],
+  "owl:inverseOf": [
+    "ceterms:isSpecificServiceOf"
+  ]
+}

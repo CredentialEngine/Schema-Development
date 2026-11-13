@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:addressCountry",
+  "rdfs:label": {
+    "en-US": "Address Country"
+  },
+  "rdfs:comment": {
+    "en-US": "Nation with its own government and occupying a particular territory identified by the two-letter ISO 3166-1 alpha-2 country code."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/addressCountry/json",
+  "schema:domainIncludes": [
+    "ceterms:Place",
+    "ceterms:PostalAddress"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ],
+  "owl:equivalentProperty": [
+    "schema:addressCountry"
+  ]
+}

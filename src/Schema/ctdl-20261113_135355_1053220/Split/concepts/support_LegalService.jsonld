@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:LegalService",
+  "skos:prefLabel": {
+    "en-US": "Legal Service"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides people with advice, representation, and/or support in navigating the legal system."
+  },
+  "dct:description": {
+    "en-US": "Examples include the interpretation and application of laws and regulations, and advocating for the individual's legal rights and interests."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/LegalService/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

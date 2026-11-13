@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:agentPurposeDescription",
+  "rdfs:label": {
+    "en-US": "Agent Purpose Description"
+  },
+  "rdfs:comment": {
+    "en-US": "Short, key phrases describing the primary purpose of an organization as might be derived from the \"about\" page of it's website."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/agentPurposeDescription/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

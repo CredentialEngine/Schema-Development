@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "array:Sum",
+    "skos:prefLabel": {
+        "en-US": "Sum"
+    },
+    "skos:definition": {
+        "en-US": "The numeric total obtained by adding all the values."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/array/Sum/json",
+    "skos:inScheme": [
+        "ceterms:ArrayOperationCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ArrayOperationCategory"
+    ]
+}

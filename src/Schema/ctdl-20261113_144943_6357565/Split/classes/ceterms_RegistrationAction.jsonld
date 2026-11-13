@@ -1,0 +1,30 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdfs:Class",
+    "@id": "ceterms:RegistrationAction",
+    "rdfs:label": {
+        "en-US": "Registration Action"
+    },
+    "rdfs:comment": {
+        "en-US": "Action by an independent, neutral, and authoritative agent that registers a resource that has been vetted, approved, and validated to meet specific criteria."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/RegistrationAction/json",
+    "rdfs:subClassOf": [
+        "ceterms:CredentialingAction"
+    ],
+    "meta:domainFor": [
+        "ceterms:actingAgent",
+        "ceterms:actionStatusType",
+        "ceterms:administrationProcess",
+        "ceterms:ctid",
+        "ceterms:description",
+        "ceterms:endDate",
+        "ceterms:evidenceOfAction",
+        "ceterms:instrument",
+        "ceterms:name",
+        "ceterms:object",
+        "ceterms:participant",
+        "ceterms:startDate"
+    ]
+}

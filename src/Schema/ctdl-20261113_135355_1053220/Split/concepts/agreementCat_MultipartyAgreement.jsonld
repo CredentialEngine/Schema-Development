@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "agreementCat:MultipartyAgreement",
+  "skos:prefLabel": {
+    "en-US": "Multiparty Agreement"
+  },
+  "skos:definition": {
+    "en-US": "An agreement with more than two parties."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/agreementCat/MultipartyAgreement/json",
+  "skos:inScheme": [
+    "ceterms:AgreementCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AgreementCategory"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "schema:MonetaryAmount",
+  "rdfs:label": {
+    "en-US": "Monetary Amount"
+  },
+  "rdfs:comment": {
+    "en-US": "Monetary value or range."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/schema/MonetaryAmount/json",
+  "meta:domainFor": [
+    "schema:description",
+    "schema:maxValue",
+    "schema:minValue",
+    "schema:unitText",
+    "schema:value"
+  ]
+}

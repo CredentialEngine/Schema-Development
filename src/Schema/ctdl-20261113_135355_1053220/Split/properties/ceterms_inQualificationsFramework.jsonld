@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:inQualificationsFramework",
+  "rdfs:label": {
+    "en-US": "In Qualifications Framework"
+  },
+  "rdfs:comment": {
+    "en-US": "Indicates a Qualifications Framework that uses this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/inQualificationsFramework/json",
+  "schema:domainIncludes": [
+    "asn:ProgressionModel"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:QualificationsFramework"
+  ]
+}

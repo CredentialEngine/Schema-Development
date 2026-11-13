@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "alignment:BroadMatch",
+  "skos:prefLabel": {
+    "en-US": "Broad Match"
+  },
+  "skos:definition": {
+    "en-US": "Assertion indicates that the referenced concept is broader in some way than this concept."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/alignment/BroadMatch/json",
+  "skos:relatedMatch": [
+    "skos:broadMatch"
+  ],
+  "skos:inScheme": [
+    "ceterms:Alignment"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Alignment"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasMember",
+  "rdfs:label": {
+    "en-US": "Has Member"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource in a Collection."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasMember/json",
+  "schema:domainIncludes": [
+    "ceterms:Collection"
+  ],
+  "schema:rangeIncludes": [
+    "rdfs:Resource"
+  ]
+}

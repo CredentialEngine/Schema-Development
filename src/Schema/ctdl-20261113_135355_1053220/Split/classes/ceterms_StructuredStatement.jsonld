@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:StructuredStatement",
+  "rdfs:label": {
+    "en-US": "Structured Statement"
+  },
+  "rdfs:comment": {
+    "en-US": "A statement provided verbatim or by reference, with additional context such as type, source, or citation."
+  },
+  "vann:usageNote": {
+    "en-US": "Do not use a StructureStatement if a property such as ceterms:description is adequate. When using ceterms:StructuredStatement use ceterms:statementText for the text in a document. Use ceterms:description and ceterms:subjectWebpage when a link is needed to the text in a document. The link should be directly to the relevant section of the document."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/StructuredStatement/json",
+  "meta:domainFor": [
+    "ceasn:listID",
+    "ceterms:codedNotation",
+    "ceterms:description",
+    "ceterms:name",
+    "ceterms:statementText",
+    "ceterms:statementType",
+    "ceterms:subjectWebpage"
+  ]
+}

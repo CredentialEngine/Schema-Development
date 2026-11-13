@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrMethod:ProficiencyExamination",
+  "skos:prefLabel": {
+    "en-US": "Proficiency Examination"
+  },
+  "skos:definition": {
+    "en-US": "A method in which learning is assessed by an exam used to demonstrate subject mastery for placement or credit."
+  },
+  "dct:description": {
+    "en-US": "May be internal or external; use Standardized Examination when using recognized national/international exams."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/ProficiencyExamination/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ]
+}

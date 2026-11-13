@@ -1,0 +1,46 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:precededBy",
+  "rdfs:label": {
+    "en-US": "Preceded By"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource that logically comes before this resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/precededBy/json",
+  "schema:domainIncludes": [
+    "asn:ProgressionLevel",
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:WorkExperienceComponent",
+    "skos:Concept"
+  ],
+  "schema:rangeIncludes": [
+    "asn:ProgressionLevel",
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:WorkExperienceComponent",
+    "skos:Concept"
+  ],
+  "owl:inverseOf": [
+    "ceterms:precedes"
+  ]
+}

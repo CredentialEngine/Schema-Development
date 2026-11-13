@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "orgType:Collaborative",
+  "skos:prefLabel": {
+    "en-US": "Collaborative"
+  },
+  "skos:definition": {
+    "en-US": "Organized group of entities in the public, private, government sectors that collaborates to achieve a common set of goals."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Collaborative/json",
+  "skos:inScheme": [
+    "ceterms:OrganizationType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:OrganizationType"
+  ]
+}

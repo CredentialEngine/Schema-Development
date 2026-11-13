@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "creditUnit:ContinuingEducationUnit",
+  "skos:prefLabel": {
+    "en-US": "Continuing Education Unit"
+  },
+  "skos:definition": {
+    "en-US": "Credit that is issued or is accepted as education units for meeting professional development requirements."
+  },
+  "dct:description": {
+    "en-US": "Based on international standards, continuing education units are based on contact hours that may be converted to other units of measurement, such as professional development hours (PDH), continuing education credits (CEU), and continuing professional credits (CPC)."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/creditUnit/ContinuingEducationUnit/json",
+  "skos:broader": [
+    "creditUnit:TypeBasedCredit"
+  ],
+  "skos:inScheme": [
+    "ceterms:CreditUnit"
+  ]
+}

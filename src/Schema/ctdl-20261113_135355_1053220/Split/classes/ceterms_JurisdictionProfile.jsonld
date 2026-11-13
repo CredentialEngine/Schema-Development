@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:JurisdictionProfile",
+  "rdfs:label": {
+    "en-US": "Jurisdiction Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Geo-political information about applicable geographic areas and their exceptions."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/JurisdictionProfile/json",
+  "rdfs:subClassOf": [
+    "schema:CreativeWork"
+  ],
+  "meta:domainFor": [
+    "ceterms:assertedBy",
+    "ceterms:description",
+    "ceterms:globalJurisdiction",
+    "ceterms:jurisdictionException",
+    "ceterms:mainJurisdiction"
+  ]
+}

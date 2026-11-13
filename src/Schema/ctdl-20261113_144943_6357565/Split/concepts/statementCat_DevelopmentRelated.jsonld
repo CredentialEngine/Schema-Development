@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:DevelopmentRelated",
+    "skos:prefLabel": {
+        "en-US": "Development Related"
+    },
+    "skos:definition": {
+        "en-US": "Statement that defines commitments to joint development or future collaboration."
+    },
+    "dct:description": {
+        "en-US": "May include curriculum alignment, program expansion, or new partnerships."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/DevelopmentRelated/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

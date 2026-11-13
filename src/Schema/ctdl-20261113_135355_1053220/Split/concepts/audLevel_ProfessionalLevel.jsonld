@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audLevel:ProfessionalLevel",
+  "skos:prefLabel": {
+    "en-US": "Professional Level"
+  },
+  "skos:definition": {
+    "en-US": "Intended for those attending professional programs or equivalent, such as law or medicine."
+  },
+  "dct:description": {
+    "en-US": "Other levels can typically be paired with Professional Level to refine a description of a level."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audLevel/ProfessionalLevel/json",
+  "skos:inScheme": [
+    "ceterms:AudienceLevel"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AudienceLevel"
+  ]
+}

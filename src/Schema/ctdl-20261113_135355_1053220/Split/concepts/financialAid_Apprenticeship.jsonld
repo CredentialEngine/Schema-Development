@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:Apprenticeship",
+  "skos:prefLabel": {
+    "en-US": "Apprenticeship"
+  },
+  "skos:definition": {
+    "en-US": "Combination of on-the-job training and related instruction that meets standards in which workers learn the practical and theoretical aspects of a skilled occupation."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Apprenticeship/json",
+  "skos:broader": [
+    "financialAid:WorkBased"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:EquivalencyRequestRelated",
+  "skos:prefLabel": {
+    "en-US": "Equivalency Request Related"
+  },
+  "skos:definition": {
+    "en-US": "Statement that defines how a person requests determination of equivalency between an external academic resource and a receiving institution’s resource."
+  },
+  "dct:description": {
+    "en-US": "Covers process for course, credential, or program equivalency review."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/EquivalencyRequestRelated/json",
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:StatementCategory"
+  ]
+}

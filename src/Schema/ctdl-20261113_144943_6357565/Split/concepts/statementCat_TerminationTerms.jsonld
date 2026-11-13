@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "statementCat:TerminationTerms",
+    "skos:prefLabel": {
+        "en-US": "Termination Terms"
+    },
+    "skos:definition": {
+        "en-US": "Statement that defines conditions for ending the agreement."
+    },
+    "dct:description": {
+        "en-US": "Includes triggers, procedures, and effective dates for termination."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/TerminationTerms/json",
+    "skos:inScheme": [
+        "ceterms:StatementCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:StatementCategory"
+    ]
+}

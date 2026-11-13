@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "score:NormReferenced",
+    "skos:prefLabel": {
+        "en-US": "Norm-Referenced"
+    },
+    "skos:definition": {
+        "en-US": "Scored based on a comparison to a distribution of performance in a reference population."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/score/NormReferenced/json",
+    "skos:inScheme": [
+        "ceterms:ScoringMethod"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:ScoringMethod"
+    ]
+}

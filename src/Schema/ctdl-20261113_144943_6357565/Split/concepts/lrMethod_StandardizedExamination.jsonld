@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrMethod:StandardizedExamination",
+    "skos:prefLabel": {
+        "en-US": "Standardized Examination"
+    },
+    "skos:definition": {
+        "en-US": "A method in which learning is assessed by a recognized standardized exam administered by an authoritative body."
+    },
+    "dct:description": {
+        "en-US": "In the United States, examples include AP, CLEP, DLPT."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/StandardizedExamination/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ]
+}

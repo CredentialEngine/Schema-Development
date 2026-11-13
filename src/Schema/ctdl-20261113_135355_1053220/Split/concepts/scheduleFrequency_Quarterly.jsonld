@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleFrequency:Quarterly",
+  "skos:prefLabel": {
+    "en-US": "Quarterly"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is on an quarterly basis, typically occurring three or four times per year."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/Quarterly/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleFrequency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

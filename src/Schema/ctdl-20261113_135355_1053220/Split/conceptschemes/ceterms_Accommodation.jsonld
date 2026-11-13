@@ -1,0 +1,46 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:Accommodation",
+  "rdfs:label": {
+    "en-US": "Accommodation"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of features, changes, modifications, or adjustments made to a facility, service, or resource to provide equal access and opportunity to people with diverse needs and preferences."
+  },
+  "dct:description": {
+    "en-US": "These accommodations can include existing physical features or modifications to the environment, alternative formats or modes of communication, flexible scheduling, and personal assistance services, among others."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Accommodation/json",
+  "meta:hasConcept": [
+    "accommodation:AccessibleHousing",
+    "accommodation:AccessibleParking",
+    "accommodation:AccessibleRestroom",
+    "accommodation:AdjustableLighting",
+    "accommodation:AdjustableWorkstations",
+    "accommodation:AlternativeFormats",
+    "accommodation:AssistiveTechnology",
+    "accommodation:AudioCaptioning",
+    "accommodation:CaptioningAndTranscripts",
+    "accommodation:ClearSignage",
+    "accommodation:ColorBlindness",
+    "accommodation:Communication",
+    "accommodation:DietaryAccommodation",
+    "accommodation:FacilityAccommodation",
+    "accommodation:FlexibleSchedule",
+    "accommodation:HearingLoops",
+    "accommodation:MultipleLanguage",
+    "accommodation:PhysicalAccessibility",
+    "accommodation:PlainLanguage",
+    "accommodation:ResourceAndServiceAccommodation",
+    "accommodation:ScreenReader",
+    "accommodation:Sensory",
+    "accommodation:ServiceAnimal",
+    "accommodation:TactileSignage"
+  ],
+  "skos:hasTopConcept": [
+    "accommodation:FacilityAccommodation",
+    "accommodation:ResourceAndServiceAccommodation"
+  ]
+}

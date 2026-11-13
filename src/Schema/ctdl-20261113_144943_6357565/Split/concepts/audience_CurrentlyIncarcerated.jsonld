@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "audience:CurrentlyIncarcerated",
+    "skos:prefLabel": {
+        "en-US": "Currently Incarcerated"
+    },
+    "skos:definition": {
+        "en-US": "Person who is currently incarcerated."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/CurrentlyIncarcerated/json",
+    "skos:inScheme": [
+        "ceterms:Audience"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:Audience"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:AssistiveTechnologySupport",
+  "skos:prefLabel": {
+    "en-US": "Assistive Technology Support"
+  },
+  "skos:definition": {
+    "en-US": "Service that directly assists an individual in the selection, acquisition, or use of assistive technology devices."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/AssistiveTechnologySupport/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00292"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

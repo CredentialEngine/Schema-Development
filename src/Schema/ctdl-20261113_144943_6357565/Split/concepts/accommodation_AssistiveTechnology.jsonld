@@ -1,0 +1,19 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "accommodation:AssistiveTechnology",
+    "skos:prefLabel": {
+        "en-US": "Assistive Technology"
+    },
+    "skos:definition": {
+        "en-US": "Assistive technology and software to enable or improve access."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/AssistiveTechnology/json",
+    "skos:broader": [
+        "accommodation:ResourceAndServiceAccommodation"
+    ],
+    "skos:inScheme": [
+        "ceterms:Accommodation"
+    ]
+}

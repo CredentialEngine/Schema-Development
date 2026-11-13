@@ -1,0 +1,28 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:LifeCycleStatus",
+  "rdfs:label": {
+    "en-US": "Life Cycle Status"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of states of a resource in terms of its stage in a life cycle."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LifeCycleStatus/json",
+  "meta:hasConcept": [
+    "lifeCycle:Active",
+    "lifeCycle:Ceased",
+    "lifeCycle:Ceasing",
+    "lifeCycle:Developing",
+    "lifeCycle:Suspended",
+    "lifeCycle:TeachOut"
+  ],
+  "skos:hasTopConcept": [
+    "lifeCycle:Active",
+    "lifeCycle:Ceased",
+    "lifeCycle:Ceasing",
+    "lifeCycle:Developing",
+    "lifeCycle:Suspended"
+  ]
+}

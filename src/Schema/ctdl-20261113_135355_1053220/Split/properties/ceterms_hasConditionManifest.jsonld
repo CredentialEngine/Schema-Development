@@ -1,0 +1,24 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasConditionManifest",
+  "rdfs:label": {
+    "en-US": "Has Condition Manifest"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity that describes a set of constraints, prerequisites, entry conditions, or requirements applicable across the organization, sub-organization or sets of credentials or acitivites."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasConditionManifest/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:ConditionManifest"
+  ],
+  "owl:inverseOf": [
+    "ceterms:conditionManifestOf"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "logic:OnlyOne",
+  "skos:prefLabel": {
+    "en-US": "Only One"
+  },
+  "skos:definition": {
+    "en-US": "Relation is satisfied when exactly one, and not more, of the conditions or constraints is satisfied."
+  },
+  "vann:usageNote": {
+    "en-US": "When used in a Component Condition, this applies to the combination of all immediately subordinate Component Conditions and Constraints."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/logic/OnlyOne/json",
+  "owl:equivalentClass": [
+    "odrl2:xone"
+  ],
+  "skos:inScheme": [
+    "ceterms:LogicalOperatorCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LogicalOperatorCategory"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:contactType",
+  "rdfs:label": {
+    "en-US": "Contact Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Text identifying the type of service provided by an organizational contact."
+  },
+  "dct:description": {
+    "en-US": "A person or organization may have different contact points for different services. The contact type property provides for adding text to identity the service; e.g., \"toll-free number\" or \"support for hearing-impaired callers\"."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/contactType/json",
+  "schema:domainIncludes": [
+    "ceterms:ContactPoint"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ]
+}

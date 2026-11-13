@@ -1,0 +1,26 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "orgType:Postsecondary",
+    "skos:prefLabel": {
+        "en-US": "Postsecondary Educational Institution"
+    },
+    "skos:definition": {
+        "en-US": "Organization such as a college or university."
+    },
+    "dct:description": {
+        "en-US": "Organization with the authority to award degrees, and whose primary purpose is to provide postsecondary (tertiary or non-tertiary) education including programs whose purpose is providing academic, vocational, and continuing professional education."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/orgType/Postsecondary/json",
+    "skos:narrower": [
+        "orgType:FourYear",
+        "orgType:TwoYear"
+    ],
+    "skos:inScheme": [
+        "ceterms:OrganizationType"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:OrganizationType"
+    ]
+}

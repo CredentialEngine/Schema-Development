@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:givenName",
+  "rdfs:label": {
+    "en-US": "Given Name"
+  },
+  "rdfs:comment": {
+    "en-US": "First name of a person."
+  },
+  "vann:usageNote": {
+    "en-US": "Family name can be used along with familyName instead of the name property."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/givenName/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialPerson"
+  ],
+  "schema:rangeIncludes": [
+    "rdf:langString"
+  ],
+  "owl:equivalentProperty": [
+    "schema:givenName"
+  ]
+}

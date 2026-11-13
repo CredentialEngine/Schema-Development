@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetLearningResource",
+  "rdfs:label": {
+    "en-US": "Target Learning Resource"
+  },
+  "rdfs:comment": {
+    "en-US": "Learning object or resource that is used as part of a learning activity."
+  },
+  "dct:description": {
+    "en-US": "Examples include a textbook or lesson plan that describes or records the educational activity (e.g. an audio- or video-recording of a lesson)."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetLearningResource/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:LearningResource"
+  ]
+}

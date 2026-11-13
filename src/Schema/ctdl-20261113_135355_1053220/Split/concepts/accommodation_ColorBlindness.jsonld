@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "accommodation:ColorBlindness",
+  "skos:prefLabel": {
+    "en-US": "Color Blindness"
+  },
+  "skos:definition": {
+    "en-US": "Accessibility feature or accommodation that is designed to address color vision deficiency or color blindness."
+  },
+  "dct:description": {
+    "en-US": "This service typically involves adjusting the colors used in visual materials, such as websites, videos, or other digital content, to make them more distinguishable."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/accommodation/ColorBlindness/json",
+  "skos:broader": [
+    "accommodation:ResourceAndServiceAccommodation"
+  ],
+  "skos:inScheme": [
+    "ceterms:Accommodation"
+  ]
+}

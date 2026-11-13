@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "audience:FormerlyIncarcerated",
+  "skos:prefLabel": {
+    "en-US": "Formerly Incarcerated"
+  },
+  "skos:definition": {
+    "en-US": "Person who was formerly incarcerated."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/audience/FormerlyIncarcerated/json",
+  "skos:inScheme": [
+    "ceterms:Audience"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Audience"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:HoldersProfile",
+  "rdfs:label": {
+    "en-US": "Holders Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing the count and related statistical information of holders of a given credential."
+  },
+  "vann:usageNote": {
+    "en-US": "The use of ceterms:AggregateDataProfile instead of this class is strongly recommended."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/HoldersProfile/json",
+  "rdfs:subClassOf": [
+    "ceterms:AggregateDataProfile",
+    "schema:CreativeWork"
+  ],
+  "meta:domainFor": [
+    "ceterms:alternateName",
+    "ceterms:dateEffective",
+    "ceterms:demographicInformation",
+    "ceterms:description",
+    "ceterms:jurisdiction",
+    "ceterms:name",
+    "ceterms:numberAwarded",
+    "ceterms:region",
+    "ceterms:source"
+  ]
+}

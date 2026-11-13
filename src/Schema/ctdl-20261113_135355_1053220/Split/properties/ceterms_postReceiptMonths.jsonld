@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:postReceiptMonths",
+  "rdfs:label": {
+    "en-US": "Post Receipt Months"
+  },
+  "rdfs:comment": {
+    "en-US": "Number of months after earning a credential when employment and earnings data is collected."
+  },
+  "dct:description": {
+    "en-US": "Number of months usually range between 3 months (one quarter) to ten years."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/postReceiptMonths/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:EarningsProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:integer"
+  ]
+}

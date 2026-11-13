@@ -1,0 +1,24 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:currency",
+  "rdfs:label": {
+    "en-US": "Currency"
+  },
+  "rdfs:comment": {
+    "en-US": "Currency in which the monetary amount is expressed in 3-letter ISO 4217 format such as \"USD\"."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/currency/json",
+  "schema:domainIncludes": [
+    "ceterms:AggregateDataProfile",
+    "ceterms:CostProfile",
+    "ceterms:PayProfile"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:string"
+  ],
+  "owl:equivalentProperty": [
+    "schema:currency"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "schema:unitText",
+    "rdfs:label": {
+        "en-US": "Unit Text"
+    },
+    "rdfs:comment": {
+        "en-US": "A string or text indicating the unit of measurement."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/schema/unitText/json",
+    "schema:domainIncludes": [
+        "schema:MonetaryAmount",
+        "schema:QuantitativeValue"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialAlignmentObject",
+        "skos:Concept"
+    ]
+}

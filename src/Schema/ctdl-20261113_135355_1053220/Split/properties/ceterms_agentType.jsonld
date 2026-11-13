@@ -1,0 +1,27 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:agentType",
+  "rdfs:label": {
+    "en-US": "Agent Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of organization such as educational institution, credentialing organization or quality assurance body; select from an existing enumeration of such types."
+  },
+  "vann:usageNote": {
+    "en-US": "Best practice for developing credential descriptions for the Credential Engine Registry is to use the ceterms:OrganizationType vocabulary."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/agentType/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:OrganizationType"
+  ]
+}

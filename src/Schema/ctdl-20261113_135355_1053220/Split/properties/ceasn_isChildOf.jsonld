@@ -1,0 +1,53 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceasn:isChildOf",
+  "rdfs:label": {
+    "en-US": "Is Child Of"
+  },
+  "rdfs:comment": {
+    "en-US": "The referenced resource is higher in some arbitrary hierarchy than this resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceasn/isChildOf/json",
+  "rdfs:subPropertyOf": [
+    "dc:relation"
+  ],
+  "schema:domainIncludes": [
+    "ceasn:Competency",
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:Task",
+    "ceterms:WorkExperienceComponent"
+  ],
+  "schema:rangeIncludes": [
+    "ceasn:Competency",
+    "ceterms:AssessmentComponent",
+    "ceterms:BasicComponent",
+    "ceterms:CocurricularComponent",
+    "ceterms:CollectionComponent",
+    "ceterms:CompetencyComponent",
+    "ceterms:CourseComponent",
+    "ceterms:CredentialComponent",
+    "ceterms:ExtracurricularComponent",
+    "ceterms:JobComponent",
+    "ceterms:MultiComponent",
+    "ceterms:Pathway",
+    "ceterms:Task",
+    "ceterms:WorkExperienceComponent"
+  ],
+  "owl:equivalentProperty": [
+    "gemq:isChildOf"
+  ],
+  "owl:inverseOf": [
+    "ceasn:hasChild"
+  ]
+}

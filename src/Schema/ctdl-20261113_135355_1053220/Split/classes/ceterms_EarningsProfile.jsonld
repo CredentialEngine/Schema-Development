@@ -1,0 +1,33 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:EarningsProfile",
+  "rdfs:label": {
+    "en-US": "Earnings Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity that describes earning and related statistical information for a given credential."
+  },
+  "vann:usageNote": {
+    "en-US": "The use of ceterms:AggregateDataProfile instead of this class is strongly recommended."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/EarningsProfile/json",
+  "rdfs:subClassOf": [
+    "ceterms:AggregateDataProfile",
+    "schema:CreativeWork"
+  ],
+  "meta:domainFor": [
+    "ceterms:alternateName",
+    "ceterms:dateEffective",
+    "ceterms:description",
+    "ceterms:highEarnings",
+    "ceterms:jurisdiction",
+    "ceterms:lowEarnings",
+    "ceterms:medianEarnings",
+    "ceterms:name",
+    "ceterms:postReceiptMonths",
+    "ceterms:region",
+    "ceterms:source"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:SkillMapping",
+  "skos:prefLabel": {
+    "en-US": "Skill Mapping"
+  },
+  "skos:definition": {
+    "en-US": "Service that helps identify and assess an individual's specific skills and qualifications to determine any gaps or overlaps in their knowledge or experience as they relate to a career pathway."
+  },
+  "dct:description": {
+    "en-US": "This process can identify opportunities for advanced standing, transfer credit, or other forms of recognition for their skills, which can help people save time and money in pursuit of their education or career goals."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/SkillMapping/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

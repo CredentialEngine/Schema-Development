@@ -1,0 +1,23 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:learningRecognitionMethodType",
+  "rdfs:label": {
+    "en-US": "Learning Recognition Method Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of method used to evaluate and recognize prior learning; select from an existing enumeration of such types."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/learningRecognitionMethodType/json",
+  "schema:domainIncludes": [
+    "ceterms:PriorLearningPolicy",
+    "ceterms:TransferAgreement"
+  ],
+  "schema:rangeIncludes": [
+    "skos:Concept"
+  ],
+  "meta:targetScheme": [
+    "ceterms:LearningRecognitionMethodCategory"
+  ]
+}

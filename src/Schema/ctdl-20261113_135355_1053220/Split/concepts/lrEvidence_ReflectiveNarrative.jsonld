@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:ReflectiveNarrative",
+  "skos:prefLabel": {
+    "en-US": "Reflective Narrative"
+  },
+  "skos:definition": {
+    "en-US": "Structured reflection connecting prior experience to defined competencies or outcomes."
+  },
+  "dct:description": {
+    "en-US": "Often required in portfolio submissions. There may be a requirement for commentary or analysis in the narrative."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/ReflectiveNarrative/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

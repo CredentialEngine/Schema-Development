@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:Chatbot",
+  "skos:prefLabel": {
+    "en-US": "Chatbot"
+  },
+  "skos:definition": {
+    "en-US": "An interactive digital service that answers questions."
+  },
+  "dct:description": {
+    "en-US": "Format and technology neutral; may be embedded on web pages or portals, may be driven by AI or similar technology."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/Chatbot/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

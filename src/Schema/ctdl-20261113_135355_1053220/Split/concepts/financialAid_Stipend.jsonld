@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:Stipend",
+  "skos:prefLabel": {
+    "en-US": "Stipend"
+  },
+  "skos:definition": {
+    "en-US": "A fixed sum of money paid for services or to defray expenses incurred through specific activities, which is typically distinct from wages or a salary."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/Stipend/json",
+  "skos:broader": [
+    "financialAid:Grant"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

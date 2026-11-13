@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "inputType:Associations",
+  "skos:prefLabel": {
+    "en-US": "Professional Associations"
+  },
+  "skos:definition": {
+    "en-US": "External stakeholder review, guidance or recommendations by professional associations."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/Associations/json",
+  "skos:inScheme": [
+    "ceterms:ExternalInput"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ExternalInput"
+  ]
+}

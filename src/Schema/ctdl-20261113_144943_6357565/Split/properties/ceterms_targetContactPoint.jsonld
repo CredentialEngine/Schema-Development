@@ -1,0 +1,23 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:targetContactPoint",
+    "rdfs:label": {
+        "en-US": "Target Contact Point"
+    },
+    "rdfs:comment": {
+        "en-US": "Options for contacting the organization or person."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetContactPoint/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialPerson",
+        "ceterms:Place"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:ContactPoint"
+    ],
+    "owl:equivalentProperty": [
+        "schema:contactPoint"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:hasFacetScheme",
+  "rdfs:label": {
+    "en-US": "Has Facet Scheme"
+  },
+  "rdfs:comment": {
+    "en-US": "Concept Scheme used to characterize different aspects (facets) of descriptors of nodes in a framework or similar resource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/hasFacetScheme/json",
+  "schema:domainIncludes": [
+    "ceterms:QualificationsFramework"
+  ],
+  "schema:rangeIncludes": [
+    "skos:ConceptScheme"
+  ]
+}

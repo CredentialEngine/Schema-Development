@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:StudySkills",
+  "skos:prefLabel": {
+    "en-US": "Study Skills"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides assistance for people who want to improve their study habits, test preparation skills and test-taking techniques."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/StudySkills/json",
+  "skos:narrowMatch": [
+    "ceds:000273/#00323"
+  ],
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

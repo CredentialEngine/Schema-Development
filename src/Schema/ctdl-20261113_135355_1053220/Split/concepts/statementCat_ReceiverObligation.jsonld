@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "statementCat:ReceiverObligation",
+  "skos:prefLabel": {
+    "en-US": "Receiver Obligation"
+  },
+  "skos:definition": {
+    "en-US": "Obligation that applies to the receiving party in the agreement."
+  },
+  "dct:description": {
+    "en-US": "May include evaluating equivalency, applying transfer credit, or notifying learners."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/statementCat/ReceiverObligation/json",
+  "skos:broader": [
+    "statementCat:Obligation"
+  ],
+  "skos:inScheme": [
+    "ceterms:StatementCategory"
+  ]
+}

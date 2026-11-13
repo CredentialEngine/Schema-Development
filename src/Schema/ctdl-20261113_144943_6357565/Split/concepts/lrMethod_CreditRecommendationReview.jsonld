@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "lrMethod:CreditRecommendationReview",
+    "skos:prefLabel": {
+        "en-US": "Credit Recommendation Review"
+    },
+    "skos:definition": {
+        "en-US": "An evaluation method that uses an authoritative body’s credit recommendation to determine credit awards."
+    },
+    "dct:description": {
+        "en-US": "In the U.S., examples include American Council on Education (ACE) credit recommendations."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrMethod/CreditRecommendationReview/json",
+    "skos:inScheme": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:LearningRecognitionMethodCategory"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "deliveryType:BlendedDelivery",
+  "skos:prefLabel": {
+    "en-US": "Blended Delivery"
+  },
+  "skos:definition": {
+    "en-US": "Delivery includes significant levels of both in person and online."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/deliveryType/BlendedDelivery/json",
+  "skos:inScheme": [
+    "ceterms:Delivery"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Delivery"
+  ]
+}

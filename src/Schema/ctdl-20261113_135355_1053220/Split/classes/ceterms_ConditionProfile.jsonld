@@ -1,0 +1,52 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:ConditionProfile",
+  "rdfs:label": {
+    "en-US": "Condition Profile"
+  },
+  "rdfs:comment": {
+    "en-US": "Entity describing a constraint, prerequisite, entry condition, or requirement."
+  },
+  "dct:description": {
+    "en-US": "Constraints exist with credentials, learning opportunities, assessments and other entities to which they are subject during their lifecycles. In certain circumstances, the condition profile can be read as a description of a Person who meets the conditions."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/ConditionProfile/json",
+  "rdfs:subClassOf": [
+    "schema:CreativeWork"
+  ],
+  "meta:domainFor": [
+    "ceterms:affiliation",
+    "ceterms:alternateName",
+    "ceterms:alternativeCondition",
+    "ceterms:assertedBy",
+    "ceterms:audienceLevelType",
+    "ceterms:audienceType",
+    "ceterms:commonCosts",
+    "ceterms:condition",
+    "ceterms:conditionExcludes",
+    "ceterms:creditUnitTypeDescription",
+    "ceterms:creditValue",
+    "ceterms:dateEffective",
+    "ceterms:description",
+    "ceterms:estimatedCost",
+    "ceterms:experience",
+    "ceterms:jurisdiction",
+    "ceterms:minimumAge",
+    "ceterms:name",
+    "ceterms:residentOf",
+    "ceterms:subjectWebpage",
+    "ceterms:submissionOf",
+    "ceterms:submissionOfDescription",
+    "ceterms:targetAssessment",
+    "ceterms:targetCompetency",
+    "ceterms:targetCredential",
+    "ceterms:targetJob",
+    "ceterms:targetLearningOpportunity",
+    "ceterms:targetOccupation",
+    "ceterms:targetTask",
+    "ceterms:weight",
+    "ceterms:yearsOfExperience"
+  ]
+}

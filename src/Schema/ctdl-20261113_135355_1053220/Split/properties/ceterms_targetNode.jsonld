@@ -1,0 +1,31 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:targetNode",
+  "rdfs:label": {
+    "en-US": "Target Node"
+  },
+  "rdfs:comment": {
+    "en-US": "Individual entry in a formally defined framework that is the target of an alignment."
+  },
+  "dct:description": {
+    "en-US": "The target node returned must be the exact competency or concept being described and no other competency or concept. References to data or a document that returns all of the competencies or concepts in the framework to which the target node belongs should use the ceterms:framework property."
+  },
+  "vann:usageNote": {
+    "en-US": "\"Framework\" may be interpreted broadly to include any scheme or schema for organizing and referencing resources."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/targetNode/json",
+  "schema:domainIncludes": [
+    "ceterms:AlignmentObject",
+    "ceterms:CredentialAlignmentObject",
+    "ceterms:FinancialAlignmentObject"
+  ],
+  "schema:rangeIncludes": [
+    "xsd:anyURI"
+  ],
+  "owl:equivalentProperty": [
+    "lrmi:targetUrl",
+    "schema:targetUrl"
+  ]
+}

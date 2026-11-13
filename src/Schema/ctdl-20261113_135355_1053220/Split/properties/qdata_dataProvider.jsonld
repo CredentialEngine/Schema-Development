@@ -1,0 +1,21 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "qdata:dataProvider",
+  "rdfs:label": {
+    "en-US": "Data Provider"
+  },
+  "rdfs:comment": {
+    "en-US": "Credentialing organization or a third party providing the data."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/qdata/dataProvider/json",
+  "schema:domainIncludes": [
+    "qdata:DataSetProfile"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ]
+}

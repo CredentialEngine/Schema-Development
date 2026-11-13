@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "inputType:BusinessAssociation",
+  "skos:prefLabel": {
+    "en-US": "Business or Industry Association"
+  },
+  "skos:definition": {
+    "en-US": "External stakeholder review, guidance or recommendations by business or industry association."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/inputType/BusinessAssociation/json",
+  "skos:inScheme": [
+    "ceterms:ExternalInput"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ExternalInput"
+  ]
+}

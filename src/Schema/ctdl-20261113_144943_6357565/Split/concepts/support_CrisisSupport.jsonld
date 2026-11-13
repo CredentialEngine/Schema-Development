@@ -1,0 +1,22 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:Concept",
+    "@id": "support:CrisisSupport",
+    "skos:prefLabel": {
+        "en-US": "Crisis Support"
+    },
+    "skos:definition": {
+        "en-US": "Services that provide immediate assistance to people who are facing unexpected challenges or crises that may interfere with their ability to pursue their academic or career goals."
+    },
+    "dct:description": {
+        "en-US": "These services can include financial assistance, housing assistance, crisis hotlines, and counseling services among others."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/CrisisSupport/json",
+    "skos:inScheme": [
+        "ceterms:SupportServiceCategory"
+    ],
+    "skos:topConceptOf": [
+        "ceterms:SupportServiceCategory"
+    ]
+}

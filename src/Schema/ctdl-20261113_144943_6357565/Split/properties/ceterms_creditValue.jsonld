@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:creditValue",
+    "rdfs:label": {
+        "en-US": "Credit Value"
+    },
+    "rdfs:comment": {
+        "en-US": "A credit-related value."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/creditValue/json",
+    "schema:domainIncludes": [
+        "ceterms:AssessmentProfile",
+        "ceterms:ConditionProfile",
+        "ceterms:Course",
+        "ceterms:CourseComponent",
+        "ceterms:LearningOpportunityProfile",
+        "ceterms:LearningProgram",
+        "ceterms:TransferIntermediary"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:ValueProfile"
+    ]
+}

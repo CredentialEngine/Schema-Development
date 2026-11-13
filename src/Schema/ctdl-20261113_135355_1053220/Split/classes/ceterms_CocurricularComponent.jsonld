@@ -1,0 +1,39 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:CocurricularComponent",
+  "rdfs:label": {
+    "en-US": "Cocurricular Component"
+  },
+  "rdfs:comment": {
+    "en-US": "Resource that identifies an activity, program, or informal learning experience such as a civic or service activity that supplements and complements the curriculum."
+  },
+  "dct:description": {
+    "en-US": "Instances act as proxies or stand-ins for other resources in the context of a particular pathway so that relationships between them as components of that pathway can be stated without implying that the those relationships are true of the resources in other contexts."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/CocurricularComponent/json",
+  "rdfs:subClassOf": [
+    "ceterms:PathwayComponent"
+  ],
+  "meta:domainFor": [
+    "ceasn:hasChild",
+    "ceasn:isChildOf",
+    "ceterms:alternateName",
+    "ceterms:componentCategory",
+    "ceterms:componentDesignation",
+    "ceterms:ctid",
+    "ceterms:description",
+    "ceterms:hasCondition",
+    "ceterms:identifier",
+    "ceterms:isDestinationComponentOf",
+    "ceterms:isPartOf",
+    "ceterms:name",
+    "ceterms:pointValue",
+    "ceterms:precededBy",
+    "ceterms:precedes",
+    "ceterms:proxyFor",
+    "ceterms:sourceData",
+    "ceterms:subjectWebpage"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "financialAid:OtherScholarship",
+  "skos:prefLabel": {
+    "en-US": "Other Scholarship"
+  },
+  "skos:definition": {
+    "en-US": "Financial aid award, which doesn’t require repayment, from one or more other sources based on student achievement and other criteria."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/financialAid/OtherScholarship/json",
+  "skos:broader": [
+    "financialAid:Scholarship"
+  ],
+  "owl:equivalentClass": [
+    "ceds:000113#OtherScholarships"
+  ],
+  "skos:inScheme": [
+    "ceterms:FinancialAssistance"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "skos:ConceptScheme",
+    "@id": "ceterms:LearningRecognitionSourceCategory",
+    "rdfs:label": {
+        "en-US": "Learning Recognition Source Category"
+    },
+    "rdfs:comment": {
+        "en-US": "Concepts describing formal, non-formal, or informal contexts from which learning may be recognized for applicability toward requirements."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningRecognitionSourceCategory/json",
+    "meta:hasConcept": [
+        "lrSource:Apprenticeship",
+        "lrSource:ClinicalPracticum",
+        "lrSource:CommunityBasedOrganizationTraining",
+        "lrSource:CommunityService",
+        "lrSource:ContinuingEducation",
+        "lrSource:CooperativeEducation",
+        "lrSource:Course",
+        "lrSource:CustodialEducation",
+        "lrSource:Degree",
+        "lrSource:DualEnrollment",
+        "lrSource:EmploymentBasedTraining",
+        "lrSource:Exam",
+        "lrSource:ExperientialLearning"
+    ],
+    "skos:hasTopConcept": [
+        "lrSource:Apprenticeship",
+        "lrSource:ClinicalPracticum",
+        "lrSource:CommunityBasedOrganizationTraining",
+        "lrSource:CommunityService",
+        "lrSource:ContinuingEducation",
+        "lrSource:CooperativeEducation",
+        "lrSource:Course",
+        "lrSource:CustodialEducation",
+        "lrSource:Degree",
+        "lrSource:DualEnrollment",
+        "lrSource:EmploymentBasedTraining",
+        "lrSource:Exam",
+        "lrSource:ExperientialLearning"
+    ]
+}

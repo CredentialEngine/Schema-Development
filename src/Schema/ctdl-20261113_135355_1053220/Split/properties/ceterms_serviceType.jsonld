@@ -1,0 +1,27 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:serviceType",
+  "rdfs:label": {
+    "en-US": "Service Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of service offered by the agent being described; select from an existing enumeration of such terms."
+  },
+  "vann:usageNote": {
+    "en-US": "Recommended best practice for credentials in the Credential Engine Registry is to use concepts from the ceterms:AgentServiceType vocabulary."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/serviceType/json",
+  "schema:domainIncludes": [
+    "ceterms:CredentialOrganization",
+    "ceterms:Organization",
+    "ceterms:QACredentialOrganization"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:AgentServiceType"
+  ]
+}

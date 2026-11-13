@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdfs:Class",
+  "@id": "ceterms:Agent",
+  "rdfs:label": {
+    "en-US": "Agent"
+  },
+  "rdfs:comment": {
+    "en-US": "Organization or person that acts or has the power to act."
+  },
+  "dct:description": {
+    "en-US": "Broad type that includes both organizations and people who play roles in the lifecycle of a resource."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/Agent/json",
+  "owl:equivalentClass": [
+    "dct:Agent"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:scheduleFrequencyType",
+  "rdfs:label": {
+    "en-US": "Schedule Frequency Type"
+  },
+  "rdfs:comment": {
+    "en-US": "Type of frequency indicating the cadence at which events associated with a resource typically occur; select from an existing enumeration of such types."
+  },
+  "dct:description": {
+    "en-US": "This relates to the frequency of events associated with a resource once it is running."
+  },
+  "vann:usageNote": {
+    "en-US": "For information relating to how often something starts, use ceterms:offerFrequencyType."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/scheduleFrequencyType/json",
+  "schema:domainIncludes": [
+    "ceterms:AssessmentProfile",
+    "ceterms:Course",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram",
+    "ceterms:ScheduledOffering"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:CredentialAlignmentObject"
+  ],
+  "meta:targetScheme": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

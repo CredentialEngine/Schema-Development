@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:TalentMarketplaceSignaling",
+  "skos:prefLabel": {
+    "en-US": "Talent Marketplace Signaling"
+  },
+  "skos:definition": {
+    "en-US": "Service that enables employers to provide information that helps education and training providers align their offerings to current and future job opportunities."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/TalentMarketplaceSignaling/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

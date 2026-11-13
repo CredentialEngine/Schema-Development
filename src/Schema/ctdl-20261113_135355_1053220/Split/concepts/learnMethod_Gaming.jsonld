@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:Gaming",
+  "skos:prefLabel": {
+    "en-US": "Gaming"
+  },
+  "skos:definition": {
+    "en-US": "Provides interactive educational experiences which demonstrate concepts in a way that promotes critical thinking, overcoming challenges within prescribed rule sets, problem solving, and in some cases, teamwork and/or competition."
+  },
+  "dct:description": {
+    "en-US": "Individual or group games that have cognitive, social, behavioral, and/or emotional dimensions which are related to educational objectives."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/Gaming/json",
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningMethod"
+  ]
+}

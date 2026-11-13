@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleFrequency:EventBased",
+  "skos:prefLabel": {
+    "en-US": "Event-Based"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is determined or triggered by other events, such as completion of activities, completion of the resource, events external to the resource, or other events; refer to the resource's information for details."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleFrequency/EventBased/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleFrequency"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleFrequency"
+  ]
+}

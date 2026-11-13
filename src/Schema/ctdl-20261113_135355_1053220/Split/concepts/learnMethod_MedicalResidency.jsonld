@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "learnMethod:MedicalResidency",
+  "skos:prefLabel": {
+    "en-US": "Medical Residency"
+  },
+  "skos:definition": {
+    "en-US": "Learning through real-world work experience at the graduate level in a medical context where a qualified participant works under the direct supervision of a senior practicioner."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/learnMethod/MedicalResidency/json",
+  "skos:broader": [
+    "learnMethod:WorkBased"
+  ],
+  "skos:inScheme": [
+    "ceterms:LearningMethod"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "scheduleTiming:Evening",
+  "skos:prefLabel": {
+    "en-US": "Evening"
+  },
+  "skos:definition": {
+    "en-US": "Schedule is typically during evening hours."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/scheduleTiming/Evening/json",
+  "skos:inScheme": [
+    "ceterms:ScheduleTiming"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:ScheduleTiming"
+  ]
+}

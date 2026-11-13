@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "costType:Equipment",
+  "skos:prefLabel": {
+    "en-US": "Equipment"
+  },
+  "skos:definition": {
+    "en-US": "Cost for durable tools, instruments or machines."
+  },
+  "vann:usageNote": {
+    "en-US": "For resources such as textbooks use costType:LearningResource."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/costType/Equipment/json",
+  "skos:inScheme": [
+    "ceterms:CostType"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:CostType"
+  ]
+}

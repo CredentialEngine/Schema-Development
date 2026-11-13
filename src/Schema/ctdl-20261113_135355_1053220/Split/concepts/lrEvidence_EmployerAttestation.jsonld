@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "lrEvidence:EmployerAttestation",
+  "skos:prefLabel": {
+    "en-US": "Employer Attestation"
+  },
+  "skos:definition": {
+    "en-US": "Formal statement from an employer verifying duties, scope of work, and performance relevant to claimed learning."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/lrEvidence/EmployerAttestation/json",
+  "skos:inScheme": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:LearningRecognitionEvidenceCategory"
+  ]
+}

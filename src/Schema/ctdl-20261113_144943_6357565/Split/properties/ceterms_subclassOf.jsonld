@@ -1,0 +1,25 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:subclassOf",
+    "rdfs:label": {
+        "en-US": "Subclass Of"
+    },
+    "rdfs:comment": {
+        "en-US": "Indicates a broader type or class than the one being described."
+    },
+    "dct:description": {
+        "en-US": "Similar to rdfs:subClassOf, this property means that all examples of the type of resource being described are also instances of the class indicated, however it does not imply that the subject is an rdfs:Class."
+    },
+    "vann:usageNote": {
+        "en-US": "Used in CTDL to indicate the Credential Class (i.e. subclass of ceterms:Credential) that encompasses this type of credential."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/subclassOf/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialType"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

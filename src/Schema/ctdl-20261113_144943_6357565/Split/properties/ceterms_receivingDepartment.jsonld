@@ -1,0 +1,20 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:receivingDepartment",
+    "rdfs:label": {
+        "en-US": "Receiving Department"
+    },
+    "rdfs:comment": {
+        "en-US": "Department (or other subdivision of an organization) to which students transfer under the provisions of an agreement."
+    },
+    "vs:term_status": "vs:unstable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/receivingDepartment/json",
+    "schema:domainIncludes": [
+        "ceterms:TransferAgreement"
+    ],
+    "schema:rangeIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization"
+    ]
+}

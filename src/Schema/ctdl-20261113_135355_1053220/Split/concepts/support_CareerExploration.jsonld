@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "support:CareerExploration",
+  "skos:prefLabel": {
+    "en-US": "Career Exploration"
+  },
+  "skos:definition": {
+    "en-US": "Service that provides opportunities or information to discover and learn about careers."
+  },
+  "dct:description": {
+    "en-US": "This service can offer information and experiences about job market trends, salary expectations, working conditions and other factors that can help people identify and pursue their career goals."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/support/CareerExploration/json",
+  "skos:inScheme": [
+    "ceterms:SupportServiceCategory"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:SupportServiceCategory"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "assessMethod:Artifact",
+  "skos:prefLabel": {
+    "en-US": "Artifact"
+  },
+  "skos:definition": {
+    "en-US": "Work or product created or produced by the person being assessed."
+  },
+  "dct:description": {
+    "en-US": "Artifact includes, but is not limited to, an academic paper, video documentary, computer software, music composition, choreography, novel, short story, journal article, news article, report, lesson plan, product design, portfolio, manufactured product, etc. Methods of evaluation may include multiple evaluators either individually or as an expert panel using general criteria or more structured rubrics whose scores are combined, etc. Criteria and methods of evaluation are often very similar to those for assessing a performance, without the facets specific to a live performance"
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/assessMethod/Artifact/json",
+  "skos:narrower": [
+    "assessMethod:PortfolioEvaluation"
+  ],
+  "skos:inScheme": [
+    "ceterms:AssessmentMethod"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:AssessmentMethod"
+  ]
+}

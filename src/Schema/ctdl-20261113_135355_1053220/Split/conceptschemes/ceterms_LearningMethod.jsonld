@@ -1,0 +1,47 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:ConceptScheme",
+  "@id": "ceterms:LearningMethod",
+  "rdfs:label": {
+    "en-US": "Learning Method"
+  },
+  "rdfs:comment": {
+    "en-US": "Types of methods used to conduct the learning opportunity."
+  },
+  "vs:term_status": "vs:stable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/LearningMethod/json",
+  "meta:hasConcept": [
+    "learnMethod:Applied",
+    "learnMethod:Apprenticeship",
+    "learnMethod:AugmentedReality",
+    "learnMethod:ClinicalRotation",
+    "learnMethod:CocurricularLearning",
+    "learnMethod:CohortBased",
+    "learnMethod:CompetencyBased",
+    "learnMethod:Gaming",
+    "learnMethod:Internship",
+    "learnMethod:Laboratory",
+    "learnMethod:Lecture",
+    "learnMethod:MedicalResidency",
+    "learnMethod:Prerecorded",
+    "learnMethod:SelfPaced",
+    "learnMethod:Seminar",
+    "learnMethod:Simulation",
+    "learnMethod:WorkBased"
+  ],
+  "skos:hasTopConcept": [
+    "learnMethod:Applied",
+    "learnMethod:AugmentedReality",
+    "learnMethod:CocurricularLearning",
+    "learnMethod:CohortBased",
+    "learnMethod:CompetencyBased",
+    "learnMethod:Gaming",
+    "learnMethod:Laboratory",
+    "learnMethod:Lecture",
+    "learnMethod:Prerecorded",
+    "learnMethod:SelfPaced",
+    "learnMethod:Seminar",
+    "learnMethod:Simulation",
+    "learnMethod:WorkBased"
+  ]
+}

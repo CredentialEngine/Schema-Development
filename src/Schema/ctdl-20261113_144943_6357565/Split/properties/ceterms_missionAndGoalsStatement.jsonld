@@ -1,0 +1,21 @@
+{
+    "@context": "https://credreg.net/ctdl/schema/context/json",
+    "@type": "rdf:Property",
+    "@id": "ceterms:missionAndGoalsStatement",
+    "rdfs:label": {
+        "en-US": "Mission and Goals Statement"
+    },
+    "rdfs:comment": {
+        "en-US": "Webpage or online document that defines or explains the mission and goals of the organization."
+    },
+    "vs:term_status": "vs:stable",
+    "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/missionAndGoalsStatement/json",
+    "schema:domainIncludes": [
+        "ceterms:CredentialOrganization",
+        "ceterms:Organization",
+        "ceterms:QACredentialOrganization"
+    ],
+    "schema:rangeIncludes": [
+        "xsd:anyURI"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "rdf:Property",
+  "@id": "ceterms:isMemberOf",
+  "rdfs:label": {
+    "en-US": "Is Member Of"
+  },
+  "rdfs:comment": {
+    "en-US": "Collection to which this resource belongs."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/ceterms/isMemberOf/json",
+  "schema:domainIncludes": [
+    "ceasn:Competency",
+    "ceterms:Course",
+    "ceterms:Industry",
+    "ceterms:Job",
+    "ceterms:LearningOpportunityProfile",
+    "ceterms:LearningProgram",
+    "ceterms:Occupation",
+    "ceterms:PriorLearningPolicy",
+    "ceterms:Task",
+    "ceterms:TransferAgreement",
+    "ceterms:TransferValueProfile",
+    "ceterms:WorkRole"
+  ],
+  "schema:rangeIncludes": [
+    "ceterms:Collection"
+  ]
+}

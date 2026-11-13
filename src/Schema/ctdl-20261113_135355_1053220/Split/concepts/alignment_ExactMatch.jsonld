@@ -1,0 +1,22 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "alignment:ExactMatch",
+  "skos:prefLabel": {
+    "en-US": "Exact Match"
+  },
+  "skos:definition": {
+    "en-US": "Indicates semantic similarity denoting an even higher degree of closeness than skos:closeMatch."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/alignment/ExactMatch/json",
+  "skos:relatedMatch": [
+    "skos:exactMatch"
+  ],
+  "skos:inScheme": [
+    "ceterms:Alignment"
+  ],
+  "skos:topConceptOf": [
+    "ceterms:Alignment"
+  ]
+}

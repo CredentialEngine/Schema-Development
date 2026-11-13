@@ -1,0 +1,19 @@
+{
+  "@context": "https://credreg.net/ctdl/schema/context/json",
+  "@type": "skos:Concept",
+  "@id": "assessMethod:PortfolioEvaluation",
+  "skos:prefLabel": {
+    "en-US": "Portfolio Evaluation"
+  },
+  "skos:definition": {
+    "en-US": "Assessment method that evaluates a learner’s portfolio of evidence to determine knowledge, skills, or competencies."
+  },
+  "vs:term_status": "vs:unstable",
+  "meta:changeHistory": "https://credreg.net/ctdl/termhistory/assessMethod/PortfolioEvaluation/json",
+  "skos:broader": [
+    "assessMethod:Artifact"
+  ],
+  "skos:inScheme": [
+    "ceterms:AssessmentMethod"
+  ]
+}
