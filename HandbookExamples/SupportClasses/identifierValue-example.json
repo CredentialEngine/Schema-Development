@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "res:ce-181029a3-3a7d-426f-935f-4218e68a09c6",
+            "@type": "ceterms:CredemtialOrganization",
+            "ceterms:name": {
+                "en-US": "Erewhon University"
+            },
+            "ceterms:identifier": {
+                "@type": "ceterms:IdentifierValue",
+                "ceterms:identifierType": "https://example.edu/EPID/",
+                "ceterms:identifierTypeName": {
+                    "en-US": "ErewhonProviderID"
+                },
+                "ceterms:identifierValueCode": "123.sys-abc"
+            }
+        }
+    ]
+}
