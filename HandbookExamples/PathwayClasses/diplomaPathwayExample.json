@@ -35,7 +35,7 @@
             "ceterms:precededBy": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
         },
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4",
             "ceterms:name": {
                 "en-US": "Stage 2"
@@ -50,7 +50,7 @@
         },
 
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214",
             "ceterms:name": {
                 "en-US": "Stage 1"

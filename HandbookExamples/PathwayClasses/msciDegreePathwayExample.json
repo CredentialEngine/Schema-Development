@@ -39,7 +39,7 @@
         },
 
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-2973133c-2f6a-44af-a058-1a01505d5a97",
             "ceterms:name": {
                 "en-US": "Stage 5"
@@ -54,7 +54,7 @@
 
 
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-ccb39f8b-3a63-45d6-bd74-f471f15f84e9",
             "ceterms:name": {
                 "en-US": "Stage 4"
@@ -67,7 +67,7 @@
             "ceterms:precededBy": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df"
         },
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
             "ceterms:name": {
                 "en-US": "Stage 3"
@@ -80,7 +80,7 @@
             "ceterms:precededBy": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
         },
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4",
             "ceterms:name": {
                 "en-US": "Stage 2"
@@ -93,7 +93,7 @@
             "ceterms:precededBy": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
         },
         {
-            "@type": "ceterms:MultipartComponent",
+            "@type": "ceterms:MultiComponent",
             "@id": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214",
             "ceterms:name": {
                 "en-US": "Stage 1"
