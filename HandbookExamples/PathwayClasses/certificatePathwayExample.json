@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@type": "ceterms:Pathway",
+            "@id": "res:ce-93593376-a0a4-438e-9faa-b5ac60e5111e",
+            "ceterms:name": {
+                "en-US": "Certificate"
+            },
+            "ceterms:description": {
+                "en-US": "Example pathway for exiting program after stage 1 and earning a Certificate."
+            },
+            "ceterms:hasDestinationComponent": "res:ce-31e399a4-e414-49a8-9274-dc4364bacdd7",
+            "ceterms:hasPart": [
+                "res:ce-31e399a4-e414-49a8-9274-dc4364bacdd7",
+                "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
+            ]
+        },
+        {
+            "@type": "ceterms:CredentialComponent",
+            "@id": "res:ce-31e399a4-e414-49a8-9274-dc4364bacdd7",
+            "ceterms:name": {
+                "en-US": "CertificateStage 1"
+            },
+            "ceterms:description": {
+                "en-US": "Proxy for a Certificate that may be earned when exiting after completing stage 1."
+            },
+            "ceterms:isProxyFor": "res:ce-2cb12a95-5618-45aa-b8c7-22cc2a6da6b4",
+            "ceterms:precededBy": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214",
+            "ceterms:name": {
+                "en-US": "Stage 1"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 1 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
+            "ceterms:precedes": "res:ce-31e399a4-e414-49a8-9274-dc4364bacdd7"
+        }
+    ]
+}

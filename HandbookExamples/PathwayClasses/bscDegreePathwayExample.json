@@ -1,0 +1,91 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@type": "ceterms:Pathway",
+            "@id": "res:ce-c3c948bd-ef72-4860-9786-0eff7826ebc5",
+            "ceterms:name": {
+                "en-US": "BSc"
+            },
+            "ceterms:description": {
+                "en-US": "Example pathway for exiting program after stage 4 and earning a BSc Degree."
+            },
+            "ceterms:hasDestinationComponent": "res:ce-55a5ac45-ca9a-41ab-b9dd-7cf69fc38149",
+            "ceterms:hasPart": [
+                "res:ce-55a5ac45-ca9a-41ab-b9dd-7cf69fc38149",
+                "res:ce-ccb39f8b-3a63-45d6-bd74-f471f15f84e9",
+                "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+                "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4",
+                "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
+            ]
+        },
+        {
+            "@type": "ceterms:CredentialComponent",
+            "@id": "res:ce-55a5ac45-ca9a-41ab-b9dd-7cf69fc38149",
+            "ceterms:name": {
+                "en-US": "BSc"
+            },
+            "ceterms:description": {
+                "en-US": "Proxy for a BSc Degree that may be earned when exiting after completing stage 4."
+            },
+            "ceterms:isProxyFor": "res:ce-38aec135-72a2-418d-8ca9-f8366b107a5d",
+            "ceterms:precededBy": "res:ce-ccb39f8b-3a63-45d6-bd74-f471f15f84e9"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-ccb39f8b-3a63-45d6-bd74-f471f15f84e9",
+            "ceterms:name": {
+                "en-US": "Stage 4"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 4 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-73e8cfa0-e828-4ee4-a261-16b95fafb380",
+            "ceterms:precedes": "res:ce-55a5ac45-ca9a-41ab-b9dd-7cf69fc38149",
+            "ceterms:precededBy": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+            "ceterms:name": {
+                "en-US": "Stage 3"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 3 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-a0e7be1d-c562-4915-b352-ec0104166455",
+            "ceterms:precedes": "res:ce-ccb39f8b-3a63-45d6-bd74-f471f15f84e9",
+            "ceterms:precededBy": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4",
+            "ceterms:name": {
+                "en-US": "Stage 2"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 2 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-f117974d-33ef-43c5-abc6-0c1e7382b992",
+            "ceterms:precedes": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+            "ceterms:precededBy": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214",
+            "ceterms:name": {
+                "en-US": "Stage 1"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 1 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
+            "ceterms:precedes": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
+        }
+    ]
+}

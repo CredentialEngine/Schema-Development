@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@type": "ceterms:Pathway",
+            "@id": "res:ce-864ab3f9-5acc-4031-818a-c61f742e4ccd",
+            "ceterms:name": {
+                "en-US": "Ordinary Degree"
+            },
+            "ceterms:description": {
+                "en-US": "Example pathway for exiting program after stage 3 and earning a Ordinary Degree."
+            },
+            "ceterms:hasDestinationComponent": "res:ce-331d0add-ba3b-4c8c-bcd7-640b09050b33",
+            "ceterms:hasPart": [
+                "res:ce-331d0add-ba3b-4c8c-bcd7-640b09050b33",
+                "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+                "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4",
+                "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
+            ]
+        },
+        {
+            "@type": "ceterms:CredentialComponent",
+            "@id": "res:ce-331d0add-ba3b-4c8c-bcd7-640b09050b33",
+            "ceterms:name": {
+                "en-US": "Ordinary Degree"
+            },
+            "ceterms:description": {
+                "en-US": "Proxy for an Ordinary Degree that may be earned when exiting after completing stage 3."
+            },
+            "ceterms:isProxyFor": "res:ce-6bf7a626-46d4-4d7a-93c0-98cb5c6ea802",
+            "ceterms:precededBy": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+            "ceterms:name": {
+                "en-US": "Stage 3"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 3 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-a0e7be1d-c562-4915-b352-ec0104166455",
+            "ceterms:precedes": "res:ce-331d0add-ba3b-4c8c-bcd7-640b09050b33",
+            "ceterms:precededBy": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4",
+            "ceterms:name": {
+                "en-US": "Stage 2"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 2 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-f117974d-33ef-43c5-abc6-0c1e7382b992",
+            "ceterms:precedes": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+            "ceterms:precededBy": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
+        },
+        {
+            "@type": "ceterms:MultipartComponent",
+            "@id": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214",
+            "ceterms:name": {
+                "en-US": "Stage 1"
+            },
+            "ceterms:description": {
+                "en-US": "A proxy for all parts of stage 1 of a multi-stage program."
+            },
+            "ceterms:isProxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
+            "ceterms:precedes": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
+        }
+    ]
+}

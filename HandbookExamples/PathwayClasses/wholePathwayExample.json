@@ -1,0 +1,164 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@type": "ceterms:Pathway",
+            "@id": "res:ce-b1102bfa-1a98-4d35-9aba-e35955ec7c11",
+            "ceterms:name": {
+                "en-US": "Pathway A-B-C-D"
+            },
+            "ceterms:hasPart": [
+                "res:ce-a78bb7bb-a9a5-4230-afa8-4eb4006efc96",
+                "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f",
+                "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858",
+                "res:ce-40bf8442-24ed-4f78-9c47-0af0ab9add65",
+                "res:ce-c7328e7c-9847-4587-ab82-d23f0fbebf49",
+                "res:ce-8bb665ef-0dc3-4b74-b1f7-01586aecdeca"
+            ],
+            "ceterms:hasDestinationComponent": "res:ce-a78bb7bb-a9a5-4230-afa8-4eb4006efc96"
+        },
+        {
+            "@type": "ceterms:CredentialComponent",
+            "@id": "res:ce-a78bb7bb-a9a5-4230-afa8-4eb4006efc96",
+            "ceterms:name": {
+                "en-US": "Example Credential"
+            },
+            "ceterms:proxyFor": "res:5b8050a2-e6d8-48f4-82c6-e6de1d852f05",
+            "ceterms:precededBy": [
+                "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f"
+            ],
+            "ceterms:hasCondition": {
+                "@type": "ceterms:ComponentCondition",
+                "ceterms:targetComponent": [
+                    "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f"
+                ],
+                "ceterms:requiredNumber": 1,
+                "ceterms:hasConstraint": {
+                    "@type": "ceterms:Constraint",
+                    "ceterms:leftSource": ":StudentScore",
+                    "ceterms:comparator": "compare:GTEQ",
+                    "ceterms:rightSource": 80
+                }
+            }
+        },
+        {
+            "@type": "ceterms:AssessmentComponent",
+            "@id": "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f",
+            "ceterms:name": {
+                "en-US": "Example Assessment"
+            },
+            "ceterms:proxyFor": "res:868e33cc-6222-4620-ac68-74a28df894f7",
+            "ceterms:precededBy": [
+                "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858",
+                "res:ce-40bf8442-24ed-4f78-9c47-0af0ab9add65",
+                "res:ce-c7328e7c-9847-4587-ab82-d23f0fbebf49",
+                "res:ce-8bb665ef-0dc3-4b74-b1f7-01586aecdeca"
+            ],
+            "ceterms:precedes": [
+                "res:ce-a78bb7bb-a9a5-4230-afa8-4eb4006efc96"
+            ],
+            "ceterms:hasCondition": {
+                "@type": "ceterms:ComponentCondition",
+                "ceterms:logicalOperator": "logic:Or",
+                "ceterms:hasCondition": [
+                    {
+                        "@type": "ceterms:ComponentCondition",
+                        "ceterms:targetComponent": [
+                            "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858"
+                        ],
+                        "ceterms:requiredNumber": 1
+                    },
+                    {
+                        "@type": "ceterms:ComponentCondition",
+                        "ceterms:targetComponent": [
+                            "res:ce-40bf8442-24ed-4f78-9c47-0af0ab9add65",
+                            "res:ce-c7328e7c-9847-4587-ab82-d23f0fbebf49",
+                            "res:ce-8bb665ef-0dc3-4b74-b1f7-01586aecdeca"
+                        ],
+                        "ceterms:requiredNumber": 3,
+                        "ceterms:hasConstraint": {
+                            "@type": "ceterms:Constraint",
+                            "ceterms:leftAction": "array:Sum",
+                            "ceterms:leftSource": ":creditValue",
+                            "ceterms:comparator": "compare:GTEQ",
+                            "ceterms:rightSource": 6
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "ceterms:CourseComponent",
+            "@id": "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858",
+            "ceterms:name": {
+                "en-US": "Course D"
+            },
+            "ceterms:proxyFor": "res:448e9b71-0cc0-496f-bed7-b8a6a8b942cd7",
+            "ceterms:precededBy": [
+                "res:ce-40bf8442-24ed-4f78-9c47-0af0ab9add65",
+                "res:ce-c7328e7c-9847-4587-ab82-d23f0fbebf49",
+                "res:ce-8bb665ef-0dc3-4b74-b1f7-01586aecdeca"
+            ],
+            "ceterms:precedes": [
+                "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f"
+            ],
+            "ceterms:hasCondition" : {
+                "@type": "ceterms:ComponentCondition",
+                "ceterms:targetComponent": [
+                    "res:ce-40bf8442-24ed-4f78-9c47-0af0ab9add65",
+                    "res:ce-c7328e7c-9847-4587-ab82-d23f0fbebf49",
+                    "res:ce-8bb665ef-0dc3-4b74-b1f7-01586aecdeca"
+                ],
+                "ceterms:requiredNumber": 2,
+                "ceterms:hasConstraint": {
+                    "@type": "ceterms:Constraint",
+                    "ceterms:leftAction": "array:Sum",
+                    "ceterms:leftSource": ":creditValue",
+                    "ceterms:comparator": "compare:GTEQ",
+                    "ceterms:rightSource": 4
+                }
+            }
+        },
+        {
+            "@type": "ceterms:CourseComponent",
+            "@id": "res:ce-40bf8442-24ed-4f78-9c47-0af0ab9add65",
+            "ceterms:name": {
+                "en-US": "Course C"
+            },
+            "ceterms:proxyFor": "res:e8dc82f1-a555-4eb8-9575-991dd2b9e375",
+            "ceterms:precedes": [
+                "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858",
+                "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f"
+            ]
+        },
+        {
+            "@type": "ceterms:CourseComponent",
+            "@id": "res:ce-c7328e7c-9847-4587-ab82-d23f0fbebf49",
+            "ceterms:name": {
+                "en-US": "Course B"
+            },
+            "ceterms:proxyFor": "res:3532d876-abd0-4bc4-bff5-8e12e7918ae4",
+            "ceterms:precedes": [
+                "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858",
+                "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f"
+            ]
+        },
+        {
+            "@type": "ceterms:CourseComponent",
+            "@id": "res:ce-8bb665ef-0dc3-4b74-b1f7-01586aecdeca",
+            "ceterms:name": {
+                "en-US": "Course A"
+            },
+            "ceterms:proxyFor": "res:5c49045e-5007-46c9-889a-916b114cff33",
+            "ceterms:precedes": [
+                "res:ce-c0c5cade-2896-40b7-8e7a-aac814f2f858",
+                "res:ce-96a269c2-5ad3-466d-a7b3-fbcd0466bc7f"
+            ]
+        }
+    ]
+}
