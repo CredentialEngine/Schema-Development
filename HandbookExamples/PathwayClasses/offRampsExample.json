@@ -1,0 +1,129 @@
+{
+    "@context": [
+        "https://credreg.net/ctdl/schema/context/json",
+        {
+            "res": "https://example.org/resources/"
+        }
+    ],
+    "@graph": [
+        {
+            "@type": "ceterms:MasterOfScienceDegree",
+            "@id": "res:ce-880bde69-621d-4521-ae40-37b79a8a160d",
+            "ceterms:name": {
+                "en-US": "MSci"
+            },
+            "ceterms:description": {
+                "en-US": "An MSci Degree that may be earned when exiting after completing stage 5."
+            }
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-0a4ce4cd-a0c9-46e9-8596-cb6c41069ab7",
+            "ceterms:name": {
+                "en-US": "Stage 5"
+            },
+            "ceterms:description": {
+                "en-US": "All parts of stage 5 of a multi-stage program."
+            },
+            "ceterms:isPreparationFor": [
+                "res:ce-880bde69-621d-4521-ae40-37b79a8a160d"
+            ]
+        },
+        {
+            "@type": "ceterms:BachelorOfScienceDegree",
+            "@id": "res:ce-38aec135-72a2-418d-8ca9-f8366b107a5d",
+            "ceterms:name": {
+                "en-US": "BSc"
+            },
+            "ceterms:description": {
+                "en-US": "BSc Degree that may be earned when exiting after completing stage 4."
+            }
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-73e8cfa0-e828-4ee4-a261-16b95fafb380",
+            "ceterms:name": {
+                "en-US": "Stage 4"
+            },
+            "ceterms:description": {
+                "en-US": "All parts of stage 4 of a multi-stage program."
+            },
+            "ceterms:isPreparationFor": [
+                "res:ce-38aec135-72a2-418d-8ca9-f8366b107a5d",
+                "res:ce-0a4ce4cd-a0c9-46e9-8596-cb6c41069ab7"
+            ]
+        },
+        {
+            "@type": "ceterms:Degree",
+            "@id": "res:ce-6bf7a626-46d4-4d7a-93c0-98cb5c6ea802",
+            "ceterms:name": {
+                "en-US": "Ordinary Degree"
+            },
+            "ceterms:description": {
+                "en-US": "Ordinary Degree that may be earned when exiting after completing stage 3."
+            }
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-a0e7be1d-c562-4915-b352-ec0104166455",
+            "ceterms:name": {
+                "en-US": "Stage 3"
+            },
+            "ceterms:description": {
+                "en-US": "All parts of stage 3 of a multi-stage program."
+            },
+            "ceterms:isPreparationFor": [
+                "res:ce-6bf7a626-46d4-4d7a-93c0-98cb5c6ea802",
+                "res:ce-73e8cfa0-e828-4ee4-a261-16b95fafb380"
+            ]
+        },
+        {
+            "@type": "ceterms:Diploma",
+            "@id": "res:ce-2efef07f-eecf-49bd-83ed-a473858baf7d",
+            "ceterms:name": {
+                "en-US": "Diploma"
+            },
+            "ceterms:description": {
+                "en-US": "Diploma that may be earned when exiting after completing stage 2."
+            }
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-f117974d-33ef-43c5-abc6-0c1e7382b992",
+            "ceterms:name": {
+                "en-US": "Stage 2"
+            },
+            "ceterms:description": {
+                "en-US": "All parts of stage 2 of a multi-stage program."
+            },
+            "ceterms:isPreparationFor": [
+                "res:ce-2efef07f-eecf-49bd-83ed-a473858baf7d",
+                "res:ce-a0e7be1d-c562-4915-b352-ec0104166455"
+            ]
+        },
+        {
+            "@type": "ceterms:Certificate",
+            "@id": "res:ce-2cb12a95-5618-45aa-b8c7-22cc2a6da6b4",
+            "ceterms:name": {
+                "en-US": "Certificate"
+            },
+            "ceterms:description": {
+                "en-US": "Certificate that may be earned when exiting after completing stage 1."
+            }
+        },
+        {
+            "@type": "ceterms:LearningOpportunityProfile",
+            "@id": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
+            "ceterms:name": {
+                "en-US": "Stage 1"
+            },
+            "ceterms:description": {
+                "en-US": "All parts of stage 1 of a multi-stage program."
+            },
+            "ceterms:isPreparationFor": [
+                "res:ce-2cb12a95-5618-45aa-b8c7-22cc2a6da6b4",
+                "res:ce-f117974d-33ef-43c5-abc6-0c1e7382b992"
+            ]
+        }
+    ]
+}
