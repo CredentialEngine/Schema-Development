@@ -31,7 +31,7 @@
             "ceterms:description": {
                 "en-US": "Proxy for a Diploma that may be earned when exiting after completing stage 2."
             },
-            "ceterms:isProxyFor": "res:ce-2efef07f-eecf-49bd-83ed-a473858baf7d",
+            "ceterms:proxyFor": "res:ce-2efef07f-eecf-49bd-83ed-a473858baf7d",
             "ceterms:precededBy": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
         },
         {
@@ -43,7 +43,7 @@
             "ceterms:description": {
                 "en-US": "A proxy for all parts of stage 2 of a multi-stage program."
             },
-            "ceterms:isProxyFor": "res:ce-f117974d-33ef-43c5-abc6-0c1e7382b992",
+            "ceterms:proxyFor": "res:ce-f117974d-33ef-43c5-abc6-0c1e7382b992",
             "ceterms:precedes": "res:ce-47e325ff-a2a5-42c9-b144-5b480fccc7bc",
             "ceterms:precededBy": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
 
@@ -58,7 +58,7 @@
             "ceterms:description": {
                 "en-US": "A proxy for all parts of stage 1 of a multi-stage program."
             },
-            "ceterms:isProxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
+            "ceterms:proxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
             "ceterms:precedes": "res:ce-dc068c48-4772-4ee2-a86c-0dd194f689c4"
         }
     ]

@@ -30,7 +30,7 @@
             "ceterms:description": {
                 "en-US": "Proxy for a Certificate that may be earned when exiting after completing stage 1."
             },
-            "ceterms:isProxyFor": "res:ce-2cb12a95-5618-45aa-b8c7-22cc2a6da6b4",
+            "ceterms:proxyFor": "res:ce-2cb12a95-5618-45aa-b8c7-22cc2a6da6b4",
             "ceterms:precededBy": "res:ce-0fbd061f-1059-4005-bb7f-6c1775812214"
         },
         {
@@ -42,7 +42,7 @@
             "ceterms:description": {
                 "en-US": "A proxy for all parts of stage 1 of a multi-stage program."
             },
-            "ceterms:isProxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
+            "ceterms:proxyFor": "res:ce-d229f7b6-a719-4bfe-a2f5-676656c09331",
             "ceterms:precedes": "res:ce-31e399a4-e414-49a8-9274-dc4364bacdd7"
         }
     ]

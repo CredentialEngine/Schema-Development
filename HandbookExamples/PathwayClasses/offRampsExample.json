@@ -65,7 +65,7 @@
         },
         {
             "@type": "ceterms:LearningOpportunityProfile",
-            "@id": "res:ce-d13f968a-4bf8-411e-a531-e578456d84df",
+            "@id": "res:ce-a0e7be1d-c562-4915-b352-ec0104166455",
             "ceterms:name": {
                 "en-US": "Stage 3"
             },
@@ -98,7 +98,7 @@
             },
             "ceterms:isPreparationFor": [
                 "res:ce-2efef07f-eecf-49bd-83ed-a473858baf7d",
-                "res:ce-d13f968a-4bf8-411e-a531-e578456d84df"
+                "res:ce-a0e7be1d-c562-4915-b352-ec0104166455"
             ]
         },
         {
